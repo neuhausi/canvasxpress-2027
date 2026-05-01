@@ -1,0 +1,42 @@
+	Recognitions	Recognized	Type	Winnings	Year
+Dutch in Seven Lessons	0	No	Film	0	1948
+High Button Shoes	0	No	Stage	0	1948
+Sauce Tartare	0	No	Stage	0	1949
+Saturday Night Revue	0	No	Television	0	1950
+Sauce Piquante	0	No	Stage	0	1950
+One Wild Oat	0	No	Film	0	1951
+Young Wives' Tale	0	No	Film	0	1951
+Laughter in Paradise	0	No	Film	0	1951
+The Lavender Hill Mob	0	No	Film	0	1951
+Sunday Night Theatre	0	No	Television	0	1951
+Gigi	0	No	Stage	0	1951
+Secret People	0	No	Film	0	1952
+Monte Carlo Baby	0	No	Film	0	1952
+CBS Television Workshop	0	No	Television	0	1952
+Roman Holiday	4	Yes	Film	4	1953
+Sabrina	3	Yes	Film	0	1954
+Ondine	1	Yes	Stage	1	1954
+War and Peace	2	Yes	Film	0	1956
+Love in the Afternoon	2	Yes	Film	0	1957
+Funny Face	0	No	Film	0	1957
+Producers' Showcase	0	No	Television	0	1957
+Green Mansions	0	No	Film	0	1959
+The Nun's Story	4	Yes	Film	2	1959
+The Unforgiven	0	No	Film	0	1960
+Breakfast at Tiffany's	2	Yes	Film	0	1961
+The Children's Hour	0	No	Film	0	1961
+Charade	2	Yes	Film	1	1963
+Paris When It Sizzles	0	No	Film	0	1964
+My Fair Lady	2	Yes	Film	0	1964
+How to Steal a Million	0	No	Film	0	1966
+Two for the Road	1	Yes	Film	0	1967
+Wait Until Dark	3	Yes	Film	0	1967
+A World of Love	0	No	Television	0	1970
+Robin and Marian	0	No	Film	0	1976
+Bloodline	0	No	Film	0	1979
+They All Laughed	0	No	Film	0	1981
+Love Among Thieves	0	No	Television	0	1987
+American Masters	0	No	Television	0	1988
+Gregory Peck :  His Own Man	0	No	Television	0	1988
+Always	0	No	Film	0	1989
+Gardens of the World with Audrey Hepburn	1	Yes	Television	1	1993

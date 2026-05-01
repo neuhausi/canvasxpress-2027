@@ -1,0 +1,3012 @@
+color	height	id	language	name	width
+rgb(247,109,109)	14.0	Id0		root	14.0
+rgb(247,109,109)	14.0	Id1		src	14.0
+rgb(247,109,109)	14.0	Id2		Symfony	14.0
+rgb(247,109,109)	14.0	Id3		Component	14.0
+rgb(247,109,109)	14.0	Id4		Translation	14.0
+rgb(247,109,109)	14.0	Id5		Loader	14.0
+rgb(247,109,109)	14.0	Id6		schema	14.0
+rgb(247,109,109)	14.0	Id7		dic	14.0
+rgb(247,111,109)	14.0	Id8		xliff-core	14.0
+rgb(247,111,109)	86.7	Id9	XSD	xliff-core-1.2-strict.xsd	86.7
+rgb(247,111,109)	37.2	Id10	XSD	xml.xsd	37.2
+rgb(247,111,109)	25.1	Id11	PHP	MoFileLoader.php	25.1
+rgb(247,111,109)	23.5	Id12	PHP	PoFileLoader.php	23.5
+rgb(247,111,109)	23.5	Id13	PHP	XliffFileLoader.php	23.5
+rgb(247,111,109)	20.2	Id14	PHP	QtFileLoader.php	20.2
+rgb(247,111,109)	19.1	Id15	PHP	CsvFileLoader.php	19.1
+rgb(247,114,109)	17.7	Id16	PHP	IcuResFileLoader.php	17.7
+rgb(247,114,109)	16.2	Id17	PHP	YamlFileLoader.php	16.2
+rgb(247,114,109)	15.6	Id18	PHP	ArrayLoader.php	15.6
+rgb(247,114,109)	15.4	Id19	PHP	IcuDatFileLoader.php	15.4
+rgb(247,114,109)	13.5	Id20	PHP	PhpFileLoader.php	13.5
+rgb(247,114,109)	13.5	Id21	PHP	IniFileLoader.php	13.5
+rgb(247,114,109)	9.6	Id22	PHP	QtTranslationsLoader.php	9.6
+rgb(247,114,109)	9.2	Id23	PHP	LoaderInterface.php	9.2
+rgb(247,114,109)	14.0	Id24		Tests	14.0
+rgb(247,116,109)	33.9	Id25	PHP	TranslatorTest.php	33.9
+rgb(247,116,109)	29.6	Id26	PHP	MessageCatalogueTest.php	29.6
+rgb(247,116,109)	20.6	Id27	PHP	PluralizationRulesTest.php	20.6
+rgb(247,116,109)	14.0	Id28		Loader	14.0
+rgb(247,116,109)	19.9	Id29	PHP	PoFileLoaderTest.php	19.9
+rgb(247,116,109)	19.9	Id30	PHP	XliffFileLoaderTest.php	19.9
+rgb(247,116,109)	19.4	Id31	PHP	YamlFileLoaderTest.php	19.4
+rgb(247,116,109)	18.2	Id32	PHP	IcuDatFileLoaderTest.php	18.2
+rgb(247,118,109)	18.0	Id33	PHP	MoFileLoaderTest.php	18.0
+rgb(247,118,109)	18.0	Id34	PHP	CsvFileLoaderTest.php	18.0
+rgb(247,118,109)	17.5	Id35	PHP	QtFileLoaderTest.php	17.5
+rgb(247,118,109)	17.0	Id36	PHP	IniFileLoaderTest.php	17.0
+rgb(247,118,109)	16.6	Id37	PHP	IcuResFileLoaderTest.php	16.6
+rgb(247,118,109)	16.4	Id38	PHP	PhpFileLoaderTest.php	16.4
+rgb(247,118,109)	10.4	Id39	PHP	LocalizedTestCase.php	10.4
+rgb(247,118,109)	18.8	Id40	PHP	MessageSelectorTest.php	18.8
+rgb(247,121,109)	16.8	Id41	PHP	IdentityTranslatorTest.php	16.8
+rgb(247,121,109)	15.2	Id42	PHP	IntervalTest.php	15.2
+rgb(247,121,109)	14.0	Id43		Dumper	14.0
+rgb(247,121,109)	14.0	Id44	PHP	YamlFileDumperTest.php	14.0
+rgb(247,121,109)	13.5	Id45	PHP	IcuResFileDumperTest.php	13.5
+rgb(247,121,109)	12.7	Id46	PHP	CsvFileDumperTest.php	12.7
+rgb(247,121,109)	12.4	Id47	PHP	PhpFileDumperTest.php	12.4
+rgb(247,121,109)	12.4	Id48	PHP	IniFileDumperTest.php	12.4
+rgb(247,121,109)	12.4	Id49	PHP	MoFileDumperTest.php	12.4
+rgb(247,123,109)	12.4	Id50	PHP	QtFileDumperTest.php	12.4
+rgb(247,123,109)	12.4	Id51	PHP	XliffFileDumperTest.php	12.4
+rgb(247,123,109)	12.4	Id52	PHP	PoFileDumperTest.php	12.4
+rgb(247,123,109)	14.0	Id53		fixtures	14.0
+rgb(247,123,109)	7.0	Id54	PHP	resources.php	7.0
+rgb(247,123,109)	4.0	Id55	YAML	resources.yml	4.0
+rgb(247,123,109)	29.8	Id56	PHP	MessageCatalogue.php	29.8
+rgb(247,123,109)	29.7	Id57	PHP	PluralizationRules.php	29.7
+rgb(247,125,109)	27.0	Id58	PHP	Translator.php	27.0
+rgb(247,125,109)	14.0	Id59		Dumper	14.0
+rgb(247,125,109)	23.5	Id60	PHP	IcuResFileDumper.php	23.5
+rgb(247,125,109)	19.3	Id61	PHP	MoFileDumper.php	19.3
+rgb(247,125,109)	16.6	Id62	PHP	XliffFileDumper.php	16.6
+rgb(247,125,109)	15.4	Id63	PHP	PoFileDumper.php	15.4
+rgb(247,125,109)	15.2	Id64	PHP	CsvFileDumper.php	15.2
+rgb(247,125,109)	14.3	Id65	PHP	QtFileDumper.php	14.3
+rgb(247,128,109)	13.8	Id66	PHP	FileDumper.php	13.8
+rgb(247,128,109)	13.0	Id67	PHP	IniFileDumper.php	13.0
+rgb(247,128,109)	11.8	Id68	PHP	PhpFileDumper.php	11.8
+rgb(247,128,109)	11.8	Id69	PHP	YamlFileDumper.php	11.8
+rgb(247,128,109)	8.7	Id70	PHP	DumperInterface.php	8.7
+rgb(247,128,109)	19.4	Id71	PHP	Interval.php	19.4
+rgb(247,128,109)	15.8	Id72	PHP	MessageSelector.php	15.8
+rgb(247,128,109)	14.0	Id73		Writer	14.0
+rgb(247,128,109)	14.3	Id74	PHP	TranslationWriter.php	14.3
+rgb(247,130,109)	14.3	Id75	PHP	IdentityTranslator.php	14.3
+rgb(247,130,109)	14.0	Id76		Extractor	14.0
+rgb(247,130,109)	14.0	Id77	PHP	ChainExtractor.php	14.0
+rgb(247,130,109)	9.2	Id78	PHP	ExtractorInterface.php	9.2
+rgb(247,130,109)	13.3	Id79	PHP	MessageCatalogueInterface.php	13.3
+rgb(247,130,109)	9.6	Id80	PHP	TranslatorInterface.php	9.6
+rgb(247,130,109)	9.2	Id81	PHP	MetadataAwareInterface.php	9.2
+rgb(247,130,109)	14.0	Id82		Exception	14.0
+rgb(247,132,109)	7.6	Id83	PHP	InvalidResourceException.php	7.6
+rgb(247,132,109)	7.6	Id84	PHP	ExceptionInterface.php	7.6
+rgb(247,132,109)	7.6	Id85	PHP	NotFoundResourceException.php	7.6
+rgb(247,132,109)	14.0	Id86		Locale	14.0
+rgb(247,132,109)	14.0	Id87		Resources	14.0
+rgb(247,132,109)	14.0	Id88		data	14.0
+rgb(247,132,109)	14.0	Id89		49	14.0
+rgb(247,132,109)	14.0	Id90		stub	14.0
+rgb(247,132,109)	14.0	Id91		curr	14.0
+rgb(247,134,109)	79.8	Id92	PHP	en.php	79.8
+rgb(247,134,109)	14.0	Id93		lang	14.0
+rgb(247,134,109)	50.2	Id94	PHP	en.php	50.2
+rgb(247,134,109)	14.0	Id95		names	14.0
+rgb(247,134,109)	37.4	Id96	PHP	en.php	37.4
+rgb(247,134,109)	14.0	Id97		region	14.0
+rgb(247,134,109)	37.1	Id98	PHP	en.php	37.1
+rgb(247,134,109)	43.9	Id99	PHP	build-data.php	43.9
+rgb(247,137,109)	14.0	Id100		stubs	14.0
+rgb(247,137,109)	12.7	Id101	PHP	functions.php	12.7
+rgb(247,137,109)	7.6	Id102	PHP	Locale.php	7.6
+rgb(247,137,109)	7.6	Id103	PHP	NumberFormatter.php	7.6
+rgb(247,137,109)	7.6	Id104	PHP	IntlDateFormatter.php	7.6
+rgb(247,137,109)	7.6	Id105	PHP	Collator.php	7.6
+rgb(247,137,109)	14.0	Id106		Tests	14.0
+rgb(247,137,109)	14.0	Id107		Stub	14.0
+rgb(247,139,109)	60.3	Id108	PHP	StubIntlDateFormatterTest.php	60.3
+rgb(247,139,109)	58.7	Id109	PHP	StubNumberFormatterTest.php	58.7
+rgb(247,139,109)	29.8	Id110	PHP	StubLocaleTest.php	29.8
+rgb(247,139,109)	25.2	Id111	PHP	StubCollatorTest.php	25.2
+rgb(247,139,109)	15.2	Id112	PHP	StubIntlTest.php	15.2
+rgb(247,139,109)	23.9	Id113	PHP	TestCase.php	23.9
+rgb(247,139,109)	17.0	Id114	PHP	LocaleTest.php	17.0
+rgb(247,139,109)	11.5	Id115	PHP	bootstrap.php	11.5
+rgb(247,139,109)	14.0	Id116		Stub	14.0
+rgb(247,141,109)	43.6	Id117	PHP	StubNumberFormatter.php	43.6
+rgb(247,141,109)	34.8	Id118	PHP	StubIntlDateFormatter.php	34.8
+rgb(247,141,109)	14.0	Id119		DateFormat	14.0
+rgb(247,141,109)	32.3	Id120	PHP	FullTransformer.php	32.3
+rgb(247,141,109)	23.8	Id121	PHP	MonthTransformer.php	23.8
+rgb(247,141,109)	17.7	Id122	PHP	TimeZoneTransformer.php	17.7
+rgb(247,141,109)	16.8	Id123	PHP	QuarterTransformer.php	16.8
+rgb(247,141,109)	16.0	Id124	PHP	DayOfWeekTransformer.php	16.0
+rgb(247,144,109)	15.8	Id125	PHP	Hour2401Transformer.php	15.8
+rgb(247,144,109)	15.4	Id126	PHP	Hour1200Transformer.php	15.4
+rgb(247,144,109)	15.4	Id127	PHP	Hour2400Transformer.php	15.4
+rgb(247,144,109)	15.4	Id128	PHP	Hour1201Transformer.php	15.4
+rgb(247,144,109)	13.8	Id129	PHP	YearTransformer.php	13.8
+rgb(247,144,109)	13.3	Id130	PHP	SecondTransformer.php	13.3
+rgb(247,144,109)	13.3	Id131	PHP	MinuteTransformer.php	13.3
+rgb(247,144,109)	13.0	Id132	PHP	AmPmTransformer.php	13.0
+rgb(247,146,109)	13.0	Id133	PHP	DayTransformer.php	13.0
+rgb(247,146,109)	12.7	Id134	PHP	DayOfYearTransformer.php	12.7
+rgb(247,146,109)	10.8	Id135	PHP	Transformer.php	10.8
+rgb(247,146,109)	8.2	Id136	PHP	HourTransformer.php	8.2
+rgb(247,146,109)	30.3	Id137	PHP	StubLocale.php	30.3
+rgb(247,146,109)	24.7	Id138	PHP	StubCollator.php	24.7
+rgb(247,146,109)	18.0	Id139	PHP	StubIntl.php	18.0
+rgb(247,146,109)	29.4	Id140	PHP	Locale.php	29.4
+rgb(247,146,109)	14.0	Id141		Exception	14.0
+rgb(247,148,109)	12.4	Id142	PHP	MethodArgumentValueNotImplementedException.php	12.4
+rgb(247,148,109)	10.4	Id143	PHP	MethodArgumentNotImplementedException.php	10.4
+rgb(247,148,109)	10.0	Id144	PHP	NotImplementedException.php	10.0
+rgb(247,148,109)	9.6	Id145	PHP	MethodNotImplementedException.php	9.6
+rgb(247,148,109)	14.0	Id146		Form	14.0
+rgb(247,148,109)	14.0	Id147		Tests	14.0
+rgb(247,148,109)	75.6	Id148	PHP	AbstractLayoutTest.php	75.6
+rgb(247,148,109)	14.0	Id149		Extension	14.0
+rgb(247,150,109)	14.0	Id150		Validator	14.0
+rgb(247,150,109)	14.0	Id151		ViolationMapper	14.0
+rgb(247,150,109)	69.9	Id152	PHP	ViolationMapperTest.php	69.9
+rgb(247,150,109)	31.1	Id153	PHP	ViolationPathTest.php	31.1
+rgb(247,150,109)	14.0	Id154		Constraints	14.0
+rgb(247,150,109)	45.4	Id155	PHP	FormValidatorTest.php	45.4
+rgb(247,150,109)	14.0	Id156		EventListener	14.0
+rgb(247,150,109)	24.2	Id157	PHP	ValidationListenerTest.php	24.2
+rgb(247,153,109)	14.0	Id158		Type	14.0
+rgb(247,153,109)	19.3	Id159	PHP	FormTypeValidatorExtensionTest.php	19.3
+rgb(247,153,109)	15.8	Id160	PHP	TypeTestCase.php	15.8
+rgb(247,153,109)	14.0	Id161		Core	14.0
+rgb(247,153,109)	14.0	Id162		Type	14.0
+rgb(247,153,109)	52.2	Id163	PHP	ChoiceTypeTest.php	52.2
+rgb(247,153,109)	50.7	Id164	PHP	DateTypeTest.php	50.7
+rgb(247,153,109)	48.3	Id165	PHP	FormTypeTest.php	48.3
+rgb(247,153,109)	47.9	Id166	PHP	TimeTypeTest.php	47.9
+rgb(247,155,109)	43.1	Id167	PHP	DateTimeTypeTest.php	43.1
+rgb(247,155,109)	30.5	Id168	PHP	CollectionTypeTest.php	30.5
+rgb(247,155,109)	26.5	Id169	PHP	RepeatedTypeTest.php	26.5
+rgb(247,155,109)	25.5	Id170	PHP	CheckboxTypeTest.php	25.5
+rgb(247,155,109)	20.3	Id171	PHP	FileTypeTest.php	20.3
+rgb(247,155,109)	17.3	Id172	PHP	UrlTypeTest.php	17.3
+rgb(247,155,109)	17.1	Id173	PHP	NumberTypeTest.php	17.1
+rgb(247,155,109)	16.2	Id174	PHP	PasswordTypeTest.php	16.2
+rgb(247,157,109)	15.4	Id175	PHP	CountryTypeTest.php	15.4
+rgb(247,157,109)	15.4	Id176	PHP	MoneyTypeTest.php	15.4
+rgb(247,157,109)	14.5	Id177	PHP	LanguageTypeTest.php	14.5
+rgb(247,157,109)	13.3	Id178	PHP	TypeTestCase.php	13.3
+rgb(247,157,109)	12.1	Id179	PHP	LocaleTypeTest.php	12.1
+rgb(247,157,109)	12.1	Id180	PHP	ChoiceTypePerformanceTest.php	12.1
+rgb(247,157,109)	12.1	Id181	PHP	TimezoneTypeTest.php	12.1
+rgb(247,157,109)	11.8	Id182	PHP	LocalizedTestCase.php	11.8
+rgb(247,157,109)	10.8	Id183	PHP	IntegerTypeTest.php	10.8
+rgb(247,160,109)	14.0	Id184		DataTransformer	14.0
+rgb(247,160,109)	43.0	Id185	PHP	DateTimeToArrayTransformerTest.php	43.0
+rgb(247,160,109)	32.7	Id186	PHP	NumberToLocalizedStringTransformerTest.php	32.7
+rgb(247,160,109)	32.2	Id187	PHP	DateTimeToLocalizedStringTransformerTest.php	32.2
+rgb(247,160,109)	26.2	Id188	PHP	ArrayToPartsTransformerTest.php	26.2
+rgb(247,160,109)	26.0	Id189	PHP	DateTimeToStringTransformerTest.php	26.0
+rgb(247,160,109)	23.3	Id190	PHP	ValueToDuplicatesTransformerTest.php	23.3
+rgb(247,160,109)	22.9	Id191	PHP	DateTimeToRfc3339TransformerTest.php	22.9
+rgb(247,162,109)	22.5	Id192	PHP	PercentToLocalizedStringTransformerTest.php	22.5
+rgb(247,162,109)	21.5	Id193	PHP	DateTimeToTimestampTransformerTest.php	21.5
+rgb(247,162,109)	20.8	Id194	PHP	IntegerToLocalizedStringTransformerTest.php	20.8
+rgb(247,162,109)	18.5	Id195	PHP	LocalizedTestCase.php	18.5
+rgb(247,162,109)	18.3	Id196	PHP	ChoiceToValueTransformerTest.php	18.3
+rgb(247,162,109)	18.3	Id197	PHP	ChoicesToValuesTransformerTest.php	18.3
+rgb(247,162,109)	18.0	Id198	PHP	MoneyToLocalizedStringTransformerTest.php	18.0
+rgb(247,162,109)	17.3	Id199	PHP	BooleanToStringTransformerTest.php	17.3
+rgb(247,164,109)	16.8	Id200	PHP	DataTransformerChainTest.php	16.8
+rgb(247,164,109)	9.6	Id201	PHP	DateTimeTestCase.php	9.6
+rgb(247,164,109)	14.0	Id202		DataMapper	14.0
+rgb(247,164,109)	37.5	Id203	PHP	PropertyPathMapperTest.php	37.5
+rgb(247,164,109)	14.0	Id204		EventListener	14.0
+rgb(247,164,109)	32.3	Id205	PHP	ResizeFormListenerTest.php	32.3
+rgb(247,164,109)	30.2	Id206	PHP	MergeCollectionListenerTest.php	30.2
+rgb(247,164,109)	19.3	Id207	PHP	TrimListenerTest.php	19.3
+rgb(247,164,109)	18.7	Id208	PHP	FixRadioInputListenerTest.php	18.7
+rgb(247,167,109)	17.5	Id209	PHP	FixUrlProtocolListenerTest.php	17.5
+rgb(247,167,109)	11.8	Id210	PHP	MergeCollectionListenerCustomArrayObjectTest.php	11.8
+rgb(247,167,109)	11.5	Id211	PHP	MergeCollectionListenerArrayTest.php	11.5
+rgb(247,167,109)	11.5	Id212	PHP	MergeCollectionListenerArrayObjectTest.php	11.5
+rgb(247,167,109)	14.0	Id213		ChoiceList	14.0
+rgb(247,167,109)	30.3	Id214	PHP	ObjectChoiceListTest.php	30.3
+rgb(247,167,109)	29.8	Id215	PHP	ChoiceListTest.php	29.8
+rgb(247,167,109)	28.9	Id216	PHP	SimpleChoiceListTest.php	28.9
+rgb(247,169,109)	23.4	Id217	PHP	LazyChoiceListTest.php	23.4
+rgb(247,169,109)	14.0	Id218		HttpFoundation	14.0
+rgb(247,169,109)	14.0	Id219		EventListener	14.0
+rgb(247,169,109)	33.5	Id220	PHP	BindRequestListenerTest.php	33.5
+rgb(247,169,109)	14.0	Id221		Csrf	14.0
+rgb(247,169,109)	14.0	Id222		Type	14.0
+rgb(247,169,109)	33.2	Id223	PHP	FormTypeCsrfExtensionTest.php	33.2
+rgb(247,169,109)	14.0	Id224		EventListener	14.0
+rgb(247,171,109)	19.7	Id225	PHP	CsrfValidationListenerTest.php	19.7
+rgb(247,171,109)	14.0	Id226		CsrfProvider	14.0
+rgb(247,171,109)	19.3	Id227	PHP	SessionCsrfProviderTest.php	19.3
+rgb(247,171,109)	16.4	Id228	PHP	DefaultCsrfProviderTest.php	16.4
+rgb(247,171,109)	53.0	Id229	PHP	SimpleFormTest.php	53.0
+rgb(247,171,109)	48.9	Id230	PHP	AbstractDivLayoutTest.php	48.9
+rgb(247,171,109)	47.9	Id231	PHP	CompoundFormTest.php	47.9
+rgb(247,171,109)	47.5	Id232	PHP	FormFactoryTest.php	47.5
+rgb(247,171,109)	40.5	Id233	PHP	AbstractTableLayoutTest.php	40.5
+rgb(247,173,109)	33.7	Id234	PHP	FormBuilderTest.php	33.7
+rgb(247,173,109)	31.9	Id235	PHP	ResolvedFormTypeTest.php	31.9
+rgb(247,173,109)	31.6	Id236	PHP	FormRegistryTest.php	31.6
+rgb(247,173,109)	21.5	Id237	PHP	AbstractFormTest.php	21.5
+rgb(247,173,109)	19.9	Id238	PHP	FormConfigTest.php	19.9
+rgb(247,173,109)	14.0	Id239		Fixtures	14.0
+rgb(247,173,109)	19.0	Id240	PHP	Author.php	19.0
+rgb(247,173,109)	18.8	Id241	PHP	TestExtension.php	18.8
+rgb(247,176,109)	18.5	Id242	PHP	CustomArrayObject.php	18.5
+rgb(247,176,109)	18.5	Id243	PHP	FixedFilterListener.php	18.5
+rgb(247,176,109)	14.7	Id244	PHP	FixedDataTransformer.php	14.7
+rgb(247,176,109)	14.5	Id245	PHP	AuthorType.php	14.5
+rgb(247,176,109)	13.8	Id246	PHP	AlternatingRowType.php	13.8
+rgb(247,176,109)	13.5	Id247	PHP	FooTypeBarExtension.php	13.5
+rgb(247,176,109)	13.0	Id248	PHP	FooType.php	13.0
+rgb(247,176,109)	13.0	Id249	PHP	FooSubTypeWithParentInstance.php	13.0
+rgb(247,178,109)	13.0	Id250	PHP	FooSubType.php	13.0
+rgb(247,178,109)	11.8	Id251	PHP	FooTypeBazExtension.php	11.8
+rgb(247,178,109)	17.3	Id252	PHP	FormFactoryBuilderTest.php	17.3
+rgb(247,178,109)	16.2	Id253	PHP	FormPerformanceTestCase.php	16.2
+rgb(247,178,109)	15.2	Id254	PHP	AbstractExtensionTest.php	15.2
+rgb(247,178,109)	14.5	Id255	PHP	CompoundFormPerformanceTest.php	14.5
+rgb(247,178,109)	13.3	Id256	PHP	FormIntegrationTestCase.php	13.3
+rgb(247,178,109)	14.0	Id257		Guess	14.0
+rgb(247,178,109)	12.7	Id258	PHP	GuessTest.php	12.7
+rgb(247,180,109)	11.8	Id259	PHP	FormRendererTest.php	11.8
+rgb(247,180,109)	49.0	Id260	PHP	Form.php	49.0
+rgb(247,180,109)	45.4	Id261	PHP	FormConfigBuilder.php	45.4
+rgb(247,180,109)	14.0	Id262		Extension	14.0
+rgb(247,180,109)	14.0	Id263		Core	14.0
+rgb(247,180,109)	14.0	Id264		Type	14.0
+rgb(247,180,109)	35.6	Id265	PHP	DateType.php	35.6
+rgb(247,180,109)	33.8	Id266	PHP	DateTimeType.php	33.8
+rgb(247,183,109)	31.9	Id267	PHP	FormType.php	31.9
+rgb(247,183,109)	31.5	Id268	PHP	TimeType.php	31.5
+rgb(247,183,109)	31.1	Id269	PHP	ChoiceType.php	31.1
+rgb(247,183,109)	21.6	Id270	PHP	MoneyType.php	21.6
+rgb(247,183,109)	21.4	Id271	PHP	CollectionType.php	21.4
+rgb(247,183,109)	18.5	Id272	PHP	IntegerType.php	18.5
+rgb(247,183,109)	18.3	Id273	PHP	NumberType.php	18.3
+rgb(247,183,109)	18.0	Id274	PHP	CheckboxType.php	18.0
+rgb(247,183,109)	18.0	Id275	PHP	TimezoneType.php	18.0
+rgb(247,185,109)	17.7	Id276	PHP	RepeatedType.php	17.7
+rgb(247,185,109)	17.1	Id277	PHP	FileType.php	17.1
+rgb(247,185,109)	16.6	Id278	PHP	PercentType.php	16.6
+rgb(247,185,109)	15.6	Id279	PHP	PasswordType.php	15.6
+rgb(247,185,109)	14.9	Id280	PHP	UrlType.php	14.9
+rgb(247,185,109)	14.0	Id281	PHP	HiddenType.php	14.0
+rgb(247,185,109)	13.8	Id282	PHP	LanguageType.php	13.8
+rgb(247,185,109)	13.8	Id283	PHP	CountryType.php	13.8
+rgb(247,187,109)	13.8	Id284	PHP	LocaleType.php	13.8
+rgb(247,187,109)	13.5	Id285	PHP	TextType.php	13.5
+rgb(247,187,109)	13.5	Id286	PHP	BirthdayType.php	13.5
+rgb(247,187,109)	13.3	Id287	PHP	TextareaType.php	13.3
+rgb(247,187,109)	11.5	Id288	PHP	EmailType.php	11.5
+rgb(247,187,109)	11.5	Id289	PHP	RadioType.php	11.5
+rgb(247,187,109)	11.5	Id290	PHP	SearchType.php	11.5
+rgb(247,187,109)	10.0	Id291	PHP	FieldType.php	10.0
+rgb(247,189,109)	14.0	Id292		ChoiceList	14.0
+rgb(247,189,109)	35.1	Id293	PHP	ChoiceList.php	35.1
+rgb(247,189,109)	22.1	Id294	PHP	LazyChoiceList.php	22.1
+rgb(247,189,109)	22.1	Id295	PHP	ObjectChoiceList.php	22.1
+rgb(247,189,109)	20.6	Id296	PHP	SimpleChoiceList.php	20.6
+rgb(247,189,109)	11.2	Id297	PHP	ChoiceListInterface.php	11.2
+rgb(247,189,109)	14.0	Id298		DataTransformer	14.0
+rgb(247,189,109)	27.1	Id299	PHP	DateTimeToStringTransformer.php	27.1
+rgb(247,189,109)	26.1	Id300	PHP	DateTimeToArrayTransformer.php	26.1
+rgb(247,192,109)	24.6	Id301	PHP	NumberToLocalizedStringTransformer.php	24.6
+rgb(247,192,109)	23.3	Id302	PHP	DateTimeToLocalizedStringTransformer.php	23.3
+rgb(247,192,109)	22.1	Id303	PHP	PercentToLocalizedStringTransformer.php	22.1
+rgb(247,192,109)	20.4	Id304	PHP	ChoicesToBooleanArrayTransformer.php	20.4
+rgb(247,192,109)	20.4	Id305	PHP	ArrayToPartsTransformer.php	20.4
+rgb(247,192,109)	19.0	Id306	PHP	DateTimeToRfc3339Transformer.php	19.0
+rgb(247,192,109)	19.0	Id307	PHP	ValueToDuplicatesTransformer.php	19.0
+rgb(247,192,109)	18.8	Id308	PHP	ChoiceToBooleanArrayTransformer.php	18.8
+rgb(247,194,109)	18.0	Id309	PHP	DateTimeToTimestampTransformer.php	18.0
+rgb(247,194,109)	17.3	Id310	PHP	MoneyToLocalizedStringTransformer.php	17.3
+rgb(247,194,109)	17.1	Id311	PHP	ChoicesToValuesTransformer.php	17.1
+rgb(247,194,109)	16.2	Id312	PHP	ChoiceToValueTransformer.php	16.2
+rgb(247,194,109)	16.0	Id313	PHP	BooleanToStringTransformer.php	16.0
+rgb(247,194,109)	15.2	Id314	PHP	IntegerToLocalizedStringTransformer.php	15.2
+rgb(247,194,109)	14.9	Id315	PHP	BaseDateTimeTransformer.php	14.9
+rgb(247,194,109)	14.9	Id316	PHP	DataTransformerChain.php	14.9
+rgb(247,196,109)	14.0	Id317		EventListener	14.0
+rgb(247,196,109)	24.5	Id318	PHP	ResizeFormListener.php	24.5
+rgb(247,196,109)	22.1	Id319	PHP	MergeCollectionListener.php	22.1
+rgb(247,196,109)	14.3	Id320	PHP	FixRadioInputListener.php	14.3
+rgb(247,196,109)	14.3	Id321	PHP	FixCheckboxInputListener.php	14.3
+rgb(247,196,109)	14.3	Id322	PHP	FixUrlProtocolListener.php	14.3
+rgb(247,196,109)	14.3	Id323	PHP	TrimListener.php	14.3
+rgb(247,196,109)	14.0	Id324		DataMapper	14.0
+rgb(247,196,109)	19.6	Id325	PHP	PropertyPathMapper.php	19.6
+rgb(247,199,109)	17.3	Id326	PHP	CoreExtension.php	17.3
+rgb(247,199,109)	14.0	Id327		View	14.0
+rgb(247,199,109)	11.5	Id328	PHP	ChoiceView.php	11.5
+rgb(247,199,109)	14.0	Id329		Validator	14.0
+rgb(247,199,109)	31.6	Id330	PHP	ValidatorTypeGuesser.php	31.6
+rgb(247,199,109)	14.0	Id331		ViolationMapper	14.0
+rgb(247,199,109)	29.2	Id332	PHP	ViolationMapper.php	29.2
+rgb(247,199,109)	27.4	Id333	PHP	ViolationPath.php	27.4
+rgb(247,201,109)	18.5	Id334	PHP	MappingRule.php	18.5
+rgb(247,201,109)	12.4	Id335	PHP	RelativePath.php	12.4
+rgb(247,201,109)	11.5	Id336	PHP	ViolationPathIterator.php	11.5
+rgb(247,201,109)	9.2	Id337	PHP	ViolationMapperInterface.php	9.2
+rgb(247,201,109)	14.0	Id338		Constraints	14.0
+rgb(247,201,109)	25.8	Id339	PHP	FormValidator.php	25.8
+rgb(247,201,109)	10.4	Id340	PHP	Form.php	10.4
+rgb(247,201,109)	14.0	Id341		Type	14.0
+rgb(247,203,109)	20.6	Id342	PHP	FormTypeValidatorExtension.php	20.6
+rgb(247,203,109)	13.5	Id343	PHP	RepeatedTypeValidatorExtension.php	13.5
+rgb(247,203,109)	14.0	Id344		EventListener	14.0
+rgb(247,203,109)	16.6	Id345	PHP	ValidationListener.php	16.6
+rgb(247,203,109)	14.0	Id346		Util	14.0
+rgb(247,203,109)	16.0	Id347	PHP	ServerParams.php	16.0
+rgb(247,203,109)	15.4	Id348	PHP	ValidatorExtension.php	15.4
+rgb(247,203,109)	14.0	Id349		DependencyInjection	14.0
+rgb(247,203,109)	21.9	Id350	PHP	DependencyInjectionExtension.php	21.9
+rgb(247,206,109)	14.0	Id351		Csrf	14.0
+rgb(247,206,109)	14.0	Id352		Type	14.0
+rgb(247,206,109)	19.9	Id353	PHP	FormTypeCsrfExtension.php	19.9
+rgb(247,206,109)	14.0	Id354		EventListener	14.0
+rgb(247,206,109)	17.3	Id355	PHP	CsrfValidationListener.php	17.3
+rgb(247,206,109)	14.0	Id356		CsrfProvider	14.0
+rgb(247,206,109)	14.5	Id357	PHP	DefaultCsrfProvider.php	14.5
+rgb(247,206,109)	12.4	Id358	PHP	SessionCsrfProvider.php	12.4
+rgb(247,208,109)	8.7	Id359	PHP	CsrfProviderInterface.php	8.7
+rgb(247,208,109)	13.0	Id360	PHP	CsrfExtension.php	13.0
+rgb(247,208,109)	14.0	Id361		Templating	14.0
+rgb(247,208,109)	19.9	Id362	PHP	TemplatingRendererEngine.php	19.9
+rgb(247,208,109)	12.1	Id363	PHP	TemplatingExtension.php	12.1
+rgb(247,208,109)	14.0	Id364		HttpFoundation	14.0
+rgb(247,208,109)	14.0	Id365		EventListener	14.0
+rgb(247,208,109)	19.7	Id366	PHP	BindRequestListener.php	19.7
+rgb(247,208,109)	14.0	Id367		Type	14.0
+rgb(247,210,109)	13.5	Id368	PHP	FormTypeHttpFoundationExtension.php	13.5
+rgb(247,210,109)	10.8	Id369	PHP	HttpFoundationExtension.php	10.8
+rgb(247,210,109)	32.3	Id370	PHP	FormBuilder.php	32.3
+rgb(247,210,109)	28.7	Id371	PHP	FormView.php	28.7
+rgb(247,210,109)	27.2	Id372	PHP	ResolvedFormType.php	27.2
+rgb(247,210,109)	27.1	Id373	PHP	FormRenderer.php	27.1
+rgb(247,210,109)	26.5	Id374	PHP	FormFactory.php	26.5
+rgb(247,210,109)	25.1	Id375	PHP	FormRegistry.php	25.1
+rgb(247,212,109)	24.4	Id376	PHP	AbstractExtension.php	24.4
+rgb(247,212,109)	23.0	Id377	PHP	AbstractRendererEngine.php	23.0
+rgb(247,212,109)	22.4	Id378	PHP	FormFactoryBuilder.php	22.4
+rgb(247,212,109)	20.8	Id379	PHP	FormTypeGuesserChain.php	20.8
+rgb(247,212,109)	19.3	Id380	PHP	AbstractType.php	19.3
+rgb(247,212,109)	17.5	Id381	PHP	PreloadedExtension.php	17.5
+rgb(247,212,109)	16.8	Id382	PHP	AbstractTypeExtension.php	16.8
+rgb(247,212,109)	14.0	Id383		Guess	14.0
+rgb(247,215,109)	16.4	Id384	PHP	Guess.php	16.4
+rgb(247,215,109)	13.5	Id385	PHP	TypeGuess.php	13.5
+rgb(247,215,109)	11.8	Id386	PHP	ValueGuess.php	11.8
+rgb(247,215,109)	16.0	Id387	PHP	FormInterface.php	16.0
+rgb(247,215,109)	16.0	Id388	PHP	FormError.php	16.0
+rgb(247,215,109)	15.8	Id389	PHP	FormConfigInterface.php	15.8
+rgb(247,215,109)	15.6	Id390	PHP	FormConfigBuilderInterface.php	15.6
+rgb(247,215,109)	14.0	Id391		Event	14.0
+rgb(247,215,109)	15.6	Id392	PHP	DataEvent.php	15.6
+rgb(247,217,109)	7.6	Id393	PHP	FilterDataEvent.php	7.6
+rgb(247,217,109)	14.0	Id394		Util	14.0
+rgb(247,217,109)	13.8	Id395	PHP	PropertyPath.php	13.8
+rgb(247,217,109)	12.1	Id396	PHP	FormUtil.php	12.1
+rgb(247,217,109)	11.2	Id397	PHP	VirtualFormAwareIterator.php	11.2
+rgb(247,217,109)	10.4	Id398	PHP	PropertyPathIterator.php	10.4
+rgb(247,217,109)	10.4	Id399	PHP	PropertyPathBuilder.php	10.4
+rgb(247,217,109)	8.2	Id400	PHP	PropertyPathInterface.php	8.2
+rgb(247,219,109)	8.2	Id401	PHP	PropertyPathIteratorInterface.php	8.2
+rgb(247,219,109)	13.3	Id402	PHP	CallbackTransformer.php	13.3
+rgb(247,219,109)	14.0	Id403		Test	14.0
+rgb(247,219,109)	13.0	Id404	PHP	DeprecationErrorHandler.php	13.0
+rgb(247,219,109)	7.6	Id405	PHP	FormInterface.php	7.6
+rgb(247,219,109)	7.6	Id406	PHP	FormBuilderInterface.php	7.6
+rgb(247,219,109)	13.0	Id407	PHP	Forms.php	13.0
+rgb(247,219,109)	12.7	Id408	PHP	ReversedTransformer.php	12.7
+rgb(247,222,109)	12.1	Id409	PHP	CallbackValidator.php	12.1
+rgb(247,222,109)	12.1	Id410	PHP	FormEvents.php	12.1
+rgb(247,222,109)	11.8	Id411	PHP	ResolvedFormTypeInterface.php	11.8
+rgb(247,222,109)	11.8	Id412	PHP	FormFactoryBuilderInterface.php	11.8
+rgb(247,222,109)	11.8	Id413	PHP	FormBuilderInterface.php	11.8
+rgb(247,222,109)	10.8	Id414	PHP	FormTypeInterface.php	10.8
+rgb(247,222,109)	10.4	Id415	PHP	FormTypeExtensionInterface.php	10.4
+rgb(247,222,109)	10.4	Id416	PHP	FormRendererInterface.php	10.4
+rgb(247,222,109)	10.4	Id417	PHP	FormFactoryInterface.php	10.4
+rgb(247,224,109)	14.0	Id418		Resources	14.0
+rgb(247,224,109)	14.0	Id419		config	14.0
+rgb(247,224,109)	10.4	Id420	XML	validation.xml	10.4
+rgb(247,224,109)	10.0	Id421	PHP	FormTypeGuesserInterface.php	10.0
+rgb(247,224,109)	10.0	Id422	PHP	FormExtensionInterface.php	10.0
+rgb(247,224,109)	10.0	Id423	PHP	FormRendererEngineInterface.php	10.0
+rgb(247,224,109)	10.0	Id424	PHP	FormRegistryInterface.php	10.0
+rgb(247,224,109)	14.0	Id425		Exception	14.0
+rgb(247,226,109)	9.6	Id426	PHP	UnexpectedTypeException.php	9.6
+rgb(247,226,109)	7.6	Id427	PHP	NotValidException.php	7.6
+rgb(247,226,109)	7.6	Id428	PHP	AlreadyBoundException.php	7.6
+rgb(247,226,109)	7.6	Id429	PHP	BadMethodCallException.php	7.6
+rgb(247,226,109)	7.6	Id430	PHP	FormException.php	7.6
+rgb(247,226,109)	7.6	Id431	PHP	Exception.php	7.6
+rgb(247,226,109)	7.6	Id432	PHP	TypeLoaderException.php	7.6
+rgb(247,226,109)	7.6	Id433	PHP	StringCastException.php	7.6
+rgb(247,228,109)	7.6	Id434	PHP	InvalidConfigurationException.php	7.6
+rgb(247,228,109)	7.6	Id435	PHP	ErrorMappingException.php	7.6
+rgb(247,228,109)	7.6	Id436	PHP	NotInitializedException.php	7.6
+rgb(247,228,109)	7.6	Id437	PHP	TransformationFailedException.php	7.6
+rgb(247,228,109)	7.6	Id438	PHP	ExceptionInterface.php	7.6
+rgb(247,228,109)	7.6	Id439	PHP	TypeDefinitionException.php	7.6
+rgb(247,228,109)	7.6	Id440	PHP	CreationException.php	7.6
+rgb(247,228,109)	9.6	Id441	PHP	ResolvedFormTypeFactory.php	9.6
+rgb(247,228,109)	8.7	Id442	PHP	DataMapperInterface.php	8.7
+rgb(247,231,109)	8.7	Id443	PHP	DataTransformerInterface.php	8.7
+rgb(247,231,109)	8.2	Id444	PHP	ResolvedFormTypeFactoryInterface.php	8.2
+rgb(247,231,109)	8.2	Id445	PHP	FormValidatorInterface.php	8.2
+rgb(247,231,109)	8.2	Id446	PHP	FormEvent.php	8.2
+rgb(247,231,109)	14.0	Id447		Yaml	14.0
+rgb(247,231,109)	14.0	Id448		Tests	14.0
+rgb(247,231,109)	14.0	Id449		Fixtures	14.0
+rgb(247,231,109)	75.2	Id450	YAML	YtsSpecificationExamples.yml	75.2
+rgb(247,233,109)	36.0	Id451	YAML	YtsTypeTransfers.yml	36.0
+rgb(247,233,109)	31.8	Id452	YAML	YtsBasicTests.yml	31.8
+rgb(247,233,109)	30.2	Id453	YAML	sfCompact.yml	30.2
+rgb(247,233,109)	29.4	Id454	YAML	escapedCharacters.yml	29.4
+rgb(247,233,109)	29.4	Id455	YAML	YtsFoldedScalars.yml	29.4
+rgb(247,233,109)	28.2	Id456	YAML	sfTests.yml	28.2
+rgb(247,233,109)	23.2	Id457	YAML	YtsDocumentSeparator.yml	23.2
+rgb(247,233,109)	20.8	Id458	YAML	unindentedCollections.yml	20.8
+rgb(247,233,109)	20.6	Id459	YAML	YtsFlowCollections.yml	20.6
+rgb(247,235,109)	19.3	Id460	YAML	YtsBlockMapping.yml	19.3
+rgb(247,235,109)	18.5	Id461	YAML	sfComments.yml	18.5
+rgb(247,235,109)	18.3	Id462	YAML	YtsNullsAndEmpties.yml	18.3
+rgb(247,235,109)	16.2	Id463	YAML	sfQuotes.yml	16.2
+rgb(247,235,109)	15.6	Id464	YAML	YtsAnchorAlias.yml	15.6
+rgb(247,235,109)	14.9	Id465	YAML	sfMergeKey.yml	14.9
+rgb(247,235,109)	14.0	Id466	YAML	YtsErrorTests.yml	14.0
+rgb(247,235,109)	12.7	Id467	YAML	index.yml	12.7
+rgb(247,238,109)	10.4	Id468	YAML	sfObjects.yml	10.4
+rgb(247,238,109)	4.0	Id469	YAML	embededPhp.yml	4.0
+rgb(247,238,109)	39.7	Id470	PHP	ParserTest.php	39.7
+rgb(247,238,109)	30.3	Id471	PHP	InlineTest.php	30.3
+rgb(247,238,109)	29.0	Id472	PHP	DumperTest.php	29.0
+rgb(247,238,109)	14.5	Id473	PHP	YamlTest.php	14.5
+rgb(247,238,109)	43.8	Id474	PHP	Parser.php	43.8
+rgb(247,238,109)	38.9	Id475	PHP	Inline.php	38.9
+rgb(247,240,109)	22.9	Id476	PHP	Unescaper.php	22.9
+rgb(247,240,109)	14.0	Id477		Exception	14.0
+rgb(247,240,109)	21.4	Id478	PHP	ParseException.php	21.4
+rgb(247,240,109)	7.6	Id479	PHP	DumpException.php	7.6
+rgb(247,240,109)	7.6	Id480	PHP	RuntimeException.php	7.6
+rgb(247,240,109)	7.6	Id481	PHP	ExceptionInterface.php	7.6
+rgb(247,240,109)	19.9	Id482	PHP	Yaml.php	19.9
+rgb(247,240,109)	16.4	Id483	PHP	Escaper.php	16.4
+rgb(247,240,109)	15.6	Id484	PHP	Dumper.php	15.6
+rgb(247,242,109)	14.0	Id485		HttpFoundation	14.0
+rgb(247,242,109)	14.0	Id486		Tests	14.0
+rgb(247,242,109)	62.0	Id487	PHP	RequestTest.php	62.0
+rgb(247,242,109)	51.5	Id488	PHP	ResponseTest.php	51.5
+rgb(247,242,109)	14.0	Id489		Session	14.0
+rgb(247,242,109)	35.3	Id490	PHP	SessionTest.php	35.3
+rgb(247,242,109)	14.0	Id491		Attribute	14.0
+rgb(247,242,109)	28.4	Id492	PHP	AttributeBagTest.php	28.4
+rgb(247,245,109)	27.1	Id493	PHP	NamespacedAttributeBagTest.php	27.1
+rgb(247,245,109)	14.0	Id494		Flash	14.0
+rgb(247,245,109)	27.1	Id495	PHP	FlashBagTest.php	27.1
+rgb(247,245,109)	26.6	Id496	PHP	AutoExpireFlashBagTest.php	26.6
+rgb(247,245,109)	14.0	Id497		Storage	14.0
+rgb(247,245,109)	14.0	Id498		Handler	14.0
+rgb(247,245,109)	26.8	Id499	PHP	MongoDbSessionHandlerTest.php	26.8
+rgb(247,245,109)	24.2	Id500	PHP	MemcacheSessionHandlerTest.php	24.2
+rgb(247,247,109)	23.6	Id501	PHP	MemcachedSessionHandlerTest.php	23.6
+rgb(247,247,109)	18.5	Id502	PHP	NativeFileSessionHandlerTest.php	18.5
+rgb(247,247,109)	17.5	Id503	PHP	PdoSessionHandlerTest.php	17.5
+rgb(247,247,109)	16.6	Id504	PHP	NullSessionHandlerTest.php	16.6
+rgb(247,247,109)	12.4	Id505	PHP	NativeSessionHandlerTest.php	12.4
+rgb(247,247,109)	26.0	Id506	PHP	NativeSessionStorageTest.php	26.0
+rgb(247,247,109)	14.0	Id507		Proxy	14.0
+rgb(247,247,109)	24.0	Id508	PHP	AbstractProxyTest.php	24.0
+rgb(247,247,109)	22.9	Id509	PHP	SessionHandlerProxyTest.php	22.9
+rgb(245,247,109)	12.4	Id510	PHP	NativeProxyTest.php	12.4
+rgb(245,247,109)	22.1	Id511	PHP	MetadataBagTest.php	22.1
+rgb(245,247,109)	21.2	Id512	PHP	MockArraySessionStorageTest.php	21.2
+rgb(245,247,109)	16.0	Id513	PHP	MockFileSessionStorageTest.php	16.0
+rgb(245,247,109)	33.8	Id514	PHP	ResponseHeaderBagTest.php	33.8
+rgb(245,247,109)	14.0	Id515		File	14.0
+rgb(245,247,109)	32.0	Id516	PHP	UploadedFileTest.php	32.0
+rgb(245,247,109)	27.5	Id517	PHP	FileTest.php	27.5
+rgb(242,247,109)	14.0	Id518		MimeType	14.0
+rgb(242,247,109)	23.2	Id519	PHP	MimeTypeTest.php	23.2
+rgb(242,247,109)	30.1	Id520	PHP	ParameterBagTest.php	30.1
+rgb(242,247,109)	29.4	Id521	PHP	HeaderBagTest.php	29.4
+rgb(242,247,109)	28.3	Id522	PHP	JsonResponseTest.php	28.3
+rgb(242,247,109)	26.2	Id523	PHP	FileBagTest.php	26.2
+rgb(242,247,109)	25.8	Id524	PHP	BinaryFileResponseTest.php	25.8
+rgb(242,247,109)	24.3	Id525	PHP	RequestMatcherTest.php	24.3
+rgb(240,247,109)	24.1	Id526	PHP	CookieTest.php	24.1
+rgb(240,247,109)	23.4	Id527	PHP	AcceptHeaderItemTest.php	23.4
+rgb(240,247,109)	22.5	Id528	PHP	ApacheRequestTest.php	22.5
+rgb(240,247,109)	22.4	Id529	PHP	StreamedResponseTest.php	22.4
+rgb(240,247,109)	22.1	Id530	PHP	ServerBagTest.php	22.1
+rgb(240,247,109)	21.8	Id531	PHP	AcceptHeaderTest.php	21.8
+rgb(240,247,109)	19.1	Id532	PHP	RedirectResponseTest.php	19.1
+rgb(240,247,109)	18.2	Id533	PHP	IpUtilsTest.php	18.2
+rgb(240,247,109)	14.0	Id534		File	14.0
+rgb(238,247,109)	14.0	Id535		MimeType	14.0
+rgb(238,247,109)	55.4	Id536	PHP	MimeTypeExtensionGuesser.php	55.4
+rgb(238,247,109)	18.5	Id537	PHP	MimeTypeGuesser.php	18.5
+rgb(238,247,109)	17.3	Id538	PHP	FileBinaryMimeTypeGuesser.php	17.3
+rgb(238,247,109)	16.0	Id539	PHP	ExtensionGuesser.php	16.0
+rgb(238,247,109)	14.9	Id540	PHP	FileinfoMimeTypeGuesser.php	14.9
+rgb(238,247,109)	9.2	Id541	PHP	MimeTypeGuesserInterface.php	9.2
+rgb(238,247,109)	8.2	Id542	PHP	ExtensionGuesserInterface.php	8.2
+rgb(235,247,109)	23.2	Id543	PHP	UploadedFile.php	23.2
+rgb(235,247,109)	20.6	Id544	PHP	File.php	20.6
+rgb(235,247,109)	14.0	Id545		Exception	14.0
+rgb(235,247,109)	9.6	Id546	PHP	AccessDeniedException.php	9.6
+rgb(235,247,109)	9.6	Id547	PHP	FileNotFoundException.php	9.6
+rgb(235,247,109)	9.6	Id548	PHP	UnexpectedTypeException.php	9.6
+rgb(235,247,109)	7.6	Id549	PHP	FileException.php	7.6
+rgb(235,247,109)	7.6	Id550	PHP	UploadException.php	7.6
+rgb(235,247,109)	54.3	Id551	PHP	Request.php	54.3
+rgb(233,247,109)	48.0	Id552	PHP	Response.php	48.0
+rgb(233,247,109)	14.0	Id553		Session	14.0
+rgb(233,247,109)	14.0	Id554		Storage	14.0
+rgb(233,247,109)	32.3	Id555	PHP	NativeSessionStorage.php	32.3
+rgb(233,247,109)	14.0	Id556		Handler	14.0
+rgb(233,247,109)	28.0	Id557	PHP	PdoSessionHandler.php	28.0
+rgb(233,247,109)	22.1	Id558	PHP	MongoDbSessionHandler.php	22.1
+rgb(233,247,109)	18.0	Id559	PHP	MemcacheSessionHandler.php	18.0
+rgb(231,247,109)	18.0	Id560	PHP	MemcachedSessionHandler.php	18.0
+rgb(231,247,109)	15.4	Id561	PHP	NullSessionHandler.php	15.4
+rgb(231,247,109)	14.0	Id562	PHP	NativeFileSessionHandler.php	14.0
+rgb(231,247,109)	8.7	Id563	PHP	NativeSessionHandler.php	8.7
+rgb(231,247,109)	27.2	Id564	PHP	MockArraySessionStorage.php	27.2
+rgb(231,247,109)	21.2	Id565	PHP	MetadataBag.php	21.2
+rgb(231,247,109)	21.1	Id566	PHP	MockFileSessionStorage.php	21.1
+rgb(231,247,109)	14.0	Id567		Proxy	14.0
+rgb(228,247,109)	19.1	Id568	PHP	AbstractProxy.php	19.1
+rgb(228,247,109)	17.7	Id569	PHP	SessionHandlerProxy.php	17.7
+rgb(228,247,109)	11.2	Id570	PHP	NativeProxy.php	11.2
+rgb(228,247,109)	13.0	Id571	PHP	SessionStorageInterface.php	13.0
+rgb(228,247,109)	30.7	Id572	PHP	Session.php	30.7
+rgb(228,247,109)	14.0	Id573		Flash	14.0
+rgb(228,247,109)	23.5	Id574	PHP	FlashBag.php	23.5
+rgb(228,247,109)	23.2	Id575	PHP	AutoExpireFlashBag.php	23.2
+rgb(228,247,109)	11.8	Id576	PHP	FlashBagInterface.php	11.8
+rgb(226,247,109)	14.0	Id577		Attribute	14.0
+rgb(226,247,109)	22.4	Id578	PHP	AttributeBag.php	22.4
+rgb(226,247,109)	22.4	Id579	PHP	NamespacedAttributeBag.php	22.4
+rgb(226,247,109)	10.8	Id580	PHP	AttributeBagInterface.php	10.8
+rgb(226,247,109)	14.5	Id581	PHP	SessionInterface.php	14.5
+rgb(226,247,109)	9.6	Id582	PHP	SessionBagInterface.php	9.6
+rgb(226,247,109)	30.0	Id583	PHP	HeaderBag.php	30.0
+rgb(226,247,109)	29.5	Id584	PHP	ResponseHeaderBag.php	29.5
+rgb(224,247,109)	29.4	Id585	PHP	BinaryFileResponse.php	29.4
+rgb(224,247,109)	26.4	Id586	PHP	ParameterBag.php	26.4
+rgb(224,247,109)	24.5	Id587	PHP	AcceptHeaderItem.php	24.5
+rgb(224,247,109)	24.5	Id588	PHP	Cookie.php	24.5
+rgb(224,247,109)	22.5	Id589	PHP	FileBag.php	22.5
+rgb(224,247,109)	21.9	Id590	PHP	AcceptHeader.php	21.9
+rgb(224,247,109)	21.1	Id591	PHP	RequestMatcher.php	21.1
+rgb(224,247,109)	19.4	Id592	PHP	IpUtils.php	19.4
+rgb(222,247,109)	19.4	Id593	PHP	StreamedResponse.php	19.4
+rgb(222,247,109)	19.0	Id594	PHP	JsonResponse.php	19.0
+rgb(222,247,109)	18.5	Id595	PHP	RedirectResponse.php	18.5
+rgb(222,247,109)	17.1	Id596	PHP	ServerBag.php	17.1
+rgb(222,247,109)	13.5	Id597	PHP	ApacheRequest.php	13.5
+rgb(222,247,109)	14.0	Id598		Resources	14.0
+rgb(222,247,109)	14.0	Id599		stubs	14.0
+rgb(222,247,109)	10.0	Id600	PHP	SessionHandlerInterface.php	10.0
+rgb(222,247,109)	8.2	Id601	PHP	RequestMatcherInterface.php	8.2
+rgb(219,247,109)	14.0	Id602		HttpKernel	14.0
+rgb(219,247,109)	14.0	Id603		Tests	14.0
+rgb(219,247,109)	14.0	Id604		HttpCache	14.0
+rgb(219,247,109)	60.5	Id605	PHP	HttpCacheTest.php	60.5
+rgb(219,247,109)	32.9	Id606	PHP	StoreTest.php	32.9
+rgb(219,247,109)	31.1	Id607	PHP	EsiTest.php	31.1
+rgb(219,247,109)	28.4	Id608	PHP	HttpCacheTestCase.php	28.4
+rgb(219,247,109)	21.5	Id609	PHP	TestHttpKernel.php	21.5
+rgb(217,247,109)	20.7	Id610	PHP	TestMultipleHttpKernel.php	20.7
+rgb(217,247,109)	52.6	Id611	PHP	KernelTest.php	52.6
+rgb(217,247,109)	34.3	Id612	PHP	HttpKernelTest.php	34.3
+rgb(217,247,109)	14.0	Id613		Profiler	14.0
+rgb(217,247,109)	31.9	Id614	PHP	AbstractProfilerStorageTest.php	31.9
+rgb(217,247,109)	14.0	Id615		Mock	14.0
+rgb(217,247,109)	27.0	Id616	PHP	MemcacheMock.php	27.0
+rgb(217,247,109)	26.8	Id617	PHP	RedisMock.php	26.8
+rgb(215,247,109)	25.5	Id618	PHP	MemcachedMock.php	25.5
+rgb(215,247,109)	24.8	Id619	PHP	MongoDbProfilerStorageTest.php	24.8
+rgb(215,247,109)	22.0	Id620	PHP	FileProfilerStorageTest.php	22.0
+rgb(215,247,109)	17.1	Id621	PHP	ProfilerTest.php	17.1
+rgb(215,247,109)	15.8	Id622	PHP	SqliteProfilerStorageTest.php	15.8
+rgb(215,247,109)	15.4	Id623	PHP	RedisProfilerStorageTest.php	15.4
+rgb(215,247,109)	15.4	Id624	PHP	MemcachedProfilerStorageTest.php	15.4
+rgb(215,247,109)	15.4	Id625	PHP	MemcacheProfilerStorageTest.php	15.4
+rgb(215,247,109)	14.0	Id626		Exception	14.0
+rgb(212,247,109)	31.1	Id627	PHP	FlattenExceptionTest.php	31.1
+rgb(212,247,109)	14.0	Id628		Debug	14.0
+rgb(212,247,109)	29.9	Id629	PHP	TraceableEventDispatcherTest.php	29.9
+rgb(212,247,109)	20.2	Id630	PHP	ErrorHandlerTest.php	20.2
+rgb(212,247,109)	18.7	Id631	PHP	ExceptionHandlerTest.php	18.7
+rgb(212,247,109)	14.0	Id632		DataCollector	14.0
+rgb(212,247,109)	29.4	Id633	PHP	RequestDataCollectorTest.php	29.4
+rgb(212,247,109)	21.4	Id634	PHP	ConfigDataCollectorTest.php	21.4
+rgb(210,247,109)	20.4	Id635	PHP	LoggerDataCollectorTest.php	20.4
+rgb(210,247,109)	15.6	Id636	PHP	ExceptionDataCollectorTest.php	15.6
+rgb(210,247,109)	14.5	Id637	PHP	TimeDataCollectorTest.php	14.5
+rgb(210,247,109)	13.5	Id638	PHP	MemoryDataCollectorTest.php	13.5
+rgb(210,247,109)	14.0	Id639		Controller	14.0
+rgb(210,247,109)	28.6	Id640	PHP	ControllerResolverTest.php	28.6
+rgb(210,247,109)	27.8	Id641	PHP	ClientTest.php	27.8
+rgb(210,247,109)	14.0	Id642		DependencyInjection	14.0
+rgb(210,247,109)	25.9	Id643	PHP	ContainerAwareHttpKernelTest.php	25.9
+rgb(208,247,109)	18.8	Id644	PHP	MergeExtensionConfigurationPassTest.php	18.8
+rgb(208,247,109)	14.0	Id645		Fragment	14.0
+rgb(208,247,109)	25.2	Id646	PHP	InlineFragmentRendererTest.php	25.2
+rgb(208,247,109)	22.6	Id647	PHP	FragmentHandlerTest.php	22.6
+rgb(208,247,109)	18.0	Id648	PHP	EsiFragmentRendererTest.php	18.0
+rgb(208,247,109)	17.8	Id649	PHP	RoutableFragmentRendererTest.php	17.8
+rgb(208,247,109)	17.7	Id650	PHP	HIncludeFragmentRendererTest.php	17.7
+rgb(208,247,109)	14.0	Id651		EventListener	14.0
+rgb(206,247,109)	24.5	Id652	PHP	ExceptionListenerTest.php	24.5
+rgb(206,247,109)	24.4	Id653	PHP	RouterListenerTest.php	24.4
+rgb(206,247,109)	21.4	Id654	PHP	ResponseListenerTest.php	21.4
+rgb(206,247,109)	20.7	Id655	PHP	FragmentListenerTest.php	20.7
+rgb(206,247,109)	19.4	Id656	PHP	EsiListenerTest.php	19.4
+rgb(206,247,109)	19.3	Id657	PHP	LocaleListenerTest.php	19.3
+rgb(206,247,109)	23.5	Id658	PHP	Logger.php	23.5
+rgb(206,247,109)	14.0	Id659		CacheWarmer	14.0
+rgb(203,247,109)	23.0	Id660	PHP	CacheWarmerAggregateTest.php	23.0
+rgb(203,247,109)	18.0	Id661	PHP	CacheWarmerTest.php	18.0
+rgb(203,247,109)	14.0	Id662		CacheClearer	14.0
+rgb(203,247,109)	17.3	Id663	PHP	ChainCacheClearerTest.php	17.3
+rgb(203,247,109)	14.0	Id664		Fixtures	14.0
+rgb(203,247,109)	16.6	Id665	PHP	KernelForTest.php	16.6
+rgb(203,247,109)	12.1	Id666	PHP	TestClient.php	12.1
+rgb(203,247,109)	11.8	Id667	PHP	TestEventDispatcher.php	11.8
+rgb(203,247,109)	11.5	Id668	PHP	KernelForOverrideName.php	11.5
+rgb(201,247,109)	14.0	Id669		ExtensionPresentBundle	14.0
+rgb(201,247,109)	14.0	Id670		DependencyInjection	14.0
+rgb(201,247,109)	10.0	Id671	PHP	ExtensionPresentExtension.php	10.0
+rgb(201,247,109)	14.0	Id672		Command	14.0
+rgb(201,247,109)	10.0	Id673	PHP	FooCommand.php	10.0
+rgb(201,247,109)	8.2	Id674	PHP	ExtensionPresentBundle.php	8.2
+rgb(201,247,109)	14.0	Id675		ExtensionLoadedBundle	14.0
+rgb(201,247,109)	14.0	Id676		DependencyInjection	14.0
+rgb(199,247,109)	10.0	Id677	PHP	ExtensionLoadedExtension.php	10.0
+rgb(199,247,109)	8.2	Id678	PHP	ExtensionLoadedBundle.php	8.2
+rgb(199,247,109)	14.0	Id679		ExtensionAbsentBundle	14.0
+rgb(199,247,109)	8.2	Id680	PHP	ExtensionAbsentBundle.php	8.2
+rgb(199,247,109)	8.2	Id681	PHP	FooBarBundle.php	8.2
+rgb(199,247,109)	14.0	Id682		Bundle	14.0
+rgb(199,247,109)	15.2	Id683	PHP	BundleTest.php	15.2
+rgb(199,247,109)	14.7	Id684	PHP	TestHttpKernel.php	14.7
+rgb(196,247,109)	13.5	Id685	PHP	UriSignerTest.php	13.5
+rgb(196,247,109)	45.5	Id686	PHP	Kernel.php	45.5
+rgb(196,247,109)	14.0	Id687		HttpCache	14.0
+rgb(196,247,109)	41.1	Id688	PHP	HttpCache.php	41.1
+rgb(196,247,109)	34.8	Id689	PHP	Store.php	34.8
+rgb(196,247,109)	27.0	Id690	PHP	Esi.php	27.0
+rgb(196,247,109)	16.2	Id691	PHP	EsiResponseCacheStrategy.php	16.2
+rgb(196,247,109)	11.8	Id692	PHP	StoreInterface.php	11.8
+rgb(196,247,109)	9.2	Id693	PHP	EsiResponseCacheStrategyInterface.php	9.2
+rgb(194,247,109)	14.0	Id694		Debug	14.0
+rgb(194,247,109)	38.5	Id695	PHP	TraceableEventDispatcher.php	38.5
+rgb(194,247,109)	33.0	Id696	PHP	ExceptionHandler.php	33.0
+rgb(194,247,109)	23.1	Id697	PHP	ErrorHandler.php	23.1
+rgb(194,247,109)	14.0	Id698		DataCollector	14.0
+rgb(194,247,109)	34.8	Id699	PHP	RequestDataCollector.php	34.8
+rgb(194,247,109)	25.0	Id700	PHP	ConfigDataCollector.php	25.0
+rgb(194,247,109)	22.5	Id701	PHP	LoggerDataCollector.php	22.5
+rgb(192,247,109)	19.7	Id702	PHP	RouterDataCollector.php	19.7
+rgb(192,247,109)	19.4	Id703	PHP	TimeDataCollector.php	19.4
+rgb(192,247,109)	18.2	Id704	PHP	ExceptionDataCollector.php	18.2
+rgb(192,247,109)	17.5	Id705	PHP	DataCollector.php	17.5
+rgb(192,247,109)	16.6	Id706	PHP	EventDataCollector.php	16.6
+rgb(192,247,109)	14.9	Id707	PHP	MemoryDataCollector.php	14.9
+rgb(192,247,109)	9.6	Id708	PHP	DataCollectorInterface.php	9.6
+rgb(192,247,109)	14.0	Id709		Profiler	14.0
+rgb(189,247,109)	34.6	Id710	PHP	RedisProfilerStorage.php	34.6
+rgb(189,247,109)	31.4	Id711	PHP	FileProfilerStorage.php	31.4
+rgb(189,247,109)	31.2	Id712	PHP	BaseMemcacheProfilerStorage.php	31.2
+rgb(189,247,109)	30.3	Id713	PHP	PdoProfilerStorage.php	30.3
+rgb(189,247,109)	28.5	Id714	PHP	MongoDbProfilerStorage.php	28.5
+rgb(189,247,109)	27.2	Id715	PHP	Profiler.php	27.2
+rgb(189,247,109)	27.1	Id716	PHP	Profile.php	27.1
+rgb(189,247,109)	25.2	Id717	PHP	SqliteProfilerStorage.php	25.2
+rgb(189,247,109)	19.0	Id718	PHP	MemcacheProfilerStorage.php	19.0
+rgb(187,247,109)	18.5	Id719	PHP	MysqlProfilerStorage.php	18.5
+rgb(187,247,109)	18.5	Id720	PHP	MemcachedProfilerStorage.php	18.5
+rgb(187,247,109)	9.6	Id721	PHP	ProfilerStorageInterface.php	9.6
+rgb(187,247,109)	14.0	Id722		Exception	14.0
+rgb(187,247,109)	34.3	Id723	PHP	FlattenException.php	34.3
+rgb(187,247,109)	13.5	Id724	PHP	HttpException.php	13.5
+rgb(187,247,109)	11.2	Id725	PHP	TooManyRequestsHttpException.php	11.2
+rgb(187,247,109)	11.2	Id726	PHP	ServiceUnavailableHttpException.php	11.2
+rgb(185,247,109)	10.0	Id727	PHP	UnauthorizedHttpException.php	10.0
+rgb(185,247,109)	10.0	Id728	PHP	MethodNotAllowedHttpException.php	10.0
+rgb(185,247,109)	9.6	Id729	PHP	UnsupportedMediaTypeHttpException.php	9.6
+rgb(185,247,109)	9.6	Id730	PHP	PreconditionFailedHttpException.php	9.6
+rgb(185,247,109)	9.6	Id731	PHP	LengthRequiredHttpException.php	9.6
+rgb(185,247,109)	9.6	Id732	PHP	GoneHttpException.php	9.6
+rgb(185,247,109)	9.6	Id733	PHP	NotFoundHttpException.php	9.6
+rgb(185,247,109)	9.6	Id734	PHP	BadRequestHttpException.php	9.6
+rgb(185,247,109)	9.6	Id735	PHP	ConflictHttpException.php	9.6
+rgb(183,247,109)	9.6	Id736	PHP	NotAcceptableHttpException.php	9.6
+rgb(183,247,109)	9.6	Id737	PHP	AccessDeniedHttpException.php	9.6
+rgb(183,247,109)	9.6	Id738	PHP	PreconditionRequiredHttpException.php	9.6
+rgb(183,247,109)	8.7	Id739	PHP	HttpExceptionInterface.php	8.7
+rgb(183,247,109)	7.6	Id740	PHP	FatalErrorException.php	7.6
+rgb(183,247,109)	27.9	Id741	PHP	HttpKernel.php	27.9
+rgb(183,247,109)	14.0	Id742		EventListener	14.0
+rgb(183,247,109)	25.3	Id743	PHP	ProfilerListener.php	25.3
+rgb(180,247,109)	22.4	Id744	PHP	RouterListener.php	22.4
+rgb(180,247,109)	21.5	Id745	PHP	ExceptionListener.php	21.5
+rgb(180,247,109)	20.3	Id746	PHP	FragmentListener.php	20.3
+rgb(180,247,109)	18.7	Id747	PHP	LocaleListener.php	18.7
+rgb(180,247,109)	15.8	Id748	PHP	ResponseListener.php	15.8
+rgb(180,247,109)	15.4	Id749	PHP	EsiListener.php	15.4
+rgb(180,247,109)	14.7	Id750	PHP	StreamedResponseListener.php	14.7
+rgb(180,247,109)	14.3	Id751	PHP	DeprecationLoggerListener.php	14.3
+rgb(178,247,109)	25.1	Id752	PHP	Client.php	25.1
+rgb(178,247,109)	14.0	Id753		Bundle	14.0
+rgb(178,247,109)	24.6	Id754	PHP	Bundle.php	24.6
+rgb(178,247,109)	12.1	Id755	PHP	BundleInterface.php	12.1
+rgb(178,247,109)	14.0	Id756		Controller	14.0
+rgb(178,247,109)	23.4	Id757	PHP	ControllerResolver.php	23.4
+rgb(178,247,109)	15.2	Id758	PHP	TraceableControllerResolver.php	15.2
+rgb(178,247,109)	11.5	Id759	PHP	ControllerReference.php	11.5
+rgb(178,247,109)	9.2	Id760	PHP	ControllerResolverInterface.php	9.2
+rgb(176,247,109)	14.0	Id761		Fragment	14.0
+rgb(176,247,109)	23.4	Id762	PHP	FragmentHandler.php	23.4
+rgb(176,247,109)	21.5	Id763	PHP	HIncludeFragmentRenderer.php	21.5
+rgb(176,247,109)	20.3	Id764	PHP	InlineFragmentRenderer.php	20.3
+rgb(176,247,109)	16.6	Id765	PHP	EsiFragmentRenderer.php	16.6
+rgb(176,247,109)	13.8	Id766	PHP	RoutableFragmentRenderer.php	13.8
+rgb(176,247,109)	9.6	Id767	PHP	FragmentRendererInterface.php	9.6
+rgb(176,247,109)	14.0	Id768		Event	14.0
+rgb(173,247,109)	19.1	Id769	PHP	FilterControllerEvent.php	19.1
+rgb(173,247,109)	15.6	Id770	PHP	PostResponseEvent.php	15.6
+rgb(173,247,109)	15.4	Id771	PHP	KernelEvent.php	15.4
+rgb(173,247,109)	13.8	Id772	PHP	FilterResponseEvent.php	13.8
+rgb(173,247,109)	13.5	Id773	PHP	GetResponseForExceptionEvent.php	13.5
+rgb(173,247,109)	13.5	Id774	PHP	GetResponseForControllerResultEvent.php	13.5
+rgb(173,247,109)	13.3	Id775	PHP	GetResponseEvent.php	13.3
+rgb(173,247,109)	14.0	Id776		CacheWarmer	14.0
+rgb(171,247,109)	17.5	Id777	PHP	CacheWarmerAggregate.php	17.5
+rgb(171,247,109)	11.5	Id778	PHP	CacheWarmer.php	11.5
+rgb(171,247,109)	8.2	Id779	PHP	WarmableInterface.php	8.2
+rgb(171,247,109)	8.2	Id780	PHP	CacheWarmerInterface.php	8.2
+rgb(171,247,109)	14.0	Id781		DependencyInjection	14.0
+rgb(171,247,109)	16.0	Id782	PHP	ContainerAwareHttpKernel.php	16.0
+rgb(171,247,109)	14.3	Id783	PHP	AddClassesToCachePass.php	14.3
+rgb(171,247,109)	13.5	Id784	PHP	MergeExtensionConfigurationPass.php	13.5
+rgb(171,247,109)	11.8	Id785	PHP	Extension.php	11.8
+rgb(169,247,109)	10.4	Id786	PHP	ConfigurableExtension.php	10.4
+rgb(169,247,109)	14.7	Id787	PHP	KernelInterface.php	14.7
+rgb(169,247,109)	14.5	Id788	PHP	UriSigner.php	14.5
+rgb(169,247,109)	14.0	Id789		Config	14.0
+rgb(169,247,109)	14.0	Id790	PHP	FileLocator.php	14.0
+rgb(169,247,109)	14.0	Id791		CacheClearer	14.0
+rgb(169,247,109)	13.3	Id792	PHP	ChainCacheClearer.php	13.3
+rgb(169,247,109)	8.2	Id793	PHP	CacheClearerInterface.php	8.2
+rgb(167,247,109)	14.0	Id794		Log	14.0
+rgb(167,247,109)	12.7	Id795	PHP	NullLogger.php	12.7
+rgb(167,247,109)	10.0	Id796	PHP	LoggerInterface.php	10.0
+rgb(167,247,109)	8.7	Id797	PHP	DebugLoggerInterface.php	8.7
+rgb(167,247,109)	10.4	Id798	PHP	KernelEvents.php	10.4
+rgb(167,247,109)	10.0	Id799	PHP	HttpKernelInterface.php	10.0
+rgb(167,247,109)	9.2	Id800	PHP	TerminableInterface.php	9.2
+rgb(167,247,109)	14.0	Id801		DependencyInjection	14.0
+rgb(164,247,109)	14.0	Id802		Dumper	14.0
+rgb(164,247,109)	54.2	Id803	PHP	PhpDumper.php	54.2
+rgb(164,247,109)	32.8	Id804	PHP	XmlDumper.php	32.8
+rgb(164,247,109)	30.5	Id805	PHP	YamlDumper.php	30.5
+rgb(164,247,109)	30.5	Id806	PHP	GraphvizDumper.php	30.5
+rgb(164,247,109)	10.4	Id807	PHP	Dumper.php	10.4
+rgb(164,247,109)	8.2	Id808	PHP	DumperInterface.php	8.2
+rgb(164,247,109)	44.8	Id809	PHP	ContainerBuilder.php	44.8
+rgb(164,247,109)	14.0	Id810		Tests	14.0
+rgb(162,247,109)	44.5	Id811	PHP	ContainerBuilderTest.php	44.5
+rgb(162,247,109)	42.4	Id812	PHP	ContainerTest.php	42.4
+rgb(162,247,109)	14.0	Id813		Loader	14.0
+rgb(162,247,109)	37.3	Id814	PHP	XmlFileLoaderTest.php	37.3
+rgb(162,247,109)	31.4	Id815	PHP	YamlFileLoaderTest.php	31.4
+rgb(162,247,109)	19.7	Id816	PHP	IniFileLoaderTest.php	19.7
+rgb(162,247,109)	14.9	Id817	PHP	PhpFileLoaderTest.php	14.9
+rgb(162,247,109)	14.9	Id818	PHP	ClosureLoaderTest.php	14.9
+rgb(160,247,109)	32.2	Id819	PHP	DefinitionTest.php	32.2
+rgb(160,247,109)	14.0	Id820		ParameterBag	14.0
+rgb(160,247,109)	31.3	Id821	PHP	ParameterBagTest.php	31.3
+rgb(160,247,109)	15.6	Id822	PHP	FrozenParameterBagTest.php	15.6
+rgb(160,247,109)	14.0	Id823		Fixtures	14.0
+rgb(160,247,109)	14.0	Id824		php	14.0
+rgb(160,247,109)	26.5	Id825	PHP	services9_compiled.php	26.5
+rgb(160,247,109)	24.6	Id826	PHP	services9.php	24.6
+rgb(160,247,109)	20.3	Id827	PHP	services10.php	20.3
+rgb(157,247,109)	16.6	Id828	PHP	services8.php	16.6
+rgb(157,247,109)	14.7	Id829	PHP	services11.php	14.7
+rgb(157,247,109)	12.4	Id830	PHP	services1.php	12.4
+rgb(157,247,109)	12.4	Id831	PHP	services1-1.php	12.4
+rgb(157,247,109)	5.3	Id832	PHP	simple.php	5.3
+rgb(157,247,109)	14.0	Id833		xml	14.0
+rgb(157,247,109)	22.1	Id834	XML	services9.xml	22.1
+rgb(157,247,109)	19.0	Id835	XML	services6.xml	19.0
+rgb(155,247,109)	15.6	Id836	XML	services2.xml	15.6
+rgb(155,247,109)	13.3	Id837	XML	services5.xml	13.3
+rgb(155,247,109)	13.3	Id838	XML	services8.xml	13.3
+rgb(155,247,109)	14.0	Id839		extensions	14.0
+rgb(155,247,109)	11.5	Id840	XML	services2.xml	11.5
+rgb(155,247,109)	11.5	Id841	XML	services1.xml	11.5
+rgb(155,247,109)	11.5	Id842	XML	services3.xml	11.5
+rgb(155,247,109)	9.2	Id843	XML	services7.xml	9.2
+rgb(153,247,109)	9.2	Id844	XML	services5.xml	9.2
+rgb(153,247,109)	9.2	Id845	XML	services6.xml	9.2
+rgb(153,247,109)	7.6	Id846	XML	services4.xml	7.6
+rgb(153,247,109)	14.0	Id847		extension1	14.0
+rgb(153,247,109)	11.2	Id848	XML	services.xml	11.2
+rgb(153,247,109)	14.0	Id849		extension2	14.0
+rgb(153,247,109)	11.2	Id850	XML	services.xml	11.2
+rgb(153,247,109)	10.8	Id851	XML	services3.xml	10.8
+rgb(153,247,109)	10.8	Id852	XML	services4.xml	10.8
+rgb(150,247,109)	9.2	Id853	XML	services7.xml	9.2
+rgb(150,247,109)	9.2	Id854	XML	services13.xml	9.2
+rgb(150,247,109)	9.2	Id855	XML	services4_bad_import.xml	9.2
+rgb(150,247,109)	5.3	Id856	XML	nonvalid.xml	5.3
+rgb(150,247,109)	5.3	Id857	XML	services1.xml	5.3
+rgb(150,247,109)	14.0	Id858		containers	14.0
+rgb(150,247,109)	21.9	Id859	PHP	container9.php	21.9
+rgb(150,247,109)	14.7	Id860	PHP	interfaces2.php	14.7
+rgb(148,247,109)	13.0	Id861	PHP	interfaces1.php	13.0
+rgb(148,247,109)	11.2	Id862	PHP	container13.php	11.2
+rgb(148,247,109)	10.0	Id863	PHP	container10.php	10.0
+rgb(148,247,109)	10.0	Id864	PHP	container12.php	10.0
+rgb(148,247,109)	10.0	Id865	PHP	container8.php	10.0
+rgb(148,247,109)	9.6	Id866	PHP	container11.php	9.6
+rgb(148,247,109)	8.7	Id867	PHP	container14.php	8.7
+rgb(148,247,109)	14.0	Id868		yaml	14.0
+rgb(146,247,109)	19.7	Id869	YAML	services9.yml	19.7
+rgb(146,247,109)	14.7	Id870	YAML	services6.yml	14.7
+rgb(146,247,109)	10.4	Id871	YAML	services2.yml	10.4
+rgb(146,247,109)	8.7	Id872	YAML	services10.yml	8.7
+rgb(146,247,109)	8.2	Id873	YAML	services4.yml	8.2
+rgb(146,247,109)	7.6	Id874	YAML	services3.yml	7.6
+rgb(146,247,109)	7.6	Id875	YAML	services8.yml	7.6
+rgb(146,247,109)	7.6	Id876	YAML	badtag3.yml	7.6
+rgb(146,247,109)	7.6	Id877	YAML	badtag2.yml	7.6
+rgb(144,247,109)	7.0	Id878	YAML	badtag1.yml	7.0
+rgb(144,247,109)	5.3	Id879	YAML	nonvalid1.yml	5.3
+rgb(144,247,109)	5.3	Id880	YAML	services4_bad_import.yml	5.3
+rgb(144,247,109)	5.3	Id881	YAML	services13.yml	5.3
+rgb(144,247,109)	5.3	Id882	YAML	services7.yml	5.3
+rgb(144,247,109)	4.0	Id883	YAML	services11.yml	4.0
+rgb(144,247,109)	4.0	Id884	YAML	nonvalid2.yml	4.0
+rgb(144,247,109)	14.0	Id885		services1.yml	14.0
+rgb(141,247,109)	14.0	Id886		includes	14.0
+rgb(141,247,109)	18.2	Id887	PHP	classes.php	18.2
+rgb(141,247,109)	17.3	Id888	PHP	createphar.php	17.3
+rgb(141,247,109)	16.0	Id889	PHP	ProjectExtension.php	16.0
+rgb(141,247,109)	15.2	Id890	PHP	foo.php	15.2
+rgb(141,247,109)	12.1	Id891	PHP	ProjectWithXsdExtension.php	12.1
+rgb(141,247,109)	14.0	Id892		schema	14.0
+rgb(141,247,109)	10.0	Id893	XSD	project-1.0.xsd	10.0
+rgb(139,247,109)	14.0	Id894		Compiler	14.0
+rgb(139,247,109)	26.2	Id895	PHP	ResolveDefinitionTemplatesPassTest.php	26.2
+rgb(139,247,109)	25.3	Id896	PHP	InlineServiceDefinitionsPassTest.php	25.3
+rgb(139,247,109)	22.6	Id897	PHP	AnalyzeServiceReferencesPassTest.php	22.6
+rgb(139,247,109)	22.5	Id898	PHP	IntegrationTest.php	22.5
+rgb(139,247,109)	21.6	Id899	PHP	RemoveUnusedDefinitionsPassTest.php	21.6
+rgb(139,247,109)	20.7	Id900	PHP	CheckReferenceValidityPassTest.php	20.7
+rgb(139,247,109)	20.4	Id901	PHP	ResolveInvalidReferencesPassTest.php	20.4
+rgb(139,247,109)	19.3	Id902	PHP	CheckCircularReferencesPassTest.php	19.3
+rgb(137,247,109)	18.0	Id903	PHP	CheckExceptionOnInvalidReferenceBehaviorPassTest.php	18.0
+rgb(137,247,109)	17.5	Id904	PHP	CheckDefinitionValidityPassTest.php	17.5
+rgb(137,247,109)	17.1	Id905	PHP	ResolveReferencesToAliasesPassTest.php	17.1
+rgb(137,247,109)	17.0	Id906	PHP	ReplaceAliasByActualDefinitionPassTest.php	17.0
+rgb(137,247,109)	14.0	Id907		Dumper	14.0
+rgb(137,247,109)	25.9	Id908	PHP	PhpDumperTest.php	25.9
+rgb(137,247,109)	23.2	Id909	PHP	XmlDumperTest.php	23.2
+rgb(137,247,109)	18.5	Id910	PHP	YamlDumperTest.php	18.5
+rgb(134,247,109)	18.3	Id911	PHP	GraphvizDumperTest.php	18.3
+rgb(134,247,109)	22.0	Id912	PHP	DefinitionDecoratorTest.php	22.0
+rgb(134,247,109)	21.9	Id913	PHP	CrossCheckTest.php	21.9
+rgb(134,247,109)	14.0	Id914		Extension	14.0
+rgb(134,247,109)	19.4	Id915	PHP	ExtensionTest.php	19.4
+rgb(134,247,109)	12.1	Id916	PHP	ReferenceTest.php	12.1
+rgb(134,247,109)	10.4	Id917	PHP	ParameterTest.php	10.4
+rgb(134,247,109)	35.8	Id918	PHP	Definition.php	35.8
+rgb(134,247,109)	14.0	Id919		Loader	14.0
+rgb(132,247,109)	35.7	Id920	PHP	XmlFileLoader.php	35.7
+rgb(132,247,109)	33.1	Id921	PHP	YamlFileLoader.php	33.1
+rgb(132,247,109)	14.0	Id922		schema	14.0
+rgb(132,247,109)	14.0	Id923		dic	14.0
+rgb(132,247,109)	14.0	Id924		services	14.0
+rgb(132,247,109)	30.7	Id925	XSD	services-1.0.xsd	30.7
+rgb(132,247,109)	14.5	Id926	PHP	IniFileLoader.php	14.5
+rgb(132,247,109)	13.3	Id927	PHP	ClosureLoader.php	13.3
+rgb(130,247,109)	13.0	Id928	PHP	PhpFileLoader.php	13.0
+rgb(130,247,109)	11.5	Id929	PHP	FileLoader.php	11.5
+rgb(130,247,109)	33.2	Id930	PHP	Container.php	33.2
+rgb(130,247,109)	14.0	Id931		ParameterBag	14.0
+rgb(130,247,109)	29.0	Id932	PHP	ParameterBag.php	29.0
+rgb(130,247,109)	14.0	Id933	PHP	FrozenParameterBag.php	14.0
+rgb(130,247,109)	12.1	Id934	PHP	ParameterBagInterface.php	12.1
+rgb(130,247,109)	14.0	Id935		Compiler	14.0
+rgb(128,247,109)	26.6	Id936	PHP	PassConfig.php	26.6
+rgb(128,247,109)	24.9	Id937	PHP	CheckReferenceValidityPass.php	24.9
+rgb(128,247,109)	24.3	Id938	PHP	ResolveDefinitionTemplatesPass.php	24.3
+rgb(128,247,109)	23.2	Id939	PHP	AnalyzeServiceReferencesPass.php	23.2
+rgb(128,247,109)	23.2	Id940	PHP	InlineServiceDefinitionsPass.php	23.2
+rgb(128,247,109)	21.5	Id941	PHP	ReplaceAliasByActualDefinitionPass.php	21.5
+rgb(128,247,109)	20.8	Id942	PHP	ResolveInvalidReferencesPass.php	20.8
+rgb(128,247,109)	19.4	Id943	PHP	RemoveUnusedDefinitionsPass.php	19.4
+rgb(128,247,109)	19.1	Id944	PHP	ServiceReferenceGraphNode.php	19.1
+rgb(125,247,109)	18.8	Id945	PHP	Compiler.php	18.8
+rgb(125,247,109)	18.8	Id946	PHP	ResolveReferencesToAliasesPass.php	18.8
+rgb(125,247,109)	18.3	Id947	PHP	ServiceReferenceGraph.php	18.3
+rgb(125,247,109)	17.7	Id948	PHP	CheckExceptionOnInvalidReferenceBehaviorPass.php	17.7
+rgb(125,247,109)	17.7	Id949	PHP	CheckDefinitionValidityPass.php	17.7
+rgb(125,247,109)	17.0	Id950	PHP	RepeatedPass.php	17.0
+rgb(125,247,109)	16.2	Id951	PHP	ResolveParameterPlaceHoldersPass.php	16.2
+rgb(125,247,109)	16.0	Id952	PHP	MergeExtensionConfigurationPass.php	16.0
+rgb(123,247,109)	15.6	Id953	PHP	CheckCircularReferencesPass.php	15.6
+rgb(123,247,109)	14.7	Id954	PHP	ServiceReferenceGraphEdge.php	14.7
+rgb(123,247,109)	14.5	Id955	PHP	LoggingFormatter.php	14.5
+rgb(123,247,109)	12.7	Id956	PHP	RemovePrivateAliasesPass.php	12.7
+rgb(123,247,109)	12.4	Id957	PHP	RemoveAbstractDefinitionsPass.php	12.4
+rgb(123,247,109)	8.7	Id958	PHP	CompilerPassInterface.php	8.7
+rgb(123,247,109)	8.2	Id959	PHP	RepeatablePassInterface.php	8.2
+rgb(123,247,109)	22.7	Id960	PHP	DefinitionDecorator.php	22.7
+rgb(121,247,109)	20.3	Id961	PHP	SimpleXMLElement.php	20.3
+rgb(121,247,109)	14.0	Id962		Extension	14.0
+rgb(121,247,109)	20.0	Id963	PHP	Extension.php	20.0
+rgb(121,247,109)	10.0	Id964	PHP	ExtensionInterface.php	10.0
+rgb(121,247,109)	9.2	Id965	PHP	ConfigurationExtensionInterface.php	9.2
+rgb(121,247,109)	8.7	Id966	PHP	PrependExtensionInterface.php	8.7
+rgb(121,247,109)	14.0	Id967		Exception	14.0
+rgb(121,247,109)	18.7	Id968	PHP	ParameterNotFoundException.php	18.7
+rgb(121,247,109)	18.0	Id969	PHP	ScopeCrossingInjectionException.php	18.0
+rgb(118,247,109)	17.8	Id970	PHP	ScopeWideningInjectionException.php	17.8
+rgb(118,247,109)	14.7	Id971	PHP	ServiceNotFoundException.php	14.7
+rgb(118,247,109)	13.5	Id972	PHP	InactiveScopeException.php	13.5
+rgb(118,247,109)	13.5	Id973	PHP	ServiceCircularReferenceException.php	13.5
+rgb(118,247,109)	11.8	Id974	PHP	ParameterCircularReferenceException.php	11.8
+rgb(118,247,109)	7.6	Id975	PHP	InvalidArgumentException.php	7.6
+rgb(118,247,109)	7.6	Id976	PHP	BadMethodCallException.php	7.6
+rgb(118,247,109)	7.6	Id977	PHP	LogicException.php	7.6
+rgb(116,247,109)	7.6	Id978	PHP	ExceptionInterface.php	7.6
+rgb(116,247,109)	7.6	Id979	PHP	OutOfBoundsException.php	7.6
+rgb(116,247,109)	7.6	Id980	PHP	RuntimeException.php	7.6
+rgb(116,247,109)	14.7	Id981	PHP	Reference.php	14.7
+rgb(116,247,109)	14.3	Id982	PHP	ContainerInterface.php	14.3
+rgb(116,247,109)	14.3	Id983	PHP	Alias.php	14.3
+rgb(116,247,109)	13.3	Id984	PHP	Scope.php	13.3
+rgb(116,247,109)	11.5	Id985	PHP	Variable.php	11.5
+rgb(114,247,109)	11.5	Id986	PHP	Parameter.php	11.5
+rgb(114,247,109)	10.0	Id987	PHP	ContainerAware.php	10.0
+rgb(114,247,109)	8.7	Id988	PHP	ScopeInterface.php	8.7
+rgb(114,247,109)	8.2	Id989	PHP	ContainerAwareInterface.php	8.2
+rgb(114,247,109)	8.2	Id990	PHP	TaggedContainerInterface.php	8.2
+rgb(114,247,109)	8.2	Id991	PHP	IntrospectableContainerInterface.php	8.2
+rgb(114,247,109)	14.0	Id992		Filesystem	14.0
+rgb(114,247,109)	14.0	Id993		Tests	14.0
+rgb(114,247,109)	53.0	Id994	PHP	FilesystemTest.php	53.0
+rgb(111,247,109)	36.1	Id995	PHP	Filesystem.php	36.1
+rgb(111,247,109)	14.0	Id996		Exception	14.0
+rgb(111,247,109)	7.6	Id997	PHP	IOException.php	7.6
+rgb(111,247,109)	7.6	Id998	PHP	ExceptionInterface.php	7.6
+rgb(111,247,109)	14.0	Id999		Console	14.0
+rgb(111,247,109)	52.8	Id1000	PHP	Application.php	52.8
+rgb(111,247,109)	14.0	Id1001		Tests	14.0
+rgb(111,247,109)	48.4	Id1002	PHP	ApplicationTest.php	48.4
+rgb(109,247,109)	14.0	Id1003		Input	14.0
+rgb(109,247,109)	39.1	Id1004	PHP	InputDefinitionTest.php	39.1
+rgb(109,247,109)	31.7	Id1005	PHP	ArgvInputTest.php	31.7
+rgb(109,247,109)	29.0	Id1006	PHP	InputOptionTest.php	29.0
+rgb(109,247,109)	24.2	Id1007	PHP	InputTest.php	24.2
+rgb(109,247,109)	23.0	Id1008	PHP	InputArgumentTest.php	23.0
+rgb(109,247,109)	21.5	Id1009	PHP	ArrayInputTest.php	21.5
+rgb(109,247,109)	19.6	Id1010	PHP	StringInputTest.php	19.6
+rgb(109,247,109)	14.0	Id1011		Command	14.0
+rgb(109,247,111)	35.6	Id1012	PHP	CommandTest.php	35.6
+rgb(109,247,111)	16.0	Id1013	PHP	HelpCommandTest.php	16.0
+rgb(109,247,111)	13.8	Id1014	PHP	ListCommandTest.php	13.8
+rgb(109,247,111)	14.0	Id1015		Formatter	14.0
+rgb(109,247,111)	32.3	Id1016	PHP	OutputFormatterTest.php	32.3
+rgb(109,247,111)	19.0	Id1017	PHP	OutputFormatterStyleTest.php	19.0
+rgb(109,247,111)	18.3	Id1018	PHP	OutputFormatterStyleStackTest.php	18.3
+rgb(109,247,111)	14.0	Id1019		Helper	14.0
+rgb(109,247,114)	26.8	Id1020	PHP	DialogHelperTest.php	26.8
+rgb(109,247,114)	21.8	Id1021	PHP	ProgressHelperTest.php	21.8
+rgb(109,247,114)	20.8	Id1022	PHP	FormatterHelperTest.php	20.8
+rgb(109,247,114)	14.0	Id1023		Output	14.0
+rgb(109,247,114)	22.5	Id1024	PHP	OutputTest.php	22.5
+rgb(109,247,114)	17.7	Id1025	PHP	StreamOutputTest.php	17.7
+rgb(109,247,114)	10.8	Id1026	PHP	NullOutputTest.php	10.8
+rgb(109,247,114)	10.8	Id1027	PHP	ConsoleOutputTest.php	10.8
+rgb(109,247,116)	14.0	Id1028		Tester	14.0
+rgb(109,247,116)	18.3	Id1029	PHP	ApplicationTesterTest.php	18.3
+rgb(109,247,116)	18.0	Id1030	PHP	CommandTesterTest.php	18.0
+rgb(109,247,116)	14.0	Id1031		Fixtures	14.0
+rgb(109,247,116)	14.9	Id1032	PHP	FooCommand.php	14.9
+rgb(109,247,116)	14.3	Id1033	PHP	TestCommand.php	14.3
+rgb(109,247,116)	13.8	Id1034	PHP	Foo3Command.php	13.8
+rgb(109,247,116)	13.8	Id1035	PHP	Foo1Command.php	13.8
+rgb(109,247,116)	12.7	Id1036	PHP	Foo2Command.php	12.7
+rgb(109,247,118)	9.6	Id1037	PHP	Foo4Command.php	9.6
+rgb(109,247,118)	14.0	Id1038		Input	14.0
+rgb(109,247,118)	37.8	Id1039	PHP	InputDefinition.php	37.8
+rgb(109,247,118)	30.5	Id1040	PHP	ArgvInput.php	30.5
+rgb(109,247,118)	25.5	Id1041	PHP	InputOption.php	25.5
+rgb(109,247,118)	23.8	Id1042	PHP	Input.php	23.8
+rgb(109,247,118)	23.6	Id1043	PHP	ArrayInput.php	23.6
+rgb(109,247,118)	20.3	Id1044	PHP	InputArgument.php	20.3
+rgb(109,247,121)	16.2	Id1045	PHP	StringInput.php	16.2
+rgb(109,247,121)	13.3	Id1046	PHP	InputInterface.php	13.3
+rgb(109,247,121)	14.0	Id1047		Command	14.0
+rgb(109,247,121)	37.5	Id1048	PHP	Command.php	37.5
+rgb(109,247,121)	19.1	Id1049	PHP	ListCommand.php	19.1
+rgb(109,247,121)	18.7	Id1050	PHP	HelpCommand.php	18.7
+rgb(109,247,121)	14.0	Id1051		Helper	14.0
+rgb(109,247,121)	35.2	Id1052	PHP	ProgressHelper.php	35.2
+rgb(109,247,123)	35.2	Id1053	PHP	DialogHelper.php	35.2
+rgb(109,247,123)	18.5	Id1054	PHP	FormatterHelper.php	18.5
+rgb(109,247,123)	17.8	Id1055	PHP	HelperSet.php	17.8
+rgb(109,247,123)	11.5	Id1056	PHP	Helper.php	11.5
+rgb(109,247,123)	9.2	Id1057	PHP	HelperInterface.php	9.2
+rgb(109,247,123)	28.0	Id1058	PHP	Shell.php	28.0
+rgb(109,247,123)	14.0	Id1059		Formatter	14.0
+rgb(109,247,123)	27.9	Id1060	PHP	OutputFormatterStyle.php	27.9
+rgb(109,247,123)	25.8	Id1061	PHP	OutputFormatter.php	25.8
+rgb(109,247,125)	19.4	Id1062	PHP	OutputFormatterStyleStack.php	19.4
+rgb(109,247,125)	10.4	Id1063	PHP	OutputFormatterStyleInterface.php	10.4
+rgb(109,247,125)	10.4	Id1064	PHP	OutputFormatterInterface.php	10.4
+rgb(109,247,125)	14.0	Id1065		Output	14.0
+rgb(109,247,125)	21.4	Id1066	PHP	Output.php	21.4
+rgb(109,247,125)	18.2	Id1067	PHP	ConsoleOutput.php	18.2
+rgb(109,247,125)	16.8	Id1068	PHP	StreamOutput.php	16.8
+rgb(109,247,125)	13.3	Id1069	PHP	OutputInterface.php	13.3
+rgb(109,247,128)	9.2	Id1070	PHP	NullOutput.php	9.2
+rgb(109,247,128)	9.2	Id1071	PHP	ConsoleOutputInterface.php	9.2
+rgb(109,247,128)	14.0	Id1072		Tester	14.0
+rgb(109,247,128)	18.3	Id1073	PHP	ApplicationTester.php	18.3
+rgb(109,247,128)	18.0	Id1074	PHP	CommandTester.php	18.0
+rgb(109,247,128)	14.0	Id1075		Process	14.0
+rgb(109,247,128)	50.2	Id1076	PHP	Process.php	50.2
+rgb(109,247,128)	14.0	Id1077		Tests	14.0
+rgb(109,247,130)	37.2	Id1078	PHP	AbstractProcessTest.php	37.2
+rgb(109,247,130)	22.0	Id1079	PHP	ProcessBuilderTest.php	22.0
+rgb(109,247,130)	21.6	Id1080	PHP	SimpleProcessTest.php	21.6
+rgb(109,247,130)	19.9	Id1081	PHP	ProcessTestHelper.php	19.9
+rgb(109,247,130)	19.0	Id1082	PHP	SigchildDisabledProcessTest.php	19.0
+rgb(109,247,130)	18.7	Id1083	PHP	ProcessFailedExceptionTest.php	18.7
+rgb(109,247,130)	16.2	Id1084	PHP	SigchildEnabledProcessTest.php	16.2
+rgb(109,247,130)	16.0	Id1085	PHP	PhpExecutableFinderTest.php	16.0
+rgb(109,247,130)	12.4	Id1086	PHP	PhpProcessTest.php	12.4
+rgb(109,247,132)	10.0	Id1087	PHP	ProcessInSigchildEnvironment.php	10.0
+rgb(109,247,132)	24.0	Id1088	PHP	ProcessBuilder.php	24.0
+rgb(109,247,132)	19.0	Id1089	PHP	ExecutableFinder.php	19.0
+rgb(109,247,132)	16.0	Id1090	PHP	PhpExecutableFinder.php	16.0
+rgb(109,247,132)	14.0	Id1091		Exception	14.0
+rgb(109,247,132)	14.7	Id1092	PHP	ProcessFailedException.php	14.7
+rgb(109,247,132)	7.6	Id1093	PHP	LogicException.php	7.6
+rgb(109,247,132)	7.6	Id1094	PHP	InvalidArgumentException.php	7.6
+rgb(109,247,134)	7.6	Id1095	PHP	ExceptionInterface.php	7.6
+rgb(109,247,134)	7.6	Id1096	PHP	RuntimeException.php	7.6
+rgb(109,247,134)	14.7	Id1097	PHP	PhpProcess.php	14.7
+rgb(109,247,134)	14.0	Id1098		DomCrawler	14.0
+rgb(109,247,134)	14.0	Id1099		Tests	14.0
+rgb(109,247,134)	50.0	Id1100	PHP	FormTest.php	50.0
+rgb(109,247,134)	45.8	Id1101	PHP	CrawlerTest.php	45.8
+rgb(109,247,134)	14.0	Id1102		Field	14.0
+rgb(109,247,134)	36.5	Id1103	PHP	ChoiceFormFieldTest.php	36.5
+rgb(109,247,137)	21.6	Id1104	PHP	FileFormFieldTest.php	21.6
+rgb(109,247,137)	16.2	Id1105	PHP	InputFormFieldTest.php	16.2
+rgb(109,247,137)	13.5	Id1106	PHP	FormFieldTest.php	13.5
+rgb(109,247,137)	13.0	Id1107	PHP	TextareaFormFieldTest.php	13.0
+rgb(109,247,137)	11.5	Id1108	PHP	FormFieldTestCase.php	11.5
+rgb(109,247,137)	21.6	Id1109	PHP	LinkTest.php	21.6
+rgb(109,247,137)	14.0	Id1110		Fixtures	14.0
+rgb(109,247,137)	9.2	Id1111	HTML	windows-1250.html	9.2
+rgb(109,247,139)	39.7	Id1112	PHP	Crawler.php	39.7
+rgb(109,247,139)	31.1	Id1113	PHP	Form.php	31.1
+rgb(109,247,139)	14.0	Id1114		Field	14.0
+rgb(109,247,139)	30.3	Id1115	PHP	ChoiceFormField.php	30.3
+rgb(109,247,139)	19.0	Id1116	PHP	FileFormField.php	19.0
+rgb(109,247,139)	18.0	Id1117	PHP	FormField.php	18.0
+rgb(109,247,139)	12.7	Id1118	PHP	InputFormField.php	12.7
+rgb(109,247,139)	11.8	Id1119	PHP	TextareaFormField.php	11.8
+rgb(109,247,141)	25.8	Id1120	PHP	FormFieldRegistry.php	25.8
+rgb(109,247,141)	21.1	Id1121	PHP	Link.php	21.1
+rgb(109,247,141)	14.0	Id1122		Security	14.0
+rgb(109,247,141)	14.0	Id1123		Acl	14.0
+rgb(109,247,141)	14.0	Id1124		Dbal	14.0
+rgb(109,247,141)	49.9	Id1125	PHP	MutableAclProvider.php	49.9
+rgb(109,247,141)	45.2	Id1126	PHP	AclProvider.php	45.2
+rgb(109,247,141)	24.1	Id1127	PHP	Schema.php	24.1
+rgb(109,247,141)	14.0	Id1128		Domain	14.0
+rgb(109,247,144)	42.8	Id1129	PHP	Acl.php	42.8
+rgb(109,247,144)	28.0	Id1130	PHP	DoctrineAclCache.php	28.0
+rgb(109,247,144)	25.8	Id1131	PHP	PermissionGrantingStrategy.php	25.8
+rgb(109,247,144)	25.0	Id1132	PHP	Entry.php	25.0
+rgb(109,247,144)	19.9	Id1133	PHP	ObjectIdentity.php	19.9
+rgb(109,247,144)	19.7	Id1134	PHP	UserSecurityIdentity.php	19.7
+rgb(109,247,144)	17.8	Id1135	PHP	SecurityIdentityRetrievalStrategy.php	17.8
+rgb(109,247,144)	15.6	Id1136	PHP	RoleSecurityIdentity.php	15.6
+rgb(109,247,146)	15.6	Id1137	PHP	FieldEntry.php	15.6
+rgb(109,247,146)	15.4	Id1138	PHP	AclCollectionCache.php	15.4
+rgb(109,247,146)	13.3	Id1139	PHP	AuditLogger.php	13.3
+rgb(109,247,146)	11.8	Id1140	PHP	ObjectIdentityRetrievalStrategy.php	11.8
+rgb(109,247,146)	14.0	Id1141		Resources	14.0
+rgb(109,247,146)	14.0	Id1142		schema	14.0
+rgb(109,247,146)	29.0	Id1143	SQL	oracle.sql	29.0
+rgb(109,247,146)	13.8	Id1144	SQL	db2.sql	13.8
+rgb(109,247,148)	13.8	Id1145	SQL	postgresql.sql	13.8
+rgb(109,247,148)	13.8	Id1146	SQL	mssql.sql	13.8
+rgb(109,247,148)	12.1	Id1147	SQL	sqlite.sql	12.1
+rgb(109,247,148)	10.4	Id1148	SQL	drizzle.sql	10.4
+rgb(109,247,148)	10.4	Id1149	SQL	mysql.sql	10.4
+rgb(109,247,148)	14.0	Id1150		bin	14.0
+rgb(109,247,148)	16.6	Id1151	PHP	generateSql.php	16.6
+rgb(109,247,148)	14.0	Id1152		Voter	14.0
+rgb(109,247,148)	25.0	Id1153	PHP	AclVoter.php	25.0
+rgb(109,247,150)	13.3	Id1154	PHP	FieldVote.php	13.3
+rgb(109,247,150)	14.0	Id1155		Permission	14.0
+rgb(109,247,150)	24.9	Id1156	PHP	MaskBuilder.php	24.9
+rgb(109,247,150)	21.8	Id1157	PHP	BasicPermissionMap.php	21.8
+rgb(109,247,150)	8.7	Id1158	PHP	PermissionMapInterface.php	8.7
+rgb(109,247,150)	14.0	Id1159		Model	14.0
+rgb(109,247,150)	13.3	Id1160	PHP	MutableAclInterface.php	13.3
+rgb(109,247,150)	11.8	Id1161	PHP	AclInterface.php	11.8
+rgb(109,247,153)	10.4	Id1162	PHP	AclCacheInterface.php	10.4
+rgb(109,247,153)	10.4	Id1163	PHP	EntryInterface.php	10.4
+rgb(109,247,153)	9.6	Id1164	PHP	AuditableAclInterface.php	9.6
+rgb(109,247,153)	9.2	Id1165	PHP	AclProviderInterface.php	9.2
+rgb(109,247,153)	9.2	Id1166	PHP	MutableAclProviderInterface.php	9.2
+rgb(109,247,153)	9.2	Id1167	PHP	ObjectIdentityInterface.php	9.2
+rgb(109,247,153)	8.7	Id1168	PHP	SecurityIdentityRetrievalStrategyInterface.php	8.7
+rgb(109,247,153)	8.7	Id1169	PHP	AuditableEntryInterface.php	8.7
+rgb(109,247,155)	8.7	Id1170	PHP	PermissionGrantingStrategyInterface.php	8.7
+rgb(109,247,155)	8.2	Id1171	PHP	DomainObjectInterface.php	8.2
+rgb(109,247,155)	8.2	Id1172	PHP	ObjectIdentityRetrievalStrategyInterface.php	8.2
+rgb(109,247,155)	8.2	Id1173	PHP	FieldEntryInterface.php	8.2
+rgb(109,247,155)	8.2	Id1174	PHP	AuditLoggerInterface.php	8.2
+rgb(109,247,155)	8.2	Id1175	PHP	SecurityIdentityInterface.php	8.2
+rgb(109,247,155)	14.0	Id1176		Exception	14.0
+rgb(109,247,155)	11.5	Id1177	PHP	NotAllAclsFoundException.php	11.5
+rgb(109,247,155)	9.6	Id1178	PHP	NoAceFoundException.php	9.6
+rgb(109,247,157)	7.6	Id1179	PHP	AclNotFoundException.php	7.6
+rgb(109,247,157)	7.6	Id1180	PHP	Exception.php	7.6
+rgb(109,247,157)	7.6	Id1181	PHP	AclAlreadyExistsException.php	7.6
+rgb(109,247,157)	7.6	Id1182	PHP	SidNotLoadedException.php	7.6
+rgb(109,247,157)	7.6	Id1183	PHP	ConcurrentModificationException.php	7.6
+rgb(109,247,157)	7.6	Id1184	PHP	InvalidDomainObjectException.php	7.6
+rgb(109,247,157)	14.0	Id1185		Tests	14.0
+rgb(109,247,157)	14.0	Id1186		Acl	14.0
+rgb(109,247,160)	14.0	Id1187		Dbal	14.0
+rgb(109,247,160)	43.2	Id1188	PHP	MutableAclProviderTest.php	43.2
+rgb(109,247,160)	34.0	Id1189	PHP	AclProviderTest.php	34.0
+rgb(109,247,160)	33.5	Id1190	PHP	AclProviderBenchmarkTest.php	33.5
+rgb(109,247,160)	14.0	Id1191		Domain	14.0
+rgb(109,247,160)	42.5	Id1192	PHP	AclTest.php	42.5
+rgb(109,247,160)	30.8	Id1193	PHP	SecurityIdentityRetrievalStrategyTest.php	30.8
+rgb(109,247,160)	29.1	Id1194	PHP	PermissionGrantingStrategyTest.php	29.1
+rgb(109,247,160)	24.3	Id1195	PHP	EntryTest.php	24.3
+rgb(109,247,162)	24.0	Id1196	PHP	ObjectIdentityTest.php	24.0
+rgb(109,247,162)	22.4	Id1197	PHP	DoctrineAclCacheTest.php	22.4
+rgb(109,247,162)	20.7	Id1198	PHP	AuditLoggerTest.php	20.7
+rgb(109,247,162)	19.7	Id1199	PHP	FieldEntryTest.php	19.7
+rgb(109,247,162)	19.1	Id1200	PHP	UserSecurityIdentityTest.php	19.1
+rgb(109,247,162)	16.6	Id1201	PHP	RoleSecurityIdentityTest.php	16.6
+rgb(109,247,162)	14.7	Id1202	PHP	ObjectIdentityRetrievalStrategyTest.php	14.7
+rgb(109,247,162)	14.0	Id1203		Voter	14.0
+rgb(109,247,164)	39.8	Id1204	PHP	AclVoterTest.php	39.8
+rgb(109,247,164)	14.0	Id1205		Permission	14.0
+rgb(109,247,164)	22.0	Id1206	PHP	MaskBuilderTest.php	22.0
+rgb(109,247,164)	10.4	Id1207	PHP	BasicPermissionMapTest.php	10.4
+rgb(109,247,164)	14.0	Id1208		Http	14.0
+rgb(109,247,164)	14.0	Id1209		RememberMe	14.0
+rgb(109,247,164)	37.6	Id1210	PHP	PersistentTokenBasedRememberMeServicesTest.php	37.6
+rgb(109,247,164)	34.8	Id1211	PHP	TokenBasedRememberMeServicesTest.php	34.8
+rgb(109,247,167)	33.6	Id1212	PHP	AbstractRememberMeServicesTest.php	33.6
+rgb(109,247,167)	14.0	Id1213		Firewall	14.0
+rgb(109,247,167)	32.2	Id1214	PHP	LogoutListenerTest.php	32.2
+rgb(109,247,167)	31.5	Id1215	PHP	AccessListenerTest.php	31.5
+rgb(109,247,167)	30.5	Id1216	PHP	ChannelListenerTest.php	30.5
+rgb(109,247,167)	30.2	Id1217	PHP	BasicAuthenticationListenerTest.php	30.2
+rgb(109,247,167)	30.0	Id1218	PHP	RememberMeListenerTest.php	30.0
+rgb(109,247,167)	29.5	Id1219	PHP	ContextListenerTest.php	29.5
+rgb(109,247,167)	28.8	Id1220	PHP	DigestDataTest.php	28.8
+rgb(109,247,169)	18.5	Id1221	PHP	AnonymousAuthenticationListenerTest.php	18.5
+rgb(109,247,169)	26.7	Id1222	PHP	HttpUtilsTest.php	26.7
+rgb(109,247,169)	24.5	Id1223	PHP	FirewallTest.php	24.5
+rgb(109,247,169)	24.1	Id1224	PHP	FirewallMapTest.php	24.1
+rgb(109,247,169)	14.0	Id1225		EntryPoint	14.0
+rgb(109,247,169)	19.6	Id1226	PHP	FormAuthenticationEntryPointTest.php	19.6
+rgb(109,247,169)	19.4	Id1227	PHP	RetryAuthenticationEntryPointTest.php	19.4
+rgb(109,247,169)	17.5	Id1228	PHP	DigestAuthenticationEntryPointTest.php	17.5
+rgb(109,247,171)	15.6	Id1229	PHP	BasicAuthenticationEntryPointTest.php	15.6
+rgb(109,247,171)	14.0	Id1230		Logout	14.0
+rgb(109,247,171)	17.0	Id1231	PHP	CookieClearingLogoutHandlerTest.php	17.0
+rgb(109,247,171)	15.6	Id1232	PHP	SessionLogoutHandlerTest.php	15.6
+rgb(109,247,171)	14.0	Id1233		Core	14.0
+rgb(109,247,171)	14.0	Id1234		Authentication	14.0
+rgb(109,247,171)	14.0	Id1235		Provider	14.0
+rgb(109,247,171)	34.8	Id1236	PHP	DaoAuthenticationProviderTest.php	34.8
+rgb(109,247,173)	29.0	Id1237	PHP	UserAuthenticationProviderTest.php	29.0
+rgb(109,247,173)	24.9	Id1238	PHP	PreAuthenticatedAuthenticationProviderTest.php	24.9
+rgb(109,247,173)	22.6	Id1239	PHP	RememberMeAuthenticationProviderTest.php	22.6
+rgb(109,247,173)	17.7	Id1240	PHP	AnonymousAuthenticationProviderTest.php	17.7
+rgb(109,247,173)	14.0	Id1241		Token	14.0
+rgb(109,247,173)	31.4	Id1242	PHP	AbstractTokenTest.php	31.4
+rgb(109,247,173)	19.7	Id1243	PHP	RememerMeTokenTest.php	19.7
+rgb(109,247,173)	17.1	Id1244	PHP	UsernamePasswordTokenTest.php	17.1
+rgb(109,247,173)	16.0	Id1245	PHP	PreAuthenticatedTokenTest.php	16.0
+rgb(109,247,176)	15.4	Id1246	PHP	AnonymousTokenTest.php	15.4
+rgb(109,247,176)	25.8	Id1247	PHP	AuthenticationProviderManagerTest.php	25.8
+rgb(109,247,176)	19.3	Id1248	PHP	AuthenticationTrustResolverTest.php	19.3
+rgb(109,247,176)	14.0	Id1249		RememberMe	14.0
+rgb(109,247,176)	17.0	Id1250	PHP	InMemoryTokenProviderTest.php	17.0
+rgb(109,247,176)	12.1	Id1251	PHP	PersistentTokenTest.php	12.1
+rgb(109,247,176)	14.0	Id1252		User	14.0
+rgb(109,247,176)	29.1	Id1253	PHP	ChainUserProviderTest.php	29.1
+rgb(109,247,178)	21.4	Id1254	PHP	UserTest.php	21.4
+rgb(109,247,178)	21.0	Id1255	PHP	AccountCheckerTest.php	21.0
+rgb(109,247,178)	17.3	Id1256	PHP	InMemoryProviderTest.php	17.3
+rgb(109,247,178)	14.0	Id1257		Util	14.0
+rgb(109,247,178)	28.3	Id1258	PHP	SecureRandomTest.php	28.3
+rgb(109,247,178)	16.2	Id1259	PHP	ClassUtilsTest.php	16.2
+rgb(109,247,178)	10.4	Id1260	PHP	StringUtilsTest.php	10.4
+rgb(109,247,178)	14.0	Id1261		Validator	14.0
+rgb(109,247,180)	14.0	Id1262		Constraints	14.0
+rgb(109,247,180)	26.9	Id1263	PHP	UserPasswordValidatorTest.php	26.9
+rgb(109,247,180)	14.0	Id1264		Authorization	14.0
+rgb(109,247,180)	26.0	Id1265	PHP	AccessDecisionManagerTest.php	26.0
+rgb(109,247,180)	14.0	Id1266		Voter	14.0
+rgb(109,247,180)	19.9	Id1267	PHP	AuthenticatedVoterTest.php	19.9
+rgb(109,247,180)	17.7	Id1268	PHP	RoleVoterTest.php	17.7
+rgb(109,247,180)	13.0	Id1269	PHP	RoleHierarchyVoterTest.php	13.0
+rgb(109,247,180)	14.0	Id1270		Encoder	14.0
+rgb(109,247,183)	22.1	Id1271	PHP	BCryptPasswordEncoderTest.php	22.1
+rgb(109,247,183)	21.8	Id1272	PHP	EncoderFactoryTest.php	21.8
+rgb(109,247,183)	20.4	Id1273	PHP	BasePasswordEncoderTest.php	20.4
+rgb(109,247,183)	14.5	Id1274	PHP	Pbkdf2PasswordEncoderTest.php	14.5
+rgb(109,247,183)	14.5	Id1275	PHP	MessageDigestPasswordEncoderTest.php	14.5
+rgb(109,247,183)	13.8	Id1276	PHP	PlaintextPasswordEncoderTest.php	13.8
+rgb(109,247,183)	21.5	Id1277	PHP	SecurityContextTest.php	21.5
+rgb(109,247,183)	14.0	Id1278		Role	14.0
+rgb(109,247,185)	13.0	Id1279	PHP	RoleHierarchyTest.php	13.0
+rgb(109,247,185)	12.1	Id1280	PHP	SwitchUserRoleTest.php	12.1
+rgb(109,247,185)	10.4	Id1281	PHP	RoleTest.php	10.4
+rgb(109,247,185)	14.0	Id1282		Http	14.0
+rgb(109,247,185)	14.0	Id1283		Firewall	14.0
+rgb(109,247,185)	30.2	Id1284	PHP	DigestAuthenticationListener.php	30.2
+rgb(109,247,185)	28.3	Id1285	PHP	ExceptionListener.php	28.3
+rgb(109,247,185)	27.4	Id1286	PHP	AbstractAuthenticationListener.php	27.4
+rgb(109,247,185)	26.6	Id1287	PHP	SwitchUserListener.php	26.6
+rgb(109,247,187)	26.6	Id1288	PHP	ContextListener.php	26.6
+rgb(109,247,187)	21.2	Id1289	PHP	LogoutListener.php	21.2
+rgb(109,247,187)	20.7	Id1290	PHP	AbstractPreAuthenticatedListener.php	20.7
+rgb(109,247,187)	20.3	Id1291	PHP	BasicAuthenticationListener.php	20.3
+rgb(109,247,187)	20.2	Id1292	PHP	RememberMeListener.php	20.2
+rgb(109,247,187)	19.7	Id1293	PHP	UsernamePasswordFormAuthenticationListener.php	19.7
+rgb(109,247,187)	18.2	Id1294	PHP	AccessListener.php	18.2
+rgb(109,247,187)	17.1	Id1295	PHP	ChannelListener.php	17.1
+rgb(109,247,189)	15.2	Id1296	PHP	AnonymousAuthenticationListener.php	15.2
+rgb(109,247,189)	14.7	Id1297	PHP	X509AuthenticationListener.php	14.7
+rgb(109,247,189)	8.7	Id1298	PHP	ListenerInterface.php	8.7
+rgb(109,247,189)	14.0	Id1299		RememberMe	14.0
+rgb(109,247,189)	30.1	Id1300	PHP	AbstractRememberMeServices.php	30.1
+rgb(109,247,189)	24.1	Id1301	PHP	PersistentTokenBasedRememberMeServices.php	24.1
+rgb(109,247,189)	23.1	Id1302	PHP	TokenBasedRememberMeServices.php	23.1
+rgb(109,247,189)	13.3	Id1303	PHP	ResponseListener.php	13.3
+rgb(109,247,192)	10.8	Id1304	PHP	RememberMeServicesInterface.php	10.8
+rgb(109,247,192)	22.5	Id1305	PHP	HttpUtils.php	22.5
+rgb(109,247,192)	14.0	Id1306		Authentication	14.0
+rgb(109,247,192)	19.3	Id1307	PHP	DefaultAuthenticationSuccessHandler.php	19.3
+rgb(109,247,192)	19.0	Id1308	PHP	DefaultAuthenticationFailureHandler.php	19.0
+rgb(109,247,192)	9.2	Id1309	PHP	AuthenticationFailureHandlerInterface.php	9.2
+rgb(109,247,192)	9.2	Id1310	PHP	AuthenticationSuccessHandlerInterface.php	9.2
+rgb(109,247,192)	14.0	Id1311		EntryPoint	14.0
+rgb(109,247,192)	18.8	Id1312	PHP	DigestAuthenticationEntryPoint.php	18.8
+rgb(109,247,194)	16.2	Id1313	PHP	RetryAuthenticationEntryPoint.php	16.2
+rgb(109,247,194)	15.4	Id1314	PHP	FormAuthenticationEntryPoint.php	15.4
+rgb(109,247,194)	13.5	Id1315	PHP	BasicAuthenticationEntryPoint.php	13.5
+rgb(109,247,194)	9.2	Id1316	PHP	AuthenticationEntryPointInterface.php	9.2
+rgb(109,247,194)	17.0	Id1317	PHP	Firewall.php	17.0
+rgb(109,247,194)	14.0	Id1318		Session	14.0
+rgb(109,247,194)	15.6	Id1319	PHP	SessionAuthenticationStrategy.php	15.6
+rgb(109,247,194)	9.2	Id1320	PHP	SessionAuthenticationStrategyInterface.php	9.2
+rgb(109,247,196)	14.0	Id1321		Event	14.0
+rgb(109,247,196)	14.0	Id1322	PHP	SwitchUserEvent.php	14.0
+rgb(109,247,196)	14.0	Id1323	PHP	InteractiveLoginEvent.php	14.0
+rgb(109,247,196)	13.8	Id1324	PHP	FirewallMap.php	13.8
+rgb(109,247,196)	13.5	Id1325	PHP	AccessMap.php	13.5
+rgb(109,247,196)	14.0	Id1326		Logout	14.0
+rgb(109,247,196)	13.0	Id1327	PHP	DefaultLogoutSuccessHandler.php	13.0
+rgb(109,247,196)	13.0	Id1328	PHP	CookieClearingLogoutHandler.php	13.0
+rgb(109,247,199)	10.8	Id1329	PHP	SessionLogoutHandler.php	10.8
+rgb(109,247,199)	9.6	Id1330	PHP	LogoutHandlerInterface.php	9.6
+rgb(109,247,199)	8.7	Id1331	PHP	LogoutSuccessHandlerInterface.php	8.7
+rgb(109,247,199)	14.0	Id1332		Authorization	14.0
+rgb(109,247,199)	9.2	Id1333	PHP	AccessDeniedHandlerInterface.php	9.2
+rgb(109,247,199)	8.7	Id1334	PHP	FirewallMapInterface.php	8.7
+rgb(109,247,199)	8.7	Id1335	PHP	SecurityEvents.php	8.7
+rgb(109,247,199)	8.7	Id1336	PHP	AccessMapInterface.php	8.7
+rgb(109,247,199)	14.0	Id1337		Core	14.0
+rgb(109,247,201)	14.0	Id1338		Authentication	14.0
+rgb(109,247,201)	14.0	Id1339		Token	14.0
+rgb(109,247,201)	30.2	Id1340	PHP	AbstractToken.php	30.2
+rgb(109,247,201)	19.7	Id1341	PHP	RememberMeToken.php	19.7
+rgb(109,247,201)	18.7	Id1342	PHP	UsernamePasswordToken.php	18.7
+rgb(109,247,201)	17.8	Id1343	PHP	PreAuthenticatedToken.php	17.8
+rgb(109,247,201)	15.6	Id1344	PHP	AnonymousToken.php	15.6
+rgb(109,247,201)	13.3	Id1345	PHP	TokenInterface.php	13.3
+rgb(109,247,203)	21.5	Id1346	PHP	AuthenticationProviderManager.php	21.5
+rgb(109,247,203)	14.0	Id1347		Provider	14.0
+rgb(109,247,203)	21.4	Id1348	PHP	UserAuthenticationProvider.php	21.4
+rgb(109,247,203)	20.3	Id1349	PHP	DaoAuthenticationProvider.php	20.3
+rgb(109,247,203)	17.0	Id1350	PHP	PreAuthenticatedAuthenticationProvider.php	17.0
+rgb(109,247,203)	16.8	Id1351	PHP	RememberMeAuthenticationProvider.php	16.8
+rgb(109,247,203)	14.9	Id1352	PHP	AnonymousAuthenticationProvider.php	14.9
+rgb(109,247,203)	9.2	Id1353	PHP	AuthenticationProviderInterface.php	9.2
+rgb(109,247,206)	14.0	Id1354		RememberMe	14.0
+rgb(109,247,206)	19.1	Id1355	PHP	PersistentToken.php	19.1
+rgb(109,247,206)	16.8	Id1356	PHP	InMemoryTokenProvider.php	16.8
+rgb(109,247,206)	10.0	Id1357	PHP	PersistentTokenInterface.php	10.0
+rgb(109,247,206)	9.6	Id1358	PHP	TokenProviderInterface.php	9.6
+rgb(109,247,206)	16.4	Id1359	PHP	AuthenticationTrustResolver.php	16.4
+rgb(109,247,206)	9.6	Id1360	PHP	AuthenticationTrustResolverInterface.php	9.6
+rgb(109,247,206)	9.2	Id1361	PHP	AuthenticationManagerInterface.php	9.2
+rgb(109,247,206)	14.0	Id1362		Authorization	14.0
+rgb(109,247,208)	26.7	Id1363	PHP	AccessDecisionManager.php	26.7
+rgb(109,247,208)	14.0	Id1364		Voter	14.0
+rgb(109,247,208)	19.0	Id1365	PHP	AuthenticatedVoter.php	19.0
+rgb(109,247,208)	17.5	Id1366	PHP	RoleVoter.php	17.5
+rgb(109,247,208)	12.4	Id1367	PHP	RoleHierarchyVoter.php	12.4
+rgb(109,247,208)	10.8	Id1368	PHP	VoterInterface.php	10.8
+rgb(109,247,208)	9.6	Id1369	PHP	AccessDecisionManagerInterface.php	9.6
+rgb(109,247,208)	14.0	Id1370		Encoder	14.0
+rgb(109,247,210)	22.3	Id1371	PHP	BCryptPasswordEncoder.php	22.3
+rgb(109,247,210)	18.3	Id1372	PHP	Pbkdf2PasswordEncoder.php	18.3
+rgb(109,247,210)	16.4	Id1373	PHP	BasePasswordEncoder.php	16.4
+rgb(109,247,210)	16.4	Id1374	PHP	EncoderFactory.php	16.4
+rgb(109,247,210)	15.6	Id1375	PHP	MessageDigestPasswordEncoder.php	15.6
+rgb(109,247,210)	13.8	Id1376	PHP	PlaintextPasswordEncoder.php	13.8
+rgb(109,247,210)	8.7	Id1377	PHP	PasswordEncoderInterface.php	8.7
+rgb(109,247,210)	8.7	Id1378	PHP	EncoderFactoryInterface.php	8.7
+rgb(109,247,210)	14.0	Id1379		Util	14.0
+rgb(109,247,212)	21.8	Id1380	PHP	SecureRandom.php	21.8
+rgb(109,247,212)	12.7	Id1381	PHP	StringUtils.php	12.7
+rgb(109,247,212)	12.1	Id1382	PHP	ClassUtils.php	12.1
+rgb(109,247,212)	8.2	Id1383	PHP	SecureRandomInterface.php	8.2
+rgb(109,247,212)	14.0	Id1384		User	14.0
+rgb(109,247,212)	20.6	Id1385	PHP	User.php	20.6
+rgb(109,247,212)	19.4	Id1386	PHP	ChainUserProvider.php	19.4
+rgb(109,247,212)	18.7	Id1387	PHP	InMemoryUserProvider.php	18.7
+rgb(109,247,215)	17.7	Id1388	PHP	UserChecker.php	17.7
+rgb(109,247,215)	11.5	Id1389	PHP	AdvancedUserInterface.php	11.5
+rgb(109,247,215)	10.0	Id1390	PHP	UserInterface.php	10.0
+rgb(109,247,215)	10.0	Id1391	PHP	UserProviderInterface.php	10.0
+rgb(109,247,215)	8.7	Id1392	PHP	UserCheckerInterface.php	8.7
+rgb(109,247,215)	8.2	Id1393	PHP	EquatableInterface.php	8.2
+rgb(109,247,215)	14.0	Id1394		Exception	14.0
+rgb(109,247,215)	18.0	Id1395	PHP	AuthenticationException.php	18.0
+rgb(109,247,217)	15.6	Id1396	PHP	UsernameNotFoundException.php	15.6
+rgb(109,247,217)	14.9	Id1397	PHP	AccountStatusException.php	14.9
+rgb(109,247,217)	10.0	Id1398	PHP	NonceExpiredException.php	10.0
+rgb(109,247,217)	9.6	Id1399	PHP	DisabledException.php	9.6
+rgb(109,247,217)	9.6	Id1400	PHP	AccountExpiredException.php	9.6
+rgb(109,247,217)	9.6	Id1401	PHP	BadCredentialsException.php	9.6
+rgb(109,247,217)	9.6	Id1402	PHP	AccessDeniedException.php	9.6
+rgb(109,247,217)	9.6	Id1403	PHP	LogoutException.php	9.6
+rgb(109,247,217)	9.6	Id1404	PHP	ProviderNotFoundException.php	9.6
+rgb(109,247,219)	9.6	Id1405	PHP	CredentialsExpiredException.php	9.6
+rgb(109,247,219)	9.6	Id1406	PHP	TokenNotFoundException.php	9.6
+rgb(109,247,219)	9.6	Id1407	PHP	AuthenticationCredentialsNotFoundException.php	9.6
+rgb(109,247,219)	9.6	Id1408	PHP	LockedException.php	9.6
+rgb(109,247,219)	9.6	Id1409	PHP	InsufficientAuthenticationException.php	9.6
+rgb(109,247,219)	9.6	Id1410	PHP	AuthenticationServiceException.php	9.6
+rgb(109,247,219)	9.6	Id1411	PHP	SessionUnavailableException.php	9.6
+rgb(109,247,219)	9.6	Id1412	PHP	InvalidCsrfTokenException.php	9.6
+rgb(109,247,222)	9.6	Id1413	PHP	CookieTheftException.php	9.6
+rgb(109,247,222)	7.6	Id1414	PHP	UnsupportedUserException.php	7.6
+rgb(109,247,222)	14.0	Id1415		Role	14.0
+rgb(109,247,222)	17.8	Id1416	PHP	RoleHierarchy.php	17.8
+rgb(109,247,222)	12.1	Id1417	PHP	SwitchUserRole.php	12.1
+rgb(109,247,222)	11.5	Id1418	PHP	Role.php	11.5
+rgb(109,247,222)	8.2	Id1419	PHP	RoleInterface.php	8.2
+rgb(109,247,222)	8.2	Id1420	PHP	RoleHierarchyInterface.php	8.2
+rgb(109,247,224)	17.5	Id1421	PHP	SecurityContext.php	17.5
+rgb(109,247,224)	14.0	Id1422		Validator	14.0
+rgb(109,247,224)	14.0	Id1423		Constraints	14.0
+rgb(109,247,224)	15.4	Id1424	PHP	UserPasswordValidator.php	15.4
+rgb(109,247,224)	10.8	Id1425	PHP	UserPassword.php	10.8
+rgb(109,247,224)	14.0	Id1426		Constraint	14.0
+rgb(109,247,224)	11.2	Id1427	PHP	UserPasswordValidator.php	11.2
+rgb(109,247,224)	10.4	Id1428	PHP	UserPassword.php	10.4
+rgb(109,247,224)	14.0	Id1429		Event	14.0
+rgb(109,247,226)	12.4	Id1430	PHP	AuthenticationFailureEvent.php	12.4
+rgb(109,247,226)	12.1	Id1431	PHP	AuthenticationEvent.php	12.1
+rgb(109,247,226)	10.8	Id1432	PHP	SecurityContextInterface.php	10.8
+rgb(109,247,226)	8.7	Id1433	PHP	AuthenticationEvents.php	8.7
+rgb(109,247,226)	14.0	Id1434		Finder	14.0
+rgb(109,247,226)	14.0	Id1435		Tests	14.0
+rgb(109,247,226)	48.9	Id1436	PHP	FinderTest.php	48.9
+rgb(109,247,226)	14.0	Id1437		Iterator	14.0
+rgb(109,247,228)	25.9	Id1438	PHP	MockSplFileInfo.php	25.9
+rgb(109,247,228)	21.1	Id1439	PHP	FilecontentFilterIteratorTest.php	21.1
+rgb(109,247,228)	19.3	Id1440	PHP	PathFilterIteratorTest.php	19.3
+rgb(109,247,228)	19.0	Id1441	PHP	RealIteratorTestCase.php	19.0
+rgb(109,247,228)	18.8	Id1442	PHP	FilePathsIteratorTest.php	18.8
+rgb(109,247,228)	18.7	Id1443	PHP	MultiplePcreFilterIteratorTest.php	18.7
+rgb(109,247,228)	18.0	Id1444	PHP	ExcludeDirectoryFilterIteratorTest.php	18.0
+rgb(109,247,228)	17.1	Id1445	PHP	SizeRangeFilterIteratorTest.php	17.1
+rgb(109,247,231)	17.1	Id1446	PHP	Iterator.php	17.1
+rgb(109,247,231)	16.4	Id1447	PHP	FileTypeFilterIteratorTest.php	16.4
+rgb(109,247,231)	16.4	Id1448	PHP	FilenameFilterIteratorTest.php	16.4
+rgb(109,247,231)	15.4	Id1449	PHP	SortableIteratorTest.php	15.4
+rgb(109,247,231)	15.4	Id1450	PHP	DepthRangeFilterIteratorTest.php	15.4
+rgb(109,247,231)	14.9	Id1451	PHP	FilterIteratorTest.php	14.9
+rgb(109,247,231)	14.3	Id1452	PHP	CustomFilterIteratorTest.php	14.3
+rgb(109,247,231)	13.5	Id1453	PHP	DateRangeFilterIteratorTest.php	13.5
+rgb(109,247,231)	12.7	Id1454	PHP	IteratorTestCase.php	12.7
+rgb(109,247,233)	10.0	Id1455	PHP	MockFileListIterator.php	10.0
+rgb(109,247,233)	14.0	Id1456		Expression	14.0
+rgb(109,247,233)	24.9	Id1457	PHP	RegexTest.php	24.9
+rgb(109,247,233)	17.8	Id1458	PHP	ExpressionTest.php	17.8
+rgb(109,247,233)	15.6	Id1459	PHP	GlobTest.php	15.6
+rgb(109,247,233)	14.0	Id1460		Comparator	14.0
+rgb(109,247,233)	22.7	Id1461	PHP	NumberComparatorTest.php	22.7
+rgb(109,247,233)	18.0	Id1462	PHP	DateComparatorTest.php	18.0
+rgb(109,247,235)	18.0	Id1463	PHP	ComparatorTest.php	18.0
+rgb(109,247,235)	14.0	Id1464		FakeAdapter	14.0
+rgb(109,247,235)	14.0	Id1465	PHP	DummyAdapter.php	14.0
+rgb(109,247,235)	14.0	Id1466	PHP	NamedAdapter.php	14.0
+rgb(109,247,235)	13.0	Id1467	PHP	FailingAdapter.php	13.0
+rgb(109,247,235)	12.7	Id1468	PHP	UnsupportedAdapter.php	12.7
+rgb(109,247,235)	39.7	Id1469	PHP	Finder.php	39.7
+rgb(109,247,235)	14.0	Id1470		Adapter	14.0
+rgb(109,247,235)	33.1	Id1471	PHP	AbstractFindAdapter.php	33.1
+rgb(109,247,238)	27.1	Id1472	PHP	AbstractAdapter.php	27.1
+rgb(109,247,238)	20.8	Id1473	PHP	GnuFindAdapter.php	20.8
+rgb(109,247,238)	20.6	Id1474	PHP	BsdFindAdapter.php	20.6
+rgb(109,247,238)	20.2	Id1475	PHP	PhpAdapter.php	20.2
+rgb(109,247,238)	13.8	Id1476	PHP	AdapterInterface.php	13.8
+rgb(109,247,238)	14.0	Id1477		Expression	14.0
+rgb(109,247,238)	29.7	Id1478	PHP	Regex.php	29.7
+rgb(109,247,238)	24.4	Id1479	PHP	Glob.php	24.4
+rgb(109,247,240)	21.8	Id1480	PHP	Expression.php	21.8
+rgb(109,247,240)	10.4	Id1481	PHP	ValueInterface.php	10.4
+rgb(109,247,240)	14.0	Id1482		Shell	14.0
+rgb(109,247,240)	25.4	Id1483	PHP	Command.php	25.4
+rgb(109,247,240)	18.5	Id1484	PHP	Shell.php	18.5
+rgb(109,247,240)	14.0	Id1485		Iterator	14.0
+rgb(109,247,240)	20.4	Id1486	PHP	FilePathsIterator.php	20.4
+rgb(109,247,240)	19.4	Id1487	PHP	SortableIterator.php	19.4
+rgb(109,247,242)	17.1	Id1488	PHP	FilecontentFilterIterator.php	17.1
+rgb(109,247,242)	15.8	Id1489	PHP	PathFilterIterator.php	15.8
+rgb(109,247,242)	15.4	Id1490	PHP	FilenameFilterIterator.php	15.4
+rgb(109,247,242)	14.7	Id1491	PHP	SizeRangeFilterIterator.php	14.7
+rgb(109,247,242)	14.7	Id1492	PHP	CustomFilterIterator.php	14.7
+rgb(109,247,242)	14.7	Id1493	PHP	DateRangeFilterIterator.php	14.7
+rgb(109,247,242)	14.5	Id1494	PHP	ExcludeDirectoryFilterIterator.php	14.5
+rgb(109,247,242)	14.5	Id1495	PHP	MultiplePcreFilterIterator.php	14.5
+rgb(109,247,242)	14.0	Id1496	PHP	FileTypeFilterIterator.php	14.0
+rgb(109,247,245)	12.4	Id1497	PHP	RecursiveDirectoryIterator.php	12.4
+rgb(109,247,245)	12.4	Id1498	PHP	FilterIterator.php	12.4
+rgb(109,247,245)	12.1	Id1499	PHP	DepthRangeFilterIterator.php	12.1
+rgb(109,247,245)	20.0	Id1500	PHP	Glob.php	20.0
+rgb(109,247,245)	14.0	Id1501		Comparator	14.0
+rgb(109,247,245)	18.3	Id1502	PHP	Comparator.php	18.3
+rgb(109,247,245)	17.3	Id1503	PHP	NumberComparator.php	17.3
+rgb(109,247,245)	14.7	Id1504	PHP	DateComparator.php	14.7
+rgb(109,247,247)	16.0	Id1505	PHP	SplFileInfo.php	16.0
+rgb(109,247,247)	14.0	Id1506		Exception	14.0
+rgb(109,247,247)	12.4	Id1507	PHP	ShellCommandFailureException.php	12.4
+rgb(109,247,247)	12.1	Id1508	PHP	AdapterFailureException.php	12.1
+rgb(109,247,247)	8.2	Id1509	PHP	ExceptionInterface.php	8.2
+rgb(109,247,247)	7.6	Id1510	PHP	OperationNotPermitedException.php	7.6
+rgb(109,247,247)	14.0	Id1511		OptionsResolver	14.0
+rgb(109,247,247)	14.0	Id1512		Tests	14.0
+rgb(109,245,247)	48.7	Id1513	PHP	OptionsResolverTest.php	48.7
+rgb(109,245,247)	41.8	Id1514	PHP	OptionsTest.php	41.8
+rgb(109,245,247)	32.4	Id1515	PHP	Options.php	32.4
+rgb(109,245,247)	31.6	Id1516	PHP	OptionsResolver.php	31.6
+rgb(109,245,247)	12.4	Id1517	PHP	OptionsResolverInterface.php	12.4
+rgb(109,245,247)	14.0	Id1518		Exception	14.0
+rgb(109,245,247)	7.6	Id1519	PHP	InvalidOptionsException.php	7.6
+rgb(109,245,247)	7.6	Id1520	PHP	OptionDefinitionException.php	7.6
+rgb(109,245,247)	7.6	Id1521	PHP	MissingOptionsException.php	7.6
+rgb(109,242,247)	7.6	Id1522	PHP	ExceptionInterface.php	7.6
+rgb(109,242,247)	14.0	Id1523		Routing	14.0
+rgb(109,242,247)	14.0	Id1524		Tests	14.0
+rgb(109,242,247)	14.0	Id1525		Generator	14.0
+rgb(109,242,247)	47.4	Id1526	PHP	UrlGeneratorTest.php	47.4
+rgb(109,242,247)	14.0	Id1527		Dumper	14.0
+rgb(109,242,247)	21.6	Id1528	PHP	PhpGeneratorDumperTest.php	21.6
+rgb(109,242,247)	14.0	Id1529		Matcher	14.0
+rgb(109,240,247)	38.1	Id1530	PHP	UrlMatcherTest.php	38.1
+rgb(109,240,247)	14.0	Id1531		Dumper	14.0
+rgb(109,240,247)	31.3	Id1532	PHP	PhpMatcherDumperTest.php	31.3
+rgb(109,240,247)	28.5	Id1533	PHP	ApacheMatcherDumperTest.php	28.5
+rgb(109,240,247)	24.4	Id1534	PHP	DumperPrefixCollectionTest.php	24.4
+rgb(109,240,247)	12.4	Id1535	PHP	DumperCollectionTest.php	12.4
+rgb(109,240,247)	26.8	Id1536	PHP	ApacheUrlMatcherTest.php	26.8
+rgb(109,240,247)	18.2	Id1537	PHP	TraceableUrlMatcherTest.php	18.2
+rgb(109,238,247)	17.1	Id1538	PHP	RedirectableUrlMatcherTest.php	17.1
+rgb(109,238,247)	14.0	Id1539		Fixtures	14.0
+rgb(109,238,247)	14.0	Id1540		dumper	14.0
+rgb(109,238,247)	34.3	Id1541	PHP	url_matcher2.php	34.3
+rgb(109,238,247)	32.9	Id1542	PHP	url_matcher1.php	32.9
+rgb(109,238,247)	14.5	Id1543	PHP	url_matcher3.php	14.5
+rgb(109,238,247)	13.5	Id1544	PHP	validpattern.php	13.5
+rgb(109,238,247)	12.4	Id1545	XML	validpattern.xml	12.4
+rgb(109,238,247)	12.1	Id1546	YAML	validpattern.yml	12.1
+rgb(109,235,247)	11.8	Id1547	PHP	RedirectableUrlMatcher.php	11.8
+rgb(109,235,247)	10.4	Id1548	XML	namespaceprefix.xml	10.4
+rgb(109,235,247)	10.4	Id1549	XML	nonvalidroute.xml	10.4
+rgb(109,235,247)	10.4	Id1550	PHP	CustomXmlFileLoader.php	10.4
+rgb(109,235,247)	10.0	Id1551	XML	validresource.xml	10.0
+rgb(109,235,247)	9.6	Id1552	XML	nonvalid.xml	9.6
+rgb(109,235,247)	14.0	Id1553		AnnotatedClasses	14.0
+rgb(109,235,247)	9.2	Id1554	PHP	BarClass.php	9.2
+rgb(109,233,247)	7.6	Id1555	PHP	FooClass.php	7.6
+rgb(109,233,247)	7.6	Id1556	PHP	AbstractClass.php	7.6
+rgb(109,233,247)	8.7	Id1557	YAML	validresource.yml	8.7
+rgb(109,233,247)	8.2	Id1558	XML	missing_path.xml	8.2
+rgb(109,233,247)	8.2	Id1559	XML	missing_id.xml	8.2
+rgb(109,233,247)	8.2	Id1560	XML	nonvalidnode.xml	8.2
+rgb(109,233,247)	6.2	Id1561	YAML	nonesense_resource_plus_path.yml	6.2
+rgb(109,233,247)	6.2	Id1562	YAML	nonesense_type_without_resource.yml	6.2
+rgb(109,233,247)	6.2	Id1563	YAML	nonvalidkeys.yml	6.2
+rgb(109,231,247)	6.2	Id1564	XML	withdoctype.xml	6.2
+rgb(109,231,247)	5.3	Id1565	YAML	special_route_name.yml	5.3
+rgb(109,231,247)	5.3	Id1566	YAML	incomplete.yml	5.3
+rgb(109,231,247)	4.0	Id1567	YAML	nonvalid2.yml	4.0
+rgb(109,231,247)	33.7	Id1568	PHP	RouteCompilerTest.php	33.7
+rgb(109,231,247)	32.8	Id1569	PHP	RouteCollectionTest.php	32.8
+rgb(109,231,247)	30.1	Id1570	PHP	RouteTest.php	30.1
+rgb(109,231,247)	14.0	Id1571		Loader	14.0
+rgb(109,228,247)	23.8	Id1572	PHP	XmlFileLoaderTest.php	23.8
+rgb(109,228,247)	23.4	Id1573	PHP	AnnotationClassLoaderTest.php	23.4
+rgb(109,228,247)	23.1	Id1574	PHP	YamlFileLoaderTest.php	23.1
+rgb(109,228,247)	17.0	Id1575	PHP	PhpFileLoaderTest.php	17.0
+rgb(109,228,247)	16.4	Id1576	PHP	ClosureLoaderTest.php	16.4
+rgb(109,228,247)	16.2	Id1577	PHP	AnnotationDirectoryLoaderTest.php	16.2
+rgb(109,228,247)	15.2	Id1578	PHP	AnnotationFileLoaderTest.php	15.2
+rgb(109,228,247)	14.5	Id1579	PHP	AbstractAnnotationLoaderTest.php	14.5
+rgb(109,226,247)	14.0	Id1580		Annotation	14.0
+rgb(109,226,247)	15.4	Id1581	PHP	RouteTest.php	15.4
+rgb(109,226,247)	11.5	Id1582	PHP	CompiledRouteTest.php	11.5
+rgb(109,226,247)	35.3	Id1583	PHP	Route.php	35.3
+rgb(109,226,247)	14.0	Id1584		Matcher	14.0
+rgb(109,226,247)	14.0	Id1585		Dumper	14.0
+rgb(109,226,247)	34.5	Id1586	PHP	PhpMatcherDumper.php	34.5
+rgb(109,226,247)	29.1	Id1587	PHP	ApacheMatcherDumper.php	29.1
+rgb(109,226,247)	20.6	Id1588	PHP	DumperCollection.php	20.6
+rgb(109,224,247)	19.0	Id1589	PHP	DumperPrefixCollection.php	19.0
+rgb(109,224,247)	13.5	Id1590	PHP	DumperRoute.php	13.5
+rgb(109,224,247)	11.8	Id1591	PHP	MatcherDumper.php	11.8
+rgb(109,224,247)	8.7	Id1592	PHP	MatcherDumperInterface.php	8.7
+rgb(109,224,247)	24.4	Id1593	PHP	UrlMatcher.php	24.4
+rgb(109,224,247)	22.7	Id1594	PHP	TraceableUrlMatcher.php	22.7
+rgb(109,224,247)	19.3	Id1595	PHP	ApacheUrlMatcher.php	19.3
+rgb(109,224,247)	16.0	Id1596	PHP	RedirectableUrlMatcher.php	16.0
+rgb(109,222,247)	9.6	Id1597	PHP	UrlMatcherInterface.php	9.6
+rgb(109,222,247)	9.6	Id1598	PHP	RequestMatcherInterface.php	9.6
+rgb(109,222,247)	8.2	Id1599	PHP	RedirectableUrlMatcherInterface.php	8.2
+rgb(109,222,247)	14.0	Id1600		Generator	14.0
+rgb(109,222,247)	31.5	Id1601	PHP	UrlGenerator.php	31.5
+rgb(109,222,247)	14.0	Id1602		Dumper	14.0
+rgb(109,222,247)	20.2	Id1603	PHP	PhpGeneratorDumper.php	20.2
+rgb(109,222,247)	11.8	Id1604	PHP	GeneratorDumper.php	11.8
+rgb(109,219,247)	9.2	Id1605	PHP	GeneratorDumperInterface.php	9.2
+rgb(109,219,247)	11.5	Id1606	PHP	UrlGeneratorInterface.php	11.5
+rgb(109,219,247)	8.7	Id1607	PHP	ConfigurableRequirementsInterface.php	8.7
+rgb(109,219,247)	29.8	Id1608	PHP	RouteCollection.php	29.8
+rgb(109,219,247)	29.3	Id1609	PHP	Router.php	29.3
+rgb(109,219,247)	28.6	Id1610	PHP	RouteCompiler.php	28.6
+rgb(109,219,247)	14.0	Id1611		Loader	14.0
+rgb(109,219,247)	27.2	Id1612	PHP	AnnotationClassLoader.php	27.2
+rgb(109,219,247)	27.0	Id1613	PHP	XmlFileLoader.php	27.0
+rgb(109,217,247)	26.6	Id1614	PHP	YamlFileLoader.php	26.6
+rgb(109,217,247)	14.0	Id1615		schema	14.0
+rgb(109,217,247)	14.0	Id1616		routing	14.0
+rgb(109,217,247)	20.7	Id1617	XSD	routing-1.0.xsd	20.7
+rgb(109,217,247)	20.7	Id1618	PHP	AnnotationFileLoader.php	20.7
+rgb(109,217,247)	17.3	Id1619	PHP	AnnotationDirectoryLoader.php	17.3
+rgb(109,217,247)	13.5	Id1620	PHP	PhpFileLoader.php	13.5
+rgb(109,217,247)	11.8	Id1621	PHP	ClosureLoader.php	11.8
+rgb(109,215,247)	26.3	Id1622	PHP	RequestContext.php	26.3
+rgb(109,215,247)	14.0	Id1623		Annotation	14.0
+rgb(109,215,247)	25.6	Id1624	PHP	Route.php	25.6
+rgb(109,215,247)	20.0	Id1625	PHP	CompiledRoute.php	20.0
+rgb(109,215,247)	14.0	Id1626		Exception	14.0
+rgb(109,215,247)	11.8	Id1627	PHP	MethodNotAllowedException.php	11.8
+rgb(109,215,247)	7.6	Id1628	PHP	ResourceNotFoundException.php	7.6
+rgb(109,215,247)	7.6	Id1629	PHP	MissingMandatoryParametersException.php	7.6
+rgb(109,212,247)	7.6	Id1630	PHP	ExceptionInterface.php	7.6
+rgb(109,212,247)	7.6	Id1631	PHP	InvalidParameterException.php	7.6
+rgb(109,212,247)	7.6	Id1632	PHP	RouteNotFoundException.php	7.6
+rgb(109,212,247)	9.2	Id1633	PHP	RouterInterface.php	9.2
+rgb(109,212,247)	8.7	Id1634	PHP	RequestContextAwareInterface.php	8.7
+rgb(109,212,247)	8.2	Id1635	PHP	RouteCompilerInterface.php	8.2
+rgb(109,212,247)	14.0	Id1636		Validator	14.0
+rgb(109,212,247)	14.0	Id1637		Tests	14.0
+rgb(109,212,247)	45.0	Id1638	PHP	GraphWalkerTest.php	45.0
+rgb(109,210,247)	43.4	Id1639	PHP	ValidationVisitorTest.php	43.4
+rgb(109,210,247)	14.0	Id1640		Constraints	14.0
+rgb(109,210,247)	41.4	Id1641	PHP	IpValidatorTest.php	41.4
+rgb(109,210,247)	40.0	Id1642	PHP	CollectionValidatorTest.php	40.0
+rgb(109,210,247)	34.5	Id1643	PHP	ChoiceValidatorTest.php	34.5
+rgb(109,210,247)	32.8	Id1644	PHP	FileValidatorTest.php	32.8
+rgb(109,210,247)	31.4	Id1645	PHP	RangeValidatorTest.php	31.4
+rgb(109,210,247)	30.9	Id1646	PHP	LengthValidatorTest.php	30.9
+rgb(109,208,247)	30.6	Id1647	PHP	ImageValidatorTest.php	30.6
+rgb(109,208,247)	29.1	Id1648	PHP	TypeValidatorTest.php	29.1
+rgb(109,208,247)	28.2	Id1649	PHP	CountValidatorTest.php	28.2
+rgb(109,208,247)	27.7	Id1650	PHP	UrlValidatorTest.php	27.7
+rgb(109,208,247)	27.1	Id1651	PHP	RegexValidatorTest.php	27.1
+rgb(109,208,247)	26.0	Id1652	PHP	CallbackValidatorTest.php	26.0
+rgb(109,208,247)	25.6	Id1653	PHP	CardSchemeValidatorTest.php	25.6
+rgb(109,208,247)	24.9	Id1654	PHP	MaxLengthValidatorTest.php	24.9
+rgb(109,208,247)	24.9	Id1655	PHP	MinLengthValidatorTest.php	24.9
+rgb(109,206,247)	23.9	Id1656	PHP	MaxValidatorTest.php	23.9
+rgb(109,206,247)	23.6	Id1657	PHP	MinValidatorTest.php	23.6
+rgb(109,206,247)	23.4	Id1658	PHP	DateTimeValidatorTest.php	23.4
+rgb(109,206,247)	23.1	Id1659	PHP	TimeValidatorTest.php	23.1
+rgb(109,206,247)	23.0	Id1660	PHP	DateValidatorTest.php	23.0
+rgb(109,206,247)	22.9	Id1661	PHP	LuhnValidatorTest.php	22.9
+rgb(109,206,247)	22.9	Id1662	PHP	LocaleValidatorTest.php	22.9
+rgb(109,206,247)	22.6	Id1663	PHP	NotBlankValidatorTest.php	22.6
+rgb(109,203,247)	22.6	Id1664	PHP	LanguageValidatorTest.php	22.6
+rgb(109,203,247)	22.6	Id1665	PHP	CountryValidatorTest.php	22.6
+rgb(109,203,247)	22.4	Id1666	PHP	AllValidatorTest.php	22.4
+rgb(109,203,247)	22.0	Id1667	PHP	EmailValidatorTest.php	22.0
+rgb(109,203,247)	19.6	Id1668	PHP	CollectionValidatorCustomArrayObjectTest.php	19.6
+rgb(109,203,247)	19.6	Id1669	PHP	BlankValidatorTest.php	19.6
+rgb(109,203,247)	18.7	Id1670	PHP	NullValidatorTest.php	18.7
+rgb(109,203,247)	18.5	Id1671	PHP	NotNullValidatorTest.php	18.5
+rgb(109,201,247)	18.0	Id1672	PHP	TrueValidatorTest.php	18.0
+rgb(109,201,247)	17.8	Id1673	PHP	FalseValidatorTest.php	17.8
+rgb(109,201,247)	17.3	Id1674	PHP	CollectionTest.php	17.3
+rgb(109,201,247)	13.8	Id1675	PHP	FileValidatorPathTest.php	13.8
+rgb(109,201,247)	13.5	Id1676	PHP	CountValidatorCountableTest.php	13.5
+rgb(109,201,247)	13.0	Id1677	PHP	AllTest.php	13.0
+rgb(109,201,247)	10.4	Id1678	PHP	LocalizedTestCase.php	10.4
+rgb(109,201,247)	10.0	Id1679	PHP	FileValidatorObjectTest.php	10.0
+rgb(109,201,247)	10.0	Id1680	PHP	ValidTest.php	10.0
+rgb(109,199,247)	9.6	Id1681	PHP	CollectionValidatorArrayTest.php	9.6
+rgb(109,199,247)	9.6	Id1682	PHP	CollectionValidatorArrayObjectTest.php	9.6
+rgb(109,199,247)	9.6	Id1683	PHP	CountValidatorArrayTest.php	9.6
+rgb(109,199,247)	41.2	Id1684	PHP	ExecutionContextTest.php	41.2
+rgb(109,199,247)	33.8	Id1685	PHP	ValidatorTest.php	33.8
+rgb(109,199,247)	14.0	Id1686		Mapping	14.0
+rgb(109,199,247)	30.8	Id1687	PHP	ClassMetadataTest.php	30.8
+rgb(109,199,247)	14.0	Id1688		Loader	14.0
+rgb(109,196,247)	26.0	Id1689	PHP	AnnotationLoaderTest.php	26.0
+rgb(109,196,247)	22.9	Id1690	PHP	YamlFileLoaderTest.php	22.9
+rgb(109,196,247)	21.5	Id1691	PHP	StaticMethodLoaderTest.php	21.5
+rgb(109,196,247)	21.4	Id1692	PHP	XmlFileLoaderTest.php	21.4
+rgb(109,196,247)	21.4	Id1693	XML	constraint-mapping.xml	21.4
+rgb(109,196,247)	20.3	Id1694	PHP	LoaderChainTest.php	20.3
+rgb(109,196,247)	17.5	Id1695	YAML	constraint-mapping.yml	17.5
+rgb(109,196,247)	16.2	Id1696	PHP	FilesLoaderTest.php	16.2
+rgb(109,194,247)	8.7	Id1697	XML	withdoctype.xml	8.7
+rgb(109,194,247)	4.0	Id1698	YAML	nonvalid-mapping.yml	4.0
+rgb(109,194,247)	25.7	Id1699	PHP	ClassMetadataFactoryTest.php	25.7
+rgb(109,194,247)	20.3	Id1700	PHP	MemberMetadataTest.php	20.3
+rgb(109,194,247)	14.0	Id1701		Cache	14.0
+rgb(109,194,247)	19.6	Id1702	PHP	ApcCacheTest.php	19.6
+rgb(109,194,247)	18.7	Id1703	PHP	ElementMetadataTest.php	18.7
+rgb(109,194,247)	13.0	Id1704	PHP	GetterMetadataTest.php	13.0
+rgb(109,194,247)	13.0	Id1705	PHP	PropertyMetadataTest.php	13.0
+rgb(109,192,247)	28.8	Id1706	PHP	ValidatorFactoryTest.php	28.8
+rgb(109,192,247)	25.0	Id1707	PHP	ValidatorBuilderTest.php	25.0
+rgb(109,192,247)	24.9	Id1708	PHP	ConstraintViolationListTest.php	24.9
+rgb(109,192,247)	24.5	Id1709	PHP	ConstraintTest.php	24.5
+rgb(109,192,247)	19.3	Id1710	PHP	ValidatorContextTest.php	19.3
+rgb(109,192,247)	18.7	Id1711	PHP	ConstraintValidatorTest.php	18.7
+rgb(109,192,247)	14.0	Id1712		Fixtures	14.0
+rgb(109,192,247)	16.8	Id1713	PHP	FakeMetadataFactory.php	16.8
+rgb(109,189,247)	14.0	Id1714	PHP	FilesLoader.php	14.0
+rgb(109,189,247)	13.8	Id1715	PHP	Entity.php	13.8
+rgb(109,189,247)	13.8	Id1716	PHP	ConstraintAValidator.php	13.8
+rgb(109,189,247)	12.7	Id1717	PHP	GroupSequenceProviderEntity.php	12.7
+rgb(109,189,247)	12.1	Id1718	PHP	ConstraintA.php	12.1
+rgb(109,189,247)	11.8	Id1719	PHP	ConstraintC.php	11.8
+rgb(109,189,247)	10.8	Id1720	PHP	FailingConstraintValidator.php	10.8
+rgb(109,189,247)	10.4	Id1721	PHP	FailingConstraint.php	10.4
+rgb(109,187,247)	10.0	Id1722	PHP	ClassConstraint.php	10.0
+rgb(109,187,247)	10.0	Id1723	PHP	ConstraintB.php	10.0
+rgb(109,187,247)	10.0	Id1724	PHP	PropertyConstraint.php	10.0
+rgb(109,187,247)	9.6	Id1725	PHP	EntityParent.php	9.6
+rgb(109,187,247)	7.6	Id1726	PHP	EntityInterface.php	7.6
+rgb(109,187,247)	7.6	Id1727	PHP	Reference.php	7.6
+rgb(109,187,247)	7.0	Id1728	PHP	InvalidConstraint.php	7.0
+rgb(109,187,247)	6.2	Id1729	PHP	InvalidConstraintValidator.php	6.2
+rgb(109,187,247)	13.8	Id1730	PHP	ConstraintViolationTest.php	13.8
+rgb(109,185,247)	14.0	Id1731		Mapping	14.0
+rgb(109,185,247)	33.2	Id1732	PHP	ClassMetadata.php	33.2
+rgb(109,185,247)	14.0	Id1733		Loader	14.0
+rgb(109,185,247)	14.0	Id1734		schema	14.0
+rgb(109,185,247)	14.0	Id1735		dic	14.0
+rgb(109,185,247)	14.0	Id1736		constraint-mapping	14.0
+rgb(109,185,247)	29.0	Id1737	XSD	constraint-mapping-1.0.xsd	29.0
+rgb(109,185,247)	27.3	Id1738	PHP	XmlFileLoader.php	27.3
+rgb(109,183,247)	23.0	Id1739	PHP	YamlFileLoader.php	23.0
+rgb(109,183,247)	20.2	Id1740	PHP	AnnotationLoader.php	20.2
+rgb(109,183,247)	15.2	Id1741	PHP	StaticMethodLoader.php	15.2
+rgb(109,183,247)	14.7	Id1742	PHP	AbstractLoader.php	14.7
+rgb(109,183,247)	14.5	Id1743	PHP	LoaderChain.php	14.5
+rgb(109,183,247)	12.7	Id1744	PHP	FilesLoader.php	12.7
+rgb(109,183,247)	12.4	Id1745	PHP	FileLoader.php	12.4
+rgb(109,183,247)	9.6	Id1746	PHP	XmlFilesLoader.php	9.6
+rgb(109,183,247)	9.6	Id1747	PHP	YamlFilesLoader.php	9.6
+rgb(109,180,247)	8.7	Id1748	PHP	LoaderInterface.php	8.7
+rgb(109,180,247)	25.8	Id1749	PHP	MemberMetadata.php	25.8
+rgb(109,180,247)	21.4	Id1750	PHP	ClassMetadataFactory.php	21.4
+rgb(109,180,247)	18.5	Id1751	PHP	ElementMetadata.php	18.5
+rgb(109,180,247)	14.0	Id1752		Cache	14.0
+rgb(109,180,247)	15.8	Id1753	PHP	ApcCache.php	15.8
+rgb(109,180,247)	9.6	Id1754	PHP	CacheInterface.php	9.6
+rgb(109,180,247)	15.2	Id1755	PHP	ClassMetadataFactoryAdapter.php	15.2
+rgb(109,178,247)	14.9	Id1756	PHP	GetterMetadata.php	14.9
+rgb(109,178,247)	14.0	Id1757	PHP	PropertyMetadata.php	14.0
+rgb(109,178,247)	9.6	Id1758	PHP	BlackholeMetadataFactory.php	9.6
+rgb(109,178,247)	8.2	Id1759	PHP	ClassMetadataFactoryInterface.php	8.2
+rgb(109,178,247)	32.9	Id1760	PHP	ExecutionContext.php	32.9
+rgb(109,178,247)	31.7	Id1761	PHP	ValidatorBuilder.php	31.7
+rgb(109,178,247)	14.0	Id1762		Constraints	14.0
+rgb(109,178,247)	26.7	Id1763	PHP	FileValidator.php	26.7
+rgb(109,176,247)	22.4	Id1764	PHP	ImageValidator.php	22.4
+rgb(109,176,247)	20.8	Id1765	PHP	CardSchemeValidator.php	20.8
+rgb(109,176,247)	20.4	Id1766	PHP	IpValidator.php	20.4
+rgb(109,176,247)	19.1	Id1767	PHP	ChoiceValidator.php	19.1
+rgb(109,176,247)	18.3	Id1768	PHP	Collection.php	18.3
+rgb(109,176,247)	18.3	Id1769	PHP	LengthValidator.php	18.3
+rgb(109,176,247)	17.8	Id1770	PHP	Regex.php	17.8
+rgb(109,176,247)	17.8	Id1771	PHP	Ip.php	17.8
+rgb(109,176,247)	17.8	Id1772	PHP	CollectionValidator.php	17.8
+rgb(109,173,247)	17.7	Id1773	PHP	EmailValidator.php	17.7
+rgb(109,173,247)	17.1	Id1774	PHP	CountValidator.php	17.1
+rgb(109,173,247)	16.8	Id1775	PHP	UrlValidator.php	16.8
+rgb(109,173,247)	16.6	Id1776	PHP	MinLengthValidator.php	16.6
+rgb(109,173,247)	16.6	Id1777	PHP	MaxLengthValidator.php	16.6
+rgb(109,173,247)	16.0	Id1778	PHP	CallbackValidator.php	16.0
+rgb(109,173,247)	16.0	Id1779	PHP	RangeValidator.php	16.0
+rgb(109,173,247)	15.8	Id1780	PHP	All.php	15.8
+rgb(109,171,247)	15.6	Id1781	PHP	MaxValidator.php	15.6
+rgb(109,171,247)	15.6	Id1782	PHP	MinValidator.php	15.6
+rgb(109,171,247)	15.2	Id1783	PHP	TypeValidator.php	15.2
+rgb(109,171,247)	14.7	Id1784	PHP	Length.php	14.7
+rgb(109,171,247)	14.7	Id1785	PHP	LuhnValidator.php	14.7
+rgb(109,171,247)	14.5	Id1786	PHP	Count.php	14.5
+rgb(109,171,247)	14.0	Id1787	PHP	AllValidator.php	14.0
+rgb(109,171,247)	13.8	Id1788	PHP	Min.php	13.8
+rgb(109,169,247)	13.8	Id1789	PHP	MaxLength.php	13.8
+rgb(109,169,247)	13.8	Id1790	PHP	MinLength.php	13.8
+rgb(109,169,247)	13.8	Id1791	PHP	DateValidator.php	13.8
+rgb(109,169,247)	13.8	Id1792	PHP	Max.php	13.8
+rgb(109,169,247)	13.8	Id1793	PHP	TimeValidator.php	13.8
+rgb(109,169,247)	13.5	Id1794	PHP	LanguageValidator.php	13.5
+rgb(109,169,247)	13.5	Id1795	PHP	RegexValidator.php	13.5
+rgb(109,169,247)	13.5	Id1796	PHP	LocaleValidator.php	13.5
+rgb(109,169,247)	13.5	Id1797	PHP	CountryValidator.php	13.5
+rgb(109,167,247)	13.3	Id1798	PHP	Choice.php	13.3
+rgb(109,167,247)	13.3	Id1799	PHP	File.php	13.3
+rgb(109,167,247)	13.0	Id1800	PHP	Callback.php	13.0
+rgb(109,167,247)	13.0	Id1801	PHP	Range.php	13.0
+rgb(109,167,247)	12.1	Id1802	PHP	Type.php	12.1
+rgb(109,167,247)	12.1	Id1803	PHP	TrueValidator.php	12.1
+rgb(109,167,247)	12.1	Id1804	PHP	CardScheme.php	12.1
+rgb(109,167,247)	12.1	Id1805	PHP	Image.php	12.1
+rgb(109,164,247)	12.1	Id1806	PHP	Valid.php	12.1
+rgb(109,164,247)	11.5	Id1807	PHP	FalseValidator.php	11.5
+rgb(109,164,247)	11.2	Id1808	PHP	NotNullValidator.php	11.2
+rgb(109,164,247)	11.2	Id1809	PHP	NotBlankValidator.php	11.2
+rgb(109,164,247)	11.2	Id1810	PHP	NullValidator.php	11.2
+rgb(109,164,247)	11.2	Id1811	PHP	BlankValidator.php	11.2
+rgb(109,164,247)	14.0	Id1812		Collection	14.0
+rgb(109,164,247)	10.4	Id1813	PHP	Required.php	10.4
+rgb(109,162,247)	10.4	Id1814	PHP	Optional.php	10.4
+rgb(109,162,247)	10.0	Id1815	PHP	GroupSequence.php	10.0
+rgb(109,162,247)	9.6	Id1816	PHP	Email.php	9.6
+rgb(109,162,247)	9.2	Id1817	PHP	Url.php	9.2
+rgb(109,162,247)	8.7	Id1818	PHP	Blank.php	8.7
+rgb(109,162,247)	8.7	Id1819	PHP	True.php	8.7
+rgb(109,162,247)	8.7	Id1820	PHP	Luhn.php	8.7
+rgb(109,162,247)	8.7	Id1821	PHP	Language.php	8.7
+rgb(109,162,247)	8.7	Id1822	PHP	DateTime.php	8.7
+rgb(109,160,247)	8.7	Id1823	PHP	NotBlank.php	8.7
+rgb(109,160,247)	8.7	Id1824	PHP	Date.php	8.7
+rgb(109,160,247)	8.7	Id1825	PHP	Country.php	8.7
+rgb(109,160,247)	8.7	Id1826	PHP	Locale.php	8.7
+rgb(109,160,247)	8.7	Id1827	PHP	NotNull.php	8.7
+rgb(109,160,247)	8.7	Id1828	PHP	Time.php	8.7
+rgb(109,160,247)	8.7	Id1829	PHP	Null.php	8.7
+rgb(109,160,247)	8.7	Id1830	PHP	False.php	8.7
+rgb(109,157,247)	8.2	Id1831	PHP	DateTimeValidator.php	8.2
+rgb(109,157,247)	7.6	Id1832	PHP	GroupSequenceProvider.php	7.6
+rgb(109,157,247)	26.7	Id1833	PHP	Validator.php	26.7
+rgb(109,157,247)	25.7	Id1834	PHP	ValidationVisitor.php	25.7
+rgb(109,157,247)	24.2	Id1835	PHP	GraphWalker.php	24.2
+rgb(109,157,247)	23.3	Id1836	PHP	Constraint.php	23.3
+rgb(109,157,247)	23.1	Id1837	PHP	ValidatorFactory.php	23.1
+rgb(109,157,247)	22.7	Id1838	PHP	ConstraintViolationList.php	22.7
+rgb(109,157,247)	21.8	Id1839	PHP	ConstraintViolation.php	21.8
+rgb(109,155,247)	18.5	Id1840	PHP	ValidatorContext.php	18.5
+rgb(109,155,247)	18.0	Id1841	PHP	ConstraintValidator.php	18.0
+rgb(109,155,247)	15.8	Id1842	PHP	DefaultTranslator.php	15.8
+rgb(109,155,247)	14.3	Id1843	PHP	ValidatorBuilderInterface.php	14.3
+rgb(109,155,247)	12.7	Id1844	PHP	ExecutionContextInterface.php	12.7
+rgb(109,155,247)	12.1	Id1845	PHP	ConstraintValidatorFactory.php	12.1
+rgb(109,155,247)	12.1	Id1846	PHP	Validation.php	12.1
+rgb(109,155,247)	14.0	Id1847		Exception	14.0
+rgb(109,153,247)	11.8	Id1848	PHP	InvalidOptionsException.php	11.8
+rgb(109,153,247)	11.8	Id1849	PHP	MissingOptionsException.php	11.8
+rgb(109,153,247)	9.6	Id1850	PHP	UnexpectedTypeException.php	9.6
+rgb(109,153,247)	7.6	Id1851	PHP	GroupDefinitionException.php	7.6
+rgb(109,153,247)	7.6	Id1852	PHP	NoSuchMetadataException.php	7.6
+rgb(109,153,247)	7.6	Id1853	PHP	ConstraintDefinitionException.php	7.6
+rgb(109,153,247)	7.6	Id1854	PHP	InvalidArgumentException.php	7.6
+rgb(109,153,247)	7.6	Id1855	PHP	ValidatorException.php	7.6
+rgb(109,150,247)	7.6	Id1856	PHP	MappingException.php	7.6
+rgb(109,150,247)	7.6	Id1857	PHP	BadMethodCallException.php	7.6
+rgb(109,150,247)	7.6	Id1858	PHP	ExceptionInterface.php	7.6
+rgb(109,150,247)	11.2	Id1859	PHP	ConstraintViolationInterface.php	11.2
+rgb(109,150,247)	10.4	Id1860	PHP	ValidatorInterface.php	10.4
+rgb(109,150,247)	10.4	Id1861	PHP	ConstraintViolationListInterface.php	10.4
+rgb(109,150,247)	10.0	Id1862	PHP	GlobalExecutionContextInterface.php	10.0
+rgb(109,150,247)	9.6	Id1863	PHP	ValidatorContextInterface.php	9.6
+rgb(109,150,247)	9.2	Id1864	PHP	ValidationVisitorInterface.php	9.2
+rgb(109,148,247)	8.7	Id1865	PHP	ConstraintValidatorFactoryInterface.php	8.7
+rgb(109,148,247)	8.7	Id1866	PHP	PropertyMetadataContainerInterface.php	8.7
+rgb(109,148,247)	8.7	Id1867	PHP	ConstraintValidatorInterface.php	8.7
+rgb(109,148,247)	8.7	Id1868	PHP	PropertyMetadataInterface.php	8.7
+rgb(109,148,247)	8.7	Id1869	PHP	MetadataFactoryInterface.php	8.7
+rgb(109,148,247)	8.7	Id1870	PHP	MetadataInterface.php	8.7
+rgb(109,148,247)	8.2	Id1871	PHP	ObjectInitializerInterface.php	8.2
+rgb(109,148,247)	8.2	Id1872	PHP	ClassBasedInterface.php	8.2
+rgb(109,146,247)	8.2	Id1873	PHP	GroupSequenceProviderInterface.php	8.2
+rgb(109,146,247)	14.0	Id1874		BrowserKit	14.0
+rgb(109,146,247)	14.0	Id1875		Tests	14.0
+rgb(109,146,247)	41.0	Id1876	PHP	ClientTest.php	41.0
+rgb(109,146,247)	29.2	Id1877	PHP	CookieJarTest.php	29.2
+rgb(109,146,247)	28.4	Id1878	PHP	CookieTest.php	28.4
+rgb(109,146,247)	21.9	Id1879	PHP	HistoryTest.php	21.9
+rgb(109,146,247)	19.6	Id1880	PHP	ResponseTest.php	19.6
+rgb(109,144,247)	16.8	Id1881	PHP	RequestTest.php	16.8
+rgb(109,144,247)	33.0	Id1882	PHP	Client.php	33.0
+rgb(109,144,247)	30.8	Id1883	PHP	Cookie.php	30.8
+rgb(109,144,247)	25.9	Id1884	PHP	CookieJar.php	25.9
+rgb(109,144,247)	20.0	Id1885	PHP	Response.php	20.0
+rgb(109,144,247)	19.1	Id1886	PHP	Request.php	19.1
+rgb(109,144,247)	18.7	Id1887	PHP	History.php	18.7
+rgb(109,144,247)	14.0	Id1888		Serializer	14.0
+rgb(109,144,247)	14.0	Id1889		Tests	14.0
+rgb(109,141,247)	14.0	Id1890		Encoder	14.0
+rgb(109,141,247)	37.8	Id1891	PHP	XmlEncoderTest.php	37.8
+rgb(109,141,247)	19.3	Id1892	PHP	JsonEncoderTest.php	19.3
+rgb(109,141,247)	14.0	Id1893		Normalizer	14.0
+rgb(109,141,247)	31.6	Id1894	PHP	GetSetMethodNormalizerTest.php	31.6
+rgb(109,141,247)	17.7	Id1895	PHP	CustomNormalizerTest.php	17.7
+rgb(109,141,247)	31.0	Id1896	PHP	SerializerTest.php	31.0
+rgb(109,141,247)	14.0	Id1897		Fixtures	14.0
+rgb(109,139,247)	15.4	Id1898	PHP	Dummy.php	15.4
+rgb(109,139,247)	14.0	Id1899	PHP	ScalarDummy.php	14.0
+rgb(109,139,247)	14.0	Id1900	PHP	NormalizableTraversableDummy.php	14.0
+rgb(109,139,247)	10.4	Id1901	PHP	TraversableDummy.php	10.4
+rgb(109,139,247)	10.0	Id1902	PHP	DenormalizableDummy.php	10.0
+rgb(109,139,247)	14.0	Id1903		Encoder	14.0
+rgb(109,139,247)	35.8	Id1904	PHP	XmlEncoder.php	35.8
+rgb(109,139,247)	19.6	Id1905	PHP	ChainEncoder.php	19.6
+rgb(109,137,247)	18.3	Id1906	PHP	JsonDecode.php	18.3
+rgb(109,137,247)	17.7	Id1907	PHP	ChainDecoder.php	17.7
+rgb(109,137,247)	17.0	Id1908	PHP	JsonEncoder.php	17.0
+rgb(109,137,247)	15.6	Id1909	PHP	JsonEncode.php	15.6
+rgb(109,137,247)	10.8	Id1910	PHP	SerializerAwareEncoder.php	10.8
+rgb(109,137,247)	8.7	Id1911	PHP	DecoderInterface.php	8.7
+rgb(109,137,247)	8.7	Id1912	PHP	EncoderInterface.php	8.7
+rgb(109,137,247)	7.6	Id1913	PHP	NormalizationAwareInterface.php	7.6
+rgb(109,137,247)	31.9	Id1914	PHP	Serializer.php	31.9
+rgb(109,134,247)	14.0	Id1915		Normalizer	14.0
+rgb(109,134,247)	25.6	Id1916	PHP	GetSetMethodNormalizer.php	25.6
+rgb(109,134,247)	14.3	Id1917	PHP	CustomNormalizer.php	14.3
+rgb(109,134,247)	10.8	Id1918	PHP	SerializerAwareNormalizer.php	10.8
+rgb(109,134,247)	8.7	Id1919	PHP	DenormalizerInterface.php	8.7
+rgb(109,134,247)	8.7	Id1920	PHP	NormalizerInterface.php	8.7
+rgb(109,134,247)	8.2	Id1921	PHP	DenormalizableInterface.php	8.2
+rgb(109,134,247)	8.2	Id1922	PHP	NormalizableInterface.php	8.2
+rgb(109,132,247)	8.7	Id1923	PHP	SerializerAwareInterface.php	8.7
+rgb(109,132,247)	8.7	Id1924	PHP	SerializerInterface.php	8.7
+rgb(109,132,247)	14.0	Id1925		Exception	14.0
+rgb(109,132,247)	7.6	Id1926	PHP	InvalidArgumentException.php	7.6
+rgb(109,132,247)	7.6	Id1927	PHP	Exception.php	7.6
+rgb(109,132,247)	7.6	Id1928	PHP	RuntimeException.php	7.6
+rgb(109,132,247)	7.6	Id1929	PHP	UnexpectedValueException.php	7.6
+rgb(109,132,247)	7.6	Id1930	PHP	UnsupportedException.php	7.6
+rgb(109,132,247)	7.6	Id1931	PHP	LogicException.php	7.6
+rgb(109,130,247)	14.0	Id1932		EventDispatcher	14.0
+rgb(109,130,247)	14.0	Id1933		Tests	14.0
+rgb(109,130,247)	36.7	Id1934	PHP	EventDispatcherTest.php	36.7
+rgb(109,130,247)	31.9	Id1935	PHP	ContainerAwareEventDispatcherTest.php	31.9
+rgb(109,130,247)	23.8	Id1936	PHP	GenericEventTest.php	23.8
+rgb(109,130,247)	20.3	Id1937	PHP	ImmutableEventDispatcherTest.php	20.3
+rgb(109,130,247)	18.5	Id1938	PHP	EventTest.php	18.5
+rgb(109,130,247)	25.7	Id1939	PHP	ContainerAwareEventDispatcher.php	25.7
+rgb(109,128,247)	25.0	Id1940	PHP	EventDispatcher.php	25.0
+rgb(109,128,247)	21.0	Id1941	PHP	GenericEvent.php	21.0
+rgb(109,128,247)	17.1	Id1942	PHP	ImmutableEventDispatcher.php	17.1
+rgb(109,128,247)	16.0	Id1943	PHP	Event.php	16.0
+rgb(109,128,247)	10.8	Id1944	PHP	EventDispatcherInterface.php	10.8
+rgb(109,128,247)	14.0	Id1945		Debug	14.0
+rgb(109,128,247)	8.7	Id1946	PHP	TraceableEventDispatcherInterface.php	8.7
+rgb(109,128,247)	8.2	Id1947	PHP	EventSubscriberInterface.php	8.2
+rgb(109,125,247)	14.0	Id1948		PropertyAccess	14.0
+rgb(109,125,247)	36.4	Id1949	PHP	PropertyAccessor.php	36.4
+rgb(109,125,247)	28.0	Id1950	PHP	PropertyPathBuilder.php	28.0
+rgb(109,125,247)	26.6	Id1951	PHP	PropertyPath.php	26.6
+rgb(109,125,247)	22.0	Id1952	PHP	StringUtil.php	22.0
+rgb(109,125,247)	13.0	Id1953	PHP	PropertyPathIterator.php	13.0
+rgb(109,125,247)	10.8	Id1954	PHP	PropertyAccess.php	10.8
+rgb(109,125,247)	10.8	Id1955	PHP	PropertyPathInterface.php	10.8
+rgb(109,125,247)	14.0	Id1956		Exception	14.0
+rgb(109,123,247)	9.6	Id1957	PHP	UnexpectedTypeException.php	9.6
+rgb(109,123,247)	7.6	Id1958	PHP	ExceptionInterface.php	7.6
+rgb(109,123,247)	7.6	Id1959	PHP	RuntimeException.php	7.6
+rgb(109,123,247)	7.6	Id1960	PHP	OutOfBoundsException.php	7.6
+rgb(109,123,247)	7.6	Id1961	PHP	PropertyAccessDeniedException.php	7.6
+rgb(109,123,247)	7.6	Id1962	PHP	InvalidPropertyPathException.php	7.6
+rgb(109,123,247)	7.6	Id1963	PHP	NoSuchPropertyException.php	7.6
+rgb(109,123,247)	8.7	Id1964	PHP	PropertyPathIteratorInterface.php	8.7
+rgb(109,121,247)	8.7	Id1965	PHP	PropertyAccessorInterface.php	8.7
+rgb(109,121,247)	14.0	Id1966		Config	14.0
+rgb(109,121,247)	14.0	Id1967		Definition	14.0
+rgb(109,121,247)	14.0	Id1968		Builder	14.0
+rgb(109,121,247)	36.1	Id1969	PHP	ArrayNodeDefinition.php	36.1
+rgb(109,121,247)	29.2	Id1970	PHP	NodeDefinition.php	29.2
+rgb(109,121,247)	24.7	Id1971	PHP	ExprBuilder.php	24.7
+rgb(109,121,247)	24.5	Id1972	PHP	NodeBuilder.php	24.5
+rgb(109,118,247)	16.4	Id1973	PHP	VariableNodeDefinition.php	16.4
+rgb(109,118,247)	15.2	Id1974	PHP	NormalizationBuilder.php	15.2
+rgb(109,118,247)	15.2	Id1975	PHP	MergeBuilder.php	15.2
+rgb(109,118,247)	14.3	Id1976	PHP	TreeBuilder.php	14.3
+rgb(109,118,247)	14.3	Id1977	PHP	EnumNodeDefinition.php	14.3
+rgb(109,118,247)	14.0	Id1978	PHP	NumericNodeDefinition.php	14.0
+rgb(109,118,247)	13.3	Id1979	PHP	ValidationBuilder.php	13.3
+rgb(109,118,247)	11.8	Id1980	PHP	BooleanNodeDefinition.php	11.8
+rgb(109,118,247)	10.0	Id1981	PHP	FloatNodeDefinition.php	10.0
+rgb(109,116,247)	10.0	Id1982	PHP	IntegerNodeDefinition.php	10.0
+rgb(109,116,247)	10.0	Id1983	PHP	ScalarNodeDefinition.php	10.0
+rgb(109,116,247)	9.2	Id1984	PHP	ParentNodeDefinitionInterface.php	9.2
+rgb(109,116,247)	7.6	Id1985	PHP	NodeParentInterface.php	7.6
+rgb(109,116,247)	33.8	Id1986	PHP	ArrayNode.php	33.8
+rgb(109,116,247)	31.2	Id1987	PHP	PrototypedArrayNode.php	31.2
+rgb(109,116,247)	30.5	Id1988	PHP	BaseNode.php	30.5
+rgb(109,116,247)	27.6	Id1989	PHP	ReferenceDumper.php	27.6
+rgb(109,114,247)	19.7	Id1990	PHP	VariableNode.php	19.7
+rgb(109,114,247)	16.6	Id1991	PHP	EnumNode.php	16.6
+rgb(109,114,247)	16.4	Id1992	PHP	Processor.php	16.4
+rgb(109,114,247)	15.8	Id1993	PHP	NumericNode.php	15.8
+rgb(109,114,247)	13.0	Id1994	PHP	ScalarNode.php	13.0
+rgb(109,114,247)	12.7	Id1995	PHP	BooleanNode.php	12.7
+rgb(109,114,247)	12.4	Id1996	PHP	FloatNode.php	12.4
+rgb(109,114,247)	11.5	Id1997	PHP	IntegerNode.php	11.5
+rgb(109,111,247)	14.0	Id1998		Exception	14.0
+rgb(109,111,247)	11.5	Id1999	PHP	InvalidConfigurationException.php	11.5
+rgb(109,111,247)	7.6	Id2000	PHP	InvalidTypeException.php	7.6
+rgb(109,111,247)	7.6	Id2001	PHP	InvalidDefinitionException.php	7.6
+rgb(109,111,247)	7.6	Id2002	PHP	DuplicateKeyException.php	7.6
+rgb(109,111,247)	7.6	Id2003	PHP	ForbiddenOverwriteException.php	7.6
+rgb(109,111,247)	7.6	Id2004	PHP	UnsetKeyException.php	7.6
+rgb(109,111,247)	7.6	Id2005	PHP	Exception.php	7.6
+rgb(109,111,247)	11.2	Id2006	PHP	NodeInterface.php	11.2
+rgb(109,109,247)	8.2	Id2007	PHP	ConfigurationInterface.php	8.2
+rgb(109,109,247)	8.2	Id2008	PHP	PrototypeNodeInterface.php	8.2
+rgb(109,109,247)	14.0	Id2009		Tests	14.0
+rgb(109,109,247)	14.0	Id2010		Definition	14.0
+rgb(109,109,247)	31.1	Id2011	PHP	NormalizationTest.php	31.1
+rgb(109,109,247)	14.0	Id2012		Builder	14.0
+rgb(109,109,247)	30.2	Id2013	PHP	ArrayNodeDefinitionTest.php	30.2
+rgb(109,109,247)	29.7	Id2014	PHP	ExprBuilderTest.php	29.7
+rgb(111,109,247)	24.1	Id2015	PHP	TreeBuilderTest.php	24.1
+rgb(111,109,247)	20.4	Id2016	PHP	NodeBuilderTest.php	20.4
+rgb(111,109,247)	19.1	Id2017	PHP	NumericNodeDefinitionTest.php	19.1
+rgb(111,109,247)	14.0	Id2018	PHP	EnumNodeDefinitionTest.php	14.0
+rgb(111,109,247)	30.2	Id2019	PHP	MergeTest.php	30.2
+rgb(111,109,247)	27.1	Id2020	PHP	PrototypedArrayNodeTest.php	27.1
+rgb(111,109,247)	20.0	Id2021	PHP	FinalizationTest.php	20.0
+rgb(111,109,247)	18.7	Id2022	PHP	ArrayNodeTest.php	18.7
+rgb(111,109,247)	17.7	Id2023	PHP	FloatNodeTest.php	17.7
+rgb(114,109,247)	17.3	Id2024	PHP	IntegerNodeTest.php	17.3
+rgb(114,109,247)	17.1	Id2025	PHP	BooleanNodeTest.php	17.1
+rgb(114,109,247)	17.1	Id2026	PHP	ScalarNodeTest.php	17.1
+rgb(114,109,247)	17.0	Id2027	PHP	ReferenceDumperTest.php	17.0
+rgb(114,109,247)	13.3	Id2028	PHP	EnumNodeTest.php	13.3
+rgb(114,109,247)	14.0	Id2029		Resource	14.0
+rgb(114,109,247)	26.0	Id2030	PHP	DirectoryResourceTest.php	26.0
+rgb(114,109,247)	15.4	Id2031	PHP	FileResourceTest.php	15.4
+rgb(116,109,247)	14.0	Id2032		Util	14.0
+rgb(116,109,247)	25.0	Id2033	PHP	XmlUtilsTest.php	25.0
+rgb(116,109,247)	22.0	Id2034	PHP	FileLocatorTest.php	22.0
+rgb(116,109,247)	14.0	Id2035		Loader	14.0
+rgb(116,109,247)	20.0	Id2036	PHP	LoaderTest.php	20.0
+rgb(116,109,247)	18.8	Id2037	PHP	DelegatingLoaderTest.php	18.8
+rgb(116,109,247)	15.4	Id2038	PHP	LoaderResolverTest.php	15.4
+rgb(116,109,247)	14.0	Id2039		Fixtures	14.0
+rgb(118,109,247)	14.0	Id2040		Configuration	14.0
+rgb(118,109,247)	19.6	Id2041	PHP	ExampleConfiguration.php	19.6
+rgb(118,109,247)	14.0	Id2042		Builder	14.0
+rgb(118,109,247)	13.5	Id2043	PHP	NodeBuilder.php	13.5
+rgb(118,109,247)	9.6	Id2044	PHP	BarNodeDefinition.php	9.6
+rgb(118,109,247)	8.2	Id2045	PHP	VariableNodeDefinition.php	8.2
+rgb(118,109,247)	14.0	Id2046		Util	14.0
+rgb(118,109,247)	8.7	Id2047	XSD	schema.xsd	8.7
+rgb(118,109,247)	6.2	Id2048	XML	document_type.xml	6.2
+rgb(121,109,247)	6.2	Id2049	XML	valid.xml	6.2
+rgb(121,109,247)	5.3	Id2050	XML	invalid_schema.xml	5.3
+rgb(121,109,247)	5.3	Id2051	XML	invalid.xml	5.3
+rgb(121,109,247)	14.0	Id2052		Util	14.0
+rgb(121,109,247)	28.8	Id2053	PHP	XmlUtils.php	28.8
+rgb(121,109,247)	20.8	Id2054	PHP	ConfigCache.php	20.8
+rgb(121,109,247)	19.3	Id2055	PHP	FileLocator.php	19.3
+rgb(121,109,247)	14.0	Id2056		Resource	14.0
+rgb(123,109,247)	19.0	Id2057	PHP	DirectoryResource.php	19.0
+rgb(123,109,247)	16.2	Id2058	PHP	FileResource.php	16.2
+rgb(123,109,247)	9.2	Id2059	PHP	ResourceInterface.php	9.2
+rgb(123,109,247)	14.0	Id2060		Loader	14.0
+rgb(123,109,247)	18.8	Id2061	PHP	FileLoader.php	18.8
+rgb(123,109,247)	15.8	Id2062	PHP	LoaderResolver.php	15.8
+rgb(123,109,247)	15.6	Id2063	PHP	Loader.php	15.6
+rgb(123,109,247)	13.5	Id2064	PHP	DelegatingLoader.php	13.5
+rgb(125,109,247)	9.6	Id2065	PHP	LoaderInterface.php	9.6
+rgb(125,109,247)	8.2	Id2066	PHP	LoaderResolverInterface.php	8.2
+rgb(125,109,247)	14.0	Id2067		Exception	14.0
+rgb(125,109,247)	18.3	Id2068	PHP	FileLoaderLoadException.php	18.3
+rgb(125,109,247)	10.0	Id2069	PHP	FileLoaderImportCircularReferenceException.php	10.0
+rgb(125,109,247)	8.2	Id2070	PHP	FileLocatorInterface.php	8.2
+rgb(125,109,247)	14.0	Id2071		Templating	14.0
+rgb(125,109,247)	35.9	Id2072	PHP	PhpEngine.php	35.9
+rgb(125,109,247)	14.0	Id2073		Tests	14.0
+rgb(128,109,247)	29.8	Id2074	PHP	PhpEngineTest.php	29.8
+rgb(128,109,247)	14.0	Id2075		Loader	14.0
+rgb(128,109,247)	21.0	Id2076	PHP	FilesystemLoaderTest.php	21.0
+rgb(128,109,247)	20.8	Id2077	PHP	CacheLoaderTest.php	20.8
+rgb(128,109,247)	18.5	Id2078	PHP	ChainLoaderTest.php	18.5
+rgb(128,109,247)	15.2	Id2079	PHP	LoaderTest.php	15.2
+rgb(128,109,247)	14.0	Id2080		Helper	14.0
+rgb(128,109,247)	20.7	Id2081	PHP	SlotsHelperTest.php	20.7
+rgb(130,109,247)	18.0	Id2082	PHP	AssetsHelperTest.php	18.0
+rgb(130,109,247)	16.0	Id2083	PHP	CoreAssetsHelperTest.php	16.0
+rgb(130,109,247)	13.0	Id2084	PHP	HelperTest.php	13.0
+rgb(130,109,247)	15.6	Id2085	PHP	TemplateNameParserTest.php	15.6
+rgb(130,109,247)	14.0	Id2086		Fixtures	14.0
+rgb(130,109,247)	14.3	Id2087	PHP	ProjectTemplateDebugger.php	14.3
+rgb(130,109,247)	13.0	Id2088	PHP	SimpleHelper.php	13.0
+rgb(130,109,247)	14.0	Id2089		templates	14.0
+rgb(132,109,247)	4.0	Id2090	PHP	foo.php	4.0
+rgb(132,109,247)	14.0	Id2091		Storage	14.0
+rgb(132,109,247)	12.4	Id2092	PHP	StorageTest.php	12.4
+rgb(132,109,247)	11.5	Id2093	PHP	FileStorageTest.php	11.5
+rgb(132,109,247)	11.5	Id2094	PHP	StringStorageTest.php	11.5
+rgb(132,109,247)	14.0	Id2095		Loader	14.0
+rgb(132,109,247)	20.8	Id2096	PHP	FilesystemLoader.php	20.8
+rgb(132,109,247)	18.2	Id2097	PHP	CacheLoader.php	18.2
+rgb(132,109,247)	16.6	Id2098	PHP	ChainLoader.php	16.6
+rgb(134,109,247)	10.4	Id2099	PHP	Loader.php	10.4
+rgb(134,109,247)	9.2	Id2100	PHP	LoaderInterface.php	9.2
+rgb(134,109,247)	14.0	Id2101		Helper	14.0
+rgb(134,109,247)	19.6	Id2102	PHP	SlotsHelper.php	19.6
+rgb(134,109,247)	18.5	Id2103	PHP	CoreAssetsHelper.php	18.5
+rgb(134,109,247)	12.1	Id2104	PHP	AssetsHelper.php	12.1
+rgb(134,109,247)	11.5	Id2105	PHP	Helper.php	11.5
+rgb(134,109,247)	9.2	Id2106	PHP	HelperInterface.php	9.2
+rgb(137,109,247)	19.3	Id2107	PHP	DelegatingEngine.php	19.3
+rgb(137,109,247)	18.3	Id2108	PHP	TemplateReference.php	18.3
+rgb(137,109,247)	14.0	Id2109		Asset	14.0
+rgb(137,109,247)	17.3	Id2110	PHP	UrlPackage.php	17.3
+rgb(137,109,247)	16.4	Id2111	PHP	Package.php	16.4
+rgb(137,109,247)	16.2	Id2112	PHP	PathPackage.php	16.2
+rgb(137,109,247)	8.7	Id2113	PHP	PackageInterface.php	8.7
+rgb(137,109,247)	12.7	Id2114	PHP	TemplateNameParser.php	12.7
+rgb(137,109,247)	14.0	Id2115		Storage	14.0
+rgb(139,109,247)	11.8	Id2116	PHP	Storage.php	11.8
+rgb(139,109,247)	9.6	Id2117	PHP	FileStorage.php	9.6
+rgb(139,109,247)	9.6	Id2118	PHP	StringStorage.php	9.6
+rgb(139,109,247)	10.0	Id2119	PHP	TemplateReferenceInterface.php	10.0
+rgb(139,109,247)	9.2	Id2120	PHP	EngineInterface.php	9.2
+rgb(139,109,247)	8.2	Id2121	PHP	DebuggerInterface.php	8.2
+rgb(139,109,247)	8.2	Id2122	PHP	StreamingEngineInterface.php	8.2
+rgb(139,109,247)	8.2	Id2123	PHP	TemplateNameParserInterface.php	8.2
+rgb(141,109,247)	14.0	Id2124		ClassLoader	14.0
+rgb(141,109,247)	35.1	Id2125	PHP	ClassCollectionLoader.php	35.1
+rgb(141,109,247)	14.0	Id2126		Tests	14.0
+rgb(141,109,247)	32.6	Id2127	PHP	ClassCollectionLoaderTest.php	32.6
+rgb(141,109,247)	31.8	Id2128	PHP	UniversalClassLoaderTest.php	31.8
+rgb(141,109,247)	31.4	Id2129	PHP	ClassLoaderTest.php	31.4
+rgb(141,109,247)	29.9	Id2130	PHP	ApcUniversalClassLoaderTest.php	29.9
+rgb(141,109,247)	26.1	Id2131	PHP	ClassMapGeneratorTest.php	26.1
+rgb(144,109,247)	14.0	Id2132		Fixtures	14.0
+rgb(144,109,247)	14.0	Id2133		deps	14.0
+rgb(144,109,247)	15.4	Id2134	PHP	traits.php	15.4
+rgb(144,109,247)	14.0	Id2135		php5.4	14.0
+rgb(144,109,247)	14.5	Id2136	PHP	traits.php	14.5
+rgb(144,109,247)	14.0	Id2137		Namespaced	14.0
+rgb(144,109,247)	11.2	Id2138	PHP	WithComments.php	11.2
+rgb(144,109,247)	8.2	Id2139	PHP	Bar.php	8.2
+rgb(144,109,247)	8.2	Id2140	PHP	Baz.php	8.2
+rgb(146,109,247)	8.2	Id2141	PHP	Foo.php	8.2
+rgb(146,109,247)	14.0	Id2142		classmap	14.0
+rgb(146,109,247)	10.8	Id2143	PHP	multipleNs.php	10.8
+rgb(146,109,247)	7.6	Id2144	PHP	SomeClass.php	7.6
+rgb(146,109,247)	7.6	Id2145	PHP	SomeInterface.php	7.6
+rgb(146,109,247)	7.6	Id2146	PHP	SomeParent.php	7.6
+rgb(146,109,247)	7.0	Id2147	PHP	sameNsMultipleClasses.php	7.0
+rgb(146,109,247)	5.3	Id2148	PHP	notAClass.php	5.3
+rgb(148,109,247)	14.0	Id2149		Namespaced2	14.0
+rgb(148,109,247)	8.2	Id2150	PHP	Baz.php	8.2
+rgb(148,109,247)	8.2	Id2151	PHP	Bar.php	8.2
+rgb(148,109,247)	8.2	Id2152	PHP	Foo.php	8.2
+rgb(148,109,247)	14.0	Id2153		Apc	14.0
+rgb(148,109,247)	14.0	Id2154		alpha	14.0
+rgb(148,109,247)	14.0	Id2155		Apc	14.0
+rgb(148,109,247)	14.0	Id2156		NamespaceCollision	14.0
+rgb(150,109,247)	14.0	Id2157		A	14.0
+rgb(150,109,247)	8.2	Id2158	PHP	Bar.php	8.2
+rgb(150,109,247)	8.2	Id2159	PHP	Foo.php	8.2
+rgb(150,109,247)	14.0	Id2160		ApcPrefixCollision	14.0
+rgb(150,109,247)	14.0	Id2161		A	14.0
+rgb(150,109,247)	7.6	Id2162	PHP	Bar.php	7.6
+rgb(150,109,247)	7.6	Id2163	PHP	Foo.php	7.6
+rgb(150,109,247)	14.0	Id2164		Namespaced	14.0
+rgb(150,109,247)	8.2	Id2165	PHP	Foo.php	8.2
+rgb(153,109,247)	8.2	Id2166	PHP	FooBar.php	8.2
+rgb(153,109,247)	8.2	Id2167	PHP	Bar.php	8.2
+rgb(153,109,247)	8.2	Id2168	PHP	Baz.php	8.2
+rgb(153,109,247)	14.0	Id2169		beta	14.0
+rgb(153,109,247)	14.0	Id2170		Apc	14.0
+rgb(153,109,247)	14.0	Id2171		NamespaceCollision	14.0
+rgb(153,109,247)	14.0	Id2172		A	14.0
+rgb(153,109,247)	14.0	Id2173		B	14.0
+rgb(155,109,247)	8.2	Id2174	PHP	Foo.php	8.2
+rgb(155,109,247)	8.2	Id2175	PHP	Bar.php	8.2
+rgb(155,109,247)	14.0	Id2176		ApcPrefixCollision	14.0
+rgb(155,109,247)	14.0	Id2177		A	14.0
+rgb(155,109,247)	14.0	Id2178		B	14.0
+rgb(155,109,247)	7.6	Id2179	PHP	Foo.php	7.6
+rgb(155,109,247)	7.6	Id2180	PHP	Bar.php	7.6
+rgb(155,109,247)	14.0	Id2181		Pearlike	14.0
+rgb(157,109,247)	7.6	Id2182	PHP	Foo.php	7.6
+rgb(157,109,247)	7.6	Id2183	PHP	Bar.php	7.6
+rgb(157,109,247)	7.6	Id2184	PHP	Baz.php	7.6
+rgb(157,109,247)	14.0	Id2185		fallback	14.0
+rgb(157,109,247)	14.0	Id2186		Apc	14.0
+rgb(157,109,247)	14.0	Id2187		Pearlike	14.0
+rgb(157,109,247)	7.6	Id2188	PHP	FooBar.php	7.6
+rgb(157,109,247)	14.0	Id2189		alpha	14.0
+rgb(157,109,247)	14.0	Id2190		NamespaceCollision	14.0
+rgb(160,109,247)	14.0	Id2191		C	14.0
+rgb(160,109,247)	8.2	Id2192	PHP	Foo.php	8.2
+rgb(160,109,247)	8.2	Id2193	PHP	Bar.php	8.2
+rgb(160,109,247)	14.0	Id2194		A	14.0
+rgb(160,109,247)	8.2	Id2195	PHP	Foo.php	8.2
+rgb(160,109,247)	8.2	Id2196	PHP	Bar.php	8.2
+rgb(160,109,247)	14.0	Id2197		PrefixCollision	14.0
+rgb(160,109,247)	14.0	Id2198		C	14.0
+rgb(162,109,247)	7.6	Id2199	PHP	Foo.php	7.6
+rgb(162,109,247)	7.6	Id2200	PHP	Bar.php	7.6
+rgb(162,109,247)	14.0	Id2201		A	14.0
+rgb(162,109,247)	7.6	Id2202	PHP	Foo.php	7.6
+rgb(162,109,247)	7.6	Id2203	PHP	Bar.php	7.6
+rgb(162,109,247)	14.0	Id2204		ClassesWithParents	14.0
+rgb(162,109,247)	8.2	Id2205	PHP	BTrait.php	8.2
+rgb(162,109,247)	8.2	Id2206	PHP	E.php	8.2
+rgb(162,109,247)	8.2	Id2207	PHP	D.php	8.2
+rgb(164,109,247)	7.6	Id2208	PHP	GInterface.php	7.6
+rgb(164,109,247)	7.6	Id2209	PHP	ATrait.php	7.6
+rgb(164,109,247)	7.6	Id2210	PHP	CInterface.php	7.6
+rgb(164,109,247)	7.6	Id2211	PHP	CTrait.php	7.6
+rgb(164,109,247)	6.2	Id2212	PHP	A.php	6.2
+rgb(164,109,247)	6.2	Id2213	PHP	B.php	6.2
+rgb(164,109,247)	14.0	Id2214		beta	14.0
+rgb(164,109,247)	14.0	Id2215		NamespaceCollision	14.0
+rgb(167,109,247)	14.0	Id2216		C	14.0
+rgb(167,109,247)	14.0	Id2217		B	14.0
+rgb(167,109,247)	8.2	Id2218	PHP	Bar.php	8.2
+rgb(167,109,247)	8.2	Id2219	PHP	Foo.php	8.2
+rgb(167,109,247)	14.0	Id2220		A	14.0
+rgb(167,109,247)	14.0	Id2221		B	14.0
+rgb(167,109,247)	8.2	Id2222	PHP	Bar.php	8.2
+rgb(167,109,247)	8.2	Id2223	PHP	Foo.php	8.2
+rgb(169,109,247)	14.0	Id2224		PrefixCollision	14.0
+rgb(169,109,247)	14.0	Id2225		A	14.0
+rgb(169,109,247)	14.0	Id2226		B	14.0
+rgb(169,109,247)	7.6	Id2227	PHP	Foo.php	7.6
+rgb(169,109,247)	7.6	Id2228	PHP	Bar.php	7.6
+rgb(169,109,247)	14.0	Id2229		C	14.0
+rgb(169,109,247)	14.0	Id2230		B	14.0
+rgb(169,109,247)	7.6	Id2231	PHP	Bar.php	7.6
+rgb(169,109,247)	7.6	Id2232	PHP	Foo.php	7.6
+rgb(171,109,247)	14.0	Id2233		fallback	14.0
+rgb(171,109,247)	14.0	Id2234		Namespaced2	14.0
+rgb(171,109,247)	8.2	Id2235	PHP	FooBar.php	8.2
+rgb(171,109,247)	14.0	Id2236		Namespaced	14.0
+rgb(171,109,247)	8.2	Id2237	PHP	FooBar.php	8.2
+rgb(171,109,247)	14.0	Id2238		Pearlike2	14.0
+rgb(171,109,247)	7.6	Id2239	PHP	FooBar.php	7.6
+rgb(171,109,247)	14.0	Id2240		Pearlike	14.0
+rgb(173,109,247)	7.6	Id2241	PHP	FooBar.php	7.6
+rgb(173,109,247)	14.0	Id2242		Pearlike	14.0
+rgb(173,109,247)	7.6	Id2243	PHP	Foo.php	7.6
+rgb(173,109,247)	7.6	Id2244	PHP	WithComments.php	7.6
+rgb(173,109,247)	7.6	Id2245	PHP	Bar.php	7.6
+rgb(173,109,247)	7.6	Id2246	PHP	Baz.php	7.6
+rgb(173,109,247)	14.0	Id2247		Pearlike2	14.0
+rgb(173,109,247)	7.6	Id2248	PHP	Bar.php	7.6
+rgb(176,109,247)	7.6	Id2249	PHP	Foo.php	7.6
+rgb(176,109,247)	7.6	Id2250	PHP	Baz.php	7.6
+rgb(176,109,247)	14.0	Id2251		includepath	14.0
+rgb(176,109,247)	7.0	Id2252	PHP	Foo.php	7.0
+rgb(176,109,247)	28.1	Id2253	PHP	UniversalClassLoader.php	28.1
+rgb(176,109,247)	24.5	Id2254	PHP	ClassLoader.php	24.5
+rgb(176,109,247)	22.6	Id2255	PHP	ClassMapGenerator.php	22.6
+rgb(176,109,247)	18.5	Id2256	PHP	DebugClassLoader.php	18.5
+rgb(176,109,247)	18.2	Id2257	PHP	ApcClassLoader.php	18.2
+rgb(178,109,247)	17.8	Id2258	PHP	XcacheClassLoader.php	17.8
+rgb(178,109,247)	16.6	Id2259	PHP	DebugUniversalClassLoader.php	16.6
+rgb(178,109,247)	16.0	Id2260	PHP	MapClassLoader.php	16.0
+rgb(178,109,247)	13.3	Id2261	PHP	ApcUniversalClassLoader.php	13.3
+rgb(178,109,247)	14.0	Id2262		CssSelector	14.0
+rgb(178,109,247)	32.4	Id2263	PHP	CssSelector.php	32.4
+rgb(178,109,247)	14.0	Id2264		Node	14.0
+rgb(178,109,247)	29.3	Id2265	PHP	FunctionNode.php	29.3
+rgb(180,109,247)	25.3	Id2266	PHP	PseudoNode.php	25.3
+rgb(180,109,247)	22.0	Id2267	PHP	AttribNode.php	22.0
+rgb(180,109,247)	20.2	Id2268	PHP	CombinedSelectorNode.php	20.2
+rgb(180,109,247)	16.2	Id2269	PHP	ElementNode.php	16.2
+rgb(180,109,247)	14.0	Id2270	PHP	ClassNode.php	14.0
+rgb(180,109,247)	14.0	Id2271	PHP	OrNode.php	14.0
+rgb(180,109,247)	14.0	Id2272	PHP	HashNode.php	14.0
+rgb(180,109,247)	8.7	Id2273	PHP	NodeInterface.php	8.7
+rgb(183,109,247)	27.7	Id2274	PHP	XPathExpr.php	27.7
+rgb(183,109,247)	26.1	Id2275	PHP	Tokenizer.php	26.1
+rgb(183,109,247)	14.0	Id2276		Tests	14.0
+rgb(183,109,247)	19.1	Id2277	PHP	CssSelectorTest.php	19.1
+rgb(183,109,247)	18.7	Id2278	PHP	TokenizerTest.php	18.7
+rgb(183,109,247)	14.0	Id2279		Node	14.0
+rgb(183,109,247)	16.0	Id2280	PHP	FunctionNodeTest.php	16.0
+rgb(183,109,247)	14.7	Id2281	PHP	AttribNodeTest.php	14.7
+rgb(183,109,247)	14.5	Id2282	PHP	OrNodeTest.php	14.5
+rgb(185,109,247)	14.5	Id2283	PHP	PseudoNodeTest.php	14.5
+rgb(185,109,247)	13.8	Id2284	PHP	CombinedSelectorNodeTest.php	13.8
+rgb(185,109,247)	11.2	Id2285	PHP	HashNodeTest.php	11.2
+rgb(185,109,247)	11.2	Id2286	PHP	ElementNodeTest.php	11.2
+rgb(185,109,247)	11.2	Id2287	PHP	ClassNodeTest.php	11.2
+rgb(185,109,247)	13.0	Id2288	PHP	XPathExprTest.php	13.0
+rgb(185,109,247)	18.7	Id2289	PHP	TokenStream.php	18.7
+rgb(185,109,247)	14.7	Id2290	PHP	Token.php	14.7
+rgb(187,109,247)	13.0	Id2291	PHP	XPathExprOr.php	13.0
+rgb(187,109,247)	14.0	Id2292		Exception	14.0
+rgb(187,109,247)	7.6	Id2293	PHP	ParseException.php	7.6
+rgb(187,109,247)	14.0	Id2294		Stopwatch	14.0
+rgb(187,109,247)	14.0	Id2295		Tests	14.0
+rgb(187,109,247)	26.3	Id2296	PHP	StopwatchEventTest.php	26.3
+rgb(187,109,247)	23.0	Id2297	PHP	StopwatchTest.php	23.0
+rgb(187,109,247)	25.6	Id2298	PHP	Stopwatch.php	25.6
+rgb(187,109,247)	24.0	Id2299	PHP	StopwatchEvent.php	24.0
+rgb(189,109,247)	15.6	Id2300	PHP	StopwatchPeriod.php	15.6
+rgb(189,109,247)	14.0	Id2301		Bridge	14.0
+rgb(189,109,247)	14.0	Id2302		Doctrine	14.0
+rgb(189,109,247)	14.0	Id2303		Tests	14.0
+rgb(189,109,247)	14.0	Id2304		Form	14.0
+rgb(189,109,247)	14.0	Id2305		Type	14.0
+rgb(189,109,247)	51.1	Id2306	PHP	EntityTypeTest.php	51.1
+rgb(189,109,247)	24.5	Id2307	PHP	EntityTypePerformanceTest.php	24.5
+rgb(192,109,247)	14.0	Id2308		ChoiceList	14.0
+rgb(192,109,247)	37.4	Id2309	PHP	EntityChoiceListTest.php	37.4
+rgb(192,109,247)	20.0	Id2310	PHP	DoctrineOrmTypeGuesserTest.php	20.0
+rgb(192,109,247)	14.0	Id2311		Validator	14.0
+rgb(192,109,247)	14.0	Id2312		Constraints	14.0
+rgb(192,109,247)	37.1	Id2313	PHP	UniqueValidatorTest.php	37.1
+rgb(192,109,247)	14.0	Id2314		DataCollector	14.0
+rgb(192,109,247)	27.3	Id2315	PHP	DoctrineDataCollectorTest.php	27.3
+rgb(194,109,247)	14.0	Id2316		DependencyInjection	14.0
+rgb(194,109,247)	14.0	Id2317		CompilerPass	14.0
+rgb(194,109,247)	27.3	Id2318	PHP	RegisterEventListenersAndSubscribersPassTest.php	27.3
+rgb(194,109,247)	14.0	Id2319		Security	14.0
+rgb(194,109,247)	14.0	Id2320		User	14.0
+rgb(194,109,247)	23.4	Id2321	PHP	EntityUserProviderTest.php	23.4
+rgb(194,109,247)	14.0	Id2322		Logger	14.0
+rgb(194,109,247)	18.8	Id2323	PHP	DbalLoggerTest.php	18.8
+rgb(194,109,247)	18.2	Id2324	PHP	ContainerAwareEventManagerTest.php	18.2
+rgb(196,109,247)	17.3	Id2325	PHP	DoctrineOrmTestCase.php	17.3
+rgb(196,109,247)	14.0	Id2326		Fixtures	14.0
+rgb(196,109,247)	17.0	Id2327	PHP	CompositeIdentEntity.php	17.0
+rgb(196,109,247)	13.0	Id2328	PHP	SingleIdentEntity.php	13.0
+rgb(196,109,247)	12.4	Id2329	PHP	ContainerAwareFixture.php	12.4
+rgb(196,109,247)	12.4	Id2330	PHP	ItemGroupEntity.php	12.4
+rgb(196,109,247)	12.4	Id2331	PHP	DoubleIdentEntity.php	12.4
+rgb(196,109,247)	12.4	Id2332	PHP	CompositeStringIdentEntity.php	12.4
+rgb(199,109,247)	11.8	Id2333	PHP	SingleStringIdentEntity.php	11.8
+rgb(199,109,247)	11.8	Id2334	PHP	NoToStringSingleIdentEntity.php	11.8
+rgb(199,109,247)	9.6	Id2335	PHP	AssociationEntity.php	9.6
+rgb(199,109,247)	14.0	Id2336		DataFixtures	14.0
+rgb(199,109,247)	14.3	Id2337	PHP	ContainerAwareLoaderTest.php	14.3
+rgb(199,109,247)	14.0	Id2338		HttpFoundation	14.0
+rgb(199,109,247)	13.0	Id2339	PHP	DbalSessionHandlerTest.php	13.0
+rgb(199,109,247)	6.2	Id2340	PHP	bootstrap.php	6.2
+rgb(201,109,247)	14.0	Id2341		DependencyInjection	14.0
+rgb(201,109,247)	35.1	Id2342	PHP	AbstractDoctrineExtension.php	35.1
+rgb(201,109,247)	14.0	Id2343		CompilerPass	14.0
+rgb(201,109,247)	24.5	Id2344	PHP	RegisterEventListenersAndSubscribersPass.php	24.5
+rgb(201,109,247)	16.4	Id2345	PHP	DoctrineValidationPass.php	16.4
+rgb(201,109,247)	14.0	Id2346		Security	14.0
+rgb(201,109,247)	14.0	Id2347		UserProvider	14.0
+rgb(201,109,247)	17.3	Id2348	PHP	EntityFactory.php	17.3
+rgb(201,109,247)	14.0	Id2349		Form	14.0
+rgb(203,109,247)	14.0	Id2350		ChoiceList	14.0
+rgb(203,109,247)	31.2	Id2351	PHP	EntityChoiceList.php	31.2
+rgb(203,109,247)	17.0	Id2352	PHP	ORMQueryBuilderLoader.php	17.0
+rgb(203,109,247)	8.7	Id2353	PHP	EntityLoaderInterface.php	8.7
+rgb(203,109,247)	14.0	Id2354		Type	14.0
+rgb(203,109,247)	27.9	Id2355	PHP	DoctrineType.php	27.9
+rgb(203,109,247)	13.0	Id2356	PHP	EntityType.php	13.0
+rgb(203,109,247)	27.3	Id2357	PHP	DoctrineOrmTypeGuesser.php	27.3
+rgb(206,109,247)	14.0	Id2358		DataTransformer	14.0
+rgb(206,109,247)	15.2	Id2359	PHP	CollectionToArrayTransformer.php	15.2
+rgb(206,109,247)	14.0	Id2360	PHP	DoctrineOrmExtension.php	14.0
+rgb(206,109,247)	14.0	Id2361		EventListener	14.0
+rgb(206,109,247)	13.3	Id2362	PHP	MergeDoctrineCollectionListener.php	13.3
+rgb(206,109,247)	14.0	Id2363		DataCollector	14.0
+rgb(206,109,247)	26.8	Id2364	PHP	DoctrineDataCollector.php	26.8
+rgb(206,109,247)	14.0	Id2365		HttpFoundation	14.0
+rgb(208,109,247)	24.4	Id2366	PHP	DbalSessionHandler.php	24.4
+rgb(208,109,247)	14.9	Id2367	PHP	DbalSessionHandlerSchema.php	14.9
+rgb(208,109,247)	14.0	Id2368		Validator	14.0
+rgb(208,109,247)	14.0	Id2369		Constraints	14.0
+rgb(208,109,247)	21.5	Id2370	PHP	UniqueEntityValidator.php	21.5
+rgb(208,109,247)	15.4	Id2371	PHP	UniqueEntity.php	15.4
+rgb(208,109,247)	13.0	Id2372	PHP	DoctrineInitializer.php	13.0
+rgb(208,109,247)	14.0	Id2373		Security	14.0
+rgb(208,109,247)	14.0	Id2374		User	14.0
+rgb(210,109,247)	21.2	Id2375	PHP	EntityUserProvider.php	21.2
+rgb(210,109,247)	21.1	Id2376	PHP	ContainerAwareEventManager.php	21.1
+rgb(210,109,247)	14.0	Id2377		Logger	14.0
+rgb(210,109,247)	16.4	Id2378	PHP	DbalLogger.php	16.4
+rgb(210,109,247)	14.0	Id2379		CacheWarmer	14.0
+rgb(210,109,247)	16.2	Id2380	PHP	ProxyCacheWarmer.php	16.2
+rgb(210,109,247)	14.0	Id2381		DataFixtures	14.0
+rgb(210,109,247)	13.5	Id2382	PHP	ContainerAwareLoader.php	13.5
+rgb(212,109,247)	13.5	Id2383	PHP	ManagerRegistry.php	13.5
+rgb(212,109,247)	11.8	Id2384	PHP	RegistryInterface.php	11.8
+rgb(212,109,247)	14.0	Id2385		Twig	14.0
+rgb(212,109,247)	14.0	Id2386		Tests	14.0
+rgb(212,109,247)	14.0	Id2387		Node	14.0
+rgb(212,109,247)	33.8	Id2388	PHP	SearchAndRenderBlockNodeTest.php	33.8
+rgb(212,109,247)	20.6	Id2389	PHP	FormThemeTest.php	20.6
+rgb(212,109,247)	14.0	Id2390		Extension	14.0
+rgb(212,109,247)	28.6	Id2391	PHP	FormExtensionDivLayoutTest.php	28.6
+rgb(215,109,247)	25.9	Id2392	PHP	TranslationExtensionTest.php	25.9
+rgb(215,109,247)	23.2	Id2393	PHP	FormExtensionTableLayoutTest.php	23.2
+rgb(215,109,247)	18.8	Id2394	PHP	HttpKernelExtensionTest.php	18.8
+rgb(215,109,247)	18.2	Id2395	PHP	CodeExtensionTest.php	18.2
+rgb(215,109,247)	14.0	Id2396		Fixtures	14.0
+rgb(215,109,247)	13.3	Id2397	PHP	StubTranslator.php	13.3
+rgb(215,109,247)	12.1	Id2398	PHP	StubFilesystemLoader.php	12.1
+rgb(215,109,247)	14.0	Id2399		TokenParser	14.0
+rgb(217,109,247)	24.1	Id2400	PHP	FormThemeTokenParserTest.php	24.1
+rgb(217,109,247)	14.0	Id2401		Translation	14.0
+rgb(217,109,247)	20.2	Id2402	PHP	TwigExtractorTest.php	20.2
+rgb(217,109,247)	14.0	Id2403		NodeVisitor	14.0
+rgb(217,109,247)	18.7	Id2404	PHP	TwigNodeProvider.php	18.7
+rgb(217,109,247)	18.0	Id2405	PHP	TranslationNodeVisitorTest.php	18.0
+rgb(217,109,247)	16.6	Id2406	PHP	TranslationDefaultDomainNodeVisitorTest.php	16.6
+rgb(217,109,247)	10.4	Id2407	PHP	TestCase.php	10.4
+rgb(219,109,247)	14.0	Id2408		Extension	14.0
+rgb(219,109,247)	28.7	Id2409	PHP	CodeExtension.php	28.7
+rgb(219,109,247)	21.0	Id2410	PHP	TranslationExtension.php	21.0
+rgb(219,109,247)	20.3	Id2411	PHP	FormExtension.php	20.3
+rgb(219,109,247)	17.3	Id2412	PHP	HttpKernelExtension.php	17.3
+rgb(219,109,247)	16.6	Id2413	PHP	YamlExtension.php	16.6
+rgb(219,109,247)	16.0	Id2414	PHP	SecurityExtension.php	16.0
+rgb(219,109,247)	15.6	Id2415	PHP	RoutingExtension.php	15.6
+rgb(219,109,247)	14.0	Id2416		Node	14.0
+rgb(222,109,247)	23.8	Id2417	PHP	TransNode.php	23.8
+rgb(222,109,247)	20.8	Id2418	PHP	SearchAndRenderBlockNode.php	20.8
+rgb(222,109,247)	13.3	Id2419	PHP	FormThemeNode.php	13.3
+rgb(222,109,247)	10.8	Id2420	PHP	TransDefaultDomainNode.php	10.8
+rgb(222,109,247)	14.0	Id2421		NodeVisitor	14.0
+rgb(222,109,247)	23.4	Id2422	PHP	TranslationNodeVisitor.php	23.4
+rgb(222,109,247)	19.7	Id2423	PHP	TranslationDefaultDomainNodeVisitor.php	19.7
+rgb(222,109,247)	14.0	Id2424		Form	14.0
+rgb(224,109,247)	21.9	Id2425	PHP	TwigRendererEngine.php	21.9
+rgb(224,109,247)	12.4	Id2426	PHP	TwigRenderer.php	12.4
+rgb(224,109,247)	8.7	Id2427	PHP	TwigRendererInterface.php	8.7
+rgb(224,109,247)	8.7	Id2428	PHP	TwigRendererEngineInterface.php	8.7
+rgb(224,109,247)	19.3	Id2429	PHP	TwigEngine.php	19.3
+rgb(224,109,247)	14.0	Id2430		TokenParser	14.0
+rgb(224,109,247)	18.3	Id2431	PHP	TransTokenParser.php	18.3
+rgb(224,109,247)	17.8	Id2432	PHP	TransChoiceTokenParser.php	17.8
+rgb(226,109,247)	14.9	Id2433	PHP	FormThemeTokenParser.php	14.9
+rgb(226,109,247)	12.1	Id2434	PHP	TransDefaultDomainTokenParser.php	12.1
+rgb(226,109,247)	14.0	Id2435		Translation	14.0
+rgb(226,109,247)	17.0	Id2436	PHP	TwigExtractor.php	17.0
+rgb(226,109,247)	14.0	Id2437		Propel1	14.0
+rgb(226,109,247)	14.0	Id2438		Form	14.0
+rgb(226,109,247)	14.0	Id2439		ChoiceList	14.0
+rgb(226,109,247)	30.9	Id2440	PHP	ModelChoiceList.php	30.9
+rgb(226,109,247)	28.3	Id2441	PHP	PropelTypeGuesser.php	28.3
+rgb(228,109,247)	14.0	Id2442		EventListener	14.0
+rgb(228,109,247)	21.9	Id2443	PHP	TranslationCollectionFormListener.php	21.9
+rgb(228,109,247)	19.9	Id2444	PHP	TranslationFormListener.php	19.9
+rgb(228,109,247)	14.0	Id2445		Type	14.0
+rgb(228,109,247)	20.4	Id2446	PHP	ModelType.php	20.4
+rgb(228,109,247)	18.2	Id2447	PHP	TranslationCollectionType.php	18.2
+rgb(228,109,247)	14.7	Id2448	PHP	TranslationType.php	14.7
+rgb(228,109,247)	14.0	Id2449		DataTransformer	14.0
+rgb(231,109,247)	15.6	Id2450	PHP	CollectionToArrayTransformer.php	15.6
+rgb(231,109,247)	13.0	Id2451	PHP	PropelExtension.php	13.0
+rgb(231,109,247)	14.0	Id2452		Tests	14.0
+rgb(231,109,247)	14.0	Id2453		Form	14.0
+rgb(231,109,247)	14.0	Id2454		ChoiceList	14.0
+rgb(231,109,247)	29.8	Id2455	PHP	ModelChoiceListTest.php	29.8
+rgb(231,109,247)	14.0	Id2456		Type	14.0
+rgb(231,109,247)	26.6	Id2457	PHP	TranslationCollectionTypeTest.php	26.6
+rgb(233,109,247)	23.3	Id2458	PHP	PropelTypeGuesserTest.php	23.3
+rgb(233,109,247)	14.0	Id2459		DataTransformer	14.0
+rgb(233,109,247)	22.1	Id2460	PHP	CollectionToArrayTransformerTest.php	22.1
+rgb(233,109,247)	14.0	Id2461		Fixtures	14.0
+rgb(233,109,247)	24.8	Id2462	PHP	TranslatableItemI18n.php	24.8
+rgb(233,109,247)	24.6	Id2463	PHP	TranslatableItem.php	24.6
+rgb(233,109,247)	22.6	Id2464	PHP	Item.php	22.6
+rgb(233,109,247)	17.5	Id2465	PHP	Column.php	17.5
+rgb(233,109,247)	17.1	Id2466	PHP	ItemQuery.php	17.1
+rgb(235,109,247)	11.8	Id2467	PHP	ReadOnlyItemQuery.php	11.8
+rgb(235,109,247)	11.2	Id2468	PHP	ReadOnlyItem.php	11.2
+rgb(235,109,247)	14.0	Id2469		DataCollector	14.0
+rgb(235,109,247)	23.9	Id2470	PHP	PropelDataCollectorTest.php	23.9
+rgb(235,109,247)	10.4	Id2471	PHP	Propel1TestCase.php	10.4
+rgb(235,109,247)	14.0	Id2472		Logger	14.0
+rgb(235,109,247)	23.2	Id2473	PHP	PropelLogger.php	23.2
+rgb(235,109,247)	14.0	Id2474		DataCollector	14.0
+rgb(238,109,247)	21.2	Id2475	PHP	PropelDataCollector.php	21.2
+rgb(238,109,247)	14.0	Id2476		Security	14.0
+rgb(238,109,247)	14.0	Id2477		User	14.0
+rgb(238,109,247)	18.3	Id2478	PHP	PropelUserProvider.php	18.3
+rgb(238,109,247)	14.0	Id2479		DependencyInjection	14.0
+rgb(238,109,247)	14.0	Id2480		Security	14.0
+rgb(238,109,247)	14.0	Id2481		UserProvider	14.0
+rgb(238,109,247)	17.0	Id2482	PHP	PropelFactory.php	17.0
+rgb(238,109,247)	14.0	Id2483		Monolog	14.0
+rgb(240,109,247)	14.0	Id2484		Tests	14.0
+rgb(240,109,247)	14.0	Id2485		Processor	14.0
+rgb(240,109,247)	20.0	Id2486	PHP	WebProcessorTest.php	20.0
+rgb(240,109,247)	18.2	Id2487	PHP	Logger.php	18.2
+rgb(240,109,247)	14.0	Id2488		Handler	14.0
+rgb(240,109,247)	18.0	Id2489	PHP	FirePHPHandler.php	18.0
+rgb(240,109,247)	17.8	Id2490	PHP	ChromePhpHandler.php	17.8
+rgb(240,109,247)	16.2	Id2491	PHP	DebugHandler.php	16.2
+rgb(242,109,247)	14.0	Id2492		Processor	14.0
+rgb(242,109,247)	13.0	Id2493	PHP	WebProcessor.php	13.0
+rgb(242,109,247)	14.0	Id2494		Swiftmailer	14.0
+rgb(242,109,247)	14.0	Id2495		DataCollector	14.0
+rgb(242,109,247)	18.2	Id2496	PHP	MessageDataCollector.php	18.2
+rgb(242,109,247)	14.0	Id2497		Bundle	14.0
+rgb(242,109,247)	14.0	Id2498		FrameworkBundle	14.0
+rgb(242,109,247)	14.0	Id2499		DependencyInjection	14.0
+rgb(245,109,247)	47.2	Id2500	PHP	FrameworkExtension.php	47.2
+rgb(245,109,247)	42.7	Id2501	PHP	Configuration.php	42.7
+rgb(245,109,247)	14.0	Id2502		Compiler	14.0
+rgb(245,109,247)	17.1	Id2503	PHP	RegisterKernelListenersPass.php	17.1
+rgb(245,109,247)	16.4	Id2504	PHP	ProfilerPass.php	16.4
+rgb(245,109,247)	15.8	Id2505	PHP	FormPass.php	15.8
+rgb(245,109,247)	15.6	Id2506	PHP	TranslatorPass.php	15.6
+rgb(245,109,247)	14.5	Id2507	PHP	TemplatingPass.php	14.5
+rgb(245,109,247)	14.5	Id2508	PHP	AddCacheWarmerPass.php	14.5
+rgb(247,109,247)	14.3	Id2509	PHP	FragmentRendererPass.php	14.3
+rgb(247,109,247)	13.5	Id2510	PHP	TranslationExtractorPass.php	13.5
+rgb(247,109,247)	13.3	Id2511	PHP	AddConstraintValidatorsPass.php	13.3
+rgb(247,109,247)	13.0	Id2512	PHP	AddCacheClearerPass.php	13.0
+rgb(247,109,247)	13.0	Id2513	PHP	AddValidatorInitializersPass.php	13.0
+rgb(247,109,247)	13.0	Id2514	PHP	CompilerDebugDumpPass.php	13.0
+rgb(247,109,247)	12.7	Id2515	PHP	TranslationDumperPass.php	12.7
+rgb(247,109,247)	12.7	Id2516	PHP	RoutingResolverPass.php	12.7
+rgb(247,109,245)	11.8	Id2517	PHP	ContainerBuilderDebugDumpPass.php	11.8
+rgb(247,109,245)	14.0	Id2518		Command	14.0
+rgb(247,109,245)	36.5	Id2519	PHP	ContainerDebugCommand.php	36.5
+rgb(247,109,245)	27.7	Id2520	PHP	RouterDebugCommand.php	27.7
+rgb(247,109,245)	27.4	Id2521	PHP	CacheClearCommand.php	27.4
+rgb(247,109,245)	23.9	Id2522	PHP	TranslationUpdateCommand.php	23.9
+rgb(247,109,245)	21.9	Id2523	PHP	ConfigDumpReferenceCommand.php	21.9
+rgb(247,109,245)	21.6	Id2524	PHP	AssetsInstallCommand.php	21.6
+rgb(247,109,242)	20.4	Id2525	PHP	ServerRunCommand.php	20.4
+rgb(247,109,242)	20.2	Id2526	PHP	RouterMatchCommand.php	20.2
+rgb(247,109,242)	19.6	Id2527	PHP	RouterApacheDumperCommand.php	19.6
+rgb(247,109,242)	17.0	Id2528	PHP	CacheWarmupCommand.php	17.0
+rgb(247,109,242)	13.3	Id2529	PHP	ContainerAwareCommand.php	13.3
+rgb(247,109,242)	14.0	Id2530		Tests	14.0
+rgb(247,109,242)	14.0	Id2531		DependencyInjection	14.0
+rgb(247,109,242)	35.9	Id2532	PHP	FrameworkExtensionTest.php	35.9
+rgb(247,109,242)	25.4	Id2533	PHP	ConfigurationTest.php	25.4
+rgb(247,109,240)	14.0	Id2534		Fixtures	14.0
+rgb(247,109,240)	14.0	Id2535		php	14.0
+rgb(247,109,240)	22.3	Id2536	PHP	full.php	22.3
+rgb(247,109,240)	13.0	Id2537	PHP	deprecated_merge_full.php	13.0
+rgb(247,109,240)	12.1	Id2538	PHP	deprecated_merge_partial.php	12.1
+rgb(247,109,240)	11.2	Id2539	PHP	templating_url_package.php	11.2
+rgb(247,109,240)	9.2	Id2540	PHP	validation_annotations.php	9.2
+rgb(247,109,240)	14.0	Id2541		yml	14.0
+rgb(247,109,238)	20.2	Id2542	YAML	full.yml	20.2
+rgb(247,109,238)	12.1	Id2543	YAML	deprecated_merge_full.yml	12.1
+rgb(247,109,238)	11.5	Id2544	YAML	deprecated_merge_partial.yml	11.5
+rgb(247,109,238)	9.2	Id2545	YAML	templating_url_package.yml	9.2
+rgb(247,109,238)	7.6	Id2546	YAML	validation_annotations.yml	7.6
+rgb(247,109,238)	7.0	Id2547	YAML	csrf.yml	7.0
+rgb(247,109,238)	14.0	Id2548		xml	14.0
+rgb(247,109,238)	17.1	Id2549	XML	full.xml	17.1
+rgb(247,109,235)	12.4	Id2550	XML	templating_url_package.xml	12.4
+rgb(247,109,235)	10.0	Id2551	XML	deprecated_merge_full.xml	10.0
+rgb(247,109,235)	10.0	Id2552	XML	deprecated_merge_partial.xml	10.0
+rgb(247,109,235)	10.0	Id2553	XML	validation_annotations.xml	10.0
+rgb(247,109,235)	14.0	Id2554		TestBundle	14.0
+rgb(247,109,235)	7.6	Id2555	PHP	TestBundle.php	7.6
+rgb(247,109,235)	14.0	Id2556		Compiler	14.0
+rgb(247,109,235)	21.9	Id2557	PHP	FragmentRendererPassTest.php	21.9
+rgb(247,109,235)	21.8	Id2558	PHP	AddCacheWarmerPassTest.php	21.8
+rgb(247,109,233)	20.0	Id2559	PHP	RegisterKernelListenersPassTest.php	20.0
+rgb(247,109,233)	18.0	Id2560	PHP	ProfilerPassTest.php	18.0
+rgb(247,109,233)	16.4	Id2561	PHP	TranslatorPassTest.php	16.4
+rgb(247,109,233)	12.7	Id2562	PHP	YamlFrameworkExtensionTest.php	12.7
+rgb(247,109,233)	11.2	Id2563	PHP	XmlFrameworkExtensionTest.php	11.2
+rgb(247,109,233)	11.2	Id2564	PHP	PhpFrameworkExtensionTest.php	11.2
+rgb(247,109,233)	14.0	Id2565		Controller	14.0
+rgb(247,109,233)	33.4	Id2566	PHP	RedirectControllerTest.php	33.4
+rgb(247,109,231)	23.2	Id2567	PHP	ControllerNameParserTest.php	23.2
+rgb(247,109,231)	14.0	Id2568		Routing	14.0
+rgb(247,109,231)	29.8	Id2569	PHP	RouterTest.php	29.8
+rgb(247,109,231)	18.0	Id2570	PHP	RedirectableUrlMatcherTest.php	18.0
+rgb(247,109,231)	14.0	Id2571		Translation	14.0
+rgb(247,109,231)	29.5	Id2572	PHP	TranslatorTest.php	29.5
+rgb(247,109,231)	12.7	Id2573	PHP	PhpExtractorTest.php	12.7
+rgb(247,109,231)	14.0	Id2574		EventListener	14.0
+rgb(247,109,231)	24.1	Id2575	PHP	TestSessionListenerTest.php	24.1
+rgb(247,109,228)	14.0	Id2576		Templating	14.0
+rgb(247,109,228)	14.0	Id2577		Helper	14.0
+rgb(247,109,228)	23.9	Id2578	PHP	FormHelperDivLayoutTest.php	23.9
+rgb(247,109,228)	22.6	Id2579	PHP	FormHelperTableLayoutTest.php	22.6
+rgb(247,109,228)	18.3	Id2580	PHP	SessionHelperTest.php	18.3
+rgb(247,109,228)	16.4	Id2581	PHP	RequestHelperTest.php	16.4
+rgb(247,109,228)	14.0	Id2582		Fixtures	14.0
+rgb(247,109,228)	14.7	Id2583	PHP	StubTemplateNameParser.php	14.7
+rgb(247,109,226)	13.3	Id2584	PHP	StubTranslator.php	13.3
+rgb(247,109,226)	14.0	Id2585		Resources	14.0
+rgb(247,109,226)	14.0	Id2586		Custom	14.0
+rgb(247,109,226)	6.2	Id2587	PHP	_text_id_widget.html.php	6.2
+rgb(247,109,226)	5.3	Id2588	PHP	_name_entry_label.html.php	5.3
+rgb(247,109,226)	14.0	Id2589		Parent	14.0
+rgb(247,109,226)	5.3	Id2590	PHP	form_widget_simple.html.php	5.3
+rgb(247,109,226)	4.0	Id2591	PHP	form_label.html.php	4.0
+rgb(247,109,224)	14.0	Id2592		Child	14.0
+rgb(247,109,224)	4.0	Id2593	PHP	form_label.html.php	4.0
+rgb(247,109,224)	20.6	Id2594	PHP	TemplateNameParserTest.php	20.6
+rgb(247,109,224)	14.0	Id2595		Loader	14.0
+rgb(247,109,224)	20.2	Id2596	PHP	TemplateLocatorTest.php	20.2
+rgb(247,109,224)	18.5	Id2597	PHP	PhpEngineTest.php	18.5
+rgb(247,109,224)	16.8	Id2598	PHP	TemplateFilenameParserTest.php	16.8
+rgb(247,109,224)	15.2	Id2599	PHP	TemplateTest.php	15.2
+rgb(247,109,224)	11.8	Id2600	PHP	TemplateReferenceTest.php	11.8
+rgb(247,109,222)	14.0	Id2601		Functional	14.0
+rgb(247,109,222)	23.0	Id2602	PHP	SessionTest.php	23.0
+rgb(247,109,222)	14.0	Id2603		app	14.0
+rgb(247,109,222)	22.7	Id2604	PHP	AppKernel.php	22.7
+rgb(247,109,222)	14.0	Id2605		config	14.0
+rgb(247,109,222)	11.2	Id2606	YAML	framework.yml	11.2
+rgb(247,109,222)	5.3	Id2607	YAML	default.yml	5.3
+rgb(247,109,222)	14.0	Id2608		Session	14.0
+rgb(247,109,219)	8.7	Id2609	PHP	bundles.php	8.7
+rgb(247,109,219)	5.3	Id2610	YAML	routing.yml	5.3
+rgb(247,109,219)	5.3	Id2611	YAML	config.yml	5.3
+rgb(247,109,219)	14.0	Id2612		Profiler	14.0
+rgb(247,109,219)	7.6	Id2613	YAML	config.yml	7.6
+rgb(247,109,219)	18.5	Id2614	PHP	WebTestCase.php	18.5
+rgb(247,109,219)	14.0	Id2615		Bundle	14.0
+rgb(247,109,219)	14.0	Id2616		TestBundle	14.0
+rgb(247,109,217)	14.0	Id2617		Controller	14.0
+rgb(247,109,217)	18.3	Id2618	PHP	SessionController.php	18.3
+rgb(247,109,217)	10.4	Id2619	PHP	ProfilerController.php	10.4
+rgb(247,109,217)	14.0	Id2620		Resources	14.0
+rgb(247,109,217)	14.0	Id2621		config	14.0
+rgb(247,109,217)	12.7	Id2622	YAML	routing.yml	12.7
+rgb(247,109,217)	8.2	Id2623	PHP	TestBundle.php	8.2
+rgb(247,109,217)	14.9	Id2624	PHP	ProfilerTest.php	14.9
+rgb(247,109,217)	14.0	Id2625		Validator	14.0
+rgb(247,109,215)	18.3	Id2626	PHP	ConstraintValidatorFactoryTest.php	18.3
+rgb(247,109,215)	14.0	Id2627		CacheWarmer	14.0
+rgb(247,109,215)	17.1	Id2628	PHP	TemplateFinderTest.php	17.1
+rgb(247,109,215)	14.0	Id2629		Command	14.0
+rgb(247,109,215)	17.0	Id2630	Smarty	TestCaseMethod.tpl	17.0
+rgb(247,109,215)	14.0	Id2631		Console	14.0
+rgb(247,109,215)	16.4	Id2632	PHP	ApplicationTest.php	16.4
+rgb(247,109,215)	14.0	Id2633		Fragments	14.0
+rgb(247,109,212)	12.7	Id2634	PHP	ContainerAwareHIncludeFragmentRendererTest.php	12.7
+rgb(247,109,212)	14.0	Id2635		Fixtures	14.0
+rgb(247,109,212)	14.0	Id2636		TestBundle	14.0
+rgb(247,109,212)	14.0	Id2637		Fabpot	14.0
+rgb(247,109,212)	14.0	Id2638		FooBundle	14.0
+rgb(247,109,212)	10.0	Id2639	PHP	FabpotFooBundle.php	10.0
+rgb(247,109,212)	14.0	Id2640		Controller	14.0
+rgb(247,109,212)	7.6	Id2641	PHP	DefaultController.php	7.6
+rgb(247,109,210)	14.0	Id2642		Sensio	14.0
+rgb(247,109,210)	14.0	Id2643		Cms	14.0
+rgb(247,109,210)	14.0	Id2644		FooBundle	14.0
+rgb(247,109,210)	8.2	Id2645	PHP	SensioCmsFooBundle.php	8.2
+rgb(247,109,210)	14.0	Id2646		Controller	14.0
+rgb(247,109,210)	7.6	Id2647	PHP	DefaultController.php	7.6
+rgb(247,109,210)	14.0	Id2648		FooBundle	14.0
+rgb(247,109,210)	8.2	Id2649	PHP	SensioFooBundle.php	8.2
+rgb(247,109,210)	14.0	Id2650		Controller	14.0
+rgb(247,109,208)	7.6	Id2651	PHP	DefaultController.php	7.6
+rgb(247,109,208)	14.0	Id2652		FooBundle	14.0
+rgb(247,109,208)	8.2	Id2653	PHP	FooBundle.php	8.2
+rgb(247,109,208)	14.0	Id2654		Controller	14.0
+rgb(247,109,208)	14.0	Id2655		Test	14.0
+rgb(247,109,208)	7.6	Id2656	PHP	DefaultController.php	7.6
+rgb(247,109,208)	14.0	Id2657		Sub	14.0
+rgb(247,109,208)	7.6	Id2658	PHP	DefaultController.php	7.6
+rgb(247,109,206)	7.6	Id2659	PHP	DefaultController.php	7.6
+rgb(247,109,206)	14.0	Id2660		BaseBundle	14.0
+rgb(247,109,206)	8.2	Id2661	PHP	BaseBundle.php	8.2
+rgb(247,109,206)	14.0	Id2662		Resources	14.0
+rgb(247,109,206)	14.0	Id2663		views	14.0
+rgb(247,109,206)	5.3	Id2664	PHP	translation.html.php	5.3
+rgb(247,109,206)	7.6	Id2665	PHP	TestCase.php	7.6
+rgb(247,109,206)	14.0	Id2666		Resources	14.0
+rgb(247,109,206)	14.0	Id2667		public	14.0
+rgb(247,109,203)	14.0	Id2668		css	14.0
+rgb(247,109,203)	29.1	Id2669	CSS	body.css	29.1
+rgb(247,109,203)	25.9	Id2670	CSS	exception.css	25.9
+rgb(247,109,203)	22.1	Id2671	CSS	structure.css	22.1
+rgb(247,109,203)	14.0	Id2672		config	14.0
+rgb(247,109,203)	27.9	Id2673	XML	form.xml	27.9
+rgb(247,109,203)	14.0	Id2674		schema	14.0
+rgb(247,109,203)	27.8	Id2675	XSD	symfony-1.0.xsd	27.8
+rgb(247,109,201)	26.3	Id2676	XML	translation.xml	26.3
+rgb(247,109,201)	25.1	Id2677	XML	templating_php.xml	25.1
+rgb(247,109,201)	23.9	Id2678	XML	routing.xml	23.9
+rgb(247,109,201)	20.0	Id2679	XML	validator.xml	20.0
+rgb(247,109,201)	19.4	Id2680	XML	templating.xml	19.4
+rgb(247,109,201)	18.7	Id2681	XML	collectors.xml	18.7
+rgb(247,109,201)	17.7	Id2682	XML	services.xml	17.7
+rgb(247,109,201)	17.1	Id2683	XML	session.xml	17.1
+rgb(247,109,199)	16.8	Id2684	XML	web.xml	16.8
+rgb(247,109,199)	15.8	Id2685	XML	fragment_renderer.xml	15.8
+rgb(247,109,199)	15.8	Id2686	XML	debug.xml	15.8
+rgb(247,109,199)	15.4	Id2687	XML	profiling.xml	15.4
+rgb(247,109,199)	14.7	Id2688	XML	test.xml	14.7
+rgb(247,109,199)	14.3	Id2689	XML	annotations.xml	14.3
+rgb(247,109,199)	14.0	Id2690	XML	esi.xml	14.0
+rgb(247,109,199)	13.3	Id2691	XML	form_csrf.xml	13.3
+rgb(247,109,199)	11.8	Id2692	XML	fragment_listener.xml	11.8
+rgb(247,109,196)	11.5	Id2693	XML	templating_debug.xml	11.5
+rgb(247,109,196)	8.2	Id2694	PHP	router.php	8.2
+rgb(247,109,196)	14.0	Id2695		views	14.0
+rgb(247,109,196)	14.0	Id2696		Form	14.0
+rgb(247,109,196)	12.7	Id2697	PHP	time_widget.html.php	12.7
+rgb(247,109,196)	11.2	Id2698	PHP	choice_widget_collapsed.html.php	11.2
+rgb(247,109,196)	10.4	Id2699	PHP	date_widget.html.php	10.4
+rgb(247,109,196)	10.4	Id2700	PHP	choice_widget_options.html.php	10.4
+rgb(247,109,194)	10.4	Id2701	PHP	form_widget_compound.html.php	10.4
+rgb(247,109,194)	10.0	Id2702	PHP	widget_attributes.html.php	10.0
+rgb(247,109,194)	8.7	Id2703	PHP	datetime_widget.html.php	8.7
+rgb(247,109,194)	8.7	Id2704	PHP	form_errors.html.php	8.7
+rgb(247,109,194)	8.2	Id2705	PHP	choice_widget_expanded.html.php	8.2
+rgb(247,109,194)	8.2	Id2706	PHP	form_label.html.php	8.2
+rgb(247,109,194)	7.6	Id2707	PHP	choice_widget.html.php	7.6
+rgb(247,109,194)	7.6	Id2708	PHP	form_rest.html.php	7.6
+rgb(247,109,192)	7.6	Id2709	PHP	radio_widget.html.php	7.6
+rgb(247,109,192)	7.6	Id2710	PHP	checkbox_widget.html.php	7.6
+rgb(247,109,192)	7.6	Id2711	PHP	form_widget.html.php	7.6
+rgb(247,109,192)	7.6	Id2712	PHP	form_row.html.php	7.6
+rgb(247,109,192)	7.6	Id2713	PHP	form_widget_simple.html.php	7.6
+rgb(247,109,192)	7.0	Id2714	PHP	collection_widget.html.php	7.0
+rgb(247,109,192)	6.2	Id2715	PHP	form_rows.html.php	6.2
+rgb(247,109,192)	5.3	Id2716	PHP	widget_container_attributes.html.php	5.3
+rgb(247,109,192)	4.0	Id2717	PHP	money_widget.html.php	4.0
+rgb(247,109,189)	4.0	Id2718	PHP	attributes.html.php	4.0
+rgb(247,109,189)	4.0	Id2719	PHP	form_enctype.html.php	4.0
+rgb(247,109,189)	4.0	Id2720	PHP	field_rest.html.php	4.0
+rgb(247,109,189)	4.0	Id2721	PHP	password_widget.html.php	4.0
+rgb(247,109,189)	4.0	Id2722	PHP	choice_options.html.php	4.0
+rgb(247,109,189)	4.0	Id2723	PHP	repeated_row.html.php	4.0
+rgb(247,109,189)	4.0	Id2724	PHP	field_widget.html.php	4.0
+rgb(247,109,189)	4.0	Id2725	PHP	textarea_widget.html.php	4.0
+rgb(247,109,187)	4.0	Id2726	PHP	url_widget.html.php	4.0
+rgb(247,109,187)	4.0	Id2727	PHP	hidden_widget.html.php	4.0
+rgb(247,109,187)	4.0	Id2728	PHP	percent_widget.html.php	4.0
+rgb(247,109,187)	4.0	Id2729	PHP	field_errors.html.php	4.0
+rgb(247,109,187)	4.0	Id2730	PHP	number_widget.html.php	4.0
+rgb(247,109,187)	4.0	Id2731	PHP	email_widget.html.php	4.0
+rgb(247,109,187)	4.0	Id2732	PHP	field_enctype.html.php	4.0
+rgb(247,109,187)	4.0	Id2733	PHP	integer_widget.html.php	4.0
+rgb(247,109,185)	4.0	Id2734	PHP	field_label.html.php	4.0
+rgb(247,109,185)	4.0	Id2735	PHP	container_attributes.html.php	4.0
+rgb(247,109,185)	4.0	Id2736	PHP	hidden_row.html.php	4.0
+rgb(247,109,185)	4.0	Id2737	PHP	search_widget.html.php	4.0
+rgb(247,109,185)	4.0	Id2738	PHP	field_row.html.php	4.0
+rgb(247,109,185)	14.0	Id2739		FormTable	14.0
+rgb(247,109,185)	9.6	Id2740	PHP	form_row.html.php	9.6
+rgb(247,109,185)	8.7	Id2741	PHP	form_widget_compound.html.php	8.7
+rgb(247,109,185)	7.6	Id2742	PHP	hidden_row.html.php	7.6
+rgb(247,109,183)	14.0	Id2743		Templating	14.0
+rgb(247,109,183)	14.0	Id2744		Helper	14.0
+rgb(247,109,183)	28.2	Id2745	PHP	CodeHelper.php	28.2
+rgb(247,109,183)	20.6	Id2746	PHP	FormHelper.php	20.6
+rgb(247,109,183)	16.0	Id2747	PHP	SessionHelper.php	16.0
+rgb(247,109,183)	15.2	Id2748	PHP	ActionsHelper.php	15.2
+rgb(247,109,183)	14.3	Id2749	PHP	RequestHelper.php	14.3
+rgb(247,109,183)	14.3	Id2750	PHP	TranslatorHelper.php	14.3
+rgb(247,109,180)	13.3	Id2751	PHP	RouterHelper.php	13.3
+rgb(247,109,180)	19.9	Id2752	PHP	GlobalVariables.php	19.9
+rgb(247,109,180)	18.5	Id2753	PHP	TemplateNameParser.php	18.5
+rgb(247,109,180)	18.0	Id2754	PHP	DelegatingEngine.php	18.0
+rgb(247,109,180)	17.8	Id2755	PHP	PhpEngine.php	17.8
+rgb(247,109,180)	14.0	Id2756		Loader	14.0
+rgb(247,109,180)	16.6	Id2757	PHP	TemplateLocator.php	16.6
+rgb(247,109,180)	16.2	Id2758	PHP	FilesystemLoader.php	16.2
+rgb(247,109,180)	14.7	Id2759	PHP	TemplateReference.php	14.7
+rgb(247,109,178)	12.7	Id2760	PHP	Debugger.php	12.7
+rgb(247,109,178)	12.4	Id2761	PHP	TemplateFilenameParser.php	12.4
+rgb(247,109,178)	14.0	Id2762		Asset	14.0
+rgb(247,109,178)	12.1	Id2763	PHP	PackageFactory.php	12.1
+rgb(247,109,178)	10.4	Id2764	PHP	PathPackage.php	10.4
+rgb(247,109,178)	9.2	Id2765	PHP	EngineInterface.php	9.2
+rgb(247,109,178)	14.0	Id2766		Controller	14.0
+rgb(247,109,178)	24.7	Id2767	PHP	Controller.php	24.7
+rgb(247,109,176)	20.8	Id2768	PHP	RedirectController.php	20.8
+rgb(247,109,176)	17.7	Id2769	PHP	ControllerResolver.php	17.7
+rgb(247,109,176)	16.0	Id2770	PHP	ControllerNameParser.php	16.0
+rgb(247,109,176)	14.0	Id2771	PHP	TemplateController.php	14.0
+rgb(247,109,176)	24.0	Id2772	PHP	Client.php	24.0
+rgb(247,109,176)	14.0	Id2773		Translation	14.0
+rgb(247,109,176)	23.9	Id2774	PHP	Translator.php	23.9
+rgb(247,109,176)	21.5	Id2775	PHP	PhpExtractor.php	21.5
+rgb(247,109,173)	14.5	Id2776	PHP	TranslationLoader.php	14.5
+rgb(247,109,173)	14.0	Id2777		Test	14.0
+rgb(247,109,173)	23.8	Id2778	PHP	WebTestCase.php	23.8
+rgb(247,109,173)	14.0	Id2779		Routing	14.0
+rgb(247,109,173)	23.4	Id2780	PHP	Router.php	23.4
+rgb(247,109,173)	15.8	Id2781	PHP	DelegatingLoader.php	15.8
+rgb(247,109,173)	12.7	Id2782	PHP	RedirectableUrlMatcher.php	12.7
+rgb(247,109,173)	19.9	Id2783	PHP	FrameworkBundle.php	19.9
+rgb(247,109,173)	14.0	Id2784		CacheWarmer	14.0
+rgb(247,109,171)	19.7	Id2785	PHP	TemplateFinder.php	19.7
+rgb(247,109,171)	14.7	Id2786	PHP	TemplatePathsCacheWarmer.php	14.7
+rgb(247,109,171)	14.0	Id2787	PHP	RouterCacheWarmer.php	14.0
+rgb(247,109,171)	8.2	Id2788	PHP	TemplateFinderInterface.php	8.2
+rgb(247,109,171)	14.0	Id2789		EventListener	14.0
+rgb(247,109,171)	19.1	Id2790	PHP	TestSessionListener.php	19.1
+rgb(247,109,171)	16.0	Id2791	PHP	SessionListener.php	16.0
+rgb(247,109,171)	14.0	Id2792		Console	14.0
+rgb(247,109,169)	18.5	Id2793	PHP	Application.php	18.5
+rgb(247,109,169)	13.8	Id2794	PHP	Shell.php	13.8
+rgb(247,109,169)	14.0	Id2795		HttpCache	14.0
+rgb(247,109,169)	17.1	Id2796	PHP	HttpCache.php	17.1
+rgb(247,109,169)	14.0	Id2797		Validator	14.0
+rgb(247,109,169)	14.7	Id2798	PHP	ConstraintValidatorFactory.php	14.7
+rgb(247,109,169)	14.0	Id2799	PHP	HttpKernel.php	14.0
+rgb(247,109,169)	14.0	Id2800		Fragment	14.0
+rgb(247,109,167)	13.8	Id2801	PHP	ContainerAwareHIncludeFragmentRenderer.php	13.8
+rgb(247,109,167)	14.0	Id2802		DataCollector	14.0
+rgb(247,109,167)	12.7	Id2803	PHP	RouterDataCollector.php	12.7
+rgb(247,109,167)	14.0	Id2804		SecurityBundle	14.0
+rgb(247,109,167)	14.0	Id2805		DependencyInjection	14.0
+rgb(247,109,167)	47.2	Id2806	PHP	SecurityExtension.php	47.2
+rgb(247,109,167)	41.2	Id2807	PHP	MainConfiguration.php	41.2
+rgb(247,109,167)	14.0	Id2808		Security	14.0
+rgb(247,109,167)	14.0	Id2809		Factory	14.0
+rgb(247,109,164)	26.2	Id2810	PHP	RememberMeFactory.php	26.2
+rgb(247,109,164)	25.5	Id2811	PHP	AbstractFactory.php	25.5
+rgb(247,109,164)	21.9	Id2812	PHP	FormLoginFactory.php	21.9
+rgb(247,109,164)	20.0	Id2813	PHP	HttpDigestFactory.php	20.0
+rgb(247,109,164)	19.6	Id2814	PHP	HttpBasicFactory.php	19.6
+rgb(247,109,164)	17.8	Id2815	PHP	X509Factory.php	17.8
+rgb(247,109,164)	10.4	Id2816	PHP	SecurityFactoryInterface.php	10.4
+rgb(247,109,164)	14.0	Id2817		UserProvider	14.0
+rgb(247,109,162)	18.3	Id2818	PHP	InMemoryFactory.php	18.3
+rgb(247,109,162)	10.0	Id2819	PHP	UserProviderFactoryInterface.php	10.0
+rgb(247,109,162)	14.0	Id2820		Compiler	14.0
+rgb(247,109,162)	13.8	Id2821	PHP	AddSecurityVotersPass.php	13.8
+rgb(247,109,162)	14.0	Id2822		Resources	14.0
+rgb(247,109,162)	14.0	Id2823		config	14.0
+rgb(247,109,162)	31.6	Id2824	XML	security_listeners.xml	31.6
+rgb(247,109,162)	25.8	Id2825	XML	security.xml	25.8
+rgb(247,109,160)	19.7	Id2826	XML	security_rememberme.xml	19.7
+rgb(247,109,160)	18.3	Id2827	XML	security_acl_dbal.xml	18.3
+rgb(247,109,160)	16.8	Id2828	XML	security_acl.xml	16.8
+rgb(247,109,160)	13.3	Id2829	XML	templating_php.xml	13.3
+rgb(247,109,160)	13.0	Id2830	XML	templating_twig.xml	13.0
+rgb(247,109,160)	11.5	Id2831	XML	collectors.xml	11.5
+rgb(247,109,160)	14.0	Id2832		Tests	14.0
+rgb(247,109,160)	14.0	Id2833		DependencyInjection	14.0
+rgb(247,109,160)	30.7	Id2834	PHP	SecurityExtensionTest.php	30.7
+rgb(247,109,157)	14.0	Id2835		Fixtures	14.0
+rgb(247,109,157)	14.0	Id2836		php	14.0
+rgb(247,109,157)	23.3	Id2837	PHP	container1.php	23.3
+rgb(247,109,157)	12.1	Id2838	PHP	merge.php	12.1
+rgb(247,109,157)	11.5	Id2839	PHP	merge_import.php	11.5
+rgb(247,109,157)	8.7	Id2840	PHP	custom_acl_provider.php	8.7
+rgb(247,109,157)	14.0	Id2841		yml	14.0
+rgb(247,109,157)	20.7	Id2842	YAML	container1.yml	20.7
+rgb(247,109,155)	10.4	Id2843	YAML	merge.yml	10.4
+rgb(247,109,155)	9.2	Id2844	YAML	merge_import.yml	9.2
+rgb(247,109,155)	7.6	Id2845	YAML	custom_acl_provider.yml	7.6
+rgb(247,109,155)	14.0	Id2846		xml	14.0
+rgb(247,109,155)	19.1	Id2847	XML	container1.xml	19.1
+rgb(247,109,155)	12.1	Id2848	XML	merge.xml	12.1
+rgb(247,109,155)	11.2	Id2849	XML	merge_import.xml	11.2
+rgb(247,109,155)	10.8	Id2850	XML	custom_acl_provider.xml	10.8
+rgb(247,109,155)	14.0	Id2851		Security	14.0
+rgb(247,109,153)	14.0	Id2852		Factory	14.0
+rgb(247,109,153)	22.6	Id2853	PHP	AbstractFactoryTest.php	22.6
+rgb(247,109,153)	17.8	Id2854	PHP	ConfigurationTest.php	17.8
+rgb(247,109,153)	11.2	Id2855	PHP	YamlSecurityExtensionTest.php	11.2
+rgb(247,109,153)	11.2	Id2856	PHP	XmlSecurityExtensionTest.php	11.2
+rgb(247,109,153)	11.2	Id2857	PHP	PhpSecurityExtensionTest.php	11.2
+rgb(247,109,153)	14.0	Id2858		Functional	14.0
+rgb(247,109,153)	23.3	Id2859	PHP	CsrfFormLoginTest.php	23.3
+rgb(247,109,150)	14.0	Id2860		app	14.0
+rgb(247,109,150)	22.7	Id2861	PHP	AppKernel.php	22.7
+rgb(247,109,150)	14.0	Id2862		CsrfFormLogin	14.0
+rgb(247,109,150)	17.3	Id2863	YAML	config.yml	17.3
+rgb(247,109,150)	8.7	Id2864	PHP	bundles.php	8.7
+rgb(247,109,150)	5.3	Id2865	YAML	routing.yml	5.3
+rgb(247,109,150)	14.0	Id2866		StandardFormLogin	14.0
+rgb(247,109,150)	14.3	Id2867	YAML	config.yml	14.3
+rgb(247,109,148)	13.8	Id2868	YAML	localized_routes.yml	13.8
+rgb(247,109,148)	12.4	Id2869	YAML	localized_form_failure_handler.yml	12.4
+rgb(247,109,148)	11.2	Id2870	YAML	switchuser.yml	11.2
+rgb(247,109,148)	10.8	Id2871	YAML	routes_as_path.yml	10.8
+rgb(247,109,148)	10.4	Id2872	PHP	bundles.php	10.4
+rgb(247,109,148)	9.2	Id2873	YAML	localized_routes_with_forward.yml	9.2
+rgb(247,109,148)	7.0	Id2874	YAML	routing.yml	7.0
+rgb(247,109,148)	14.0	Id2875		config	14.0
+rgb(247,109,148)	11.5	Id2876	YAML	framework.yml	11.5
+rgb(247,109,146)	7.6	Id2877	YAML	twig.yml	7.6
+rgb(247,109,146)	6.2	Id2878	YAML	default.yml	6.2
+rgb(247,109,146)	21.1	Id2879	PHP	FormLoginTest.php	21.1
+rgb(247,109,146)	20.4	Id2880	PHP	LocalizedRoutesAsPathTest.php	20.4
+rgb(247,109,146)	20.3	Id2881	PHP	SwitchUserTest.php	20.3
+rgb(247,109,146)	19.1	Id2882	PHP	SecurityRoutingIntegrationTest.php	19.1
+rgb(247,109,146)	14.0	Id2883		Bundle	14.0
+rgb(247,109,146)	14.0	Id2884		CsrfFormLoginBundle	14.0
+rgb(247,109,144)	14.0	Id2885		Form	14.0
+rgb(247,109,144)	19.1	Id2886	PHP	UserLoginFormType.php	19.1
+rgb(247,109,144)	14.0	Id2887		Controller	14.0
+rgb(247,109,144)	14.9	Id2888	PHP	LoginController.php	14.9
+rgb(247,109,144)	14.0	Id2889		Resources	14.0
+rgb(247,109,144)	14.0	Id2890		config	14.0
+rgb(247,109,144)	14.0	Id2891	YAML	routing.yml	14.0
+rgb(247,109,144)	8.2	Id2892	PHP	CsrfFormLoginBundle.php	8.2
+rgb(247,109,141)	14.0	Id2893		FormLoginBundle	14.0
+rgb(247,109,141)	14.0	Id2894		Controller	14.0
+rgb(247,109,141)	17.5	Id2895	PHP	LocalizedController.php	17.5
+rgb(247,109,141)	16.2	Id2896	PHP	LoginController.php	16.2
+rgb(247,109,141)	14.0	Id2897		Resources	14.0
+rgb(247,109,141)	14.0	Id2898		config	14.0
+rgb(247,109,141)	14.5	Id2899	YAML	routing.yml	14.5
+rgb(247,109,141)	14.3	Id2900	YAML	localized_routing.yml	14.3
+rgb(247,109,141)	14.0	Id2901		Security	14.0
+rgb(247,109,139)	13.3	Id2902	PHP	LocalizedFormFailureHandler.php	13.3
+rgb(247,109,139)	14.0	Id2903		DependencyInjection	14.0
+rgb(247,109,139)	11.8	Id2904	PHP	FormLoginExtension.php	11.8
+rgb(247,109,139)	8.2	Id2905	PHP	FormLoginBundle.php	8.2
+rgb(247,109,139)	18.5	Id2906	PHP	WebTestCase.php	18.5
+rgb(247,109,139)	10.8	Id2907	PHP	AuthenticationCommencingTest.php	10.8
+rgb(247,109,139)	14.0	Id2908		DataCollector	14.0
+rgb(247,109,139)	21.4	Id2909	PHP	SecurityDataCollector.php	21.4
+rgb(247,109,137)	14.0	Id2910		Templating	14.0
+rgb(247,109,137)	14.0	Id2911		Helper	14.0
+rgb(247,109,137)	19.4	Id2912	PHP	LogoutUrlHelper.php	19.4
+rgb(247,109,137)	14.9	Id2913	PHP	SecurityHelper.php	14.9
+rgb(247,109,137)	14.0	Id2914		Command	14.0
+rgb(247,109,137)	17.7	Id2915	PHP	InitAclCommand.php	17.7
+rgb(247,109,137)	14.0	Id2916		Twig	14.0
+rgb(247,109,137)	14.0	Id2917		Extension	14.0
+rgb(247,109,134)	15.6	Id2918	PHP	LogoutUrlExtension.php	15.6
+rgb(247,109,134)	14.7	Id2919	PHP	SecurityBundle.php	14.7
+rgb(247,109,134)	14.0	Id2920		Security	14.0
+rgb(247,109,134)	14.3	Id2921	PHP	FirewallMap.php	14.3
+rgb(247,109,134)	12.4	Id2922	PHP	FirewallContext.php	12.4
+rgb(247,109,134)	14.0	Id2923		EventListener	14.0
+rgb(247,109,134)	12.4	Id2924	PHP	AclSchemaListener.php	12.4
+rgb(247,109,134)	14.0	Id2925		WebProfilerBundle	14.0
+rgb(247,109,134)	14.0	Id2926		Controller	14.0
+rgb(247,109,132)	34.6	Id2927	PHP	ProfilerController.php	34.6
+rgb(247,109,132)	21.4	Id2928	PHP	ExceptionController.php	21.4
+rgb(247,109,132)	17.7	Id2929	PHP	RouterController.php	17.7
+rgb(247,109,132)	14.0	Id2930		Tests	14.0
+rgb(247,109,132)	14.0	Id2931		EventListener	14.0
+rgb(247,109,132)	29.6	Id2932	PHP	WebDebugToolbarListenerTest.php	29.6
+rgb(247,109,132)	14.0	Id2933		Profiler	14.0
+rgb(247,109,132)	25.2	Id2934	PHP	TemplateManagerTest.php	25.2
+rgb(247,109,130)	14.0	Id2935		DependencyInjection	14.0
+rgb(247,109,130)	24.0	Id2936	PHP	WebProfilerExtensionTest.php	24.0
+rgb(247,109,130)	14.3	Id2937	PHP	ConfigurationTest.php	14.3
+rgb(247,109,130)	10.4	Id2938	PHP	TestCase.php	10.4
+rgb(247,109,130)	14.0	Id2939		EventListener	14.0
+rgb(247,109,130)	23.8	Id2940	PHP	WebDebugToolbarListener.php	23.8
+rgb(247,109,130)	14.0	Id2941		Profiler	14.0
+rgb(247,109,130)	21.5	Id2942	PHP	TemplateManager.php	21.5
+rgb(247,109,130)	14.0	Id2943		Resources	14.0
+rgb(247,109,128)	14.0	Id2944		config	14.0
+rgb(247,109,128)	14.0	Id2945		routing	14.0
+rgb(247,109,128)	18.2	Id2946	XML	profiler.xml	18.2
+rgb(247,109,128)	9.2	Id2947	XML	wdt.xml	9.2
+rgb(247,109,128)	15.4	Id2948	XML	profiler.xml	15.4
+rgb(247,109,128)	14.0	Id2949		schema	14.0
+rgb(247,109,128)	13.0	Id2950	XSD	webprofiler-1.0.xsd	13.0
+rgb(247,109,128)	12.4	Id2951	XML	toolbar.xml	12.4
+rgb(247,109,125)	14.0	Id2952		bin	14.0
+rgb(247,109,125)	7.0	Id2953	Bourne Shell	sync_assets.sh	7.0
+rgb(247,109,125)	14.0	Id2954		DependencyInjection	14.0
+rgb(247,109,125)	16.4	Id2955	PHP	WebProfilerExtension.php	16.4
+rgb(247,109,125)	14.9	Id2956	PHP	Configuration.php	14.9
+rgb(247,109,125)	8.2	Id2957	PHP	WebProfilerBundle.php	8.2
+rgb(247,109,125)	14.0	Id2958		TwigBundle	14.0
+rgb(247,109,125)	14.0	Id2959		Tests	14.0
+rgb(247,109,123)	14.0	Id2960		DependencyInjection	14.0
+rgb(247,109,123)	29.5	Id2961	PHP	TwigExtensionTest.php	29.5
+rgb(247,109,123)	14.0	Id2962		Compiler	14.0
+rgb(247,109,123)	22.3	Id2963	PHP	TwigLoaderPassTest.php	22.3
+rgb(247,109,123)	14.0	Id2964		Fixtures	14.0
+rgb(247,109,123)	14.0	Id2965		php	14.0
+rgb(247,109,123)	14.7	Id2966	PHP	full.php	14.7
+rgb(247,109,123)	14.0	Id2967		yml	14.0
+rgb(247,109,123)	13.3	Id2968	YAML	full.yml	13.3
+rgb(247,109,121)	14.0	Id2969		xml	14.0
+rgb(247,109,121)	12.7	Id2970	XML	full.xml	12.7
+rgb(247,109,121)	14.0	Id2971		TokenParser	14.0
+rgb(247,109,121)	21.0	Id2972	PHP	RenderTokenParserTest.php	21.0
+rgb(247,109,121)	14.0	Id2973		Loader	14.0
+rgb(247,109,121)	20.6	Id2974	PHP	FilesystemLoaderTest.php	20.6
+rgb(247,109,121)	14.0	Id2975		Controller	14.0
+rgb(247,109,121)	15.8	Id2976	PHP	ExceptionControllerTest.php	15.8
+rgb(247,109,118)	10.4	Id2977	PHP	TestCase.php	10.4
+rgb(247,109,118)	14.0	Id2978		DependencyInjection	14.0
+rgb(247,109,118)	27.5	Id2979	PHP	Configuration.php	27.5
+rgb(247,109,118)	25.5	Id2980	PHP	TwigExtension.php	25.5
+rgb(247,109,118)	14.0	Id2981		Compiler	14.0
+rgb(247,109,118)	15.2	Id2982	PHP	TwigLoaderPass.php	15.2
+rgb(247,109,118)	13.5	Id2983	PHP	TwigEnvironmentPass.php	13.5
+rgb(247,109,118)	12.4	Id2984	PHP	ExceptionListenerPass.php	12.4
+rgb(247,109,116)	14.0	Id2985		Command	14.0
+rgb(247,109,116)	26.0	Id2986	PHP	LintCommand.php	26.0
+rgb(247,109,116)	14.0	Id2987		Resources	14.0
+rgb(247,109,116)	14.0	Id2988		config	14.0
+rgb(247,109,116)	25.8	Id2989	XML	twig.xml	25.8
+rgb(247,109,116)	14.0	Id2990		schema	14.0
+rgb(247,109,116)	17.5	Id2991	XSD	twig-1.0.xsd	17.5
+rgb(247,109,116)	13.3	Id2992	XML	debug.xml	13.3
+rgb(247,109,116)	14.0	Id2993		Controller	14.0
+rgb(247,109,114)	22.5	Id2994	PHP	ExceptionController.php	22.5
+rgb(247,109,114)	19.4	Id2995	PHP	TwigEngine.php	19.4
+rgb(247,109,114)	14.0	Id2996		Loader	14.0
+rgb(247,109,114)	18.2	Id2997	PHP	FilesystemLoader.php	18.2
+rgb(247,109,114)	14.0	Id2998		CacheWarmer	14.0
+rgb(247,109,114)	16.0	Id2999	PHP	TemplateCacheCacheWarmer.php	16.0
+rgb(247,109,114)	14.0	Id3000		Extension	14.0
+rgb(247,109,114)	15.6	Id3001	PHP	AssetsExtension.php	15.6
+rgb(247,109,111)	14.7	Id3002	PHP	ActionsExtension.php	14.7
+rgb(247,109,111)	14.0	Id3003		TokenParser	14.0
+rgb(247,109,111)	15.2	Id3004	PHP	RenderTokenParser.php	15.2
+rgb(247,109,111)	14.0	Id3005		Debug	14.0
+rgb(247,109,111)	14.0	Id3006	PHP	TimedTwigEngine.php	14.0
+rgb(247,109,111)	14.0	Id3007		Node	14.0
+rgb(247,109,111)	13.3	Id3008	PHP	RenderNode.php	13.3
+rgb(247,109,111)	12.4	Id3009	PHP	TwigBundle.php	12.4
+rgb(247,109,109)	11.2	Id3010	YAML	.travis.yml	11.2

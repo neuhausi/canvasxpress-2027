@@ -1,0 +1,10 @@
+	V1	V2	V3
+S1			Missence
+S2			Truncating
+S3	Nonsense		
+S4		Missence	
+S5		Truncating	
+S6		Nonsense	
+S7			
+S8	Missence		
+S9			

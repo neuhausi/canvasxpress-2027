@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress</title>
+    <meta name="description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress">
+    <meta property="og:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress">
+    <meta name="twitter:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <style>
+      .clickable.active { background-color: #9fc3e7ff; }
+    </style>
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdWYcYqAAAAAPqJzSUJ4T0r_YKPGhfotxPl0-_A"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Homepage",
+          "item": "https://www.canvasxpress.org/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Methods & Events"
+        }
+      ]
+    }
+    </script>
+</head>
+
+  <body>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top:0;padding:0;">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="/index.html">
+            <div class="mb-0">
+              <img src="/assets/images/logo-dark.svg" alt="CanvasXpress Logo" style="height: 25px; max-width: unset;" title="CanvasXpress Logo" width="282" height="35" loading="eager">
+            </div>
+          </a>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:0;outline:none;right:18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </a>
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0" style="margin-left: 0px;">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a href="/examples.html" class="nav-link">Examples</a></li>
+              <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
+              <li class="nav-item"><a href="/interfaces.html" class="nav-link">Interfaces</a></li>
+              <li class="nav-item"><a href="/updates.html" class="nav-link">Updates</a></li>
+              <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item mb-2" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-bs-toggle="modal" data-bs-target="#search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Aside -->
+      <div id="aside">
+        <aside class="col-md-3 col-lg-2 bg-white p-3 position-fixed d-hg-block shadow-lg sidebar rounded-aside" role="navigation"
+          aria-label="Main Navigation" style="top: 400px; right: 10px;">
+          <div class="text-center mb-2">
+            <a href="./index.html" aria-label="CanvasXpress Home">
+              <img src="https://canvasxpress.org/assets/images/logo-dark.svg" alt="CanvasXpress Logo"
+                title="CanvasXpress Logo" class="img-fluid" width="150" height="50" style="max-height: 50px;"
+                loading="eager">
+            </a>
+          </div>
+          <div class="table-of-contents rounded-aside mb-2">
+            <h3 class="font-xl font-bold text-primary">Table of Contents</h3>
+            <nav>
+              <ul class="nav flex-column space-y-2">
+                <li class="nav-item"><a class="nav-aside nav-link active-nav" href="#introduction">Introduction</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#events">Events</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#example">Live Example</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#best-practices">Best Practices</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#collection">Handler Collection</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#playground">Playground</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#accessing-instances">Accessing Instances</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+      </div>
+
+
+      <!-- Modals -->
+      <div id="modals">
+
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content modal-cnt">
+              <button type="button" class="modal-btn bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-hdr">
+                <div id="searchModalLabel" class="font-xl bg-transparent">Search CanvasXpress</div>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                  .gsc-search-button-v2 {background-color: #ffd587; border: none; border-radius: 5px;}.gsc-search-button-v2:focus, .gsc-search-button-v2:hover {background-color: #ffd587; outline: none;}.gsc-search-button-v2 svg {fill: #000;}td.gsib_a, td.gsib_b {border: none; border-radius: 5px; padding: 0 5px 0;}td.gsc-input, td.gsc-search-button, td.gsc-clear-button {border: none; padding: 0;}.gsst_a .gscb_a {color: #000;}.gsst_a .gscb_a:hover {color: #000;}.gsc-control-cse {max-height: 850px; overflow-y: auto; border:none; background-color: transparent;}.gsc-results-wrapper-overlay {background-color:transparent;}.gsc-webResult.gsc-result{border:none;}.gsc-above-wrapper-area {border:none; padding: 5px 0 5px 0;}
+                </style>
+                <script async src="https://cse.google.com/cse.js?cx=017553474198412024421:c_qxiweliao"></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Event Example -->
+      <header class="pt-1 overflow-hidden">
+        <div class="container px-4 px-lg-3 mt-5 position-relative">
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-10 text-center mx-auto">
+              <!-- Title and Subtitle -->
+              <h1 class="main-hero text-primary">CanvasXpress Methods & Events</h1>
+              <p class="lead submain-hero">A guide to programmatic control and custom interactions in CanvasXpress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="introduction" class="container">
+        <h2 class="font-xxl text-primary mb-3">Introduction to the CanvasXpress API</h2>
+        <p class="lead text-secondary lh-base">
+          The power of CanvasXpress goes beyond its configuration object. Its extensive JavaScript API provides full programmatic control over every aspect of your visualizations. This section introduces the core concepts of methods and events, which allow you to dynamically control and respond to your charts within a web application.
+        </p>
+        <p class="text-secondary lh-base">
+          This document provides a developer-focused, in-depth guide to the event system in CanvasXpress. Events are a powerful mechanism that allows you to transform a static chart into a fully interactive and dynamic data visualization experience. By hooking into the chart's lifecycle and user interactions, you can create custom behaviors, integrate with other UI components, and build a responsive application around your data.
+        </p>
+      </section>
+
+      <section id="events" class="container">
+        <h2 class="font-xxl text-primary mb-3">How to Customize Events</h2>
+        <p class="lead text-secondary lh-base">The primary mechanism for customizing chart behavior is the <code>events</code> object, which you include in your main CanvasXpress configuration. This object acts as a map, where each key is the name of a specific event (e.g., <code>click</code>, <code>mouseover</code>), and its value is a JavaScript function—your "event handler"—that will be executed when that event occurs. You can also add them dynamically at runtime using the <code>addEventListener</code> method and remove them with <code>removeEventListener</code> (See the playground section below).</p>
+        <h3 class="h5 fw-semibold text-dark mb-3">The Event Handler Function Signature</h3>
+        <p class="lead text-secondary lh-base">Every event handler you write will be called by CanvasXpress with three specific and very useful arguments. Understanding these is key to unlocking the full potential of the event system.</p>
+        <pre class="code-block mt-3"><code class="prettyprint">function(dataObject, event, canvasXpressInstance) { ... }</code></pre>
+        <div class="row g-4">
+          <div class="card h-100 shadow-sm p-3">
+            <h4 class="fw-semibold text-dark mb-2"><code>dataObject</code></strong> (<code>object</code> | <code>null</code>)</h4>
+            <p class="text-secondary">
+              This is arguably the most important parameter for creating context-aware interactions. It's a dynamically generated object that contains detailed information about the specific chart element that was interacted with.
+            </p>
+            <p class="text-secondary">
+              <b>What it contains:</b> The contents of <code>dataObject</code> vary depending on the graph type and what you interacted with. For example, if you click on a bar in a bar graph, it will contain the value of that bar, its corresponding sample and variable names, and its index. If you click on a node in a network graph, it will contain the node's ID and any associated metadata.
+            </p>
+            <p class="text-secondary">
+              <b>How to explore it:</b> The best way to understand what <code>dataObject</code> provides for a specific event is to inspect it directly. A simple <code>console.log(dataObject)</code> inside your handler will reveal its structure and contents for any given interaction.
+            </p>
+            <p class="text-secondary">
+              <b>When it's <code>null</code>:</b> If an event occurs on a part of the chart that isn't associated with a specific data point (like clicking the background), <code>dataObject</code> will often be <code>null</code>. Your code should always check if <code>dataObject</code> exists before trying to access its properties.
+            </p>
+          </div>
+          <div class="card h-100 shadow-sm p-3">
+            <h4 class="fw-semibold text-dark mb-2"><code>event</code></strong> (<code>Event</code>)</h4>
+            <p class="text-secondary">
+              This is the raw, native DOM Event object that the browser generated. This is useful for advanced scenarios where you need low-level information like mouse coordinates or modifier keys.
+            </p>
+            <p class="text-secondary">
+              <b>Examples:</b> You can get the precise X/Y coordinates of the mouse pointer (<code>event.clientX</code>, <code>event.clientY</code>), or check if a modifier key like <code>Ctrl</code>, <code>Shift</code>, or <code>Alt</code> was held down during the event (<code>event.ctrlKey</code>, <code>event.shiftKey</code>). You can also call methods like <code>event.preventDefault()</code> to stop the browser's default behavior (e.g., to prevent the context menu from appearing on a right-click).
+            </p>
+          </div>
+          <div class="card h-100 shadow-sm p-3">
+            <h4 class="fw-semibold text-dark mb-2"><code>canvasXpressInstance</code></strong> (<code>object</code>)</h4>
+            <p class="text-secondary">
+              This is a direct reference to the chart instance itself. It's your gateway to the entire public API of CanvasXpress.
+            </p>
+            <p class="text-secondary">
+              <b>What it's for:</b> From within an event handler, you can call any other CanvasXpress method. For example, after a user clicks a data point, you could programmatically trigger a zoom (<code>canvasXpressInstance.zoom()</code>), apply a filter (<code>canvasXpressInstance.filterSamples()</code>), or even destroy the chart (<code>canvasXpressInstance.destroy()</code>).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="example" class="container">
+        <h2 class="font-xxl text-primary mb-3">Live Example</h2>
+        <p class="text-secondary lh-base mb-3">
+          Interact with the chart below. The code demonstrates how to use the click and mouseover events to display information. The full code is shown underneath the chart.
+        </p>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="card p-3 m-1 shadow-sm">
+              <div class="canvasXpressContainerSite">
+                <canvas id="canvasEvents" width="613" height="613" data-responsive="true" data-aspectRatio="1:1"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          new CanvasXpress({
+            renderTo: "canvasEvents",
+            data: {
+              y: {
+                vars: [ "Gene1" ],
+                smps: [ "Smp1", "Smp2", "Smp3" ],
+                data: [ [ 10, 35, 88 ] ]
+              }
+            },
+            config : {
+              graphType: "Bar",
+              theme: "CanvasXpress"
+            },
+            events : {
+              mousemove: function(o, e, t) {
+                t.showInfoSpan(e, "<pre>" + t.prettyJSON(o) + "</pre>");
+              },
+              mouseout: function(o, e, t) {
+
+              },
+              click: function(o, e, t) {
+                var s = "click on var " + o.y.vars[0] + " and smp " + o.y.smps[0];
+                t.showInfoSpan(e, s);
+              },
+              dblclick: function(o, e, t) {
+                var s = "dblclick on var " + o.y.vars[0] + " and smp " + o.y.smps[0];
+                t.showInfoSpan(e, s);
+              }
+            }
+          });
+        </script>
+        <pre class="code-block mt-3"><code class="prettyprint">  var data = {
+      "y": {
+        "vars": ["Gene1"],
+        "smps": ["Smp1", "Smp2", "Smp3"],
+        "data": [[10, 35, 88]]
+      }
+  };
+
+  var conf = {
+    "graphType": "Bar"
+  };
+
+  var evts = {
+    "mousemove": function(o, e, t) {
+      t.showInfoSpan(e, "&lt;pre&gt;" + t.prettyJSON(o) + "&lt;/pre&gt;");
+    },
+    "click": function(o, e, t) {
+      var s = "click on var " + o.y.vars[0] + " and smp " + o.y.smps[0];
+      t.showInfoSpan(e, s);
+    },
+    "dblclick": function(o, e, t) {
+      var s = "dblclick on var " + o.y.vars[0] + " and smp " + o.y.smps[0];
+      t.showInfoSpan(e, s);
+    }
+  };
+
+  var cX = new CanvasXpress("canvasId", data, conf, evts);</code></pre>
+      </section>
+
+      <section id="best-practices" class="container">
+        <h2 class="font-xxl text-primary mb-3">Best Practices for Event Handling</h2>
+        <h3 class="h5 fw-semibold text-dark mb-3">Keep Handlers in Your Application Code</h3>
+        <p class="text-secondary lh-base mb-3">
+          Your event handler functions are part of your application's logic. They should never be added directly into the CanvasXpress library files to avoid issues with upgrades and to maintain a clean separation of concerns.
+        </p>
+        <h3 class="h5 fw-semibold text-dark mb-3">Organizing Your Handler Functions</h3>
+        <p class="text-secondary lh-base mb-3">
+          For complex applications, it's a great practice to group your handlers into a dedicated object. This acts as a "namespace" for your event logic.
+        </p>
+        <pre class="code-block mt-3"><code class="prettyprint">var eventHandlers = {
+  "mousemove": function(dataObject, event, canvasXpressInstance) {
+    // Do something on mouse move...
+  },
+  "mouseout": function(dataObject, event, canvasXpressInstance) {
+    // Do something on mouse out...
+  },
+  "click": function(dataObject, event, canvasXpressInstance) {
+    // Do something on click...
+  },
+  "dblclick": function(dataObject, event, canvasXpressInstance) {
+    // Do something on double-click...
+  }
+};
+
+var cx = new CanvasXpress("DOMId", data, conf, eventHandlers);</code></pre>
+        <h3 class="h5 fw-semibold text-dark mb-3">Using the <code>canvasXpressInstance</code> Parameter</h3>
+        <p class="text-secondary lh-base mb-3">
+          You should always use the <code>canvasXpressInstance</code> object passed as the third parameter to interact with the chart, and <strong>avoid relying on the <code>this</code> keyword</strong>. The <code>canvasXpressInstance</code> parameter is a guaranteed, stable reference to the chart object.
+        </p>
+      </section>
+
+      <section id="collection" class="container">
+        <h2 class="font-xxl text-primary mb-3">Example Event Handler Collection (ES5)</h2>
+        <p class="text-secondary lh-base mb-3">
+          This section provides a complete collection of "boilerplate" or "scaffolding" functions for all of CanvasXpress's custom events. Use this as a starting point for your own application.
+        </p>
+        <pre class="code-block mt-3"><code class="prettyprint">/**
+ * A collection of placeholder event handler functions for CanvasXpress (ES5 compatible).
+ * Each function demonstrates the standard signature and includes a console log to confirm it's firing.
+ *
+ * \@param {object | null} dataObject - An object with details about the event target, or null.
+ * \@param {Event} event - The native DOM event object.
+ * \@param {object} canvasXpressInstance - The instance of the CanvasXpress chart.
+ */
+
+// Fired when a data element is clicked.
+var handleClick = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: click', { dataObject: dataObject });
+  if (dataObject && dataObject.y) {
+    var varName = dataObject.y.vars[0];
+    var smpName = dataObject.y.smps[0];
+    console.log('Clicked on sample \'' + smpName + '\' of variable \'' + varName + '\'');
+  }
+};
+
+// Fired when a legend item is clicked.
+var handleClickLegend = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: clicklegend', { dataObject: dataObject });
+  if (dataObject) {
+    console.log('Clicked on legend item:', dataObject.legend);
+  }
+};
+
+// Fired on a right-click. Useful for a custom context menu.
+var handleContextMenu = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: contextmenu', { dataObject: dataObject });
+  // To show your own menu instead of the browser's, you must prevent the default behavior.
+  // event.preventDefault();
+};
+
+// Fired on a double-click.
+var handleDoubleClick = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: dblclick', { dataObject: dataObject });
+};
+
+// Fired continuously during a drag operation.
+var handleDrag = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: drag', { dataObject: dataObject });
+};
+
+// Fired in Network graphs after a node drag operation is finished.
+var handleEndDragNode = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: enddragnode', { dataObject: dataObject });
+  if (dataObject && dataObject.nodes) {
+    console.log('Finished dragging node:', dataObject.nodes[0].id);
+  }
+};
+
+// Fired once after all rendering is complete.
+var handleEndDraw = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: enddraw - Chart rendering is complete.');
+};
+
+// Fired once after motion is complete.
+var handleMotion = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: motion - Chart is in motion.');
+};
+
+// Fired when the mouse moves over the elements in the chart.
+var handleMouseMove = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: mousemove', { dataObject: dataObject });
+};
+
+// Fired when the mouse moves out of the elements in the chart.
+var handleMouseOut = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: mouseout', { dataObject: dataObject });
+};
+
+// Fired when the mouse enters a data element.
+var handleMouseOver = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: mouseover', { dataObject: dataObject });
+};
+
+// Fired when a mouse button is released.
+var handleMouseUp = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: mouseup', { dataObject: dataObject });
+};
+
+// Fired when the chart is updated by a remote source.
+var handleRemote = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: remote', { dataObject: dataObject });
+};
+
+// Fired after a selection of data points has been made.
+var handleSelect = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: select', { dataObject: dataObject });
+};
+
+// Fired when the mouse wheel is used over the chart.
+var handleWheel = function(dataObject, event, canvasXpressInstance) {
+  console.log('Event: wheel', { dataObject: dataObject });
+};</code></pre>
+      </section>
+
+      <section id="playground" class="container">
+        <h2 class="font-xxl text-primary mb-3">Playground</h2>
+        <p class="text-secondary lh-base mb-3">
+          Explore CanvasXpress events in the interactive playground below. Click an event name to dynamically add or remove its handler from the chart.
+          For a deeper look, open your browser's developer console to view the event logs and inspect the returned data object.
+          For convenience, the returned data is also displayed in the container next to the chart.
+        </p>
+        <pre class="code-block mt-3"><code class="prettyprint"> // Get the CanvasXpress instance
+  var canvasXpressInstance = ...;
+
+  // Add a click event listener
+  canvasXpressInstance.addEventListener('click', function(dataObject, event, canvasXpressInstance) {
+    console.log('Custom click event triggered', { dataObject: dataObject });
+  });
+  // Remove the click event listener
+  canvasXpressInstance.removeEventListener('click', function(dataObject, event, canvasXpressInstance) {
+    console.log('Custom click event triggered', { dataObject: dataObject });
+  });</code></pre>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="click" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">click</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="clicklegend" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">clicklegend</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="contextmenu" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">contextmenu</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="dblclick" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">dblclick</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="drag" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">drag</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="enddragnode" class="card shadow-sm p-3">
+              <h4 class="fw-semibold text-dark mb-2">enddragnode</h4>
+              <p>Network Graphs Only</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="enddraw" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">enddraw</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="motion" class="card shadow-sm p-3">
+              <h4 class="fw-semibold text-dark mb-2">motion</h4>
+              <p>Motion Charts Only</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="mousemove" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">mousemove</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="mouseout" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">mouseout</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="mouseover" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">mouseover</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="mouseup" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">mouseup</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="remote" class="card shadow-sm p-3">
+              <h4 class="fw-semibold text-dark mb-2">remote</h4>
+              <p>Remote Charts Only</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-1">
+            <div id="select" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">select</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-2">
+            <div id="wheel" class="card shadow-sm p-3 clickable">
+              <h4 class="fw-semibold text-dark mb-2">wheel</h4>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 d-flex justify-content-center">
+            <div class="card p-3 m-1 shadow-sm">
+              <div class="canvasXpressContainerSite">
+                <canvas id="playgroundCanvas" width="500" height="500" data-responsive="true" data-aspectRatio="1:1"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card p-3 m-1 shadow-sm" style="height: 100%;max-height: 500px;overflow-y: auto;">
+              <pre class="code-block mt-3"><code id="console" class="prettyprint"></code></pre>
+            </div>
+          </div>
+        </div>
+        <script>
+          /**
+           * A collection of placeholder event handler functions for CanvasXpress (ES5 compatible).
+           * Each function demonstrates the standard signature and includes a console log to confirm it's firing.
+           *
+           * \@param {object | null} dataObject - An object with details about the event target, or null.
+           * \@param {Event} event - The native DOM event object.
+           * \@param {object} canvasXpressInstance - The instance of the CanvasXpress chart.
+           */
+
+          // Fired when a data element is clicked.
+          var handleClick = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: click', { dataObject: dataObject });
+            if (dataObject && dataObject.y) {
+              var varName = dataObject.y.vars[0];
+              var smpName = dataObject.y.smps[0];
+              console.log('Clicked on sample ' + smpName + ' of variable ' + varName);
+              $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+            }
+          };
+
+          // Fired when a legend item is clicked.
+          var handleClickLegend = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: clicklegend', { dataObject: dataObject });
+            if (dataObject) {
+              console.log('Clicked on legend item:', dataObject.legend);
+              $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+            }
+          };
+
+          // Fired on a right-click. Useful for a custom context menu.
+          var handleContextMenu = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: contextmenu', { dataObject: dataObject });
+            // To show your own menu instead of the browser's, you must prevent the default behavior.
+            // event.preventDefault();
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          // Fired on a double-click.
+          var handleDoubleClick = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: dblclick', { dataObject: dataObject });
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          // Fired continuously during a drag operation.
+          var handleDrag = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: drag', { dataObject: dataObject });
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          // Fired in Network graphs after a node drag operation is finished.
+          var handleEndDragNode = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: enddragnode', { dataObject: dataObject });
+            if (dataObject && dataObject.nodes) {
+              console.log('Finished dragging node:', dataObject.nodes[0].id);
+            }
+          };
+
+          // Fired once after all rendering is complete.
+          var handleEndDraw = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: enddraw - Chart rendering is complete.');
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          // Fired once after motion is complete.
+          var handleMotion = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: motion - Chart is in motion.');
+          };
+
+          // Fired when the mouse moves over the elements in the chart.
+          var handleMouseMove = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: mousemove', { dataObject: dataObject });
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          // Fired when the mouse moves out of the elements in the chart.
+          var handleMouseOut = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: mouseout', { dataObject: dataObject });
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          // Fired when the mouse enters a data element.
+          var handleMouseOver = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: mouseover', { dataObject: dataObject });
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          // Fired when a mouse button is released.
+          var handleMouseUp = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: mouseup', { dataObject: dataObject });
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          // Fired when the chart is updated by a remote source.
+          var handleRemote = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: remote', { dataObject: dataObject });
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          // Fired after a selection of data points has been made.
+          var handleSelect = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: select', { dataObject: dataObject });
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          // Fired when the mouse wheel is used over the chart.
+          var handleWheel = function(dataObject, event, canvasXpressInstance) {
+            console.log('Event: wheel', { dataObject: dataObject });
+            $('#console').html(canvasXpressInstance.prettyJSON(dataObject));
+          };
+
+          /** Map of Events */
+          var eventMap = {
+            click: handleClick,
+            clicklegend: handleClickLegend,
+            contextmenu: handleContextMenu,
+            dblclick: handleDoubleClick,
+            drag: handleDrag,
+            enddragnode: handleEndDragNode,
+            enddraw: handleEndDraw,
+            motion: handleMotion,
+            mousemove: handleMouseMove,
+            mouseout: handleMouseOut,
+            mouseover: handleMouseOver,
+            mouseup: handleMouseUp,
+            remote: handleRemote,
+            select: handleSelect,
+            wheel: handleWheel
+          };
+
+          /** State of Events */
+          var eventState = {
+            click: false,
+            clicklegend: false,
+            contextmenu: false,
+            dblclick: false,
+            drag: false,
+            enddragnode: false,
+            enddraw: false,
+            motion: false,
+            mousemove: false,
+            mouseout: false,
+            mouseover: false,
+            mouseup: false,
+            remote: false,
+            select: false,
+            wheel: false
+          };
+
+          /** Create a new CanvasXpress instance */
+          var cX = new CanvasXpress({
+            renderTo: "playgroundCanvas",
+            data: {
+              "y" : {
+                "data" : [
+                  [6.47, 4.03],
+                  [6.13, 3.76],
+                  [6.19, 3.77],
+                  [4.89, 3.34],
+                  [5.63, 3.47],
+                  [4.52, 2.92],
+                  [5.89, 3.2],
+                  [4.79, 2.71],
+                  [3.53, 3.53],
+                  [6.08, 4.51],
+                  [4.02, 4.56]
+                ],
+                "smps" : ["Alcohol", "Tobacco"],
+                "vars" : ["North", "Yorkshire", "Northeast", "East Midlands", "West Midlands", "East Anglia", "Southeast", "Southwest", "Wales", "Scotland", "Northern Ireland"]
+              },
+              "z" : {
+                "Q" : ["II", "II", "II", "IV", "III", "IV", "III", "IV", "I", "II", "I"],
+              }
+            },
+            config : {
+              graphType: "Scatter2D",
+              theme: "CanvasXpress",
+              colorBy: "Q"
+            }
+          });
+
+          /** Switches the active state of a card when clicked. */
+          var clickableDivs = document.getElementsByClassName('clickable');
+          for (var i = 0; i < clickableDivs.length; i++) {
+            clickableDivs[i].addEventListener('click', function() {
+              this.classList.toggle('active');
+              var eventName = this.id;
+              if (eventMap[eventName]) {
+                if (this.classList.contains('active')) {
+                  // If the card is active, we need to remove the event
+                  eventState[eventName] = true;
+                  cX.addEventListener(eventName, eventMap[eventName]);
+                } else {
+                  // If the card is not active, we need to add the event
+                  eventState[eventName] = false;
+                  cX.removeEventListener(eventName, eventMap[eventName]);
+                }
+              }
+            });
+          }
+
+        </script>
+      </section>
+
+      <section id="accessing-instances" class="container">
+        <h2 class="font-xxl text-primary mb-3">Accessing CanvasXpress Instances in the DOM</h2>
+        <p class="text-secondary lh-base mb-3">
+          CanvasXpress instances on the web page can be retrieved and accessed at any time using their `targetId`.
+        </p>
+        <pre class="code-block mt-3"><code class="prettyprint">
+      var cX = CanvasXpress.\$("canvasId");
+        </code></pre>
+        <p class="text-secondary lh-base mt-3">
+          Similarly, any CanvasXpress instance on the web page can be destroyed programmatically. This is essential for cleanly removing an instance and all its associated events.
+        </p>
+        <pre class="code-block mt-3"><code class="prettyprint">
+        CanvasXpress.destroy("canvasId");
+        </code></pre>
+      </section>
+
+      <!-- Footer -->
+      <div class="py-1 mt-lg-1 body-footer">
+        <div class="container px-4 px-lg-3" py-lg-1 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 text-center mx-auto mb-5">
+              <section class="pt-0 pb-0">
+                <div class="row d-flex">
+                  <div class="col-md-6 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2">
+                      <a href="/">
+                        <img src="/assets/images/CanvasXpress-Logo-Horizontal-White.svg" width="282" height="35" title="CanvasXpress Logo" alt="CanvasXpress Logo" loading="lazy"/>
+                      </a>
+                    </div>
+                    <p class="text-footer">CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface. Full and effortless audit trail of data, configuration and all user interactions in every visualization.</p>
+                    <p class="rights text-footer">©2025 All Rights Reserved. CanvasXpress®</p>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Documentation</div>
+                    <a href="/examples.html" class="fade-page link-footer">Examples</a>
+                    <a href="/documentation.html" class="fade-page link-footer">Docs</a>
+                    <a href="/parameters.html" class="fade-page link-footer">Api</a>
+                    <a href="/updates.html" class="fade-page link-footer">Updates</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Company</div>
+                    <a href="/contact.html" class="fade-page link-footer">Contact</a>
+                    <a href="/licenseCommercial.html" class="fade-page link-footer">License</a>
+                    <a href="/apps/dashboard.html" class="fade-page link-footer">Admin</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Information</div>
+                    <a href="/terms.html" class="fade-page link-footer">Terms of Use</a>
+                    <a href="/privacy.html" class="fade-page link-footer">Privacy policy</a>
+                    <a href="/references.html" class="fade-page link-footer">References</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</a>
+
+    <!-- Site JavaScript -->
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script>
+      setTimeout(function() {
+        var elementToObserve = document.getElementsByClassName("gsc-expansionArea")[0];
+        var observer = new MutationObserver(function(mutations) {
+          var val = document.getElementById("gs_tti50").firstChild.value;
+          mutations.forEach(function(mutation) {
+
+          });
+        });
+        if (elementToObserve) { observer.observe(elementToObserve, { attributes: true, childList: true, characterData: true }); }
+      }, 500);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+  </body>
+
+</html>

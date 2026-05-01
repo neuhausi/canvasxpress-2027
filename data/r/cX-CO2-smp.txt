@@ -1,0 +1,199 @@
+	Code	Continent	Country
+Afghanistan	AFG	Asia	Afghanistan
+Albania	ALB	Europe	Albania
+Algeria	DZA	Africa	Algeria
+Andorra	AND	Europe	Andorra
+Angola	AGO	Africa	Angola
+Anguilla	AIA	North America	Anguilla
+Antigua & Barbuda	ATG	North America	Antigua & Barbuda
+Argentina	ARG	South America	Argentina
+Armenia	ARM	Asia	Armenia
+Aruba	ABW	North America	Aruba
+Australia	AUS	Oceania	Australia
+Austria	AUT	Europe	Austria
+Azerbaijan	AZE	Europe	Azerbaijan
+Bahamas	BHS	North America	Bahamas
+Bahrain	BHR	Asia	Bahrain
+Bangladesh	BGD	Asia	Bangladesh
+Barbados	BRB	North America	Barbados
+Belarus	BLR	Europe	Belarus
+Belgium	BEL	Europe	Belgium
+Belize	BLZ	North America	Belize
+Benin	BEN	Africa	Benin
+Bermuda	BMU	North America	Bermuda
+Bhutan	BTN	Asia	Bhutan
+Bolivia	BOL	South America	Bolivia
+Bosnia and Herzegovina	BIH	Europe	Bosnia and Herzegovina
+Botswana	BWA	Africa	Botswana
+Brazil	BRA	South America	Brazil
+British Virgin Islands	VGB	North America	British Virgin Islands
+Brunei Darussalam	BRN	Asia	Brunei Darussalam
+Bulgaria	BGR	Europe	Bulgaria
+Burkina Faso	BFA	Africa	Burkina Faso
+Burundi	BDI	Africa	Burundi
+Cambodia	KHM	Asia	Cambodia
+Cameroon	CMR	Africa	Cameroon
+Canada	CAN	North America	Canada
+Cape Verde	CPV	Africa	Cape Verde
+Central African Republic	CAF	Africa	Central African Republic
+Chad	TCD	Africa	Chad
+Chile	CHL	South America	Chile
+China	CHN	Asia	China
+Colombia	COL	South America	Colombia
+Comoros	COM	Africa	Comoros
+Congo	COG	Africa	Congo
+Cook Islands	COK	Oceania	Cook Islands
+Costa Rica	CRI	Central America	Costa Rica
+Croatia	HRV	Europe	Croatia
+Cuba	CUB	North America	Cuba
+Cyprus	CYP	Europe	Cyprus
+Czechia	CZE	Europe	Czechia
+Democratic Republic of the Congo	COD	Africa	Democratic Republic of the Congo
+Denmark	DNK	Europe	Denmark
+Djibouti	DJI	Africa	Djibouti
+Dominican Republic	DOM	North America	Dominican Republic
+Ecuador	ECU	South America	Ecuador
+Egypt	EGY	Africa	Egypt
+El Salvador	SLV	Central America	El Salvador
+Equatorial Guinea	GNQ	Africa	Equatorial Guinea
+Eritrea	ERI	Africa	Eritrea
+Estonia	EST	Europe	Estonia
+Ethiopia	ETH	Africa	Ethiopia
+Fiji	FJI	Oceania	Fiji
+Finland	FIN	Europe	Finland
+France	FRA	Europe	France
+French Polynesia	PYF	Oceania	French Polynesia
+Gabon	GAB	Africa	Gabon
+Gambia	GMB	Africa	Gambia
+Georgia	GEO	Asia	Georgia
+Germany	DEU	Europe	Germany
+Ghana	GHA	Africa	Ghana
+Greece	GRC	Europe	Greece
+Greenland	GRL	North America	Greenland
+Grenada	GRD	North America	Grenada
+Guatemala	GTM	Central America	Guatemala
+Guinea	GIN	Africa	Guinea
+Guinea-Bissau	GNB	Africa	Guinea-Bissau
+Guyana	GUY	South America	Guyana
+Haiti	HTI	North America	Haiti
+Honduras	HND	Central America	Honduras
+Hong Kong	HKG	Asia	Hong Kong
+Hungary	HUN	Europe	Hungary
+Iceland	ISL	Europe	Iceland
+India	IND	Asia	India
+Indonesia	IDN	Asia	Indonesia
+Iran	IRN	Asia	Iran
+Iraq	IRQ	Asia	Iraq
+Ireland	IRL	Europe	Ireland
+Israel	ISR	Asia	Israel
+Italy	ITA	Europe	Italy
+Jamaica	JAM	North America	Jamaica
+Japan	JPN	Asia	Japan
+Jordan	JOR	Asia	Jordan
+Kazakhstan	KAZ	Asia	Kazakhstan
+Kenya	KEN	Africa	Kenya
+Kiribati	KIR	Oceania	Kiribati
+Kuwait	KWT	Asia	Kuwait
+Kyrgyzstan	KGZ	Asia	Kyrgyzstan
+Lao People's Democratic Republic	LAO	Asia	Lao People's Democratic Republic
+Latvia	LVA	Europe	Latvia
+Lebanon	LBN	Asia	Lebanon
+Lesotho	LSO	Africa	Lesotho
+Liberia	LBR	Africa	Liberia
+Libya	LBY	Africa	Libya
+Liechtenstein	LIE	Europe	Liechtenstein
+Lithuania	LTU	Europe	Lithuania
+Luxembourg	LUX	Europe	Luxembourg
+Macao	MAC	Asia	Macao
+Madagascar	MDG	Africa	Madagascar
+Malawi	MWI	Africa	Malawi
+Malaysia	MYS	Asia	Malaysia
+Maldives	MDV	Asia	Maldives
+Mali	MLI	Africa	Mali
+Malta	MLT	Europe	Malta
+Marshall Islands	MHL	Oceania	Marshall Islands
+Mauritania	MRT	Africa	Mauritania
+Mauritius	MUS	Africa	Mauritius
+Mexico	MEX	North America	Mexico
+Moldova	MDA	Europe	Moldova
+Mongolia	MNG	Asia	Mongolia
+Montenegro	MNE	Europe	Montenegro
+Morocco	MAR	Africa	Morocco
+Mozambique	MOZ	Africa	Mozambique
+Myanmar	MMR	Asia	Myanmar
+Namibia	NAM	Africa	Namibia
+Nauru	NRU	Oceania	Nauru
+Nepal	NPL	Asia	Nepal
+Netherlands	NLD	Europe	Netherlands
+New Caledonia	NCL	Oceania	New Caledonia
+New Zealand	NZL	Oceania	New Zealand
+Nicaragua	NIC	Central America	Nicaragua
+Niger	NER	Africa	Niger
+Nigeria	NGA	Africa	Nigeria
+Niue	NIU	Oceania	Niue
+Democratic People's Republic of Korea	PRK	Asia	Democratic People's Republic of Korea
+The former Yugoslav Republic of Macedonia	MKD	Europe	The former Yugoslav Republic of Macedonia
+Norway	NOR	Europe	Norway
+Oman	OMN	Asia	Oman
+Pakistan	PAK	Asia	Pakistan
+Panama	PAN	Central America	Panama
+Papua New Guinea	PNG	Oceania	Papua New Guinea
+Paraguay	PRY	South America	Paraguay
+Peru	PER	South America	Peru
+Philippines	PHL	Asia	Philippines
+Poland	POL	Europe	Poland
+Portugal	PRT	Europe	Portugal
+Qatar	QAT	Africa	Qatar
+Romania	ROU	Europe	Romania
+Russia	RUS	Asia	Russia
+Rwanda	RWA	Africa	Rwanda
+Saint Helena	SHN	Africa	Saint Helena
+Saint Kitts and Nevis	KNA	North America	Saint Kitts and Nevis
+Saint Lucia	LCA	North America	Saint Lucia
+Saint Pierre and Miquelon	SPM	North America	Saint Pierre and Miquelon
+Saint Vincent and the Grenadines	VCT	North America	Saint Vincent and the Grenadines
+Samoa	WSM	Oceania	Samoa
+Sao Tome and Principe	STP	Africa	Sao Tome and Principe
+Saudi Arabia	SAU	Asia	Saudi Arabia
+Serbia	SRB	Europe	Serbia
+Seychelles	SYC	Africa	Seychelles
+Sierra Leone	SLE	Africa	Sierra Leone
+Singapore	SGP	Asia	Singapore
+Slovakia	SVK	Europe	Slovakia
+Slovenia	SVN	Europe	Slovenia
+Solomon Islands	SLB	Oceania	Solomon Islands
+Somalia	SOM	Africa	Somalia
+Republic of Korea	KOR	Asia	Republic of Korea
+South Sudan	SSD	Africa	South Sudan
+Spain	ESP	Europe	Spain
+Sri Lanka	LKA	Asia	Sri Lanka
+Sudan	SDN	Africa	Sudan
+Suriname	SUR	South America	Suriname
+Sweden	SWE	Europe	Sweden
+Switzerland	CHE	Europe	Switzerland
+Syria	SYR	Asia	Syria
+Taiwan	TWN	Asia	Taiwan
+Tajikistan	TJK	Asia	Tajikistan
+Tanzania	TZA	Africa	Tanzania
+Thailand	THA	Asia	Thailand
+Timor-Leste	TLS	Asia	Timor-Leste
+Togo	TGO	Africa	Togo
+Tonga	TON	Oceania	Tonga
+Trinidad and Tobago	TTO	North America	Trinidad and Tobago
+Tunisia	TUN	Africa	Tunisia
+Turkey	TUR	Asia	Turkey
+Turkmenistan	TKM	Asia	Turkmenistan
+Tuvalu	TUV	Oceania	Tuvalu
+Uganda	UGA	Africa	Uganda
+Ukraine	UKR	Europe	Ukraine
+United Arab Emirates	ARE	Asia	United Arab Emirates
+United Kingdom	GBR	Europe	United Kingdom
+United States	USA	North America	United States
+Uruguay	URY	South America	Uruguay
+Uzbekistan	UZB	Asia	Uzbekistan
+Vanuatu	VUT	Oceania	Vanuatu
+Venezuela	VEN	South America	Venezuela
+Vietnam	VNM	Asia	Vietnam
+Yemen	YEM	Asia	Yemen
+Zambia	ZMB	Africa	Zambia
+Zimbabwe	ZWE	Africa	Zimbabwe

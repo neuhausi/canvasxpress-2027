@@ -1,0 +1,545 @@
+---
+title: "CanvasXpress from Plotly Demo"
+author: "Isaac Neuhaus"
+date: "06/11/2025"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+# Plotly ggplot2 Open Source Graphing Library
+#### https://plotly.com/ggplot2/
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mpg, aes(displ, hwy)) + geom_point()+ 
+  theme(
+  plot.margin = margin(1, 1, 1, 1, "cm"),
+  panel.background = element_rect(fill = "white"),
+  plot.background = element_rect(
+    fill = "grey90",
+    colour = "black"
+  )
+)
+p
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mpg, aes(displ, hwy)) + geom_point()+ 
+  theme(
+  plot.margin = margin(1, 1, 2, 2, "cm")
+)
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mpg, aes(displ, hwy)) + geom_point()+ 
+  theme(
+  plot.margin = margin(1, 1, 1, 1, "cm"),
+  panel.background = element_rect(fill = "white"),
+  plot.background = element_rect(
+    fill = "grey90",
+    colour = "black"
+  )
+)
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+df <- diamonds[sample(1:nrow(diamonds), size = 1000),]
+
+p <- ggplot(df, aes(carat, price)) +
+      geom_point() +
+      theme(axis.ticks = element_line(size = 10))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+      geom_point(aes(color=Species, shape=Species)) +
+      labs(title = "Iris sepal width vs length")
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+      geom_point(aes(color=Species, shape=Species)) +
+      labs(title = "Iris sepal width vs length", 
+            x = "Sepal Length", 
+            y = "Sepal Width")
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+      geom_point(aes(color=Species, shape=Species)) +
+      labs(title = "Iris sepal width vs length", 
+            x = "Sepal Length", 
+            y = "Sepal Width") +
+      theme(plot.title = element_text(size = 18, face = "bold", color = "red"),
+        legend.title=element_text(size=10, face = "italic", color = "blue"), 
+        legend.text=element_text(size=6, color="darkgreen"),
+        axis.title = element_text(face = "bold", color="orange"))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+      geom_point(aes(color=Species, shape=Species)) +
+      labs(title = "Iris sepal width vs length", 
+            x = "Sepal Length", 
+            y = "Sepal Width") +
+      theme(plot.title = element_text(hjust = 0.5))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars) +
+  geom_point(aes(disp, mpg)) +
+  scale_x_continuous(name = "Displacement")
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars) +
+  geom_point(aes(disp, mpg)) +
+  scale_x_continuous(limits = c(0, 600))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars) +
+  geom_point(aes(disp, mpg)) +
+  scale_x_continuous(breaks = c(150, 300, 450))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars) +
+  geom_point(aes(disp, mpg)) +
+  scale_x_continuous(breaks = c(150, 300, 450),
+  labels = c('One Hundred Fifty', 'Three Hundred', 'Four Hundred Fifity'))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars) +
+  geom_point(aes(disp, mpg)) +
+  scale_x_continuous(position = 'top')
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars) + geom_point(aes(disp, mpg)) +
+  scale_y_continuous(name = "Miles Per Gallon", limits = c(0, 45),
+                     breaks = c(0, 15, 30, 45), position = 'right',
+                     labels = c('zero', 'fifteen', 'thirty', 'fourtyfive'))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars) +
+  geom_bar(aes(factor(cyl))) +
+  scale_x_discrete(labels = c("4" = "Four", "6" = "Six", "8" = "Eight"))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+df <- diamonds[sample(1:nrow(diamonds), size = 1000),]
+
+p <- ggplot(df, aes(carat, price, color = cut)) +
+  geom_point() +
+  theme(axis.text = element_blank())
+
+ ggplotly(p)
+ canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+lab <- paste("Vertical Label", c(1, 2, 3, 4, 5))
+
+ds <- data.frame(x = sample(lab, size = 1000, replace = T),
+                 y = sample(LETTERS[1:5], size = 1000, replace = T))
+
+p <- ggplot(ds, aes(x = x, fill = y)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 90)) +
+  ggtitle("Vertical Axis Labels")
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+lab <- paste("Angle Label", c(1, 2, 3, 4, 5))
+
+ds <- data.frame(x = sample(lab, size = 1000, replace = T),
+                 y = sample(LETTERS[1:5], size = 1000, replace = T))
+
+p <- ggplot(ds, aes(x = x, fill = y)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45)) +
+  ggtitle("Angle Axis Labels")
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars, aes(wt, mpg))
+p <-  p + geom_point()
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars, aes(wt, mpg))
+p <-  p + geom_point(aes(colour = factor(cyl)))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars, aes(wt, mpg))
+p <-  p + geom_point(aes(shape = factor(cyl)))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars, aes(wt, mpg))
+p <-  p + geom_point(aes(size = qsec))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <-  ggplot(mtcars, aes(wt, mpg)) + geom_point(colour = "red", size = 3)
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <-    
+ ggplot(mtcars, aes(wt, mpg)) +
+  geom_point(shape = 21, colour = "black", fill = "white", size = 5, stroke = 5)
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars, aes(mpg, wt, shape = factor(cyl)))
+p <-    
+ p +
+  geom_point(aes(colour = factor(cyl)), size = 4) +
+  geom_point(colour = "grey90", size = 1.5)
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars, aes(mpg, wt, shape = factor(cyl)))
+p <-    
+ p +
+  geom_point(colour = "black", size = 4.5) +
+  geom_point(colour = "pink", size = 4) +
+  geom_point(aes(shape = factor(cyl)))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+dat <- data.frame(cond = rep(c("A", "B"), each=10),
+                  xvar = 1:20 + rnorm(20,sd=3),
+                  yvar = 1:20 + rnorm(20,sd=3))
+
+p <- ggplot(dat, aes(x=xvar, y=yvar)) +
+    geom_point(shape=1) +    # Use hollow circles
+    geom_smooth(method=lm)   # Add linear regression line
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+dat <- data.frame(cond = rep(c("A", "B"), each=10),
+                  xvar = 1:20 + rnorm(20,sd=3),
+                  yvar = 1:20 + rnorm(20,sd=3))
+
+p <- ggplot(dat, aes(x=xvar, y=yvar)) +
+    geom_point(shape=1) +
+    geom_smooth()
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+dat <- data.frame(cond = rep(c("A", "B"), each=10),
+                  xvar = 1:20 + rnorm(20,sd=3),
+                  yvar = 1:20 + rnorm(20,sd=3))
+
+p <- ggplot(dat, aes(x=xvar, y=yvar)) +
+    geom_point(shape=1) +    # Use hollow circles
+    geom_smooth(method=lm,   # Add linear regression line
+                se=FALSE)    # Don't add shaded confidence region
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+x <-  1:10
+dd <- rbind(data.frame(x=x,fac="a", y=x+rnorm(10)),
+            data.frame(x=2*x,fac="b", y=x+rnorm(10)))
+coef <- lm(y~x:fac, data=dd)$coefficients
+p <- qplot(data=dd, x=x, y=y, color=fac)+
+    geom_abline(slope=coef["x:faca"], intercept=coef["(Intercept)"])+
+    geom_abline(slope=coef["x:facb"], intercept=coef["(Intercept)"])
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+n <- 20
+
+x1 <- rnorm(n); x2 <- rnorm(n)
+y1 <- 2 * x1 + rnorm(n)
+y2 <- 3 * x2 + (2 + rnorm(n))
+A <- as.factor(rep(c(1, 2), each = n))
+df <- data.frame(x = c(x1, x2), y = c(y1, y2), A = A)
+fm <- lm(y ~ x + A, data = df)
+
+p <- ggplot(data = cbind(df, pred = predict(fm)), aes(x = x, y = y, color = A))
+p <- p + geom_point() + geom_line(aes(y = pred))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+hist <- data.frame(date=Sys.Date() + 0:13, counts=1:14)
+hist <- transform(hist, weekday=factor(weekdays(date), levels=c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday')))
+
+p <- ggplot(hist, aes(x=weekday, y=counts, group=1)) +
+    geom_point(stat='summary', fun.y=sum) +
+    stat_summary(fun.y=sum, geom="line")
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+dat <- data.frame(x = sample(1:10), y = sample(1:10), order = sample(1:10))
+p <- ggplot(dat[order(dat$order),], aes(x, y)) + geom_point() + geom_text(aes(y = y + 0.25,label =      order)) +
+     geom_path()
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+p <- ggplot(mtcars,aes(mpg,qsec))+geom_point() +
+  geom_segment(aes(x=15,xend=20,y=18,yend=18))
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+library(plotly)
+library(ggplot2)
+library(canvasXpress)
+
+df <- data.frame(time=as.factor(c(1,1,2,2,3,3,4,4,5,5)), 
+               value=as.numeric(c(7, 8, 9, 10, 10, 11, 10.5, 11.4, 10.9, 11.6)), 
+               side=as.factor(c("E","F","E","F","E","F","E","F","E","F")))
+
+
+p <- ggplot(df, aes(time, value, group=side, colour=side)) + 
+     geom_line(size=1)
+p <- p + geom_point()
+
+ggplotly(p)
+canvasXpress(p)
+```
+
+```{r}
+
+```
+

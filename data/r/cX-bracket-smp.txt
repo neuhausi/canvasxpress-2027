@@ -1,0 +1,17 @@
+	4th	8th	Final	Semifinal
+A	A	A	I	A
+B	A	A	I	A
+C	A	C	I	A
+D	A	C	I	A
+E	G	E	I	A
+F	G	E	I	A
+G	G	G	I	A
+H	G	G	I	A
+I	I	I	I	I
+J	I	I	I	I
+K	I	K	I	I
+L	I	K	I	I
+M	N	N	I	I
+N	N	N	I	I
+O	N	O	I	I
+P	N	O	I	I

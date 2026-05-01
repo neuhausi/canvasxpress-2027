@@ -1,0 +1,13 @@
+	Weight	Height
+Jax	76.3	167.6
+Finley	58.6	163.8
+Eloise	59.5	160
+Elena	60.3	164.5
+Ember	53.9	162.6
+Owen	78.8	176
+Ezra	74.9	172.1
+Knox	62.3	170.2
+Mateo	89.6	178
+Charlie	59.8	167
+Rosalie	47.3	152.4
+Marcus	102.5	177.8

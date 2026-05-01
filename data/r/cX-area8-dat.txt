@@ -1,0 +1,6 @@
+	Jan	Feb	Mar	Apr	May	Jun
+Series A	10	11	13	4	18	21
+Series B	5	8	10	12	15	10
+Series C	2	3	6	4	8	6
+Series D	18	27	29	21	42	37
+Series E	6	9	9	6	14	12

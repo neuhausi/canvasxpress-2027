@@ -1,0 +1,44 @@
+---
+title: "CanvasXpress Demo"
+author: "Isaac Neuhaus"
+date: "06/04/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+```{r setup, include=FALSE}
+library(reticulate)
+py_install("pandas")
+py_install("canvasxpress[all]")
+```
+
+
+```{python}
+import pandas as pd
+
+mpg = pd.read_csv("https://raw.githubusercontent.com/sidsriv/Introduction-to-Data-Science-in-python/master/mpg.csv", index_col=0)
+```
+
+
+```{python}
+from canvasxpress.canvas import CanvasXpress
+from canvasxpress.plot import graph
+
+graph(
+    CanvasXpress(
+        data=mpg,
+        config={
+            "graphType": "Scatter2D",
+            "xAxis": ["displ"],
+            "yAxis": ["hwy"],
+            "isDataFrame": True
+        },
+        width=609,
+        height=609
+    )
+)
+```

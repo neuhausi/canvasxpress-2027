@@ -1,0 +1,103 @@
+---
+title: "Line Graphs"
+author: "Isaac Neuhaus"
+date: "5/22/2023"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+# Load data and Libraries
+### https://r4ds.had.co.nz/data-visualisation.html
+```{r setup}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("devtools" %in% installed.packages())) {
+    install.packages('devtools')
+}
+if (!("tidyr" %in% installed.packages())) {
+    install.packages('tidyr')
+}
+library(tidyr)
+if (!("dplyr" %in% installed.packages())) {
+    install.packages('dplyr')
+}
+library(dplyr)
+#devtools::install_github('neuhausi/canvasXpress')
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz")
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library('canvasXpress')
+```
+
+
+## geom_line() is suitable for time series
+```{r}
+g <- ggplot(economics, aes(date, unemploy)) + geom_line()
+g
+canvasXpress(g)
+```
+
+## geom_line() is suitable for time series -- by color
+```{r}
+eco <- economics_long
+colnames(eco)[2] <- "vari"
+g <- ggplot(eco, aes(date, value01, colour = vari)) + geom_line()
+g
+canvasXpress(g)
+```
+
+## geom_step() is useful when you want to highlight exactly when the y value changes
+```{r}
+recent <- economics[economics$date > as.Date("2013-01-01"), ]
+g <- ggplot(recent, aes(date, unemploy)) + geom_line()
+g
+canvasXpress(g)
+```
+
+## geom_step() is useful when you want to highlight exactly when the y value changes
+```{r}
+g <- ggplot(recent, aes(date, unemploy)) + geom_step()
+g
+canvasXpress(g)
+```
+
+## Basic line plot
+```{r}
+g <- ggplot(data = economics, aes(x = date, y = pop))+ geom_line(color = "#00AFBB", size = 2)
+g
+canvasXpress(g)
+```
+
+## Plot multiple time series data
+```{r}
+df <- economics %>%
+  select(date, psavert, uempmed) %>%
+  gather(key = "variable", value = "value", -date)
+colnames(df)[2] <- "vari"
+g = ggplot(df, aes(x = date, y = value)) + geom_line(aes(color = vari), size = 1) + scale_color_manual(values = c("#00AFBB", "#E7B800"))
+g
+canvasXpress(g)
+```
+
+## Set date axis limits
+```{r}
+min <- as.Date("2002-1-1")
+max <- NA
+g <- ggplot(data = economics, aes(x = date, y = psavert)) + geom_line(color = "#00AFBB", size = 1) + scale_x_date(limits = c(min, max))
+g
+canvasXpress(g)
+```
+
+## Add trend smoothed line
+```{r}
+g <- ggplot(data = economics, aes(x = date, y = psavert)) + geom_line(color = "#00AFBB", size = 1) + stat_smooth(color = "#FC4E07", method = "loess")
+g
+canvasXpress(g)
+```

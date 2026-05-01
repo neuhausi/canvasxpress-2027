@@ -1,0 +1,66 @@
+---
+title: "CanvasXpress GGPlot Demo"
+author: "Isaac Neuhaus"
+date: "02/04/2025"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+### Install and load the necessary packages
+
+```{r}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+library('canvasXpress')
+```
+
+This demo shows the ability to easily integrate CanvasXpress with ggplot in R.
+
+### Data: mpg dataset
+
+This dataset contains a subset of the fuel economy data that the EPA makes available on <https://fueleconomy.gov/>. It contains only models which had a new release every year between 1999 and 2008 - this was used as a proxy for the popularity of the car.
+
+```{r}
+head(mpg)
+```
+
+### Plot with ggplot
+
+Compare displacement (displ) vs highway efficiency (hwy) and color the data by vehicle class (class). Store the ggplot object in a variable.
+
+```{r}
+s = ggplot(mpg, aes(displ, hwy)) + geom_point(aes(color = class))
+s
+```
+
+### Plot with CanvasXpress
+
+Use the ggplot object stored in the variable 's' and plot with CanvasXpress
+
+```{r}
+canvasXpress(s)
+```
+
+### Use the native CanvasXpress API to plot cty vs hwy, color by class
+
+```{r}
+canvasXpress(mpg, type = "scatter2d", xAxis = "cty", yAxis = "hwy", colorBy = "class", theme = "ggplot")
+```
+
+### Create a visualization with plain English
+
+```{r}
+canvasXpress(mpg, 
+  prompt = "Create a Scatter 2d plot of cty vs hwy, 
+            color by class. Use the ggplot style."
+)
+```

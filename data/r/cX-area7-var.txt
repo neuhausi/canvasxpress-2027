@@ -1,0 +1,19 @@
+	Series
+1	Series A
+2	Series A
+3	Series A
+4	Series A
+5	Series A
+6	Series A
+7	Series B
+8	Series B
+9	Series B
+10	Series B
+11	Series B
+12	Series B
+13	Series C
+14	Series C
+15	Series C
+16	Series C
+17	Series C
+18	Series C

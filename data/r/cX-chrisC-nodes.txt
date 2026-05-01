@@ -1,0 +1,81 @@
+id	name
+Id0	Toprato
+Id1	Fella
+Id2	Tirti
+Id3	LA Piu' Bella
+Id4	Deep Shadow 1-5-8
+Id5	Oobiscus
+Id6	Rioky
+Id7	Klashe
+Id8	Tau Beta
+Id9	311040
+Id10	Nevf Zotsamm
+Id11	Gnaron
+Id12	Green Dor
+Id13	Gravity
+Id14	Jurrawensaed
+Id15	Andrill Primus
+Id16	Ulti-Mad
+Id17	Jellyfish
+Id18	Yersa
+Id19	Therfady
+Id20	SC 09
+Id21	Glueck
+Id22	Fiddle
+Id23	LV-017
+Id24	Sardinle
+Id25	Latalava
+Id26	Penumbra
+Id27	Chi Qoppa
+Id28	Vopru Maufyb
+Id29	Onadha
+Id30	Muplita Furr
+Id31	Psi Epsilon
+Id32	Dimloon
+Id33	Tanned I
+Id34	Woolaris 10
+Id35	Semend
+Id36	Blacus
+Id37	Darknok
+Id38	Oastar Secundus
+Id39	Green One
+Id40	Kayin Minor A
+Id41	Arton
+Id42	Anerstis
+Id43	Lament
+Id44	Shaison
+Id45	Rekini-H-S6
+Id46	Darkless
+Id47	MBTP 20
+Id48	Yankee Quebec
+Id49	Shere Jauj-Bred
+Id50	Embalm
+Id51	Small Rock 4
+Id52	Libra-D-S3
+Id53	Dying Warmth
+Id54	Sofa
+Id55	Grobnor
+Id56	Forbidden 1
+Id57	Glimmer II
+Id58	Aleksis
+Id59	Relu
+Id60	Scoff
+Id61	Elas
+Id62	Great Crater
+Id63	Leuprekota
+Id64	Yetton
+Id65	Fheyhs
+Id66	Edriwoise
+Id67	Usque
+Id68	Surfatu
+Id69	Drumana
+Id70	Hausner
+Id71	Vitalis
+Id72	Hyacinta IV
+Id73	Revenge of the Lith
+Id74	Asclephyrus
+Id75	Little Friend VI
+Id76	Fontelitio
+Id77	Shinmien
+Id78	Nine
+Id79	Kalgash

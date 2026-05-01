@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress</title>
+    <meta name="description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress">
+    <meta property="og:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress">
+    <meta name="twitter:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdWYcYqAAAAAPqJzSUJ4T0r_YKPGhfotxPl0-_A"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Homepage",
+          "item": "https://www.canvasxpress.org/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "References"
+        }
+      ]
+    }
+    </script>
+</head>
+
+  <body>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top:0;padding:0;">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="/index.html">
+            <div class="mb-0">
+              <img src="/assets/images/logo-dark.svg" alt="CanvasXpress Logo" style="height: 25px; max-width: unset;" title="CanvasXpress Logo" width="282" height="35" loading="eager">
+            </div>
+          </a>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:0;outline:none;right:18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </a>
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0" style="margin-left: 0px;">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a href="/examples.html" class="nav-link">Examples</a></li>
+              <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
+              <li class="nav-item"><a href="/interfaces.html" class="nav-link">Interfaces</a></li>
+              <li class="nav-item"><a href="/updates.html" class="nav-link">Updates</a></li>
+              <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item mb-2" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-bs-toggle="modal" data-bs-target="#search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Aside -->
+      <div id="aside">
+        <aside class="col-md-3 col-lg-2 bg-white p-3 position-fixed d-hg-block shadow-lg sidebar rounded-aside" role="navigation"
+          aria-label="Main Navigation" style="top: 400px; right: 10px;">
+          <div class="text-center mb-2">
+            <a href="./index.html" aria-label="CanvasXpress Home">
+              <img src="https://canvasxpress.org/assets/images/logo-dark.svg" alt="CanvasXpress Logo"
+                title="CanvasXpress Logo" class="img-fluid" width="150" height="50" style="max-height: 50px;"
+                loading="eager">
+            </a>
+          </div>
+          <div class="table-of-contents rounded-aside mb-2">
+            <h3 class="font-xl font-bold text-primary">Table of Contents</h3>
+            <nav>
+              <ul class="nav flex-column space-y-2">
+                <li class="nav-item"><a class="nav-aside nav-link active-nav" href="#publications">Featured Publications</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#blogs">Blog Posts & Tutorials</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#how-to">How-To Documents</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#ggplot-demos">ggplot Demos</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+      </div>
+
+
+      <!-- Modals -->
+      <div id="modals">
+
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content modal-cnt">
+              <button type="button" class="modal-btn bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-hdr">
+                <div id="searchModalLabel" class="font-xl bg-transparent">Search CanvasXpress</div>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                  .gsc-search-button-v2 {background-color: #ffd587; border: none; border-radius: 5px;}.gsc-search-button-v2:focus, .gsc-search-button-v2:hover {background-color: #ffd587; outline: none;}.gsc-search-button-v2 svg {fill: #000;}td.gsib_a, td.gsib_b {border: none; border-radius: 5px; padding: 0 5px 0;}td.gsc-input, td.gsc-search-button, td.gsc-clear-button {border: none; padding: 0;}.gsst_a .gscb_a {color: #000;}.gsst_a .gscb_a:hover {color: #000;}.gsc-control-cse {max-height: 850px; overflow-y: auto; border:none; background-color: transparent;}.gsc-results-wrapper-overlay {background-color:transparent;}.gsc-webResult.gsc-result{border:none;}.gsc-above-wrapper-area {border:none; padding: 5px 0 5px 0;}
+                </style>
+                <script async src="https://cse.google.com/cse.js?cx=017553474198412024421:c_qxiweliao"></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <header class="pt-1 overflow-hidden">
+        <div class="container px-4 px-lg-3 mt-5 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-10 text-center mx-auto">
+              <h1 class="main-hero text-primary">CanvasXpress References</h1>
+              <p class="lead mb-5 submain-hero">A curated collection of research papers, blog posts, and tutorials that feature CanvasXpress.</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="py-5">
+        <div class="container px-4 px-lg-3" style="max-width: 1600px;">
+          <div class="row">
+            <div class="col-lg-8" data-aos="fade-up">
+              <section id="publications">
+                <h2 class="font-xxl text-primary mb-3">Featured Publications</h2>
+                <ul class="text-secondary lh-base space-y-3">
+                  <li class="mb-1">
+                    <p><b>Assessment of spatial transcriptomics for oncology discovery.</b> Anna Lyubetskaya, Brian Rabe, Andrew Fisher, Anne Lewin, Isaac Neuhaus, Constance Brett, Todd Brett, Ethel Pereira, Ryan Golhar, Sami Kebede, Alba Font-Tello, Kathy Mosure, Nicholas Van Wittenberghe, Konstantinos J. Mavrakis, Kenzie MacIsaac, Benjamin J. Chen, Eugene Drokhlyansky. Cell Reports Methods. Vol 2, Issue 11, November 21, 2022. <a href="https://www.sciencedirect.com/science/article/pii/S2667237522002375?via%3Dihub" class="text-decoration-underline" target="_blank">https://doi.org/10.1016/j.crmeth.2022.100340</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p><b>Single Cell Viewer (SCV): An interactive visualization data portal for single cell RNA sequence data.</b> Shuoguo Wang, Constance Brett, Mohan Bolisetty, Ryan Golhar, Isaac Neuhaus, Kandasamy Ravi. <a href="https://www.biorxiv.org/content/10.1101/664789v2" class="text-decoration-underline" target="_blank">https://www.biorxiv.org/content/10.1101/664789v2</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p><b>canvasDesigner: a versatile interactive high-resolution scientific multi-panel visualization toolkit.</b> Baohong, Zhang; Shanrong, Zhao; Isaac, Neuhaus. Bioinformatics, bty377. <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty377/4992145" class="text-decoration-underline" target="_blank">https://Doi.Org/10.1093/Bioinformatics/Bty377</a></p>
+                  </li>
+                </ul>
+              </section>
+
+              <section id="blogs">
+                <h2 class="font-xxl text-primary mb-3">Blog Posts & Tutorials</h2>
+                <ul class="text-secondary lh-base space-y-3">
+                  <li class="mb-1">
+                    <p>An atomic approach that injects raw data into the visualization itself to enable data and visualization to coexist within a single file. <a href="https://medium.com/\@imnphd/where-is-the-data-bdaecd502076" class="text-decoration-underline" target="_blank">Where is the Data?</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p>Where Did All the Bees Go? (Part 1). Lisa Cao. Aggregate Genius Inc. 2022-09-07. <a href="https://www.canvasxpress.org/assets/documents/bee_colonies_part1.html" class="text-decoration-underline" target="_blank">A Deep Dive into Bee Colony Loss with CanvasXpress and Plotly in R (Part 1)</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p>Where Did All the Bees Go? (Part 2). Lisa Cao. Aggregate Genius Inc. 2022-09-07. <a href="https://www.canvasxpress.org/assets/documents/bee_colonies_part2.html" class="text-decoration-underline" target="_blank">A Deep Dive into Bee Colony Loss with CanvasXpress and Plotly in R (Part 2)</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p>It Is Time to Try CanvasXpress. <a href="https://medium.com/analytics-vidhya/it-is-time-to-try-canvasxpress-10f553051952" class="text-decoration-underline" target="_blank">A Tutorial on a New Data Visualization Package for All Levels</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p>CanvasXpress vs. Plotly: Which Data Visualization Library Is Better?. <a href="https://levelup.gitconnected.com/canvasxpress-vs-plotly-which-data-visualization-library-is-better-fcd0725e8b8f" class="text-decoration-underline" target="_blank">CanvasXpress vs. Plotly</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p>cxplot: the ggplot of JavaScript. <a href="https://medium.com/\@imnphd/cxplot-the-ggplot-of-javascript-d171b0409373" class="text-decoration-underline" target="_blank">cxplot</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p>Dashboards in 30 seconds with CanvasXpress. <a href="https://medium.com/\@imnphd/dashboards-in-30-seconds-with-canvasxpress-b1e1ad3f6106" class="text-decoration-underline" target="_blank">Dashboards</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p>Domino Data Labs - Blog. <a href="https://blog.dominodatalab.com/large-visualizations-canvasxpress/" class="text-decoration-underline" target="_blank">Large Visualizations In CanvasXpress</a></p>
+                  </li>
+                </ul>
+              </section>
+
+              <section id="how-to">
+                <h2 class="font-xxl text-primary mb-3">How-To Documents</h2>
+                <ul class="text-secondary lh-base space-y-3">
+                  <li class="mb-1">
+                    <p>A primer using CanvasXpress with Python. <a href="https://www.canvasxpress.org/assets/documents/examples/Python/cxp_data_options.html" class="text-decoration-underline" target="_blank">HTML</a> - <a href="https://www.canvasxpress.org/assets/documents/examples/Python/cxp_data_options.zip" class="text-decoration-underline" download>Archive</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p>A primer using CanvasXpress with ggplot in R. <a href="https://www.canvasxpress.org/assets/documents/examples/R/CanvasXpressDemo.html" class="text-decoration-underline" target="_blank">HTML</a> - <a href="https://www.canvasxpress.org/assets/documents/examples/R/CanvasXpressDemo.zip" class="text-decoration-underline" download>Archive</a></p>
+                  </li>
+                  <li class="mb-1">
+                    <p>A primer using CanvasXpress with Reveal JS in Quarto. <a href="https://www.canvasxpress.org/assets/documents/examples/RevealJS/CanvasXpressDemoRevealJS.html" class="text-decoration-underline" target="_blank">HTML</a> - <a href="https://www.canvasxpress.org/assets/documents/examples/RevealJS/CanvasXpressDemoRevealJS.zip" class="text-decoration-underline" download>Archive</a></p>
+                  </li>
+                </ul>
+              </section>
+
+              <section id="ggplot-demos">
+                <h2 class="font-xxl text-primary mb-3">ggplot Demos</h2>
+                <ul class="text-secondary lh-base space-y-3">
+                  <li class="mb-1"><a href="/assets/documents/examples/R/CanvasXpressDemo.html" class="text-decoration-underline" target="_blank">Simple Demo</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/RDataScience.html" class="text-decoration-underline" target="_blank">Data Science</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/Seurat.html" class="text-decoration-underline" target="_blank">Seurat</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/ggblanket.html" class="text-decoration-underline" target="_blank">ggblanket</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/enhancedVolcano.html" class="text-decoration-underline" target="_blank">enhancedVolcano</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/patchwork.html" class="text-decoration-underline" target="_blank">patchwork</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/BarGraphs.html" class="text-decoration-underline" target="_blank">Bar Graphs</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/Themes.html" class="text-decoration-underline" target="_blank">Themes</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/Scales.html" class="text-decoration-underline" target="_blank">Scales</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/ScalesColors.html" class="text-decoration-underline" target="_blank">Scales Colors</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/TextGraphs.html" class="text-decoration-underline" target="_blank">Text Graphs</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/facets.html" class="text-decoration-underline" target="_blank">Facets</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/PWC.html" class="text-decoration-underline" target="_blank">PWC</a></li>
+                  <li class="mb-1"><a href="/assets/documents/examples/R/LineGraphs.html" class="text-decoration-underline" target="_blank">Lines</a></li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="col-lg-2 sidebar">
+              <div class="sticky-sidebar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="py-1 mt-lg-1 body-footer">
+        <div class="container px-4 px-lg-3" py-lg-1 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 text-center mx-auto mb-5">
+              <section class="pt-0 pb-0">
+                <div class="row d-flex">
+                  <div class="col-md-6 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2">
+                      <a href="/">
+                        <img src="/assets/images/CanvasXpress-Logo-Horizontal-White.svg" width="282" height="35" title="CanvasXpress Logo" alt="CanvasXpress Logo" loading="lazy"/>
+                      </a>
+                    </div>
+                    <p class="text-footer">CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface. Full and effortless audit trail of data, configuration and all user interactions in every visualization.</p>
+                    <p class="rights text-footer">©2025 All Rights Reserved. CanvasXpress®</p>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Documentation</div>
+                    <a href="/examples.html" class="fade-page link-footer">Examples</a>
+                    <a href="/documentation.html" class="fade-page link-footer">Docs</a>
+                    <a href="/parameters.html" class="fade-page link-footer">Api</a>
+                    <a href="/updates.html" class="fade-page link-footer">Updates</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Company</div>
+                    <a href="/contact.html" class="fade-page link-footer">Contact</a>
+                    <a href="/licenseCommercial.html" class="fade-page link-footer">License</a>
+                    <a href="/apps/dashboard.html" class="fade-page link-footer">Admin</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Information</div>
+                    <a href="/terms.html" class="fade-page link-footer">Terms of Use</a>
+                    <a href="/privacy.html" class="fade-page link-footer">Privacy policy</a>
+                    <a href="/references.html" class="fade-page link-footer">References</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</a>
+
+    <!-- Site JavaScript -->
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script>
+      setTimeout(function() {
+        var elementToObserve = document.getElementsByClassName("gsc-expansionArea")[0];
+        var observer = new MutationObserver(function(mutations) {
+          var val = document.getElementById("gs_tti50").firstChild.value;
+          mutations.forEach(function(mutation) {
+
+          });
+        });
+        if (elementToObserve) { observer.observe(elementToObserve, { attributes: true, childList: true, characterData: true }); }
+      }, 500);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+  </body>
+
+</html>

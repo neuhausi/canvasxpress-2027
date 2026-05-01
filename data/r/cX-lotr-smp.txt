@@ -1,0 +1,412 @@
+	Chapter Name	Character	Film	Race	Words
+R1	The Shire	Frodo	The Fellowship Of The Ring	Hobbit	128
+R2	The Shire	Gandalf	The Fellowship Of The Ring	Ainur	197
+R3	Very Old Friends	Gandalf	The Fellowship Of The Ring	Ainur	64
+R4	A Long Expected Party	Frodo	The Fellowship Of The Ring	Hobbit	32
+R5	A Long Expected Party	Gandalf	The Fellowship Of The Ring	Ainur	12
+R6	A Long Expected Party	Merry	The Fellowship Of The Ring	Hobbit	19
+R7	A Long Expected Party	Pippin	The Fellowship Of The Ring	Hobbit	15
+R8	A Long Expected Party	Sam	The Fellowship Of The Ring	Hobbit	7
+R9	Farewell Dear Bilbo	Gandalf	The Fellowship Of The Ring	Ainur	148
+R10	Keep It Secret Keep It Safe	Frodo	The Fellowship Of The Ring	Hobbit	33
+R11	Keep It Secret Keep It Safe	Gandalf	The Fellowship Of The Ring	Ainur	60
+R12	The Account of Isildur	Gandalf	The Fellowship Of The Ring	Ainur	107
+R13	At The Green Dragon	Frodo	The Fellowship Of The Ring	Hobbit	17
+R14	At The Green Dragon	Merry	The Fellowship Of The Ring	Hobbit	53
+R15	At The Green Dragon	Pippin	The Fellowship Of The Ring	Hobbit	61
+R16	At The Green Dragon	Sam	The Fellowship Of The Ring	Hobbit	10
+R17	The Shadow Of ThePast	Frodo	The Fellowship Of The Ring	Hobbit	139
+R18	The Shadow Of ThePast	Gandalf	The Fellowship Of The Ring	Ainur	541
+R19	The Shadow Of ThePast	Sam	The Fellowship Of The Ring	Hobbit	84
+R20	ThePassing Of The Elves	Frodo	The Fellowship Of The Ring	Hobbit	43
+R21	ThePassing Of The Elves	Sam	The Fellowship Of The Ring	Hobbit	40
+R22	Saruman The White	Gandalf	The Fellowship Of The Ring	Ainur	85
+R23	A Shortcut To Mushrooms	Frodo	The Fellowship Of The Ring	Hobbit	37
+R24	A Shortcut To Mushrooms	Merry	The Fellowship Of The Ring	Hobbit	58
+R25	A Shortcut To Mushrooms	Pippin	The Fellowship Of The Ring	Hobbit	32
+R26	A Shortcut To Mushrooms	Sam	The Fellowship Of The Ring	Hobbit	48
+R27	Buckleberry Ferry	Frodo	The Fellowship Of The Ring	Hobbit	20
+R28	Buckleberry Ferry	Merry	The Fellowship Of The Ring	Hobbit	43
+R29	Buckleberry Ferry	Pippin	The Fellowship Of The Ring	Hobbit	14
+R30	Buckleberry Ferry	Sam	The Fellowship Of The Ring	Hobbit	9
+R31	At The Sign of thePrancingPony	Aragorn	The Fellowship Of The Ring	Men	76
+R32	At The Sign of thePrancingPony	Frodo	The Fellowship Of The Ring	Hobbit	68
+R33	At The Sign of thePrancingPony	Merry	The Fellowship Of The Ring	Hobbit	6
+R34	At The Sign of thePrancingPony	Pippin	The Fellowship Of The Ring	Hobbit	39
+R35	At The Sign of thePrancingPony	Sam	The Fellowship Of The Ring	Hobbit	30
+R36	The Nazgul	Aragorn	The Fellowship Of The Ring	Men	96
+R37	The Nazgul	Frodo	The Fellowship Of The Ring	Hobbit	29
+R38	The Nazgul	Merry	The Fellowship Of The Ring	Hobbit	28
+R39	The Nazgul	Pippin	The Fellowship Of The Ring	Hobbit	25
+R40	The Nazgul	Sam	The Fellowship Of The Ring	Hobbit	17
+R41	The Midgewater Marshes	Aragorn	The Fellowship Of The Ring	Men	33
+R42	The Midgewater Marshes	Frodo	The Fellowship Of The Ring	Hobbit	12
+R43	The Midgewater Marshes	Merry	The Fellowship Of The Ring	Hobbit	9
+R44	A Knife In The Dark	Aragorn	The Fellowship Of The Ring	Men	53
+R45	A Knife In The Dark	Frodo	The Fellowship Of The Ring	Hobbit	16
+R46	A Knife In The Dark	Merry	The Fellowship Of The Ring	Hobbit	13
+R47	A Knife In The Dark	Pippin	The Fellowship Of The Ring	Hobbit	12
+R48	A Knife In The Dark	Sam	The Fellowship Of The Ring	Hobbit	24
+R49	TheCaverns Of Isengard	Gandalf	The Fellowship Of The Ring	Ainur	5
+R50	Flight To The Ford	Aragorn	The Fellowship Of The Ring	Men	48
+R51	Flight To The Ford	Merry	The Fellowship Of The Ring	Hobbit	5
+R52	Flight To The Ford	Pippin	The Fellowship Of The Ring	Hobbit	9
+R53	Flight To The Ford	Sam	The Fellowship Of The Ring	Hobbit	34
+R54	Many Meetings	Frodo	The Fellowship Of The Ring	Hobbit	107
+R55	Many Meetings	Gandalf	The Fellowship Of The Ring	Ainur	104
+R56	Many Meetings	Sam	The Fellowship Of The Ring	Hobbit	63
+R57	The Fate Of The Ring	Gandalf	The Fellowship Of The Ring	Ainur	102
+R58	The Sword That Was Broken	Aragorn	The Fellowship Of The Ring	Men	25
+R59	The Sword That Was Broken	Boromir	The Fellowship Of The Ring	Men	39
+R60	The Evenstar	Aragorn	The Fellowship Of The Ring	Men	24
+R61	TheCouncil Of Elrond	Aragorn	The Fellowship Of The Ring	Men	40
+R62	TheCouncil Of Elrond	Boromir	The Fellowship Of The Ring	Men	220
+R63	TheCouncil Of Elrond	Frodo	The Fellowship Of The Ring	Hobbit	24
+R64	TheCouncil Of Elrond	Gandalf	The Fellowship Of The Ring	Ainur	85
+R65	TheCouncil Of Elrond	Gimli	The Fellowship Of The Ring	Dwarf	38
+R66	TheCouncil Of Elrond	Legolas	The Fellowship Of The Ring	Elf	34
+R67	TheCouncil Of Elrond	Merry	The Fellowship Of The Ring	Hobbit	24
+R68	TheCouncil Of Elrond	Pippin	The Fellowship Of The Ring	Hobbit	18
+R69	TheCouncil Of Elrond	Sam	The Fellowship Of The Ring	Hobbit	8
+R70	Gilraen's Memorial	Aragorn	The Fellowship Of The Ring	Men	11
+R71	Bilbo's Gifts	Frodo	The Fellowship Of The Ring	Hobbit	3
+R72	The Departure Of The Fellowship	Frodo	The Fellowship Of The Ring	Hobbit	7
+R73	The Departure Of The Fellowship	Gandalf	The Fellowship Of The Ring	Ainur	7
+R74	The Ring Goes South	Aragorn	The Fellowship Of The Ring	Men	12
+R75	The Ring Goes South	Boromir	The Fellowship Of The Ring	Men	15
+R76	The Ring Goes South	Gandalf	The Fellowship Of The Ring	Ainur	68
+R77	The Ring Goes South	Gimli	The Fellowship Of The Ring	Dwarf	47
+R78	The Ring Goes South	Legolas	The Fellowship Of The Ring	Elf	3
+R79	The Ring Goes South	Merry	The Fellowship Of The Ring	Hobbit	17
+R80	The Ring Goes South	Pippin	The Fellowship Of The Ring	Hobbit	10
+R81	The Ring Goes South	Sam	The Fellowship Of The Ring	Hobbit	3
+R82	ThePass OfCaradhras	Aragorn	The Fellowship Of The Ring	Men	30
+R83	ThePass OfCaradhras	Boromir	The Fellowship Of The Ring	Men	61
+R84	ThePass OfCaradhras	Frodo	The Fellowship Of The Ring	Hobbit	6
+R85	ThePass OfCaradhras	Gandalf	The Fellowship Of The Ring	Ainur	18
+R86	ThePass OfCaradhras	Gimli	The Fellowship Of The Ring	Dwarf	19
+R87	ThePass OfCaradhras	Legolas	The Fellowship Of The Ring	Elf	8
+R88	Moria	Aragorn	The Fellowship Of The Ring	Men	31
+R89	Moria	Boromir	The Fellowship Of The Ring	Men	31
+R90	Moria	Frodo	The Fellowship Of The Ring	Hobbit	30
+R91	Moria	Gandalf	The Fellowship Of The Ring	Ainur	202
+R92	Moria	Gimli	The Fellowship Of The Ring	Dwarf	52
+R93	Moria	Legolas	The Fellowship Of The Ring	Elf	7
+R94	Moria	Merry	The Fellowship Of The Ring	Hobbit	9
+R95	Moria	Pippin	The Fellowship Of The Ring	Hobbit	11
+R96	Moria	Sam	The Fellowship Of The Ring	Hobbit	7
+R97	A Journey In The Dark	Frodo	The Fellowship Of The Ring	Hobbit	39
+R98	A Journey In The Dark	Gandalf	The Fellowship Of The Ring	Ainur	349
+R99	A Journey In The Dark	Gimli	The Fellowship Of The Ring	Dwarf	6
+R100	A Journey In The Dark	Merry	The Fellowship Of The Ring	Hobbit	8
+R101	A Journey In The Dark	Pippin	The Fellowship Of The Ring	Hobbit	10
+R102	A Journey In The Dark	Sam	The Fellowship Of The Ring	Hobbit	7
+R103	Balin's Tomb	Aragorn	The Fellowship Of The Ring	Men	22
+R104	Balin's Tomb	Boromir	The Fellowship Of The Ring	Men	5
+R105	Balin's Tomb	Frodo	The Fellowship Of The Ring	Hobbit	8
+R106	Balin's Tomb	Gandalf	The Fellowship Of The Ring	Ainur	89
+R107	Balin's Tomb	Gimli	The Fellowship Of The Ring	Dwarf	37
+R108	Balin's Tomb	Legolas	The Fellowship Of The Ring	Elf	8
+R109	Balin's Tomb	Sam	The Fellowship Of The Ring	Hobbit	13
+R110	The Bridge Of Khazad-dûm	Aragorn	The Fellowship Of The Ring	Men	45
+R111	The Bridge Of Khazad-dûm	Boromir	The Fellowship Of The Ring	Men	17
+R112	The Bridge Of Khazad-dûm	Frodo	The Fellowship Of The Ring	Hobbit	4
+R113	The Bridge Of Khazad-dûm	Gandalf	The Fellowship Of The Ring	Ainur	83
+R114	The Bridge Of Khazad-dûm	Gimli	The Fellowship Of The Ring	Dwarf	7
+R115	The Bridge Of Khazad-dûm	Legolas	The Fellowship Of The Ring	Elf	4
+R116	Lothlorien	Aragorn	The Fellowship Of The Ring	Men	26
+R117	Lothlorien	Boromir	The Fellowship Of The Ring	Men	27
+R118	Lothlorien	Gimli	The Fellowship Of The Ring	Dwarf	84
+R119	Lothlorien	Legolas	The Fellowship Of The Ring	Elf	7
+R120	Lothlorien	Sam	The Fellowship Of The Ring	Hobbit	2
+R121	Caras Galadhon	Aragorn	The Fellowship Of The Ring	Men	16
+R122	Caras Galadhon	Boromir	The Fellowship Of The Ring	Men	149
+R123	Caras Galadhon	Legolas	The Fellowship Of The Ring	Elf	41
+R124	Caras Galadhon	Merry	The Fellowship Of The Ring	Hobbit	6
+R125	Caras Galadhon	Sam	The Fellowship Of The Ring	Hobbit	49
+R126	The Mirror Of Galadriel	Frodo	The Fellowship Of The Ring	Hobbit	36
+R127	Farewell To Lorien	Aragorn	The Fellowship Of The Ring	Men	13
+R128	Farewell To Lorien	Gimli	The Fellowship Of The Ring	Dwarf	81
+R129	Farewell To Lorien	Legolas	The Fellowship Of The Ring	Elf	20
+R130	Farewell To Lorien	Merry	The Fellowship Of The Ring	Hobbit	5
+R131	Farewell To Lorien	Pippin	The Fellowship Of The Ring	Hobbit	1
+R132	Farewell To Lorien	Sam	The Fellowship Of The Ring	Hobbit	13
+R133	The Great River	Aragorn	The Fellowship Of The Ring	Men	64
+R134	The Great River	Boromir	The Fellowship Of The Ring	Men	103
+R135	The Great River	Frodo	The Fellowship Of The Ring	Hobbit	16
+R136	The Great River	Sam	The Fellowship Of The Ring	Hobbit	37
+R137	Parth Galen	Aragorn	The Fellowship Of The Ring	Men	79
+R138	Parth Galen	Boromir	The Fellowship Of The Ring	Men	202
+R139	Parth Galen	Frodo	The Fellowship Of The Ring	Hobbit	54
+R140	Parth Galen	Gimli	The Fellowship Of The Ring	Dwarf	48
+R141	Parth Galen	Legolas	The Fellowship Of The Ring	Elf	31
+R142	Parth Galen	Merry	The Fellowship Of The Ring	Hobbit	2
+R143	The Breaking Of The Fellowship	Aragorn	The Fellowship Of The Ring	Men	2
+R144	The Breaking Of The Fellowship	Boromir	The Fellowship Of The Ring	Men	2
+R145	The Breaking Of The Fellowship	Legolas	The Fellowship Of The Ring	Elf	6
+R146	The Breaking Of The Fellowship	Merry	The Fellowship Of The Ring	Hobbit	18
+R147	The Breaking Of The Fellowship	Pippin	The Fellowship Of The Ring	Hobbit	17
+R148	The Breaking Of The Fellowship	Sam	The Fellowship Of The Ring	Hobbit	2
+R149	The Departure Of Boromir	Aragorn	The Fellowship Of The Ring	Men	72
+R150	The Departure Of Boromir	Boromir	The Fellowship Of The Ring	Men	72
+R151	The Road Goes Ever On…	Aragorn	The Fellowship Of The Ring	Men	102
+R152	The Road Goes Ever On…	Frodo	The Fellowship Of The Ring	Hobbit	59
+R153	The Road Goes Ever On…	Gandalf	The Fellowship Of The Ring	Ainur	34
+R154	The Road Goes Ever On…	Gimli	The Fellowship Of The Ring	Dwarf	12
+R155	The Road Goes Ever On…	Legolas	The Fellowship Of The Ring	Elf	15
+R156	The Road Goes Ever On…	Sam	The Fellowship Of The Ring	Hobbit	50
+R157	The Foundations Of Stone	Boromir	The Two Towers	Men	2
+R158	The Foundations Of Stone	Frodo	The Two Towers	Hobbit	9
+R159	The Foundations Of Stone	Gandalf	The Two Towers	Ainur	39
+R160	The Foundations Of Stone	Sam	The Two Towers	Hobbit	5
+R161	Elven Rope	Frodo	The Two Towers	Hobbit	46
+R162	Elven Rope	Sam	The Two Towers	Hobbit	97
+R163	The Taming of Sméagol	Frodo	The Two Towers	Hobbit	123
+R164	The Taming of Sméagol	Sam	The Two Towers	Hobbit	181
+R165	The Uruk-Hai	Merry	The Two Towers	Hobbit	19
+R166	The Uruk-Hai	Pippin	The Two Towers	Hobbit	26
+R167	The Three Hunters	Aragorn	The Two Towers	Men	59
+R168	The Three Hunters	Gimli	The Two Towers	Dwarf	35
+R169	The Three Hunters	Legolas	The Two Towers	Elf	25
+R170	On The Trail Of The Uruk-Hai	Gimli	The Two Towers	Dwarf	6
+R171	On The Trail Of The Uruk-Hai	Legolas	The Two Towers	Elf	13
+R172	Night Camp At Fangorn	Legolas	The Two Towers	Elf	10
+R173	Night Camp At Fangorn	Merry	The Two Towers	Hobbit	68
+R174	Night Camp At Fangorn	Pippin	The Two Towers	Hobbit	14
+R175	The Riders Of Rohan	Aragorn	The Two Towers	Men	68
+R176	The Riders Of Rohan	Gimli	The Two Towers	Dwarf	24
+R177	The Riders Of Rohan	Legolas	The Two Towers	Elf	7
+R178	The Fate Of Merry AndPippin	Aragorn	The Two Towers	Men	33
+R179	The Fate Of Merry AndPippin	Gimli	The Two Towers	Dwarf	16
+R180	The Fate Of Merry AndPippin	Merry	The Two Towers	Hobbit	3
+R181	Treebeard	Merry	The Two Towers	Hobbit	28
+R182	Treebeard	Pippin	The Two Towers	Hobbit	36
+R183	ThePassage Of The Marshes	Frodo	The Two Towers	Hobbit	54
+R184	ThePassage Of The Marshes	Sam	The Two Towers	Hobbit	69
+R185	The White Rider	Aragorn	The Two Towers	Men	68
+R186	The White Rider	Gandalf	The Two Towers	Ainur	298
+R187	The White Rider	Gimli	The Two Towers	Dwarf	73
+R188	The White Rider	Legolas	The Two Towers	Elf	63
+R189	The Song Of The Entwives	Merry	The Two Towers	Hobbit	4
+R190	The Heir Of Númenor	Aragorn	The Two Towers	Men	7
+R191	The Heir Of Númenor	Gandalf	The Two Towers	Ainur	226
+R192	The Black Gate IsClosed	Frodo	The Two Towers	Hobbit	39
+R193	The Black Gate IsClosed	Sam	The Two Towers	Hobbit	68
+R194	Ent Draft	Merry	The Two Towers	Hobbit	63
+R195	Ent Draft	Pippin	The Two Towers	Hobbit	122
+R196	The King Of The Golden Hall	Aragorn	The Two Towers	Men	18
+R197	The King Of The Golden Hall	Gandalf	The Two Towers	Ainur	151
+R198	The King Of The Golden Hall	Gimli	The Two Towers	Dwarf	15
+R199	Simbelmynë on the Burial Mounds	Gandalf	The Two Towers	Ainur	28
+R200	The King's Decision	Aragorn	The Two Towers	Men	59
+R201	The King's Decision	Gandalf	The Two Towers	Ainur	165
+R202	The King's Decision	Gimli	The Two Towers	Dwarf	21
+R203	Brego	Aragorn	The Two Towers	Men	22
+R204	A Daughter Of Kings	Aragorn	The Two Towers	Men	31
+R205	The Forests Of Ithilien	Frodo	The Two Towers	Hobbit	81
+R206	The Forests Of Ithilien	Sam	The Two Towers	Hobbit	87
+R207	Of Herbs And Stewed Rabbit	Frodo	The Two Towers	Hobbit	39
+R208	Of Herbs And Stewed Rabbit	Sam	The Two Towers	Hobbit	91
+R209	Dwarf Women	Aragorn	The Two Towers	Men	3
+R210	Dwarf Women	Gimli	The Two Towers	Dwarf	68
+R211	One of the Dúnedain	Aragorn	The Two Towers	Men	33
+R212	One of the Dúnedain	Gimli	The Two Towers	Dwarf	6
+R213	The Evenstar	Aragorn	The Two Towers	Men	97
+R214	The Wolves Of Isengard	Aragorn	The Two Towers	Men	9
+R215	The Wolves Of Isengard	Gimli	The Two Towers	Dwarf	45
+R216	The Wolves Of Isengard	Legolas	The Two Towers	Elf	5
+R217	Helm's Deep	Gimli	The Two Towers	Dwarf	4
+R218	Isengard Unleashed	Merry	The Two Towers	Hobbit	8
+R219	Isengard Unleashed	Pippin	The Two Towers	Hobbit	9
+R220	The Windows On The West	Frodo	The Two Towers	Hobbit	75
+R221	The Windows On The West	Sam	The Two Towers	Hobbit	8
+R222	Sons Of The Steward	Boromir	The Two Towers	Men	132
+R223	The ForbiddenPool	Frodo	The Two Towers	Hobbit	89
+R224	The ForbiddenPool	Sam	The Two Towers	Hobbit	64
+R225	Aragorn's Return	Aragorn	The Two Towers	Men	69
+R226	Aragorn's Return	Gimli	The Two Towers	Dwarf	51
+R227	Aragorn's Return	Legolas	The Two Towers	Elf	5
+R228	Entmoot	Merry	The Two Towers	Hobbit	6
+R229	The GlitteringCaves	Aragorn	The Two Towers	Men	78
+R230	The GlitteringCaves	Gimli	The Two Towers	Dwarf	13
+R231	The GlitteringCaves	Legolas	The Two Towers	Elf	36
+R232	Don't Be Hasty Master Meriadoc!	Merry	The Two Towers	Hobbit	18
+R233	Don't Be Hasty Master Meriadoc!	Pippin	The Two Towers	Hobbit	7
+R234	The Host Of The Eldar	Aragorn	The Two Towers	Men	34
+R235	The Host Of The Eldar	Gimli	The Two Towers	Dwarf	14
+R236	The Host Of The Eldar	Legolas	The Two Towers	Elf	24
+R237	The Battle Of The Hornburg	Aragorn	The Two Towers	Men	18
+R238	The Battle Of The Hornburg	Gimli	The Two Towers	Dwarf	50
+R239	The Battle Of The Hornburg	Legolas	The Two Towers	Elf	37
+R240	Old Entish	Merry	The Two Towers	Hobbit	30
+R241	Old Entish	Pippin	The Two Towers	Hobbit	5
+R242	The Breach Of The Deeping Wall	Aragorn	The Two Towers	Men	12
+R243	The Breach Of The Deeping Wall	Gimli	The Two Towers	Dwarf	6
+R244	The Entmoot Decides	Merry	The Two Towers	Hobbit	58
+R245	The Entmoot Decides	Pippin	The Two Towers	Hobbit	29
+R246	The Retreat To The Hornburg	Aragorn	The Two Towers	Men	31
+R247	The Retreat To The Hornburg	Gimli	The Two Towers	Dwarf	34
+R248	The Retreat To The Hornburg	Legolas	The Two Towers	Elf	1
+R249	Master Peregrin's Plan	Merry	The Two Towers	Hobbit	6
+R250	Master Peregrin's Plan	Pippin	The Two Towers	Hobbit	46
+R251	Osgiliath	Frodo	The Two Towers	Hobbit	23
+R252	The Last March Of The Ents	Merry	The Two Towers	Hobbit	5
+R253	The Last March Of The Ents	Pippin	The Two Towers	Hobbit	8
+R254	The Nazgûl Attack	Frodo	The Two Towers	Hobbit	15
+R255	The Nazgûl Attack	Sam	The Two Towers	Hobbit	53
+R256	Forth Eorlingas	Aragorn	The Two Towers	Men	73
+R257	Forth Eorlingas	Gandalf	The Two Towers	Ainur	21
+R258	Forth Eorlingas	Gimli	The Two Towers	Dwarf	5
+R259	The Flooding Of Isengard	Merry	The Two Towers	Hobbit	3
+R260	The Flooding Of Isengard	Pippin	The Two Towers	Hobbit	1
+R261	The Tales That Really Mattered…	Frodo	The Two Towers	Hobbit	12
+R262	The Tales That Really Mattered…	Sam	The Two Towers	Hobbit	186
+R263	The Final Tally	Gimli	The Two Towers	Dwarf	35
+R264	The Final Tally	Legolas	The Two Towers	Elf	7
+R265	Flotsam And Jetsam	Merry	The Two Towers	Hobbit	77
+R266	Flotsam And Jetsam	Pippin	The Two Towers	Hobbit	56
+R267	Farewell To Faramir	Frodo	The Two Towers	Hobbit	18
+R268	Farewell To Faramir	Sam	The Two Towers	Hobbit	54
+R269	The Battle For Middle Earth Is About To Begin	Frodo	The Two Towers	Hobbit	30
+R270	The Battle For Middle Earth Is About To Begin	Gandalf	The Two Towers	Ainur	36
+R271	The Battle For Middle Earth Is About To Begin	Sam	The Two Towers	Hobbit	69
+R272	Gollum's Plan	Frodo	The Two Towers	Hobbit	11
+R273	Gollum's Plan	Sam	The Two Towers	Hobbit	12
+R274	The Grey Havens	Boromir	The Return Of The King	Men	
+R275	Journey To TheCross-roads	Frodo	The Return Of The King	Hobbit	18
+R276	Journey To TheCross-roads	Sam	The Return Of The King	Hobbit	77
+R277	The Road To Isengard	Gandalf	The Return Of The King	Ainur	1
+R278	The Road To Isengard	Gimli	The Return Of The King	Dwarf	22
+R279	The Road To Isengard	Merry	The Return Of The King	Hobbit	36
+R280	The Road To Isengard	Pippin	The Return Of The King	Hobbit	51
+R281	The Voice Of Saruman	Aragorn	The Return Of The King	Men	3
+R282	The Voice Of Saruman	Gandalf	The Return Of The King	Ainur	111
+R283	The Voice Of Saruman	Gimli	The Return Of The King	Dwarf	23
+R284	Return To Edoras	Aragorn	The Return Of The King	Men	20
+R285	Return To Edoras	Gandalf	The Return Of The King	Ainur	15
+R286	Return To Edoras	Gimli	The Return Of The King	Dwarf	40
+R287	Return To Edoras	Legolas	The Return Of The King	Elf	21
+R288	Return To Edoras	Merry	The Return Of The King	Hobbit	78
+R289	Return To Edoras	Pippin	The Return Of The King	Hobbit	73
+R290	Gollum's Villany	Frodo	The Return Of The King	Hobbit	46
+R291	Gollum's Villany	Sam	The Return Of The King	Hobbit	65
+R292	Eowyn's Dream	Aragorn	The Return Of The King	Men	13
+R293	ThePalantir	Aragorn	The Return Of The King	Men	20
+R294	ThePalantir	Gandalf	The Return Of The King	Ainur	255
+R295	ThePalantir	Legolas	The Return Of The King	Elf	22
+R296	ThePalantir	Merry	The Return Of The King	Hobbit	135
+R297	ThePalantir	Pippin	The Return Of The King	Hobbit	104
+R298	Minas Tirith	Gandalf	The Return Of The King	Ainur	202
+R299	Minas Tirith	Pippin	The Return Of The King	Hobbit	36
+R300	The Decline Of Gondor	Gandalf	The Return Of The King	Ainur	268
+R301	The Decline Of Gondor	Pippin	The Return Of The King	Hobbit	22
+R302	Cross-roads Of The Fallen King	Frodo	The Return Of The King	Hobbit	30
+R303	Cross-roads Of The Fallen King	Sam	The Return Of The King	Hobbit	56
+R304	The Deep Breath Before ThePlunge	Gandalf	The Return Of The King	Ainur	163
+R305	The Deep Breath Before ThePlunge	Pippin	The Return Of The King	Hobbit	75
+R306	Minas Morgul	Frodo	The Return Of The King	Hobbit	8
+R307	Minas Morgul	Gandalf	The Return Of The King	Ainur	20
+R308	Minas Morgul	Sam	The Return Of The King	Hobbit	5
+R309	Sam's Warning	Frodo	The Return Of The King	Hobbit	4
+R310	Sam's Warning	Sam	The Return Of The King	Hobbit	61
+R311	Pippin's Task	Gandalf	The Return Of The King	Ainur	30
+R312	The Lighting Of The Beacons	Gandalf	The Return Of The King	Ainur	5
+R313	Theoren's Decision	Aragorn	The Return Of The King	Men	18
+R314	Theoren's Decision	Gimli	The Return Of The King	Dwarf	15
+R315	Theoren's Decision	Legolas	The Return Of The King	Elf	19
+R316	Theoren's Decision	Merry	The Return Of The King	Hobbit	16
+R317	The Fall of Osgiliath	Gandalf	The Return Of The King	Ainur	34
+R318	The Fall of Osgiliath	Pippin	The Return Of The King	Hobbit	15
+R319	The Stairs OfCirith Ungol	Sam	The Return Of The King	Hobbit	8
+R320	Courage Is The Best Defense	Gandalf	The Return Of The King	Ainur	9
+R321	Peregrin Of The Tower Guard	Pippin	The Return Of The King	Hobbit	66
+R322	Allegiance To Denethor	Pippin	The Return Of The King	Hobbit	32
+R323	TheParting Of Sam & Frodo	Frodo	The Return Of The King	Hobbit	43
+R324	TheParting Of Sam & Frodo	Sam	The Return Of The King	Hobbit	184
+R325	The Sacrifice Of Faramir	Gandalf	The Return Of The King	Ainur	29
+R326	The Sacrifice Of Faramir	Pippin	The Return Of The King	Hobbit	59
+R327	Marshalling At Dunharrow	Aragorn	The Return Of The King	Men	26
+R328	Marshalling At Dunharrow	Gimli	The Return Of The King	Dwarf	12
+R329	Marshalling At Dunharrow	Legolas	The Return Of The King	Elf	21
+R330	Marshalling At Dunharrow	Merry	The Return Of The King	Hobbit	12
+R331	Anduril - Flame Of The West	Aragorn	The Return Of The King	Men	54
+R332	Aragorn Takes ThePaths Of The Dead	Aragorn	The Return Of The King	Men	42
+R333	Aragorn Takes ThePaths Of The Dead	Gimli	The Return Of The King	Dwarf	20
+R334	Aragorn Takes ThePaths Of The Dead	Legolas	The Return Of The King	Elf	9
+R335	Dwimoberg ~ The Haunted Mountain	Aragorn	The Return Of The King	Men	6
+R336	Dwimoberg ~ The Haunted Mountain	Gimli	The Return Of The King	Dwarf	45
+R337	Dwimoberg ~ The Haunted Mountain	Legolas	The Return Of The King	Elf	123
+R338	The Muster Of Rohan	Merry	The Return Of The King	Hobbit	21
+R339	ThePaths Of The Dead	Aragorn	The Return Of The King	Men	75
+R340	ThePaths Of The Dead	Gimli	The Return Of The King	Dwarf	43
+R341	ThePaths Of The Dead	Legolas	The Return Of The King	Elf	32
+R342	The Siege Of Gondor	Gandalf	The Return Of The King	Ainur	81
+R343	The Siege Of Gondor	Pippin	The Return Of The King	Hobbit	15
+R344	TheCorsairs Of Umbar	Aragorn	The Return Of The King	Men	21
+R345	TheCorsairs Of Umbar	Gimli	The Return Of The King	Dwarf	14
+R346	Shelob's Lair	Frodo	The Return Of The King	Hobbit	60
+R347	Shelob's Lair	Sam	The Return Of The King	Hobbit	1
+R348	Merry's Simple Courage	Merry	The Return Of The King	Hobbit	83
+R349	Grond ~ The Hammer Of The Underworld	Gandalf	The Return Of The King	Ainur	5
+R350	Breaking The Gate Of Gondor	Gandalf	The Return Of The King	Ainur	21
+R351	TheChoices Of Master Samwise Gamgee	Sam	The Return Of The King	Hobbit	48
+R352	Denethor's Madness	Pippin	The Return Of The King	Hobbit	17
+R353	The Witch King's Hour	Gandalf	The Return Of The King	Ainur	48
+R354	The Witch King's Hour	Pippin	The Return Of The King	Hobbit	13
+R355	The Ride Of The Rohirrim	Merry	The Return Of The King	Hobbit	2
+R356	ThePyre Of Denethor	Gandalf	The Return Of The King	Ainur	9
+R357	ThePyre Of Denethor	Pippin	The Return Of The King	Hobbit	2
+R358	A Far Green Country	Gandalf	The Return Of The King	Ainur	54
+R359	A Far Green Country	Pippin	The Return Of The King	Hobbit	17
+R360	The Black Ships	Gimli	The Return Of The King	Dwarf	12
+R361	Victory At Minar Tirith	Aragorn	The Return Of The King	Men	1
+R362	Victory At Minar Tirith	Gimli	The Return Of The King	Dwarf	6
+R363	Victory At Minar Tirith	Legolas	The Return Of The King	Elf	6
+R364	Oaths Fulfilled	Aragorn	The Return Of The King	Men	9
+R365	Oaths Fulfilled	Gimli	The Return Of The King	Dwarf	15
+R366	The Houses Of Healing	Pippin	The Return Of The King	Hobbit	1
+R367	Pippin Looks After Merry	Merry	The Return Of The King	Hobbit	11
+R368	Pippin Looks After Merry	Pippin	The Return Of The King	Hobbit	16
+R369	The Tower OfCirith Ungol	Frodo	The Return Of The King	Hobbit	64
+R370	The Tower OfCirith Ungol	Sam	The Return Of The King	Hobbit	96
+R371	The Last Debate	Aragorn	The Return Of The King	Men	82
+R372	The Last Debate	Gandalf	The Return Of The King	Ainur	59
+R373	The Last Debate	Gimli	The Return Of The King	Dwarf	24
+R374	The Last Debate	Legolas	The Return Of The King	Elf	2
+R375	Aragorn Masters ThePalantir	Aragorn	The Return Of The King	Men	17
+R376	In TheCompany Of Orcs	Frodo	The Return Of The King	Hobbit	16
+R377	In TheCompany Of Orcs	Sam	The Return Of The King	Hobbit	46
+R378	The Land Of Shadow	Frodo	The Return Of The King	Hobbit	30
+R379	The Land Of Shadow	Sam	The Return Of The King	Hobbit	56
+R380	The Mouth Of Sauron	Aragorn	The Return Of The King	Men	23
+R381	The Mouth Of Sauron	Gandalf	The Return Of The King	Ainur	32
+R382	The Mouth Of Sauron	Gimli	The Return Of The King	Dwarf	5
+R383	The Mouth Of Sauron	Merry	The Return Of The King	Hobbit	1
+R384	The Mouth Of Sauron	Pippin	The Return Of The King	Hobbit	5
+R385	The Black Gate Opens	Aragorn	The Return Of The King	Men	103
+R386	The Black Gate Opens	Gimli	The Return Of The King	Dwarf	16
+R387	The Black Gate Opens	Legolas	The Return Of The King	Elf	8
+R388	The Black Gate Opens	Sam	The Return Of The King	Hobbit	16
+R389	I Can't Carry It For You… But I Can Carry You	Frodo	The Return Of The King	Hobbit	44
+R390	I Can't Carry It For You… But I Can Carry You	Sam	The Return Of The King	Hobbit	85
+R391	The Last Move	Aragorn	The Return Of The King	Men	2
+R392	Mount Doom	Frodo	The Return Of The King	Hobbit	9
+R393	Mount Doom	Sam	The Return Of The King	Hobbit	10
+R394	The Eagles AreComing	Pippin	The Return Of The King	Hobbit	6
+R395	TheCrack Of Doom	Frodo	The Return Of The King	Hobbit	7
+R396	TheCrack Of Doom	Sam	The Return Of The King	Hobbit	38
+R397	Sauron Defeated	Merry	The Return Of The King	Hobbit	2
+R398	Sauron Defeated	Pippin	The Return Of The King	Hobbit	1
+R399	The End Of All Things	Frodo	The Return Of The King	Hobbit	37
+R400	The End Of All Things	Sam	The Return Of The King	Hobbit	31
+R401	The Fellowship Reunited	Frodo	The Return Of The King	Hobbit	4
+R402	The Fellowship Reunited	Gimli	The Return Of The King	Dwarf	1
+R403	The Fellowship Reunited	Merry	The Return Of The King	Hobbit	1
+R404	The Return Of The King	Aragorn	The Return Of The King	Men	45
+R405	The Return Of The King	Gandalf	The Return Of The King	Ainur	11
+R406	Homeward Bound	Frodo	The Return Of The King	Hobbit	98
+R407	Homeward Bound	Pippin	The Return Of The King	Hobbit	2
+R408	Homeward Bound	Sam	The Return Of The King	Hobbit	27
+R409	The Grey Havens	Frodo	The Return Of The King	Hobbit	132
+R410	The Grey Havens	Gandalf	The Return Of The King	Ainur	42
+R411	The Grey Havens	Sam	The Return Of The King	Hobbit	14

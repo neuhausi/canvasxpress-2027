@@ -1,0 +1,5 @@
+{"type":"FeatureCollection","copyright":"CanvasXpress (https://canvasxpress.org)","license":"Data sourced from Natural Earth (https://naturalearthdata.com) and geoBoundaries (https://geoboundaries.org) under open licenses.","features":[
+    {"type":"Feature","id":"Anafu","alias":["TK.AT","Anafu"],"properties":{"Name":"Anafu"},"geometry":{"type":"Polygon","coordinates":[[[-172.4930572509765,-8.579723358154297],[-172.50582885742182,-8.581389427185059],[-172.5052795410156,-8.58638858795166],[-172.4930572509765,-8.579723358154297]]]}},
+    {"type":"Feature","id":"Fakaofo","alias":["TK.FA","Fakaofo"],"properties":{"Name":"Fakaofo"},"geometry":null},
+    {"type":"Feature","id":"Nukunonu","alias":["TK.NU","Nukunonu"],"properties":{"Name":"Nukunonu"},"geometry":null}
+]}

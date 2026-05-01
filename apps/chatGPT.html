@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Html Chat Agent For CanvasXpress</title>
+    <style>
+      .small {
+        font-size: 0.8em;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/dist/canvasXpress.chatGPT.js"></script>
+  </head>
+  <body>
+    <label for="model-dropdown">Model:</label>
+    <select id="model-dropdown">
+      <option value="gpt-3.5-turbo">GPT-3.5-TURBO | 4096 Tokens</option>
+      <option value="gpt-3.5-turbo-16k">GPT-3.5-TURBO-16K | 16384 Tokens</option>
+      <option value="gpt-4">GPT-4 | 8192 Tokens (High IQ)</option>
+      <option value="gpt-4o-mini">GPT-4o mini | 16384 Tokens (High IQ)</option>
+    </select>
+    <hr />
+    <label for="agent-dropdown">Agent:</label>
+    <select id="agent-dropdown"></select> <span class="small">OBS: changing agent will reset the chat</span>
+    <p id="agent-info"></p>
+    <hr />
+    <div id="chat-container">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button id="send-btn">Send</button> <span class="small" id="TokenUse">Last tokencount will display here</span>
+      <textarea id="chat-log" rows="6" cols="50" placeholder="Answers from agent arrive here" style="resize: vertical; width: 98%; height: 346px;"></textarea>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress: Density Chart</title>
+    <meta name="description" content="CanvasXpress: Enhance Data Analysis with Density Plots iframe">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress: Density Chart">
+    <meta property="og:description" content="CanvasXpress: Enhance Data Analysis with Density Plots iframe">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org/assets/examples/density-6.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress: Density Chart">
+    <meta name="twitter:description" content="CanvasXpress: Enhance Data Analysis with Density Plots iframe">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org/assets/examples/density-6.html">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+</head>
+
+  <body>
+
+    <div class="content">
+      <div class="container" style="margin:auto;display:flex;justify-content:center;align-items:center;height:100vh;">
+        <div class="plot">
+          <canvas id="density6" width="600" height="600" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXdensity6 = new CanvasXpress("density6",
+          {
+             "y" : {
+                "data" : [
+                  [49],[56],[60],[43],[57],[58],[52],[52],[52],[51],[53],[50],[51],[55],[60],[54],[52],[50],[51],[67],[56],[53],[53],[57],[52],[48],[58],[50],[55],[50],[61],[53],[51],[52],[47],[49],[44],[48],[54],[53],[62],[50],[51],[54],[50],[50],[49],[49],[52],[53],[46],[52],[49],[50],[54],[58],[63],[51],[63],[49],[58],[68],[55],[52],[55],[64],[49],[62],[62],[57],[55],[53],[53],[58],[65],[54],[48],[51],[56],[53],[54],[54],[48],[54],[59],[58],[58],[53],[54],[49],[55],[56],[64],[60],[53],[57],[49],[59],[60],[66],[57],[53],[55],[52],[51],[56],[51],[56],[57],[55],[54],[52],[49],[59],[55],[59],[49],[56],[58],[55],[54],[51],[65],[59],[64],[55],[52],[47],[52],[56],[60],[56],[49],[58],[47],[53],[53],[45],[60],[52],[53],[62],[58],[54],[58],[57],[63],[56],[58],[57],[53],[55],[63],[51],[56],[62],[54],[50],[51],[53],[51],[54],[53],[54],[57],[58],[63],[55],[53],[62],[64],[55],[53],[46],[62],[51],[49],[70],[56],[55],[41],[55],[60],[57],[60],[65],[61],[52],[59],[54],[52],[41],[51],[57],[66],[58],[58],[50],[56],[45],[67],[68],[66],[69],[67],[69],[74],[71],[65],[59],[67],[63],[72],[57],[63],[67],[64],[62],[63],[68],[69],[68],[76],[71],[66],[62],[80],[68],[62],[66],[63],[64],[60],[66],[67],[60],[49],[64],[65],[68],[65],[67],[60],[69],[69],[66],[72],[67],[66],[66],[67],[70],[67],[68],[59],[63],[72],[59],[66],[67],[70],[63],[66],[56],[67],[62],[64],[59],[67],[68],[63],[74],[68],[70],[75],[62],[69],[70],[65],[67],[60],[67],[61],[69],[61],[67],[61],[64],[57],[66],[70],[66],[56],[62],[73],[74],[59],[63],[67],[67],[62],[60],[64],[70],[65],[62],[62],[73],[63],[69],[72],[67],[63],[65],[63],[71],[64],[73],[62],[62],[66],[65],[62],[57],[65],[61],[70],[60],[71],[62],[66],[69],[62],[68],[65],[59],[64],[73],[64],[61],[65],[67],[70],[71],[66],[71],[61],[53],[63],[62],[53],[68],[61],[64],[57],[68],[74],[61],[64],[75],[70],[75],[65],[64],[62],[72],[59],[67],[65],[76],[62],[57],[66],[65],[61],[66],[64],[62],[68],[63],[56],[52],[62],[72],[69],[71],[70],[67],[57],[66],[73],[48],[61],[71],[68],[69],[67],[68],[65],[60]
+                ],
+                "smps" : ["weight"]
+             },
+             "z" : {
+                "sex" : ["F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","F","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M"]
+             }
+          },
+          {
+            "graphType": "Scatter2D",
+            "hideHistogram": true,
+            "showFilledHistogramDensity": true,
+            "showHistogram": true,
+            "showHistogramDensity": true,
+            "showHistogramMedian": true,
+            "xAxis": ["weight"]
+          }
+        );
+      </script>
+    </div>
+
+  </body>
+
+</html>

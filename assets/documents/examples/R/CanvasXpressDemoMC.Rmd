@@ -1,0 +1,70 @@
+---
+title: "CanvasXpress Multicolumn"
+author: "Isaac Neuhaus"
+date: "03/14/2023"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+```{r setup, include=FALSE}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("canvasXpress" %in% installed.packages())) {
+    install.packages('canvasXpress')
+}
+#devtools::install_github('neuhausi/canvasXpress')
+library('canvasXpress')
+```
+
+
+<style>
+.column-left{
+  float: left;
+  width: 49%;
+  text-align: left;
+}
+.column-right{
+  float: right;
+  width: 49%;
+  text-align: right;
+}
+</style>
+
+#### This section will have two columns
+
+<div class="column-left">
+```{r}
+s = ggplot(mpg, aes(displ, hwy)) + geom_point(aes(color = class))
+canvasXpress(s, width = 450, height = 400)
+```
+</div>
+
+<div class="column-right">
+```{r}
+b <- ggplot(mpg, aes(class, hwy)) + geom_boxplot() + geom_jitter()
+canvasXpress(b, width = 450, height = 400)
+```
+</div>
+
+#### This section will have two columns
+
+<div class="column-left">
+```{r}
+s = ggplot(mpg, aes(hwy, displ)) + geom_point(aes(color = class))
+canvasXpress(s, width = 450, height = 400)
+```
+</div>
+
+<div class="column-right">
+```{r}
+b <- ggplot(mpg, aes(class, displ)) + geom_boxplot() + geom_jitter()
+canvasXpress(b, width = 450, height = 400)
+```
+</div>
+

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress: Circular Chart</title>
+    <meta name="description" content="CanvasXpress: Circle Network Visualization Tool iframe">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress: Circular Chart">
+    <meta property="og:description" content="CanvasXpress: Circle Network Visualization Tool iframe">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org/assets/examples/circular-8.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress: Circular Chart">
+    <meta name="twitter:description" content="CanvasXpress: Circle Network Visualization Tool iframe">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org/assets/examples/circular-8.html">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+</head>
+
+  <body>
+
+    <div class="content">
+      <div class="container" style="margin:auto;display:flex;justify-content:center;align-items:center;height:100vh;">
+        <div class="plot">
+          <canvas id="circular8" width="600" height="600" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXcircular8 = new CanvasXpress("circular8",
+          {
+             "x" : {
+                "sample" : ["EA832479","EA832490","EA836497","EA836498","EA832494","EA832495","EA836499","EA836500","EA832476","EA832480","EA836501","EA836502","EA832482","EA832500","EA836503","EA836504","EA832481","EA832493","EA836505","EA1011925A18","EA832483","EA832491","EA836507","EA836508","EA1011925A25","EA832498","EA832499","EA836509","EA836510","EA1011925A19","EA832039","EA832486","EA832492","EA836511","EA836512","EA1011925A27","EA832040","EA832496","EA832497","EA836488","EA836513","EA836514","EA1011925A30","EA832487","EA832488","EA836515","EA836516","EA1011925A23","EA832484","EA832501","EA836517","EA836518","EA1011925A24","EA832489","EA1011925A4","EA832514","EA832515","EA836521","EA836522","EA1011925A3","EA832044","EA1011925A5","EA832045","EA1011925A7","EA832508","EA832513","EA836492","EA836493","EA836523","EA836524","EA1011925A6","EA832519","EA1011925A13","EA832506","EA832527","EA836526","EA836527","EA1011925A10","EA832048","EA832502","EA832503","EA836494","EA836528","EA836529","EA1011925A8","EA832504","EA832524","EA836530","EA836531","EA1011925A12","EA832050","EA1011925A11","EA832523","EA1011925A16","EA832475","EA832526","EA836533","EA836534","EA1011925A9","EA832051","EA832507","EA832509","EA836496","EA836535","EA836536","EA1011925A15","EA832517","EA832518","EA836537","EA836538","EA1011925A2","EA832510","EA832511","EA836539","EA836540","EA1011925A14","EA832520","EA1011925A1","EA832521","EA832525"],
+                "subject" : ["CA013004-1-26","CA013004-1-26","CA013004-1-26","CA013004-1-26","CA013004-2-18","CA013004-2-18","CA013004-2-18","CA013004-2-18","CA013004-2-39","CA013004-2-39","CA013004-2-39","CA013004-2-39","CA013004-2-42","CA013004-2-42","CA013004-2-42","CA013004-2-42","CA013004-2-49","CA013004-2-49","CA013004-2-49","CA013004-2-50","CA013004-2-50","CA013004-2-50","CA013004-2-50","CA013004-2-50","CA013004-2-6","CA013004-2-6","CA013004-2-6","CA013004-2-6","CA013004-2-6","CA013004-3-27","CA013004-3-27","CA013004-3-27","CA013004-3-27","CA013004-3-27","CA013004-3-27","CA013004-3-7","CA013004-3-7","CA013004-3-7","CA013004-3-7","CA013004-3-7","CA013004-3-7","CA013004-3-7","CA013004-3-83","CA013004-3-83","CA013004-3-83","CA013004-3-83","CA013004-3-83","CA013004-4-38","CA013004-4-38","CA013004-4-38","CA013004-4-38","CA013004-4-38","CA013004-5-14","CA013004-5-14","CA013004-6-29","CA013004-6-29","CA013004-6-29","CA013004-6-29","CA013004-6-29","CA013004-6-31","CA013004-6-31","CA013004-6-35","CA013004-6-35","CA013004-6-47","CA013004-6-47","CA013004-6-47","CA013004-6-47","CA013004-6-47","CA013004-6-47","CA013004-6-47","CA013004-6-75","CA013004-6-75","CA013004-6-89","CA013004-6-89","CA013004-6-89","CA013004-6-89","CA013004-6-89","CA013004-7-28","CA013004-7-28","CA013004-7-28","CA013004-7-28","CA013004-7-28","CA013004-7-28","CA013004-7-28","CA013004-7-44","CA013004-7-44","CA013004-7-44","CA013004-7-44","CA013004-7-44","CA013004-7-69","CA013004-7-69","CA013004-7-70","CA013004-7-70","CA013004-8-117","CA013004-8-117","CA013004-8-117","CA013004-8-117","CA013004-8-117","CA013004-8-41","CA013004-8-41","CA013004-8-41","CA013004-8-41","CA013004-8-41","CA013004-8-41","CA013004-8-41","CA013004-8-53","CA013004-8-53","CA013004-8-53","CA013004-8-53","CA013004-8-53","CA013004-8-78","CA013004-8-78","CA013004-8-78","CA013004-8-78","CA013004-8-78","CA013004-8-79","CA013004-8-79","CA013004-8-84","CA013004-8-84","CA013004-8-84"]
+             },
+             "y" : {
+                "data" : [
+                  [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+                ],
+                "smps" : ["EA832479","EA832490","EA836497","EA836498","EA832494","EA832495","EA836499","EA836500","EA832476","EA832480","EA836501","EA836502","EA832482","EA832500","EA836503","EA836504","EA832481","EA832493","EA836505","EA1011925A18","EA832483","EA832491","EA836507","EA836508","EA1011925A25","EA832498","EA832499","EA836509","EA836510","EA1011925A19","EA832039","EA832486","EA832492","EA836511","EA836512","EA1011925A27","EA832040","EA832496","EA832497","EA836488","EA836513","EA836514","EA1011925A30","EA832487","EA832488","EA836515","EA836516","EA1011925A23","EA832484","EA832501","EA836517","EA836518","EA1011925A24","EA832489","EA1011925A4","EA832514","EA832515","EA836521","EA836522","EA1011925A3","EA832044","EA1011925A5","EA832045","EA1011925A7","EA832508","EA832513","EA836492","EA836493","EA836523","EA836524","EA1011925A6","EA832519","EA1011925A13","EA832506","EA832527","EA836526","EA836527","EA1011925A10","EA832048","EA832502","EA832503","EA836494","EA836528","EA836529","EA1011925A8","EA832504","EA832524","EA836530","EA836531","EA1011925A12","EA832050","EA1011925A11","EA832523","EA1011925A16","EA832475","EA832526","EA836533","EA836534","EA1011925A9","EA832051","EA832507","EA832509","EA836496","EA836535","EA836536","EA1011925A15","EA832517","EA832518","EA836537","EA836538","EA1011925A2","EA832510","EA832511","EA836539","EA836540","EA1011925A14","EA832520","EA1011925A1","EA832521","EA832525"],
+                "vars" : ["var1"]
+             }
+          },
+          {
+             "circularArcSectorSeparation" : 1,
+             "circularLabelsAlign" : "inside",
+             "colorScheme" : "Favorite",
+             "circularConnections" : [
+                ["EA832040","EA1011925A27"],
+                ["EA832040","EA832496"],
+                ["EA832040","EA832497"],
+                ["EA832039","EA1011925A19"],
+                ["EA832039","EA832486"],
+                ["EA832039","EA832492"],
+                ["EA832044","EA1011925A3"],
+                ["EA832045","EA1011925A5"],
+                ["EA832048","EA1011925A10"],
+                ["EA832048","EA832502"],
+                ["EA832048","EA832503"],
+                ["EA832051","EA1011925A9"],
+                ["EA832051","EA832507"],
+                ["EA832051","EA832509"],
+                ["EA832050","EA1011925A12"],
+                ["EA1011925A18","EA832483"],
+                ["EA1011925A18","EA832491"],
+                ["EA1011925A19","EA832039"],
+                ["EA1011925A19","EA832486"],
+                ["EA1011925A19","EA832492"],
+                ["EA1011925A23","EA832484"],
+                ["EA1011925A23","EA832501"],
+                ["EA1011925A24","EA832489"],
+                ["EA1011925A25","EA832498"],
+                ["EA1011925A27","EA832040"],
+                ["EA1011925A27","EA832496"],
+                ["EA1011925A27","EA832497"],
+                ["EA1011925A30","EA832487"],
+                ["EA1011925A30","EA832488"],
+                ["EA1011925A1","EA832521"],
+                ["EA1011925A1","EA832525"],
+                ["EA1011925A2","EA832510"],
+                ["EA1011925A2","EA832511"],
+                ["EA1011925A3","EA832044"],
+                ["EA1011925A4","EA832514"],
+                ["EA1011925A4","EA832515"],
+                ["EA1011925A5","EA832045"],
+                ["EA1011925A6","EA832519"],
+                ["EA1011925A7","EA832508"],
+                ["EA1011925A7","EA832513"],
+                ["EA1011925A8","EA836531"],
+                ["EA1011925A8","EA832504"],
+                ["EA1011925A8","EA832524"],
+                ["EA1011925A9","EA832051"],
+                ["EA1011925A9","EA832507"],
+                ["EA1011925A9","EA832509"],
+                ["EA1011925A10","EA832048"],
+                ["EA1011925A10","EA832502"],
+                ["EA1011925A10","EA832503"],
+                ["EA1011925A11","EA832523"],
+                ["EA1011925A12","EA832050"],
+                ["EA1011925A13","EA832506"],
+                ["EA1011925A13","EA832527"],
+                ["EA1011925A14","EA832520"],
+                ["EA1011925A15","EA832517"],
+                ["EA1011925A15","EA832518"],
+                ["EA1011925A16","EA836533"],
+                ["EA1011925A16","EA832475"],
+                ["EA1011925A16","EA832526"],
+                ["EA832475","EA836533"],
+                ["EA832475","EA1011925A16"],
+                ["EA832475","EA832526"],
+                ["EA832476","EA832480"],
+                ["EA832479","EA832490"],
+                ["EA832480","EA832476"],
+                ["EA832481","EA836505"],
+                ["EA832481","EA832493"],
+                ["EA832482","EA832499"],
+                ["EA832483","EA1011925A18"],
+                ["EA832483","EA832491"],
+                ["EA832484","EA1011925A23"],
+                ["EA832484","EA832501"],
+                ["EA832486","EA1011925A19"],
+                ["EA832486","EA832039"],
+                ["EA832486","EA832492"],
+                ["EA832487","EA1011925A30"],
+                ["EA832487","EA832488"],
+                ["EA832488","EA1011925A30"],
+                ["EA832488","EA832487"],
+                ["EA832489","EA1011925A24"],
+                ["EA832490","EA832479"],
+                ["EA832491","EA1011925A18"],
+                ["EA832491","EA832483"],
+                ["EA832492","EA1011925A19"],
+                ["EA832492","EA832039"],
+                ["EA832492","EA832486"],
+                ["EA832493","EA836505"],
+                ["EA832493","EA832481"],
+                ["EA832494","EA832495"],
+                ["EA832495","EA832494"],
+                ["EA832496","EA1011925A27"],
+                ["EA832496","EA832040"],
+                ["EA832496","EA832497"],
+                ["EA832497","EA1011925A27"],
+                ["EA832497","EA832040"],
+                ["EA832497","EA832496"],
+                ["EA832498","EA1011925A25"],
+                ["EA832498","EA832500"],
+                ["EA832499","EA832482"],
+                ["EA832500","EA832498"],
+                ["EA832501","EA1011925A23"],
+                ["EA832501","EA832484"],
+                ["EA832502","EA1011925A10"],
+                ["EA832502","EA832048"],
+                ["EA832502","EA832503"],
+                ["EA832503","EA1011925A10"],
+                ["EA832503","EA832048"],
+                ["EA832503","EA832502"],
+                ["EA832504","EA836531"],
+                ["EA832504","EA1011925A8"],
+                ["EA832504","EA832524"],
+                ["EA832506","EA1011925A13"],
+                ["EA832506","EA832527"],
+                ["EA832507","EA1011925A9"],
+                ["EA832507","EA832051"],
+                ["EA832507","EA832509"],
+                ["EA832508","EA1011925A7"],
+                ["EA832508","EA832513"],
+                ["EA832509","EA1011925A9"],
+                ["EA832509","EA832051"],
+                ["EA832509","EA832507"],
+                ["EA832510","EA1011925A2"],
+                ["EA832510","EA832511"],
+                ["EA832511","EA1011925A2"],
+                ["EA832511","EA832510"],
+                ["EA832513","EA1011925A7"],
+                ["EA832513","EA832508"],
+                ["EA832514","EA1011925A4"],
+                ["EA832514","EA832515"],
+                ["EA832515","EA1011925A4"],
+                ["EA832515","EA832514"],
+                ["EA832517","EA1011925A15"],
+                ["EA832517","EA832518"],
+                ["EA832518","EA1011925A15"],
+                ["EA832518","EA832517"],
+                ["EA832519","EA1011925A6"],
+                ["EA832520","EA1011925A14"],
+                ["EA832521","EA1011925A1"],
+                ["EA832521","EA832525"],
+                ["EA832523","EA1011925A11"],
+                ["EA832524","EA836531"],
+                ["EA832524","EA1011925A8"],
+                ["EA832524","EA832504"],
+                ["EA832525","EA1011925A1"],
+                ["EA832525","EA832521"],
+                ["EA832526","EA836533"],
+                ["EA832526","EA1011925A16"],
+                ["EA832526","EA832475"],
+                ["EA832527","EA1011925A13"],
+                ["EA832527","EA832506"],
+                ["EA836488","EA836513"],
+                ["EA836488","EA836514"],
+                ["EA836494","EA836528"],
+                ["EA836494","EA836529"],
+                ["EA836492","EA836493"],
+                ["EA836496","EA836535"],
+                ["EA836496","EA836536"],
+                ["EA836493","EA836492"],
+                ["EA836533","EA836534"],
+                ["EA836533","EA1011925A16"],
+                ["EA836533","EA832475"],
+                ["EA836533","EA832526"],
+                ["EA836501","EA836502"],
+                ["EA836497","EA836498"],
+                ["EA836502","EA836501"],
+                ["EA836505","EA832481"],
+                ["EA836505","EA832493"],
+                ["EA836503","EA836510"],
+                ["EA836507","EA836508"],
+                ["EA836517","EA836518"],
+                ["EA836511","EA836512"],
+                ["EA836515","EA836516"],
+                ["EA836516","EA836515"],
+                ["EA836498","EA836497"],
+                ["EA836508","EA836507"],
+                ["EA836512","EA836511"],
+                ["EA836499","EA836500"],
+                ["EA836500","EA836499"],
+                ["EA836513","EA836488"],
+                ["EA836513","EA836514"],
+                ["EA836514","EA836488"],
+                ["EA836514","EA836513"],
+                ["EA836509","EA836504"],
+                ["EA836510","EA836503"],
+                ["EA836504","EA836509"],
+                ["EA836518","EA836517"],
+                ["EA836528","EA836494"],
+                ["EA836528","EA836529"],
+                ["EA836529","EA836494"],
+                ["EA836529","EA836528"],
+                ["EA836530","EA836531"],
+                ["EA836526","EA836527"],
+                ["EA836535","EA836496"],
+                ["EA836535","EA836536"],
+                ["EA836523","EA836524"],
+                ["EA836536","EA836496"],
+                ["EA836536","EA836535"],
+                ["EA836539","EA836540"],
+                ["EA836540","EA836539"],
+                ["EA836524","EA836523"],
+                ["EA836521","EA836522"],
+                ["EA836522","EA836521"],
+                ["EA836537","EA836538"],
+                ["EA836538","EA836537"],
+                ["EA836531","EA836530"],
+                ["EA836531","EA1011925A8"],
+                ["EA836531","EA832504"],
+                ["EA836531","EA832524"],
+                ["EA836534","EA836533"],
+                ["EA836527","EA836526"]
+             ],
+             "graphType" : "Circular",
+             "overlayLevelOrientation" : "perpendicular",
+             "overlayScaleFontFactor" : 1,
+             "circularTrackOrder" : ["subject","labels","sample"],
+             "segregateSamplesBy" : ["subject"],
+             "showLegend" : false,
+             "smpTextScaleFontFactor" : 0.3,
+             "xAxis" : ["var1"],
+             "xAxisShow" : false
+          }
+        );
+      </script>
+    </div>
+
+  </body>
+
+</html>

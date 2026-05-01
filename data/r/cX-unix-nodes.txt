@@ -1,0 +1,42 @@
+id	name
+Id0	5th Edition
+Id1	6th Edition
+Id2	PWB 1.0
+Id3	LSX
+Id4	1 BSD
+Id5	Mini Unix
+Id6	Wollongong
+Id7	Interdata
+Id8	Unix/TS 3.0
+Id9	PWB 2.0
+Id10	7th Edition
+Id11	8th Edition
+Id12	32V
+Id13	V7M
+Id14	Ultrix-11
+Id15	Xenix
+Id16	UniPlus+
+Id17	9th Edition
+Id18	2 BSD
+Id19	2.8 BSD
+Id20	2.9 BSD
+Id21	3 BSD
+Id22	4 BSD
+Id23	4.1 BSD
+Id24	4.2 BSD
+Id25	4.3 BSD
+Id26	Ultrix-32
+Id27	PWB 1.2
+Id28	USG 1.0
+Id29	CB Unix 1
+Id30	USG 2.0
+Id31	CB Unix 2
+Id32	CB Unix 3
+Id33	Unix/TS++
+Id34	PDP-11 Sys V
+Id35	USG 3.0
+Id36	Unix/TS 1.0
+Id37	TS 4.0
+Id38	System V.0
+Id39	System V.2
+Id40	System V.3

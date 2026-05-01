@@ -1,0 +1,112 @@
+---
+title: "CanvasXpress - Seurat"
+author: "Isaac Neuhaus"
+date: "06/04/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+
+```{r setup}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("Seurat" %in% installed.packages())) {
+    install.packages('Seurat')
+}
+library('Seurat')
+if (!("devtools" %in% installed.packages())) {
+    install.packages('devtools')
+}
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library('canvasXpress')
+```
+
+# Load data and Libraries
+### https://satijalab.org/seurat/articles/visualization_vignette.html
+```{r}
+SeuratData::InstallData("pbmc3k")
+```
+
+```{r}
+library(Seurat)
+library(SeuratData)
+library(ggplot2)
+library(ggridges)
+library(patchwork)
+pbmc3k.final <- LoadData("pbmc3k", type = "pbmc3k.final")
+pbmc3k.final$groups <- sample(c("group1", "group2"), size = ncol(pbmc3k.final), replace = TRUE)
+features <- c("LYZ", "CCL5", "IL32", "PTPRCAP", "FCGR3A", "PF4")
+pbmc3k.final
+```
+# Five visualizations of marker feature expression
+
+### Ridge plots - from ggridges. Visualize single cell expression distributions in each cluster
+```{r}
+r = RidgePlot(pbmc3k.final, features = features, ncol = 2)
+r
+canvasXpress(r)
+```
+
+### Dot plots - SplitDotPlotGG has been replaced with the `split.by` parameter for DotPlot
+```{r}
+d = DotPlot(pbmc3k.final, features = features, split.by = "groups") + RotatedAxis()
+d
+canvasXpress(d)
+```
+
+### Violin plot - Visualize single cell expression distributions in each cluster
+```{r}
+v = VlnPlot(pbmc3k.final, features = features)
+v
+canvasXpress(v)
+```
+
+### Violin plots can also be split on some variable. Simply add the splitting variable to object metadata and pass it to the split.by argument
+```{r}
+v2 = VlnPlot(pbmc3k.final, features = "percent.mt", split.by = "groups")
+v2
+canvasXpress(v2)
+```
+
+### Feature plot - visualize feature expression in low-dimensional space
+```{r}
+f = FeaturePlot(pbmc3k.final, features = features)
+f
+canvasXpress(f)
+```
+
+### DimPlot replaces TSNEPlot, PCAPlot, etc. In addition, it will plot either 'umap', 'tsne', or 'pca' by default, in that order
+```{r}
+s = DimPlot(pbmc3k.final)
+s
+canvasXpress(s)
+```
+
+### Dot plots - SplitDotPlotGG has been replaced with the `split.by` parameter for DotPlot
+```{r}
+d = DotPlot(pbmc3k.final, features = features, split.by = "groups") + RotatedAxis()
+d
+canvasXpress(d)
+```
+
+### Single cell heatmap of feature expression
+```{r}
+h = DoHeatmap(subset(pbmc3k.final, downsample = 100), features = features, size = 3)
+h
+canvasXpress(h)
+```
+
+### Senssion Info
+```{r}
+sessionInfo()
+```
+

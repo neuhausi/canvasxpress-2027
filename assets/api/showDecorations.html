@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showDecorations</title>
+    <meta name="description" content="CanvasXpress API - Decorations - showDecorations">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="showDecorations">
+    <meta property="og:description" content="CanvasXpress API - Decorations - showDecorations">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org/assets/api/showDecorations.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="showDecorations">
+    <meta name="twitter:description" content="CanvasXpress API - Decorations - showDecorations">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org/assets/api/showDecorations.html">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+
+    <style>
+      div.content { margin: auto; max-width: 1000px; }
+      div.container { margin: auto; }
+      div.plot { align-items: center; justify-content: center; }
+    </style>
+</head>
+
+  <body style="height: 100vh;">
+
+    <div class="content" style="margin:auto;display:flex !important;justify-content:center;align-items:center;height:100%">
+
+      <div style="max-width:1000px;display:flex;flex-flow:wrap;">
+        <div class="card p-2 m-1 shadow-sm">
+          <div><h4 class="fw-semibold text-dark mb-2">showDecorations : true</h4></div>
+          <div class="canvasXpressContainerSite">
+            <canvas id="decorations_showDecorations_0" width="425" height="425" aspectRatio="1:1" responsive="true">
+            </canvas>
+          </div>
+        </div>
+      <script>
+        new CanvasXpress("decorations_showDecorations_0",
+          {
+            "edges": [
+              {
+                "color": "rgb(51,12,255)",
+                "endArrow": "arrow",
+                "id1": "Gene1",
+                "id2": "Gene2",
+                "startArrow": "square",
+                "type": "curved",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "endArrow": "arrow",
+                "id1": "Gene4",
+                "id2": "Gene3",
+                "startArrow": "square",
+                "type": "dashedCurved",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "endArrow": "arrow",
+                "id1": "Gene5",
+                "id2": "Met",
+                "type": "line",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "endArrow": "round",
+                "id1": "Gene3",
+                "id2": "DNA",
+                "startArrow": "square",
+                "type": "bezier",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "endArrow": "square",
+                "id1": "Gene7",
+                "id2": "Gene1",
+                "startArrow": "arrow",
+                "type": "dashedBezier",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "elbows": [
+                  [
+                    235,
+                    100
+                  ],
+                  [
+                    50,
+                    100
+                  ],
+                  [
+                    50,
+                    230
+                  ]
+                ],
+                "endArrow": "square",
+                "id1": "Gene5",
+                "id2": "Gene7",
+                "type": "dotted",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "elbows": [
+                  [
+                    275,
+                    100,
+                    325,
+                    100,
+                    325,
+                    165
+                  ],
+                  [
+                    325,
+                    165,
+                    325,
+                    270,
+                    425,
+                    270
+                  ]
+                ],
+                "endArrow": "square",
+                "id1": "Gene5",
+                "id2": "DNA",
+                "type": "bezier",
+                "width": "3"
+              }
+            ],
+            "legend": {
+              "edges": [
+                {
+                  "id": "edgesLegendId0",
+                  "text": "Activate",
+                  "type": "arrowHeadLine"
+                }
+              ],
+              "nodes": [
+                {
+                  "color": "rgb(255,0,0)",
+                  "id": "nodesLegendId0",
+                  "shape": "sphere",
+                  "text": "Gene"
+                }
+              ],
+              "pos": {
+                "decorations": {
+                  "x": 450,
+                  "y": 360
+                },
+                "edges": {
+                  "x": 360,
+                  "y": -5
+                },
+                "nodes": {
+                  "x": -5,
+                  "y": -5
+                }
+              },
+              "text": [
+                {
+                  "id": "textLegendId0",
+                  "text": "Cool Pathway",
+                  "x": 150,
+                  "y": 460
+                }
+              ]
+            },
+            "nodes": [
+              {
+                "eventless": true,
+                "height": 400,
+                "hideLabel": true,
+                "id": "Cell",
+                "imagePath": "https://www.canvasxpress.org/assets/images/cell.png",
+                "shape": "image",
+                "width": 525,
+                "x": 250,
+                "y": 250
+              },
+              {
+                "exp1": 1,
+                "exp2": 2,
+                "exp3": 4,
+                "exp4": {
+                  "cl1": 2,
+                  "cl2": 4,
+                  "cl3": 3
+                },
+                "exp5": {
+                  "cl1": 12,
+                  "cl2": 1,
+                  "cl3": 5
+                },
+                "height": 40,
+                "id": "Gene1",
+                "imagePath": "https://www.canvasxpress.org/assets/images/prot.png",
+                "shape": "image",
+                "width": 40,
+                "x": 155,
+                "y": 160
+              },
+              {
+                "color": "rgb(255,0,0)",
+                "exp1": 2,
+                "exp2": 4,
+                "exp3": 1,
+                "exp4": {
+                  "cl1": 7,
+                  "cl2": 1,
+                  "cl3": 8
+                },
+                "exp5": {
+                  "cl1": 1,
+                  "cl2": 11,
+                  "cl3": 8
+                },
+                "id": "Gene2",
+                "shape": "sphere",
+                "size": 1,
+                "x": 155,
+                "y": 340
+              },
+              {
+                "color": "rgb(255,0,0)",
+                "exp1": 1,
+                "exp2": 5,
+                "exp3": 1,
+                "exp4": {
+                  "cl1": 12,
+                  "cl2": 4,
+                  "cl3": 8
+                },
+                "exp5": {
+                  "cl1": 3,
+                  "cl2": 7,
+                  "cl3": 5
+                },
+                "id": "Gene3",
+                "shape": "sphere",
+                "size": 1,
+                "x": 355,
+                "y": 160
+              },
+              {
+                "color": "rgb(255,0,0)",
+                "exp1": 4,
+                "exp2": 2,
+                "exp3": 1,
+                "exp4": {
+                  "cl1": 1,
+                  "cl2": 14,
+                  "cl3": 7
+                },
+                "exp5": {
+                  "cl1": 2,
+                  "cl2": 1,
+                  "cl3": 15
+                },
+                "id": "Gene4",
+                "label": "Receptor Gene4",
+                "shape": "sphere",
+                "size": 1,
+                "x": 355,
+                "y": 340
+              },
+              {
+                "color": "rgb(255,0,0)",
+                "exp1": 1,
+                "exp2": 3,
+                "exp3": 2,
+                "exp4": {
+                  "cl1": 4,
+                  "cl2": 4,
+                  "cl3": 8
+                },
+                "exp5": {
+                  "cl1": 6,
+                  "cl2": 7,
+                  "cl3": 2
+                },
+                "height": 20,
+                "id": "Gene5",
+                "shape": "sphere",
+                "width": 20,
+                "x": 255,
+                "y": 100
+              },
+              {
+                "height": 40,
+                "hideLabel": true,
+                "id": "Met",
+                "imagePath": "https://www.canvasxpress.org/assets/images/met.png",
+                "shape": "image",
+                "width": 40,
+                "x": 255,
+                "y": 400
+              },
+              {
+                "exp1": 3,
+                "exp2": 3,
+                "exp3": 4,
+                "exp4": {
+                  "cl1": 2,
+                  "cl2": 14,
+                  "cl3": 1
+                },
+                "exp5": {
+                  "cl1": 9,
+                  "cl2": 3,
+                  "cl3": 5
+                },
+                "height": 40,
+                "id": "Gene7",
+                "imagePath": "https://www.canvasxpress.org/assets/images/prot7.png",
+                "shape": "image",
+                "width": 40,
+                "x": 50,
+                "y": 250
+              },
+              {
+                "height": 40,
+                "hideLabel": true,
+                "id": "DNA",
+                "imagePath": "https://www.canvasxpress.org/assets/images/dna1.png",
+                "shape": "image",
+                "width": 40,
+                "x": 450,
+                "y": 250
+              }
+            ]
+          },  
+          {
+            "calculateLayout": false,
+            "decorations": [
+              "exp1",
+              "exp2",
+              "exp3"
+            ],
+            "decorationsPosition": "top",
+            "decorationsType": "bar",
+            "graphType": "Network",
+            "legendColumns": 3,
+            "legendPosition": "bottom",
+            "showDecorations": true
+          },  
+          {
+            "click": function(o, e, t) {
+              t.showTooltipDiv(e, '<pre>' + t.prettyJSON(t.meta.config.user) + '</pre>', false, {zIndex: 1});
+            }
+          }
+        );
+
+      </script>
+
+        <div class="card p-2 m-1 shadow-sm">
+          <div><h4 class="fw-semibold text-dark mb-2">showDecorations : false</h4></div>
+          <div class="canvasXpressContainerSite">
+            <canvas id="decorations_showDecorations_1" width="425" height="425" aspectRatio="1:1" responsive="true">
+            </canvas>
+          </div>
+        </div>
+      <script>
+        new CanvasXpress("decorations_showDecorations_1",
+          {
+            "edges": [
+              {
+                "color": "rgb(51,12,255)",
+                "endArrow": "arrow",
+                "id1": "Gene1",
+                "id2": "Gene2",
+                "startArrow": "square",
+                "type": "curved",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "endArrow": "arrow",
+                "id1": "Gene4",
+                "id2": "Gene3",
+                "startArrow": "square",
+                "type": "dashedCurved",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "endArrow": "arrow",
+                "id1": "Gene5",
+                "id2": "Met",
+                "type": "line",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "endArrow": "round",
+                "id1": "Gene3",
+                "id2": "DNA",
+                "startArrow": "square",
+                "type": "bezier",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "endArrow": "square",
+                "id1": "Gene7",
+                "id2": "Gene1",
+                "startArrow": "arrow",
+                "type": "dashedBezier",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "elbows": [
+                  [
+                    235,
+                    100
+                  ],
+                  [
+                    50,
+                    100
+                  ],
+                  [
+                    50,
+                    230
+                  ]
+                ],
+                "endArrow": "square",
+                "id1": "Gene5",
+                "id2": "Gene7",
+                "type": "dotted",
+                "width": "3"
+              },
+              {
+                "color": "rgb(51,12,255)",
+                "elbows": [
+                  [
+                    275,
+                    100,
+                    325,
+                    100,
+                    325,
+                    165
+                  ],
+                  [
+                    325,
+                    165,
+                    325,
+                    270,
+                    425,
+                    270
+                  ]
+                ],
+                "endArrow": "square",
+                "id1": "Gene5",
+                "id2": "DNA",
+                "type": "bezier",
+                "width": "3"
+              }
+            ],
+            "legend": {
+              "edges": [
+                {
+                  "id": "edgesLegendId0",
+                  "text": "Activate",
+                  "type": "arrowHeadLine"
+                }
+              ],
+              "nodes": [
+                {
+                  "color": "rgb(255,0,0)",
+                  "id": "nodesLegendId0",
+                  "shape": "sphere",
+                  "text": "Gene"
+                }
+              ],
+              "pos": {
+                "decorations": {
+                  "x": 450,
+                  "y": 360
+                },
+                "edges": {
+                  "x": 360,
+                  "y": -5
+                },
+                "nodes": {
+                  "x": -5,
+                  "y": -5
+                }
+              },
+              "text": [
+                {
+                  "id": "textLegendId0",
+                  "text": "Cool Pathway",
+                  "x": 150,
+                  "y": 460
+                }
+              ]
+            },
+            "nodes": [
+              {
+                "eventless": true,
+                "height": 400,
+                "hideLabel": true,
+                "id": "Cell",
+                "imagePath": "https://www.canvasxpress.org/assets/images/cell.png",
+                "shape": "image",
+                "width": 525,
+                "x": 250,
+                "y": 250
+              },
+              {
+                "exp1": 1,
+                "exp2": 2,
+                "exp3": 4,
+                "exp4": {
+                  "cl1": 2,
+                  "cl2": 4,
+                  "cl3": 3
+                },
+                "exp5": {
+                  "cl1": 12,
+                  "cl2": 1,
+                  "cl3": 5
+                },
+                "height": 40,
+                "id": "Gene1",
+                "imagePath": "https://www.canvasxpress.org/assets/images/prot.png",
+                "shape": "image",
+                "width": 40,
+                "x": 155,
+                "y": 160
+              },
+              {
+                "color": "rgb(255,0,0)",
+                "exp1": 2,
+                "exp2": 4,
+                "exp3": 1,
+                "exp4": {
+                  "cl1": 7,
+                  "cl2": 1,
+                  "cl3": 8
+                },
+                "exp5": {
+                  "cl1": 1,
+                  "cl2": 11,
+                  "cl3": 8
+                },
+                "id": "Gene2",
+                "shape": "sphere",
+                "size": 1,
+                "x": 155,
+                "y": 340
+              },
+              {
+                "color": "rgb(255,0,0)",
+                "exp1": 1,
+                "exp2": 5,
+                "exp3": 1,
+                "exp4": {
+                  "cl1": 12,
+                  "cl2": 4,
+                  "cl3": 8
+                },
+                "exp5": {
+                  "cl1": 3,
+                  "cl2": 7,
+                  "cl3": 5
+                },
+                "id": "Gene3",
+                "shape": "sphere",
+                "size": 1,
+                "x": 355,
+                "y": 160
+              },
+              {
+                "color": "rgb(255,0,0)",
+                "exp1": 4,
+                "exp2": 2,
+                "exp3": 1,
+                "exp4": {
+                  "cl1": 1,
+                  "cl2": 14,
+                  "cl3": 7
+                },
+                "exp5": {
+                  "cl1": 2,
+                  "cl2": 1,
+                  "cl3": 15
+                },
+                "id": "Gene4",
+                "label": "Receptor Gene4",
+                "shape": "sphere",
+                "size": 1,
+                "x": 355,
+                "y": 340
+              },
+              {
+                "color": "rgb(255,0,0)",
+                "exp1": 1,
+                "exp2": 3,
+                "exp3": 2,
+                "exp4": {
+                  "cl1": 4,
+                  "cl2": 4,
+                  "cl3": 8
+                },
+                "exp5": {
+                  "cl1": 6,
+                  "cl2": 7,
+                  "cl3": 2
+                },
+                "height": 20,
+                "id": "Gene5",
+                "shape": "sphere",
+                "width": 20,
+                "x": 255,
+                "y": 100
+              },
+              {
+                "height": 40,
+                "hideLabel": true,
+                "id": "Met",
+                "imagePath": "https://www.canvasxpress.org/assets/images/met.png",
+                "shape": "image",
+                "width": 40,
+                "x": 255,
+                "y": 400
+              },
+              {
+                "exp1": 3,
+                "exp2": 3,
+                "exp3": 4,
+                "exp4": {
+                  "cl1": 2,
+                  "cl2": 14,
+                  "cl3": 1
+                },
+                "exp5": {
+                  "cl1": 9,
+                  "cl2": 3,
+                  "cl3": 5
+                },
+                "height": 40,
+                "id": "Gene7",
+                "imagePath": "https://www.canvasxpress.org/assets/images/prot7.png",
+                "shape": "image",
+                "width": 40,
+                "x": 50,
+                "y": 250
+              },
+              {
+                "height": 40,
+                "hideLabel": true,
+                "id": "DNA",
+                "imagePath": "https://www.canvasxpress.org/assets/images/dna1.png",
+                "shape": "image",
+                "width": 40,
+                "x": 450,
+                "y": 250
+              }
+            ]
+          },  
+          {
+            "calculateLayout": false,
+            "decorations": [
+              "exp1",
+              "exp2",
+              "exp3"
+            ],
+            "decorationsPosition": "top",
+            "decorationsType": "bar",
+            "graphType": "Network",
+            "legendColumns": 3,
+            "legendPosition": "bottom",
+            "showDecorations": false
+          },  
+          {
+            "click": function(o, e, t) {
+              t.showTooltipDiv(e, '<pre>' + t.prettyJSON(t.meta.config.user) + '</pre>', false, {zIndex: 1});
+            }
+          }
+        );
+
+      </script>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

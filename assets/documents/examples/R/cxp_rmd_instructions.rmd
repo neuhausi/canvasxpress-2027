@@ -1,0 +1,150 @@
+---
+title: "CanvasXpress for Python - Rmarkdown"
+author: "Todd Brett"
+date: "06/27/2023"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+There are multiple options for activating Python kernals in RMD documents, but the most convenient method is to
+activate reticulate.  
+
+```{r}
+library('reticulate')
+```
+
+The CanvasXpress for Python (CX-P) package needs to be installed on the host system.  Python packages are installed
+into the active Python environment, so a virtual environment (a copy of a Python environment for isolated use) is
+recommended to keep the global installation clean.
+
+The following bash command, for Linux/UNIX/MACOS systems, checks for a local virtual environment; if no such environment
+is found then a new one is created using the system Python3 installation.
+
+```{bash, engine.opts='-l'}
+if ! [[ -d ./venv ]] ; then
+    python3 -m venv ./venv
+fi
+```
+
+reticulate is then instructed to use the new virtual environment.  CX-P, along with its required dependencies, 
+will now available for general use.
+
+```{r}
+use_virtualenv('./venv', required=TRUE)
+py_install('canvasxpress[all]')
+```
+
+Data and configurations are defined as normal, such as via a `dict`.
+
+```{python}
+demo_data = {
+  "y": {
+    "vars": ["V1"],
+    "smps": ["S1","S2","S3"],
+    "data": [
+      [33,44,55]
+    ]
+  }
+}
+
+demo_config = {
+  "graphOrientation": "vertical",
+  "plotBox": True,
+  "showLegend": False,
+  "smpLabelRotate": 90,
+  "smpTitle": "Samples",
+  "theme": "CanvasXpress",
+  "title": "Bar Graph Title",
+  "xAxis": ["V1"],
+  "xAxisTitle": "Value",
+  "graphType": "Bar"
+}
+```
+
+Charts can reuse pre-declared data and configurations, such as those above, or they can use new data and configurations 
+declared at the time the object is constructed.
+
+```{python}
+from canvasxpress.canvas import CanvasXpress
+
+example1_chart = CanvasXpress(
+  render_to = "Example1",
+  data = demo_data,
+  config = demo_config,
+)
+
+```
+
+Chart objects are converted into HTML (etc.) via a render object.  Render objects are initialized with a set of charts,
+and at the time the HTML is to be generated the `render` method is called.  The render object to be used depends on the
+environment in which the chart will be created.
+
+```{python}
+from canvasxpress.render.rstudio import CXHtml
+
+renderer = CXHtml(example1_chart)
+renderer.render()
+```
+
+CX-P provides full and interactive integration with contexts such as Flask, Dash, and similar; however, for RMD at this
+time only HTML is generated.  A Shiny for Python solution is being developed, but until then an IPython widget is provided
+to the RMD for use with Pandoc.  If only the chunk is executed then an IPython object is noted, but no visualization will
+be provided as RMD has yet to fully integrated; however, Pandoc does support IPython widgets and upon being knitted the
+RMD will include a live CanvasXpress chart from the Python chunk.
+
+Shiny for R does support the Python-generated HTML, and as such if the HTML data is obtained it can be displayed in RStudio
+once the combined Python and R chunks are executed.  Shiny will create an RMD-compliant HTML container widget and load the 
+provided HTML for immediate display.
+
+```{python}
+example2_chart = CanvasXpress(
+  render_to = "Example2",
+  data = demo_data,
+  config = demo_config,
+)
+
+renderer = CXHtml(example2_chart)
+cx2_html = renderer.render().data
+```
+
+```{r}
+shiny::HTML(py$cx2_html)
+```
+
+Multiple charts can be rendered via a code chunk, and in this case charts can be distributed in rows across a series
+of columns.  By default a single column is used and multiple charts will stack.
+
+Note that each chart `render_to` target must be unique on the page.  Anonymous charts can be created by setting the 
+render_to property to an empty string, at which point the renderer will automatically assign GUIDs at the time of
+render.
+
+```{python}
+renderer = CXHtml(
+  [
+    CanvasXpress(
+      render_to = "",
+      data = demo_data,
+      config = demo_config,
+    ),
+    CanvasXpress(
+      render_to = "",
+      data = demo_data,
+      config = demo_config,
+    ),
+    CanvasXpress(
+      render_to = "",
+      data = demo_data,
+      config = demo_config,
+    )
+  ]
+)
+multi_chart_html = renderer.render(columns=2).data
+```
+
+```{r}
+shiny::HTML(py$multi_chart_html)
+```

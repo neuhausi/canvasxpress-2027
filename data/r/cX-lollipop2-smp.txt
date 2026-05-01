@@ -1,0 +1,7 @@
+	Color
+Engineering	A
+Biology	B
+Computer	C
+Psycology	D
+Education	E
+Health	F

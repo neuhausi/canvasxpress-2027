@@ -1,0 +1,13 @@
+	Clinical Trial	Completion	Dependencies	DependencyColor	DependencyEnd	DependencyThickness	Indication
+S01	CT001	0.2					Lung
+S02	CT002	0.6					Liver
+S03	CT003	1					Breast
+S04	CT004	0.4					Skin
+S05	CT005	0.3					Lung
+S06	CT006	0.4					Lung
+S07	CT001	0.25	S01	blue	arrow	1	Breast
+S08	CT002	1	S02	red	square	2	Pancreas
+S09	CT003	0.8	S03	black	round	3	Stomach
+S10	CT004	0.9					Breast
+S11	CT005	0.6					Skin
+S12	CT006	0.3					Lung

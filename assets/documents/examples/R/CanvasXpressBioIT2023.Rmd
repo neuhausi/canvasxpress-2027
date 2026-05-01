@@ -1,0 +1,174 @@
+---
+title: "CanvasXpress BioIt 2023"
+author: "Isaac Neuhaus"
+date: "05/17/2023"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+```{r setup, include=FALSE}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("plotly" %in% installed.packages())) {
+    install.packages('plotly')
+}
+library('plotly')
+if (!("canvasXpress" %in% installed.packages())) {
+    install.packages('canvasXpress')
+}
+#devtools::install_github('neuhausi/canvasXpress')
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz")
+library('canvasXpress')
+```
+
+<style>
+.column-left{
+  float: left;
+  width: 49%;
+  text-align: left;
+}
+.column-right{
+  float: right;
+  width: 49%;
+  text-align: right;
+}
+</style>
+
+This demo shows the ability to easily integrate CanvasXpress with ggplot in R. There are similar demos for python.
+
+## Scatter2d Plot
+### Data: mpg dataset
+
+This dataset contains a subset of the fuel economy data that the EPA makes available on https://fueleconomy.gov/. It contains only models which had a new release every year between 1999 and 2008 - this was used as a proxy for the popularity of the car.
+
+```{r}
+head(mpg)
+```
+
+### Plot with ggplot
+
+Compare displacement (displ) vs highway efficiency (hwy) and color the data by vehicle class (class). Store the ggplot object in a variable.
+
+```{r}
+s = ggplot(mpg, aes(displ, hwy)) + geom_point(aes(color = class))
+s
+```
+
+### Plot with Plotly
+
+Use the ggplot object stored in the variable 's' and plot with Plotly
+
+```{r}
+ggplotly(s)
+```
+
+### Plot with CanvasXpress
+
+Use the ggplot object stored in the variable 's' and plot with CanvasXpress
+
+```{r}
+canvasXpress(s)
+```
+
+### Demo
+
+You may want to make this page somehow **BIG** for this demo!
+
++ __Tooltips__ -- Mouseover data points
+
++ __Toolbar__ -- Mouseover top of the plot
+
++ __Funnel__ -- Click the funnel icon in toolbar to explore data with table and filters
+
+    1. Select the 4 wheel drive type and cylinders between 4 and 6
+    
+    2. Reset the filter and close the explorer (at the top of the filters widget)
+
++ __Tools__ -- Click the tools icon in toolbar to Customize the graph
+
+    1. Go to the Meta section and drag cyl to the size container
+    
+    2. Go to the Legend and click the icon to locate it at the top-right
+    
+    3. Close the customizer
+    
++ __Camera__ -- Click the camera icon in the toolbar to save the graph as a PNG
+
+    1. Go to any CanvasXpress graph ( https://canvasxpress.org/examples/bar-1.html ).
+    
+    2. Open the file explorer in your computer and drag the saved image onto the CanvasXpress graph
+    
+    3. Wow -- it is not just the image; it is the ACTUAL data
+    
++ __History__ -- Click the history button in the toolbar to reproduce everything you did to the visualization
+
+
+## Boxplot
+
+### Plot with ggplot
+
+Look at the distribution of the highway millage (hwy) in each of the vehicle classes (class)
+
+```{r}
+b <- ggplot(mpg, aes(class, hwy)) + geom_boxplot() + geom_jitter()
+b
+```
+
+### Plot with CanvasXpress
+
+Use the ggplot object stored in the variable 'b' and plot with CanvasXpress
+
+```{r}
+canvasXpress(b, width = 800, height = 800)
+```
+
+## Broadcast Demo
+
+Go to the graphs below
+
+    1. Press 'Shift' and drag the mouse to select points in any of the scatter plots (they should turn red)
+    
+    2. See broadcasting to other visualizations in the page
+
+    
+**A full-fledged data analytics app in every visualization with ZERO extra coding**
+
+<div class="column-left">
+```{r}
+s = ggplot(mpg, aes(displ, hwy)) + geom_point(aes(color = class))
+canvasXpress(s, width = 450, height = 400)
+```
+</div>
+
+<div class="column-right">
+```{r}
+b <- ggplot(mpg, aes(class, hwy)) + geom_boxplot() + geom_jitter()
+canvasXpress(b, width = 450, height = 400)
+```
+</div>
+
+<div class="column-left">
+```{r}
+s = ggplot(mpg, aes(hwy, cty)) + geom_point(aes(color = class))
+canvasXpress(s, width = 450, height = 400)
+```
+</div>
+
+<div class="column-right">
+```{r}
+b <- ggplot(mpg, aes(cyl, displ)) + geom_point(aes(fill = drv)) + geom_jitter()
+canvasXpress(b, width = 450, height = 400)
+```
+</div>
+
+## RTutor
+https://rtutor.ai/
+
+## Exifdata
+https://www.metadata2go.com/view-metadata

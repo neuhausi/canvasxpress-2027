@@ -1,0 +1,7 @@
+	Color
+Top 2 Roles	A
+Self Reliant	B
+Human	C
+Adult with Job	D
+Child	E
+No Magic	F

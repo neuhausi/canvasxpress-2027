@@ -1,0 +1,34 @@
+	Award	Result	Work
+R1	New York Film Critics Circle Awards	Awarded	Roman Holiday
+R2	Academy Awards	Awarded	Roman Holiday
+R3	Bafta	Awarded	Roman Holiday
+R4	Golden Globe Awards	Awarded	Roman Holiday
+R5	Tony Awards	Awarded	Ondine
+R6	Academy Awards	Nominated	Sabrina
+R7	Bafta	Nominated	Sabrina
+R8	Golden Globe Awards	Awarded	Henrietta Award for World Film Favorite
+R9	New York Film Critics Circle Awards	Nominated	Sabrina
+R10	Bafta	Nominated	War and Peace
+R11	Golden Globe Awards	Nominated	War and Peace
+R12	New York Film Critics Circle Awards	Nominated	Love in the Afternoon
+R13	Golden Globe Awards	Nominated	Love in the Afternoon
+R14	New York Film Critics Circle Awards	Awarded	The Nun's Story
+R15	Academy Awards	Nominated	The Nun's Story
+R16	Bafta	Awarded	The Nun's Story
+R17	Golden Globe Awards	Nominated	The Nun's Story
+R18	Academy Awards	Nominated	Breakfast at Tiffany's
+R19	Golden Globe Awards	Nominated	Breakfast at Tiffany's
+R20	Golden Globe Awards	Nominated	Charade
+R21	New York Film Critics Circle Awards	Nominated	My Fair Lady
+R22	Bafta	Awarded	Charade
+R23	Golden Globe Awards	Nominated	My Fair Lady
+R24	Academy Awards	Nominated	Wait Until Dark
+R25	Golden Globe Awards	Nominated	Two for the Road
+R26	Golden Globe Awards	Nominated	Wait Until Dark
+R27	New York Film Critics Circle Awards	Nominated	Wait Until Dark
+R28	Tony Awards	Awarded	Special Tony Award
+R29	Golden Globe Awards	Awarded	Cecil B. DeMille Award
+R30	Academy Awards	Nominated	Jean Hersholt Humanitarian Award
+R31	Emmy Awards	Awarded	Gardens of the World with Audrey Hepburn
+R32	Screen Actors Guild Awards	Awarded	Life Achievement Award
+R33	Grammy Awards	Awarded	Audrey Hepburn's Enchanted Tales

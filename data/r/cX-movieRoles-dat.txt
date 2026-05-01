@@ -1,0 +1,5 @@
+	Top 2 Roles	Self Reliant	Human	Adult with Job	Child	No Magic
+Females-in	35	33	34	18	14	50
+Females-out	22	24	23	39	43	7
+Males-in	56	43	25	34	12	47
+Males-out	4	17	35	26	48	13

@@ -1,0 +1,6 @@
+height	id	name	shape	width
+20	Id0	a	roundrect	30
+20	Id1	b	roundrect	30
+20	Id2	c	roundrect	30
+20	Id3	d	roundrect	30
+20	Id4	e	roundrect	30

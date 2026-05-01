@@ -1,0 +1,97 @@
+{
+  "tracks": [
+    {
+      "data": [
+        {
+          "dir": "right",
+          "fill": "rgb(51,255,255)",
+          "id": "Reference Sequence",
+          "offset": 1,
+          "outline": "rgb(0,0,0)",
+          "sequence": "TACGTACGTACGTACGTACGTACGTACGT"
+        },
+        {
+          "dir": "right",
+          "fill": "rgb(255,255,51)",
+          "gaps": [
+            [
+              4,
+              2
+            ],
+            [
+              8,
+              1
+            ]
+          ],
+          "id": "R1-0000-1234",
+          "offset": 1,
+          "outline": "rgb(0,0,0)",
+          "sequence": "TACGCGTAGTACGT"
+        },
+        {
+          "dir": "right",
+          "fill": "rgb(255,255,102)",
+          "gaps": [
+            [
+              3,
+              1
+            ],
+            [
+              10,
+              1
+            ]
+          ],
+          "id": "R1-0000-2345",
+          "offset": 6,
+          "outline": "rgb(0,0,0)",
+          "sequence": "ACGACGTACGACG"
+        },
+        {
+          "dir": "left",
+          "fill": "rgb(255,51,255)",
+          "gaps": [
+            [
+              7,
+              2
+            ]
+          ],
+          "id": "R1-0000-3456",
+          "offset": 12,
+          "offsetLeft": "23",
+          "outline": "rgb(0,0,0)",
+          "sequence": "GTACGTATAC"
+        },
+        {
+          "dir": "right",
+          "fill": "rgb(255,102,255)",
+          "gaps": [
+            [
+              5,
+              1
+            ]
+          ],
+          "id": "R1-0000-4567",
+          "offset": 15,
+          "outline": "rgb(0,0,0)",
+          "sequence": "CGTACTACGTA"
+        },
+        {
+          "dir": "right",
+          "fill": "rgb(51,255,255)",
+          "gaps": [
+            [
+              7,
+              1
+            ]
+          ],
+          "id": "R1-0000-5678",
+          "offset": 18,
+          "outline": "rgb(0,0,0)",
+          "sequence": "ACGTACGACGT"
+        }
+      ],
+      "subtype": "DNA",
+      "type": "sequence"
+    }
+  ]
+}

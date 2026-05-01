@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","copyright":"CanvasXpress (https://canvasxpress.org)","license":"Data sourced from Natural Earth (https://naturalearthdata.com) and geoBoundaries (https://geoboundaries.org) under open licenses.","features":[
+    {"type":"Feature","id":"Akrotiri","alias":["Akrotiri"],"properties":{"Name":"Akrotiri"},"geometry":null},
+    {"type":"Feature","id":"Dhekelia","alias":["Dhekelia"],"properties":{"Name":"Dhekelia"},"geometry":null}
+]}

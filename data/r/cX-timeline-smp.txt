@@ -1,0 +1,17 @@
+	Color	Size	Task
+2021-12-31	A	1	Initial Meeting
+2021-03-01	B	2	Needs Assessment
+2021-03-31	B	3	Research
+2021-05-30	C	1	Site Outline
+2021-06-29	C	2	Site Map
+2021-07-29	C	3	Wireframes
+2021-10-27	D	2	Wireframes Review
+2021-11-26	D	3	Content 
+2021-03-26	E	5	Landing Page Artwork
+2021-05-25	E	4	Inner Pages Artwork
+2021-09-22	F	5	Coding
+2021-10-22	F	2	Validation
+2021-11-21	F	3	Content Population
+2021-12-21	F	2	Cross Platform & Browser Testing
+2021-03-21	G	1	Refinement
+2021-04-20	G	2	Launch & Search Engine Submission

@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress</title>
+    <meta name="description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress">
+    <meta property="og:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress">
+    <meta name="twitter:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdWYcYqAAAAAPqJzSUJ4T0r_YKPGhfotxPl0-_A"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CanvasXpress",
+        "description": "A JavaScript library for interactive data visualizations, especially for scientific, genomic, and biomedical data.",
+        "applicationCategory": "DataVisualization",
+        "operatingSystem": "Any",
+        "url": "https://www.canvasxpress.org",
+        "softwareRequirements": "Web browser with JavaScript enabled",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    </script>
+</head>
+
+  <body>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top:0;padding:0;">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="/index.html">
+            <div class="mb-0">
+              <img src="/assets/images/logo-dark.svg" alt="CanvasXpress Logo" style="height: 25px; max-width: unset;" title="CanvasXpress Logo" width="282" height="35" loading="eager">
+            </div>
+          </a>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:0;outline:none;right:18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </a>
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0" style="margin-left: 0px;">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a href="/examples.html" class="nav-link">Examples</a></li>
+              <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
+              <li class="nav-item"><a href="/interfaces.html" class="nav-link">Interfaces</a></li>
+              <li class="nav-item"><a href="/updates.html" class="nav-link">Updates</a></li>
+              <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item mb-2" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-bs-toggle="modal" data-bs-target="#search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Aside -->
+      <div id="aside">
+        <aside class="col-md-3 col-lg-2 bg-white p-3 position-fixed d-hg-block shadow-lg sidebar rounded-aside" role="navigation"
+          aria-label="Main Navigation" style="top: 400px; right: 10px;">
+          <div class="text-center mb-2">
+            <a href="./index.html" aria-label="CanvasXpress Home">
+              <img src="https://canvasxpress.org/assets/images/logo-dark.svg" alt="CanvasXpress Logo"
+                title="CanvasXpress Logo" class="img-fluid" width="150" height="50" style="max-height: 50px;"
+                loading="eager">
+            </a>
+          </div>
+          <div class="table-of-contents rounded-aside mb-2">
+            <h3 class="font-xl font-bold text-primary">Table of Contents</h3>
+            <nav>
+              <ul class="nav flex-column space-y-2">
+                <li class="nav-item"><a class="nav-aside nav-link active-nav" href="#about">About CanvasXpress</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#what-is">What is CanvasXpress?</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#features">Key Features & Capabilities</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#applications">Applications & Use Cases</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#integrations">Framework Integrations</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#ai-integration">AI & LLM Integration</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#why-canvasxpress">Why Choose CanvasXpress?</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#faq">Frequently Asked Questions</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#tutorials">Step-by-Step Tutorials</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#comparison">Library Comparison</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+      </div>
+
+
+      <!-- Modals -->
+      <div id="modals">
+
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content modal-cnt">
+              <button type="button" class="modal-btn bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-hdr">
+                <div id="searchModalLabel" class="font-xl bg-transparent">Search CanvasXpress</div>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                  .gsc-search-button-v2 {background-color: #ffd587; border: none; border-radius: 5px;}.gsc-search-button-v2:focus, .gsc-search-button-v2:hover {background-color: #ffd587; outline: none;}.gsc-search-button-v2 svg {fill: #000;}td.gsib_a, td.gsib_b {border: none; border-radius: 5px; padding: 0 5px 0;}td.gsc-input, td.gsc-search-button, td.gsc-clear-button {border: none; padding: 0;}.gsst_a .gscb_a {color: #000;}.gsst_a .gscb_a:hover {color: #000;}.gsc-control-cse {max-height: 850px; overflow-y: auto; border:none; background-color: transparent;}.gsc-results-wrapper-overlay {background-color:transparent;}.gsc-webResult.gsc-result{border:none;}.gsc-above-wrapper-area {border:none; padding: 5px 0 5px 0;}
+                </style>
+                <script async src="https://cse.google.com/cse.js?cx=017553474198412024421:c_qxiweliao"></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <main>
+        <header class="py-5 overflow-hidden">
+          <div class="container px-4 px-lg-3 mt-5 position-relative">
+            <img src="/assets/images/chart.png" width=600 height=300 class="chart-left d-none d-lg-block" loading="eager"
+              title="An example of a CanvasXpress visualization showing a complex data plot with multiple data points and interactive elements."
+              alt="An example of a CanvasXpress visualization showing a complex data plot with multiple data points and interactive elements.">
+            <img src="/assets/images/chart.png" width=600 height=300 class="chart-right d-none d-lg-block" loading="eager"
+              title="An example of a CanvasXpress visualization showing a complex data plot with multiple data points and interactive elements."
+              alt="An example of a CanvasXpress visualization showing a complex data plot with multiple data points and interactive elements.">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-lg-10 text-center mx-auto">
+                <h1 class="main-hero text-primary">&nbsp;&nbsp;&nbsp;&nbsp;CanvasXpress&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                <p class="lead mb-5 submain-hero">An advanced JavaScript library for interactive
+                  data visualization, meticulously crafted for scientific and biomedical research.
+                </p>
+                <div class="main-hero cnt-hero">
+                  <a href="/examples.html" class="btn btn-hero nav-link-rounded-yellow">Examples →</a>
+                  <a href="/documentation.html" class="btn btn-hero-yellow nav-link-rounded-yellow">Documentation →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section id="about" class="container">
+          <h2 class="font-xxl text-primary mb-3">About CanvasXpress</h2>
+          <p class="lead text-secondary lh-base mb-2">
+            <span class="key-term">CanvasXpress</span> is a powerful, open-source JavaScript library that enables the
+            creation of
+            <strong>high-performance, interactive data visualizations</strong> directly in your web browser. Built on
+            HTML5 Canvas, it's engineered to handle the scale and complexity of modern scientific datasets, making it an
+            indispensable tool for researchers, data scientists, and developers in fields like <strong>genomics,
+            proteomics, clinical trials, and systems biology</strong>. Its comprehensive feature set and robust
+            architecture ensure that complex data can be explored, analyzed, and presented with clarity and precision.
+          </p>
+          <figure class="row justify-content-center">
+            <div class="col-md-10 d-flex">
+              <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#aboutCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#aboutCarousel" data-slide-to="1"></li>
+                  <li data-target="#aboutCarousel" data-slide-to="2"></li>
+                  <li data-target="#aboutCarousel" data-slide-to="3"></li>
+                  <li data-target="#aboutCarousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="2000">
+                    <img src="/assets/images/cX-GraphView.webp" width=100% height=auto class="d-block w-100" loading="eager"
+                      title="CanvasXpress Graph View showing a complex data visualization with interactive elements showing a Scatter Plot"
+                      alt="CanvasXpress Graph View showing a complex data visualization with interactive elements showing a Scatter Plot">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3 class="font-xxl text-primary">Graph View</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                    <img src="/assets/images/cX-TableView.webp" width=100% height=auto class="d-block w-100" loading="eager"
+                      title="CanvasXpress Table View displaying the underlying data in a structured format with sortable columns and filterable rows."
+                      alt="CanvasXpress Table View displaying the underlying data in a structured format with sortable columns and filterable rows.">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3 class="font-xxl text-primary">Table View</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                    <img src="/assets/images/cX-ConfigureView.webp" width=100% height=auto class="d-block w-100" loading="eager"
+                      title="CanvasXpress Configure View for customizing plot parameters with an intuitive interface for adjusting colors, sizes, and other visualization properties."
+                      alt="CanvasXpress Configure View for customizing plot parameters with an intuitive interface for adjusting colors, sizes, and other visualization properties.">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3 class="font-xxl text-primary">Configure View</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                    <img src="/assets/images/cX-LayoutView.webp" width=100% height=auto class="d-block w-100" loading="eager"
+                      title="CanvasXpress Layout View an alternative view with filters and data table for sorting and analyzing complex datasets."
+                      alt="CanvasXpress Layout View an alternative view with filters and data table for sorting and analyzing complex datasets.">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3 class="font-xxl text-primary">Layout View</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                    <img src="/assets/images/cX-ExploreView.webp" width=100% height=auto class="d-block w-100" loading="eager"
+                      title="CanvasXpress Explore View for interactive data analysis with filtering, sorting, and statistical operations."
+                      alt="CanvasXpress Explore View for interactive data analysis with filtering, sorting, and statistical operations.">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3 class="font-xxl text-primary">Explore View</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </section>
+
+        <section id="what-is" class="container">
+          <h2 class="font-xxl text-primary mb-3">What is CanvasXpress?</h2>
+          <dl class="definition-list">
+            <dt>Definition</dt>
+            <dd>
+              <p>CanvasXpress is an open-source JavaScript library that leverages HTML5 Canvas technology to create
+                interactive, high-performance data visualizations specifically designed for scientific and biomedical
+                research applications.</p>
+            </dd>
+            <dt>Core Purpose</dt>
+            <dd>
+              <p>The primary purpose of CanvasXpress is to enable researchers, data scientists, and developers to
+                visualize, explore, and analyze complex scientific datasets through intuitive, interactive graphical
+                representations.</p>
+            </dd>
+            <dt>Key Differentiators</dt>
+            <dd>
+              <ul class="list-unstyled">
+                <li>• Specialized focus on scientific and biomedical data visualization needs</li>
+                <li>• Built-in support for large-scale datasets common in genomics and proteomics</li>
+                <li>• Comprehensive set of visualization types specifically for scientific research</li>
+                <li>• Seamless integration with popular scientific programming languages (R, Python)</li>
+                <li>• Advanced interactive features for data exploration without custom coding</li>
+              </ul>
+            </dd>
+          </dl>
+          <div class="entity-relationship">
+            <div class="entity">CanvasXpress</div>
+            <div class="relationship">powers</div>
+            <div class="entity">Scientific Visualization</div>
+            <div class="relationship">enables</div>
+            <div class="entity">Data-Driven Discovery</div>
+          </div>
+        </section>
+
+        <section id="features" class="container">
+          <h2 class="font-xxl text-primary mb-3">Key Features & Capabilities</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4 mb-2">
+              <div class="card h-100 shadow-sm d-flex flex-column">
+                <div class="card-body">
+                  <h3 class="card-title fw-semibold text-dark mb-2">Comprehensive Graph Types</h3>
+                  <p class="card-text text-secondary mb-2">Access a vast array of visualization options to suit any data
+                    story:</p>
+                  <ul class="list-unstyled text-secondary mb-3">
+                    <li>• Over 40 built-in <span class="key-term">graph types</span> including Bar, Line, Scatter2D/3D,
+                      Heatmap, Boxplot,
+                      Violin, Sankey, and more.</li>
+                    <li>• Specialized scientific plots like <span class="key-term">Dendrograms</span>, <span
+                        class="key-term">Volcano plots</span>, and <span class="key-term">Kaplan-Meier curves</span>.</li>
+                    <li>• Support for <span class="key-term">one-dimensional</span>, <span
+                        class="key-term">multi-dimensional</span>, and
+                      <span class="key-term">combined graph types</span>.
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-auto p-1">
+                  <div class="text-end">
+                    <a href="/examples.html" target="_blank" rel="noopener noreferrer"
+                      class="text-decoration-none text-primary small">See Chart Examples →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-2">
+              <div class="card h-100 shadow-sm d-flex flex-column">
+                <div class="card-body">
+                  <h3 class="card-title fw-semibold text-dark mb-2">Rich Interactivity & Exploration</h3>
+                  <p class="card-text text-secondary mb-2">Empower users to deeply explore data with intuitive controls:
+                  </p>
+                  <ul class="list-unstyled text-secondary mb-3">
+                    <li>• Built-in <span class="key-term">zooming, panning, filtering, and data point selection</span>.
+                    </li>
+                    <li>• <span class="key-term">Cross-talk and broadcasting</span> capabilities for linked plots.</li>
+                    <li>• Dynamic <span class="key-term">data transformation</span> (log2, z-score, percentile) and <span
+                        class="key-term">data
+                        sorting</span>.</li>
+                    <li>• Interactive <span class="key-term">decorations</span> and <span class="key-term">regression
+                        fits</span> (linear, loess,
+                      quantile).</li>
+                  </ul>
+                </div>
+                <div class="mt-auto p-1">
+                  <div class="text-end">
+                    <a href="/wrangling.html" target="_blank" rel="noopener noreferrer"
+                      class="text-decoration-none text-primary small">See Interactive Demos →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-2">
+              <div class="card h-100 shadow-sm d-flex flex-column">
+                <div class="card-body">
+                  <h3 class="card-title fw-semibold text-dark mb-2">Scientific & Reproducible Research Focus</h3>
+                  <p class="card-text text-secondary mb-2">Designed from the ground up for the demands of scientific data:
+                  </p>
+                  <ul class="list-unstyled text-secondary mb-3">
+                    <li>• Optimized for <span class="key-term">large-scale and complex scientific datasets</span>.</li>
+                    <li>• Automatic <span class="key-term">audit trail</span> for all data manipulations and plot
+                      configurations,
+                      ensuring reproducibility.</li>
+                    <li>• Features for <span class="key-term">clustering</span> (samples, variables) and <span
+                        class="key-term">data faceting</span>
+                      (segregate by).</li>
+                  </ul>
+                </div>
+                <div class="mt-auto p-1">
+                  <div class="text-end">
+                    <a href="/audit.html" target="_blank" rel="noopener noreferrer"
+                      class="text-decoration-none text-primary small">Learn about
+                      Reproducibility →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="applications" class="container">
+          <h2 class="font-xxl text-primary mb-3">Applications & Use Cases</h2>
+          <p class="lead text-secondary lh-base mb-4">
+            CanvasXpress is the visualization solution of choice for domains requiring high-fidelity, interactive data
+            exploration and presentation.
+          </p>
+          <div class="row g-4">
+            <div class="col-md-4 mb-2">
+              <div class="card h-100 shadow-sm d-flex flex-column">
+                <div class="card-body">
+                  <h3 class="card-title h5 fw-semibold text-dark mb-2">Genomics & Proteomics</h3>
+                  <p class="card-text text-secondary">Visualize gene expression, protein abundance, mutation profiles, and
+                    multi-omics data with specialized plots like heatmaps, volcano plots, and correlation matrices.</p>
+                </div>
+                <div id="genomeCarousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#genomeCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#genomeCarousel" data-slide-to="1"></li>
+                    <li data-target="#genomeCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="2000" >
+                      <img src="/assets/images/genome1.webp" width=100% height=auto class="d-block p-3"
+                        alt="CanvasXpress showing a heatmap visualization of gene expression data with hierarchical clustering."
+                        title="CanvasXpress showing a heatmap visualization of gene expression data with hierarchical clustering."
+                        loading="lazy" decoding="async">
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                      <img src="/assets/images/genome2.webp" width=100% height=auto class="d-block p-3"
+                        alt="CanvasXpress showing a volcano plot of differential gene expression with significance thresholds."
+                        title="CanvasXpress showing a volcano plot of differential gene expression with significance thresholds."
+                        loading="lazy" decoding="async">
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                      <img src="/assets/images/genome3.webp" width=100% height=auto class="d-block p-3"
+                        alt="CanvasXpress showing a correlation matrix of multi-omics data."
+                        title="CanvasXpress showing a correlation matrix of multi-omics data." loading="lazy"
+                        decoding="async">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-2">
+              <div class="card h-100 shadow-sm d-flex flex-column">
+                <div class="card-body">
+                  <h3 class="card-title h5 fw-semibold text-dark mb-2">Clinical & Pharmaceutical Research</h3>
+                  <p class="card-text text-secondary">Track patient outcomes, analyze drug responses, and present trial
+                    data with clear, interactive charts for survival analysis, dose-response curves, and more.</p>
+                </div>
+                <div id="clinicalCarousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#clinicalCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#clinicalCarousel" data-slide-to="1"></li>
+                    <li data-target="#clinicalCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="2050">
+                      <img src="/assets/images/clinical1.webp" width=100% height=auto class="d-block p-3"
+                        alt="CanvasXpress showing a Kaplan-Meier survival curve for clinical trial data analysis."
+                        title="CanvasXpress showing a Kaplan-Meier survival curve for clinical trial data analysis."
+                        loading="lazy" decoding="async">
+                    </div>
+                    <div class="carousel-item" data-interval="2050">
+                      <img src="/assets/images/clinical2.webp" width=100% height=auto class="d-block p-3"
+                        alt="CanvasXpress showing a boxplot visualization of drug response data across different treatment groups."
+                        title="CanvasXpress showing a boxplot visualization of drug response data across different treatment groups."
+                        loading="lazy" decoding="async">
+                    </div>
+                    <div class="carousel-item" data-interval="2050">
+                      <img src="/assets/images/clinical3.webp" width=100% height=auto class="d-block p-3"
+                        alt="CanvasXpress showing a correlation matrix of clinical trial data."
+                        title="CanvasXpress showing a correlation matrix of clinical trial data." loading="lazy"
+                        decoding="async">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-2">
+              <div class="card h-100 shadow-sm d-flex flex-column">
+                <div class="card-body">
+                  <h3 class="card-title h5 fw-semibold text-dark mb-2">General Scientific Data Analysis</h3>
+                  <p class="card-text text-secondary">From physics to environmental science, CanvasXpress provides robust
+                    tools for exploratory data analysis, hypothesis testing, and publication-ready visualizations.</p>
+                </div>
+                <div id="generalCarousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#generalCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#generalCarousel" data-slide-to="1"></li>
+                    <li data-target="#generalCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="2100">
+                      <img src="/assets/images/general1.webp" width=100% height=auto class="d-block p-3"
+                        alt="CanvasXpress showing a heatmap plot."
+                        title="CanvasXpress showing a heatmap plot." loading="lazy" decoding="async">
+                    </div>
+                    <div class="carousel-item" data-interval="2100">
+                      <img src="/assets/images/general2.webp" width=100% height=auto class="d-block p-3"
+                        alt="CanvasXpress showing a volcano plot."
+                        title="CanvasXpress showing a volcano plot." loading="lazy" decoding="async">
+                    </div>
+                    <div class="carousel-item" data-interval="2100">
+                      <img src="/assets/images/general3.webp" width=100% height=auto class="d-block p-3"
+                        alt="CanvasXpress showing a boxplot."
+                        title="CanvasXpress showing a boxplot." loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="integrations" class="container">
+          <h2 class="font-xxl text-primary mb-3">Framework Integrations</h2>
+          <p class="lead text-secondary lh-base mb-4">
+            CanvasXpress is designed to fit effortlessly into your existing data science and web development workflows.
+          </p>
+
+          <div class="card h-100 shadow-sm d-flex flex-column mb-2">
+            <div class="card-body">
+              <h3 class="card-title h5 fw-semibold text-dark mb-2">R & Shiny Integration</h3>
+              <div class="row">
+                <div class="col-md-8">
+                  <p class="card-text text-secondary">Leverage the dedicated <code>canvasxpress</code> R package from <a
+                      href="https://cran.r-project.org/web/packages/canvasXpress/index.html">CRAN</a> or <a
+                      href="https://github.com/neuhausi/canvasXpress">Github</a> to create interactive plots directly from
+                    your R scripts and embed them seamlessly into <a href="http://periscopeapps.org/">Shiny</a> web
+                    applications.</p>
+                  <h4 class="h6 fw-semibold mt-3">Key Features:</h4>
+                  <ul class="text-secondary">
+                    <li>Direct integration with R data frames and matrices</li>
+                    <li>Reactive bindings for Shiny applications</li>
+                    <li>Support for R statistical functions</li>
+                    <li>Customizable through R function parameters</li>
+                    <li>Convert ggplot2 figures into CanvasXpress interactive plots</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div class="code-block">
+                    <pre><code class="prettyprint"># R code example
+library(canvasXpress)
+data <- data.frame(
+  x = c(1, 2, 3, 4, 5),
+  y = c(2, 4, 6, 8, 10)
+)
+canvasXpress(
+  data = data,
+  graphType = "Scatter2D",
+  title = "Simple Scatter Plot"
+)
+
+## Alternative using ggplot2
+library(ggplot2)
+p <- ggplot(data, aes(x = x, y = y)) +
+  geom_point() +
+  labs(title = "Simple Scatter Plot")
+canvasXpress(p)</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-100 shadow-sm d-flex flex-column mb-2">
+            <div class="card-body">
+              <h3 class="card-title h5 fw-semibold text-dark mb-2">Python & Jupyter Integration</h3>
+              <div class="row">
+                <div class="col-md-8">
+                  <p class="card-text text-secondary">Generate dynamic CanvasXpress visualizations within your <a
+                      href="https://pypi.org/project/canvasxpress/">Python scripts</a>, Jupyter notebooks, and other
+                    Python-based data analysis environments.</p>
+                  <h4 class="h6 fw-semibold mt-3">Key Features:</h4>
+                  <ul class="text-secondary">
+                    <li>Native support for pandas DataFrames and NumPy arrays</li>
+                    <li>Interactive widgets in Jupyter notebooks</li>
+                    <li>Integration with Python data science ecosystem</li>
+                    <li>Export capabilities to various formats</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div class="code-block">
+                    <pre><code class="prettyprint"># Python code example
+import canvasxpress as cx
+import pandas as pd
+
+df = pd.DataFrame({
+    'x': [1, 2, 3, 4, 5],
+    'y': [2, 4, 6, 8, 10]
+})
+
+chart = cx.CanvasXpress(
+    data=df,
+    graph_type="Scatter2D",
+    title="Simple Scatter Plot"
+)
+chart</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-100 shadow-sm d-flex flex-column mb-2">
+            <div class="card-body">
+              <h3 class="card-title h5 fw-semibold text-dark mb-2">JavaScript Framework Integration</h3>
+              <div class="row">
+                <div class="col-md-8">
+                  <p class="card-text text-secondary">Integrate CanvasXpress directly into any modern web application
+                    using
+                    vanilla JavaScript or frameworks like <a
+                      href="https://www.npmjs.com/package/canvasxpress-react">React</a>, <a
+                      href="https://github.com/neuhausi/canvasXpress-vue">Vue</a> or <a
+                      href="https://www.npmjs.com/package/canvasxpress">Angular</a>.</p>
+                  <h4 class="h6 fw-semibold mt-3">Key Features:</h4>
+                  <ul class="text-secondary">
+                    <li>Component-based integration for modern frameworks</li>
+                    <li>Event handling and two-way data binding</li>
+                    <li>Customizable through props/attributes</li>
+                    <li>Support for dynamic data updates</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div class="code-block">
+                    <pre><code class="prettyprint">// React component example
+import CanvasXpress from 'canvasxpress-react';
+
+function ScatterPlot() {
+  const data = [
+    ['Id', 'Sample1', 'Sample2'],
+    ['A', 1, 2],
+    ['B', 3, 4],
+    ['C', 5, 6]
+  ];
+
+  return (
+    &lt;CanvasXpress
+      data={data}
+      graphType="Scatter2D"
+      title="Sample Plot"
+    /&gt;
+  );
+}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="ai-integration" class="container">
+          <h2 class="font-xxl text-primary mb-3">AI & LLM Integration</h2>
+          <p class="lead text-secondary lh-base mb-4">
+            Leverage the power of generative AI to create visualizations effortlessly. Access these capabilities directly
+            from <strong class="key-term">any existing CanvasXpress visualization</strong> or by simply <strong
+              class="key-term">dragging and dropping a tab-delimited file</strong> onto a chart. Use simple text prompts
+            to generate new plots or get instant explanations for any parameter.
+          </p>
+          <div class="row g-4">
+            <div class="col-md-6 mb-2">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title h5 fw-semibold text-dark mb-3">Generate Visualizations with Natural Language</h3>
+                  <div class="use-case">
+                    <p class="use-case-problem">Problem: Creating complex scientific visualizations requires deep
+                      knowledge of parameters and options.</p>
+                    <p class="use-case-solution">Solution: Simply describe what you want to see in natural language.</p>
+                    <p class="mt-3">Example prompt: <em>"Create a heatmap showing gene expression levels across 5 cancer
+                        types with hierarchical clustering and a red-blue color scheme."</em></p>
+                    <p>The AI will generate the appropriate CanvasXpress configuration and render the visualization based
+                      on your description.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-2">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title h5 fw-semibold text-dark mb-3">Parameter Explanation & Recommendations</h3>
+                  <div class="use-case">
+                    <p class="use-case-problem">Problem: Understanding the purpose and optimal settings for visualization
+                      parameters can be challenging.</p>
+                    <p class="use-case-solution">Solution: Ask the AI to explain any parameter or recommend optimal
+                      settings.</p>
+                    <p class="mt-3">Example query: <em>"What does the 'segregateBy' parameter do in a boxplot, and when
+                        should I use it?"</em></p>
+                    <p>The AI will provide a clear explanation of the parameter's function, use cases, and recommendations
+                      for your specific visualization needs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-4 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 fw-semibold text-dark mb-3">AI-Powered Visualization Workflow</h3>
+              <ol class="step-by-step">
+                <li>
+                  <strong>Access the AI Assistant</strong> by opening the AI panel in any CanvasXpress chart or by
+                  dragging and dropping a tab-delimited file onto it.
+                </li>
+                <li>
+                  <strong>Describe your visualization needs</strong> in natural language, specifying the data type,
+                  visualization style, and any special requirements.
+                </li>
+                <li>
+                  <strong>Review the generated visualization</strong> and provide feedback for refinements if needed.
+                </li>
+                <li>
+                  <strong>Ask for explanations</strong> about specific features or parameters to better understand the
+                  visualization.
+                </li>
+                <li>
+                  <strong>Export the configuration</strong> as code for use in your R, Python, or JavaScript projects.
+                </li>
+              </ol>
+            </div>
+            <div class="mt-auto p-1">
+              <div class="text-end">
+                <a href="/llm.html" target="_blank" rel="noopener noreferrer"
+                  class="text-decoration-none text-primary small">Give it a try →</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="why-canvasxpress" class="container">
+          <h2 class="font-xxl text-primary mb-3">Why Choose CanvasXpress?</h2>
+          <p class="lead text-secondary lh-base mb-4">
+            While many visualization libraries exist, CanvasXpress stands out with its unique focus and capabilities
+            tailored for demanding scientific applications.
+          </p>
+          <h3 class="h5 fw-semibold text-dark mb-3">CanvasXpress vs. Other Visualization Libraries</h3>
+          <div class="table-responsive mb-4">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th class="font-dark">Feature</th>
+                  <th class="font-dark">CanvasXpress</th>
+                  <th class="font-dark">General-Purpose Libraries</th>
+                  <th class="font-dark">Other Scientific Libraries</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="/examples.html" class="text-primary font-underline">Scientific
+                      visualization focus</a></td>
+                  <td class="feature-yes">Built specifically for scientific data</td>
+                  <td class="feature-partial">Limited scientific capabilities</td>
+                  <td class="feature-partial">Varies by library</td>
+                </tr>
+                <tr>
+                  <td><a href="/interactive.html"
+                      class="text-primary font-underline">Out-of-the-box interactivity</a></td>
+                  <td class="feature-yes">Comprehensive interactive features</td>
+                  <td class="feature-partial">Basic interactivity, requires custom code</td>
+                  <td class="feature-partial">Limited interactive features</td>
+                </tr>
+                <tr>
+                  <td><a href="/design.html" class="text-primary font-underline">Large dataset
+                      performance</a></td>
+                  <td class="feature-yes">Optimized for large scientific datasets</td>
+                  <td class="feature-partial">Performance varies</td>
+                  <td class="feature-partial">Often limited by browser</td>
+                </tr>
+                <tr>
+                  <td><a href="/audit.html" class="text-primary font-underline">Reproducibility
+                      features</a></td>
+                  <td class="feature-yes">Built-in audit trail</td>
+                  <td class="feature-no">Not available</td>
+                  <td class="feature-partial">Limited capabilities</td>
+                </tr>
+                <tr>
+                  <td><a href="/broadcast.html" class="text-primary font-underline">Cross-talk /
+                      Linked Plots</a></td>
+                  <td class="feature-yes">Built-in for linked visualizations</td>
+                  <td class="feature-partial">Requires custom implementation</td>
+                  <td class="feature-partial">Varies, often limited</td>
+                </tr>
+                <tr>
+                  <td><a href="#integrations" class="text-primary font-underline">R & Python
+                      integration</a></td>
+                  <td class="feature-yes">Native packages with full feature support</td>
+                  <td class="feature-partial">Basic bindings available</td>
+                  <td class="feature-partial">Varies by library</td>
+                </tr>
+                <tr>
+                  <td><a href="/llm.html" class="text-primary font-underline">AI & LLM
+                      integration</a></td>
+                  <td class="feature-yes">Built-in AI capabilities</td>
+                  <td class="feature-no">Not available</td>
+                  <td class="feature-no">Rarely available</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="faq" class="container">
+          <h2 class="font-xxl text-primary mb-3">Frequently Asked Questions</h2>
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <h3 class="faq-question h5" itemprop="name">What is CanvasXpress?</h3>
+            <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+              <p itemprop="text" class="text-secondary">CanvasXpress is a powerful, open-source JavaScript library that
+                enables the creation of high-performance, interactive data visualizations directly in your web browser.
+                Built on HTML5 Canvas, it's engineered to handle the scale and complexity of modern scientific datasets,
+                making it an indispensable tool for researchers, data scientists, and developers in fields like genomics,
+                proteomics, clinical trials, and systems biology.</p>
+            </div>
+          </div>
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <h3 class="faq-question h5" itemprop="name">What types of visualizations does CanvasXpress support?</h3>
+            <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+              <p itemprop="text" class="text-secondary">CanvasXpress supports over 40 built-in graph types including Bar,
+                Line, Scatter2D/3D, Heatmap, Boxplot, Violin, Sankey, and specialized scientific plots like Dendrograms,
+                Volcano plots, and Kaplan-Meier curves. It supports one-dimensional, multi-dimensional, and combined graph
+                types to visualize virtually any type of scientific data.</p>
+            </div>
+          </div>
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <h3 class="faq-question h5" itemprop="name">How can I integrate CanvasXpress with R or Python?</h3>
+            <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+              <p itemprop="text" class="text-secondary">For R integration, you can use the dedicated 'canvasxpress' R
+                package available from CRAN or GitHub to create interactive plots directly from your R scripts and embed
+                them seamlessly into Shiny web applications. For Python integration, you can generate dynamic CanvasXpress
+                visualizations within your Python scripts, Jupyter notebooks, and other Python-based data analysis
+                environments using the Python package available on PyPI.</p>
+            </div>
+          </div>
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <h3 class="faq-question h5" itemprop="name">Is CanvasXpress suitable for large datasets?</h3>
+            <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+              <p itemprop="text" class="text-secondary">Yes, CanvasXpress is specifically optimized for large scientific
+                datasets. By leveraging HTML5 Canvas technology rather than SVG, it maintains high performance even when
+                visualizing thousands of data points. The library includes built-in data transformation capabilities,
+                efficient rendering algorithms, and memory management techniques that make it particularly well-suited for
+                the scale of data common in genomics, proteomics, and other scientific domains.</p>
+            </div>
+          </div>
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <h3 class="faq-question h5" itemprop="name">What makes CanvasXpress different from other visualization
+              libraries?</h3>
+            <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+              <p itemprop="text" class="text-secondary">Unlike general-purpose libraries, CanvasXpress is built
+                specifically for scientific data visualization with specialized graph types and analytical features. It
+                provides rich, out-of-the-box interactive features without extensive custom coding, includes a unique
+                audit trail feature for reproducibility, and leverages HTML5 Canvas for superior performance with large
+                datasets. Its integration with scientific programming languages like R and Python makes it particularly
+                valuable in research workflows.</p>
+            </div>
+          </div>
+          <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+            <h3 class="faq-question h5" itemprop="name">Does CanvasXpress support AI and LLM integration?</h3>
+            <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+              <p itemprop="text" class="text-secondary">Yes, CanvasXpress integrates with AI and LLM technologies to
+                enable visualization generation from simple text prompts and provide instant explanations for any
+                parameter. This allows users to describe the data and chart they want to see, and the integrated AI will
+                generate a CanvasXpress visualization automatically. The AI can also explain complex parameters, recommend
+                optimal settings, and help users understand their data better through natural language interaction.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="tutorials" class="container">
+          <h2 class="font-xxl text-primary mb-3">Step-by-Step Tutorials</h2>
+          <p class="lead text-secondary lh-base mb-4">
+            Learn how to create powerful visualizations with these structured, sequential tutorials.
+          </p>
+
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 fw-semibold text-dark mb-3">Creating Your First Heatmap</h3>
+              <ol class="step-by-step">
+                <li>
+                  <strong>Prepare your data</strong>
+                  <p>Format your data as a matrix with rows representing variables (e.g., genes) and columns representing
+                    samples. Each cell contains a value (e.g., expression level).</p>
+                  <div class="code-block">
+                    <pre><code class="prettyprint">// Example data structure
+const data = [
+  ["Gene", "Gene1", "Gene2", "Gene3"],
+  ["Sample1", 1.2, 2.3, 0.8],
+  ["Sample2", 3.1, 1.5, 2.7],
+  ["Sample3", 0.5, 1.9, 3.2]
+];</code></pre>
+                  </div>
+                </li>
+                <li>
+                  <strong>Create a basic heatmap</strong>
+                  <p>Initialize CanvasXpress with your data and specify "Heatmap" as the graph type.</p>
+                  <div class="code-with-image">
+                    <pre><code class="prettyprint">new CanvasXpress({
+  renderTo: "canvasId",  // ID of the container element
+  data: data,
+  config: {
+    graphType: "Heatmap",
+    xAxis: ["Gene1", "Gene2", "Gene3"],
+    colorSpectrum: ["blue", "white", "red"]
+  }
+});</code></pre>
+                    <div class="image-container">
+                      <img src="/assets/images/heatmap1.webp" width=200px height=auto class="img-fluid" style="max-width: 200px;"
+                        alt="Heatmap visualization of gene expression data"
+                        title="Heatmap visualization of gene expression data"
+                        loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <strong>Add hierarchical clustering</strong>
+                  <p>Enable clustering to group similar samples and variables together.</p>
+                  <div class="code-with-image">
+                    <pre><code class="prettyprint">new CanvasXpress({
+  renderTo: "canvasId",  // ID of the container element
+  data: data,
+  config: {
+    graphType: "Heatmap",
+    xAxis: ["Gene1", "Gene2", "Gene3"],
+    colorSpectrum: ["blue", "white", "red"],
+
+    // Add clustering
+    samplesClustered: true,
+    variablesClustered: true,
+    dendrogramSpace: 50
+  }
+});</code></pre>
+                    <div class="image-container">
+                      <img src="/assets/images/heatmap2.webp" width=200px height=auto class="img-fluid" style="max-width: 200px;"
+                        alt="Heatmap with clustering"
+                        title="Heatmap with clustering"
+                        loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <strong>Customize the appearance</strong>
+                  <p>Adjust colors, labels, and other visual elements to enhance readability.</p>
+                  <div class="code-with-image">
+                    <pre><code class="prettyprint">new CanvasXpress({
+  renderTo: "canvasId",  // ID of the container element
+  data: data,
+  config: {
+    graphType: "Heatmap",
+    xAxis: ["Gene1", "Gene2", "Gene3"],
+    colorSpectrum: ["blue", "white", "red"],
+    samplesClustered: true,
+    variablesClustered: true,
+    dendrogramSpace: 50,
+
+    // Customizations
+    title: "Gene Expression Heatmap",
+    smpTextRotate: -45,
+    heatmapIndicatorWidth: 300,
+    heatmapIndicatorHeight: 50
+  }
+});</code></pre>
+                    <div class="image-container">
+                      <img src="/assets/images/heatmap3.webp" width=200px height=auto class="img-fluid" style="max-width: 200px;"
+                        alt="Customized heatmap visualization"
+                        title="Customized heatmap visualization"
+                        loading="lazy" decoding="async">
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="comparison" class="container">
+          <h2 class="font-xxl text-primary mb-3">Library Comparison</h2>
+          <p class="lead text-secondary lh-base mb-4">
+            See how CanvasXpress compares to other popular visualization libraries across key dimensions.
+          </p>
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th class="font-dark">Feature</th>
+                  <th class="font-dark">CanvasXpress</th>
+                  <th class="font-dark">D3.js</th>
+                  <th class="font-dark">Plotly</th>
+                  <th class="font-dark">Chart.js</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Learning Curve</td>
+                  <td class="feature-partial">Moderate</td>
+                  <td class="feature-no">Steep</td>
+                  <td class="feature-partial">Moderate</td>
+                  <td class="feature-yes">Gentle</td>
+                </tr>
+                <tr>
+                  <td>Scientific Visualization Focus</td>
+                  <td class="feature-yes">High</td>
+                  <td class="feature-partial">Medium</td>
+                  <td class="feature-partial">Medium</td>
+                  <td class="feature-no">Low</td>
+                </tr>
+                <tr>
+                  <td>Built-in Graph Types</td>
+                  <td class="feature-yes">40+</td>
+                  <td class="feature-no">Custom only</td>
+                  <td class="feature-yes">40+</td>
+                  <td class="feature-partial">8</td>
+                </tr>
+                <tr>
+                  <td>R Integration</td>
+                  <td class="feature-yes">Native package</td>
+                  <td class="feature-partial">Via htmlwidgets</td>
+                  <td class="feature-yes">Native package</td>
+                  <td class="feature-no">Limited</td>
+                </tr>
+                <tr>
+                  <td>Python Integration</td>
+                  <td class="feature-yes">Native package</td>
+                  <td class="feature-partial">Via libraries</td>
+                  <td class="feature-yes">Native package</td>
+                  <td class="feature-no">Limited</td>
+                </tr>
+                <tr>
+                  <td>Large Dataset Performance</td>
+                  <td class="feature-yes">Excellent</td>
+                  <td class="feature-partial">Good</td>
+                  <td class="feature-partial">Good</td>
+                  <td class="feature-no">Limited</td>
+                </tr>
+                <tr>
+                  <td>Customization Flexibility</td>
+                  <td class="feature-yes">High</td>
+                  <td class="feature-yes">Very High</td>
+                  <td class="feature-partial">Medium</td>
+                  <td class="feature-partial">Medium</td>
+                </tr>
+                <tr>
+                  <td>Cross-talk / Linked Plots</td>
+                  <td class="feature-yes">Built-in</td>
+                  <td class="feature-no">Requires custom code</td>
+                  <td class="feature-no">Requires custom code</td>
+                  <td class="feature-no">Requires custom code</td>
+                </tr>
+                <tr>
+                  <td>AI/LLM Integration</td>
+                  <td class="feature-yes">Built-in</td>
+                  <td class="feature-no">None</td>
+                  <td class="feature-no">None</td>
+                  <td class="feature-no">None</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <div class="py-1 mt-lg-1 body-footer">
+        <div class="container px-4 px-lg-3" py-lg-1 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 text-center mx-auto mb-5">
+              <section class="pt-0 pb-0">
+                <div class="row d-flex">
+                  <div class="col-md-6 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2">
+                      <a href="/">
+                        <img src="/assets/images/CanvasXpress-Logo-Horizontal-White.svg" width="282" height="35" title="CanvasXpress Logo" alt="CanvasXpress Logo" loading="lazy"/>
+                      </a>
+                    </div>
+                    <p class="text-footer">CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface. Full and effortless audit trail of data, configuration and all user interactions in every visualization.</p>
+                    <p class="rights text-footer">©2025 All Rights Reserved. CanvasXpress®</p>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Documentation</div>
+                    <a href="/examples.html" class="fade-page link-footer">Examples</a>
+                    <a href="/documentation.html" class="fade-page link-footer">Docs</a>
+                    <a href="/parameters.html" class="fade-page link-footer">Api</a>
+                    <a href="/updates.html" class="fade-page link-footer">Updates</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Company</div>
+                    <a href="/contact.html" class="fade-page link-footer">Contact</a>
+                    <a href="/licenseCommercial.html" class="fade-page link-footer">License</a>
+                    <a href="/apps/dashboard.html" class="fade-page link-footer">Admin</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Information</div>
+                    <a href="/terms.html" class="fade-page link-footer">Terms of Use</a>
+                    <a href="/privacy.html" class="fade-page link-footer">Privacy policy</a>
+                    <a href="/references.html" class="fade-page link-footer">References</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</a>
+
+    <!-- Site JavaScript -->
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script>
+      setTimeout(function() {
+        var elementToObserve = document.getElementsByClassName("gsc-expansionArea")[0];
+        var observer = new MutationObserver(function(mutations) {
+          var val = document.getElementById("gs_tti50").firstChild.value;
+          mutations.forEach(function(mutation) {
+
+          });
+        });
+        if (elementToObserve) { observer.observe(elementToObserve, { attributes: true, childList: true, characterData: true }); }
+      }, 500);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+  </body>
+
+</html>

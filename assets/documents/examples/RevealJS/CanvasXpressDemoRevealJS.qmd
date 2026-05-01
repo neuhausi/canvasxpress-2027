@@ -1,0 +1,96 @@
+---
+title: "CanvasXpress Demo with Reveal JS"
+author: "Isaac Neuhaus"
+format: revealjs
+editor: visual
+---
+
+## CanvasXpress in Reveal JS
+
+```{r setup, include=FALSE}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("canvasXpress" %in% installed.packages())) {
+    install.packages('canvasXpress')
+}
+library('canvasXpress')
+```
+
+This demo shows the ability to easily integrate CanvasXpress with ggplot in R and create a presentation in Reveal JS
+
+## Scatter2d Plot
+
+-   Data: mpg dataset
+-   Plot with ggplot
+-   Plot with CanvasXpress
+
+## Data: mpg dataset
+
+This dataset contains a subset of the fuel economy data that the EPA makes available on https://fueleconomy.gov/. It contains only models which had a new release every year between 1999 and 2008 - this was used as a proxy for the popularity of the car.
+
+```{r}
+head(mpg)
+```
+
+## Plot Scatter2D with ggplot
+
+Compare displacement (displ) vs highway efficiency (hwy) and color the data by vehicle class (class). Store the ggplot object in a variable.
+
+```{r}
+s = ggplot(mpg, aes(displ, hwy)) + geom_point(aes(color = class))
+s
+```
+
+## Plot Scatter 2D with CanvasXpress
+
+Use the ggplot object stored in the variable 's' and plot with CanvasXpress
+
+```{r}
+canvasXpress(s)
+```
+
+You may want to make this page somehow **BIG** for this demo!
+
+-   **Tooltips** -- Mouseover data points
+
+-   **Toolbar** -- Mouseover top of the plot
+
+    Funnel & Tools
+
+## Boxplot
+
+-   Plot with ggplot
+-   Plot with CanvasXpress
+
+## Plot Boxplot with ggplot
+
+Look at the distribution of the highway millage (hwy) in each of the vehicle classes (class)
+
+```{r}
+b <- ggplot(mpg, aes(class, hwy)) + geom_boxplot() + geom_jitter()
+b
+```
+
+## Plot Boxplot with CanvasXpress
+
+Use the ggplot object stored in the variable 'b' and plot with CanvasXpress
+
+```{r}
+canvasXpress(b)
+```
+
+## Demo
+
+-   **Broadcast** -- Go to the Scatter 2D plot above
+
+    1.  Press 'Shift' and drag the mouse to select points in the vissualization (they should turn red)
+
+    2.  Go to the Boxplot visualization below and check out the selected data points!
+
+## This is something cool!
+
+**Double-Click on the image**
+
+![](Debug/cX-bar4.png){.CanvasXpress}

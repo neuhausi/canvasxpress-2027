@@ -1,0 +1,8 @@
+id1	id2	thickness
+Id1	Id2	3
+Id2	Id3	3
+Id3	Id4	3
+Id0	Id1	3
+Id2	Id0	3
+Id3	Id5	3
+Id0	Id5	3

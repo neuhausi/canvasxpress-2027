@@ -1,0 +1,108 @@
+---
+title: "CanvasXpress Faceted"
+author: "Isaac Neuhaus"
+date: "06/04/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+
+```{r setup}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("devtools" %in% installed.packages())) {
+    install.packages('devtools')
+}
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library('canvasXpress')
+```
+
+
+This demo shows the ability to create facets with CanvasXpress through ggplot.
+
+## Scatter2d Plot
+### Data: mpg dataset
+
+### ggplot
+```{r}
+w <- ggplot(mpg, aes(displ, hwy)) + geom_point() + facet_wrap(~class, ncol = 3)
+w
+```
+
+### canvasXpress
+```{r}
+canvasXpress(w)
+```
+
+### ggplot
+```{r}
+g <- ggplot(mpg, aes(displ, hwy)) + geom_point() + facet_grid(. ~cyl)
+g
+```
+
+### canvasXpress
+```{r}
+canvasXpress(g)
+```
+
+### ggplot
+```{r}
+g2 <- ggplot(mpg, aes(displ, hwy)) + geom_point() + facet_grid(drv ~ .)
+g2
+```
+
+### canvasXpress
+```{r}
+canvasXpress(g2)
+```
+
+### ggplot
+```{r}
+g3 <- ggplot(mpg, aes(displ, hwy)) + geom_point() + facet_grid(drv ~ cyl)
+g3
+```
+
+### canvasXpress
+```{r}
+canvasXpress(g3)
+```
+
+### ggplot
+```{r}
+mean_wt <- data.frame(cyl = c(4, 6, 8), wt = c(2.28, 3.11, 4.00))
+g4 <- ggplot(mtcars, aes(mpg, wt)) + geom_point() + facet_wrap(~ cyl) + geom_hline(aes(yintercept = wt), mean_wt)
+g4
+```
+
+### canvasXpress
+```{r}
+canvasXpress(g4)
+```
+
+###ggplot
+```{r}
+mean_wt <- data.frame(cyl = c(4, 6, 8), wt = c(2.28, 3.11, 4.00))
+g5 <- ggplot(mtcars, aes(mpg, wt, colour = wt)) + geom_point() + geom_hline(aes(yintercept = wt, colour = wt), mean_wt) + facet_wrap(~ cyl)
+g5
+```
+
+### canvasXpress
+```{r}
+canvasXpress(g5)
+```
+
+
+### Senssion Info
+```{r}
+sessionInfo()
+```
+

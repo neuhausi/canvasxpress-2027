@@ -1,0 +1,243 @@
+---
+title: "CanvasXpress Matrix Data Options"
+output:
+  html_document:
+    theme: cerulean
+    self_contained: yes
+---
+
+## Import Core Packages for this Demo
+
+```{python}
+from canvasxpress.canvas import CanvasXpress
+from canvasxpress.render.jupyter import CXNoteBook
+import pandas as pd
+import requests
+from uuid import uuid4
+import json
+```
+
+## Common Chart Components
+
+Establish essential configurations to avoid chart creation repetition:
+
+```{python}
+mpg_cx_config = {
+    "aes": {
+        "x": "displ",
+        "y": "hwy",
+        "color": "class"
+    },
+    "colorBy": "class",
+    "graphOrientation": "vertical",
+    "graphType": "Scatter2D",
+    "isCxplot": True,
+    "remoteTransitionEffect": "none",
+    "smpLabelRotate": 90,
+    "sortOnGrouping": "ascending",
+    "theme": "GGPlot",
+    "transformAxis": False,
+    "widthFactor": 2,
+    "xAxis": ["displ"],
+    "xAxisTitle": "displ",
+    "yAxis": ["hwy"],
+    "yAxisTitle": "hwy",
+}
+
+mpg_cx_after_render = [
+    [
+        "geom_point",
+        [
+            {
+                "color": "class"
+            },
+            None,
+            None
+        ],
+    ],
+    [
+        "gg_labels",
+        [
+            {
+                "xAxisTitle": "displ",
+                "yAxisTitle": "hwy"
+            }
+        ],
+    ],
+    [
+        "drawRangesAfterWheelEvent",
+        [None,None,None,None,0],
+    ],
+    [
+        "clickGraphMaxMin",
+        [False,False,True],
+    ]
+]
+```
+
+
+## XYZ data dict
+
+Arrange data into a Python dict formatted to CanvasXpress XYZ.
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+mpg_df = pd.read_csv("https://raw.githubusercontent.com/sidsriv/Introduction-to-Data-Science-in-python/master/mpg.csv", index_col=0)
+
+mpg_xyz_data = {
+    "y": {
+        "vars": ["displ","hwy"],
+        "smps": [i+1 for i in range(mpg_df.index.size)],
+        "data": [
+            mpg_df["displ"].to_list(),
+            mpg_df["hwy"].to_list(),
+        ]
+    },
+    "x": {
+        factor: mpg_df[factor].to_list()
+        for factor in mpg_df.columns
+        if factor not in ["displ", "hwy"]
+    },
+}
+
+example_df_cx = CanvasXpress(
+    render_to=str(uuid4()),
+    data=mpg_xyz_data,
+    config = mpg_cx_config,
+    after_render = mpg_cx_after_render,
+    width=500,
+    height=400,
+)
+
+example_df_cx_renderer = CXNoteBook(example_df_cx)
+example_df_cx_renderer.render()
+```
+
+## URL pass-through to CanvasXpress
+
+Obtain the CSV data as a URL (text) and pass it through to CanvasXpress:
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+from canvasxpress.data.url import CXUrlData
+
+example_mpg_csv_df = CanvasXpress(
+    render_to=str(uuid4()),
+    data=CXUrlData("https://raw.githubusercontent.com/sidsriv/Introduction-to-Data-Science-in-python/master/mpg.csv"),
+    config = mpg_cx_config,
+    after_render = mpg_cx_after_render,
+    width=500,
+    height=400,
+)
+
+example_mpg_csv_df_renderer = CXNoteBook(example_mpg_csv_df)
+example_mpg_csv_df_renderer.render()
+```
+
+
+## Raw text pass-through to CanvasXpress
+
+Obtain the CSV data as raw text and pass it through to CanvasXpress for interpretation:
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+from canvasxpress.data.text import CXTextData
+
+mpg_text = requests.get("https://raw.githubusercontent.com/sidsriv/Introduction-to-Data-Science-in-python/master/mpg.csv").content.decode("UTF-8")
+
+example_text_cx = CanvasXpress(
+    render_to=str(uuid4()),
+    data=CXTextData(mpg_text),
+    config = mpg_cx_config,
+    after_render = mpg_cx_after_render,
+    width=500,
+    height=400,
+)
+
+example_text_cx_renderer = CXNoteBook(example_text_cx)
+example_text_cx_renderer.render()
+```
+
+
+## JSON pass-through to CanvasXpress
+
+Obtain the CSV data as a CSV (text) and transform it for CanvasXpress:
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+from canvasxpress.data.keypair import CXJSONData
+
+mpg_df = pd.read_csv("https://raw.githubusercontent.com/sidsriv/Introduction-to-Data-Science-in-python/master/mpg.csv", index_col=0)
+
+mpg_xyz_data = {
+    "y": {
+        "vars": ["displ","hwy"],
+        "smps": [i+1 for i in range(mpg_df.index.size)],
+        "data": [
+            mpg_df["displ"].to_list(),
+            mpg_df["hwy"].to_list(),
+        ]
+    },
+    "x": {
+        factor: mpg_df[factor].to_list()
+        for factor in mpg_df.columns
+        if factor not in ["displ", "hwy"]
+    },
+}
+
+example_mpg_json = CanvasXpress(
+    render_to=str(uuid4()),
+    data=CXJSONData(json.dumps(mpg_xyz_data)),
+    config = mpg_cx_config,
+    after_render = mpg_cx_after_render,
+    width=500,
+    height=400,
+)
+
+example_mpg_json_renderer = CXNoteBook(example_mpg_json)
+example_mpg_json_renderer.render()
+```
+
+## Pandas DataFrame with metadata
+
+Use a Pandas DataFrame and pass with it meta X data.
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+from canvasxpress.data.matrix import CXDataframeData
+
+df_all = pd.read_csv("https://raw.githubusercontent.com/sidsriv/Introduction-to-Data-Science-in-python/master/mpg.csv", index_col=0)
+
+mpg_dfd = CXDataframeData(
+    (df_all[["displ", "hwy"]]).transpose()
+)
+
+mpg_dfd.profile.vars=["displ", "hwy"]
+mpg_dfd.profile.x = {
+    factor: df_all[factor].to_list()
+    for factor in df_all.columns
+    if factor not in ["displ", "hwy"]
+}
+
+example_dfd_cx = CanvasXpress(
+    render_to=str(uuid4()),
+    data=mpg_dfd,
+    config=mpg_cx_config,
+    after_render=mpg_cx_after_render,
+    width=500,
+    height=400,
+)
+
+example_dfd_cx = CXNoteBook(example_dfd_cx)
+example_dfd_cx.render()
+```

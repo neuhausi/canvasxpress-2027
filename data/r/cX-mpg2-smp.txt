@@ -1,0 +1,235 @@
+	class	drv	fl	manufacturer	model	trans	year
+1	compact	f	p	audi	a4	auto(l5)	1999
+2	compact	f	p	audi	a4	manual(m5)	1999
+3	compact	f	p	audi	a4	manual(m6)	2008
+4	compact	f	p	audi	a4	auto(av)	2008
+5	compact	f	p	audi	a4	auto(l5)	1999
+6	compact	f	p	audi	a4	manual(m5)	1999
+7	compact	f	p	audi	a4	auto(av)	2008
+8	compact	4	p	audi	a4 quattro	manual(m5)	1999
+9	compact	4	p	audi	a4 quattro	auto(l5)	1999
+10	compact	4	p	audi	a4 quattro	manual(m6)	2008
+11	compact	4	p	audi	a4 quattro	auto(s6)	2008
+12	compact	4	p	audi	a4 quattro	auto(l5)	1999
+13	compact	4	p	audi	a4 quattro	manual(m5)	1999
+14	compact	4	p	audi	a4 quattro	auto(s6)	2008
+15	compact	4	p	audi	a4 quattro	manual(m6)	2008
+16	midsize	4	p	audi	a6 quattro	auto(l5)	1999
+17	midsize	4	p	audi	a6 quattro	auto(s6)	2008
+18	midsize	4	p	audi	a6 quattro	auto(s6)	2008
+19	suv	r	r	chevrolet	c1500 suburban 2wd	auto(l4)	2008
+20	suv	r	e	chevrolet	c1500 suburban 2wd	auto(l4)	2008
+21	suv	r	r	chevrolet	c1500 suburban 2wd	auto(l4)	2008
+22	suv	r	r	chevrolet	c1500 suburban 2wd	auto(l4)	1999
+23	suv	r	r	chevrolet	c1500 suburban 2wd	auto(l4)	2008
+24	2seater	r	p	chevrolet	corvette	manual(m6)	1999
+25	2seater	r	p	chevrolet	corvette	auto(l4)	1999
+26	2seater	r	p	chevrolet	corvette	manual(m6)	2008
+27	2seater	r	p	chevrolet	corvette	auto(s6)	2008
+28	2seater	r	p	chevrolet	corvette	manual(m6)	2008
+29	suv	4	r	chevrolet	k1500 tahoe 4wd	auto(l4)	2008
+30	suv	4	e	chevrolet	k1500 tahoe 4wd	auto(l4)	2008
+31	suv	4	r	chevrolet	k1500 tahoe 4wd	auto(l4)	1999
+32	suv	4	d	chevrolet	k1500 tahoe 4wd	auto(l4)	1999
+33	midsize	f	r	chevrolet	malibu	auto(l4)	1999
+34	midsize	f	r	chevrolet	malibu	auto(l4)	2008
+35	midsize	f	r	chevrolet	malibu	auto(l4)	1999
+36	midsize	f	r	chevrolet	malibu	auto(l4)	2008
+37	midsize	f	r	chevrolet	malibu	auto(s6)	2008
+38	minivan	f	r	dodge	caravan 2wd	auto(l3)	1999
+39	minivan	f	r	dodge	caravan 2wd	auto(l4)	1999
+40	minivan	f	r	dodge	caravan 2wd	auto(l4)	1999
+41	minivan	f	r	dodge	caravan 2wd	auto(l4)	1999
+42	minivan	f	r	dodge	caravan 2wd	auto(l4)	2008
+43	minivan	f	r	dodge	caravan 2wd	auto(l4)	2008
+44	minivan	f	e	dodge	caravan 2wd	auto(l4)	2008
+45	minivan	f	r	dodge	caravan 2wd	auto(l4)	1999
+46	minivan	f	r	dodge	caravan 2wd	auto(l4)	1999
+47	minivan	f	r	dodge	caravan 2wd	auto(l6)	2008
+48	minivan	f	r	dodge	caravan 2wd	auto(l6)	2008
+49	pickup	4	r	dodge	dakota pickup 4wd	manual(m6)	2008
+50	pickup	4	r	dodge	dakota pickup 4wd	auto(l4)	2008
+51	pickup	4	r	dodge	dakota pickup 4wd	auto(l4)	1999
+52	pickup	4	r	dodge	dakota pickup 4wd	manual(m5)	1999
+53	pickup	4	r	dodge	dakota pickup 4wd	auto(l5)	2008
+54	pickup	4	r	dodge	dakota pickup 4wd	auto(l5)	2008
+55	pickup	4	e	dodge	dakota pickup 4wd	auto(l5)	2008
+56	pickup	4	r	dodge	dakota pickup 4wd	manual(m5)	1999
+57	pickup	4	r	dodge	dakota pickup 4wd	auto(l4)	1999
+58	suv	4	r	dodge	durango 4wd	auto(l4)	1999
+59	suv	4	r	dodge	durango 4wd	auto(l5)	2008
+60	suv	4	e	dodge	durango 4wd	auto(l5)	2008
+61	suv	4	r	dodge	durango 4wd	auto(l5)	2008
+62	suv	4	r	dodge	durango 4wd	auto(l4)	1999
+63	suv	4	r	dodge	durango 4wd	auto(l5)	2008
+64	suv	4	r	dodge	durango 4wd	auto(l4)	1999
+65	pickup	4	r	dodge	ram 1500 pickup 4wd	manual(m6)	2008
+66	pickup	4	e	dodge	ram 1500 pickup 4wd	auto(l5)	2008
+67	pickup	4	r	dodge	ram 1500 pickup 4wd	auto(l5)	2008
+68	pickup	4	r	dodge	ram 1500 pickup 4wd	auto(l5)	2008
+69	pickup	4	r	dodge	ram 1500 pickup 4wd	manual(m6)	2008
+70	pickup	4	e	dodge	ram 1500 pickup 4wd	manual(m6)	2008
+71	pickup	4	r	dodge	ram 1500 pickup 4wd	auto(l4)	1999
+72	pickup	4	r	dodge	ram 1500 pickup 4wd	manual(m5)	1999
+73	pickup	4	r	dodge	ram 1500 pickup 4wd	auto(l5)	2008
+74	pickup	4	r	dodge	ram 1500 pickup 4wd	auto(l4)	1999
+75	suv	r	r	ford	expedition 2wd	auto(l4)	1999
+76	suv	r	r	ford	expedition 2wd	auto(l4)	1999
+77	suv	r	r	ford	expedition 2wd	auto(l6)	2008
+78	suv	4	r	ford	explorer 4wd	auto(l5)	1999
+79	suv	4	r	ford	explorer 4wd	manual(m5)	1999
+80	suv	4	r	ford	explorer 4wd	auto(l5)	1999
+81	suv	4	r	ford	explorer 4wd	auto(l5)	2008
+82	suv	4	r	ford	explorer 4wd	auto(l6)	2008
+83	suv	4	r	ford	explorer 4wd	auto(l4)	1999
+84	pickup	4	r	ford	f150 pickup 4wd	auto(l4)	1999
+85	pickup	4	r	ford	f150 pickup 4wd	manual(m5)	1999
+86	pickup	4	r	ford	f150 pickup 4wd	manual(m5)	1999
+87	pickup	4	r	ford	f150 pickup 4wd	auto(l4)	1999
+88	pickup	4	r	ford	f150 pickup 4wd	auto(l4)	2008
+89	pickup	4	r	ford	f150 pickup 4wd	auto(l4)	1999
+90	pickup	4	r	ford	f150 pickup 4wd	auto(l4)	2008
+91	subcompact	r	r	ford	mustang	manual(m5)	1999
+92	subcompact	r	r	ford	mustang	auto(l4)	1999
+93	subcompact	r	r	ford	mustang	manual(m5)	2008
+94	subcompact	r	r	ford	mustang	auto(l5)	2008
+95	subcompact	r	r	ford	mustang	auto(l4)	1999
+96	subcompact	r	r	ford	mustang	manual(m5)	1999
+97	subcompact	r	r	ford	mustang	manual(m5)	2008
+98	subcompact	r	r	ford	mustang	auto(l5)	2008
+99	subcompact	r	p	ford	mustang	manual(m6)	2008
+100	subcompact	f	r	honda	civic	manual(m5)	1999
+101	subcompact	f	r	honda	civic	auto(l4)	1999
+102	subcompact	f	r	honda	civic	manual(m5)	1999
+103	subcompact	f	p	honda	civic	manual(m5)	1999
+104	subcompact	f	r	honda	civic	auto(l4)	1999
+105	subcompact	f	r	honda	civic	manual(m5)	2008
+106	subcompact	f	r	honda	civic	auto(l5)	2008
+107	subcompact	f	c	honda	civic	auto(l5)	2008
+108	subcompact	f	p	honda	civic	manual(m6)	2008
+109	midsize	f	r	hyundai	sonata	auto(l4)	1999
+110	midsize	f	r	hyundai	sonata	manual(m5)	1999
+111	midsize	f	r	hyundai	sonata	auto(l4)	2008
+112	midsize	f	r	hyundai	sonata	manual(m5)	2008
+113	midsize	f	r	hyundai	sonata	auto(l4)	1999
+114	midsize	f	r	hyundai	sonata	manual(m5)	1999
+115	midsize	f	r	hyundai	sonata	auto(l5)	2008
+116	subcompact	f	r	hyundai	tiburon	auto(l4)	1999
+117	subcompact	f	r	hyundai	tiburon	manual(m5)	1999
+118	subcompact	f	r	hyundai	tiburon	manual(m5)	2008
+119	subcompact	f	r	hyundai	tiburon	auto(l4)	2008
+120	subcompact	f	r	hyundai	tiburon	auto(l4)	2008
+121	subcompact	f	r	hyundai	tiburon	manual(m6)	2008
+122	subcompact	f	r	hyundai	tiburon	manual(m5)	2008
+123	suv	4	d	jeep	grand cherokee 4wd	auto(l5)	2008
+124	suv	4	r	jeep	grand cherokee 4wd	auto(l5)	2008
+125	suv	4	r	jeep	grand cherokee 4wd	auto(l4)	1999
+126	suv	4	r	jeep	grand cherokee 4wd	auto(l4)	1999
+127	suv	4	e	jeep	grand cherokee 4wd	auto(l5)	2008
+128	suv	4	r	jeep	grand cherokee 4wd	auto(l5)	2008
+129	suv	4	r	jeep	grand cherokee 4wd	auto(l5)	2008
+130	suv	4	p	jeep	grand cherokee 4wd	auto(l5)	2008
+131	suv	4	p	land rover	range rover	auto(l4)	1999
+132	suv	4	r	land rover	range rover	auto(s6)	2008
+133	suv	4	r	land rover	range rover	auto(s6)	2008
+134	suv	4	p	land rover	range rover	auto(l4)	1999
+135	suv	r	r	lincoln	navigator 2wd	auto(l4)	1999
+136	suv	r	p	lincoln	navigator 2wd	auto(l4)	1999
+137	suv	r	r	lincoln	navigator 2wd	auto(l6)	2008
+138	suv	4	r	mercury	mountaineer 4wd	auto(l5)	1999
+139	suv	4	r	mercury	mountaineer 4wd	auto(l5)	2008
+140	suv	4	r	mercury	mountaineer 4wd	auto(l6)	2008
+141	suv	4	r	mercury	mountaineer 4wd	auto(l4)	1999
+142	compact	f	r	nissan	altima	manual(m5)	1999
+143	compact	f	r	nissan	altima	auto(l4)	1999
+144	midsize	f	r	nissan	altima	auto(av)	2008
+145	midsize	f	r	nissan	altima	manual(m6)	2008
+146	midsize	f	p	nissan	altima	manual(m6)	2008
+147	midsize	f	p	nissan	altima	auto(av)	2008
+148	midsize	f	r	nissan	maxima	auto(l4)	1999
+149	midsize	f	r	nissan	maxima	manual(m5)	1999
+150	midsize	f	p	nissan	maxima	auto(av)	2008
+151	suv	4	r	nissan	pathfinder 4wd	auto(l4)	1999
+152	suv	4	r	nissan	pathfinder 4wd	manual(m5)	1999
+153	suv	4	p	nissan	pathfinder 4wd	auto(l5)	2008
+154	suv	4	p	nissan	pathfinder 4wd	auto(s5)	2008
+155	midsize	f	r	pontiac	grand prix	auto(l4)	1999
+156	midsize	f	p	pontiac	grand prix	auto(l4)	1999
+157	midsize	f	r	pontiac	grand prix	auto(l4)	1999
+158	midsize	f	r	pontiac	grand prix	auto(l4)	2008
+159	midsize	f	p	pontiac	grand prix	auto(s4)	2008
+160	suv	4	r	subaru	forester awd	manual(m5)	1999
+161	suv	4	r	subaru	forester awd	auto(l4)	1999
+162	suv	4	r	subaru	forester awd	manual(m5)	2008
+163	suv	4	p	subaru	forester awd	manual(m5)	2008
+164	suv	4	r	subaru	forester awd	auto(l4)	2008
+165	suv	4	p	subaru	forester awd	auto(l4)	2008
+166	subcompact	4	r	subaru	impreza awd	auto(l4)	1999
+167	subcompact	4	r	subaru	impreza awd	manual(m5)	1999
+168	subcompact	4	r	subaru	impreza awd	manual(m5)	1999
+169	subcompact	4	r	subaru	impreza awd	auto(l4)	1999
+170	compact	4	p	subaru	impreza awd	auto(s4)	2008
+171	compact	4	r	subaru	impreza awd	auto(s4)	2008
+172	compact	4	p	subaru	impreza awd	manual(m5)	2008
+173	compact	4	r	subaru	impreza awd	manual(m5)	2008
+174	suv	4	r	toyota	4runner 4wd	manual(m5)	1999
+175	suv	4	r	toyota	4runner 4wd	auto(l4)	1999
+176	suv	4	r	toyota	4runner 4wd	auto(l4)	1999
+177	suv	4	r	toyota	4runner 4wd	manual(m5)	1999
+178	suv	4	r	toyota	4runner 4wd	auto(l5)	2008
+179	suv	4	r	toyota	4runner 4wd	auto(l5)	2008
+180	midsize	f	r	toyota	camry	manual(m5)	1999
+181	midsize	f	r	toyota	camry	auto(l4)	1999
+182	midsize	f	r	toyota	camry	manual(m5)	2008
+183	midsize	f	r	toyota	camry	auto(l5)	2008
+184	midsize	f	r	toyota	camry	auto(l4)	1999
+185	midsize	f	r	toyota	camry	manual(m5)	1999
+186	midsize	f	r	toyota	camry	auto(s6)	2008
+187	compact	f	r	toyota	camry solara	auto(l4)	1999
+188	compact	f	r	toyota	camry solara	manual(m5)	1999
+189	compact	f	r	toyota	camry solara	manual(m5)	2008
+190	compact	f	r	toyota	camry solara	auto(s5)	2008
+191	compact	f	r	toyota	camry solara	auto(l4)	1999
+192	compact	f	r	toyota	camry solara	manual(m5)	1999
+193	compact	f	r	toyota	camry solara	auto(s5)	2008
+194	compact	f	r	toyota	corolla	auto(l3)	1999
+195	compact	f	r	toyota	corolla	auto(l4)	1999
+196	compact	f	r	toyota	corolla	manual(m5)	1999
+197	compact	f	r	toyota	corolla	manual(m5)	2008
+198	compact	f	r	toyota	corolla	auto(l4)	2008
+199	suv	4	r	toyota	land cruiser wagon 4wd	auto(l4)	1999
+200	suv	4	r	toyota	land cruiser wagon 4wd	auto(s6)	2008
+201	pickup	4	r	toyota	toyota tacoma 4wd	manual(m5)	1999
+202	pickup	4	r	toyota	toyota tacoma 4wd	auto(l4)	1999
+203	pickup	4	r	toyota	toyota tacoma 4wd	manual(m5)	2008
+204	pickup	4	r	toyota	toyota tacoma 4wd	manual(m5)	1999
+205	pickup	4	r	toyota	toyota tacoma 4wd	auto(l4)	1999
+206	pickup	4	r	toyota	toyota tacoma 4wd	manual(m6)	2008
+207	pickup	4	r	toyota	toyota tacoma 4wd	auto(l5)	2008
+208	compact	f	r	volkswagen	gti	manual(m5)	1999
+209	compact	f	r	volkswagen	gti	auto(l4)	1999
+210	compact	f	p	volkswagen	gti	manual(m6)	2008
+211	compact	f	p	volkswagen	gti	auto(s6)	2008
+212	compact	f	r	volkswagen	gti	manual(m5)	1999
+213	compact	f	d	volkswagen	jetta	manual(m5)	1999
+214	compact	f	r	volkswagen	jetta	manual(m5)	1999
+215	compact	f	r	volkswagen	jetta	auto(l4)	1999
+216	compact	f	p	volkswagen	jetta	auto(s6)	2008
+217	compact	f	p	volkswagen	jetta	manual(m6)	2008
+218	compact	f	r	volkswagen	jetta	auto(s6)	2008
+219	compact	f	r	volkswagen	jetta	manual(m5)	2008
+220	compact	f	r	volkswagen	jetta	auto(l4)	1999
+221	compact	f	r	volkswagen	jetta	manual(m5)	1999
+222	subcompact	f	d	volkswagen	new beetle	manual(m5)	1999
+223	subcompact	f	d	volkswagen	new beetle	auto(l4)	1999
+224	subcompact	f	r	volkswagen	new beetle	manual(m5)	1999
+225	subcompact	f	r	volkswagen	new beetle	auto(l4)	1999
+226	subcompact	f	r	volkswagen	new beetle	manual(m5)	2008
+227	subcompact	f	r	volkswagen	new beetle	auto(s6)	2008
+228	midsize	f	p	volkswagen	passat	manual(m5)	1999
+229	midsize	f	p	volkswagen	passat	auto(l5)	1999
+230	midsize	f	p	volkswagen	passat	auto(s6)	2008
+231	midsize	f	p	volkswagen	passat	manual(m6)	2008
+232	midsize	f	p	volkswagen	passat	auto(l5)	1999
+233	midsize	f	p	volkswagen	passat	manual(m5)	1999
+234	midsize	f	p	volkswagen	passat	auto(s6)	2008

@@ -1,0 +1,33 @@
+	Property1	Property2
+Caldas	2	56
+Amazonas	3	124
+Meta	5	35
+Cundinamarca	3	46
+Tolima	35	234
+Antioquia	37	76
+Atlántico	2	23
+Bolívar	50	45
+Cesar	42	78
+Magdalena	3	90
+Sucre	78	43
+Córdoba	6	57
+La Guajira	7	123
+Chocó	13	23
+Valle del Cauca	24	59
+Norte de Santander	38	87
+Quindío	65	25
+Vichada	87	95
+Vaupés	34	73
+Santander	1	23
+Risaralda	23	56
+Putumayo	67	56
+Nariño	46	29
+Guaviare	25	50
+Guainía	98	53
+Bogota Capital District	24	28
+Arauca	33	16
+Boyacá	55	23
+Casanare	65	4
+Cauca	12	28
+Caquetá	73	65
+Huila	24	19

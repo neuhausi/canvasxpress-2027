@@ -1,0 +1,80 @@
+	Cost	Department	Division	Op-Date	Operator	Program	Req-Date	Requester	Time	Tool
+R1	4480	Research	Immuno	8/19/23	Kristin	TRV-AAC1-4	8/6/23	Jason	13	DNA-Seq T/N
+R2	2790	Research	Immuno	6/13/23	Travis	NPTX2	6/2/23	Ashley	11	DNA-Seq T/N
+R3	370	Research	Immuno	4/29/24	Sean	NPTX3	4/13/24	Kimberly	16	DNA-Seq T/N
+R4	6630	Research	Immuno	7/5/24	Katie	TRC-GCA23-1	6/24/24	Robert	11	RNA-Seq
+R5	1180	Research	Immuno	8/12/23	Lindsay	TRC-GCA23-2	7/24/23	Jonathan	19	CHIP-Seq
+R6	1170	Research	CV	2/28/23	Travis	SNORD89	2/15/23	Megan	13	RNA-Seq
+R7	5990	Research	CV	2/14/24	Zachary	MTHFR	2/5/24	Megan	9	Proteomics
+R8	8190	Research	CV	2/4/24	Lindsey	DTWD1	1/27/24	Patrick	8	DNA-Seq T/N
+R9	1440	Research	CV	10/2/23	Lindsey	DTWD2	9/19/23	Kevin	13	Proteomics
+R10	7390	Research	CV	3/24/24	Katie	DTWD3	3/16/24	Lauren	8	DNA-Seq T/N
+R11	1860	Research	Neuro	3/7/24	Christine	NECAB3	2/26/24	Jennifer	10	Proteomics
+R12	7440	Research	Neuro	4/28/24	Zachary	SPCS3	4/13/24	William	15	RNA-Seq
+R13	3700	Research	Neuro	5/5/23	Lindsey	SPCS3	4/15/23	William	20	CRISPR
+R14	5850	Research	Neuro	2/6/23	Kristin	SPCS3	1/24/23	Brittany	13	RNA-Seq
+R15	8660	Research	Neuro	9/8/24	Dustin	STK17B	8/19/24	Nathan	20	DNA-Seq T/N
+R16	8950	Research	Neuro	8/22/24	Gregory	SNHG23	8/14/24	Benjamin	8	RNA-Seq
+R17	9040	Research	Neuro	5/2/23	Travis	SNHG23	4/24/23	Benjamin	8	MSI
+R18	7970	Research	Neuro	7/19/23	Lindsay	SNHG23	7/1/23	Benjamin	18	DNA-Seq T/N
+R19	2630	Research	Neuro	1/16/24	Katie	RAD18	1/5/24	Andrea	11	RNA-Seq
+R20	5620	Research	Neuro	6/27/23	Gregory	STK17B	6/17/23	Laura	10	DNA-Seq T only
+R21	450	Research	Neuro	2/14/24	Travis	ZPBP	2/2/24	Thomas	12	RNA-Seq
+R22	9970	Research	Neuro	12/17/23	Christine	LINC01415	11/28/23	Mark	19	RNA-Seq
+R23	8150	Research	Neuro	7/23/23	Katie	LEF1	7/10/23	Stephen	13	Cut&Run
+R24	8250	Research	Neuro	3/7/23	Sean	LEF1	2/25/23	Stephen	10	scRNA
+R25	7150	Research	Neuro	12/1/23	Zachary	ZPBP	11/17/23	Stephen	14	DNA-Seq T/N
+R26	3290	Research	Neuro	10/6/23	Christine	LINC01415	9/17/23	Melissa	19	DNA-Seq T only
+R27	5860	Research	Neuro	3/5/24	Gregory	LEF1	2/17/24	John	17	RNA-Seq
+R28	5650	Research	Neuro	5/12/24	Sean	LINC01415	5/1/24	Richard	11	scRNA
+R29	5830	Research	Neuro	8/20/23	Zachary	ZPBP	8/7/23	Charles	13	DNA-Seq T/N
+R30	9110	Research	Onc	5/20/24	Lindsay	NPTX3	5/13/24	Steven	7	DNA-Seq T/N
+R31	5590	Research	Onc	6/4/24	Lindsay	NPTX3	5/17/24	April	18	Proteomics
+R32	380	Research	Onc	11/4/24	Katie	NPTX3	10/26/24	Sara	9	scRNA
+R33	8670	Research	Onc	3/2/25	Zachary	NPTX3	2/23/25	Sara	7	cfDNA
+R34	6580	Research	Onc	2/13/25	Dustin	RNLS	2/2/25	Adam	11	RNA-Seq
+R35	6950	Research	Onc	3/2/25	Dustin	S100Z	2/17/25	James	13	DNA-Seq T/N
+R36	3430	Research	Onc	1/31/25	Katie	STK38	1/22/25	Lisa	9	DNA-Seq T/N
+R37	9330	Research	Onc	3/13/25	Travis	S100Z	3/3/25	Brian	10	DNA-Seq T/N
+R38	5080	Research	Onc	2/19/25	Kristin	RNLS	2/7/25	Michael	12	RNA-Seq
+R39	8460	Research	Onc	11/13/23	Lindsay	RNLS	10/24/23	Jessica	20	CHIP-Seq
+R40	7510	Development	Clin. Trial A	7/30/24	Dustin	TMEM108	7/11/24	David	19	RNA-Seq
+R41	8120	Development	Clin. Trial A	3/28/23	Christine	TMEM108	3/11/23	David	17	Proteomics
+R42	8000	Development	Clin. Trial A	11/25/24	Zachary	TMEM108	11/18/24	Elizabeth	7	DNA-Seq T/N
+R43	9590	Development	Clin. Trial B	12/16/23	Gregory	SIPA1L3	12/7/23	Jeremy	9	Proteomics
+R44	2030	Development	Clin. Trial B	4/20/23	Lindsey	SIPA1L3	4/3/23	Tiffany	17	DNA-Seq T/N
+R45	430	Development	Clin. Trial C	7/20/23	Lindsay	ADH7	7/5/23	Andrew	15	Proteomics
+R46	9950	Development	Clin. Trial C	11/9/23	Dustin	ADH7	10/30/23	Samantha	10	RNA-Seq
+R47	6910	Development	Clin. Trial C	4/17/24	Dustin	ADH7	4/4/24	Samantha	13	CRISPR
+R48	3820	Development	Clin. Trial C	9/9/23	Gregory	TMEM108	8/25/23	Shannon	15	RNA-Seq
+R49	200	Development	Clin. Trial C	8/20/24	Sean	SIPA1L3	8/5/24	Shannon	15	DNA-Seq T/N
+R50	4140	Development	Assay Dev A	2/18/24	Sean	TMEM108	2/1/24	Scott	17	RNA-Seq
+R51	6400	Development	Assay Dev A	2/16/23	Gregory	WDR1	2/3/23	Scott	13	MSI
+R52	9050	Development	Assay Dev A	6/20/23	Christine	WDR1	6/7/23	Scott	13	DNA-Seq T/N
+R53	9260	Development	Assay Dev A	12/16/23	Travis	OR1L8	11/26/23	Angela	20	RNA-Seq
+R54	8940	Development	Assay Dev B	12/20/23	Lindsay	ADH7	12/4/23	Matthew	16	DNA-Seq T only
+R55	4420	Development	Assay Dev B	12/25/23	Kristin	ADH7	12/14/23	Matthew	11	RNA-Seq
+R56	4140	Development	Assay Dev B	9/25/23	Lindsay	ARHGEF35	9/14/23	Christina	11	RNA-Seq
+R57	2990	Development	Assay Dev B	9/30/23	Katie	ARHGEF35	9/22/23	Christina	8	Cut&Run
+R58	7540	Development	Assay Dev B	4/15/23	Kristin	IFI27L2	4/1/23	Nicholas	14	scRNA
+R59	1410	Development	Assay Dev B	5/30/24	Lindsey	IFI27L2	5/17/24	Nicholas	13	DNA-Seq T/N
+R60	5230	Manufacturing	Prod 1	8/13/23	Katie	SIPA1L3	7/27/23	Ryan	17	DNA-Char
+R61	8240	Manufacturing	Prod 2	1/4/25	Sean	SIPA1L3	12/24/24	Ryan	11	DNA-Seq T/N
+R62	9900	Manufacturing	Prod 3	3/29/24	Sean	ANXA4	3/9/24	Anthony	20	DNA-Char2
+R63	1060	Manufacturing	Prod 3	3/11/23	Gregory	ADH7	3/2/23	Joshua	9	DNA-Char3
+R64	8550	Manufacturing	Prod 3	7/28/24	Lindsey	FILIP1	7/13/24	Erin	15	DNA-Char4
+R65	7200	Other	Clin	10/3/24	Zachary	Met - a	9/20/24	Gregory-O	13	DNA-Seq T only
+R66	2560	Other	Clin	4/22/23	Dustin	Met - b	4/14/23	Lindsey-O	8	RNA-Seq
+R67	1640	Other	Clin	1/30/24	Dustin	Met - c	1/21/24	Zachary-O	9	scRNA
+R68	7050	Other	Clin	6/29/23	Christine	Met - d	6/20/23	Dustin-O	9	DNA-Seq Somatic
+R69	8820	Other	Clin	4/6/24	Lindsey	Met - d	3/18/24	Dustin-O	19	DNA-Seq Somatic
+R70	9460	Other	Rsrch	1/10/25	Sean	Met - d	12/25/24	Christine-O	16	Proteomics
+R71	1890	Other	Rsrch	2/28/25	Gregory	Met - d	2/16/25	Lindsey-O	12	scRNA
+R72	1510	Other	Rsrch	1/21/25	Travis	Met - e	1/11/25	Sean-O	10	cfDNA-2
+R73	4380	Other	Rsrch	2/3/25	Kristin	Met - e	1/15/25	Gregory-O	19	RNA-Seq
+R74	4510	Other	Rsrch	2/28/25	Christine	Met - f	2/12/25	Travis-O	16	Proteomics
+R75	1740	Other	Prot	2/1/25	Travis	Met - f	1/17/25	Kristin-O	15	scRNA-2
+R76	5860	Other	Prot	2/21/25	Kristin	Met - f	2/4/25	Christine-O	17	cfDNA
+R77	9170	Other	Prot	2/21/24	Lindsey	Met - f	2/5/24	Travis-O	16	RNA-Seq
+R78	1710	Other	Prot	8/20/24	Kristin	Met - f	8/9/24	Lindsey-O	11	Proteomics-Pepetides
+R79	6080	Other	Prot	9/13/23	Zachary	Met - f	8/25/23	Kristin-O	19	scRNA

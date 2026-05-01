@@ -1,0 +1,5 @@
+{"type":"FeatureCollection","copyright":"CanvasXpress (https://canvasxpress.org)","license":"Data sourced from Natural Earth (https://naturalearthdata.com) and geoBoundaries (https://geoboundaries.org) under open licenses.","features":[
+    {"type":"Feature","id":"Bonaire","alias":["Bonaire"],"properties":{"Name":"Bonaire"},"geometry":{"type":"Polygon","coordinates":[[[-68.21958160400385,12.102359771728516],[-68.19569396972656,12.219306945800895],[-68.3220825195312,12.21097373962408],[-68.21958160400385,12.102359771728516]]]}},
+    {"type":"Feature","id":"Saba","alias":["Saba"],"properties":{"Name":"Saba"},"geometry":null},
+    {"type":"Feature","id":"Sint_Eustatius","alias":["Sint Eustatius"],"properties":{"Name":"Sint Eustatius"},"geometry":null}
+]}

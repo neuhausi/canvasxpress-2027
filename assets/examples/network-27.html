@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress: Network Chart</title>
+    <meta name="description" content="CanvasXpress: Source Code Relationship Visualizer with jQuery iframe">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress: Network Chart">
+    <meta property="og:description" content="CanvasXpress: Source Code Relationship Visualizer with jQuery iframe">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org/assets/examples/network-27.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress: Network Chart">
+    <meta name="twitter:description" content="CanvasXpress: Source Code Relationship Visualizer with jQuery iframe">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org/assets/examples/network-27.html">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+</head>
+
+  <body>
+
+    <div class="content">
+      <div class="container" style="margin:auto;display:flex;justify-content:center;align-items:center;height:100vh;">
+        <div class="plot">
+          <canvas id="network27" width="600" height="600" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXnetwork27 = new CanvasXpress("network27",
+          {
+             "edges" : [{"id1" : "Id0","id2" : "Id1"},{"id1" : "Id1","id2" : "Id2"},{"id1" : "Id1","id2" : "Id3"},{"id1" : "Id1","id2" : "Id4"},{"id1" : "Id1","id2" : "Id5"},{"id1" : "Id1","id2" : "Id6"},{"id1" : "Id1","id2" : "Id7"},{"id1" : "Id1","id2" : "Id8"},{"id1" : "Id1","id2" : "Id9"},{"id1" : "Id1","id2" : "Id10"},{"id1" : "Id1","id2" : "Id11"},{"id1" : "Id1","id2" : "Id12"},{"id1" : "Id0","id2" : "Id13"},{"id1" : "Id13","id2" : "Id14"},{"id1" : "Id14","id2" : "Id15"},{"id1" : "Id14","id2" : "Id16"},{"id1" : "Id14","id2" : "Id17"},{"id1" : "Id14","id2" : "Id18"},{"id1" : "Id14","id2" : "Id19"},{"id1" : "Id14","id2" : "Id20"},{"id1" : "Id14","id2" : "Id21"},{"id1" : "Id14","id2" : "Id22"},{"id1" : "Id14","id2" : "Id23"},{"id1" : "Id14","id2" : "Id24"},{"id1" : "Id14","id2" : "Id25"},{"id1" : "Id14","id2" : "Id26"},{"id1" : "Id14","id2" : "Id27"},{"id1" : "Id14","id2" : "Id28"},{"id1" : "Id14","id2" : "Id29"},{"id1" : "Id14","id2" : "Id30"},{"id1" : "Id14","id2" : "Id31"},{"id1" : "Id14","id2" : "Id32"},{"id1" : "Id14","id2" : "Id33"},{"id1" : "Id13","id2" : "Id34"},{"id1" : "Id13","id2" : "Id35"},{"id1" : "Id35","id2" : "Id36"},{"id1" : "Id35","id2" : "Id37"},{"id1" : "Id35","id2" : "Id38"},{"id1" : "Id35","id2" : "Id39"},{"id1" : "Id39","id2" : "Id40"},{"id1" : "Id39","id2" : "Id41"},{"id1" : "Id35","id2" : "Id42"},{"id1" : "Id42","id2" : "Id43"},{"id1" : "Id42","id2" : "Id44"},{"id1" : "Id42","id2" : "Id45"},{"id1" : "Id42","id2" : "Id46"},{"id1" : "Id42","id2" : "Id47"},{"id1" : "Id42","id2" : "Id48"},{"id1" : "Id42","id2" : "Id49"},{"id1" : "Id35","id2" : "Id50"},{"id1" : "Id50","id2" : "Id51"},{"id1" : "Id35","id2" : "Id52"},{"id1" : "Id52","id2" : "Id53"},{"id1" : "Id52","id2" : "Id54"},{"id1" : "Id52","id2" : "Id55"},{"id1" : "Id52","id2" : "Id56"},{"id1" : "Id52","id2" : "Id57"},{"id1" : "Id35","id2" : "Id58"},{"id1" : "Id35","id2" : "Id59"},{"id1" : "Id59","id2" : "Id60"},{"id1" : "Id35","id2" : "Id61"},{"id1" : "Id35","id2" : "Id62"},{"id1" : "Id62","id2" : "Id63"},{"id1" : "Id35","id2" : "Id64"},{"id1" : "Id64","id2" : "Id65"},{"id1" : "Id64","id2" : "Id66"},{"id1" : "Id35","id2" : "Id67"},{"id1" : "Id35","id2" : "Id68"},{"id1" : "Id68","id2" : "Id69"},{"id1" : "Id68","id2" : "Id70"},{"id1" : "Id68","id2" : "Id71"},{"id1" : "Id68","id2" : "Id72"},{"id1" : "Id35","id2" : "Id73"},{"id1" : "Id35","id2" : "Id74"},{"id1" : "Id35","id2" : "Id75"},{"id1" : "Id35","id2" : "Id76"},{"id1" : "Id35","id2" : "Id77"},{"id1" : "Id35","id2" : "Id78"},{"id1" : "Id35","id2" : "Id79"},{"id1" : "Id35","id2" : "Id80"},{"id1" : "Id35","id2" : "Id81"},{"id1" : "Id35","id2" : "Id82"},{"id1" : "Id35","id2" : "Id83"},{"id1" : "Id35","id2" : "Id84"},{"id1" : "Id35","id2" : "Id85"},{"id1" : "Id35","id2" : "Id86"},{"id1" : "Id35","id2" : "Id87"},{"id1" : "Id35","id2" : "Id88"},{"id1" : "Id35","id2" : "Id89"},{"id1" : "Id35","id2" : "Id90"},{"id1" : "Id35","id2" : "Id91"},{"id1" : "Id35","id2" : "Id92"},{"id1" : "Id35","id2" : "Id93"},{"id1" : "Id35","id2" : "Id94"},{"id1" : "Id35","id2" : "Id95"},{"id1" : "Id35","id2" : "Id96"},{"id1" : "Id35","id2" : "Id97"},{"id1" : "Id35","id2" : "Id98"},{"id1" : "Id35","id2" : "Id99"},{"id1" : "Id35","id2" : "Id100"},{"id1" : "Id35","id2" : "Id101"},{"id1" : "Id35","id2" : "Id102"},{"id1" : "Id35","id2" : "Id103"},{"id1" : "Id13","id2" : "Id104"},{"id1" : "Id13","id2" : "Id105"},{"id1" : "Id13","id2" : "Id106"},{"id1" : "Id13","id2" : "Id107"},{"id1" : "Id13","id2" : "Id108"},{"id1" : "Id13","id2" : "Id109"},{"id1" : "Id13","id2" : "Id110"},{"id1" : "Id0","id2" : "Id111"},{"id1" : "Id111","id2" : "Id112"},{"id1" : "Id111","id2" : "Id113"},{"id1" : "Id111","id2" : "Id114"},{"id1" : "Id111","id2" : "Id115"},{"id1" : "Id111","id2" : "Id116"},{"id1" : "Id111","id2" : "Id117"},{"id1" : "Id111","id2" : "Id118"},{"id1" : "Id111","id2" : "Id119"},{"id1" : "Id111","id2" : "Id120"},{"id1" : "Id111","id2" : "Id121"},{"id1" : "Id111","id2" : "Id122"},{"id1" : "Id111","id2" : "Id123"},{"id1" : "Id111","id2" : "Id124"},{"id1" : "Id111","id2" : "Id125"},{"id1" : "Id111","id2" : "Id126"},{"id1" : "Id126","id2" : "Id127"},{"id1" : "Id126","id2" : "Id128"},{"id1" : "Id126","id2" : "Id129"},{"id1" : "Id111","id2" : "Id130"},{"id1" : "Id111","id2" : "Id131"},{"id1" : "Id111","id2" : "Id132"},{"id1" : "Id111","id2" : "Id133"},{"id1" : "Id111","id2" : "Id134"},{"id1" : "Id111","id2" : "Id135"},{"id1" : "Id111","id2" : "Id136"},{"id1" : "Id111","id2" : "Id137"},{"id1" : "Id111","id2" : "Id138"},{"id1" : "Id0","id2" : "Id139"},{"id1" : "Id0","id2" : "Id140"},{"id1" : "Id140","id2" : "Id141"},{"id1" : "Id140","id2" : "Id142"}],
+             "nodes" : [{"color" : "rgb(247,114,109)","height" : "14.0","id" : "Id0","name" : "root","width" : "14.0"},{"color" : "rgb(247,121,109)","height" : "14.0","id" : "Id1","name" : "speed","width" : "14.0"},{"color" : "rgb(247,125,109)","height" : "113.7","id" : "Id2","language" : "Javascript","name" : "jquery-basis.js","width" : "113.7"},{"color" : "rgb(247,132,109)","height" : "32.0","id" : "Id3","language" : "HTML","name" : "filter.html","width" : "32.0"},{"color" : "rgb(247,137,109)","height" : "31.7","id" : "Id4","language" : "HTML","name" : "find.html","width" : "31.7"},{"color" : "rgb(247,144,109)","height" : "28.8","id" : "Id5","language" : "Javascript","name" : "benchmarker.js","width" : "28.8"},{"color" : "rgb(247,148,109)","height" : "21.6","id" : "Id6","language" : "HTML","name" : "css.html","width" : "21.6"},{"color" : "rgb(247,155,109)","height" : "20.8","id" : "Id7","language" : "HTML","name" : "index.html","width" : "20.8"},{"color" : "rgb(247,160,109)","height" : "19.4","id" : "Id8","language" : "CSS","name" : "benchmarker.css","width" : "19.4"},{"color" : "rgb(247,167,109)","height" : "18.5","id" : "Id9","language" : "HTML","name" : "event.html","width" : "18.5"},{"color" : "rgb(247,171,109)","height" : "17.0","id" : "Id10","language" : "HTML","name" : "slice.vs.concat.html","width" : "17.0"},{"color" : "rgb(247,178,109)","height" : "16.8","id" : "Id11","language" : "HTML","name" : "closest.html","width" : "16.8"},{"color" : "rgb(247,183,109)","height" : "10.8","id" : "Id12","language" : "Javascript","name" : "benchmark.js","width" : "10.8"},{"color" : "rgb(247,189,109)","height" : "14.0","id" : "Id13","name" : "test","width" : "14.0"},{"color" : "rgb(247,194,109)","height" : "14.0","id" : "Id14","name" : "unit","width" : "14.0"},{"color" : "rgb(247,201,109)","height" : "82.4","id" : "Id15","language" : "Javascript","name" : "event.js","width" : "82.4"},{"color" : "rgb(247,206,109)","height" : "79.2","id" : "Id16","language" : "Javascript","name" : "ajax.js","width" : "79.2"},{"color" : "rgb(247,212,109)","height" : "76.8","id" : "Id17","language" : "Javascript","name" : "effects.js","width" : "76.8"},{"color" : "rgb(247,217,109)","height" : "75.9","id" : "Id18","language" : "Javascript","name" : "manipulation.js","width" : "75.9"},{"color" : "rgb(247,224,109)","height" : "63.5","id" : "Id19","language" : "Javascript","name" : "core.js","width" : "63.5"},{"color" : "rgb(247,228,109)","height" : "62.7","id" : "Id20","language" : "Javascript","name" : "attributes.js","width" : "62.7"},{"color" : "rgb(247,235,109)","height" : "56.1","id" : "Id21","language" : "Javascript","name" : "css.js","width" : "56.1"},{"color" : "rgb(247,240,109)","height" : "49.7","id" : "Id22","language" : "Javascript","name" : "traversing.js","width" : "49.7"},{"color" : "rgb(247,247,109)","height" : "47.7","id" : "Id23","language" : "Javascript","name" : "data.js","width" : "47.7"},{"color" : "rgb(242,247,109)","height" : "44.7","id" : "Id24","language" : "Javascript","name" : "offset.js","width" : "44.7"},{"color" : "rgb(235,247,109)","height" : "41.5","id" : "Id25","language" : "Javascript","name" : "deferred.js","width" : "41.5"},{"color" : "rgb(231,247,109)","height" : "40.4","id" : "Id26","language" : "Javascript","name" : "dimensions.js","width" : "40.4"},{"color" : "rgb(224,247,109)","height" : "37.6","id" : "Id27","language" : "Javascript","name" : "callbacks.js","width" : "37.6"},{"color" : "rgb(217,247,109)","height" : "36.2","id" : "Id28","language" : "Javascript","name" : "queue.js","width" : "36.2"},{"color" : "rgb(212,247,109)","height" : "27.8","id" : "Id29","language" : "Javascript","name" : "selector.js","width" : "27.8"},{"color" : "rgb(206,247,109)","height" : "24.8","id" : "Id30","language" : "Javascript","name" : "serialize.js","width" : "24.8"},{"color" : "rgb(201,247,109)","height" : "15.8","id" : "Id31","language" : "Javascript","name" : "support.js","width" : "15.8"},{"color" : "rgb(194,247,109)","height" : "7.6","id" : "Id32","language" : "Javascript","name" : "exports.js","width" : "7.6"},{"color" : "rgb(189,247,109)","height" : "4.0","id" : "Id33","language" : "Javascript","name" : "deprecated.js","width" : "4.0"},{"color" : "rgb(183,247,109)","height" : "38.5","id" : "Id34","language" : "HTML","name" : "index.html","width" : "38.5"},{"color" : "rgb(178,247,109)","height" : "14.0","id" : "Id35","name" : "data","width" : "14.0"},{"color" : "rgb(171,247,109)","height" : "36.1","id" : "Id36","language" : "Javascript","name" : "testrunner.js","width" : "36.1"},{"color" : "rgb(167,247,109)","height" : "33.4","id" : "Id37","language" : "Javascript","name" : "testinit.js","width" : "33.4"},{"color" : "rgb(160,247,109)","height" : "26.4","id" : "Id38","language" : "CSS","name" : "testsuite.css","width" : "26.4"},{"color" : "rgb(155,247,109)","height" : "14.0","id" : "Id39","name" : "selector","width" : "14.0"},{"color" : "rgb(148,247,109)","height" : "24.6","id" : "Id40","language" : "HTML","name" : "html5_selector.html","width" : "24.6"},{"color" : "rgb(144,247,109)","height" : "13.0","id" : "Id41","language" : "HTML","name" : "sizzle_cache.html","width" : "13.0"},{"color" : "rgb(137,247,109)","height" : "14.0","id" : "Id42","name" : "offset","width" : "14.0"},{"color" : "rgb(132,247,109)","height" : "18.0","id" : "Id43","language" : "HTML","name" : "table.html","width" : "18.0"},{"color" : "rgb(125,247,109)","height" : "17.7","id" : "Id44","language" : "HTML","name" : "absolute.html","width" : "17.7"},{"color" : "rgb(121,247,109)","height" : "17.3","id" : "Id45","language" : "HTML","name" : "scroll.html","width" : "17.3"},{"color" : "rgb(114,247,109)","height" : "16.4","id" : "Id46","language" : "HTML","name" : "fixed.html","width" : "16.4"},{"color" : "rgb(109,247,109)","height" : "15.8","id" : "Id47","language" : "HTML","name" : "relative.html","width" : "15.8"},{"color" : "rgb(109,247,116)","height" : "15.8","id" : "Id48","language" : "HTML","name" : "static.html","width" : "15.8"},{"color" : "rgb(109,247,121)","height" : "14.7","id" : "Id49","language" : "HTML","name" : "body.html","width" : "14.7"},{"color" : "rgb(109,247,128)","height" : "14.0","id" : "Id50","name" : "manipulation","width" : "14.0"},{"color" : "rgb(109,247,132)","height" : "16.2","id" : "Id51","language" : "HTML","name" : "iframe-denied.html","width" : "16.2"},{"color" : "rgb(109,247,139)","height" : "14.0","id" : "Id52","name" : "support","width" : "14.0"},{"color" : "rgb(109,247,144)","height" : "14.9","id" : "Id53","language" : "HTML","name" : "bodyBackground.html","width" : "14.9"},{"color" : "rgb(109,247,150)","height" : "14.0","id" : "Id54","language" : "HTML","name" : "shrinkWrapBlocks.html","width" : "14.0"},{"color" : "rgb(109,247,155)","height" : "12.4","id" : "Id55","language" : "PHP","name" : "csp.php","width" : "12.4"},{"color" : "rgb(109,247,162)","height" : "12.4","id" : "Id56","language" : "HTML","name" : "testElementCrash.html","width" : "12.4"},{"color" : "rgb(109,247,169)","height" : "6.2","id" : "Id57","language" : "Javascript","name" : "csp.js","width" : "6.2"},{"color" : "rgb(109,247,173)","height" : "14.5","id" : "Id58","language" : "XML","name" : "with_fries.xml","width" : "14.5"},{"color" : "rgb(109,247,180)","height" : "14.0","id" : "Id59","name" : "ajax","width" : "14.0"},{"color" : "rgb(109,247,185)","height" : "14.3","id" : "Id60","language" : "HTML","name" : "unreleasedXHR.html","width" : "14.3"},{"color" : "rgb(109,247,192)","height" : "14.0","id" : "Id61","language" : "PHP","name" : "name.php","width" : "14.0"},{"color" : "rgb(109,247,196)","height" : "14.0","id" : "Id62","name" : "core","width" : "14.0"},{"color" : "rgb(109,247,203)","height" : "13.8","id" : "Id63","language" : "HTML","name" : "cc_on.html","width" : "13.8"},{"color" : "rgb(109,247,208)","height" : "14.0","id" : "Id64","name" : "dimensions","width" : "14.0"},{"color" : "rgb(109,247,215)","height" : "13.5","id" : "Id65","language" : "HTML","name" : "documentSmall.html","width" : "13.5"},{"color" : "rgb(109,247,219)","height" : "12.4","id" : "Id66","language" : "HTML","name" : "documentLarge.html","width" : "12.4"},{"color" : "rgb(109,247,226)","height" : "13.0","id" : "Id67","language" : "Javascript","name" : "readywaitloader.js","width" : "13.0"},{"color" : "rgb(109,247,231)","height" : "14.0","id" : "Id68","name" : "event","width" : "14.0"},{"color" : "rgb(109,247,238)","height" : "13.0","id" : "Id69","language" : "HTML","name" : "onbeforeunload.html","width" : "13.0"},{"color" : "rgb(109,247,242)","height" : "12.4","id" : "Id70","language" : "HTML","name" : "syncReady.html","width" : "12.4"},{"color" : "rgb(109,245,247)","height" : "12.1","id" : "Id71","language" : "HTML","name" : "promiseReady.html","width" : "12.1"},{"color" : "rgb(109,240,247)","height" : "7.0","id" : "Id72","language" : "PHP","name" : "longLoadScript.php","width" : "7.0"},{"color" : "rgb(109,233,247)","height" : "12.1","id" : "Id73","language" : "PHP","name" : "etag.php","width" : "12.1"},{"color" : "rgb(109,228,247)","height" : "11.8","id" : "Id74","language" : "PHP","name" : "if_modified_since.php","width" : "11.8"},{"color" : "rgb(109,222,247)","height" : "11.5","id" : "Id75","language" : "PHP","name" : "jsonp.php","width" : "11.5"},{"color" : "rgb(109,217,247)","height" : "10.8","id" : "Id76","language" : "PHP","name" : "params_html.php","width" : "10.8"},{"color" : "rgb(109,210,247)","height" : "10.8","id" : "Id77","language" : "PHP","name" : "json.php","width" : "10.8"},{"color" : "rgb(109,206,247)","height" : "10.8","id" : "Id78","language" : "PHP","name" : "text.php","width" : "10.8"},{"color" : "rgb(109,199,247)","height" : "10.8","id" : "Id79","language" : "PHP","name" : "headers.php","width" : "10.8"},{"color" : "rgb(109,194,247)","height" : "10.4","id" : "Id80","language" : "PHP","name" : "script.php","width" : "10.4"},{"color" : "rgb(109,187,247)","height" : "10.4","id" : "Id81","language" : "XML","name" : "dashboard.xml","width" : "10.4"},{"color" : "rgb(109,183,247)","height" : "9.2","id" : "Id82","language" : "HTML","name" : "iframe.html","width" : "9.2"},{"color" : "rgb(109,176,247)","height" : "8.7","id" : "Id83","language" : "PHP","name" : "test.php","width" : "8.7"},{"color" : "rgb(109,171,247)","height" : "8.7","id" : "Id84","language" : "PHP","name" : "with_fries_over_jsonp.php","width" : "8.7"},{"color" : "rgb(109,164,247)","height" : "8.7","id" : "Id85","language" : "HTML","name" : "test.html","width" : "8.7"},{"color" : "rgb(109,157,247)","height" : "8.7","id" : "Id86","language" : "HTML","name" : "cleanScript.html","width" : "8.7"},{"color" : "rgb(109,153,247)","height" : "7.6","id" : "Id87","language" : "HTML","name" : "test2.html","width" : "7.6"},{"color" : "rgb(109,146,247)","height" : "7.0","id" : "Id88","language" : "PHP","name" : "errorWithJSON.php","width" : "7.0"},{"color" : "rgb(109,141,247)","height" : "7.0","id" : "Id89","language" : "PHP","name" : "atom+xml.php","width" : "7.0"},{"color" : "rgb(109,134,247)","height" : "6.2","id" : "Id90","language" : "PHP","name" : "statusText.php","width" : "6.2"},{"color" : "rgb(109,130,247)","height" : "6.2","id" : "Id91","language" : "PHP","name" : "errorWithText.php","width" : "6.2"},{"color" : "rgb(109,123,247)","height" : "6.2","id" : "Id92","language" : "Javascript","name" : "test.js","width" : "6.2"},{"color" : "rgb(109,118,247)","height" : "6.2","id" : "Id93","language" : "HTML","name" : "test3.html","width" : "6.2"},{"color" : "rgb(109,111,247)","height" : "6.2","id" : "Id94","language" : "PHP","name" : "nocontent.php","width" : "6.2"},{"color" : "rgb(111,109,247)","height" : "4.0","id" : "Id95","language" : "Javascript","name" : "badjson.js","width" : "4.0"},{"color" : "rgb(118,109,247)","height" : "4.0","id" : "Id96","language" : "Javascript","name" : "badcall.js","width" : "4.0"},{"color" : "rgb(123,109,247)","height" : "4.0","id" : "Id97","language" : "Javascript","name" : "readywaitasset.js","width" : "4.0"},{"color" : "rgb(130,109,247)","height" : "4.0","id" : "Id98","language" : "PHP","name" : "evalScript.php","width" : "4.0"},{"color" : "rgb(134,109,247)","height" : "4.0","id" : "Id99","language" : "PHP","name" : "echoQuery.php","width" : "4.0"},{"color" : "rgb(141,109,247)","height" : "4.0","id" : "Id100","language" : "Javascript","name" : "json_obj.js","width" : "4.0"},{"color" : "rgb(146,109,247)","height" : "4.0","id" : "Id101","language" : "Javascript","name" : "jquery-1.8.2.ajax_xhr.min.js","width" : "4.0"},{"color" : "rgb(153,109,247)","height" : "4.0","id" : "Id102","language" : "PHP","name" : "echoData.php","width" : "4.0"},{"color" : "rgb(157,109,247)","height" : "4.0","id" : "Id103","language" : "HTML","name" : "name.html","width" : "4.0"},{"color" : "rgb(164,109,247)","height" : "34.2","id" : "Id104","language" : "HTML","name" : "delegatetest.html","width" : "34.2"},{"color" : "rgb(169,109,247)","height" : "29.5","id" : "Id105","language" : "HTML","name" : "hovertest.html","width" : "29.5"},{"color" : "rgb(176,109,247)","height" : "22.6","id" : "Id106","language" : "HTML","name" : "networkerror.html","width" : "22.6"},{"color" : "rgb(180,109,247)","height" : "22.4","id" : "Id107","language" : "HTML","name" : "localfile.html","width" : "22.4"},{"color" : "rgb(187,109,247)","height" : "20.7","id" : "Id108","language" : "HTML","name" : "readywait.html","width" : "20.7"},{"color" : "rgb(192,109,247)","height" : "7.0","id" : "Id109","language" : "PHP","name" : "xhtml.php","width" : "7.0"},{"color" : "rgb(199,109,247)","height" : "7.0","id" : "Id110","language" : "Javascript","name" : "jquery.js","width" : "7.0"},{"color" : "rgb(203,109,247)","height" : "14.0","id" : "Id111","name" : "src","width" : "14.0"},{"color" : "rgb(210,109,247)","height" : "51.3","id" : "Id112","language" : "Javascript","name" : "event.js","width" : "51.3"},{"color" : "rgb(215,109,247)","height" : "50.3","id" : "Id113","language" : "Javascript","name" : "effects.js","width" : "50.3"},{"color" : "rgb(222,109,247)","height" : "49.0","id" : "Id114","language" : "Javascript","name" : "ajax.js","width" : "49.0"},{"color" : "rgb(228,109,247)","height" : "48.7","id" : "Id115","language" : "Javascript","name" : "core.js","width" : "48.7"},{"color" : "rgb(233,109,247)","height" : "46.2","id" : "Id116","language" : "Javascript","name" : "manipulation.js","width" : "46.2"},{"color" : "rgb(240,109,247)","height" : "43.5","id" : "Id117","language" : "Javascript","name" : "css.js","width" : "43.5"},{"color" : "rgb(245,109,247)","height" : "42.8","id" : "Id118","language" : "Javascript","name" : "attributes.js","width" : "42.8"},{"color" : "rgb(247,109,242)","height" : "35.0","id" : "Id119","language" : "Javascript","name" : "traversing.js","width" : "35.0"},{"color" : "rgb(247,109,238)","height" : "33.4","id" : "Id120","language" : "Javascript","name" : "data.js","width" : "33.4"},{"color" : "rgb(247,109,231)","height" : "28.7","id" : "Id121","language" : "Javascript","name" : "callbacks.js","width" : "28.7"},{"color" : "rgb(247,109,226)","height" : "27.2","id" : "Id122","language" : "Javascript","name" : "offset.js","width" : "27.2"},{"color" : "rgb(247,109,219)","height" : "26.9","id" : "Id123","language" : "Javascript","name" : "queue.js","width" : "26.9"},{"color" : "rgb(247,109,215)","height" : "25.5","id" : "Id124","language" : "Javascript","name" : "deferred.js","width" : "25.5"},{"color" : "rgb(247,109,208)","height" : "25.2","id" : "Id125","language" : "Javascript","name" : "selector-native.js","width" : "25.2"},{"color" : "rgb(247,109,203)","height" : "14.0","id" : "Id126","name" : "ajax","width" : "14.0"},{"color" : "rgb(247,109,196)","height" : "23.3","id" : "Id127","language" : "Javascript","name" : "xhr.js","width" : "23.3"},{"color" : "rgb(247,109,192)","height" : "19.3","id" : "Id128","language" : "Javascript","name" : "script.js","width" : "19.3"},{"color" : "rgb(247,109,185)","height" : "19.1","id" : "Id129","language" : "Javascript","name" : "jsonp.js","width" : "19.1"},{"color" : "rgb(247,109,180)","height" : "22.0","id" : "Id130","language" : "Javascript","name" : "serialize.js","width" : "22.0"},{"color" : "rgb(247,109,173)","height" : "20.6","id" : "Id131","language" : "Javascript","name" : "support.js","width" : "20.6"},{"color" : "rgb(247,109,169)","height" : "14.5","id" : "Id132","language" : "Javascript","name" : "dimensions.js","width" : "14.5"},{"color" : "rgb(247,109,162)","height" : "10.8","id" : "Id133","language" : "Javascript","name" : "event-alias.js","width" : "10.8"},{"color" : "rgb(247,109,157)","height" : "9.2","id" : "Id134","language" : "Javascript","name" : "sizzle-jquery.js","width" : "9.2"},{"color" : "rgb(247,109,150)","height" : "9.2","id" : "Id135","language" : "Javascript","name" : "exports.js","width" : "9.2"},{"color" : "rgb(247,109,146)","height" : "4.0","id" : "Id136","language" : "Javascript","name" : "outro.js","width" : "4.0"},{"color" : "rgb(247,109,139)","height" : "4.0","id" : "Id137","language" : "Javascript","name" : "intro.js","width" : "4.0"},{"color" : "rgb(247,109,134)","height" : "4.0","id" : "Id138","language" : "Javascript","name" : "deprecated.js","width" : "4.0"},{"color" : "rgb(247,109,128)","height" : "40.9","id" : "Id139","language" : "Javascript","name" : "Gruntfile.js","width" : "40.9"},{"color" : "rgb(247,109,123)","height" : "14.0","id" : "Id140","name" : "build","width" : "14.0"},{"color" : "rgb(247,109,116)","height" : "32.8","id" : "Id141","language" : "Javascript","name" : "release.js","width" : "32.8"},{"color" : "rgb(247,109,109)","height" : "18.5","id" : "Id142","language" : "Javascript","name" : "release-notes.js","width" : "18.5"}]
+          },
+          {
+             "edgeColor" : "rgb(158,202,225)",
+             "graphType" : "Network",
+             "useBarnesHutSimulation" : true
+          }
+        );
+      </script>
+    </div>
+
+  </body>
+
+</html>

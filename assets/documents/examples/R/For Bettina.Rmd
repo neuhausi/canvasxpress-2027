@@ -1,0 +1,51 @@
+---
+title: "CanvasXpress Demo"
+author: "Isaac Neuhaus"
+date: "06/04/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+```{r setup, include=FALSE}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library('canvasXpress')
+```
+
+This demo shows the ability to easily integrate CanvasXpress with ggplot in R. There are similar demos for python.
+
+## Scatter2d Plot
+### Data: mpg dataset
+
+This dataset contains a subset of the fuel economy data that the EPA makes available on https://fueleconomy.gov/. It contains only models which had a new release every year between 1999 and 2008 - this was used as a proxy for the popularity of the car.
+
+```{r}
+head(mpg)
+```
+
+### Plot with ggplot
+
+Compare displacement (displ) vs highway efficiency (hwy) and color the data by vehicle class (class). Store the ggplot object in a variable.
+
+```{r}
+s = ggplot(mpg, aes(displ, hwy)) + geom_point(aes(color = class))
+```
+
+
+### Plot with CanvasXpress
+
+Use the ggplot object stored in the variable 's' and plot with CanvasXpress
+
+```{r}
+canvasXpress(s, width=800, height=600, shapeBy="drv", selectedDataPoints=list("1", "100", "101", "102", "103", "105", "194", "19"))
+```

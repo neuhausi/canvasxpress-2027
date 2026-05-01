@@ -1,0 +1,4 @@
+color	groupIds	id	nodes	padding
+rgb(94, 159, 202)	["G1"]	G0	["Id0"]	0.01
+rgba(245, 245, 245, 0.5)		G1	["Id1", "Id2"]	0.01
+rgb(255, 187, 120)		G2	["Id3", "Id4"]	0.01

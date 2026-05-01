@@ -1,0 +1,4 @@
+color	id	nodes	padding
+rgb(254,243,187)	G0	["Id29", "Id25", "Id24", "Id23", "Id22", "Id21", "Id20", "Id19", "Id18", "Id17", "Id16", "Id15", "Id14", "Id13", "Id12", "Id11", "Id10", "Id9", "Id8", "Id7", "Id6", "Id5", "Id4", "Id3", "Id2", "Id1", "Id0", "Id27"]	8
+rgb(199,233,217)	G1	["Id28", "Id30", "Id45", "Id44", "Id43", "Id38", "Id37", "Id36", "Id35", "Id34", "Id33", "Id32", "Id47", "Id39", "Id40"]	8
+rgb(254,243,187)	G2	["Id48", "Id49", "Id42"]	8

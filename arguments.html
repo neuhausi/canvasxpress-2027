@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress</title>
+    <meta name="description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress">
+    <meta property="og:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress">
+    <meta name="twitter:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdWYcYqAAAAAPqJzSUJ4T0r_YKPGhfotxPl0-_A"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Homepage",
+          "item": "https://www.canvasxpress.org/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Constructor Arguments"
+        }
+      ]
+    }
+    </script>
+</head>
+
+  <body>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top:0;padding:0;">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="/index.html">
+            <div class="mb-0">
+              <img src="/assets/images/logo-dark.svg" alt="CanvasXpress Logo" style="height: 25px; max-width: unset;" title="CanvasXpress Logo" width="282" height="35" loading="eager">
+            </div>
+          </a>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:0;outline:none;right:18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </a>
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0" style="margin-left: 0px;">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a href="/examples.html" class="nav-link">Examples</a></li>
+              <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
+              <li class="nav-item"><a href="/interfaces.html" class="nav-link">Interfaces</a></li>
+              <li class="nav-item"><a href="/updates.html" class="nav-link">Updates</a></li>
+              <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item mb-2" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-bs-toggle="modal" data-bs-target="#search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Aside -->
+      <div id="aside">
+        <aside class="col-md-3 col-lg-2 bg-white p-3 position-fixed d-hg-block shadow-lg sidebar rounded-aside" role="navigation"
+          aria-label="Main Navigation" style="top: 400px; right: 10px;">
+          <div class="text-center mb-2">
+            <a href="./index.html" aria-label="CanvasXpress Home">
+              <img src="https://canvasxpress.org/assets/images/logo-dark.svg" alt="CanvasXpress Logo"
+                title="CanvasXpress Logo" class="img-fluid" width="150" height="50" style="max-height: 50px;"
+                loading="eager">
+            </a>
+          </div>
+          <div class="table-of-contents rounded-aside mb-2">
+            <h3 class="font-xl font-bold text-primary">Table of Contents</h3>
+            <nav>
+              <ul class="nav flex-column space-y-2">
+                <li class="nav-item"><a class="nav-aside nav-link active-nav" href="#introduction">Introduction</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#constructor-syntax">Constructor Syntax</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#constructor-arguments">Constructor Arguments</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#dom-and-canvas">DOM and the Canvas</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#data-structure">Data Structure</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#configuration-options">Configuration Options</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#event-handling">Event Handling</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#instance-management">Instance Management</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#initialization-techniques">Initialization</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+      </div>
+
+
+      <!-- Modals -->
+      <div id="modals">
+
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content modal-cnt">
+              <button type="button" class="modal-btn bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-hdr">
+                <div id="searchModalLabel" class="font-xl bg-transparent">Search CanvasXpress</div>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                  .gsc-search-button-v2 {background-color: #ffd587; border: none; border-radius: 5px;}.gsc-search-button-v2:focus, .gsc-search-button-v2:hover {background-color: #ffd587; outline: none;}.gsc-search-button-v2 svg {fill: #000;}td.gsib_a, td.gsib_b {border: none; border-radius: 5px; padding: 0 5px 0;}td.gsc-input, td.gsc-search-button, td.gsc-clear-button {border: none; padding: 0;}.gsst_a .gscb_a {color: #000;}.gsst_a .gscb_a:hover {color: #000;}.gsc-control-cse {max-height: 850px; overflow-y: auto; border:none; background-color: transparent;}.gsc-results-wrapper-overlay {background-color:transparent;}.gsc-webResult.gsc-result{border:none;}.gsc-above-wrapper-area {border:none; padding: 5px 0 5px 0;}
+                </style>
+                <script async src="https://cse.google.com/cse.js?cx=017553474198412024421:c_qxiweliao"></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Arguments -->
+      <header class="pt-1 overflow-hidden">
+        <div class="container px-4 px-lg-3 mt-5 position-relative">
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-10 text-center mx-auto">
+              <!-- Title and Subtitle -->
+              <h1 class="main-hero text-primary">CanvasXpress Constructor Arguments</h1>
+              <p class="lead submain-hero">A guide to the key arguments for creating a new visualization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Section: Introduction -->
+      <section id="introduction" class="container">
+        <h2 class="font-xxl text-primary mb-3">Creating a New Visualization</h2>
+        <p class="lead text-secondary lh-base">
+          The CanvasXpress object is instantiated by calling the <code class="prettyprint">new</code> constructor function. This function takes
+            either four arguments: <code class="prettyprint">targetId</code>, <code class="prettyprint">data</code>, <code class="prettyprint">configuration</code>, and <code class="prettyprint">events</code>, or a single JSON object that
+            combines these four arguments. The sections below provide a detailed look at each.
+        </p>
+      </section>
+
+      <!-- Section: Constructor Syntax -->
+      <section id="constructor-syntax" class="container">
+        <h2 class="font-xxl text-primary mb-3">Constructor Syntax</h2>
+        <div class="card p-3 shadow-sm mb-2">
+          <pre class="code-block"><code class="prettyprint">var cX = new CanvasXpress(targetId, data, config, events);</code></pre>
+          <p class="text-secondary mt-1">
+            Or, using a single JSON object:
+          </p>
+          <pre class="code-block"><code class="prettyprint">var cX = new CanvasXpress({
+  "renderTo": targetId,
+  "data": data,
+  "config": config,
+  "events": events
+});</code></pre>
+        </div>
+      </section>
+
+      <!-- Section: Constructor Arguments -->
+      <section id="constructor-arguments" class="container">
+        <h2 class="font-xxl text-primary mb-3">Constructor Arguments</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm p-3">
+              <h5 class="fw-semibold text-dark mb-2">targetId</h5>
+              <p class="text-secondary">The DOM ID of the &lt;canvas&gt; element where the graph will be rendered.</p>
+              <a href="#dom-and-canvas" class="text-decoration-none text-primary small mt-auto text-end">Learn more →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm p-3">
+              <h5 class="fw-semibold text-dark mb-2">data</h5>
+              <p class="text-secondary">A JSON object or URL pointing to a file (png, svg, json, text delimited,
+                gpml, xml) containing the data to plot.
+              </p>
+              <a href="/data.html" class="text-decoration-none text-primary small mt-auto text-end">Learn more →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm p-3">
+              <h5 class="fw-semibold text-dark mb-2">config</h5>
+              <p class="text-secondary">A JSON object to customize the graph's appearance and behavior.</p>
+              <a href="/api/general.html" class="text-decoration-none text-primary small mt-auto text-end">Learn more →</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm p-3">
+              <h5 class="fw-semibold text-dark mb-2">events</h5>
+              <p class="text-secondary">A JSON object with user-defined mouse events for interactivity and custom
+                behaviors.
+              </p>
+              <a href="/events.html" class="text-decoration-none text-primary small mt-auto text-end">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: DOM - targetId and the <canvas> element -->
+      <section id="dom-and-canvas" class="container">
+        <h2 class="font-xxl text-primary mb-3">DOM - targetId and the &lt;canvas&gt; element</h2>
+        <p class="text-secondary mb-4">
+          The <code class="prettyprint">targetId</code> is the DOM ID of the <code class="prettyprint">&lt;canvas&gt;</code> element inside the <code class="prettyprint">&lt;body&gt;</code> element of the web
+          page. The <code class="prettyprint">width</code> and <code class="prettyprint">height</code> attributes are used to set the initial size of the CanvasXpress
+          visualization.
+        </p>
+        <div class="card p-3 shadow-sm mb-4">
+          <h4 class="card-title h5 fw-bold">Responsive Visualizations</h4>
+          <p class="text-secondary mb-3">
+            To make visualizations responsive, use the <code class="prettyprint">responsive</code> and <code class="prettyprint">aspectRatio</code> attributes. The <code class="prettyprint">responsive</code>
+            attribute automatically resizes the visualization to its parent container, while <code class="prettyprint">aspectRatio</code> maintains
+            its proportions.
+          </p>
+          <pre class="code-block"><code class="prettyprint">&lt;div class="row"&gt;
+  &lt;div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"&gt;
+    &lt;canvas id='bar1' width='290' height='540' aspectRatio='1:1' responsive='true'&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <p class="text-secondary mt-3">
+            It's important that the <code class="prettyprint">&lt;canvas&gt;</code> element is not programmatically changed to avoid conflicts with
+            the CanvasXpress library.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section: Data Structure -->
+      <section id="data-structure" class="container">
+        <h2 class="font-xxl text-primary mb-3">Data Structure</h2>
+        <p class="text-secondary mb-4">
+          The <code class="prettyprint">data</code> parameter is a <a href="/data.html" class="text-primary text-decoration-none">JSON object</a> that contains the data to be visualized. Its structure depends on
+          the visualization type. Data can also be a URL pointing to a file in various formats.
+        </p>
+        <div class="card p-3 shadow-sm mb-4">
+          <h4 class="card-title h5 fw-bold">Data Components</h4>
+          <ul class="list-unstyled text-secondary mb-3">
+            <li><strong>Sample information:</strong> Metadata for samples.</li>
+            <li><strong>Variable information:</strong> Metadata for variables.</li>
+            <li><strong>Data values:</strong> The actual data to be visualized.</li>
+          </ul>
+          <pre class="code-block"><code class="prettyprint">var data = {
+  "y": {
+    "vars": ["Gene1", "Gene2", "Gene3"],
+    "smps": ["Sample1", "Sample2", "Sample3"],
+    "data": [[10, 20, 30], [15, 25, 35], [5, 15, 25]]
+  },
+  "x": {
+    "Treatment": ["Control", "Control", "Treatment"]
+  },
+  "z": {
+    "Gene1": { "Pathway": "Pathway1" },
+    "Gene2": { "Pathway": "Pathway2" },
+    "Gene3": { "Pathway": "Pathway1" }
+  }
+}</code></pre>
+          <h4 class="card-title h5 fw-bold mt-1">Supported File Formats</h4>
+          <ul class="list-unstyled text-secondary mb-0">
+            <li>JSON files</li>
+            <li>CSV/TSV files</li>
+            <li>XML files (GPML, KGML, XGMML)</li>
+            <li>PNG/SVG image files (with embedded data)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section: Configuration Options -->
+      <section id="configuration-options" class="container">
+        <h2 class="font-xxl text-primary mb-3">Configuration Options</h2>
+        <p class="text-secondary mb-4">
+          The <code class="prettyprint">config</code> parameter is a JSON object that customizes the appearance and behavior of the visualization.
+        </p>
+        <div class="card p-3 shadow-sm mb-4">
+          <h4 class="card-title h5 fw-bold">Common Configuration Properties</h4>
+          <ul class="list-unstyled text-secondary mb-3">
+            <li><code class="prettyprint">graphType</code> - The <a href="/examples.html" class="text-primary text-decoration-none">type of visualization</a> (e.g., 'Bar', 'Scatter2D', 'Heatmap')</li>
+            <li><code class="prettyprint">colorScheme</code> - Color palette for data representation</li>
+            <li><code class="prettyprint">title</code> - Title of the visualization</li>
+            <li><code class="prettyprint">subtitle</code> - Subtitle of the visualization</li>
+            <li><code class="prettyprint">xAxisTitle</code> - Label for the X-axis</li>
+            <li><code class="prettyprint">yAxisTitle</code> - Label for the Y-axis</li>
+          </ul>
+          <pre class="code-block"><code class="prettyprint">var config = {
+  "graphType": "Scatter2D",
+  "colorScheme": "Rainbow",
+  "title": "Gene Expression Analysis"
+}</code></pre>
+          <p class="text-secondary mt-3">
+            For a complete list of configuration options, refer to the <a href="api/general.html"
+              class="text-primary text-decoration-none">API documentation</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section: Event Handling -->
+      <section id="event-handling" class="container">
+        <h2 class="font-xxl text-primary mb-3">Event Handling</h2>
+        <p class="text-secondary mb-4">
+          The <code class="prettyprint">events</code> parameter is a JSON object that defines custom event handlers for user interactions with the
+          visualization, such as clicks and mouseovers.
+        </p>
+        <div class="card p-3 shadow-sm mb-4">
+          <h4 class="card-title h5 fw-bold">Common Events</h4>
+          <ul class="list-unstyled text-secondary mb-3">
+            <li><code class="prettyprint">click</code> - Triggered when a user clicks on an element</li>
+            <li><code class="prettyprint">dblclick</code> - Triggered on double-click</li>
+            <li><code class="prettyprint">mouseover</code> - Triggered when the mouse moves over an element</li>
+            <li><code class="prettyprint">mouseout</code> - Triggered when the mouse leaves an element</li>
+          </ul>
+          <pre class="code-block"><code class="prettyprint">var events = {
+  "click": function(o, e, t) {
+    console.log("Clicked on:", o);
+  },
+  "mouseover": function(o, e, t) {
+    console.log("Mouse over:", o);
+  }
+}</code></pre>
+        </div>
+      </section>
+
+      <!-- Section: Instance Management -->
+      <section id="instance-management" class="container">
+        <h2 class="font-xxl text-primary mb-3">Instance Management</h2>
+        <p class="text-secondary mb-4">
+          CanvasXpress maintains a registry of all instances created on a page. You can retrieve an instance by its
+          ID. It's also important to properly destroy an instance when it's no longer needed.
+        </p>
+        <div class="card p-3 shadow-sm mb-2">
+          <pre class="code-block"><code class="prettyprint">// Get an instance by ID
+var cX = CanvasXpress.\$('canvasId');
+
+// Destroy an instance
+cX.destroy();</code></pre>
+        </div>
+      </section>
+
+      <!-- Section: Initialization Techniques -->
+      <section id="initialization-techniques" class="container">
+        <h2 class="font-xxl text-primary mb-2">Initialization Techniques</h2>
+        <p class="text-secondary mb-4">
+          When initializing CanvasXpress, ensure the <code class="prettyprint">&lt;canvas&gt;</code> element is fully loaded. The simplest way is
+          to place the script after the canvas element.
+        </p>
+        <div class="card p-3 shadow-sm mb-2">
+          <pre class="code-block mt-2"><code class="prettyprint">// Using document.addEventListener
+document.addEventListener('DOMContentLoaded', function() {
+  var cX = new CanvasXpress(...);
+});</code></pre>
+        </div>
+      </section>
+
+      <!-- Section: Frequently Asked Questions -->
+      <section id="faq" class="container">
+        <h2 class="font-xxl text-primary mb-3">Frequently Asked Questions</h2>
+        <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+          <h3 class="faq-question h5" itemprop="name">What are the essential arguments for the CanvasXpress constructor?</h3>
+          <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+            <p itemprop="text" class="text-secondary">The essential arguments are <code class="prettyprint">targetId</code>, <code class="prettyprint">data</code>, <code class="prettyprint">config</code>, and <code class="prettyprint">events</code>. These define where the visualization will be rendered, what data it will display, how it will be styled, and how it will respond to user interactions.</p>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+          <h3 class="faq-question h5" itemprop="name">How can I make my CanvasXpress visualization responsive?</h3>
+          <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+            <p itemprop="text" class="text-secondary">To make your visualization responsive, ensure your <code class="prettyprint">&lt;canvas&gt;</code> element includes the <code class="prettyprint">responsive='true'</code> and <code class="prettyprint">aspectRatio</code> attributes. This allows the visualization to automatically resize while maintaining its proportions within its parent container.</p>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+          <h3 class="faq-question h5" itemprop="name">What data formats does CanvasXpress support?</h3>
+          <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+            <p itemprop="text" class="text-secondary">CanvasXpress supports various data formats, including JSON, CSV/TSV, XML (GPML, KGML, XGMML), and PNG/SVG image files with embedded data.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div class="py-1 mt-lg-1 body-footer">
+        <div class="container px-4 px-lg-3" py-lg-1 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 text-center mx-auto mb-5">
+              <section class="pt-0 pb-0">
+                <div class="row d-flex">
+                  <div class="col-md-6 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2">
+                      <a href="/">
+                        <img src="/assets/images/CanvasXpress-Logo-Horizontal-White.svg" width="282" height="35" title="CanvasXpress Logo" alt="CanvasXpress Logo" loading="lazy"/>
+                      </a>
+                    </div>
+                    <p class="text-footer">CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface. Full and effortless audit trail of data, configuration and all user interactions in every visualization.</p>
+                    <p class="rights text-footer">©2025 All Rights Reserved. CanvasXpress®</p>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Documentation</div>
+                    <a href="/examples.html" class="fade-page link-footer">Examples</a>
+                    <a href="/documentation.html" class="fade-page link-footer">Docs</a>
+                    <a href="/parameters.html" class="fade-page link-footer">Api</a>
+                    <a href="/updates.html" class="fade-page link-footer">Updates</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Company</div>
+                    <a href="/contact.html" class="fade-page link-footer">Contact</a>
+                    <a href="/licenseCommercial.html" class="fade-page link-footer">License</a>
+                    <a href="/apps/dashboard.html" class="fade-page link-footer">Admin</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Information</div>
+                    <a href="/terms.html" class="fade-page link-footer">Terms of Use</a>
+                    <a href="/privacy.html" class="fade-page link-footer">Privacy policy</a>
+                    <a href="/references.html" class="fade-page link-footer">References</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</a>
+
+    <!-- Site JavaScript -->
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script>
+      setTimeout(function() {
+        var elementToObserve = document.getElementsByClassName("gsc-expansionArea")[0];
+        var observer = new MutationObserver(function(mutations) {
+          var val = document.getElementById("gs_tti50").firstChild.value;
+          mutations.forEach(function(mutation) {
+
+          });
+        });
+        if (elementToObserve) { observer.observe(elementToObserve, { attributes: true, childList: true, characterData: true }); }
+      }, 500);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+  </body>
+
+</html>

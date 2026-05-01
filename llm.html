@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress</title>
+    <meta name="description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress">
+    <meta property="og:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress">
+    <meta name="twitter:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Homepage",
+          "item": "https://www.canvasxpress.org/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI and Copilot"
+        }
+      ]
+    }
+    </script>
+</head>
+
+  <body>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top:0;padding:0;">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="/index.html">
+            <div class="mb-0">
+              <img src="/assets/images/logo-dark.svg" alt="CanvasXpress Logo" style="height: 25px; max-width: unset;" title="CanvasXpress Logo" width="282" height="35" loading="eager">
+            </div>
+          </a>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:0;outline:none;right:18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </a>
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0" style="margin-left: 0px;">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a href="/examples.html" class="nav-link">Examples</a></li>
+              <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
+              <li class="nav-item"><a href="/interfaces.html" class="nav-link">Interfaces</a></li>
+              <li class="nav-item"><a href="/updates.html" class="nav-link">Updates</a></li>
+              <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item mb-2" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-bs-toggle="modal" data-bs-target="#search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Aside -->
+      <div id="aside">
+        <aside class="col-md-3 col-lg-2 bg-white p-3 position-fixed d-hg-block shadow-lg sidebar rounded-aside" role="navigation"
+          aria-label="Main Navigation" style="top: 400px; right: 10px;">
+          <div class="text-center mb-2">
+            <a href="./index.html" aria-label="CanvasXpress Home">
+              <img src="https://canvasxpress.org/assets/images/logo-dark.svg" alt="CanvasXpress Logo"
+                title="CanvasXpress Logo" class="img-fluid" width="150" height="50" style="max-height: 50px;"
+                loading="eager">
+            </a>
+          </div>
+          <div class="table-of-contents rounded-aside mb-2">
+            <h3 class="font-xl font-bold text-primary">Table of Contents</h3>
+            <nav>
+              <ul class="nav flex-column space-y-2">
+                <li class="nav-item"><a class="nav-aside nav-link active-nav" href="#ai-introduction">Introduction to CanvasXpress AI</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#chat">Chatting with Data</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#copilot">Copilot for CanvasXpress</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+      </div>
+
+
+      <!-- Modals -->
+      <div id="modals">
+
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content modal-cnt">
+              <button type="button" class="modal-btn bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-hdr">
+                <div id="searchModalLabel" class="font-xl bg-transparent">Search CanvasXpress</div>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                  .gsc-search-button-v2 {background-color: #ffd587; border: none; border-radius: 5px;}.gsc-search-button-v2:focus, .gsc-search-button-v2:hover {background-color: #ffd587; outline: none;}.gsc-search-button-v2 svg {fill: #000;}td.gsib_a, td.gsib_b {border: none; border-radius: 5px; padding: 0 5px 0;}td.gsc-input, td.gsc-search-button, td.gsc-clear-button {border: none; padding: 0;}.gsst_a .gscb_a {color: #000;}.gsst_a .gscb_a:hover {color: #000;}.gsc-control-cse {max-height: 850px; overflow-y: auto; border:none; background-color: transparent;}.gsc-results-wrapper-overlay {background-color:transparent;}.gsc-webResult.gsc-result{border:none;}.gsc-above-wrapper-area {border:none; padding: 5px 0 5px 0;}
+                </style>
+                <script async src="https://cse.google.com/cse.js?cx=017553474198412024421:c_qxiweliao"></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- AI / LLM -->
+
+      <header class="pt-1 overflow-hidden">
+        <div class="container px-4 px-lg-3 mt-5 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-10 text-center mx-auto">
+              <h1 class="main-hero text-primary">CanvasXpress AI and Guided Autocomplete</h1>
+              <p class="lead submain-hero">Explore data and create code or visuals with one click using CanvasXpress AI, and build effective prompts with Guided Autocomplete.</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="ai-introduction" class="container">
+        <h2 class="font-xxl text-primary mb-3">CanvasXpress AI: Powered by LLM</h2>
+        <p class="lead text-secondary lh-base">
+          CanvasXpress AI is a feature that allows users to interact with their data using large language models (LLMs). This functionality enables you to explore data and create visualizations or code with a single click by simply describing what you want in plain English. You can use provided datasets or upload your own files via drag-and-drop.
+        </p>
+        <p class="text-secondary lh-base">
+          Below are examples of how CanvasXpress AI works with different data types and visualizations.
+        </p>
+      </section>
+
+      <section id="chat" class="container">
+        <h2 class="font-xxl text-primary mb-3">Chatting with Data in CanvasXpress</h2>
+        <p class="text-secondary lh-base">
+          Here are some examples of how to interact with CanvasXpress AI using large language models (LLMs). You can either use the provided datasets or drag and drop your own tab-delimited file into any of the CanvasXpress visualizations (currently shown as data tables for clarity). Simply describe in plain English what you want the visualization to look like, including the column names you want to use.
+        </p>
+
+        <h3 class="font-xl text-primary mt-4 mb-2">Examples - Update on a table</h3>
+        <ul class="text-secondary lh-base">
+          <li>Create a Boxplot of len grouped by supp and dose showing the original data jittered.</li>
+          <li>Create a Violin plot of len grouped by supp in a vertical orientation. Rotate the sample labels 90 degrees.</li>
+          <li>Create a Bar graph of len color by supp. Orient vertically and show legend on top in two columns.</li>
+        </ul>
+        <div class="row">
+          <div class="col-md-10">
+            <div class="card p-4 m-1 shadow-sm" style="width: 100%;">
+              <div class="canvasXpressContainerSite">
+                <canvas id='tooth' width='750' height='500' data-aspectRatio="3:2" data-responsive="true"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="font-xl text-primary mt-4 mb-2">Examples - Update on a plot</h3>
+        <ul class="text-secondary lh-base">
+          <li>Create a Scatter plot of cty and hwy color by class.</li>
+          <li>Create a Regression plot of cyl and displ.</li>
+          <li>Create a Loess fit of cty and hwy color by class.</li>
+        </ul>
+        <div class="row">
+          <div class="col-md-10">
+            <div class="card p-4 m-1 shadow-sm" style="width: 100%;">
+              <div class="canvasXpressContainerSite">
+                <canvas id='mpg' width='750' height='500' data-aspectRatio="3:2" data-responsive="true"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="font-xl text-primary mt-4 mb-2">Examples - Append on a plot</h3>
+        <ul class="text-secondary lh-base">
+          <li>Create a Scatter plot of mpg and wt.</li>
+          <li>Create a Filled contour of mpg and wt.</li>
+        </ul>
+        <div class="row">
+          <div class="col-md-10">
+            <div class="card p-4 m-1 shadow-sm" style="width: 100%;">
+              <div class="canvasXpressContainerSite">
+                <canvas id='mtcars' width='750' height='500' data-aspectRatio="3:2" data-responsive="true"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          new CanvasXpress({
+            renderTo: "tooth",
+            data: "https://www.canvasxpress.org/data/csv/toothgrowth.csv",
+            config: {
+              title: "Tooth Growth",
+              graphType: "Bar",
+              xAxis: ["len"],
+              graphOrientation: "vertical",
+              view: "tableChat",
+              llmBehaviour: "update"
+            }
+          });
+          new CanvasXpress({
+            renderTo: "mpg",
+            data: "https://www.canvasxpress.org/data/csv/mpg.csv",
+            config: {
+              title: "mpg",
+              graphType: "Scatter2D",
+              xAxis: ["displ"],
+              yAxis: ["hwy"],
+              view: "canvasChat",
+              llmBehaviour: "update"
+            }
+          });
+          new CanvasXpress({
+            renderTo: "mtcars",
+            data: "https://www.canvasxpress.org/data/csv/mtcars.csv",
+            config: {
+              title: "mtcars",
+              graphType: "Scatter2D",
+              xAxis: ["mpg"],
+              yAxis: ["wt"],
+              view: "canvasChat"
+            }
+          });
+        </script>
+      </section>
+
+      <section id="autocomplete" class="container">
+        <h2 class="font-xxl text-primary mb-3">Guided Autocomplete for CanvasXpress</h2>
+        <p class="lead text-secondary lh-base">
+          **Guided Autocomplete for CanvasXpress** is an integrated feature designed to help users create effective prompts for configuring parameters accurately. This functionality was instrumental in generating the few-shot examples required to train our LLM model.
+        </p>
+        <p class="text-secondary lh-base">
+          When you use Guided Autocomplete, there is no need to ask the LLM to generate visualizations. Instead, CanvasXpress will generate the configuration parameters needed for the visualizations. If the prompt cannot be validated, CanvasXpress will forward it to the LLM for processing.
+        </p>
+        <p class="text-secondary lh-base">
+          Setting up the correct configuration isn't complicated. It's simply about translating the parameters into plain English—there's no need to craft it into poetry.
+        </p>
+
+        <h3 class="font-xl text-primary mt-4 mb-2">How it works</h3>
+        <p class="text-secondary lh-base">
+          Guided Autocomplete can be enabled or disabled using a toggle widget in the <a href="#chat">chat interface</a>. As you start typing, you'll see a set of initial suggestions for how to begin your new sentence. You can simply press the tab key to accept a suggestion. If there are multiple options available, pressing tab will select the first one in the list.
+        </p>
+
+        <h4 class="font-lg text-primary mt-4 mb-2">Initial Suggestions</h4>
+        <ul class="text-secondary lh-base">
+          <li>Sort data by</li>
+          <li>Filter data where</li>
+          <li>Group by</li>
+          <li>Set the hierarchy to</li>
+          <li>Set the Sankey axes to</li>
+          <li>Transform the x-axis to</li>
+          <li>Transform the y-axis to</li>
+          <li>Transform the data to</li>
+          <li>Set the maximum value for the x-axis to</li>
+          <li>Set the minimum value for the x-axis to</li>
+          <li>Set the maximum value for the y-axis to</li>
+          <li>Set the minimum value for the y-axis to</li>
+          <li>Set the maximum value for the data to</li>
+          <li>Set the minimum value for the data to</li>
+          <li>Orient the graph</li>
+          <li>Use the style</li>
+          <li>Use the color scheme</li>
+          <li>Set the title for the graph to</li>
+          <li>Increase the font size of the graph title</li>
+          <li>Decrease the font size of the graph title</li>
+          <li>Set the color of the graph title to</li>
+          <li>Set the title for the x-axis to</li>
+          <li>Increase the font size of the x-axis title</li>
+          <li>Decrease the font size of the x-axis title</li>
+          <li>Set the color of the x-axis title to</li>
+          <li>Increase the font size of the x-axis ticks</li>
+          <li>Decrease the font size of the x-axis ticks</li>
+          <li>Set the color of the x-axis ticks to</li>
+          <li>Set the title for the y-axis to</li>
+          <li>Increase the font size of the y-axis title</li>
+          <li>Decrease the font size of the y-axis title</li>
+          <li>Set the color of the y-axis title to</li>
+          <li>Increase the font size of the y-axis ticks</li>
+          <li>Decrease the font size of the y-axis ticks</li>
+          <li>Set the color of the y-axis ticks to</li>
+          <li>Set the title for the samples to</li>
+          <li>Increase the font size of the sample title</li>
+          <li>Decrease the font size of the sample title</li>
+          <li>Set the color of the sample title to</li>
+          <li>Increase the font size of the sample labels</li>
+          <li>Decrease the font size of the sample labels</li>
+          <li>Set the color of the sample labels to</li>
+          <li>Set the title for the variables to</li>
+          <li>Increase the font size of the variable title</li>
+          <li>Decrease the font size of the variable title</li>
+          <li>Set the color of the variable title to</li>
+          <li>Increase the font size of the variable labels</li>
+          <li>Decrease the font size of the variable labels</li>
+          <li>Set the color of the variable labels to</li>
+          <li>Increase the font size of the sankey title</li>
+          <li>Decrease the font size of the sankey title</li>
+          <li>Set the color of the sankey title to</li>
+          <li>Increase the font size of the sankey labels</li>
+          <li>Decrease the font size of the sankey labels</li>
+          <li>Set the color of the sankey labels to</li>
+          <li>Rotate the sample labels 45 degrees</li>
+          <li>Rotate the sample labels 90 degrees</li>
+          <li>Rotate the variable labels 45 degrees</li>
+          <li>Rotate the variable labels 90 degrees</li>
+          <li>Color by</li>
+          <li>Shape by</li>
+          <li>Size by</li>
+          <li>Line by</li>
+          <li>Ridge by</li>
+          <li>Regression Line by</li>
+          <li>Loess Spline by</li>
+          <li>Scale the data point size</li>
+          <li>Show original data</li>
+          <li>Jitter the data</li>
+          <li>Bin the data</li>
+          <li>Hide the legend</li>
+          <li>Show the legend</li>
+          <li>Put the legend on the</li>
+          <li>Divide the legend in two columns</li>
+          <li>Fit the data with a regression line</li>
+          <li>Fit the data with a loess spline</li>
+          <li>Fit the with a quantile regression line</li>
+          <li>Overlay samples data with factor</li>
+          <li>Overlay variables data with factor</li>
+          <li>Add a red horizontal line at</li>
+          <li>Add a red vertical line at</li>
+          <li>Add a blue horizontal line at</li>
+          <li>Add a blue vertical line at</li>
+          <li>Add a black horizontal line at</li>
+          <li>Add a black vertical line at</li>
+          <li>Set the area graph</li>
+          <li>Set the area style</li>
+          <li>Join the data points with a</li>
+          <li>Hide the whiskers</li>
+          <li>Show single whiskers</li>
+          <li>Show the inner boxplot in the violin plot</li>
+          <li>Do not trim the violin plot</li>
+          <li>Position the histogram bars as</li>
+          <li>Show the density curve in histogram</li>
+          <li>Show the filled density curve in histogram</li>
+          <li>Show median line in density plot</li>
+          <li>Show histogram bars in density plot</li>
+          <li>Set the density curve in density plot to</li>
+          <li>Show the quantile lines in ridgeline plot</li>
+          <li>Show the density data points in ridgeline plot</li>
+          <li>Show filled contour</li>
+          <li>Show contourdata points</li>
+          <li>Cluster the variables</li>
+          <li>Cluster the samples</li>
+          <li>Set the bullet target variable to</li>
+          <li>Set the bullet range stack to</li>
+          <li>Set the R Axis to</li>
+          <li>Set the track names to</li>
+          <li>Set Venn groups to</li>
+        </ul>
+        <p class="text-secondary lh-base">
+          Based on the initial suggestion, Guided Autocomplete will propose ways to complete the sentence. Several of these suggestions exhibit a well-defined structured format.
+        </p>
+
+        <h4 class="font-lg text-primary mt-4 mb-2">Example of a Structured Suggestion</h4>
+        <ul class="text-secondary lh-base">
+          <li>Create a **`{graph}`** of **`{column}`** **`{concatenator}`**</li>
+        </ul>
+        <p class="text-secondary lh-base">
+          When you begin typing your suggestion, guided autocomplete will automatically complete the sentence with the available graph types in CanvasXpress, such as bar graph, line graph, scatter plot, and more. Once you select the graph type, guided autocomplete will add the term 'of' and suggest the columns from your dataset. After you finish typing the first column, guided autocomplete will propose a comma, a period, or 'and' to help you concatenate the entries.
+        </p>
+      </section>
+
+      <!-- Footer -->
+      <div class="py-1 mt-lg-1 body-footer">
+        <div class="container px-4 px-lg-3" py-lg-1 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 text-center mx-auto mb-5">
+              <section class="pt-0 pb-0">
+                <div class="row d-flex">
+                  <div class="col-md-6 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2">
+                      <a href="/">
+                        <img src="/assets/images/CanvasXpress-Logo-Horizontal-White.svg" width="282" height="35" title="CanvasXpress Logo" alt="CanvasXpress Logo" loading="lazy"/>
+                      </a>
+                    </div>
+                    <p class="text-footer">CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface. Full and effortless audit trail of data, configuration and all user interactions in every visualization.</p>
+                    <p class="rights text-footer">©2025 All Rights Reserved. CanvasXpress®</p>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Documentation</div>
+                    <a href="/examples.html" class="fade-page link-footer">Examples</a>
+                    <a href="/documentation.html" class="fade-page link-footer">Docs</a>
+                    <a href="/parameters.html" class="fade-page link-footer">Api</a>
+                    <a href="/updates.html" class="fade-page link-footer">Updates</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Company</div>
+                    <a href="/contact.html" class="fade-page link-footer">Contact</a>
+                    <a href="/licenseCommercial.html" class="fade-page link-footer">License</a>
+                    <a href="/apps/dashboard.html" class="fade-page link-footer">Admin</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Information</div>
+                    <a href="/terms.html" class="fade-page link-footer">Terms of Use</a>
+                    <a href="/privacy.html" class="fade-page link-footer">Privacy policy</a>
+                    <a href="/references.html" class="fade-page link-footer">References</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</a>
+
+    <!-- Site JavaScript -->
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script>
+      setTimeout(function() {
+        var elementToObserve = document.getElementsByClassName("gsc-expansionArea")[0];
+        var observer = new MutationObserver(function(mutations) {
+          var val = document.getElementById("gs_tti50").firstChild.value;
+          mutations.forEach(function(mutation) {
+
+          });
+        });
+        if (elementToObserve) { observer.observe(elementToObserve, { attributes: true, childList: true, characterData: true }); }
+      }, 500);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+  </body>
+
+</html>

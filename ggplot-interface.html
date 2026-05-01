@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress</title>
+    <meta name="description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress">
+    <meta property="og:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress">
+    <meta name="twitter:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <style>
+      .example-link {
+        text-decoration: none;
+        color: inherit;
+      }
+      .example-card {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .example-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .example-icon {
+        width: 60px;
+        height: 60px;
+        margin: 1rem auto;
+        display: block;
+      }
+      .example-name {
+        font-weight: 600;
+      }
+    </style>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const ggplotData = [
+          { name: 'Reference lines', geoms: ['geom_abline()', 'geom_hline()', 'geom_vline()'], image: '/assets/images/geom_abline.png', href: '/examples/ggplot/abline.html' },
+          { name: 'Bar Charts', geoms: ['geom_bar()', 'geom_col()'], image: '/assets/images/geom_bar.png', href: '/examples/ggplot/bar.html' },
+          { name: 'Heatmap of bin counts', geoms: ['geom_bin2d()'], image: '/assets/images/geom_bin2d.png', href: '/examples/ggplot/bin_2d.html' },
+          { name: 'Boxplots', geoms: ['geom_boxplot()'], image: '/assets/images/geom_boxplot.png', href: '/examples/ggplot/boxplot.html' },
+          { name: '2D Contours', geoms: ['geom_contour()', 'geom_contour_filled()'], image: '/assets/images/geom_contour.png', href: '/examples/ggplot/contour.html' },
+          { name: 'Smooth Density', geoms: ['geom_density()'], image: '/assets/images/geom_density.png', href: '/examples/ggplot/density.html' },
+          { name: 'Contours of density estimate', geoms: ['geom_density_2d()', 'geom_density_2d_filled()'], image: '/assets/images/geom_contour.png', href: '/examples/ggplot/density_2d.html' },
+          { name: 'Dot Plot', geoms: ['geom_dotplot()'], image: '/assets/images/geom_dotplot.png', href: '/examples/ggplot/dotplot.html' },
+          { name: 'Error Bars', geoms: ['geom_errorbar()', 'geom_errorbarh()'], image: '/assets/images/geom_crossbar.png', href: '/examples/ggplot/errorbar.html' },
+          { name: 'Hexagonal Binning', geoms: ['geom_hex()'], image: '/assets/images/geom_hex.png', href: '/examples/ggplot/hex.html' },
+          { name: 'Histograms and polygons', geoms: ['geom_histogram()', 'geom_freqpoly()'], image: '/assets/images/geom_polygon.png', href: '/examples/ggplot/histogram.html' },
+          { name: 'Jittered Points', geoms: ['geom_jitter()'], image: '/assets/images/geom_jitter.png', href: '/examples/ggplot/jitter.html' },
+          { name: 'Connect observations', geoms: ['geom_path()', 'geom_line()', 'geom_step()'], image: '/assets/images/geom_path.png', href: '/examples/ggplot/path.html' },
+          { name: 'Points', geoms: ['geom_point()'], image: '/assets/images/geom_point.png', href: '/examples/ggplot/point.html' },
+          { name: 'Quantile-Quantile plots', geoms: ['geom_qq()', 'geom_qq_line()'], image: '/assets/images/geom_quantile.png', href: '/examples/ggplot/qq.html' },
+          { name: 'Quantile lines', geoms: ['geom_quantile()'], image: '/assets/images/geom_quantile.png', href: '/examples/ggplot/quantile.html' },
+          { name: 'Ribbon Plot', geoms: ['geom_ribbon()', 'geom_area()'], image: '/assets/images/geom_ribbon.png', href: '/examples/ggplot/ribbon.html' },
+          { name: 'Rug plots', geoms: ['geom_rug()'], image: '/assets/images/geom_rug.png', href: '/examples/ggplot/rug.html' },
+          { name: 'Smoothed means', geoms: ['geom_smooth()'], image: '/assets/images/geom_smooth.png', href: '/examples/ggplot/smooth.html' },
+          { name: 'Text annotations', geoms: ['geom_text()', 'geom_label()'], image: '/assets/images/geom_text.png', href: '/examples/ggplot/text.html' },
+          { name: 'Rectangles', geoms: ['geom_raster()'], image: '/assets/images/geom_raster.png', href: '/examples/ggplot/tile.html' },
+          { name: 'Violin Plot', geoms: ['geom_violin()'], image: '/assets/images/geom_violin.png', href: '/examples/ggplot/violin.html' }
+        ];
+
+        const ggplotGrid = document.getElementById('ggplot-grid');
+
+        ggplotData.forEach(gg => {
+          const colDiv = document.createElement('div');
+          colDiv.className = 'col-6 col-md-4 col-lg-3 mb-2';
+          const cardHtml = `
+            <a class="example-link" href="${gg.href}" target="_blank" aria-label="View ${gg.name} example">
+              <div class="example-card p-3 text-center d-flex flex-column h-100">
+              <span class="example-name d-block mb-2">${gg.name}</span>
+                <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                  <div class="example-icon">
+                      <img src="${gg.image}" alt="${gg.name} example" style="max-width: 100%; height: auto;" />
+                  </div>
+                </div>
+                <span class="example-name d-block mt-2">${gg.geoms.join(', ')}</span>
+              </div>
+            </a>
+          `;
+          colDiv.innerHTML = cardHtml;
+          ggplotGrid.appendChild(colDiv);
+        });
+      });
+    </script>
+
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdWYcYqAAAAAPqJzSUJ4T0r_YKPGhfotxPl0-_A"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Homepage",
+          "item": "https://www.canvasxpress.org/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Integrations"
+        }
+      ]
+    }
+    </script>
+</head>
+
+  <body>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top:0;padding:0;">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="/index.html">
+            <div class="mb-0">
+              <img src="/assets/images/logo-dark.svg" alt="CanvasXpress Logo" style="height: 25px; max-width: unset;" title="CanvasXpress Logo" width="282" height="35" loading="eager">
+            </div>
+          </a>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:0;outline:none;right:18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </a>
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0" style="margin-left: 0px;">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a href="/examples.html" class="nav-link">Examples</a></li>
+              <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
+              <li class="nav-item"><a href="/interfaces.html" class="nav-link">Interfaces</a></li>
+              <li class="nav-item"><a href="/updates.html" class="nav-link">Updates</a></li>
+              <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item mb-2" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-bs-toggle="modal" data-bs-target="#search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Aside -->
+      <div id="aside">
+        <aside class="col-md-3 col-lg-2 bg-white p-3 position-fixed d-hg-block shadow-lg sidebar rounded-aside" role="navigation"
+          aria-label="Main Navigation" style="top: 400px; right: 10px;">
+          <div class="text-center mb-2">
+            <a href="./index.html" aria-label="CanvasXpress Home">
+              <img src="https://canvasxpress.org/assets/images/logo-dark.svg" alt="CanvasXpress Logo"
+                title="CanvasXpress Logo" class="img-fluid" width="150" height="50" style="max-height: 50px;"
+                loading="eager">
+            </a>
+          </div>
+          <div class="table-of-contents rounded-aside mb-2">
+            <h3 class="font-xl font-bold text-primary">Table of Contents</h3>
+            <nav>
+              <ul class="nav flex-column space-y-2">
+                <li class="nav-item"><a class="nav-aside nav-link active-nav" href="#getting-started">Getting Started</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#installation">Installation</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#how-it-works">How It Works</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#step-by-step">Step by step</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#examples">Examples</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+      </div>
+
+
+      <!-- Modals -->
+      <div id="modals">
+
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content modal-cnt">
+              <button type="button" class="modal-btn bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-hdr">
+                <div id="searchModalLabel" class="font-xl bg-transparent">Search CanvasXpress</div>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                  .gsc-search-button-v2 {background-color: #ffd587; border: none; border-radius: 5px;}.gsc-search-button-v2:focus, .gsc-search-button-v2:hover {background-color: #ffd587; outline: none;}.gsc-search-button-v2 svg {fill: #000;}td.gsib_a, td.gsib_b {border: none; border-radius: 5px; padding: 0 5px 0;}td.gsc-input, td.gsc-search-button, td.gsc-clear-button {border: none; padding: 0;}.gsst_a .gscb_a {color: #000;}.gsst_a .gscb_a:hover {color: #000;}.gsc-control-cse {max-height: 850px; overflow-y: auto; border:none; background-color: transparent;}.gsc-results-wrapper-overlay {background-color:transparent;}.gsc-webResult.gsc-result{border:none;}.gsc-above-wrapper-area {border:none; padding: 5px 0 5px 0;}
+                </style>
+                <script async src="https://cse.google.com/cse.js?cx=017553474198412024421:c_qxiweliao"></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <main>
+        <header class="pt-1 overflow-hidden">
+          <div class="container px-4 px-lg-3 mt-5 position-relative">
+              <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-lg-10 text-center mx-auto">
+                <!-- Title and Subtitle -->
+                <h1 class="main-hero text-primary">CanvasXpress GGPlot2 Interface</h1>
+                <p class="lead submain-hero">Transform Your Static GGPlots into Interactive Visualizations</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section id="getting-started" class="container">
+          <h2 class="font-xxl text-primary mb-3">Getting Started</h2>
+          <p class="lead text-secondary lh-base">
+            For many R users, <i>ggplot2</i> is the gold standard for creating elegant, publication-quality static plots. Its "grammar of graphics" provides a powerful and intuitive way to build complex visualizations layer by layer. But what if you could take those carefully crafted plots and make them fully interactive with just one extra line of code? The <i>canvasXpress</i> R package makes this possible.
+          </p>
+          <p class="lead text-secondary lh-base">
+            This guide will show you how to enhance your existing <i>ggplot2</i> workflow by converting your static plots into dynamic, web-ready charts with tooltips, zooming, and interactive legends.
+          </p>
+        </section>
+
+        <section id="installation" class="container">
+          <h2 class="font-xxl text-primary mb-3">Installation</h2>
+          <p class="lead text-secondary lh-base">If you haven't already, install both <i>canvasXpress</i> and <i>ggplot2</i> from CRAN.</p>
+          <pre class="code-block mt-3"><code class="prettyprint">install.packages("canvasXpress")
+install.packages("ggplot2")</code></pre>
+          <p class="lead text-secondary lh-base">Then, load both libraries to get started.</p>
+          <pre class="code-block mt-3"><code class="prettyprint">library(canvasXpress)
+library(ggplot2)</code></pre>
+        </section>
+
+        <section id="how-it-works" class="container">
+          <h2 class="font-xxl text-primary mb-3">How It Works: The <i>canvasXpress</i> Translator</h2>
+          <p class="lead text-secondary lh-base">The magic behind the conversion lies in the <i>canvasXpress()</i> function's built-in intelligence. When you pass a <i>ggplot</i> object to it, the function acts as a sophisticated translator. It automatically parses the structure of your plot, interpreting the various layers (like <i>geom_point</i> or <i>geom_bar</i>) and aesthetic mappings (such as <i>aes(x=..., y=..., color=...)</i>) you've defined. It then converts these elements into the specific JSON configuration required by the underlying CanvasXpress JavaScript engine, effectively rebuilding your static plot as a fully interactive HTML widget.</p>
+        </section>
+
+        <section id="step-by-step" class="container">
+          <h2 class="font-xxl text-primary mb-3">A Step-by-Step Example</h2>
+          <p class="lead text-secondary lh-base">Let's walk through the process with a simple example using the <i>iris</i> dataset.</p>
+          <h3>1. Create Your <i>ggplot2</i> Object</h3>
+          <p class="lead text-secondary lh-base">First, build a standard <i>ggplot</i> object just as you normally would. Here, we'll create a scatter plot of petal length versus petal width, colored by species.</p>
+          <pre class="code-block mt-3"><code class="prettyprint"># Create a standard ggplot2 object
+my_gg_plot <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width, color = Species)) +
+  geom_point(size = 3) +
+  labs(title = "Iris Petal Length vs. Width") +
+  theme_minimal()</code></pre>
+
+          <h3>2. The One-Liner Conversion</h3>
+          <p class="lead text-secondary lh-base">Now, simply pass the <i>my_gg_plot</i> object directly to the <i>canvasXpress()</i> function.</p>
+          <pre class="code-block mt-3"><code class="prettyprint"># Convert the ggplot object to an interactive CanvasXpress chart
+canvasXpress(my_gg_plot)</code></pre>
+        </section>
+
+        <section id="examples" class="container">
+          <h2 class="font-xxl text-primary mb-3">Examples</h2>
+          <div class="row g-4" id="ggplot-grid">
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <div class="py-1 mt-lg-1 body-footer">
+        <div class="container px-4 px-lg-3" py-lg-1 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 text-center mx-auto mb-5">
+              <section class="pt-0 pb-0">
+                <div class="row d-flex">
+                  <div class="col-md-6 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2">
+                      <a href="/">
+                        <img src="/assets/images/CanvasXpress-Logo-Horizontal-White.svg" width="282" height="35" title="CanvasXpress Logo" alt="CanvasXpress Logo" loading="lazy"/>
+                      </a>
+                    </div>
+                    <p class="text-footer">CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface. Full and effortless audit trail of data, configuration and all user interactions in every visualization.</p>
+                    <p class="rights text-footer">©2025 All Rights Reserved. CanvasXpress®</p>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Documentation</div>
+                    <a href="/examples.html" class="fade-page link-footer">Examples</a>
+                    <a href="/documentation.html" class="fade-page link-footer">Docs</a>
+                    <a href="/parameters.html" class="fade-page link-footer">Api</a>
+                    <a href="/updates.html" class="fade-page link-footer">Updates</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Company</div>
+                    <a href="/contact.html" class="fade-page link-footer">Contact</a>
+                    <a href="/licenseCommercial.html" class="fade-page link-footer">License</a>
+                    <a href="/apps/dashboard.html" class="fade-page link-footer">Admin</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Information</div>
+                    <a href="/terms.html" class="fade-page link-footer">Terms of Use</a>
+                    <a href="/privacy.html" class="fade-page link-footer">Privacy policy</a>
+                    <a href="/references.html" class="fade-page link-footer">References</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</a>
+
+    <!-- Site JavaScript -->
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script>
+      setTimeout(function() {
+        var elementToObserve = document.getElementsByClassName("gsc-expansionArea")[0];
+        var observer = new MutationObserver(function(mutations) {
+          var val = document.getElementById("gs_tti50").firstChild.value;
+          mutations.forEach(function(mutation) {
+
+          });
+        });
+        if (elementToObserve) { observer.observe(elementToObserve, { attributes: true, childList: true, characterData: true }); }
+      }, 500);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+  </body>
+
+</html>

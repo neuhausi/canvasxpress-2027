@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress: Network Chart</title>
+    <meta name="description" content="CanvasXpress: Interactive Network Graph Visualization iframe">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress: Network Chart">
+    <meta property="og:description" content="CanvasXpress: Interactive Network Graph Visualization iframe">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org/assets/examples/network-3.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress: Network Chart">
+    <meta name="twitter:description" content="CanvasXpress: Interactive Network Graph Visualization iframe">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org/assets/examples/network-3.html">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+</head>
+
+  <body>
+
+    <div class="content">
+      <div class="container" style="margin:auto;display:flex;justify-content:center;align-items:center;height:100vh;">
+        <div class="plot">
+          <canvas id="network3" width="600" height="600" data-aspectRatio="1:1" data-responsive="true"></canvas>
+        </div>
+      </div>
+      <script>
+        var cXnetwork3 = new CanvasXpress("network3",
+          {
+             "edges" : [{"id1" : "Id1","id2" : "Id0","value" : 1},{"id1" : "Id2","id2" : "Id0","value" : 8},{"id1" : "Id3","id2" : "Id0","value" : 10},{"id1" : "Id3","id2" : "Id2","value" : 6},{"id1" : "Id4","id2" : "Id0","value" : 1},{"id1" : "Id5","id2" : "Id0","value" : 1},{"id1" : "Id6","id2" : "Id0","value" : 1},{"id1" : "Id7","id2" : "Id0","value" : 1},{"id1" : "Id8","id2" : "Id0","value" : 2},{"id1" : "Id9","id2" : "Id0","value" : 1},{"id1" : "Id11","id2" : "Id10","value" : 1},{"id1" : "Id11","id2" : "Id3","value" : 3},{"id1" : "Id11","id2" : "Id2","value" : 3},{"id1" : "Id11","id2" : "Id0","value" : 5},{"id1" : "Id12","id2" : "Id11","value" : 1},{"id1" : "Id13","id2" : "Id11","value" : 1},{"id1" : "Id14","id2" : "Id11","value" : 1},{"id1" : "Id15","id2" : "Id11","value" : 1},{"id1" : "Id17","id2" : "Id16","value" : 4},{"id1" : "Id18","id2" : "Id16","value" : 4},{"id1" : "Id18","id2" : "Id17","value" : 4},{"id1" : "Id19","id2" : "Id16","value" : 4},{"id1" : "Id19","id2" : "Id17","value" : 4},{"id1" : "Id19","id2" : "Id18","value" : 4},{"id1" : "Id20","id2" : "Id16","value" : 3},{"id1" : "Id20","id2" : "Id17","value" : 3},{"id1" : "Id20","id2" : "Id18","value" : 3},{"id1" : "Id20","id2" : "Id19","value" : 4},{"id1" : "Id21","id2" : "Id16","value" : 3},{"id1" : "Id21","id2" : "Id17","value" : 3},{"id1" : "Id21","id2" : "Id18","value" : 3},{"id1" : "Id21","id2" : "Id19","value" : 3},{"id1" : "Id21","id2" : "Id20","value" : 5},{"id1" : "Id22","id2" : "Id16","value" : 3},{"id1" : "Id22","id2" : "Id17","value" : 3},{"id1" : "Id22","id2" : "Id18","value" : 3},{"id1" : "Id22","id2" : "Id19","value" : 3},{"id1" : "Id22","id2" : "Id20","value" : 4},{"id1" : "Id22","id2" : "Id21","value" : 4},{"id1" : "Id23","id2" : "Id16","value" : 3},{"id1" : "Id23","id2" : "Id17","value" : 3},{"id1" : "Id23","id2" : "Id18","value" : 3},{"id1" : "Id23","id2" : "Id19","value" : 3},{"id1" : "Id23","id2" : "Id20","value" : 4},{"id1" : "Id23","id2" : "Id21","value" : 4},{"id1" : "Id23","id2" : "Id22","value" : 4},{"id1" : "Id23","id2" : "Id12","value" : 2},{"id1" : "Id23","id2" : "Id11","value" : 9},{"id1" : "Id24","id2" : "Id23","value" : 2},{"id1" : "Id24","id2" : "Id11","value" : 7},{"id1" : "Id25","id2" : "Id24","value" : 13},{"id1" : "Id25","id2" : "Id23","value" : 1},{"id1" : "Id25","id2" : "Id11","value" : 12},{"id1" : "Id26","id2" : "Id24","value" : 4},{"id1" : "Id26","id2" : "Id11","value" : 31},{"id1" : "Id26","id2" : "Id16","value" : 1},{"id1" : "Id26","id2" : "Id25","value" : 1},{"id1" : "Id27","id2" : "Id11","value" : 17},{"id1" : "Id27","id2" : "Id23","value" : 5},{"id1" : "Id27","id2" : "Id25","value" : 5},{"id1" : "Id27","id2" : "Id24","value" : 1},{"id1" : "Id27","id2" : "Id26","value" : 1},{"id1" : "Id28","id2" : "Id11","value" : 8},{"id1" : "Id28","id2" : "Id27","value" : 1},{"id1" : "Id29","id2" : "Id23","value" : 1},{"id1" : "Id29","id2" : "Id27","value" : 1},{"id1" : "Id29","id2" : "Id11","value" : 2},{"id1" : "Id30","id2" : "Id23","value" : 1},{"id1" : "Id31","id2" : "Id30","value" : 2},{"id1" : "Id31","id2" : "Id11","value" : 3},{"id1" : "Id31","id2" : "Id23","value" : 2},{"id1" : "Id31","id2" : "Id27","value" : 1},{"id1" : "Id32","id2" : "Id11","value" : 1},{"id1" : "Id33","id2" : "Id11","value" : 2},{"id1" : "Id33","id2" : "Id27","value" : 1},{"id1" : "Id34","id2" : "Id11","value" : 3},{"id1" : "Id34","id2" : "Id29","value" : 2},{"id1" : "Id35","id2" : "Id11","value" : 3},{"id1" : "Id35","id2" : "Id34","value" : 3},{"id1" : "Id35","id2" : "Id29","value" : 2},{"id1" : "Id36","id2" : "Id34","value" : 2},{"id1" : "Id36","id2" : "Id35","value" : 2},{"id1" : "Id36","id2" : "Id11","value" : 2},{"id1" : "Id36","id2" : "Id29","value" : 1},{"id1" : "Id37","id2" : "Id34","value" : 2},{"id1" : "Id37","id2" : "Id35","value" : 2},{"id1" : "Id37","id2" : "Id36","value" : 2},{"id1" : "Id37","id2" : "Id11","value" : 2},{"id1" : "Id37","id2" : "Id29","value" : 1},{"id1" : "Id38","id2" : "Id34","value" : 2},{"id1" : "Id38","id2" : "Id35","value" : 2},{"id1" : "Id38","id2" : "Id36","value" : 2},{"id1" : "Id38","id2" : "Id37","value" : 2},{"id1" : "Id38","id2" : "Id11","value" : 2},{"id1" : "Id38","id2" : "Id29","value" : 1},{"id1" : "Id39","id2" : "Id25","value" : 1},{"id1" : "Id40","id2" : "Id25","value" : 1},{"id1" : "Id41","id2" : "Id24","value" : 2},{"id1" : "Id41","id2" : "Id25","value" : 3},{"id1" : "Id42","id2" : "Id41","value" : 2},{"id1" : "Id42","id2" : "Id25","value" : 2},{"id1" : "Id42","id2" : "Id24","value" : 1},{"id1" : "Id43","id2" : "Id11","value" : 3},{"id1" : "Id43","id2" : "Id26","value" : 1},{"id1" : "Id43","id2" : "Id27","value" : 1},{"id1" : "Id44","id2" : "Id28","value" : 3},{"id1" : "Id44","id2" : "Id11","value" : 1},{"id1" : "Id45","id2" : "Id28","value" : 2},{"id1" : "Id47","id2" : "Id46","value" : 1},{"id1" : "Id48","id2" : "Id47","value" : 2},{"id1" : "Id48","id2" : "Id25","value" : 1},{"id1" : "Id48","id2" : "Id27","value" : 1},{"id1" : "Id48","id2" : "Id11","value" : 1},{"id1" : "Id49","id2" : "Id26","value" : 3},{"id1" : "Id49","id2" : "Id11","value" : 2},{"id1" : "Id50","id2" : "Id49","value" : 1},{"id1" : "Id50","id2" : "Id24","value" : 1},{"id1" : "Id51","id2" : "Id49","value" : 9},{"id1" : "Id51","id2" : "Id26","value" : 2},{"id1" : "Id51","id2" : "Id11","value" : 2},{"id1" : "Id52","id2" : "Id51","value" : 1},{"id1" : "Id52","id2" : "Id39","value" : 1},{"id1" : "Id53","id2" : "Id51","value" : 1},{"id1" : "Id54","id2" : "Id51","value" : 2},{"id1" : "Id54","id2" : "Id49","value" : 1},{"id1" : "Id54","id2" : "Id26","value" : 1},{"id1" : "Id55","id2" : "Id51","value" : 6},{"id1" : "Id55","id2" : "Id49","value" : 12},{"id1" : "Id55","id2" : "Id39","value" : 1},{"id1" : "Id55","id2" : "Id54","value" : 1},{"id1" : "Id55","id2" : "Id26","value" : 21},{"id1" : "Id55","id2" : "Id11","value" : 19},{"id1" : "Id55","id2" : "Id16","value" : 1},{"id1" : "Id55","id2" : "Id25","value" : 2},{"id1" : "Id55","id2" : "Id41","value" : 5},{"id1" : "Id55","id2" : "Id48","value" : 4},{"id1" : "Id56","id2" : "Id49","value" : 1},{"id1" : "Id56","id2" : "Id55","value" : 1},{"id1" : "Id57","id2" : "Id55","value" : 1},{"id1" : "Id57","id2" : "Id41","value" : 1},{"id1" : "Id57","id2" : "Id48","value" : 1},{"id1" : "Id58","id2" : "Id55","value" : 7},{"id1" : "Id58","id2" : "Id48","value" : 7},{"id1" : "Id58","id2" : "Id27","value" : 6},{"id1" : "Id58","id2" : "Id57","value" : 1},{"id1" : "Id58","id2" : "Id11","value" : 4},{"id1" : "Id59","id2" : "Id58","value" : 15},{"id1" : "Id59","id2" : "Id55","value" : 5},{"id1" : "Id59","id2" : "Id48","value" : 6},{"id1" : "Id59","id2" : "Id57","value" : 2},{"id1" : "Id60","id2" : "Id48","value" : 1},{"id1" : "Id60","id2" : "Id58","value" : 4},{"id1" : "Id60","id2" : "Id59","value" : 2},{"id1" : "Id61","id2" : "Id48","value" : 2},{"id1" : "Id61","id2" : "Id58","value" : 6},{"id1" : "Id61","id2" : "Id60","value" : 2},{"id1" : "Id61","id2" : "Id59","value" : 5},{"id1" : "Id61","id2" : "Id57","value" : 1},{"id1" : "Id61","id2" : "Id55","value" : 1},{"id1" : "Id62","id2" : "Id55","value" : 9},{"id1" : "Id62","id2" : "Id58","value" : 17},{"id1" : "Id62","id2" : "Id59","value" : 13},{"id1" : "Id62","id2" : "Id48","value" : 7},{"id1" : "Id62","id2" : "Id57","value" : 2},{"id1" : "Id62","id2" : "Id41","value" : 1},{"id1" : "Id62","id2" : "Id61","value" : 6},{"id1" : "Id62","id2" : "Id60","value" : 3},{"id1" : "Id63","id2" : "Id59","value" : 5},{"id1" : "Id63","id2" : "Id48","value" : 5},{"id1" : "Id63","id2" : "Id62","value" : 6},{"id1" : "Id63","id2" : "Id57","value" : 2},{"id1" : "Id63","id2" : "Id58","value" : 4},{"id1" : "Id63","id2" : "Id61","value" : 3},{"id1" : "Id63","id2" : "Id60","value" : 2},{"id1" : "Id63","id2" : "Id55","value" : 1},{"id1" : "Id64","id2" : "Id55","value" : 5},{"id1" : "Id64","id2" : "Id62","value" : 12},{"id1" : "Id64","id2" : "Id48","value" : 5},{"id1" : "Id64","id2" : "Id63","value" : 4},{"id1" : "Id64","id2" : "Id58","value" : 10},{"id1" : "Id64","id2" : "Id61","value" : 6},{"id1" : "Id64","id2" : "Id60","value" : 2},{"id1" : "Id64","id2" : "Id59","value" : 9},{"id1" : "Id64","id2" : "Id57","value" : 1},{"id1" : "Id64","id2" : "Id11","value" : 1},{"id1" : "Id65","id2" : "Id63","value" : 5},{"id1" : "Id65","id2" : "Id64","value" : 7},{"id1" : "Id65","id2" : "Id48","value" : 3},{"id1" : "Id65","id2" : "Id62","value" : 5},{"id1" : "Id65","id2" : "Id58","value" : 5},{"id1" : "Id65","id2" : "Id61","value" : 5},{"id1" : "Id65","id2" : "Id60","value" : 2},{"id1" : "Id65","id2" : "Id59","value" : 5},{"id1" : "Id65","id2" : "Id57","value" : 1},{"id1" : "Id65","id2" : "Id55","value" : 2},{"id1" : "Id66","id2" : "Id64","value" : 3},{"id1" : "Id66","id2" : "Id58","value" : 3},{"id1" : "Id66","id2" : "Id59","value" : 1},{"id1" : "Id66","id2" : "Id62","value" : 2},{"id1" : "Id66","id2" : "Id65","value" : 2},{"id1" : "Id66","id2" : "Id48","value" : 1},{"id1" : "Id66","id2" : "Id63","value" : 1},{"id1" : "Id66","id2" : "Id61","value" : 1},{"id1" : "Id66","id2" : "Id60","value" : 1},{"id1" : "Id67","id2" : "Id57","value" : 3},{"id1" : "Id68","id2" : "Id25","value" : 5},{"id1" : "Id68","id2" : "Id11","value" : 1},{"id1" : "Id68","id2" : "Id24","value" : 1},{"id1" : "Id68","id2" : "Id27","value" : 1},{"id1" : "Id68","id2" : "Id48","value" : 1},{"id1" : "Id68","id2" : "Id41","value" : 1},{"id1" : "Id69","id2" : "Id25","value" : 6},{"id1" : "Id69","id2" : "Id68","value" : 6},{"id1" : "Id69","id2" : "Id11","value" : 1},{"id1" : "Id69","id2" : "Id24","value" : 1},{"id1" : "Id69","id2" : "Id27","value" : 2},{"id1" : "Id69","id2" : "Id48","value" : 1},{"id1" : "Id69","id2" : "Id41","value" : 1},{"id1" : "Id70","id2" : "Id25","value" : 4},{"id1" : "Id70","id2" : "Id69","value" : 4},{"id1" : "Id70","id2" : "Id68","value" : 4},{"id1" : "Id70","id2" : "Id11","value" : 1},{"id1" : "Id70","id2" : "Id24","value" : 1},{"id1" : "Id70","id2" : "Id27","value" : 1},{"id1" : "Id70","id2" : "Id41","value" : 1},{"id1" : "Id70","id2" : "Id58","value" : 1},{"id1" : "Id71","id2" : "Id27","value" : 1},{"id1" : "Id71","id2" : "Id69","value" : 2},{"id1" : "Id71","id2" : "Id68","value" : 2},{"id1" : "Id71","id2" : "Id70","value" : 2},{"id1" : "Id71","id2" : "Id11","value" : 1},{"id1" : "Id71","id2" : "Id48","value" : 1},{"id1" : "Id71","id2" : "Id41","value" : 1},{"id1" : "Id71","id2" : "Id25","value" : 1},{"id1" : "Id72","id2" : "Id26","value" : 2},{"id1" : "Id72","id2" : "Id27","value" : 1},{"id1" : "Id72","id2" : "Id11","value" : 1},{"id1" : "Id73","id2" : "Id48","value" : 2},{"id1" : "Id74","id2" : "Id48","value" : 2},{"id1" : "Id74","id2" : "Id73","value" : 3},{"id1" : "Id75","id2" : "Id69","value" : 3},{"id1" : "Id75","id2" : "Id68","value" : 3},{"id1" : "Id75","id2" : "Id25","value" : 3},{"id1" : "Id75","id2" : "Id48","value" : 1},{"id1" : "Id75","id2" : "Id41","value" : 1},{"id1" : "Id75","id2" : "Id70","value" : 1},{"id1" : "Id75","id2" : "Id71","value" : 1},{"id1" : "Id76","id2" : "Id64","value" : 1},{"id1" : "Id76","id2" : "Id65","value" : 1},{"id1" : "Id76","id2" : "Id66","value" : 1},{"id1" : "Id76","id2" : "Id63","value" : 1},{"id1" : "Id76","id2" : "Id62","value" : 1},{"id1" : "Id76","id2" : "Id48","value" : 1},{"id1" : "Id76","id2" : "Id58","value" : 1}],
+             "nodes" : [{"group" : "G01","id" : "Id0","name" : "Myriel"},{"group" : "G01","id" : "Id1","name" : "Napoleon"},{"group" : "G01","id" : "Id2","name" : "Mlle. Baptistine"},{"group" : "G01","id" : "Id3","name" : "Mme. Magloire"},{"group" : "G01","id" : "Id4","name" : "Countess de Lo"},{"group" : "G01","id" : "Id5","name" : "Geborand"},{"group" : "G01","id" : "Id6","name" : "Champtercier"},{"group" : "G01","id" : "Id7","name" : "Cravatte"},{"group" : "G01","id" : "Id8","name" : "Count"},{"group" : "G01","id" : "Id9","name" : "Old Man"},{"group" : "G02","id" : "Id10","name" : "Labarre"},{"group" : "G02","id" : "Id11","name" : "Valjean"},{"group" : "G03","id" : "Id12","name" : "Marguerite"},{"group" : "G02","id" : "Id13","name" : "Mme. de R"},{"group" : "G02","id" : "Id14","name" : "Isabeau"},{"group" : "G02","id" : "Id15","name" : "Gervais"},{"group" : "G03","id" : "Id16","name" : "Tholomyes"},{"group" : "G03","id" : "Id17","name" : "Listolier"},{"group" : "G03","id" : "Id18","name" : "Fameuil"},{"group" : "G03","id" : "Id19","name" : "Blacheville"},{"group" : "G03","id" : "Id20","name" : "Favourite"},{"group" : "G03","id" : "Id21","name" : "Dahlia"},{"group" : "G03","id" : "Id22","name" : "Zephine"},{"group" : "G03","id" : "Id23","name" : "Fantine"},{"group" : "G04","id" : "Id24","name" : "Mme. Thenardier"},{"group" : "G04","id" : "Id25","name" : "Thenardier"},{"group" : "G05","id" : "Id26","name" : "Cosette"},{"group" : "G04","id" : "Id27","name" : "Javert"},{"group" : "G00","id" : "Id28","name" : "Fauchelevent"},{"group" : "G02","id" : "Id29","name" : "Bamatabois"},{"group" : "G03","id" : "Id30","name" : "Perpetue"},{"group" : "G02","id" : "Id31","name" : "Simplice"},{"group" : "G02","id" : "Id32","name" : "Scaufflaire"},{"group" : "G02","id" : "Id33","name" : "Woman 1"},{"group" : "G02","id" : "Id34","name" : "Judge"},{"group" : "G02","id" : "Id35","name" : "Champmathieu"},{"group" : "G02","id" : "Id36","name" : "Brevet"},{"group" : "G02","id" : "Id37","name" : "Chenildieu"},{"group" : "G02","id" : "Id38","name" : "Cochepaille"},{"group" : "G04","id" : "Id39","name" : "Pontmercy"},{"group" : "G06","id" : "Id40","name" : "Boulatruelle"},{"group" : "G04","id" : "Id41","name" : "Eponine"},{"group" : "G04","id" : "Id42","name" : "Anzelma"},{"group" : "G05","id" : "Id43","name" : "Woman 2"},{"group" : "G00","id" : "Id44","name" : "Mother Innocent"},{"group" : "G00","id" : "Id45","name" : "Gribier"},{"group" : "G07","id" : "Id46","name" : "Jondrette"},{"group" : "G07","id" : "Id47","name" : "Mme. Burgon"},{"group" : "G08","id" : "Id48","name" : "Gavroche"},{"group" : "G05","id" : "Id49","name" : "Gillenormand"},{"group" : "G05","id" : "Id50","name" : "Magnon"},{"group" : "G05","id" : "Id51","name" : "Mlle. Gillenormand"},{"group" : "G05","id" : "Id52","name" : "Mme. Pontmercy"},{"group" : "G05","id" : "Id53","name" : "Mlle. Vaubois"},{"group" : "G05","id" : "Id54","name" : "Lt. Gillenormand"},{"group" : "G08","id" : "Id55","name" : "Marius"},{"group" : "G05","id" : "Id56","name" : "Baroness T"},{"group" : "G08","id" : "Id57","name" : "Mabeuf"},{"group" : "G08","id" : "Id58","name" : "Enjolras"},{"group" : "G08","id" : "Id59","name" : "Combeferre"},{"group" : "G08","id" : "Id60","name" : "Prouvaire"},{"group" : "G08","id" : "Id61","name" : "Feuilly"},{"group" : "G08","id" : "Id62","name" : "Courfeyrac"},{"group" : "G08","id" : "Id63","name" : "Bahorel"},{"group" : "G08","id" : "Id64","name" : "Bossuet"},{"group" : "G08","id" : "Id65","name" : "Joly"},{"group" : "G08","id" : "Id66","name" : "Grantaire"},{"group" : "G09","id" : "Id67","name" : "Mother Plutarch"},{"group" : "G04","id" : "Id68","name" : "Gueulemer"},{"group" : "G04","id" : "Id69","name" : "Babet"},{"group" : "G04","id" : "Id70","name" : "Claquesous"},{"group" : "G04","id" : "Id71","name" : "Montparnasse"},{"group" : "G05","id" : "Id72","name" : "Toussaint"},{"group" : "G10","id" : "Id73","name" : "Child 1"},{"group" : "G10","id" : "Id74","name" : "Child 2"},{"group" : "G04","id" : "Id75","name" : "Brujon"},{"group" : "G08","id" : "Id76","name" : "Mme. Hucheloup"}]
+          },
+          {
+             "colorNodeBy" : "group",
+             "graphType" : "Network",
+             "networkColaJaccardLinkLengthDefault" : 0.7,
+             "networkColaJaccardLinkLengths" : 40,
+             "networkColaStartUnconstrainedIterations" : 50,
+             "networkLayoutType" : "cola"
+          }
+        );
+      </script>
+    </div>
+
+  </body>
+
+</html>

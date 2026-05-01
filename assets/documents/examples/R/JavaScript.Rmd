@@ -1,0 +1,250 @@
+---
+title: "JavaScript - R-Studio"
+author: "Isaac Neuhaus"
+date: "06/01/2023"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+<style>
+  .noCanvas {
+    clear: both;
+    display: inline-block;
+  }
+  pre {
+    clear: both;
+  }
+</style>
+
+```{r setup}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("jsonlite" %in% installed.packages())) {
+    install.packages('jsonlite')
+}
+library('jsonlite')
+if (!("canvasXpress" %in% installed.packages())) {
+    install.packages('canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz")
+#devtools::install_github('neuhausi/canvasXpress')
+library('canvasXpress')
+```
+
+## CanvasXpress can be run in R-Studio in a very flexible manner
+
+This document shows how to run CanvasXpress in many environments using different languages 
+
+## canvasXpress library
+
+Using the canvasXpress library developed for htmlwidgets
+
+```{r}
+library(canvasXpress)
+vals = c(33,44,55)
+vars = c("V1")
+smps = c("S1","S2","S3")
+data = as.data.frame(matrix(vals, nrow = 1, ncol = 3, byrow = TRUE, dimnames = list(vars, smps)))
+canvasXpress(
+  data = data,
+  graphOrientation = "vertical",
+  graphType = "Bar",
+  showLegend = FALSE,
+  smpLabelRotate = 90,
+  smpTitle = "Samples",
+  theme = "CanvasXpress",
+  title = "Bar Graph Title",
+  xAxisTitle = "Value"
+)
+```
+
+## ggplot
+
+CanvasXpress can be used with the ggplot object itself
+
+```{r}
+g <- ggplot(mpg, aes(class)) + geom_bar()
+canvasXpress(g)
+```
+
+## JavaScript
+
+Plain JavaScript: You need to include a canvas DOM element in the document before you call the {js} snipet bellow.
+In this example the file contain the following HTML snippet.
+
+```html
+<div class="canvasXpress noCanvas">
+  <canvas id="canvasPlainJS" width="613" height="613"></canvas>
+</div>
+```
+
+<div class="canvasXpress noCanvas">
+  <canvas id="canvasPlainJS" width="613" height="613"></canvas>
+</div>
+
+```{js}
+var data = {
+  "y" : {
+    "data" : [
+      [10,100,70,130,60]
+    ],
+    "smps" : ["S1","S2","S3","S4","S5"],
+    "vars" : ["A"]
+  }
+}
+
+var config = {
+  "colorScheme":"CanvasXpress",
+  "graphOrientation":"vertical",
+  "graphType":"Area",
+  "lineType":"rect",
+  "objectBorderColor":"false",
+  "showLegend":"false",
+  "showSampleNames":"true",
+  "showTransition":"false",
+  "smpLabelRotate":"90",
+  "smpTitle":"time"
+}
+
+var cX = new CanvasXpress("canvasPlainJS", data, config);
+```
+
+## JavaScript with R objects
+
+Same as above but with an R object. In this example I convert a list into JSON and use it for the data.
+
+```{r}
+json = toJSON(list("y" = list("data" = list(c(55,44,33)),"smps"= c("S1","S2","S3"), "vars" = c("V1"))))
+```
+
+<script>var data = `r json`</script>
+
+The following HTML snippet needs to be added in the document to make it available to the JavaScript code below.
+Note that the quotes need to be backticks "`".
+
+```html
+<script>var data = 'r json'</script>
+```
+
+Similarily you need to add the following HTML snippet.
+
+```html
+<div class="canvasXpress noCanvas">
+  <canvas id="canvasRJS" width="613" height="613"></canvas>
+</div>
+```
+
+<div class="canvasXpress noCanvas">
+  <canvas id="canvasRJS" width="613" height="613"></canvas>
+</div>
+
+```{js}
+
+var config = {
+  "graphOrientation":"vertical",
+  "graphType":"Bar",
+  "showLegend":"false",
+  "smpLabelRotate":"90",
+  "smpTitle":"Samples",
+  "theme":"CanvasXpress",
+  "title":"Bar Graph Title",
+  "xAxisTitle":"Value"
+}
+  
+var cX = new CanvasXpress("canvasRJS", data, config);
+```
+
+## cxplot
+
+We convert the mpg data set into a two dimensional table with rownames and colname and subsequently to JSON
+
+```{r}
+d = mpg
+nd = data.frame(lapply(d, as.character), stringsAsFactors = FALSE)
+nd = tibble::add_column(nd, Id = row.names(d), .before = 1)
+nd = tibble::add_row(nd, .before = 1)
+nd[1,] = colnames(nd)
+mpgJSON = toJSON(as.matrix(nd))
+```
+
+<script>var mpgJSON = `r mpgJSON`</script>
+
+The following HTML snippet needs to be added in the document to make it available to the JavaScript code below.
+Note that the quotes need to be backticks "`".
+
+```html
+<script>var mpgJSON = 'r mpgJSON'</script>
+```
+
+Similarily you need to add the following HTML snippet.
+
+```html
+<div class="canvasXpress noCanvas">
+  <canvas id="canvasCXPlot" width="613" height="613"></canvas>
+</div>
+```
+
+<div class="canvasXpress noCanvas">
+  <canvas id="canvasCXPlot" width="613" height="613"></canvas>
+</div>
+
+```{js}
+ var cxp = new cxplot("canvasCXPlot", mpgJSON, aes({"x":"displ","y":"hwy"}));
+ cxp.geom_point({"color":"class"});
+ cxp.gg_labels({"xAxisTitle":"displ","yAxisTitle":"hwy"});
+```
+
+## Python
+
+Similarily you need to add the following HTML snippet.
+
+```html
+<div class="canvasXpress noCanvas">
+  <canvas id="canvasPython" width="613" height="613"></canvas>
+</div>
+```
+
+<div class="canvasXpress noCanvas">
+  <canvas id="canvasPython" width="613" height="613"></canvas>
+</div>
+
+```{python}
+from canvasxpress.canvas import CanvasXpress
+from canvasxpress.render.jupyter import CXNoteBook
+
+cx = CanvasXpress(
+  render_to = "canvasPython",
+  data = {
+    "y": {
+      "vars": ["V1"],
+      "smps": ["S1","S2","S3"],
+      "data": [
+        [33,44,55]
+      ]
+    }
+  },
+  config = {
+    "graphOrientation": "vertical",
+    "plotBox": True,
+    "showLegend": False,
+    "smpLabelRotate": 90,
+    "smpTitle": "Samples",
+    "theme": "CanvasXpress",
+    "title": "Bar Graph Title",
+    "xAxis": ["V1"],
+    "xAxisTitle": "Value",
+    "graphType": "Bar"
+  },
+  width = 609,
+  height = 609
+)
+ 
+display = CXNoteBook(cx)
+display.render()
+```

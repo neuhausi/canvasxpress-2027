@@ -1,0 +1,13 @@
+	Age	Chest	Exercise	Gender	Hair	Hip	Waist
+Jax	35	104.3	Moderate	Male	Blond	100.4	94.3
+Finley	31	85.4	Intense	Female	Black	94	68.3
+Eloise	42	86.7	Moderate	Female	Black	100	74.7
+Elena	23	86.8	Intense	Female	Blond	93.7	69.8
+Ember	37	72.6	Low	Female	Brown	90.2	58
+Owen	22	100	Intense	Male	Brown	98	92
+Ezra	25	100	Moderate	Male	Red	98.4	79.7
+Knox	30	101.2	Moderate	Male	Blond	87.6	71.8
+Mateo	24	108.8	Moderate	Male	Blond	106	89.5
+Charlie	20	85.9	Low	Female	Brown	94.1	69.1
+Rosalie	25	78	Intense	Female	Brown	87	60.4
+Marcus	28	116.7	Intense	Male	Red	107.9	113.2

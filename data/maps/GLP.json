@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","copyright":"CanvasXpress (https://canvasxpress.org)","license":"Data sourced from Natural Earth (https://naturalearthdata.com) and geoBoundaries (https://geoboundaries.org) under open licenses.","features":[
+    {"type":"Feature","id":"Basse-Terre","alias":["GP.BT","Basse-Terre"],"properties":{"Name":"Basse-Terre"},"geometry":{"type":"Polygon","coordinates":[[[-61.55753708,16.2859726],[-61.8018074,16.3120842],[-61.77069473,16.06097221],[-61.70763779,15.94736195],[-61.55513763,16.05513954],[-61.55091476,16.25208282],[-61.55753708,16.2859726]]]}},
+    {"type":"Feature","id":"Pointe-a-Pitre","alias":["GP.PP","Pointe-à-Pitre"],"properties":{"Name":"Pointe-à-Pitre"},"geometry":{"type":"Polygon","coordinates":[[[-61.55091476,16.25208282],[-61.37374878,16.34041405],[-61.53541565,16.45513916],[-61.55753708,16.2859726],[-61.55091476,16.25208282]]]}}
+]}

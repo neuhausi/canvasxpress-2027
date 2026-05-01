@@ -1,0 +1,177 @@
+	country
+1	India
+2	India
+3	India
+4	India
+5	India
+6	India
+7	China
+8	India
+9	China
+10	France
+11	India
+12	France
+13	China
+14	India
+15	India
+16	China
+17	France
+18	Germany
+19	Germany
+20	United Kingdom
+21	United Kingdom
+22	India
+23	India
+24	China
+25	Germany
+26	India
+27	India
+28	United Kingdom
+29	France
+30	India
+31	China
+32	India
+33	Germany
+34	Germany
+35	United Kingdom
+36	United Kingdom
+37	France
+38	France
+39	India
+40	Germany
+41	Germany
+42	China
+43	United Kingdom
+44	United Kingdom
+45	United Kingdom
+46	United Kingdom
+47	France
+48	United Kingdom
+49	Germany
+50	France
+51	India
+52	Germany
+53	Germany
+54	Germany
+55	France
+56	Germany
+57	India
+58	United Kingdom
+59	Germany
+60	Germany
+61	France
+62	United Kingdom
+63	Germany
+64	India
+65	Germany
+66	France
+67	India
+68	United Kingdom
+69	United Kingdom
+70	United Kingdom
+71	France
+72	France
+73	France
+74	France
+75	France
+76	France
+77	Germany
+78	United Kingdom
+79	China
+80	United Kingdom
+81	France
+82	United Kingdom
+83	France
+84	India
+85	France
+86	United Kingdom
+87	United Kingdom
+88	Germany
+89	Germany
+90	Germany
+91	United Kingdom
+92	France
+93	United Kingdom
+94	France
+95	Japan
+96	Germany
+97	Germany
+98	China
+99	Japan
+100	Japan
+101	Japan
+102	Japan
+103	Japan
+104	China
+105	Japan
+106	Japan
+107	Japan
+108	Japan
+109	Japan
+110	Japan
+111	Japan
+112	Japan
+113	Japan
+114	Japan
+115	Japan
+116	China
+117	Japan
+118	Japan
+119	Japan
+120	Japan
+121	Japan
+122	China
+123	Other
+124	Other
+125	China
+126	Other
+127	China
+128	United States
+129	China
+130	United States
+131	United States
+132	China
+133	Other
+134	United States
+135	China
+136	United States
+137	Other
+138	Other
+139	United States
+140	United States
+141	China
+142	United States
+143	United States
+144	United States
+145	China
+146	United States
+147	United States
+148	China
+149	United States
+150	Other
+151	China
+152	Other
+153	United States
+154	Other
+155	United States
+156	China
+157	Other
+158	United States
+159	Other
+160	Other
+161	United States
+162	Other
+163	Other
+164	Other
+165	Other
+166	United States
+167	United States
+168	Other
+169	Other
+170	United States
+171	Other
+172	Other
+173	United States
+174	Other
+175	Other
+176	United States

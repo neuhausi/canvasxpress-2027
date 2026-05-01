@@ -1,0 +1,3 @@
+	January	February	March	April	May	June	July	August	September	October	November	December
+Performance	85	60	29	10	90	98	93	65	89	34	82	67
+Revenue	1000	5000	4000	2000	7000	9000	8000	3000	2000	6000	5000	10000

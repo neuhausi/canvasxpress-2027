@@ -1,0 +1,211 @@
+---
+title: "R for Data Science"
+author: "Isaac Neuhaus"
+date: "06/04/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+# Load data and Libraries
+### https://r4ds.had.co.nz/data-visualisation.html
+```{r setup}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("tidyverse" %in% installed.packages())) {
+    install.packages('tidyverse')
+}
+library('tidyverse')
+if (!("dplyr" %in% installed.packages())) {
+    install.packages('dplyr')
+}
+library('dplyr')
+if (!("devtools" %in% installed.packages())) {
+    install.packages('devtools')
+}
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library('canvasXpress')
+```
+
+## Creating a ggplot
+```{r}
+g = ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Aesthetic mappings - Color
+```{r}
+g = ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color = class))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Size
+```{r}
+g = ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, size = class))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Alpha
+```{r}
+g = ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, alpha = class))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Shape
+```{r}
+g = ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, shape = class))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Facets - wrap
+```{r}
+g = ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy)) + facet_wrap(~ class, nrow = 2)
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Facets - grid
+```{r}
+g = ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy)) + facet_grid(drv ~ cyl)
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Geometric objects
+```{r}
+g = ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Smooth
+```{r}
+g = ggplot(data = mpg) + geom_smooth(mapping = aes(x = displ, y = hwy))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Smooth - Linetype
+```{r}
+g = ggplot(data = mpg) + geom_smooth(mapping = aes(x = displ, y = hwy, linetype = drv))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Smooth - Color
+```{r}
+g = ggplot(data = mpg) + geom_smooth(mapping = aes(x = displ, y = hwy, color = drv), show.legend = FALSE)
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Smoth  - Point Color
+```{r}
+g = ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy)) + geom_smooth(mapping = aes(x = displ, y = hwy))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Smooth - Color2
+```{r}
+g = ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + geom_point(mapping = aes(color = class)) + geom_smooth()
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Statistical transformations
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 1000), ]
+g = ggplot(data = sample_data) + geom_bar(mapping = aes(x = cut))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Position adjustments - No Position
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 1000), ]
+g = ggplot(data = sample_data) + geom_bar(mapping = aes(x = cut, fill = cut))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Position adjustments - No Position 2
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 1000), ]
+g = ggplot(data = sample_data) + geom_bar(mapping = aes(x = cut, fill = clarity))
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Position adjustments - Fill
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 1000), ]
+g = ggplot(data = sample_data) + geom_bar(mapping = aes(x = cut, fill = clarity), position = "fill")
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Position adjustments - Dodge
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 1000), ]
+g = ggplot(data = sample_data) + geom_bar(mapping = aes(x = cut, fill = clarity), position = "dodge")
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+## Coordinate systems
+```{r}
+g = ggplot(data = mpg, mapping = aes(x = class, y = hwy)) + geom_boxplot()
+g
+canvasXpress(g, width = 672, height = 500)
+```
+
+
+## Vertical Error Bars
+```{r}
+df <- ToothGrowth
+df$dose <- as.factor(df$dose)
+df.summary <- df %>%
+  group_by(dose) %>%
+  summarise(
+    sd = sd(len, na.rm = TRUE),
+    len = mean(len)
+  )
+f <- ggplot(
+  df.summary, 
+  aes(x = dose, y = len, ymin = len-sd, ymax = len+sd)
+  )
+v <- f + geom_errorbar(width = 0.2) + geom_point(size = 1.5)
+v
+canvasXpress(v, width = 672, height = 500)
+```
+
+## Horizontal Error Bars
+```{r}
+f <- ggplot(
+  df.summary, 
+  aes(x = len, y = dose, xmin = len-sd, xmax = len+sd)
+  )
+h <- f + geom_point() + geom_errorbarh(height=.2)
+h
+canvasXpress(h, width = 672, height = 500)
+```
+
+### Senssion Info
+```{r}
+sessionInfo()
+```
+

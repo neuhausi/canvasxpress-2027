@@ -1,0 +1,3 @@
+{"type":"FeatureCollection","copyright":"CanvasXpress (https://canvasxpress.org)","license":"Data sourced from Natural Earth (https://naturalearthdata.com) and geoBoundaries (https://geoboundaries.org) under open licenses.","features":[
+    {"type":"Feature","id":"MSR","alias":["MSR","MS","Montserrat"],"properties":{"Name":"Montserrat"},"geometry":{"type":"Polygon","coordinates":[[[-62.147369,16.744289],[-62.14977,16.681789],[-62.218861,16.688707],[-62.230133,16.727607],[-62.202016,16.819322],[-62.174672,16.813137],[-62.179311,16.794501],[-62.147369,16.744289]]]}}
+]}

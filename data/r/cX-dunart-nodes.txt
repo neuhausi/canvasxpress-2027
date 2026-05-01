@@ -1,0 +1,51 @@
+color	height	id	name	rx	ry	shape	width	x	y
+rgb(245,245,221)	6	Id0	P	9	9	roundrect	10	172	238
+rgb(245,245,221)	6	Id1	sucrose phosphate phosphatase	5	5	roundrect	10	191	172
+rgb(245,245,221)	6	Id2	sucrose 6-phosphate	17	17	roundrect	10	308	179
+rgb(245,245,221)	6	Id3	sucrose	9	9	roundrect	10	203	251
+rgb(245,245,221)	6	Id4	invertase	5	5	roundrect	10	202	303
+rgb(245,245,221)	6	Id5	fructose	9	9	roundrect	10	203	345
+rgb(245,245,221)	6	Id6	fructokinase	5	5	roundrect	10	194	395
+rgb(245,245,221)	6	Id7	fructose 6-phosphate	17	17	roundrect	10	191	485
+rgb(245,245,221)	6	Id8	phosphoglucose isomerase	5	5	roundrect	10	283	485
+rgb(245,245,221)	6	Id9	glucose 6-phosphate	17	17	roundrect	10	393	485
+rgb(245,245,221)	6	Id10	glucose	9	9	roundrect	10	306	356
+rgb(245,245,221)	6	Id11	hexokinase	5	5	roundrect	10	309	419
+rgb(245,245,221)	6	Id12	sucrose synthase	5	5	roundrect	10	309	259
+rgb(245,245,221)	6	Id13	UDP - glucose	17	17	roundrect	10	404	276
+rgb(245,245,221)	6	Id14	sucrose phosphate synthase	5	5	roundrect	10	400	172
+rgb(245,245,221)	6	Id15	UDP	9	9	roundrect	10	354	227
+rgb(245,245,221)	6	Id16	fructose 6-phosphate	17	17	roundrect	10	384	125
+rgb(245,245,221)	6	Id17	ATP	9	9	roundrect	10	348	388
+rgb(245,245,221)	6	Id18	ATP	9	9	roundrect	10	313	451
+rgb(245,245,221)	6	Id19	ATP	9	9	roundrect	10	149	378
+rgb(245,245,221)	6	Id20	ADP	9	9	roundrect	10	149	411
+rgb(245,245,221)	6	Id21	PP	9	9	roundrect	10	486	292
+rgb(245,245,221)	6	Id22	UTP	9	9	roundrect	10	484	372
+rgb(245,245,221)	6	Id23	UDP glucose pyrophosphorylase	5	5	roundrect	10	374	324
+rgb(245,245,221)	6	Id24	glucose 1-phosphate	17	17	roundrect	10	394	372
+rgb(245,245,221)	6	Id25	phospho- glucomutase (cPGM)	5	5	roundrect	10	390	419
+rgb(245,245,221)	18	Id26	G1P transporter	5	5	roundrect	30	536	398
+rgb(245,245,221)	6	Id27	P	9	9	roundrect	10	496	423
+rgb(245,245,221)	6	Id28	P	9	9	roundrect	10	628	390
+rgb(245,245,221)	6	Id29	P	9	9	roundrect	10	496	482
+rgb(245,245,221)	6	Id30	P	9	9	roundrect	10	630	526
+rgb(245,245,221)	18	Id31	G6P transporter	5	5	roundrect	30	536	502
+rgb(245,245,221)	6	Id32	glucose 6-phosphate	17	17	roundrect	10	628	558
+rgb(245,245,221)	6	Id33	phospho- glucomutase (cPGM)	5	5	roundrect	10	628	422
+rgb(245,245,221)	6	Id34	glucose 1-phosphate	17	17	roundrect	10	628	337
+rgb(245,245,221)	6	Id35	ADPglucose pyrophosphorylase (pAGPase)	5	5	roundrect	10	718	346
+rgb(245,245,221)	6	Id36	ADP - glucose	17	17	roundrect	10	748	408
+rgb(245,245,221)	6	Id37	PP	9	9	roundrect	10	818	408
+rgb(245,245,221)	6	Id38	ATP	9	9	roundrect	10	848	345
+rgb(245,245,221)	6	Id39	inorganic diphosphatase	5	5	roundrect	10	838	440
+rgb(245,245,221)	6	Id40	P	9	9	roundrect	10	874	488
+rgb(245,245,221)	18	Id41	phosphate transporter	5	5	roundrect	30	948	497
+rgb(245,245,221)	6	Id42	P	9	9	roundrect	10	1042	521
+rgb(245,245,221)	6	Id43	starch synthase (simpl.)	5	5	roundrect	10	728	456
+rgb(245,245,221)	6	Id44	ADP	9	9	roundrect	10	760	504
+rgb(245,245,221)	6	Id45	starch	9	9	roundrect	10	806	504
+rgb(245,245,221)	18	Id46	ATP/ADP transporter	5	5	roundrect	30	948	359
+rgb(245,245,221)	6	Id47	ADP	9	9	roundrect	10	881	384
+rgb(245,245,221)	6	Id48	ADP	9	9	roundrect	10	1042	351
+rgb(245,245,221)	6	Id49	ATP	9	9	roundrect	10	1042	384

@@ -1,0 +1,198 @@
+---
+title: "ggpubr : Pair wise comparison"
+author: "Isaac Neuhaus"
+date: "07/11/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+```{r include=FALSE}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("ggpubr" %in% installed.packages())) {
+    install.packages('ggpubr')
+}
+library('ggpubr')
+if (!("devtools" %in% installed.packages())) {
+    install.packages('devtools')
+}
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library('canvasXpress')
+```
+
+# Data preparation
+```{r}
+df <- ToothGrowth
+df$dose <- factor(df$dose)
+
+# Transform `dose` into factor variable
+df <- ToothGrowth
+df$dose <- as.factor(df$dose)
+# Add a random grouping variable
+df$group <- factor(rep(c("grp1", "grp2"), 30))
+head(df, 3)
+```
+
+# Two groups by x position
+```{r}
+# Create a box plot
+# Add 10% spaces between the p-value labels and the plot border
+bxp <- ggboxplot(
+  df, x = "dose", y = "len",
+  color = "supp", palette = c("#00AFBB", "#E7B800")
+) + scale_y_continuous(expand = expansion(mult = c(0.05, 0.10)))
+bxp
+canvasXpress(bxp)
+```
+
+# Add p-values onto the box plots
+```{r}
+# label can be "p.format"  or "p.adj.format"
+bxp1 <- bxp + geom_pwc(
+  aes(group = supp), tip.length = 0,
+  method = "t_test", label = "p.format"
+)
+bxp1
+canvasXpress(bxp1)
+```
+
+# Show adjusted p-values and significance levels
+```{r}
+# Hide ns (non-significant)
+bxp2 <- bxp + geom_pwc(
+  aes(group = supp), tip.length = 0,
+  method = "t_test", label = "{p.adj.format}{p.adj.signif}",
+  p.adjust.method = "bonferroni", p.adjust.by = "panel",
+  hide.ns = TRUE
+)
+bxp2
+canvasXpress(bxp2)
+```
+
+# Complex cases
+```{r}
+# 1. Add p-values of OJ vs VC at each dose group
+bxp.complex <- bxp +
+  geom_pwc(
+    aes(group = supp), tip.length = 0,
+    method = "t_test", label = "p.adj.format",
+    p.adjust.method = "bonferroni", p.adjust.by = "panel"
+  )
+# 2. Add pairwise comparisons between dose levels
+# Nudge up the brackets by 20% of the total height
+bxp.complex <- bxp.complex +
+  geom_pwc(
+    method = "t_test", label = "p.adj.format",
+    p.adjust.method = "bonferroni",
+    bracket.nudge.y = 0.2
+  )
+# 3. Display the plot
+bxp.complex
+canvasXpress(bxp.complex)
+```
+
+
+# Three groups by x position
+```{r}
+# Simple plots
+# Box plots with p-values
+bxp4 <- ggboxplot(
+  df, x = "supp", y = "len", fill = "dose",
+  palette = "npg"
+)
+bxp4 <- bxp4 +
+  geom_pwc(
+    aes(group = dose), tip.length = 0,
+    method = "t_test", label = "p.adj.format",
+    bracket.nudge.y = -0.08
+  ) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
+bxp4
+canvasXpress(bxp4)
+```
+
+# Bar plots with p-values
+```{r}
+bp <- ggbarplot(
+  df, x = "supp", y = "len", fill = "dose",
+  palette = "npg", add = "mean_sd",
+  position = position_dodge(0.8)
+)
+bp <- bp +
+  geom_pwc(
+    aes(group = dose), tip.length = 0,
+    method = "t_test", label = "p.adj.format",
+    bracket.nudge.y = -0.08
+  ) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
+bp
+canvasXpress(bp)
+```
+
+
+# Data preparation 2
+```{r}
+df <- ToothGrowth
+df$dose <- as.factor(df$dose)
+# Add a random grouping variable
+df$group <- factor(rep(c("grp1", "grp2"), 30))
+head(df, 3)
+```
+
+# Boxplot: Two groups by panel
+```{r}
+# Create a box plot
+bxp5 <- ggboxplot(
+  df, x = "supp", y = "len", fill = "#00AFBB",
+  facet.by = "dose"
+)
+# Make facet and add p-values
+bxp5a <- bxp5 + geom_pwc(method = "t_test")
+bxp5a
+canvasXpress(bxp5a)
+```
+
+# Adjust all p-values together after
+```{r}
+bxp5b <- ggadjust_pvalue(
+  bxp5a, p.adjust.method = "bonferroni",
+  label = "{p.adj.format}{p.adj.signif}", hide.ns = TRUE
+)
+bxp5b
+#canvasXpress(bxp5b)
+```
+
+# Boxplot: Three groups by panel
+```{r}
+# Create a box plot
+bxp6 <- ggboxplot(
+  df, x = "dose", y = "len", fill = "#00AFBB",
+  facet.by = "supp"
+)
+# Make facet and add p-values
+bxp6a <- bxp6 + geom_pwc(method = "t_test")
+bxp6a
+canvasXpress(bxp6a)
+```
+
+# Adjust all p-values together after
+```{r}
+bxp6b <- ggadjust_pvalue(
+  bxp6a, p.adjust.method = "bonferroni",
+  label = "{p.adj.format}{p.adj.signif}"
+)
+bxp6b
+#canvasXpress(bxp6b)
+```
+
+
+

@@ -1,0 +1,383 @@
+---
+title: "ggblanket"
+author: "Isaac Neuhaus"
+date: "06/04/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+### How it works
+
+```{r}
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library(ggblanket)
+library(ggplot2)
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(palmerpenguins)
+library(patchwork)
+library(canvasXpress)
+
+set_blanket()
+```
+
+
+### Almost forty gg_* wrapper functions
+
+```{r}
+p <- penguins |>
+  gg_point(
+    x = flipper_length_mm,
+    y = body_mass_g,
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### A single col argument to colour and fill by a variable
+
+```{r}
+p <- penguins |>
+  gg_point(
+    x = flipper_length_mm,
+    y = body_mass_g, 
+    col = species,
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+
+```{r}
+p <- penguins |>
+  drop_na(sex) |>
+  mutate(across(sex, str_to_sentence)) |>
+  gg_bar(
+    position = "dodge",
+    y = species, 
+    col = sex,
+    width = 0.75,
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### A facet argument to facet by a variable
+
+```{r}
+p <- penguins |>
+  drop_na(sex) |> 
+  mutate(across(sex, str_to_sentence)) |> 
+  gg_histogram(
+    x = flipper_length_mm,
+    facet = species,
+    binwidth = 2
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### A facet2 argument to facet by a 2nd variable
+
+```{r}
+p <- penguins |>
+  mutate(across(sex, str_to_sentence)) |> 
+  gg_histogram(
+    x = flipper_length_mm,
+    facet = species,
+    facet2 = sex,
+    binwidth = 2
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### Unspecified titles converted to snakecase::sentence_case
+
+```{r}
+p <- diamonds |>
+  gg_hex(
+    coord = coord_cartesian(clip = "on"), 
+    x = carat,
+    y = price,
+    y_limits = c(0, 20000),
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### Prefixed arguments to customise x, y, col and facet properties
+
+```{r}
+p <- penguins |>
+  drop_na(sex) |>  
+  gg_jitter(
+    x = species,
+    y = body_mass_g,
+    col = flipper_length_mm,
+    facet = sex,
+    x_labels = \(x) str_sub(x, 1, 1),
+    y_breaks = scales::breaks_width(1000),
+    y_expand_limits = 2000,
+    y_labels = scales::label_number(big.mark = " "), 
+    y_transform = "log10",
+    y_title = "Body mass (g)",
+    col_steps = TRUE,
+    col_breaks = \(x) quantile(x, seq(0, 1, 0.25)),
+    col_pal = viridisLite::rocket(n = 9, direction = -1),
+    facet_labels = str_to_sentence,
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### Access to other geom_* arguments via ...
+
+```{r}
+p <- penguins |>
+  mutate(across(sex, str_to_sentence)) |> 
+  drop_na(sex) |> 
+  gg_smooth(
+    x = flipper_length_mm,
+    y = body_mass_g,
+    col = sex, 
+    col_pal = c("#003f5c", "#ffa600"),
+    colour = "#bc5090", 
+    linewidth = 1, 
+    linetype = "dashed",
+    alpha = 1, 
+    se = TRUE, 
+    level = 0.999, 
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+```{r}
+p <- penguins |> 
+  gg_boxplot(
+    y = island, 
+    x = flipper_length_mm, 
+    col = species,
+    fill = NA,
+    position = position_dodge2(preserve = "single")
+  ) 
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### Access other aesthetics via mapping
+
+```{r}
+p <- penguins |> 
+  gg_jitter(
+    y = species, 
+    x = flipper_length_mm, 
+    col = species,
+    mapping = aes(alpha = species, shape = species),
+  ) +
+  scale_alpha_manual(values = c(0.33, 1, 0.33)) +
+  guides(alpha = guide_legend(reverse = TRUE))
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### Families of *_mode_* themes that differ by legend placement
+
+```{r}
+p <- penguins |>
+  gg_histogram(
+    x = flipper_length_mm,
+    col = species,
+    title = "Penguin flipper length by species",
+    subtitle = "Palmer Archipelago, Antarctica",
+    caption = "Source: Gorman, 2020", 
+    mode = light_mode_t(),
+    binwidth = 2
+  ) +
+  labs(colour = NULL, fill = NULL)
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+```{r}
+p <- penguins |>
+  gg_histogram(
+    x = flipper_length_mm,
+    col = species,
+    title = "Penguin flipper length by species",
+    subtitle = "Palmer Archipelago, Antarctica",
+    caption = "Source: Gorman, 2020", 
+    mode = grey_mode_b(),
+    binwidth = 2
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+```{r}
+p <- penguins |>
+  gg_histogram(
+    x = flipper_length_mm,
+    col = species,
+    title = "Penguin flipper length by species",
+    subtitle = "Palmer Archipelago, Antarctica",
+    caption = "Source: Gorman, 2020", 
+    mode = dark_mode_r(),
+    binwidth = 2
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### Set the mode and geom defaults with set_blanket
+
+```{r}
+set_blanket(grey_mode_r(), "#ffa600")
+```
+
+```{r}
+p <- penguins |>
+  gg_point(
+    x = flipper_length_mm, 
+    y = body_mass_g,
+    x_breaks = scales::breaks_pretty(3),
+  ) +
+  geom_vline(xintercept = 200) +
+  annotate("text", x = I(0.25), y = I(0.75), label = "Here")
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+```{r}
+p <- penguins |> 
+  gg_histogram(
+    x = flipper_length_mm,
+    x_breaks = scales::breaks_pretty(3),
+    binwidth = 2
+  ) +
+  geom_vline(xintercept = 200) +
+  annotate("text", x = I(0.75), y = I(0.75), label = "Here")
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+```{r}
+set_blanket(dark_mode_r(), geom_colour = "#bc5090", annotate_colour = darkness[1])
+
+p1 <- penguins |>
+  gg_point(
+    x = flipper_length_mm, 
+    y = body_mass_g,
+    x_breaks = scales::breaks_pretty(3),
+  ) +
+  geom_vline(xintercept = 200) +
+  annotate("text", x = I(0.25), y = I(0.75), label = "Here")
+p2 <- penguins |> 
+  gg_histogram(
+    x = flipper_length_mm,
+    x_breaks = scales::breaks_pretty(3),
+    binwidth = 2
+  ) +
+  geom_vline(xintercept = 200) +
+  annotate("text", x = I(0.75), y = I(0.75), label = "Here")
+p = p1 + p2
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### No Facet
+```{r}
+set_blanket(colour = orange)
+
+p1 <- penguins |>
+  gg_point(
+    x = flipper_length_mm,
+    y = body_mass_g,
+    col = island
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+
+
+p <- penguins |>
+  gg_bar(
+    x = sex,
+    col = island
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+
+p <- penguins |>
+  gg_histogram(
+    x = flipper_length_mm,
+    col = island,
+    binwidth = 2
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+### Facet
+```{r}
+set_blanket(colour = orange)
+
+p <- penguins |>
+  gg_point(
+    x = flipper_length_mm,
+    y = body_mass_g,
+    col = island,
+    facet = species
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+
+
+p <- penguins |>
+  gg_bar(
+    x = sex,
+    col = island,
+    facet = species
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+p <- penguins |>
+  gg_histogram(
+    x = flipper_length_mm,
+    col = island,
+    facet = species,
+    binwidth = 2
+  )
+p
+canvasXpress(p, width = 672, height = 500)
+```
+
+
+### Update Geom Defaults
+```{r}
+update_geom_defaults("boxplot",
+                     aes(colour = "red", 
+                         fill = "blue", 
+                         alpha = 0.5, 
+                         linewidth = 0.66)
+                     )
+p <- penguins |> 
+  ggplot(aes(x = species, y = body_mass_g)) +
+  geom_boxplot() 
+p
+canvasXpress::canvasXpress(p)
+```
+
+
+### Senssion Info
+```{r}
+sessionInfo()
+```

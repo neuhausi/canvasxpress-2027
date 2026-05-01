@@ -1,0 +1,2 @@
+	Birth	Puberty	Death	Family	Friendship	Love	Work	Passion	Environment
+Topic	10	12	22	31	42	27	15	15	5

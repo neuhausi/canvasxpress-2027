@@ -1,0 +1,17 @@
+	Status	Tissue
+1001	PD	Pancreas
+1002	PD	Pancreas
+1003	PD	Pancreas
+1004	PD	Colrectal
+1005	PD	Breast
+1006	PD	Colrectal
+1007	SD	Colrectal
+1008	PD	Colrectal
+1009	PD	Billiary tract
+1010	PD	Colrectal
+1011	PD	Esophagus
+1012	PD	Billiary tract
+1013	SD	Billiary tract
+1014	SD	Billiary tract
+1015	SD	Colrectal
+1016	PR	Billiary tract

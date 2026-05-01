@@ -1,0 +1,714 @@
+color	height	id	language	name	width
+rgb(247,109,109)		Id0		root	
+rgb(247,111,109)		Id1		src	
+rgb(247,111,109)		Id2		Propel	
+rgb(247,114,109)		Id3		Generator	
+rgb(247,114,109)		Id4		Builder	
+rgb(247,116,109)		Id5		Om	
+rgb(247,116,109)	98.9	Id6	PHP	ObjectBuilder.php	98.9
+rgb(247,118,109)	64.5	Id7	PHP	PeerBuilder.php	64.5
+rgb(247,118,109)	58.8	Id8	PHP	QueryBuilder.php	58.8
+rgb(247,121,109)	48.6	Id9	PHP	TableMapBuilder.php	48.6
+rgb(247,121,109)	45.7	Id10	PHP	AbstractOMBuilder.php	45.7
+rgb(247,123,109)	29.4	Id11	PHP	QueryInheritanceBuilder.php	29.4
+rgb(247,123,109)	28.1	Id12	PHP	AbstractPeerBuilder.php	28.1
+rgb(247,125,109)		Id13		templates	
+rgb(247,125,109)	25.6	Id14	PHP	baseObjectMethods.php	25.6
+rgb(247,128,109)	18.2	Id15	PHP	baseObjectMethodHook.php	18.2
+rgb(247,128,109)	15.6	Id16	PHP	baseObjectMethodMagicCall.php	15.6
+rgb(247,130,109)	14.0	Id17	PHP	tableMapInstancePool.php	14.0
+rgb(247,130,109)	12.1	Id18	PHP	tableMapFields.php	12.1
+rgb(247,132,109)	11.2	Id19	PHP	tableMapConstants.php	11.2
+rgb(247,132,109)	8.2	Id20	PHP	tableMapClearRelatedInstancePool.php	8.2
+rgb(247,134,109)	7.0	Id21	PHP	baseObjectAttributes.php	7.0
+rgb(247,134,109)	25.2	Id22	PHP	AbstractObjectBuilder.php	25.2
+rgb(247,137,109)	23.4	Id23	PHP	MultiExtendObjectBuilder.php	23.4
+rgb(247,137,109)	20.7	Id24	PHP	ClassTools.php	20.7
+rgb(247,139,109)	18.7	Id25	PHP	ExtensionQueryInheritanceBuilder.php	18.7
+rgb(247,139,109)	17.7	Id26	PHP	ExtensionQueryBuilder.php	17.7
+rgb(247,141,109)	16.2	Id27	PHP	ExtensionObjectBuilder.php	16.2
+rgb(247,141,109)	15.4	Id28	PHP	ExtensionPeerBuilder.php	15.4
+rgb(247,144,109)	15.2	Id29	PHP	InterfaceBuilder.php	15.2
+rgb(247,144,109)		Id30		Util	
+rgb(247,146,109)	36.4	Id31	PHP	SchemaReader.php	36.4
+rgb(247,146,109)	16.8	Id32	PHP	PropelTemplate.php	16.8
+rgb(247,148,109)	13.5	Id33	PHP	ColumnValue.php	13.5
+rgb(247,148,109)	13.5	Id34	PHP	DataRow.php	13.5
+rgb(247,150,109)	34.5	Id35	PHP	DataModelBuilder.php	34.5
+rgb(247,150,109)		Id36		Sql	
+rgb(247,153,109)	25.7	Id37	PHP	DataSQLBuilder.php	25.7
+rgb(247,153,109)		Id38		Pgsql	
+rgb(247,155,109)	18.8	Id39	PHP	PgsqlDataSQLBuilder.php	18.8
+rgb(247,155,109)		Id40		Mssql	
+rgb(247,157,109)	11.5	Id41	PHP	MssqlDataSQLBuilder.php	11.5
+rgb(247,157,109)		Id42		Sqlite	
+rgb(247,160,109)	11.2	Id43	PHP	SqliteDataSQLBuilder.php	11.2
+rgb(247,160,109)		Id44		Oracle	
+rgb(247,162,109)	8.2	Id45	PHP	OracleDataSQLBuilder.php	8.2
+rgb(247,162,109)		Id46		Sqlsrv	
+rgb(247,164,109)	8.2	Id47	PHP	SqlsrvDataSQLBuilder.php	8.2
+rgb(247,164,109)		Id48		Mysql	
+rgb(247,167,109)	8.2	Id49	PHP	MysqlDataSQLBuilder.php	8.2
+rgb(247,167,109)		Id50		Behavior	
+rgb(247,169,109)		Id51		NestedSet	
+rgb(247,169,109)	62.0	Id52	PHP	NestedSetBehaviorObjectBuilderModifier.php	62.0
+rgb(247,171,109)	50.8	Id53	PHP	NestedSetBehaviorQueryBuilderModifier.php	50.8
+rgb(247,171,109)	21.9	Id54	PHP	NestedSetBehavior.php	21.9
+rgb(247,173,109)		Id55		templates	
+rgb(247,173,109)	13.8	Id56	PHP	objectInsertAsLastChildOf.php	13.8
+rgb(247,176,109)	7.0	Id57	PHP	objectSetLeft.php	7.0
+rgb(247,176,109)	7.0	Id58	PHP	objectGetIterator.php	7.0
+rgb(247,178,109)		Id59		Versionable	
+rgb(247,178,109)	46.8	Id60	PHP	VersionableBehaviorObjectBuilderModifier.php	46.8
+rgb(247,180,109)	34.1	Id61	PHP	VersionableBehavior.php	34.1
+rgb(247,180,109)	26.0	Id62	PHP	VersionableBehaviorQueryBuilderModifier.php	26.0
+rgb(247,183,109)		Id63		Sortable	
+rgb(247,183,109)	44.9	Id64	PHP	SortableBehaviorObjectBuilderModifier.php	44.9
+rgb(247,185,109)	34.4	Id65	PHP	SortableBehaviorPeerBuilderModifier.php	34.4
+rgb(247,185,109)	31.9	Id66	PHP	SortableBehaviorQueryBuilderModifier.php	31.9
+rgb(247,187,109)	21.1	Id67	PHP	SortableBehavior.php	21.1
+rgb(247,187,109)	14.7	Id68	PHP	SortableBehaviorTableMapBuilderModifier.php	14.7
+rgb(247,189,109)		Id69		templates	
+rgb(247,189,109)	7.0	Id70	PHP	tableMapSortable.php	7.0
+rgb(247,192,109)		Id71		I18n	
+rgb(247,192,109)	35.0	Id72	PHP	I18nBehavior.php	35.0
+rgb(247,194,109)	32.4	Id73	PHP	I18nBehaviorObjectBuilderModifier.php	32.4
+rgb(247,194,109)	19.6	Id74	PHP	I18nBehaviorQueryBuilderModifier.php	19.6
+rgb(247,196,109)		Id75		templates	
+rgb(247,196,109)	14.3	Id76	PHP	objectGetTranslation.php	14.3
+rgb(247,199,109)	12.7	Id77	PHP	objectRemoveTranslation.php	12.7
+rgb(247,199,109)	9.2	Id78	PHP	queryJoinWithI18n.php	9.2
+rgb(247,201,109)	8.7	Id79	PHP	queryJoinI18n.php	8.7
+rgb(247,201,109)	8.7	Id80	PHP	objectSetTranslation.php	8.7
+rgb(247,203,109)	8.2	Id81	PHP	queryUseI18nQuery.php	8.2
+rgb(247,203,109)	7.6	Id82	PHP	objectTranslatedColumnSetter.php	7.6
+rgb(247,206,109)	7.6	Id83	PHP	objectSetLocale.php	7.6
+rgb(247,206,109)	7.0	Id84	PHP	objectGetLocaleAlias.php	7.0
+rgb(247,208,109)	7.0	Id85	PHP	objectGetLocale.php	7.0
+rgb(247,208,109)	7.0	Id86	PHP	objectTranslatedColumnGetter.php	7.0
+rgb(247,210,109)	7.0	Id87	PHP	objectSetLocaleAlias.php	7.0
+rgb(247,210,109)	7.0	Id88	PHP	objectGetCurrentTranslation.php	7.0
+rgb(247,212,109)	6.2	Id89	PHP	objectPostDelete.php	6.2
+rgb(247,212,109)	5.3	Id90	PHP	objectAttributes.php	5.3
+rgb(247,215,109)	5.3	Id91	PHP	objectClearReferences.php	5.3
+rgb(247,215,109)	4.0	Id92	PHP	staticAttributes.php	4.0
+rgb(247,217,109)		Id93		QueryCache	
+rgb(247,217,109)	34.5	Id94	PHP	QueryCacheBehavior.php	34.5
+rgb(247,219,109)		Id95		Sluggable	
+rgb(247,219,109)	34.3	Id96	PHP	SluggableBehavior.php	34.3
+rgb(247,222,109)		Id97		ConcreteInheritance	
+rgb(247,222,109)	32.7	Id98	PHP	ConcreteInheritanceBehavior.php	32.7
+rgb(247,224,109)	20.0	Id99	PHP	ConcreteInheritanceParentBehavior.php	20.0
+rgb(247,224,109)		Id100		Validate	
+rgb(247,226,109)	31.1	Id101	PHP	ValidateBehavior.php	31.1
+rgb(247,228,109)		Id102		templates	
+rgb(247,228,109)	17.1	Id103	PHP	objectValidate.php	17.1
+rgb(247,231,109)	8.2	Id104	PHP	objectLoadValidatorMetadata.php	8.2
+rgb(247,231,109)	7.0	Id105	PHP	objectGetValidationFailures.php	7.0
+rgb(247,233,109)	5.3	Id106	PHP	objectAttributes.php	5.3
+rgb(247,233,109)		Id107		Archivable	
+rgb(247,235,109)	29.8	Id108	PHP	ArchivableBehavior.php	29.8
+rgb(247,235,109)	27.5	Id109	PHP	ArchivableBehaviorObjectBuilderModifier.php	27.5
+rgb(247,238,109)	24.2	Id110	PHP	ArchivableBehaviorQueryBuilderModifier.php	24.2
+rgb(247,238,109)		Id111		templates	
+rgb(247,240,109)	14.3	Id112	PHP	queryArchive.php	14.3
+rgb(247,240,109)	13.0	Id113	PHP	objectSaveWithoutArchive.php	13.0
+rgb(247,242,109)	12.4	Id114	PHP	objectPopulateFromArchive.php	12.4
+rgb(247,242,109)	12.1	Id115	PHP	objectArchive.php	12.1
+rgb(247,245,109)	11.8	Id116	PHP	objectPreDelete.php	11.8
+rgb(247,245,109)	10.0	Id117	PHP	objectGetArchive.php	10.0
+rgb(247,247,109)	10.0	Id118	PHP	queryDeleteWithoutArchive.php	10.0
+rgb(247,247,109)	9.2	Id119	PHP	objectRestoreFromArchive.php	9.2
+rgb(245,247,109)	7.6	Id120	PHP	queryUpdateWithoutArchive.php	7.6
+rgb(245,247,109)	7.6	Id121	PHP	objectDeleteWithoutArchive.php	7.6
+rgb(242,247,109)	7.0	Id122	PHP	querySetArchiveOnUpdate.php	7.0
+rgb(242,247,109)	7.0	Id123	PHP	querySetArchiveOnDelete.php	7.0
+rgb(240,247,109)		Id124		AggregateColumn	
+rgb(240,247,109)	27.1	Id125	PHP	AggregateColumnRelationBehavior.php	27.1
+rgb(238,247,109)	25.1	Id126	PHP	AggregateColumnBehavior.php	25.1
+rgb(238,247,109)		Id127		templates	
+rgb(235,247,109)	11.5	Id128	PHP	queryFindRelated.php	11.5
+rgb(235,247,109)	10.0	Id129	PHP	objectUpdateRelated.php	10.0
+rgb(233,247,109)	9.6	Id130	PHP	objectCompute.php	9.6
+rgb(233,247,109)	8.7	Id131	PHP	queryUpdateRelated.php	8.7
+rgb(231,247,109)	7.6	Id132	PHP	objectUpdate.php	7.6
+rgb(231,247,109)		Id133		Delegate	
+rgb(228,247,109)	25.7	Id134	PHP	DelegateBehavior.php	25.7
+rgb(228,247,109)		Id135		Timestampable	
+rgb(226,247,109)	24.3	Id136	PHP	TimestampableBehavior.php	24.3
+rgb(226,247,109)		Id137		AutoAddPk	
+rgb(224,247,109)	15.2	Id138	PHP	AutoAddPkBehavior.php	15.2
+rgb(224,247,109)		Id139		Model	
+rgb(222,247,109)	61.1	Id140	PHP	Table.php	61.1
+rgb(222,247,109)	54.5	Id141	PHP	Column.php	54.5
+rgb(219,247,109)	42.7	Id142	PHP	Database.php	42.7
+rgb(219,247,109)	42.7	Id143	PHP	ForeignKey.php	42.7
+rgb(217,247,109)		Id144		Diff	
+rgb(217,247,109)	41.9	Id145	PHP	TableDiff.php	41.9
+rgb(215,247,109)	32.1	Id146	PHP	TableComparator.php	32.1
+rgb(215,247,109)	30.6	Id147	PHP	DatabaseDiff.php	30.6
+rgb(212,247,109)	23.2	Id148	PHP	DatabaseComparator.php	23.2
+rgb(212,247,109)	21.4	Id149	PHP	ColumnComparator.php	21.4
+rgb(210,247,109)	20.4	Id150	PHP	ColumnDiff.php	20.4
+rgb(210,247,109)	18.2	Id151	PHP	ForeignKeyComparator.php	18.2
+rgb(208,247,109)	14.7	Id152	PHP	IndexComparator.php	14.7
+rgb(208,247,109)	35.9	Id153	PHP	PropelTypes.php	35.9
+rgb(206,247,109)	33.2	Id154	PHP	Domain.php	33.2
+rgb(206,247,109)	30.8	Id155	PHP	Schema.php	30.8
+rgb(203,247,109)	30.2	Id156	PHP	Behavior.php	30.2
+rgb(203,247,109)	29.0	Id157	PHP	Index.php	29.0
+rgb(201,247,109)	25.3	Id158	PHP	MappingModel.php	25.3
+rgb(201,247,109)	22.0	Id159	PHP	ScopedMappingModel.php	22.0
+rgb(199,247,109)	21.9	Id160	PHP	VendorInfo.php	21.9
+rgb(199,247,109)	21.8	Id161	PHP	PhpNameGenerator.php	21.8
+rgb(196,247,109)	21.5	Id162	PHP	Inheritance.php	21.5
+rgb(196,247,109)	19.1	Id163	PHP	ColumnDefaultValue.php	19.1
+rgb(194,247,109)	19.1	Id164	PHP	IdMethodParameter.php	19.1
+rgb(194,247,109)	15.6	Id165	PHP	Unique.php	15.6
+rgb(192,247,109)	14.7	Id166	PHP	ConstraintNameGenerator.php	14.7
+rgb(192,247,109)	13.5	Id167	PHP	NameFactory.php	13.5
+rgb(189,247,109)	10.8	Id168	PHP	NameGenerator.php	10.8
+rgb(189,247,109)	8.7	Id169	PHP	IdMethod.php	8.7
+rgb(187,247,109)	8.2	Id170	PHP	MappingModelInterface.php	8.2
+rgb(187,247,109)		Id171		Platform	
+rgb(185,247,109)	56.0	Id172	PHP	DefaultPlatform.php	56.0
+rgb(185,247,109)	46.2	Id173	PHP	MysqlPlatform.php	46.2
+rgb(183,247,109)	43.1	Id174	PHP	PgsqlPlatform.php	43.1
+rgb(183,247,109)	38.8	Id175	PHP	OraclePlatform.php	38.8
+rgb(180,247,109)	29.4	Id176	PHP	MssqlPlatform.php	29.4
+rgb(180,247,109)	27.8	Id177	PHP	SqlitePlatform.php	27.8
+rgb(178,247,109)	17.3	Id178	PHP	PlatformInterface.php	17.3
+rgb(178,247,109)	9.6	Id179	PHP	SqlsrvPlatform.php	9.6
+rgb(176,247,109)		Id180		Reverse	
+rgb(176,247,109)	44.6	Id181	PHP	PgsqlSchemaParser.php	44.6
+rgb(173,247,109)	38.7	Id182	PHP	MysqlSchemaParser.php	38.7
+rgb(173,247,109)	31.4	Id183	PHP	OracleSchemaParser.php	31.4
+rgb(171,247,109)	30.9	Id184	PHP	MssqlSchemaParser.php	30.9
+rgb(171,247,109)	27.6	Id185	PHP	SqliteSchemaParser.php	27.6
+rgb(169,247,109)	24.7	Id186	PHP	AbstractSchemaParser.php	24.7
+rgb(169,247,109)	11.5	Id187	PHP	SchemaParserInterface.php	11.5
+rgb(167,247,109)	7.6	Id188	PHP	SqlsrvSchemaParser.php	7.6
+rgb(167,247,109)		Id189		Manager	
+rgb(164,247,109)	35.9	Id190	PHP	MigrationManager.php	35.9
+rgb(164,247,109)	32.8	Id191	PHP	AbstractManager.php	32.8
+rgb(162,247,109)	27.6	Id192	PHP	SqlManager.php	27.6
+rgb(162,247,109)	25.6	Id193	PHP	ModelManager.php	25.6
+rgb(160,247,109)	24.1	Id194	PHP	ReverseManager.php	24.1
+rgb(160,247,109)	20.7	Id195	PHP	GraphvizManager.php	20.7
+rgb(157,247,109)		Id196		Util	
+rgb(157,247,109)	33.8	Id197	PHP	QuickBuilder.php	33.8
+rgb(155,247,109)	26.6	Id198	PHP	PhpParser.php	26.6
+rgb(155,247,109)	26.3	Id199	PHP	SqlParser.php	26.3
+rgb(153,247,109)	21.4	Id200	PHP	SchemaValidator.php	21.4
+rgb(153,247,109)		Id201		Config	
+rgb(150,247,109)	31.7	Id202	PHP	GeneratorConfig.php	31.7
+rgb(148,247,109)	24.3	Id203	PHP	QuickGeneratorConfig.php	24.3
+rgb(148,247,109)	23.6	Id204	PHP	ArrayToPhpConverter.php	23.6
+rgb(146,247,109)	20.6	Id205	PHP	XmlToArrayConverter.php	20.6
+rgb(146,247,109)	11.8	Id206	PHP	GeneratorConfigInterface.php	11.8
+rgb(144,247,109)		Id207		Command	
+rgb(144,247,109)	27.9	Id208	PHP	MigrationDiffCommand.php	27.9
+rgb(141,247,109)	27.3	Id209	PHP	TestPrepareCommand.php	27.3
+rgb(141,247,109)	26.7	Id210	PHP	MigrationDownCommand.php	26.7
+rgb(139,247,109)	26.5	Id211	PHP	MigrationUpCommand.php	26.5
+rgb(139,247,109)	26.5	Id212	PHP	MigrationMigrateCommand.php	26.5
+rgb(137,247,109)	26.5	Id213	PHP	MigrationStatusCommand.php	26.5
+rgb(137,247,109)	26.2	Id214	PHP	ModelBuildCommand.php	26.2
+rgb(134,247,109)	23.3	Id215	PHP	AbstractCommand.php	23.3
+rgb(134,247,109)	20.0	Id216	PHP	DatabaseReverseCommand.php	20.0
+rgb(132,247,109)	19.9	Id217	PHP	ConfigConvertXmlCommand.php	19.9
+rgb(132,247,109)	19.4	Id218	PHP	SqlBuildCommand.php	19.4
+rgb(130,247,109)	17.7	Id219	PHP	SqlInsertCommand.php	17.7
+rgb(130,247,109)	17.3	Id220	PHP	GraphvizGenerateCommand.php	17.3
+rgb(128,247,109)		Id221		Exception	
+rgb(128,247,109)	7.6	Id222	PHP	EngineException.php	7.6
+rgb(125,247,109)	7.6	Id223	PHP	BuildException.php	7.6
+rgb(125,247,109)	7.6	Id224	PHP	ExceptionInterface.php	7.6
+rgb(123,247,109)	7.6	Id225	PHP	ConstraintNotFoundException.php	7.6
+rgb(123,247,109)	7.6	Id226	PHP	LogicException.php	7.6
+rgb(121,247,109)	7.6	Id227	PHP	ClassNotFoundException.php	7.6
+rgb(121,247,109)	7.6	Id228	PHP	RuntimeException.php	7.6
+rgb(118,247,109)	7.6	Id229	PHP	SchemaException.php	7.6
+rgb(118,247,109)	7.6	Id230	PHP	BehaviorNotFoundException.php	7.6
+rgb(116,247,109)	7.6	Id231	PHP	InvalidArgumentException.php	7.6
+rgb(116,247,109)		Id232		Runtime	
+rgb(114,247,109)		Id233		ActiveQuery	
+rgb(114,247,109)	66.5	Id234	PHP	ModelCriteria.php	66.5
+rgb(111,247,109)	58.0	Id235	PHP	Criteria.php	58.0
+rgb(111,247,109)	37.8	Id236	PHP	Join.php	37.8
+rgb(109,247,109)		Id237		Criterion	
+rgb(109,247,109)	31.4	Id238	PHP	AbstractCriterion.php	31.4
+rgb(109,247,111)	19.0	Id239	PHP	AbstractModelCriterion.php	19.0
+rgb(109,247,111)	18.3	Id240	PHP	BasicCriterion.php	18.3
+rgb(109,247,114)	18.2	Id241	PHP	LikeCriterion.php	18.2
+rgb(109,247,114)	16.6	Id242	PHP	SeveralModelCriterion.php	16.6
+rgb(109,247,116)	15.2	Id243	PHP	LikeModelCriterion.php	15.2
+rgb(109,247,116)	14.7	Id244	PHP	InCriterion.php	14.7
+rgb(109,247,118)	14.7	Id245	PHP	RawModelCriterion.php	14.7
+rgb(109,247,118)	14.5	Id246	PHP	InModelCriterion.php	14.5
+rgb(109,247,121)	14.3	Id247	PHP	RawCriterion.php	14.3
+rgb(109,247,121)	13.8	Id248	PHP	BasicModelCriterion.php	13.8
+rgb(109,247,123)	12.4	Id249	PHP	CustomCriterion.php	12.4
+rgb(109,247,123)		Id250		Exception	
+rgb(109,247,125)	8.2	Id251	PHP	InvalidValueException.php	8.2
+rgb(109,247,125)	8.2	Id252	PHP	InvalidClauseException.php	8.2
+rgb(109,247,128)	29.0	Id253	PHP	ModelWith.php	29.0
+rgb(109,247,128)	24.3	Id254	PHP	ModelJoin.php	24.3
+rgb(109,247,130)	19.4	Id255	PHP	InstancePoolTrait.php	19.4
+rgb(109,247,130)	13.0	Id256	PHP	PropelQuery.php	13.0
+rgb(109,247,132)		Id257		Exception	
+rgb(109,247,132)	8.2	Id258	PHP	UnknownModelException.php	8.2
+rgb(109,247,134)	8.2	Id259	PHP	UnknownColumnException.php	8.2
+rgb(109,247,134)	8.2	Id260	PHP	UnknownRelationException.php	8.2
+rgb(109,247,137)		Id261		Util	
+rgb(109,247,137)	47.2	Id262	PHP	BasePeer.php	47.2
+rgb(109,247,139)	34.9	Id263	PHP	PropelModelPager.php	34.9
+rgb(109,247,139)	29.8	Id264	PHP	Profiler.php	29.8
+rgb(109,247,141)	21.5	Id265	PHP	PropelColumnTypes.php	21.5
+rgb(109,247,141)	21.0	Id266	PHP	PropelConditionalProxy.php	21.0
+rgb(109,247,144)	20.6	Id267	PHP	PropelDateTime.php	20.6
+rgb(109,247,144)		Id268		Connection	
+rgb(109,247,146)	37.7	Id269	PHP	ConnectionWrapper.php	37.7
+rgb(109,247,146)	25.3	Id270	PHP	StatementWrapper.php	25.3
+rgb(109,247,148)	21.8	Id271	PHP	ConnectionManagerMasterSlave.php	21.8
+rgb(109,247,148)	21.6	Id272	PHP	ProfilerConnectionWrapper.php	21.6
+rgb(109,247,150)	18.8	Id273	PHP	ConnectionManagerSingle.php	18.8
+rgb(109,247,150)	16.8	Id274	PHP	ConnectionFactory.php	16.8
+rgb(109,247,153)	13.3	Id275	PHP	ProfilerStatementWrapper.php	13.3
+rgb(109,247,153)	12.7	Id276	PHP	ConnectionInterface.php	12.7
+rgb(109,247,155)	11.5	Id277	PHP	StatementInterface.php	11.5
+rgb(109,247,155)	10.4	Id278	PHP	ConnectionManagerInterface.php	10.4
+rgb(109,247,157)	8.7	Id279	PHP	DebugPDO.php	8.7
+rgb(109,247,157)		Id280		Exception	
+rgb(109,247,160)	8.2	Id281	PHP	ConnectionException.php	8.2
+rgb(109,247,160)	7.6	Id282	PHP	RollbackException.php	7.6
+rgb(109,247,162)	8.2	Id283	PHP	PropelPDO.php	8.2
+rgb(109,247,162)		Id284		Map	
+rgb(109,247,164)	37.0	Id285	PHP	TableMap.php	37.0
+rgb(109,247,164)	34.7	Id286	PHP	ColumnMap.php	34.7
+rgb(109,247,167)	28.7	Id287	PHP	RelationMap.php	28.7
+rgb(109,247,167)	23.9	Id288	PHP	DatabaseMap.php	23.9
+rgb(109,247,169)	15.2	Id289	PHP	TableMapTrait.php	15.2
+rgb(109,247,169)		Id290		Exception	
+rgb(109,247,171)	8.2	Id291	PHP	ColumnNotFoundException.php	8.2
+rgb(109,247,171)	8.2	Id292	PHP	ForeignKeyNotFoundException.php	8.2
+rgb(109,247,173)	8.2	Id293	PHP	TableNotFoundException.php	8.2
+rgb(109,247,173)	8.2	Id294	PHP	RelationNotFoundException.php	8.2
+rgb(109,247,176)		Id295		Adapter	
+rgb(109,247,176)		Id296		Pdo	
+rgb(109,247,178)	36.9	Id297	PHP	PdoAdapter.php	36.9
+rgb(109,247,178)	29.5	Id298	PHP	MssqlAdapter.php	29.5
+rgb(109,247,180)	25.9	Id299	PHP	OracleAdapter.php	25.9
+rgb(109,247,180)	25.2	Id300	PHP	PgsqlAdapter.php	25.2
+rgb(109,247,183)	22.9	Id301	PHP	MysqlAdapter.php	22.9
+rgb(109,247,183)	20.4	Id302	PHP	SqlsrvAdapter.php	20.4
+rgb(109,247,185)	17.1	Id303	PHP	SqliteAdapter.php	17.1
+rgb(109,247,185)	16.2	Id304	PHP	PdoConnection.php	16.2
+rgb(109,247,187)	10.0	Id305	PHP	PdoStatement.php	10.0
+rgb(109,247,189)		Id306		MSSQL	
+rgb(109,247,189)	23.4	Id307	PHP	MssqlPropelPDO.php	23.4
+rgb(109,247,192)	8.2	Id308	PHP	MssqlDebugPDO.php	8.2
+rgb(109,247,192)	17.5	Id309	PHP	AdapterInterface.php	17.5
+rgb(109,247,194)	13.3	Id310	PHP	AdapterFactory.php	13.3
+rgb(109,247,194)		Id311		Exception	
+rgb(109,247,196)	8.2	Id312	PHP	ColumnNotFoundException.php	8.2
+rgb(109,247,196)	8.2	Id313	PHP	AdapterException.php	8.2
+rgb(109,247,199)	8.2	Id314	PHP	MalformedClauseException.php	8.2
+rgb(109,247,199)	8.2	Id315	PHP	UnsupportedEncodingException.php	8.2
+rgb(109,247,201)		Id316		Collection	
+rgb(109,247,201)	36.8	Id317	PHP	Collection.php	36.8
+rgb(109,247,203)	29.1	Id318	PHP	ObjectCollection.php	29.1
+rgb(109,247,203)	27.5	Id319	PHP	OnDemandCollection.php	27.5
+rgb(109,247,206)	26.1	Id320	PHP	ArrayCollection.php	26.1
+rgb(109,247,206)	21.5	Id321	PHP	OnDemandIterator.php	21.5
+rgb(109,247,208)		Id322		Exception	
+rgb(109,247,208)	8.2	Id323	PHP	ReadOnlyModelException.php	8.2
+rgb(109,247,210)	8.2	Id324	PHP	ModelNotFoundException.php	8.2
+rgb(109,247,210)	8.2	Id325	PHP	UnsupportedRelationException.php	8.2
+rgb(109,247,212)		Id326		ServiceContainer	
+rgb(109,247,212)	35.0	Id327	PHP	StandardServiceContainer.php	35.0
+rgb(109,247,215)	13.8	Id328	PHP	ServiceContainerInterface.php	13.8
+rgb(109,247,215)		Id329		Parser	
+rgb(109,247,217)	31.9	Id330	PHP	CsvParser.php	31.9
+rgb(109,247,217)	26.5	Id331	PHP	XmlParser.php	26.5
+rgb(109,247,219)	17.7	Id332	PHP	AbstractParser.php	17.7
+rgb(109,247,219)	13.8	Id333	PHP	YamlParser.php	13.8
+rgb(109,247,222)	13.5	Id334	PHP	JsonParser.php	13.5
+rgb(109,247,222)		Id335		Formatter	
+rgb(109,247,224)	29.0	Id336	PHP	AbstractFormatter.php	29.0
+rgb(109,247,224)	25.8	Id337	PHP	ArrayFormatter.php	25.8
+rgb(109,247,226)	23.5	Id338	PHP	ObjectFormatter.php	23.5
+rgb(109,247,226)	23.0	Id339	PHP	OnDemandFormatter.php	23.0
+rgb(109,247,228)	20.4	Id340	PHP	SimpleArrayFormatter.php	20.4
+rgb(109,247,228)	14.0	Id341	PHP	StatementFormatter.php	14.0
+rgb(109,247,231)	27.2	Id342	PHP	Propel.php	27.2
+rgb(109,247,231)		Id343		ActiveRecord	
+rgb(109,247,233)	20.7	Id344	PHP	NestedSetRecursiveIterator.php	20.7
+rgb(109,247,233)	7.6	Id345	PHP	ActiveRecordInterface.php	7.6
+rgb(109,247,235)		Id346		Validator	
+rgb(109,247,235)		Id347		Constraints	
+rgb(109,247,238)	14.3	Id348	PHP	UniqueValidator.php	14.3
+rgb(109,247,238)	9.2	Id349	PHP	Unique.php	9.2
+rgb(109,247,240)		Id350		Exception	
+rgb(109,247,240)	9.6	Id351	PHP	FileNotFoundException.php	9.6
+rgb(109,247,242)	7.6	Id352	PHP	BadMethodCallException.php	7.6
+rgb(109,247,242)	7.6	Id353	PHP	ClassNotFoundException.php	7.6
+rgb(109,247,245)	7.6	Id354	PHP	RuntimeException.php	7.6
+rgb(109,247,245)	7.6	Id355	PHP	PropelException.php	7.6
+rgb(109,247,247)	7.6	Id356	PHP	LogicException.php	7.6
+rgb(109,247,247)	7.6	Id357	PHP	InvalidArgumentException.php	7.6
+rgb(109,245,247)	7.6	Id358	PHP	ExceptionInterface.php	7.6
+rgb(109,245,247)	7.6	Id359	PHP	UnexpectedValueException.php	7.6
+rgb(109,242,247)		Id360		Common	
+rgb(109,242,247)		Id361		Pluralizer	
+rgb(109,240,247)	25.4	Id362	PHP	StandardEnglishPluralizer.php	25.4
+rgb(109,240,247)	9.6	Id363	PHP	SimpleEnglishPluralizer.php	9.6
+rgb(109,238,247)	8.2	Id364	PHP	PluralizerInterface.php	8.2
+rgb(109,238,247)		Id365		tests	
+rgb(109,235,247)		Id366		Propel	
+rgb(109,235,247)		Id367		Tests	
+rgb(109,233,247)		Id368		Runtime	
+rgb(109,233,247)		Id369		ActiveQuery	
+rgb(109,231,247)	88.8	Id370	PHP	ModelCriteriaTest.php	88.8
+rgb(109,231,247)	59.5	Id371	PHP	CriteriaTest.php	59.5
+rgb(109,228,247)	44.0	Id372	PHP	CriteriaMergeTest.php	44.0
+rgb(109,228,247)	42.0	Id373	PHP	ModelCriteriaSelectTest.php	42.0
+rgb(109,226,247)	39.5	Id374	PHP	CriteriaFluidConditionTest.php	39.5
+rgb(109,226,247)	38.3	Id375	PHP	CriteriaCombineTest.php	38.3
+rgb(109,224,247)	35.8	Id376	PHP	SubQueryTest.php	35.8
+rgb(109,224,247)	34.0	Id377	PHP	ModelWithTest.php	34.0
+rgb(109,222,247)	29.8	Id378	PHP	ModelCriteriaHooksTest.php	29.8
+rgb(109,222,247)	29.0	Id379	PHP	JoinTest.php	29.0
+rgb(109,219,247)		Id380		Criterion	
+rgb(109,219,247)	28.1	Id381	PHP	InCriterionTest.php	28.1
+rgb(109,217,247)	26.7	Id382	PHP	InModelCriterionTest.php	26.7
+rgb(109,217,247)	25.5	Id383	PHP	LikeCriterionTest.php	25.5
+rgb(109,215,247)	24.1	Id384	PHP	BasicCriterionTest.php	24.1
+rgb(109,215,247)	22.0	Id385	PHP	LikeModelCriterionTest.php	22.0
+rgb(109,212,247)	17.5	Id386	PHP	RawModelCriterionTest.php	17.5
+rgb(109,212,247)	17.5	Id387	PHP	RawCriterionTest.php	17.5
+rgb(109,210,247)	16.8	Id388	PHP	BasicModelCriterionTest.php	16.8
+rgb(109,210,247)	16.6	Id389	PHP	SeveralModelCriterionTest.php	16.6
+rgb(109,208,247)	12.7	Id390	PHP	CustomCriterionTest.php	12.7
+rgb(109,208,247)	25.6	Id391	PHP	PropelQueryTest.php	25.6
+rgb(109,206,247)	23.5	Id392	PHP	CriteriaFluidOperatorTest.php	23.5
+rgb(109,206,247)	21.6	Id393	PHP	ModelJoinTest.php	21.6
+rgb(109,203,247)	19.0	Id394	PHP	ModelCriteriaWithSchemaTest.php	19.0
+rgb(109,203,247)	18.0	Id395	PHP	ModelCriteriaWithNamespaceTest.php	18.0
+rgb(109,201,247)	12.4	Id396	PHP	ModelCriteriaForUseQuery.php	12.4
+rgb(109,201,247)	10.4	Id397	PHP	TestableModelCriteria.php	10.4
+rgb(109,199,247)		Id398		Formatter	
+rgb(109,199,247)	50.1	Id399	PHP	ObjectFormatterWithTest.php	50.1
+rgb(109,196,247)	44.9	Id400	PHP	ArrayFormatterWithTest.php	44.9
+rgb(109,196,247)	39.2	Id401	PHP	OnDemandFormatterWithTest.php	39.2
+rgb(109,194,247)	30.6	Id402	PHP	OnDemandFormatterTest.php	30.6
+rgb(109,194,247)	25.9	Id403	PHP	ObjectFormatterTest.php	25.9
+rgb(109,192,247)	25.1	Id404	PHP	ArrayFormatterTest.php	25.1
+rgb(109,192,247)	24.9	Id405	PHP	StatementFormatterTest.php	24.9
+rgb(109,189,247)	20.0	Id406	PHP	SimpleArrayFormatterTest.php	20.0
+rgb(109,187,247)	18.2	Id407	PHP	ObjectFormatterInheritanceTest.php	18.2
+rgb(109,187,247)		Id408		Connection	
+rgb(109,185,247)	42.9	Id409	PHP	PropelPDOTest.php	42.9
+rgb(109,185,247)	27.1	Id410	PHP	ConnectionManagerMasterSlaveTest.php	27.1
+rgb(109,183,247)	20.3	Id411	PHP	ConnectionFactoryTest.php	20.3
+rgb(109,183,247)	20.3	Id412	PHP	ConnectionManagerSingleTest.php	20.3
+rgb(109,180,247)		Id413		ServiceContainer	
+rgb(109,180,247)	42.5	Id414	PHP	StandardServiceContainerTest.php	42.5
+rgb(109,178,247)		Id415		Collection	
+rgb(109,178,247)	41.5	Id416	PHP	CollectionTest.php	41.5
+rgb(109,176,247)	34.5	Id417	PHP	ObjectCollectionWithFixturesTest.php	34.5
+rgb(109,176,247)	32.6	Id418	PHP	ArrayCollectionTest.php	32.6
+rgb(109,173,247)	31.1	Id419	PHP	CollectionConvertTest.php	31.1
+rgb(109,173,247)	27.5	Id420	PHP	ObjectCollectionTest.php	27.5
+rgb(109,171,247)	20.7	Id421	PHP	OnDemandCollectionTest.php	20.7
+rgb(109,171,247)	18.0	Id422	PHP	OnDemandIteratorTest.php	18.0
+rgb(109,169,247)		Id423		Util	
+rgb(109,169,247)	38.3	Id424	PHP	BasePeerTest.php	38.3
+rgb(109,167,247)	34.4	Id425	PHP	PropelModelPagerTest.php	34.4
+rgb(109,167,247)	33.5	Id426	PHP	ProfilerTest.php	33.5
+rgb(109,164,247)	27.3	Id427	PHP	PropelDateTimeTest.php	27.3
+rgb(109,164,247)	22.7	Id428	PHP	BasePeerExceptionsTest.php	22.7
+rgb(109,162,247)	21.8	Id429	PHP	PropelConditionalProxyTest.php	21.8
+rgb(109,162,247)		Id430		Map	
+rgb(109,160,247)	34.2	Id431	PHP	TableMapTest.php	34.2
+rgb(109,160,247)	28.4	Id432	PHP	DatabaseMapTest.php	28.4
+rgb(109,157,247)	27.4	Id433	PHP	ColumnMapTest.php	27.4
+rgb(109,157,247)	21.4	Id434	PHP	RelationMapTest.php	21.4
+rgb(109,155,247)	19.6	Id435	PHP	GeneratedRelationMapWithSchemasTest.php	19.6
+rgb(109,155,247)	19.6	Id436	PHP	RelatedMapSymmetricalWithSchemasTest.php	19.6
+rgb(109,153,247)	19.3	Id437	PHP	GeneratedRelationMapTest.php	19.3
+rgb(109,153,247)	19.0	Id438	PHP	RelatedMapSymmetricalTest.php	19.0
+rgb(109,150,247)	31.1	Id439	PHP	ActiveRecordConvertTest.php	31.1
+rgb(109,150,247)		Id440		Parser	
+rgb(109,148,247)	30.0	Id441	PHP	XmlParserTest.php	30.0
+rgb(109,148,247)	28.0	Id442	PHP	YamlParserTest.php	28.0
+rgb(109,146,247)	21.9	Id443	PHP	CsvParserTest.php	21.9
+rgb(109,146,247)	21.1	Id444	PHP	JsonParserTest.php	21.1
+rgb(109,144,247)	17.5	Id445	PHP	AbstractParserTest.php	17.5
+rgb(109,144,247)		Id446		fixtures	
+rgb(109,141,247)	8.2	Id447	XML	test_data.xml	8.2
+rgb(109,141,247)		Id448		Adapter	
+rgb(109,139,247)	25.2	Id449	PHP	DBAdapterTest.php	25.2
+rgb(109,139,247)		Id450		Pdo	
+rgb(109,137,247)	21.0	Id451	PHP	OracleAdapterTest.php	21.0
+rgb(109,137,247)	20.6	Id452	PHP	MysqlAdapterTest.php	20.6
+rgb(109,134,247)	11.2	Id453	PHP	PgsqlAdapter.php	11.2
+rgb(109,134,247)	22.9	Id454	PHP	ActiveRecordSerializeTest.php	22.9
+rgb(109,132,247)	18.2	Id455	PHP	ActiveRecordTest.php	18.2
+rgb(109,132,247)		Id456		Exception	
+rgb(109,130,247)	15.6	Id457	PHP	PropelExceptionTest.php	15.6
+rgb(109,130,247)	14.9	Id458	PHP	PropelTest.php	14.9
+rgb(109,128,247)		Id459		Generator	
+rgb(109,128,247)		Id460		Behavior	
+rgb(109,125,247)		Id461		NestedSet	
+rgb(109,125,247)	64.7	Id462	PHP	NestedSetBehaviorObjectBuilderModifierTest.php	64.7
+rgb(109,123,247)	47.2	Id463	PHP	NestedSetBehaviorObjectBuilderModifierWithScopeTest.php	47.2
+rgb(109,123,247)	47.1	Id464	PHP	NestedSetBehaviorQueryBuilderModifierTest.php	47.1
+rgb(109,121,247)	39.4	Id465	PHP	NestedSetBehaviorQueryBuilderModifierWithScopeTest.php	39.4
+rgb(109,121,247)	27.0	Id466	PHP	TestCase.php	27.0
+rgb(109,118,247)	14.9	Id467	PHP	NestedSetBehaviorTest.php	14.9
+rgb(109,118,247)		Id468		Fixtures	
+rgb(109,116,247)	10.4	Id469	PHP	PublicTable9.php	10.4
+rgb(109,116,247)	8.7	Id470	PHP	PublicTable10.php	8.7
+rgb(109,114,247)		Id471		Versionable	
+rgb(109,114,247)	56.7	Id472	PHP	VersionableBehaviorObjectBuilderModifierTest.php	56.7
+rgb(109,111,247)	42.8	Id473	PHP	VersionableBehaviorTest.php	42.8
+rgb(109,111,247)	15.4	Id474	PHP	VersionableBehaviorQueryBuilderModifierTest.php	15.4
+rgb(109,109,247)	8.2	Id475	PHP	TestCase.php	8.2
+rgb(109,109,247)		Id476		I18n	
+rgb(111,109,247)	42.2	Id477	PHP	I18nBehaviorObjectBuilderModifierTest.php	42.2
+rgb(111,109,247)	36.2	Id478	PHP	I18nBehaviorTest.php	36.2
+rgb(114,109,247)	35.3	Id479	PHP	I18nBehaviorQueryBuilderModifierTest.php	35.3
+rgb(114,109,247)		Id480		Archivable	
+rgb(116,109,247)	40.8	Id481	PHP	ArchivableBehaviorObjectBuilderModifierTest.php	40.8
+rgb(116,109,247)	35.9	Id482	PHP	ArchivableBehaviorQueryBuilderModifierTest.php	35.9
+rgb(118,109,247)	30.2	Id483	PHP	ArchivableBehaviorTest.php	30.2
+rgb(118,109,247)	13.8	Id484	PHP	FooArchive.php	13.8
+rgb(121,109,247)	13.5	Id485	PHP	FooArchiveQuery.php	13.5
+rgb(121,109,247)	11.2	Id486	PHP	FooArchiveCollection.php	11.2
+rgb(123,109,247)		Id487		Validate	
+rgb(123,109,247)	40.5	Id488	PHP	ValidateBehaviorTest.php	40.5
+rgb(125,109,247)	25.1	Id489	PHP	I18nConcreteInheritanceHandleValidateBehaviorTest.php	25.1
+rgb(125,109,247)	18.5	Id490	PHP	UniqueConstraintTest.php	18.5
+rgb(128,109,247)		Id491		Sluggable	
+rgb(128,109,247)	38.9	Id492	PHP	SluggableBehaviorTest.php	38.9
+rgb(130,109,247)		Id493		ConcreteInheritance	
+rgb(130,109,247)	37.8	Id494	PHP	ConcreteInheritanceBehaviorTest.php	37.8
+rgb(132,109,247)	17.0	Id495	PHP	ConcreteInheritanceParentBehaviorTest.php	17.0
+rgb(132,109,247)	14.0	Id496	PHP	ConcreteInheritanceBehaviorWithSchemaTest.php	14.0
+rgb(134,109,247)		Id497		Sortable	
+rgb(134,109,247)	37.5	Id498	PHP	SortableBehaviorObjectBuilderModifierWithScopeTest.php	37.5
+rgb(137,109,247)	34.8	Id499	PHP	SortableBehaviorObjectBuilderModifierTest.php	34.8
+rgb(137,109,247)	26.4	Id500	PHP	TestCase.php	26.4
+rgb(139,109,247)	25.0	Id501	PHP	SortableBehaviorQueryBuilderModifierWithScopeTest.php	25.0
+rgb(139,109,247)	24.2	Id502	PHP	SortableBehaviorPeerBuilderModifierWithScopeTest.php	24.2
+rgb(141,109,247)	23.3	Id503	PHP	SortableBehaviorQueryBuilderModifierTest.php	23.3
+rgb(141,109,247)	20.6	Id504	PHP	SortableBehaviorPeerBuilderModifierTest.php	20.6
+rgb(144,109,247)	11.5	Id505	PHP	SortableBehaviorTest.php	11.5
+rgb(144,109,247)		Id506		AggregateColumn	
+rgb(146,109,247)	34.9	Id507	PHP	AggregateColumnBehaviorTest.php	34.9
+rgb(146,109,247)	21.4	Id508	PHP	AggregateColumnBehaviorWithSchemaTest.php	21.4
+rgb(148,109,247)		Id509		Delegate	
+rgb(150,109,247)	34.8	Id510	PHP	DelegateBehaviorTest.php	34.8
+rgb(150,109,247)		Id511		Timestampable	
+rgb(153,109,247)	32.3	Id512	PHP	TimestampableBehaviorTest.php	32.3
+rgb(153,109,247)	28.7	Id513	PHP	ObjectBehaviorTest.php	28.7
+rgb(155,109,247)	20.7	Id514	PHP	PeerBehaviorTest.php	20.7
+rgb(155,109,247)		Id515		AutoAddPk	
+rgb(157,109,247)	20.2	Id516	PHP	AutoAddPkBehaviorTest.php	20.2
+rgb(157,109,247)	11.8	Id517	PHP	TableBehaviorTest.php	11.8
+rgb(160,109,247)		Id518		AddClass	
+rgb(160,109,247)	10.8	Id519	PHP	AddClassBehaviorTest.php	10.8
+rgb(162,109,247)		Id520		Builder	
+rgb(162,109,247)		Id521		Om	
+rgb(164,109,247)	61.9	Id522	PHP	GeneratedObjectTest.php	61.9
+rgb(164,109,247)	61.2	Id523	PHP	QueryBuilderTest.php	61.2
+rgb(167,109,247)	48.3	Id524	PHP	GeneratedObjectRelTest.php	48.3
+rgb(167,109,247)	39.7	Id525	PHP	GeneratedPeerDoSelectTest.php	39.7
+rgb(169,109,247)	38.6	Id526	PHP	GeneratedPeerDoDeleteTest.php	38.6
+rgb(169,109,247)	36.3	Id527	PHP	GeneratedObjectWithFixturesTest.php	36.3
+rgb(171,109,247)	33.4	Id528	PHP	GeneratedQueryArrayColumnTypeTest.php	33.4
+rgb(171,109,247)	33.0	Id529	PHP	GeneratedObjectArrayColumnTypeTest.php	33.0
+rgb(173,109,247)	30.5	Id530	PHP	GeneratedObjectLobTest.php	30.5
+rgb(173,109,247)	29.8	Id531	PHP	GeneratedObjectTemporalColumnTypeTest.php	29.8
+rgb(176,109,247)	28.6	Id532	PHP	QueryBuilderInheritanceTest.php	28.6
+rgb(176,109,247)	28.3	Id533	PHP	TableMapBuilderTest.php	28.3
+rgb(178,109,247)	28.0	Id534	PHP	AbstractOMBuilderNamespaceTest.php	28.0
+rgb(178,109,247)	25.8	Id535	PHP	GeneratedObjectEnumColumnTypeTest.php	25.8
+rgb(180,109,247)	24.3	Id536	PHP	AbstractOMBuilderTest.php	24.3
+rgb(180,109,247)	23.9	Id537	PHP	GeneratedPeerLazyLoadTest.php	23.9
+rgb(183,109,247)	22.5	Id538	PHP	GeneratedQueryEnumColumnTypeTest.php	22.5
+rgb(183,109,247)	22.5	Id539	PHP	GeneratedPeerTest.php	22.5
+rgb(185,109,247)	22.4	Id540	PHP	GeneratedQueryObjectColumnTypeTest.php	22.4
+rgb(185,109,247)	21.4	Id541	PHP	GeneratedObjectObjectColumnTypeTest.php	21.4
+rgb(187,109,247)	21.0	Id542	PHP	GeneratedObjectBooleanColumnTypeTest.php	21.0
+rgb(187,109,247)	20.8	Id543	PHP	GeneratedObjectLazyLoadTest.php	20.8
+rgb(189,109,247)	20.2	Id544	PHP	AbstractOMBuilderRelatedByTest.php	20.2
+rgb(189,109,247)	19.6	Id545	PHP	ObjectBuilderTest.php	19.6
+rgb(192,109,247)	18.8	Id546	PHP	GeneratedPeerEnumColumnTypeTest.php	18.8
+rgb(192,109,247)	14.3	Id547	PHP	GeneratedObjectWithInterfaceTest.php	14.3
+rgb(194,109,247)		Id548		Fixtures	
+rgb(194,109,247)	10.8	Id549	PHP	ComplexColumnTypeEntityWithConstructor.php	10.8
+rgb(196,109,247)	35.0	Id550	PHP	NamespaceTest.php	35.0
+rgb(196,109,247)		Id551		Util	
+rgb(199,109,247)	24.2	Id552	PHP	SchemaReaderTest.php	24.2
+rgb(199,109,247)	16.6	Id553	PHP	PropelTemplateTest.php	16.6
+rgb(201,109,247)	8.7	Id554	XML	outerSchema.xml	8.7
+rgb(201,109,247)	8.2	Id555	XML	innerSchema.xml	8.2
+rgb(203,109,247)	8.2	Id556	XML	testSchema.xml	8.2
+rgb(203,109,247)	4.0	Id557	PHP	template.php	4.0
+rgb(206,109,247)		Id558		Model	
+rgb(206,109,247)	58.2	Id559	PHP	ColumnTest.php	58.2
+rgb(208,109,247)	54.7	Id560	PHP	TableTest.php	54.7
+rgb(208,109,247)	41.8	Id561	PHP	ForeignKeyTest.php	41.8
+rgb(210,109,247)	41.0	Id562	PHP	DatabaseTest.php	41.0
+rgb(210,109,247)		Id563		Diff	
+rgb(212,109,247)	40.3	Id564	PHP	PropelDatabaseTableComparatorTest.php	40.3
+rgb(212,109,247)	33.1	Id565	PHP	PropelTableColumnComparatorTest.php	33.1
+rgb(215,109,247)	31.4	Id566	PHP	PropelTableIndexComparatorTest.php	31.4
+rgb(215,109,247)	30.5	Id567	PHP	ColumnComparatorTest.php	30.5
+rgb(217,109,247)	30.2	Id568	PHP	PropelTablePkColumnComparatorTest.php	30.2
+rgb(217,109,247)	29.3	Id569	PHP	ForeignKeyComparatorTest.php	29.3
+rgb(219,109,247)	29.0	Id570	PHP	PropelTableForeignKeyComparatorTest.php	29.0
+rgb(219,109,247)	22.1	Id571	PHP	IndexComparatorTest.php	22.1
+rgb(222,109,247)	39.6	Id572	PHP	ModelTestCase.php	39.6
+rgb(222,109,247)	31.4	Id573	PHP	SchemaTest.php	31.4
+rgb(224,109,247)	31.1	Id574	PHP	DomainTest.php	31.1
+rgb(224,109,247)	28.5	Id575	PHP	BehaviorTest.php	28.5
+rgb(226,109,247)	26.8	Id576	PHP	IndexTest.php	26.8
+rgb(226,109,247)	22.7	Id577	PHP	NameFactoryTest.php	22.7
+rgb(228,109,247)	19.4	Id578	PHP	PhpNameGeneratorTest.php	19.4
+rgb(228,109,247)	18.5	Id579	PHP	VendorInfoTest.php	18.5
+rgb(231,109,247)	17.3	Id580	PHP	InheritanceTest.php	17.3
+rgb(231,109,247)	17.0	Id581	PHP	MappingModelTest.php	17.0
+rgb(233,109,247)	15.4	Id582	PHP	UniqueTest.php	15.4
+rgb(233,109,247)	14.0	Id583	PHP	ColumnDefaultValueTest.php	14.0
+rgb(235,109,247)		Id584		Platform	
+rgb(235,109,247)	50.3	Id585	PHP	MysqlPlatformTest.php	50.3
+rgb(238,109,247)	49.3	Id586	PHP	PgsqlPlatformTest.php	49.3
+rgb(238,109,247)	48.5	Id587	PHP	PlatformMigrationTestProvider.php	48.5
+rgb(240,109,247)	48.0	Id588	PHP	MssqlPlatformTest.php	48.0
+rgb(240,109,247)	45.7	Id589	PHP	OraclePlatformTest.php	45.7
+rgb(242,109,247)	40.9	Id590	PHP	OraclePlatformMigrationTest.php	40.9
+rgb(242,109,247)	38.0	Id591	PHP	PlatformTestProvider.php	38.0
+rgb(245,109,247)	37.7	Id592	PHP	SqlitePlatformTest.php	37.7
+rgb(245,109,247)	36.2	Id593	PHP	PgsqlPlatformMigrationTest.php	36.2
+rgb(247,109,247)	31.5	Id594	PHP	MysqlPlatformMigrationTest.php	31.5
+rgb(247,109,247)	25.9	Id595	PHP	DefaultPlatformTest.php	25.9
+rgb(247,109,245)	12.4	Id596	PHP	PlatformTestBase.php	12.4
+rgb(247,109,245)		Id597		Config	
+rgb(247,109,242)	38.4	Id598	PHP	XmlToArrayConverterTest.php	38.4
+rgb(247,109,242)	37.7	Id599	PHP	ArrayToPhpConverterTest.php	37.7
+rgb(247,109,240)	17.1	Id600	PHP	GeneratorConfigTest.php	17.1
+rgb(247,109,240)		Id601		Util	
+rgb(247,109,238)	30.5	Id602	PHP	PhpParserTest.php	30.5
+rgb(247,109,238)	27.8	Id603	PHP	SchemaValidatorTest.php	27.8
+rgb(247,109,235)	25.7	Id604	PHP	QuickBuilderTest.php	25.7
+rgb(247,109,235)	21.5	Id605	PHP	SqlParserTest.php	21.5
+rgb(247,109,233)		Id606		Reverse	
+rgb(247,109,233)	19.7	Id607	PHP	PgsqlSchemaParserTest.php	19.7
+rgb(247,109,231)	17.1	Id608	PHP	MssqlSchemaParserTest.php	17.1
+rgb(247,109,231)	16.4	Id609	PHP	MysqlSchemaParserTest.php	16.4
+rgb(247,109,228)		Id610		Command	
+rgb(247,109,226)	15.4	Id611	PHP	AbstractCommandTest.php	15.4
+rgb(247,109,226)	47.3	Id612	PHP	BookstoreTest.php	47.3
+rgb(247,109,224)	39.9	Id613	PHP	FieldnameRelatedTest.php	39.9
+rgb(247,109,224)		Id614		Helpers	
+rgb(247,109,222)		Id615		Bookstore	
+rgb(247,109,222)	38.0	Id616	PHP	BookstoreDataPopulator.php	38.0
+rgb(247,109,219)		Id617		Behavior	
+rgb(247,109,219)	29.2	Id618	PHP	Testallhooksbehavior.php	29.2
+rgb(247,109,217)	19.3	Id619	PHP	TestAuthor.php	19.3
+rgb(247,109,217)	16.4	Id620	PHP	AddClassBehaviorBuilder.php	16.4
+rgb(247,109,215)	10.8	Id621	PHP	TestAuthorSaveFalse.php	10.8
+rgb(247,109,215)	10.8	Id622	PHP	TestAuthorDeleteFalse.php	10.8
+rgb(247,109,212)	8.7	Id623	PHP	AddClassBehavior.php	8.7
+rgb(247,109,212)	8.2	Id624	PHP	DonothingBehavior.php	8.2
+rgb(247,109,210)	17.1	Id625	PHP	BookstoreTestBase.php	17.1
+rgb(247,109,210)	10.0	Id626	PHP	BookstoreEmptyTestBase.php	10.0
+rgb(247,109,208)		Id627		Schemas	
+rgb(247,109,208)	14.7	Id628	PHP	SchemasTestBase.php	14.7
+rgb(247,109,206)		Id629		Namespaces	
+rgb(247,109,206)	12.1	Id630	PHP	NamespacesTestBase.php	12.1
+rgb(247,109,203)	9.6	Id631	PHP	SchemaPlatform.php	9.6
+rgb(247,109,203)	9.6	Id632	PHP	NoSchemaPlatform.php	9.6
+rgb(247,109,201)	8.2	Id633	PHP	BaseTestCase.php	8.2
+rgb(247,109,201)	31.2	Id634	PHP	Ticket520Test.php	31.2
+rgb(247,109,199)		Id635		Common	
+rgb(247,109,199)		Id636		Pluralizer	
+rgb(247,109,196)	23.4	Id637	PHP	StandardEnglishPluralizerTest.php	23.4
+rgb(247,109,196)	21.6	Id638	PHP	CharacterEncodingTest.php	21.6
+rgb(247,109,194)	7.6	Id639	PHP	TestCase.php	7.6
+rgb(247,109,194)		Id640		Fixtures	
+rgb(247,109,192)		Id641		etc	
+rgb(247,109,192)		Id642		xsl	
+rgb(247,109,189)	48.9	Id643	XSLT	coverage-frames.xsl	48.9
+rgb(247,109,189)	41.1	Id644	XSLT	phpunit-noframes.xsl	41.1
+rgb(247,109,187)	31.6	Id645	XSLT	log.xsl	31.6
+rgb(247,109,187)	25.2	Id646	XSLT	str.replace.function.xsl	25.2
+rgb(247,109,185)		Id647		bookstore	
+rgb(247,109,185)	40.0	Id648	XML	schema.xml	40.0
+rgb(247,109,183)	22.9	Id649	XML	behavior-validate-schema.xml	22.9
+rgb(247,109,183)	19.9	Id650	XML	behavior-concrete-inheritance-schema.xml	19.9
+rgb(247,109,180)	16.4	Id651	XML	behavior-aggregate-schema.xml	16.4
+rgb(247,109,180)	16.4	Id652	XML	behavior-validate-triggers-schema.xml	16.4
+rgb(247,109,178)	15.2	Id653	XML	behavior-sluggable-schema.xml	15.2
+rgb(247,109,178)	14.3	Id654	XML	behavior-auto-add-pk-schema.xml	14.3
+rgb(247,109,176)	12.7	Id655	XML	behavior-timestampable-schema.xml	12.7
+rgb(247,109,176)	10.4	Id656	XML	behavior-schema.xml	10.4
+rgb(247,109,173)	9.2	Id657	XML	behavior-add-class-schema.xml	9.2
+rgb(247,109,173)		Id658		schemas	
+rgb(247,109,171)	23.6	Id659	XML	schema.xml	23.6
+rgb(247,109,171)		Id660		namespaced	
+rgb(247,109,169)	20.7	Id661	XML	schema.xml	20.7
+rgb(247,109,169)		Id662		bookstore-packaged	
+rgb(247,109,167)	17.7	Id663	XML	book.schema.xml	17.7
+rgb(247,109,167)	17.3	Id664	XML	review.schema.xml	17.3
+rgb(247,109,164)	17.0	Id665	XML	book_club_list.schema.xml	17.0
+rgb(247,109,164)	15.2	Id666	XML	log.schema.xml	15.2
+rgb(247,109,162)		Id667		external	
+rgb(247,109,162)	15.2	Id668	XML	author.schema.xml	15.2
+rgb(247,109,160)	14.9	Id669	XML	media.schema.xml	14.9
+rgb(247,109,160)	11.5	Id670	XML	publisher.schema.xml	11.5
+rgb(247,109,157)		Id671		generator	
+rgb(247,109,157)		Id672		config	
+rgb(247,109,155)	7.6	Id673	PHP	FoobarWithNS.php	7.6
+rgb(247,109,155)	7.0	Id674	PHP	Foobar.php	7.0
+rgb(247,109,153)	5.3	Id675	PHP	bootstrap.php	5.3
+rgb(247,109,153)		Id676		resources	
+rgb(247,109,150)		Id677		xsd	
+rgb(247,109,150)	58.0	Id678	XSD	database.xsd	58.0
+rgb(247,109,148)	8.7	Id679	XSD	custom_datatypes.xsd	8.7
+rgb(247,109,148)		Id680		xsl	
+rgb(247,109,146)	36.1	Id681	XSLT	dbd2propel.xsl	36.1
+rgb(247,109,146)	31.4	Id682	XSLT	database.xsl	31.4
+rgb(247,109,144)		Id683		dtd	
+rgb(247,109,144)	28.1	Id684	DTD	database.dtd	28.1
+rgb(247,109,141)		Id685		documentation	
+rgb(247,109,141)		Id686		css	
+rgb(247,109,139)	37.2	Id687	CSS	layout.css	37.2
+rgb(247,109,139)	25.3	Id688	CSS	markdown.css	25.3
+rgb(247,109,137)	21.6	Id689	CSS	base_syntax.css	21.6
+rgb(247,109,137)	19.0	Id690	CSS	mobile.css	19.0
+rgb(247,109,134)	12.4	Id691	CSS	syntax.css	12.4
+rgb(247,109,134)		Id692		_layouts	
+rgb(247,109,132)	16.4	Id693	HTML	home.html	16.4
+rgb(247,109,132)	16.0	Id694	HTML	base.html	16.0
+rgb(247,109,130)	10.8	Id695	HTML	documentation.html	10.8
+rgb(247,109,130)	8.2	Id696	HTML	default.html	8.2
+rgb(247,109,128)		Id697		_includes	
+rgb(247,109,128)	13.5	Id698	HTML	footer.html	13.5
+rgb(247,109,125)	12.4	Id699	HTML	navbar.html	12.4
+rgb(247,109,125)	9.6	Id700	HTML	header.html	9.6
+rgb(247,109,123)		Id701		js	
+rgb(247,109,123)	9.2	Id702	Javascript	ga.js	9.2
+rgb(247,109,121)	4.0	Id703	Javascript	jquery.tableofcontents.min.js	4.0
+rgb(247,109,121)	8.2	Id704	HTML	404.html	8.2
+rgb(247,109,118)	5.3	Id705	YAML	_config.yml	5.3
+rgb(247,109,118)		Id706		features	
+rgb(247,109,116)		Id707		bootstrap	
+rgb(247,109,116)	17.5	Id708	PHP	FeatureContext.php	17.5
+rgb(247,109,114)		Id709		bin	
+rgb(247,109,114)	13.8	Id710	PHP	propel.php	13.8
+rgb(247,109,111)	9.2	Id711	DOS Batch	propel.bat	9.2
+rgb(247,109,109)	11.2	Id712	YAML	.travis.yml	11.2

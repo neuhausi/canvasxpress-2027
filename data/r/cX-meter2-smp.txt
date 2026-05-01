@@ -1,0 +1,13 @@
+	Quarter
+January	Q1
+February	Q1
+March	Q1
+April	Q1
+May	Q1
+June	Q1
+July	Q2
+August	Q2
+September	Q2
+October	Q2
+November	Q2
+December	Q2

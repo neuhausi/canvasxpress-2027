@@ -1,0 +1,3 @@
+{"type":"FeatureCollection","copyright":"CanvasXpress (https://canvasxpress.org)","license":"Data sourced from Natural Earth (https://naturalearthdata.com) and geoBoundaries (https://geoboundaries.org) under open licenses.","features":[
+    {"type":"Feature","id":"MAC","alias":["MAC","MO","Macao S.A.R"],"properties":{"Name":"Macao S.A.R"},"geometry":{"type":"MultiPolygon","coordinates":[[[[113.532237,22.152615],[113.574067,22.160753],[113.560232,22.141547],[113.587494,22.124864],[113.546804,22.105373],[113.532237,22.152615]]],[[[113.524343,22.212551],[113.55714,22.20246],[113.52475,22.173733],[113.535248,22.207546],[113.524343,22.212551]]]]}}
+]}

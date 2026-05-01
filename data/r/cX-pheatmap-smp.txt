@@ -1,0 +1,11 @@
+	CellType	Dose	Drug	Time
+Sample1	CT1	40	A	t1
+Sample2	CT2	40	B	t2
+Sample3	CT1	20	A	t3
+Sample4	CT2	20	B	t4
+Sample5	CT1	15	A	t5
+Sample6	CT2	30	B	t1
+Sample7	CT1	50	A	t2
+Sample8	CT2	15	B	t3
+Sample9	CT1	30	A	t4
+Sample10	CT2	50	B	t5

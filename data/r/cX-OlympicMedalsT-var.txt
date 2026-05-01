@@ -1,0 +1,152 @@
+	Country
+USA	United States
+URS	Soviet Union
+GER	Germany
+GBR	Great Britain
+FRA	France
+ITA	Italy
+CHN	People's Republic of China
+SWE	Sweden
+RUS	Russian Federation
+GDR	East Germany
+NOR	Norway
+HUN	Hungary
+JPN	Japan
+AUS	Australia
+FIN	Finland
+CAN	Canada
+NED	Netherlands
+KOR	Republic of Korea
+SUI	Switzerland
+ROU	Romania
+AUT	Austria
+POL	Poland
+CUB	Cuba
+FRG	West Germany
+EUN	Unified Team
+BUL	Bulgaria
+TCH	Czechoslovakia
+ESP	Spain
+NZL	New Zealand
+DEN	Denmark
+BEL	Belgium
+TUR	Turkey
+UKR	Ukraine
+GRE	Greece
+KEN	Kenya
+BRA	Brazil
+RSA	South Africa
+YUG	Yugoslavia
+CZE	Czech Republic
+JAM	Jamaica
+ETH	Ethiopia
+ARG	Argentina
+IRI	Islamic Republic of Iran
+BLR	Belarus
+KAZ	Kazakhstan
+PRK	Democratic People's Republic of Korea
+CRO	Croatia
+MEX	Mexico
+EST	Estonia
+SVK	Slovakia
+IRL	Ireland
+THA	Thailand
+IND	India
+GEO	Georgia
+UZB	Uzbekistan
+SLO	Slovenia
+INA	Indonesia
+AZE	Azerbaijan
+EGY	Egypt
+LTU	Lithuania
+MAR	Morocco
+BAH	The Bahamas
+COL	Colombia
+TPE	Chinese Taipei
+ALG	Algeria
+LAT	Latvia
+POR	Portugal
+TUN	Tunisia
+MIX	Mixed team
+NGR	Nigeria
+SRB	Serbia
+TTO	Trinidad and Tobago
+ANZ	Australasia
+ZIM	Zimbabwe
+LUX	Luxembourg
+PAK	Pakistan
+DOM	Dominican Republic
+CMR	Cameroon
+MGL	Mongolia
+CHI	Chile
+OAR	Olympic Athletes from Russia
+ARM	Armenia
+VEN	Venezuela
+SCG	Serbia and Montenegro
+UGA	Uganda
+LIE	Liechtenstein
+URU	Uruguay
+BRN	Bahrain
+VIE	Vietnam
+PER	Peru
+PUR	Puerto Rico
+SGP	Singapore
+ISR	Israel
+IOA	Individual Olympic Athletes
+CRC	Costa Rica
+TJK	Tajikistan
+CIV	C�te d'Ivoire
+HKG	Hong Kong, China
+SYR	Syrian Arab Republic
+BDI	Burundi
+ECU	Ecuador
+GRN	Grenada
+PAN	Panama
+MOZ	Mozambique
+SUR	Suriname
+UAE	United Arab Emirates
+FIJ	Fiji
+JOR	Jordan
+KOS	Kosovo
+MAS	Malaysia
+NAM	Namibia
+PHI	Philippines
+MDA	Republic of Moldova
+ISL	Iceland
+LBN	Lebanon
+SRI	Sri Lanka
+TAN	United Republic of Tanzania
+QAT	Qatar
+BOH	Bohemia
+GHA	Ghana
+KGZ	Kyrgyzstan
+KSA	Kingdom of Saudi Arabia
+HAI	Haiti
+NIG	Niger
+UAR	United Arab Republic
+ZAM	Zambia
+BOT	Botswana
+CYP	Cyprus
+GAB	Gabon
+GUA	Guatemala
+MNE	Montenegro
+AHO	Netherlands Antilles
+PAR	Paraguay
+SAM	Samoa
+SEN	Senegal
+SUD	Sudan
+TGA	Tonga
+ISV	United States Virgin Islands
+AFG	Afghanistan
+KUW	Kuwait
+WIF	West Indies Federation
+BAR	Barbados
+BER	Bermuda
+DJI	Djibouti
+ERI	Eritrea
+GUY	Guyana
+IRQ	Iraq
+MRI	Mauritius
+MON	Monaco
+MKD	North Macedonia
+TOG	Togo

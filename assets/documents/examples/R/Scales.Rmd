@@ -1,0 +1,123 @@
+---
+title: "Scaling Axes"
+author: "Isaac Neuhaus"
+date: "06/04/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+# Load data and Libraries
+### https://r4ds.had.co.nz/data-visualisation.html
+```{r setup}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("devtools" %in% installed.packages())) {
+    install.packages('devtools')
+}
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library('canvasXpress')
+```
+
+
+## Box plot
+```{r}
+bp <- ggplot(ToothGrowth, aes(x=factor(dose), y=len, group = dose)) + geom_boxplot()
+bp
+canvasXpress(bp)
+```
+
+## scatter plot
+```{r}
+sp<-ggplot(cars, aes(x = speed, y = dist)) + geom_point()
+sp
+canvasXpress(sp)
+```
+
+## Box plot : change y axis range
+```{r}
+bp2 <- bp + ylim(0,50)
+bp2
+canvasXpress(bp2)
+```
+
+## scatter plots : change x and y limits
+```{r}
+sp2 <- sp + xlim(5, 40) + ylim(0, 150)
+sp2
+canvasXpress(sp2)
+```
+
+## Change x and y axis labels, and limits
+```{r}
+sp3 <- sp + scale_x_continuous(name="Speed of cars", limits=c(0, 30)) + scale_y_continuous(name="Stopping distance", limits=c(0, 150))
+sp3
+canvasXpress(sp3)
+```
+
+## Default scatter plot
+```{r}
+sp4 <- ggplot(cars, aes(x = speed, y = dist)) + geom_point()
+sp4
+canvasXpress(sp4)
+```
+
+## Log transformation using scale_xx() possible values for trans : 'log2', 'log10','sqrt'
+```{r}
+sp5 <- sp4 + scale_x_continuous(trans='log2') + scale_y_continuous(trans='log2')
+sp5
+canvasXpress(sp5)
+```
+
+## Sqrt transformation
+```{r}
+sp6 <- sp4 + scale_y_sqrt()
+sp6
+canvasXpress(sp6)
+```
+
+## Reverse coordinates
+```{r}
+sp7 <- sp4 + scale_y_reverse() 
+sp7
+canvasXpress(sp7)
+```
+
+## Possible values for x and y : "log2", "log10", "sqrt", ...
+```{r}
+sp8 <- sp4 + coord_trans(x="log2", y="log2")
+sp8
+canvasXpress(sp8)
+```
+
+## log-log plot without log tick marks
+```{r}
+library(MASS) # to access Animals data sets
+library(scales) # to access break formatting functions
+# x and y axis are transformed and formatted
+p2 <- ggplot(Animals, aes(x = body, y = brain)) + geom_point() +
+     scale_x_log10(breaks = trans_breaks("log10", function(x) 10^x),
+              labels = trans_format("log10", math_format(10^.x))) +
+     scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
+              labels = trans_format("log10", math_format(10^.x))) +
+     theme_bw()
+p2
+canvasXpress(p2)
+```
+
+## Show log tick marks
+```{r}
+p3 <- p2 + annotation_logticks()
+p3
+canvasXpress(p3)
+```

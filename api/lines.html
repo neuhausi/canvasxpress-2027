@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress: API - Lines</title>
+    <meta name="description" content="CanvasXpress: API - Lines parameters to configure visualizations">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress: API - Lines">
+    <meta property="og:description" content="CanvasXpress: API - Lines parameters to configure visualizations">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org/api/lines.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress: API - Lines">
+    <meta name="twitter:description" content="CanvasXpress: API - Lines parameters to configure visualizations">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org/api/lines.html">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+</head>
+
+  <body>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top:0;padding:0;">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="/index.html">
+            <div class="mb-0">
+              <img src="/assets/images/logo-dark.svg" alt="CanvasXpress Logo" style="height: 25px; max-width: unset;" title="CanvasXpress Logo" width="282" height="35" loading="eager">
+            </div>
+          </a>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:0;outline:none;right:18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </a>
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0" style="margin-left: 0px;">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a href="/examples.html" class="nav-link">Examples</a></li>
+              <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
+              <li class="nav-item"><a href="/interfaces.html" class="nav-link">Interfaces</a></li>
+              <li class="nav-item"><a href="/updates.html" class="nav-link">Updates</a></li>
+              <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item mb-2" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-bs-toggle="modal" data-bs-target="#search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- Modals -->
+      <div id="modals">
+
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content modal-cnt">
+              <button type="button" class="modal-btn bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-hdr">
+                <div id="searchModalLabel" class="font-xl bg-transparent">Search CanvasXpress</div>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                  .gsc-search-button-v2 {background-color: #ffd587; border: none; border-radius: 5px;}.gsc-search-button-v2:focus, .gsc-search-button-v2:hover {background-color: #ffd587; outline: none;}.gsc-search-button-v2 svg {fill: #000;}td.gsib_a, td.gsib_b {border: none; border-radius: 5px; padding: 0 5px 0;}td.gsc-input, td.gsc-search-button, td.gsc-clear-button {border: none; padding: 0;}.gsst_a .gscb_a {color: #000;}.gsst_a .gscb_a:hover {color: #000;}.gsc-control-cse {max-height: 850px; overflow-y: auto; border:none; background-color: transparent;}.gsc-results-wrapper-overlay {background-color:transparent;}.gsc-webResult.gsc-result{border:none;}.gsc-above-wrapper-area {border:none; padding: 5px 0 5px 0;}
+                </style>
+                <script async src="https://cse.google.com/cse.js?cx=017553474198412024421:c_qxiweliao"></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Docs -->
+      <div class="pt-1">
+        <div class="container px-4 px-lg-3" style="max-width: 1600px;">
+          <div class="row">
+
+            <!--  Left Side bar -->
+            <div class="col-lg-2 sidebar">
+              <div>
+                <a href="/api/3d_attributes.html" class="d-block">3D Attributes</a>
+                <a href="/api/animations_and_visualization_transitions.html" class="d-block">Animations and Visualization Transitions</a>
+                <a href="/api/area_graphs.html" class="d-block">Area Graphs</a>
+                <a href="/api/aspect_ratio__space_and_width.html" class="d-block">Aspect Ratio, Space and Width</a>
+                <a href="/api/axis.html" class="d-block">Axis</a>
+                <a href="/api/bar_graphs.html" class="d-block">Bar Graphs</a>
+                <a href="/api/bin_plots.html" class="d-block">Bin Plots</a>
+                <a href="/api/bins.html" class="d-block">Bins</a>
+                <a href="/api/boxplot_graphs.html" class="d-block">Boxplot Graphs</a>
+                <a href="/api/bubble_graphs.html" class="d-block">Bubble Graphs</a>
+                <a href="/api/bullet_graphs.html" class="d-block">Bullet Graphs</a>
+                <a href="/api/chord_graphs.html" class="d-block">Chord Graphs</a>
+                <a href="/api/circular_graph_arc_sectors.html" class="d-block">Circular Graph Arc Sectors</a>
+                <a href="/api/circular_graph_connections.html" class="d-block">Circular Graph Connections</a>
+                <a href="/api/circular_graph_tracks.html" class="d-block">Circular Graph Tracks</a>
+                <a href="/api/circular_graphs.html" class="d-block">Circular Graphs</a>
+                <a href="/api/citations_or_references.html" class="d-block">Citations or References</a>
+                <a href="/api/clustering.html" class="d-block">Clustering</a>
+                <a href="/api/colors.html" class="d-block">Colors</a>
+                <a href="/api/combination_plot_strips.html" class="d-block">Combination Plot Strips</a>
+                <a href="/api/combination_plots.html" class="d-block">Combination Plots</a>
+                <a href="/api/confidence_intervals.html" class="d-block">Confidence Intervals</a>
+                <a href="/api/contours.html" class="d-block">Contours</a>
+                <a href="/api/correlation_graphs.html" class="d-block">Correlation Graphs</a>
+                <a href="/api/doe.html" class="d-block">DOE</a>
+                <a href="/api/data.html" class="d-block">Data</a>
+                <a href="/api/data_context.html" class="d-block">Data Context</a>
+                <a href="/api/data_customizer.html" class="d-block">Data Customizer</a>
+                <a href="/api/data_faceting.html" class="d-block">Data Faceting</a>
+                <a href="/api/data_filters.html" class="d-block">Data Filters</a>
+                <a href="/api/data_point_attributes.html" class="d-block">Data Point Attributes</a>
+                <a href="/api/data_ratio_reference.html" class="d-block">Data Ratio Reference</a>
+                <a href="/api/data_selection.html" class="d-block">Data Selection</a>
+                <a href="/api/data_sorting.html" class="d-block">Data Sorting</a>
+                <a href="/api/data_table.html" class="d-block">Data Table</a>
+                <a href="/api/data_time_series.html" class="d-block">Data Time Series</a>
+                <a href="/api/data_transformation.html" class="d-block">Data Transformation</a>
+                <a href="/api/data_ui_widgets.html" class="d-block">Data UI Widgets</a>
+                <a href="/api/debug.html" class="d-block">Debug</a>
+                <a href="/api/decorations.html" class="d-block">Decorations</a>
+                <a href="/api/dendrograms.html" class="d-block">Dendrograms</a>
+                <a href="/api/density_plots.html" class="d-block">Density Plots</a>
+                <a href="/api/dotplot_graphs.html" class="d-block">Dotplot Graphs</a>
+                <a href="/api/dumbbell_graphs.html" class="d-block">Dumbbell Graphs</a>
+                <a href="/api/error_bars.html" class="d-block">Error Bars</a>
+                <a href="/api/events.html" class="d-block">Events</a>
+                <a href="/api/fish_graphs.html" class="d-block">Fish Graphs</a>
+                <a href="/api/fit_lines.html" class="d-block">Fit Lines</a>
+                <a href="/api/foreground_and_background.html" class="d-block">Foreground and Background</a>
+                <a href="/api/gantt_charts.html" class="d-block">Gantt Charts</a>
+                <a href="/api/general.html" class="d-block">General</a>
+                <a href="/api/general_attributes.html" class="d-block">General Attributes</a>
+                <a href="/api/general_one_dimensional_graphs.html" class="d-block">General One Dimensional Graphs</a>
+                <a href="/api/genome_browser.html" class="d-block">Genome Browser</a>
+                <a href="/api/genome_browser_features.html" class="d-block">Genome Browser Features</a>
+                <a href="/api/genome_browser_sequences.html" class="d-block">Genome Browser Sequences</a>
+                <a href="/api/genome_browser_tracks.html" class="d-block">Genome Browser Tracks</a>
+                <a href="/api/gradients.html" class="d-block">Gradients</a>
+                <a href="/api/graph_metadata.html" class="d-block">Graph Metadata</a>
+                <a href="/api/grey_out.html" class="d-block">Grey Out</a>
+                <a href="/api/html_widgets.html" class="d-block">HTML Widgets</a>
+                <a href="/api/heatmap_color_indicators.html" class="d-block">Heatmap Color Indicators</a>
+                <a href="/api/heatmap_graphs.html" class="d-block">Heatmap Graphs</a>
+                <a href="/api/hierarchy.html" class="d-block">Hierarchy</a>
+                <a href="/api/histograms.html" class="d-block">Histograms</a>
+                <a href="/api/ideograms.html" class="d-block">Ideograms</a>
+                <a href="/api/images.html" class="d-block">Images</a>
+                <a href="/api/kaplan_meier_plots.html" class="d-block">Kaplan Meier Plots</a>
+                <a href="/api/llm.html" class="d-block">LLM</a>
+                <a href="/api/legends.html" class="d-block">Legends</a>
+                <a href="/api/line_graphs.html" class="d-block">Line Graphs</a>
+                <a href="/api/lines.html" class="d-block text-dark font-weight-bold">Lines</a>
+                <a href="/api/loess.html" class="d-block">Loess</a>
+                <a href="/api/lollipop_graphs.html" class="d-block">Lollipop Graphs</a>
+                <a href="/api/manhattan_plots.html" class="d-block">Manhattan Plots</a>
+                <a href="/api/maps.html" class="d-block">Maps</a>
+                <a href="/api/maps_albers.html" class="d-block">Maps Albers</a>
+                <a href="/api/maps_leaflet.html" class="d-block">Maps Leaflet</a>
+                <a href="/api/maps_orthographic.html" class="d-block">Maps Orthographic</a>
+                <a href="/api/marginal_text.html" class="d-block">Marginal Text</a>
+                <a href="/api/margins.html" class="d-block">Margins</a>
+                <a href="/api/meter_graphs.html" class="d-block">Meter Graphs</a>
+                <a href="/api/missing_data.html" class="d-block">Missing Data</a>
+                <a href="/api/network_algorithm_parameters.html" class="d-block">Network Algorithm Parameters</a>
+                <a href="/api/network_cola_algorithm_parameters.html" class="d-block">Network Cola Algorithm Parameters</a>
+                <a href="/api/network_communities.html" class="d-block">Network Communities</a>
+                <a href="/api/network_graphs.html" class="d-block">Network Graphs</a>
+                <a href="/api/network_node_and_edge_attributes.html" class="d-block">Network Node and Edge Attributes</a>
+                <a href="/api/oncoprint_graphs.html" class="d-block">Oncoprint Graphs</a>
+                <a href="/api/overlays.html" class="d-block">Overlays</a>
+                <a href="/api/parallel_coordinates_graphs.html" class="d-block">Parallel Coordinates Graphs</a>
+                <a href="/api/pie_charts.html" class="d-block">Pie Charts</a>
+                <a href="/api/plot_area.html" class="d-block">Plot Area</a>
+                <a href="/api/plot_data_type.html" class="d-block">Plot Data Type</a>
+                <a href="/api/plot_mode.html" class="d-block">Plot Mode</a>
+                <a href="/api/plot_performance.html" class="d-block">Plot Performance</a>
+                <a href="/api/plot_view.html" class="d-block">Plot View</a>
+                <a href="/api/plot_and_panel_areas.html" class="d-block">Plot and Panel Areas</a>
+                <a href="/api/print.html" class="d-block">Print</a>
+                <a href="/api/quantile_regression_plots.html" class="d-block">Quantile Regression Plots</a>
+                <a href="/api/r.html" class="d-block">R</a>
+                <a href="/api/r_axis.html" class="d-block">R-Axis</a>
+                <a href="/api/random.html" class="d-block">Random</a>
+                <a href="/api/ranges.html" class="d-block">Ranges</a>
+                <a href="/api/regression.html" class="d-block">Regression</a>
+                <a href="/api/ridgeline_plots.html" class="d-block">Ridgeline Plots</a>
+                <a href="/api/samples.html" class="d-block">Samples</a>
+                <a href="/api/sankey_diagrams.html" class="d-block">Sankey Diagrams</a>
+                <a href="/api/scatter_plot_matrix.html" class="d-block">Scatter Plot Matrix</a>
+                <a href="/api/scatter_plots.html" class="d-block">Scatter Plots</a>
+                <a href="/api/shadows.html" class="d-block">Shadows</a>
+                <a href="/api/shapes.html" class="d-block">Shapes</a>
+                <a href="/api/sizes.html" class="d-block">Sizes</a>
+                <a href="/api/stream_plots.html" class="d-block">Stream Plots</a>
+                <a href="/api/swimmer_graphs.html" class="d-block">Swimmer Graphs</a>
+                <a href="/api/tag_cloud.html" class="d-block">Tag Cloud</a>
+                <a href="/api/text.html" class="d-block">Text</a>
+                <a href="/api/text_placement.html" class="d-block">Text Placement</a>
+                <a href="/api/titles_and_subtitles.html" class="d-block">Titles and Subtitles</a>
+                <a href="/api/tooltip.html" class="d-block">Tooltip</a>
+                <a href="/api/transparency.html" class="d-block">Transparency</a>
+                <a href="/api/tree_bracket.html" class="d-block">Tree Bracket</a>
+                <a href="/api/treemap_graphs.html" class="d-block">Treemap Graphs</a>
+                <a href="/api/trees.html" class="d-block">Trees</a>
+                <a href="/api/upset_plots.html" class="d-block">UpSet Plots</a>
+                <a href="/api/variables.html" class="d-block">Variables</a>
+                <a href="/api/venn_diagrams.html" class="d-block">Venn Diagrams</a>
+                <a href="/api/violin_plots.html" class="d-block">Violin Plots</a>
+                <a href="/api/visium_plots.html" class="d-block">Visium Plots</a>
+                <a href="/api/waterfall_graphs.html" class="d-block">Waterfall Graphs</a>
+                <a href="/api/workflow_charts.html" class="d-block">Workflow Charts</a>
+                <a href="/api/x_axis.html" class="d-block">X-Axis</a>
+                <a href="/api/y_axis.html" class="d-block">Y-Axis</a>
+                <a href="/api/z_axis.html" class="d-block">Z-Axis</a>
+                <a href="/api/zooming__panning_and_resizing.html" class="d-block">Zooming, Panning and Resizing</a>
+                <a href="/api/cxplot.html" class="d-block">cxplot</a>
+              </div>
+            </div>
+
+            <!-- Center Pane -->
+            <div class="col-lg-8">
+              <h1>Lines : Properties to adjust Lines</h1>
+              <div id="adjustBezier" style="margin-bottom:0"><a href="#adjustBezier">#</a> adjustBezier</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Flag to select the bezier line type. the bezier can start from the top or bottom (vertical), or from the side (horizontal). This will be based on the location of the two points joined by the line<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">boolean</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">false</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="arrowHeadAngle" style="margin-bottom:0"><a href="#arrowHeadAngle">#</a> arrowHeadAngle</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      The angle for the head of the arrow<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">float</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">22.5</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="arrowHeadSize" style="margin-bottom:0"><a href="#arrowHeadSize">#</a> arrowHeadSize</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Size in pixels of the arrow head in arrow lines<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">integer</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">10</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="arrowHeadType" style="margin-bottom:0"><a href="#arrowHeadType">#</a> arrowHeadType</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Type for the head of the arrows<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">string</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">filledArc</span>
+                  </div>
+                  <div class="optionsProperty">
+                    <span class="headerProperty">Options: </span>
+                    <span class="optionsProperty">wire,
+                    <span class="optionsProperty">filledStraight,
+                    <span class="optionsProperty">filledArc,
+                    <span class="optionsProperty">filledQuadratic,
+                    <span class="optionsProperty">filledBezier</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="arrowHeadTypeOpen" style="margin-bottom:0"><a href="#arrowHeadTypeOpen">#</a> arrowHeadTypeOpen</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Flag to use white fill for the arrow head<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">boolean</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">false</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="arrowQuadraticFactor" style="margin-bottom:0"><a href="#arrowQuadraticFactor">#</a> arrowQuadraticFactor</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Factor to use to bend the quadratic lines<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">float</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">2.3</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="capType" style="margin-bottom:0"><a href="#capType">#</a> capType</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Default type of cap for lines<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">string</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">butt</span>
+                  </div>
+                  <div class="optionsProperty">
+                    <span class="headerProperty">Options: </span>
+                    <span class="optionsProperty">butt,
+                    <span class="optionsProperty">round,
+                    <span class="optionsProperty">square</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="dashLength" style="margin-bottom:0"><a href="#dashLength">#</a> dashLength</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Size in pixels of the length of the dashes and the separation between the dashes in the dashed lines<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">integer</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">8</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="dotLength" style="margin-bottom:0"><a href="#dotLength">#</a> dotLength</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Size in pixels of the length between dots in the doted lines<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">integer</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">1</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="joinType" style="margin-bottom:0"><a href="#joinType">#</a> joinType</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Default type for joining lines<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">string</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">mitter</span>
+                  </div>
+                  <div class="optionsProperty">
+                    <span class="headerProperty">Options: </span>
+                    <span class="optionsProperty">mitter,
+                    <span class="optionsProperty">bevel,
+                    <span class="optionsProperty">round</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="lineThickness" style="margin-bottom:0"><a href="#lineThickness">#</a> lineThickness</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Default thickness in pixels for the lines in line plots<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">float</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">1</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="outlineWidth" style="margin-bottom:0"><a href="#outlineWidth">#</a> outlineWidth</div>
+              <div class="canvasXpressDoc">
+                <div class="publicProperty">
+                  <div class="descProperty">
+                    <span class="descProperty">
+                      Default width in pixels for lines in networks and other line elements in all visualizations except for the lines in the line plots<br>
+                    </span>
+                  </div>
+                  <div class="titleProperty">
+                    <span class="headerProperty">Type: </span>
+                    <span class="typeProperty">float</span>
+                  </div>
+                  <div class="defaultProperty">
+                    <span class="headerProperty">Default: </span>
+                    <span class="defaultProperty">1</span>
+                  </div>
+                  <div class="usedProperty">
+                    <span class="headerProperty">Used in: </span>
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/area-1.html">Area</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/arealine-1.html">AreaLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bar-1.html">Bar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/barline-1.html">BarLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/boxplot-1.html">Boxplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bubble-1.html">Bubble</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/bullet-1.html">Bullet</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/chord-1.html">Chord</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/circular-1.html">Circular</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/contour-1.html">Contour</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/correlation-1.html">Correlation</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/density-1.html">Density</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotline-1.html">DotLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dotplot-1.html">Dotplot</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/dumbbell-1.html">Dumbbell</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/fish-1.html">Fish</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/gantt-1.html">Gantt</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/genome-1.html">Genome</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/heatmap-1.html">Heatmap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/histogram-1.html">Histogram</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/line-1.html">Line</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/lollipop-1.html">Lollipop</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/map-1.html">Map</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/meter-1.html">Meter</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/network-1.html">Network</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/parallelcoordinates-1.html">ParallelCoordinates</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/pie-1.html">Pie</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/radar-1.html">Radar</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sankey-1.html">Sankey</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter2d-1.html">Scatter2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatter3d-1.html">Scatter3D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/scatterbubble2d-1.html">ScatterBubble2D</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stacked-1.html">Stacked</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedline-1.html">StackedLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercent-1.html">StackedPercent</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/stackedpercentline-1.html">StackedPercentLine</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/streamgraph-1.html">Streamgraph</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/sunburst-1.html">Sunburst</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tagcloud-1.html">TagCloud</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/tree-1.html">Tree</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/treemap-1.html">Treemap</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/venn-1.html">Venn</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/violin-1.html">Violin</a></span>,
+                    <span class="usedProperty"><a class="usedProperty internal-grey-link" href="/examples/waterfall-1.html">Waterfall</a></span>
+                  </div>
+                </div>
+              </div>
+              <br>
+            </div>
+
+            <!-- Right Bar -->
+            <div class="col-lg-2 sidebar">
+              <div>
+                <div class=" mb-1">On This Page</div>
+                <a href="#adjustBezier" class="d-block smooth-scroll">adjustBezier</a>
+                <a href="#arrowHeadAngle" class="d-block smooth-scroll">arrowHeadAngle</a>
+                <a href="#arrowHeadSize" class="d-block smooth-scroll">arrowHeadSize</a>
+                <a href="#arrowHeadType" class="d-block smooth-scroll">arrowHeadType</a>
+                <a href="#arrowHeadTypeOpen" class="d-block smooth-scroll">arrowHeadTypeOpen</a>
+                <a href="#arrowQuadraticFactor" class="d-block smooth-scroll">arrowQuadraticFactor</a>
+                <a href="#capType" class="d-block smooth-scroll">capType</a>
+                <a href="#dashLength" class="d-block smooth-scroll">dashLength</a>
+                <a href="#dotLength" class="d-block smooth-scroll">dotLength</a>
+                <a href="#joinType" class="d-block smooth-scroll">joinType</a>
+                <a href="#lineThickness" class="d-block smooth-scroll">lineThickness</a>
+                <a href="#outlineWidth" class="d-block smooth-scroll">outlineWidth</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="py-1 mt-lg-1 body-footer">
+        <div class="container px-4 px-lg-3" py-lg-1 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 text-center mx-auto mb-5">
+              <section class="pt-0 pb-0">
+                <div class="row d-flex">
+                  <div class="col-md-6 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2">
+                      <a href="/">
+                        <img src="/assets/images/CanvasXpress-Logo-Horizontal-White.svg" width="282" height="35" title="CanvasXpress Logo" alt="CanvasXpress Logo" loading="lazy"/>
+                      </a>
+                    </div>
+                    <p class="text-footer">CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface. Full and effortless audit trail of data, configuration and all user interactions in every visualization.</p>
+                    <p class="rights text-footer">©2025 All Rights Reserved. CanvasXpress®</p>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Documentation</div>
+                    <a href="/examples.html" class="fade-page link-footer">Examples</a>
+                    <a href="/documentation.html" class="fade-page link-footer">Docs</a>
+                    <a href="/parameters.html" class="fade-page link-footer">Api</a>
+                    <a href="/updates.html" class="fade-page link-footer">Updates</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Company</div>
+                    <a href="/contact.html" class="fade-page link-footer">Contact</a>
+                    <a href="/licenseCommercial.html" class="fade-page link-footer">License</a>
+                    <a href="/apps/dashboard.html" class="fade-page link-footer">Admin</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Information</div>
+                    <a href="/terms.html" class="fade-page link-footer">Terms of Use</a>
+                    <a href="/privacy.html" class="fade-page link-footer">Privacy policy</a>
+                    <a href="/references.html" class="fade-page link-footer">References</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</a>
+
+    <!-- Site JavaScript -->
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script>
+      setTimeout(function() {
+        var elementToObserve = document.getElementsByClassName("gsc-expansionArea")[0];
+        var observer = new MutationObserver(function(mutations) {
+          var val = document.getElementById("gs_tti50").firstChild.value;
+          mutations.forEach(function(mutation) {
+
+          });
+        });
+        if (elementToObserve) { observer.observe(elementToObserve, { attributes: true, childList: true, characterData: true }); }
+      }, 500);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+  </body>
+
+</html>

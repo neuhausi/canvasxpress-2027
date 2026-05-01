@@ -1,0 +1,7 @@
+	Factor1	Factor2	Factor3
+S1	Lev : 1	Lev : A	Lev : X
+S2	Lev : 2	Lev : B	Lev : X
+S3	Lev : 3	Lev : A	Lev : Y
+S4	Lev : 1	Lev : B	Lev : Y
+S5	Lev : 2	Lev : A	Lev : Z
+S6	Lev : 3	Lev : B	Lev : Z

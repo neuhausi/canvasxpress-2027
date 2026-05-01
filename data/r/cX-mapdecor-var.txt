@@ -1,0 +1,4 @@
+	Latitude	Longitude	color	shape	size
+New York 1	40.701	-73.985	blue	circle	1
+New York 2	40.702	-74.011	red	teardrop	1.5
+New York 3	40.703	-73.991	green	star	3

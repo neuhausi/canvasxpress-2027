@@ -1,0 +1,33 @@
+	cyl
+Mazda RX4	6-Cyl
+Mazda RX4 Wag	6-Cyl
+Datsun 710	4-Cyl
+Hornet 4 Drive	6-Cyl
+Hornet Sportabout	8-Cyl
+Valiant	6-Cyl
+Duster 360	8-Cyl
+Merc 240D	4-Cyl
+Merc 230	4-Cyl
+Merc 280	6-Cyl
+Merc 280C	6-Cyl
+Merc 450SE	8-Cyl
+Merc 450SL	8-Cyl
+Merc 450SLC	8-Cyl
+Cadillac Fleetwood	8-Cyl
+Lincoln Continental	8-Cyl
+Chrysler Imperial	8-Cyl
+Fiat 128	4-Cyl
+Honda Civic	4-Cyl
+Toyota Corolla	4-Cyl
+Toyota Corona	4-Cyl
+Dodge Challenger	8-Cyl
+AMC Javelin	8-Cyl
+Camaro Z28	8-Cyl
+Pontiac Firebird	8-Cyl
+Fiat X1-9	4-Cyl
+Porsche 914-2	4-Cyl
+Lotus Europa	4-Cyl
+Ford Pantera L	8-Cyl
+Ferrari Dino	6-Cyl
+Maserati Bora	8-Cyl
+Volvo 142E	4-Cyl

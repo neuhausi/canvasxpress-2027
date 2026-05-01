@@ -1,0 +1,6 @@
+	Total Distance	Average Distance	Average Speed
+Value	250.43	5.69	9.79
+Bad	250	3	8
+Acceptable	400	6	10
+Good	600	12	11
+Target	520	7.5	10.5

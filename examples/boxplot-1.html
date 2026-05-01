@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Plot: Data Distribution Visualization | CanvasXpress</title>
+    <meta name="description" content="Visualize data distribution using a basic box plot showing median, quartiles, and potential outliers. | CanvasXpress">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="Box Plot: Data Distribution Visualization | CanvasXpress">
+    <meta property="og:description" content="Visualize data distribution using a basic box plot showing median, quartiles, and potential outliers. | CanvasXpress">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org/examples/boxplot-1.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Box Plot: Data Distribution Visualization | CanvasXpress">
+    <meta name="twitter:description" content="Visualize data distribution using a basic box plot showing median, quartiles, and potential outliers. | CanvasXpress">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org/examples/boxplot-1.html">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+</head>
+
+  <body>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top:0;padding:0;">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="/index.html">
+            <div class="mb-0">
+              <img src="/assets/images/logo-dark.svg" alt="CanvasXpress Logo" style="height: 25px; max-width: unset;" title="CanvasXpress Logo" width="282" height="35" loading="eager">
+            </div>
+          </a>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:0;outline:none;right:18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </a>
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0" style="margin-left: 0px;">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a href="/examples.html" class="nav-link">Examples</a></li>
+              <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
+              <li class="nav-item"><a href="/interfaces.html" class="nav-link">Interfaces</a></li>
+              <li class="nav-item"><a href="/updates.html" class="nav-link">Updates</a></li>
+              <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item mb-2" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-bs-toggle="modal" data-bs-target="#search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- Modals -->
+      <div id="modals">
+
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content modal-cnt">
+              <button type="button" class="modal-btn bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-hdr">
+                <div id="searchModalLabel" class="font-xl bg-transparent">Search CanvasXpress</div>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                  .gsc-search-button-v2 {background-color: #ffd587; border: none; border-radius: 5px;}.gsc-search-button-v2:focus, .gsc-search-button-v2:hover {background-color: #ffd587; outline: none;}.gsc-search-button-v2 svg {fill: #000;}td.gsib_a, td.gsib_b {border: none; border-radius: 5px; padding: 0 5px 0;}td.gsc-input, td.gsc-search-button, td.gsc-clear-button {border: none; padding: 0;}.gsst_a .gscb_a {color: #000;}.gsst_a .gscb_a:hover {color: #000;}.gsc-control-cse {max-height: 850px; overflow-y: auto; border:none; background-color: transparent;}.gsc-results-wrapper-overlay {background-color:transparent;}.gsc-webResult.gsc-result{border:none;}.gsc-above-wrapper-area {border:none; padding: 5px 0 5px 0;}
+                </style>
+                <script async src="https://cse.google.com/cse.js?cx=017553474198412024421:c_qxiweliao"></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Docs -->
+      <div class="pt-1">
+        <div class="container px-4 px-lg-3" style="max-width: 1600px;">
+          <div class="row">
+
+            <!--  Left Side bar -->
+            <div id="leftPanel" class="col-xl-2 d-none d-xl-block sidebar" style="z-index:0;">
+              <div>
+                <a href="/examples/area-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><polygon class="cxbc"points="11.9 86.7 53 44.1 63.3 53.7 100 12.1 100 86.3 11.9 86.7"/><g class="cxb"><polyline points="14.5 84.1 53 44.1 63.3 53.7 100 12.1"/><polyline points="11.9 47.3 40.1 18.3 53.1 31.7 78 3.5 93.7 19.6"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Area</div></a>
+                <a href="/examples/arealine-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><polygon class="cxbc"points="11.9 86.3 40 57.1 55 67.9 76.8 37 92.6 67.8 99.9 58.8 99.9 86 11.9 86.3"/><g class="cxb"><polyline points="11.9 86.3 40 57.1 55 67.9 76.8 37 92.6 67.8 99.9 58.8"/><polyline points="11.9 61.7 40 30 53 43.4 79.9 3.7 99.9 39.2"/></g><g class="cxa"><line x1="11.9"y1="0.1"x2="11.9"y2="100"/><line x1="99.9"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.2"x2="11.9"y2="39.2"x1="0"/><line y1="15.7"x2="11.9"y2="15.7"x1="0"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">AreaLine</div></a>
+                <a href="/examples/bar-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><rect x="23.4"y="55.7"width="15.2"height="30.3"/><rect x="50.3"y="15.6"width="15.2"height="70.4"/><rect x="77.2"y="30.1"width="15.2"height="56"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Bar</div></a>
+                <a href="/examples/barline-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><rect x="23.2"y="56"width="15.1"height="30.1"/><rect x="50"y="42.5"width="15.1"height="43.6"/><rect x="76.7"y="30.4"width="15.1"height="55.6"/></g><g class="cxa"><line x1="11.9"y1="0.5"x2="11.9"y2="100"/><line x1="99.4"y1="86.1"y2="86.1"x2="0"/><line y1="62.7"x2="11.9"y2="62.7"x1="0"/><line y1="39.4"x2="11.9"y2="39.4"x1="0"/><line y1="16.1"x2="11.9"y2="16.1"x1="0"/><polyline points="23.2 42.5 49.7 19.6 59.5 28.6 89.1 0.5"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">BarLine</div></a>
+                <a href="/examples/boxplot-1.html" style="height:32px;" class="d-block font-weight-bold text-primary"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g><g class="cxb"><rect x="83.1"y="27.1"width="13.3"height="25.1"/><line x1="83.1"y1="39.6"x2="96.4"y2="39.6"/><line x1="90"y1="27.1"x2="90"y2="19.3"/><line x1="84.8"y1="20"x2="95.2"y2="20"/><line x1="90"y1="52.2"x2="90"y2="59.9"/><line x1="84.8"y1="59.2"x2="95.2"y2="59.2"/><line x1="89.8"y1="67.5"x2="89.8"y2="68.7"/><rect x="23.1"y="18.8"width="13.3"height="25.1"/><line x1="23.1"y1="31.3"x2="36.5"y2="31.3"/><line x1="30"y1="18.8"x2="30"y2="11"/><line x1="24.8"y1="11.7"x2="35.3"y2="11.7"/><line x1="30"y1="43.9"x2="30"y2="51.7"/><line x1="24.8"y1="51"x2="35.3"y2="51"/><line x1="29.8"y1="59.2"x2="29.8"y2="60.5"/><rect x="53.1"y="44.2"width="13.3"height="25.1"/><line x1="53.1"y1="56.7"x2="66.4"y2="56.7"/><line x1="60"y1="69.2"x2="60"y2="77"/><line x1="54.7"y1="76.3"x2="65.3"y2="76.3"/><line x1="60"y1="44.2"x2="60"y2="36.4"/><line x1="54.7"y1="37.1"x2="65.3"y2="37.1"/><line x1="59.8"y1="25.9"x2="59.8"y2="24.7"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Boxplot</div></a>
+                <a href="/examples/bubble-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><circle cx="50"cy="50"r="47.4"/><circle cx="63.6"cy="65.7"r="10.7"/><circle cx="36.4"cy="36"r="11.3"/><circle cx="35.6"cy="82.2"r="5.8"/><circle cx="82"cy="41.6"r="4.6"/></g><g class="cxb"><circle cx="37.2"cy="35.3"r="20"/><circle cx="63.6"cy="65.7"r="20"/><circle cx="67.8"cy="25.7"r="10.7"/><circle cx="21"cy="61.9"r="10.7"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Bubble</div></a>
+                <a href="/examples/bullet-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><rect x="23.4"y="15.6"width="15.2"height="70.4"/><rect x="50.3"y="15.6"width="15.2"height="70.4"/><rect x="77.2"y="15.6"width="15.2"height="70.4"/></g><g class="cxcc"><rect x="29.4"y="35.6"width="3.2"height="50.4"/><rect x="56.3"y="45.6"width="3.2"height="40.4"/><rect x="83.2"y="25.6"width="3.2"height="60.4"/></g><g class="cxa"><line x1="23.4"y1="50"y2="50"x2="38.6"/><line x1="50.3"y1="45"y2="45"x2="65.5"/><line x1="77.2"y1="70"y2="70"x2="92.4"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Bullet</div></a>
+                <a href="/examples/chord-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><path d="M 84.5 65.8 C 84.5 65.8 46.1 50 83.6 32.4"/><path d="M 84.5 65.8 C 84.5 65.8 47.4 48.6 42.2 87.2"/><path d="M 15.5 65.8 C 15.5 65.8 59.1 50.7 61.5 13.8"/><path d="M 12.1 50 C 12.1 50 59.8 66.4 87.4 43"/><path d="M 15 35.2 C 15 35.2 56.8 39 25.2 79"/><path d="M 72.8 80.4 C 72.8 80.4 15.8 48.8 75.9 22.3"/></g><g class="cxa"><path d="M 2.2 50 C 2.3 86.8 42.1 109.8 74 91.3 C 75.6 90.4 77.1 89.4 78.6 88.3 L 72.7 80.4 C 49.3 97.9 15.7 83.4 12.3 54.4 C 12.2 53 12.1 51.5 12.1 50 L 2.2 50 Z"/><path d="M 15 35.2 C 25.3 11 56.6 4.3 75.9 22.3 L 82.6 15.1 C 58.3 -7.6 18.9 0.9 6 31.4 L 15 35.2 Z"/><path d="M 87.4 79.8 C 99.3 64.9 101.2 44.2 92.1 27.4 L 83.7 32.4 C 90.7 45.8 89.1 62.2 79.5 74 L 87.4 79.8 Z"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Chord</div></a>
+                <a href="/examples/circular-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><circle cx="50"cy="50"r="37.9"/><line x1="23"y1="76.6"x2="16.9"y2="84.6"/><circle cx="50"cy="50"r="47.9"/><circle cx="50"cy="50"r="18.6"/></g><g class="cxa"><line x1="50"y1="2.2"x2="50"y2="12.1"/></g><g class="cxb"><line x1="50"y1="20.2"x2="50"y2="24"/><line x1="50"y1="79.8"x2="50"y2="76"/><line x1="79.8"y1="50"x2="76"y2="50"/><line x1="20.2"y1="50"x2="24"y2="50"/><line x1="71.1"y1="28.9"x2="68.4"y2="31.6"/><line x1="28.9"y1="71.1"x2="31.6"y2="68.4"/><line x1="71.1"y1="71.1"x2="68.4"y2="68.4"/><line x1="28.9"y1="28.9"x2="31.6"y2="31.6"/><line x1="61.3"y1="22.4"x2="59.8"y2="25.9"/><line x1="38.7"y1="77.6"x2="40.2"y2="74.1"/><line x1="77.6"y1="61.3"x2="74.1"y2="59.8"/><line x1="22.4"y1="38.7"x2="25.9"y2="40.2"/><line x1="77.5"y1="38.5"x2="74"y2="39.9"/><line x1="22.5"y1="61.6"x2="26"y2="60.1"/><line x1="61.6"y1="77.5"x2="60.1"y2="74"/><line x1="38.5"y1="22.5"x2="39.9"y2="26"/><path d="M 87.9 50 C 87.9 59.7 84.1 69.1 77.4 76.1 L 83.7 83.8 C 109.8 57.8 97.9 13.4 62.4 3.8 C 58.3 2.7 54.2 2.2 50 2.2 L 50 12.1 C 71 12.1 87.9 29.1 87.9 50 Z"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Circular</div></a>
+                <a href="/examples/contour-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><path d="M 56.1 92.7 L 21.1 92.7 C 17.4 92.8 14.3 89.8 14.3 86 L 14.3 82.1 C 14.3 80.4 13.1 79.1 11.4 79.1 L 11.4 79.1 C 9.8 79.1 8.4 77.7 8.4 76.2 L 8.4 29.7 L 14.3 29.7 L 14.3 22.2 L 20.3 22.2 L 20.3 18.4 L 25 18.4 L 25 13.3 L 29.9 13.3 L 29.9 8.7 L 33.6 8.7 L 33.6 5.8 L 37.8 5.8 L 37.8 2.8 L 50 2.8 L 50 6.6 L 62.5 6.6 L 62.5 10.9 L 69.1 10.9 L 69.1 15.7 L 74 15.7 L 74 20 L 77.5 20 L 77.5 27 L 82.5 27 L 82.5 34.9 L 86.2 34.9 L 86.2 50.9 L 90.8 50.9 L 90.8 69.8 L 86.5 69.8 L 86.5 80.1 L 82.5 80.1 L 82.5 90.6 C 82.5 91.8 81.5 92.7 80.2 92.7 L 80.2 92.7 C 78.9 92.7 77.9 93.8 77.9 95 L 77.9 95 C 77.9 96.3 76.9 97.3 75.6 97.3 L 60.8 97.3 C 59.6 97.3 58.6 96.3 58.6 95 L 58.6 95 C 58.6 93.7 57.5 92.6 56.1 92.7 Z"/><polygon points="38.4 42.7 38.4 38.9 49.9 38.9 49.9 43.2 53.7 43.2 53.7 71.1 38.4 71.1 38.4 63.2 34 63.2 34 42.7 38.4 42.7"/></g><g class="cxb"><polygon points="63 78.5 69.8 78.5 69.8 70.7 78.5 70.7 78.5 59.1 74 59.1 74 50.6 69.5 50.6 69.5 39.4 66.7 39.4 66.7 31.7 62.5 31.7 62.5 27.5 54.2 27.5 54.2 22.9 33.9 22.9 33.9 27.4 30.1 27.3 30.1 29.8 26.2 29.8 26.2 34.7 22.8 34.7 22.8 75.1 25.4 75.1 25.4 79.2 29.5 79.2 29.5 83.1 63 83.1 63 78.5"/><polyline points="77.9 2.9 85.9 2.9 85.9 11.4 90 11.4 90 15 93.9 15 93.9 22.9 98.2 22.9 98.2 31.2"/><polyline points="21.9 2.9 14 2.9 14 7.2 10.1 7.2 10.1 15.4 1.8 15.4"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Contour</div></a>
+                <a href="/examples/correlation-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><line x1="76.6"y1="22.6"x2="36.7"y2="63.9"/><line x1="23.4"y1="22.6"x2="63.3"y2="63.9"/><line x1="50"y1="22.6"x2="76.2"y2="51"/><line x1="50"y1="22.6"x2="23.8"y2="51"/><line x1="76.6"y1="22.6"x2="90.8"y2="36.8"/><line x1="23.4"y1="22.6"x2="9.9"y2="36.8"/></g><g class="cxa"><polygon points="50 22.6 1.9 22.6 1.9 28.8 50 77.4 98.1 28.8 98.1 22.6 50 22.6"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Correlation</div></a>
+                <a href="/examples/dashboard-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><path d="M 40.2 73.9 C 40.2 66.3 48.3 61.6 54.8 65.4 C 57.9 67.1 59.7 70.4 59.7 73.9"/><line x1="50"y1="33.3"x2="50"y2="41.5"/><line x1="72.3"y1="40"x2="67.8"y2="46.8"/><line x1="86.6"y1="56.5"x2="79.2"y2="59.9"/><line x1="27.6"y1="40"x2="32.1"y2="46.8"/><line x1="13.3"y1="56.5"x2="20.7"y2="59.9"/><line x1="47.1"y1="64.1"x2="41.2"y2="43.4"/></g><g class="cxa"><path d="M 50 26.2 C 23.6 26.2 2.3 47.5 2.3 73.9 L 97.7 73.9 C 97.7 47.5 76.3 26.2 50 26.2 Z"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Dashboard</div></a>
+                <a href="/examples/density-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><path d="M 11.9 86 C 11.9 86 23.5 79.2 29.4 56.8 C 35.3 34.4 38.9 2.4 47.3 3.9 C 55.8 5.3 59.3 58.7 63.9 58.7 C 69 58.7 67.8 37.7 76.8 39.5 C 85.7 41.3 96.7 86 96.7 86"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Density</div></a>
+                <a href="/examples/donnut-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxbc"><path d="M 50 2.5 C 36.8 2.4 24.2 8 15.2 17.7 L 32.5 34.3 C 41.3 24.5 56.4 23.8 66 32.8 L 81.5 14.4 C 72.8 6.7 61.6 2.5 50 2.5 Z"/><path d="M 50 97.6 C 57.2 97.6 64.2 95.9 70.6 92.8 L 60.2 71.2 C 44.6 78.8 26.4 67.4 26.4 50 L 2.5 50 C 2.5 76.3 23.8 97.6 50 97.6 Z"/></g><g class="cxb"><line x1="26.4"y1="50"x2="2.5"y2="50"/><line x1="14.9"y1="17.9"x2="32.6"y2="34.3"/><line x1="66"y1="32.6"x2="82.1"y2="14.9"/><line x1="59.8"y1="71.4"x2="70.1"y2="93.2"/></g><g class="cxa"><path d="M 50 2.5 C 13.4 2.5 -9.5 42.1 8.8 73.8 C 27.1 105.5 72.9 105.5 91.2 73.8 C 95.4 66.6 97.6 58.4 97.6 50 C 97.6 23.8 76.3 2.5 50 2.5 Z M 50 73.6 C 31.9 73.6 20.5 54 29.6 38.2 C 38.7 22.5 61.4 22.5 70.4 38.2 C 72.5 41.8 73.6 45.9 73.6 50 C 73.6 63.1 63 73.6 50 73.6 Z"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Donnut</div></a>
+                <a href="/examples/dotline-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g><g class="cxb"><polyline points="24.8 65.2 53.4 35.9 62.7 46.1 89.3 19.9"/></g><g class="cxb"><circle cx="52"cy="67.9"r="6.6"/><circle cx="82.7"cy="55.7"r="6.6"/><circle cx="35.6"cy="23.4"r="6.6"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">DotLine</div></a>
+                <a href="/examples/dotplot-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g><g class="cxb"><circle cx="57.1"cy="67.9"r="6.6"/><circle cx="82.7"cy="42.6"r="6.6"/><circle cx="38.9"cy="25.9"r="6.6"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Dotplot</div></a>
+                <a href="/examples/dumbbell-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g><g class="cxcc"><rect x="24"y="35"width="12"height="30"/><rect x="74"y="40"width="12"height="20"/><rect x="49"y="23"width="12"height="20"/></g><g class="cxbb"><circle cx="30"cy="68"r="6"/><circle cx="80"cy="43"r="6"/><circle cx="55"cy="26"r="6"/><circle cx="30"cy="38"r="6"/><circle cx="80"cy="63"r="6"/><circle cx="55"cy="46"r="6"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Dumbbell</div></a>
+                <a href="/examples/facet-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><line x1="10.2"y1="28"x2="10.2"y2="14.3"/><line x1="19.5"y1="28"x2="19.5"y2="9.1"/><line x1="10.2"y1="62.6"x2="10.2"y2="53.1"/><line x1="19.5"y1="62.6"x2="19.5"y2="48.9"/><line x1="10.2"y1="97.2"x2="10.2"y2="79.7"/><line x1="19.5"y1="97.2"x2="19.5"y2="79.7"/><line x1="89.7"y1="28"x2="89.7"y2="14.3"/><line x1="80.4"y1="28"x2="80.4"y2="9.1"/><line x1="89.7"y1="62.6"x2="89.7"y2="53.1"/><line x1="80.4"y1="62.6"x2="80.4"y2="48.9"/><line x1="89.7"y1="97.2"x2="89.7"y2="84.5"/><line x1="80.4"y1="97.2"x2="80.4"y2="90.3"/><line x1="45.3"y1="28"x2="45.3"y2="18.5"/><line x1="54.6"y1="28"x2="54.6"y2="9.1"/><line x1="45.3"y1="62.6"x2="45.3"y2="45.1"/><line x1="54.6"y1="62.6"x2="54.6"y2="55.7"/><line x1="45.3"y1="97.2"x2="45.3"y2="79.7"/><line x1="54.6"y1="97.2"x2="54.6"y2="84"/></g><g class="cxa"><rect x="2.3"y="2.8"width="25.2"height="25.2"/><rect x="2.3"y="37.3"width="25.2"height="25.2"/><rect x="2.3"y="71.9"width="25.2"height="25.2"/><rect x="72.5"y="2.8"width="25.2"height="25.2"/><rect x="72.5"y="37.3"width="25.2"height="25.2"/><rect x="72.5"y="71.9"width="25.2"height="25.2"/><rect x="37.4"y="2.8"width="25.2"height="25.2"/><rect x="37.4"y="37.3"width="25.2"height="25.2"/><rect x="37.4"y="71.9"width="25.2"height="25.2"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Facet</div></a>
+                <a href="/examples/fish-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><path d="M 78 50 C 78 50 61.1 74.1 40.4 74.1 C 19.6 74.1 2.7 50 2.7 50 C 2.7 50 19.6 25.9 40.4 25.9 C 61.1 25.9 78 50 78 50 Z"/><line x1="97.4"y1="28.2"x2="77.9"y2="50"/><line x1="97.4"y1="71.9"x2="77.9"y2="50"/></g><g class="cxb"><line x1="23.5"y1="43.2"x2="23.5"y2="47.1"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Fish</div></a>
+                <a href="/examples/functions-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><line x1="10"y1="2"x2="10"y2="98"/><line x1="2"y1="10"x2="10"y2="10"/><line x1="2"y1="30"x2="10"y2="30"/><line x1="2"y1="50"x2="10"y2="50"/><line x1="2"y1="70"x2="10"y2="70"/><line x1="2"y1="90"x2="98"y2="90"/><line x1="10"y1="90"x2="10"y2="98"/><line x1="30"y1="90"x2="30"y2="98"/><line x1="50"y1="90"x2="50"y2="98"/><line x1="70"y1="90"x2="70"y2="98"/><line x1="90"y1="90"x2="90"y2="98"/></g><g class="cxa"><path d="M15,90 C80,75 30,25 95,10"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Functions</div></a>
+                <a href="/examples/gantt-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g><g class="cxb"><rect x="24"y="10.6"width="29.6"height="10.5"/><rect x="66"y="64.1"width="29.6"height="10.5"/><rect x="43.2"y="28.5"width="20.9"height="10.5"/><rect x="56.4"y="46.3"width="16.3"height="10.5"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Gantt</div></a>
+                <a href="/examples/genome-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><line x1="62.7"y1="7.9"x2="92.7"y2="37.9"/><line x1="52.5"y1="25.1"x2="75.5"y2="48.1"/><line x1="7.9"y1="62.7"x2="37.9"y2="92.7"/><line x1="25.1"y1="52.5"x2="48.1"y2="75.5"/></g><g class="cxa"><path d="M 100 31.3 L 94.5 36.8 C 82.9 48.4 66.3 53.4 50.3 50.2 L 50.3 50.2 C 47.1 34.2 52.2 17.6 63.7 6 L 69.2 0.6"/><path d="M 31.3 100 L 36.8 94.5 C 48.4 82.9 53.4 66.3 50.2 50.3 L 50.2 50.3 C 34.2 47.1 17.6 52.2 6 63.7 L 0.6 69.2"/><path d="M 31.3 100 L 36.8 94.5 C 48.4 82.9 53.4 66.3 50.2 50.3 L 50.2 50.3 C 34.2 47.1 17.6 52.2 6 63.7 L 0.6 69.2"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Genome</div></a>
+                <a href="/examples/heatmap-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><rect x="64.5"y="50"width="28.8"height="20.3"/><rect x="64.5"y="69.5"width="28.8"height="20.3"/><rect x="35.6"y="30.2"width="28.8"height="20.3"/><rect x="6.7"y="10.9"width="28.8"height="20.3"/><rect x="6.8"y="69.5"width="28.8"height="20.3"/></g><g class="cxbb"><rect x="64.4"y="10.3"width="28.8"height="20.3"/><rect x="35.6"y="49.9"width="28.8"height="20.3"/><rect x="6.7"y="30.2"width="28.8"height="20.3"/></g><g class="cxa"><line x1="100"y1="50"y2="50"x2="0"/><line x1="93.3"x2="93.3"y2="96.2"y1="3.8"/><line x1="64.4"x2="64.4"y2="96.2"y1="3.8"/><line x1="6.7"x2="6.7"y2="96.2"y1="3.8"/><line x1="35.6"x2="35.6"y2="96.2"y1="3.8"/><line x1="100"y1="69.8"y2="69.8"x2="0"/><line x1="100"y1="89.4"y2="89.4"x2="0"/><line x1="100"y1="10.9"y2="10.9"x2="0"/><line x1="100"y1="30.6"y2="30.6"x2="0"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Heatmap</div></a>
+                <a href="/examples/hexplot-binplot-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><line x1="10"y1="2"x2="10"y2="98"/><line x1="2"y1="10"x2="10"y2="10"/><line x1="2"y1="30"x2="10"y2="30"/><line x1="2"y1="50"x2="10"y2="50"/><line x1="2"y1="70"x2="10"y2="70"/><line x1="2"y1="90"x2="98"y2="90"/><line x1="10"y1="90"x2="10"y2="98"/><line x1="30"y1="90"x2="30"y2="98"/><line x1="50"y1="90"x2="50"y2="98"/><line x1="70"y1="90"x2="70"y2="98"/><line x1="90"y1="90"x2="90"y2="98"/></g><g class="cxa"><rect x="20"y="68"width="15"height="15"/><rect x="35"y="68"width="15"height="15"/><rect x="35"y="53"width="15"height="15"/><rect x="50"y="38"width="15"height="15"/><rect x="65"y="23"width="15"height="15"/><rect x="50"y="53"width="15"height="15"/><rect x="65"y="38"width="15"height="15"/><rect x="80"y="23"width="15"height="15"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Hexplot-Binplot</div></a>
+                <a href="/examples/histogram-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><rect x="21.2"y="44.8"width="11.8"height="41.2"/><rect x="33"y="27.4"width="11.8"height="58.6"/><rect x="44.9"y="12.7"width="11.8"height="73.3"/><rect x="56.7"y="26"width="11.8"height="60"/><rect x="68.5"y="49.3"width="11.8"height="36.7"/><rect x="80.3"y="65.4"width="11.8"height="20.6"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/><line x1="35.4"y1="100"x2="35.4"y2="86"/><line x1="58.9"y1="100"x2="58.9"y2="86"/><line x1="82.5"y1="100"x2="82.5"y2="86"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Histogram</div></a>
+                <a href="/examples/kaplan-meier-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><polyline points="11.9 28.5 25.6 28.5 25.6 44.8 39.6 44.8 39.6 56.7 50 56.7 50 68.8 76.7 68.8 76.7 75.4 100 75.4"/><polyline points="11.9 7 37.5 7 37.5 15.6 50 15.6 50 39.1 70.8 39.1 70.8 56 90.7 56 90.7 62.6 100 62.6"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/><line x1="35.2"y1="100"x2="35.2"y2="86"/><line x1="58.5"y1="100"x2="58.5"y2="85.5"/><line x1="81.9"y1="100"x2="81.9"y2="85.5"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Kaplan-Meier</div></a>
+                <a href="/examples/layout-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><rect x="2.1"y="2.6"width="25.3"height="25.3"/><rect x="2.1"y="37.4"width="25.3"height="25.3"/><rect x="2.1"y="72.1"width="25.3"height="25.3"/><rect x="72.6"y="2.6"width="25.3"height="25.3"/><rect x="72.6"y="37.4"width="25.3"height="25.3"/><rect x="72.6"y="72.1"width="25.3"height="25.3"/><rect x="37.4"y="2.6"width="25.3"height="25.3"/><rect x="37.4"y="37.4"width="25.3"height="25.3"/><rect x="37.4"y="72.1"width="25.3"height="25.3"/></g><g class="cxb"><line x1="90"y1="14.3"x2="90"y2="10"/><line x1="46.3"y1="13.3"x2="46.3"y2="9.1"/><line x1="9.9"y1="13.3"x2="9.9"y2="9.1"/><line x1="14.8"y1="47.6"x2="14.8"y2="43.3"/><line x1="9.9"y1="81.5"x2="9.9"y2="77.3"/><line x1="18"y1="18.5"x2="18"y2="14.3"/><line x1="19.5"y1="52.5"x2="19.5"y2="56.7"/><line x1="19.5"y1="82.6"x2="19.5"y2="86.9"/><line x1="45"y1="82.6"x2="45"y2="86.9"/><line x1="55.3"y1="82.6"x2="55.3"y2="86.9"/><line x1="53.4"y1="21.1"x2="53.4"y2="16.9"/><line x1="53.4"y1="47.6"x2="53.4"y2="43.3"/><line x1="47.9"y1="56.7"x2="47.9"y2="52.5"/><line x1="81.6"y1="47.6"x2="81.6"y2="43.3"/><line x1="81.6"y1="86.9"x2="81.6"y2="82.6"/><line x1="90.6"y1="57.7"x2="90.6"y2="53.5"/><line x1="90.6"y1="81.5"x2="90.6"y2="77.3"/><line x1="81.6"y1="21.1"x2="81.6"y2="16.9"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Layout</div></a>
+                <a href="/examples/line-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g><g class="cxb"><polyline points="24.3 73.9 54 42.6 62.7 50.7 90.2 19.4"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Line</div></a>
+                <a href="/examples/linear-fit-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><line x1="30"y1="80"x2="98"y2="4"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.5"x2="11.9"y2="62.5"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/><line x1="32.5"y1="100"x2="32.5"y2="86"/><line x1="57.7"y1="100"x2="57.7"y2="86"/><line x1="82.8"y1="100"x2="82.8"y2="86"/></g><g class="cxaa"><circle cx="30.5"cy="61.5"r="4.6"/><circle cx="73.2"cy="16.9"r="4.6"/><circle cx="92.4"cy="33.3"r="4.6"/><circle cx="60.6"cy="63.5"r="4.6"/><circle cx="51.4"cy="34.5"r="4.6"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Linear-Fit</div></a>
+                <a href="/examples/lollipop-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><circle cx="30.2"cy="60.1"r="7.4"/><line x1="30.2"y1="67.4"x2="30.2"y2="86"/><circle cx="65.9"cy="46.5"r="7.4"/><line x1="65.9"y1="53.8"x2="65.9"y2="86"/><circle cx="83.7"cy="34.1"r="7.4"/><line x1="83.7"y1="41.5"x2="83.7"y2="86"/><circle cx="48.1"cy="26.8"r="7.4"/><line x1="48.1"y1="34.1"x2="48.1"y2="86"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Lollipop</div></a>
+                <a href="/examples/map-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><ellipse cx="50"cy="50"rx="26.6"ry="47.8"/><path d="M 87.9 20.9 C 79.2 25.3 65.4 28.2 50 28.2 C 34.5 28.2 20.8 25.3 12 20.9"/><path d="M 87.9 79 C 79.2 74.6 65.4 71.7 50 71.7 C 34.5 71.7 20.8 74.6 12 79"/><line x1="97.8"y1="50"x2="2.1"y2="50"/><line x1="50"y1="2.1"x2="50"y2="97.8"/></g><g class="cxb"><circle cx="50"cy="50"r="47.8"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Map</div></a>
+                <a href="/examples/meter-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><path d="M 23.6 30.4 C 36.7 13.6 62 13.2 75.7 29.5 L 87.3 21.9 C 67.9 -3 30.2 -2.3 11.7 23.2 Z"/><path d="M 91.7 28.4 L 80 36.1 C 87.1 50.3 83.3 67.5 70.8 77.3 L 70.8 93.6 C 95.1 81.8 104.6 52.1 91.7 28.4 Z"/><line x1="44.3"y1="33.5"x2="44.3"y2="40.6"/><line x1="54.7"y1="33.5"x2="54.7"y2="40.6"/><polyline points="40.3 80.2 44.6 80.2 44.6 96.3"/><rect x="51.6"y="80.2"width="8.2"height="14.1"/></g><g class="cxb"><path d="M 28.2 76.5 C 16.8 66.8 13.3 50.7 19.5 37.1 L 7.6 29.9 C -4.1 53 5.1 81.3 28.2 93.2 Z"/><circle cx="49.5"cy="65.4"r="7.3"/><line x1="54"y1="59.7"x2="70.9"y2="37.8"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Meter</div></a>
+                <a href="/examples/network-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="18.9"y1="15.4"x2="41.7"y2="31.3"/><line x1="21.6"y1="75.8"x2="43.5"y2="53.1"/><line x1="56.7"y1="76.6"x2="55.9"y2="57.1"/><line x1="84.3"y1="60.8"x2="69.5"y2="50.2"/><line x1="78"y1="13.9"x2="66.4"y2="28.2"/><circle cx="55.3"cy="40.9"r="16.9"/></g><g class="cxb"><circle cx="82.3"cy="8.6"r="6.8"/><circle cx="89.9"cy="64.7"r="6.8"/><circle cx="16.9"cy="80.6"r="6.8"/><circle cx="12.2"cy="10.7"r="8.9"/><circle cx="57.1"cy="87.5"r="10.8"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Network</div></a>
+                <a href="/examples/nonlinear-fit-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><path d="M 11.9 73.2 L 23.4 73.2 C 36.2 73.2 47.9 65.8 53.5 54.3 L 58.8 43.4 C 64.4 31.8 76.1 24.5 89 24.5 L 100 24.5"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.5"x2="11.9"y2="62.5"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/><line x1="32.5"y1="100"x2="32.5"y2="86"/><line x1="57.7"y1="100"x2="57.7"y2="86"/><line x1="82.8"y1="100"x2="82.8"y2="86"/></g><g class="cxaa"><circle cx="30.5"cy="61.5"r="4.6"/><circle cx="73.2"cy="16.9"r="4.6"/><circle cx="92.4"cy="33.3"r="4.6"/><circle cx="60.6"cy="63.5"r="4.6"/><circle cx="51.4"cy="34.5"r="4.6"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">NonLinear-Fit</div></a>
+                <a href="/examples/oncoprint-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxbb"><rect x="14.4"y="4.2"width="16.4"height="20.4"/><rect x="47.8"y="4.2"width="16.4"height="20.4"/><rect x="80.9"y="31.3"width="16.4"height="6.6"/><rect x="80.9"y="51.6"width="16.4"height="6.6"/><rect x="14.5"y="51.6"width="16.4"height="6.6"/><rect x="64.4"y="51.6"width="16.4"height="6.6"/></g><g class="cxcc"><rect x="64.1"y="11"width="16.4"height="6.6"/><rect x="47.8"y="71.9"width="16.4"height="6.6"/><rect x="30.7"y="31.3"width="16.4"height="6.6"/><rect x="80.9"y="71.9"width="16.4"height="6.6"/></g><g class="cxa"><rect x="14.4"y="4.2"width="16.6"height="20.3"/><rect x="31"y="4.2"width="16.6"height="20.3"/><rect x="64.3"y="4.2"width="16.6"height="20.3"/><rect x="80.9"y="4.2"width="16.6"height="20.3"/><rect x="47.6"y="4.2"width="16.6"height="20.3"/><rect x="14.4"y="24.5"width="16.6"height="20.3"/><rect x="31"y="24.5"width="16.6"height="20.3"/><rect x="64.3"y="24.5"width="16.6"height="20.3"/><rect x="80.9"y="24.5"width="16.6"height="20.3"/><rect x="47.6"y="24.5"width="16.6"height="20.3"/><rect x="14.4"y="44.8"width="16.6"height="20.3"/><rect x="31"y="44.8"width="16.6"height="20.3"/><rect x="64.3"y="44.8"width="16.6"height="20.3"/><rect x="80.9"y="44.8"width="16.6"height="20.3"/><rect x="47.6"y="44.8"width="16.6"height="20.3"/><rect x="14.4"y="65.1"width="16.6"height="20.3"/><rect x="31"y="65.1"width="16.6"height="20.3"/><rect x="64.3"y="65.1"width="16.6"height="20.3"/><rect x="80.9"y="65.1"width="16.6"height="20.3"/><rect x="47.6"y="65.1"width="16.6"height="20.3"/></g><g class="cxa"><line x1="2.5"y1="10"x2="2.5"y2="18"/><line x1="2.5"y1="30.6"x2="2.5"y2="38.6"/><line x1="2.5"y1="51"x2="2.5"y2="58.9"/><line x1="2.5"y1="71.3"x2="2.5"y2="79.2"/><line x1="18.6"y1="95.8"x2="26.6"y2="95.8"/><line x1="35.3"y1="95.8"x2="43.3"y2="95.8"/><line x1="51.9"y1="95.8"x2="59.9"y2="95.8"/><line x1="68.5"y1="95.8"x2="76.5"y2="95.8"/><line x1="85.3"y1="95.8"x2="93.2"y2="95.8"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Oncoprint</div></a>
+                <a href="/examples/parallelcoordinates-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="54.3"y1="52.8"x2="88"y2="23.6"/><line x1="12.4"y1="33.9"x2="45.7"y2="53.8"/><line x1="54.4"y1="78.7"x2="88"y2="51.7"/><line x1="13.1"y1="68.7"x2="44.8"y2="80.2"/><line x1="10.1"y1="86.5"x2="47.2"y2="24.6"/><line x1="53.4"y1="24.3"x2="89"y2="72.1"/></g><g class="cxb"><line x1="7.6"y1="73.2"x2="7.6"y2="85.1"/><line x1="7.6"y1="36.6"x2="7.6"y2="61.4"/><line x1="7.6"x2="7.6"y2="25.5"y1="3.8"/><line x1="92.5"y1="82.2"x2="92.5"y2="96.2"/><line x1="92.5"y1="53.8"x2="92.5"y2="71"/><line x1="92.5"y1="25.5"x2="92.5"y2="42.6"/><line x1="92.5"x2="92.5"y2="14.3"y1="3.8"/><line x1="50.1"y1="87.7"x2="50.1"y2="96.2"/><line x1="50.1"y1="62"x2="50.1"y2="76.6"/><line x1="50.1"y1="25.5"x2="50.1"y2="50.9"/><line x1="50.1"x2="50.1"y2="14.3"y1="3.8"/><circle cx="92.4"cy="19.9"r="5.6"/><circle cx="50.1"cy="19.9"r="5.6"/><circle cx="7.6"cy="31"r="5.6"/><circle cx="7.6"cy="67.6"r="5.6"/><circle cx="7.6"cy="90.6"r="5.6"/><circle cx="92.4"cy="48.2"r="5.6"/><circle cx="50.1"cy="56.5"r="5.6"/><circle cx="50.1"cy="82.1"r="5.6"/><circle cx="92.4"cy="76.6"r="5.6"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">ParallelCoordinates</div></a>
+                <a href="/examples/pie-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><path d="M 49.5 50 L 49.5 3.2 C 26.2 3.4 3.1 19 2.5 50 C 2.4 60.7 5.8 71 12.3 79.5 Z"/></g><g class="cxbb"><path d="M 96 62 L 49.5 50 L 12.3 79.5 C 34.4 107.5 86.6 101.6 96 62 Z"/></g><g class="cxb"><polyline points="49.5 3.2 49.5 50 12.3 79.5"/><line x1="96"y1="62.3"x2="49.5"y2="50"/></g><g class="cxa"><path d="M 97.6 50 C 96.5 112.5 3.5 112.5 2.5 50 C 3.5 -12.5 96.5 -12.5 97.6 50 Z"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Pie</div></a>
+                <a href="/examples/radar-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><polygon points="50 24.6 20.4 44.5 31.4 81.2 71.2 83.5 90.7 41.3 50 24.6"/></g><g class="cxb"><polyline points="50 4.5 50 53.1 97.8 39.2"/><polyline points="79.5 95.5 50 53.1 20.4 95.5"/><line x1="2.2"y1="39.2"x2="50"y2="53.1"/></g><g class="cxa"><polygon points="50 4.5 2.2 39.2 20.4 95.5 79.5 95.5 97.8 39.2 50 4.5"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Radar</div></a>
+                <a href="/examples/remote-graphs-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><circle cx="50"cy="50"r="16.8"/></g><g class="cxb"><path d="M 83.8 16.2 C 102.4 34.9 102.4 65.1 83.8 83.8"/><path d="M 73.1 26.9 C 85.9 39.6 85.9 60.3 73.1 73.1"/><path d="M 73.1 26.9 C 85.9 39.6 85.9 60.3 73.1 73.1"/><path d="M 16.2 16.2 C -2.4 34.9 -2.4 65.1 16.2 83.8"/><path d="M 26.9 26.9 C 14.1 39.6 14.1 60.3 26.9 73.1"/><path d="M 26.9 26.9 C 14.1 39.6 14.1 60.3 26.9 73.1"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Remote-Graphs</div></a>
+                <a href="/examples/ridge-line-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><path d="M 11.5 35.4 C 11.5 35.4 27.1 2.1 30.9 2.1 C 43.1 2.1 53.7 32.3 59.5 35.4"/><path d="M 22.6 66.7 C 22.6 66.7 35.9 32 40.4 26.5 C 45.1 20.4 53.9 42 68.9 65.8"/><path d="M 42.3 98 C 42.3 98 53.1 62.5 59.2 55.9 C 67 47.3 82.5 85.5 86.4 91.6 C 87.2 93.8 88.3 95.8 88.9 98"/></g><g class="cxb"><path d="M 11.5 35.4 C 11.5 35.4 27.1 2.1 30.9 2.1 C 43.1 2.1 53.7 32.3 59.5 35.4"/><path d="M 22.6 66.7 C 22.6 66.7 35.9 32 40.4 26.5 C 45.1 20.7 53.9 42.3 68.9 65.8"/><path d="M 42.3 98 C 42.3 98 52.8 62.5 58.9 55.9 C 66.7 47.3 82.2 85.5 86.4 91.6 C 87.2 93.8 88.3 95.8 88.9 98"/></g><g class="cxa"><line y1="35.4"x2="94"y2="35.4"x1="6"/><line y1="66.7"x2="94"y2="66.7"x1="6"/><line y1="97.9"x2="94"y2="97.9"x1="6"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Ridge-Line</div></a>
+                <a href="/examples/splom-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><rect x="2.3"y="2.9"width="18.4"height="18.4"/><rect x="79.3"y="78.7"width="18.4"height="18.4"/><rect x="53.7"y="53.4"width="18.4"height="18.4"/><rect x="28"y="28.2"width="18.4"height="18.4"/></g><g class="cxa"><rect x="2.3"y="2.9"width="18.4"height="18.4"/><rect x="2.3"y="28.2"width="18.4"height="18.4"/><rect x="2.3"y="53.4"width="18.4"height="18.4"/><rect x="2.3"y="78.7"width="18.4"height="18.4"/><rect x="79.3"y="2.9"width="18.4"height="18.4"/><rect x="79.3"y="28.2"width="18.4"height="18.4"/><rect x="79.3"y="53.4"width="18.4"height="18.4"/><rect x="79.3"y="78.7"width="18.4"height="18.4"/><rect x="53.7"y="2.9"width="18.4"height="18.4"/><rect x="53.7"y="28.2"width="18.4"height="18.4"/><rect x="53.7"y="53.4"width="18.4"height="18.4"/><rect x="53.7"y="78.7"width="18.4"height="18.4"/><rect x="28"y="2.9"width="18.4"height="18.4"/><rect x="28"y="28.2"width="18.4"height="18.4"/><rect x="28"y="53.4"width="18.4"height="18.4"/><rect x="28"y="78.7"width="18.4"height="18.4"/></g><g class="cxb"><rect x="2.3"y="2.9"width="18.4"height="18.4"/><rect x="79.3"y="78.7"width="18.4"height="18.4"/><rect x="53.7"y="53.4"width="18.4"height="18.4"/><rect x="28"y="28.2"width="18.4"height="18.4"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">SPLOM</div></a>
+                <a href="/examples/sankey-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><path d="M 88.1 57.9 L 88.1 57.9 C 76.8 57.9 66.1 52.9 58.7 44.3 L 42.4 25.1 C 35 16.5 24.3 11.6 13 11.6 L 12 11.6 L 12 42.1 L 13 42.1 C 24.3 42.2 35.1 47.1 42.4 55.8 L 58.7 74.9 C 66.1 83.6 76.8 88.5 88.1 88.5 L 88.1 88.5 L 88.1 57.9"/></g><g class="cxb"><rect x="2"y="11.5"width="10"height="30.6"/><rect x="88.1"y="57.9"width="10"height="30.6"/><path d="M 12 11.6 L 12 11.6 C 23.4 11.6 34.1 16.5 41.4 25.1 L 57.8 44.3 C 65.1 52.9 75.9 57.9 87.2 57.9 L 88.1 57.9"/><path d="M 12 42.1 L 12 42.1 C 23.4 42.2 34.1 47.1 41.4 55.8 L 57.8 74.9 C 65.1 83.6 75.9 88.5 87.2 88.5 L 88.1 88.5"/></g><g class="cxa"><rect x="2"y="57.9"width="10"height="30.6"/><rect x="88.1"y="11.5"width="10"height="30.6"/><path d="M 12 57.9 L 12 57.9 C 23.4 57.9 34.1 52.9 41.4 44.3 L 57.8 25.1 C 65.1 16.5 75.9 11.6 87.2 11.6 L 88.1 11.6 L 88.1 42.1 L 87.2 42.1 C 75.8 42.2 65.1 47.1 57.8 55.8 L 41.4 74.9 C 34.1 83.6 23.4 88.5 12 88.5 L 12 88.5 L 12 57.9"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Sankey</div></a>
+                <a href="/examples/scatter2d-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/><line x1="32.5"y1="100"x2="32.5"y2="86"/><line x1="56"y1="100"x2="56"y2="86"/><line x1="79.4"y1="100"x2="79.4"y2="86"/></g><g class="cxb"><line x1="28.9"y1="15.6"x2="32.5"y2="15.6"/><line x1="80.3"y1="19.5"x2="84"y2="19.5"/><line x1="54.1"y1="26.6"x2="57.8"y2="26.6"/><line x1="90"y1="36.8"x2="93.7"y2="36.8"/><line x1="80.3"y1="47.2"x2="84"y2="47.2"/><line x1="67.7"y1="47.2"x2="71.4"y2="47.2"/><line x1="61.2"y1="59.8"x2="64.8"y2="59.8"/><line x1="74.5"y1="68.3"x2="78.2"y2="68.3"/><line x1="42.7"y1="73.6"x2="46.3"y2="73.6"/><line x1="34.2"y1="59.8"x2="37.9"y2="59.8"/><line x1="48.2"y1="47.2"x2="51.8"y2="47.2"/><line x1="23.6"y1="39.1"x2="27.3"y2="39.1"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Scatter2D</div></a>
+                <a href="/examples/scatter3d-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/><line x1="32.5"y1="100"x2="32.5"y2="86"/><line x1="56"y1="100"x2="56"y2="86"/><line x1="79.4"y1="100"x2="79.4"y2="86"/><line x1="11.9"y1="86"x2="74.5"y2="26.6"/></g><g class="cxb"><line x1="28.9"y1="15.6"x2="32.5"y2="15.6"/><line x1="50"y1="15.6"x2="53.7"y2="15.6"/><line x1="78.3"y1="46.7"x2="81.9"y2="46.7"/><line x1="61.2"y1="59.8"x2="64.8"y2="59.8"/><line x1="74.5"y1="68.3"x2="78.2"y2="68.3"/><line x1="48"y1="71.8"x2="51.4"y2="71.8"/><line x1="39"y1="29.4"x2="42.7"y2="29.4"/><polyline points="72.1 4.9 81.5 4.9 81.5 19.5 72.1 19.5"/><line x1="74.5"y1="11.8"x2="81.5"y2="11.8"/><polyline points="92.5 4.9 85.8 4.9 85.8 19.5 92.5 19.5"/><line x1="94"y1="5.9"x2="94"y2="18.5"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Scatter3D</div></a>
+                <a href="/examples/scatterbubble2d-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/><line x1="32.5"y1="100"x2="32.5"y2="86"/><line x1="56"y1="100"x2="56"y2="86"/><line x1="79.4"y1="100"x2="79.4"y2="86"/></g><g class="cxb"><circle cx="68.1"cy="42.8"r="17.8"/><circle cx="29.8"cy="45.7"r="6.9"/><circle cx="43.6"cy="68.3"r="7"/><circle cx="88.4"cy="14.5"r="6.7"/><circle cx="34.7"cy="17.3"r="7.8"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">ScatterBubble2D</div></a>
+                <a href="/examples/stacked-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><rect x="76.7"y="47.3"width="14.9"height="25.8"/><rect x="49.7"y="39.1"width="14.9"height="25.8"/><rect x="23.2"y="61.7"width="14.9"height="14.9"/></g><g class="cxbb"><rect x="22.4"y="73.1"width="14.9"height="12.9"/><rect x="49.7"y="64.9"width="14.9"height="21.1"/><rect x="76.7"y="73.1"width="14.9"height="12.9"/></g><g class="cxb"><rect x="22.4"y="50"width="15.6"height="36"/><rect x="49.4"y="15.6"width="15.6"height="70.4"/><rect x="76.4"y="27.4"width="15.6"height="58.5"/><line x1="50"y1="39.1"x2="64.9"y2="39.1"/><line x1="50"y1="64.9"x2="64.9"y2="64.9"/><line x1="76.7"y1="47.3"x2="91.6"y2="47.3"/><line x1="76.7"y1="73.1"x2="91.6"y2="73.1"/><line x1="22.4"y1="62.6"x2="37.9"y2="62.6"/><line x1="22.4"y1="73.1"x2="37.9"y2="73.1"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Stacked</div></a>
+                <a href="/examples/stackedline-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><rect x="76.7"y="51.4"width="15.1"height="34.7"/><rect x="50"y="64.3"width="15.1"height="21.8"/><rect x="23.2"y="71"width="15.1"height="15.1"/></g><g class="cxb"><rect x="23.2"y="56"width="15.1"height="30.1"/><rect x="50"y="42.5"width="15.1"height="43.6"/><rect x="76.7"y="30.4"width="15.1"height="55.6"/><line x1="23.2"y1="71"x2="38.4"y2="71"/><line x1="49.7"y1="64.3"x2="65.1"y2="64.3"/><line x1="76.7"y1="51.4"x2="91.9"y2="51.4"/></g><g class="cxa"><line x1="11.9"y1="0.5"x2="11.9"y2="100"/><line x1="99.4"y1="86.1"y2="86.1"x2="0"/><line y1="62.7"x2="11.9"y2="62.7"x1="0"/><line y1="39.4"x2="11.9"y2="39.4"x1="0"/><line y1="16.1"x2="11.9"y2="16.1"x1="0"/><polyline points="23.2 42.5 49.7 19.6 59.5 28.6 89.1 0.5"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">StackedLine</div></a>
+                <a href="/examples/stackedpercent-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><rect x="76.7"y="45.4"width="14.9"height="22.1"/><rect x="49.7"y="21.1"width="14.9"height="39.7"/><rect x="23.2"y="31.3"width="14.9"height="37.3"/></g><g class="cxbb"><rect x="22.4"y="68.6"width="14.9"height="17.4"/><rect x="49.7"y="60.8"width="14.9"height="25.2"/><rect x="76.7"y="67.5"width="14.9"height="18.5"/></g><g class="cxb"><rect x="22.4"y="2"width="15.6"height="84"/><rect x="49.4"y="2"width="15.6"height="84"/><rect x="76.4"y="2"width="15.6"height="84"/><line x1="50"y1="21.1"x2="64.9"y2="21.1"/><line x1="50"y1="60.8"x2="64.9"y2="60.8"/><line x1="76.7"y1="45.4"x2="91.6"y2="45.4"/><line x1="76.7"y1="67.5"x2="91.6"y2="67.5"/><line x1="22.4"y1="31.3"x2="37.9"y2="31.3"/><line x1="22.4"y1="68.6"x2="37.9"y2="68.6"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">StackedPercent</div></a>
+                <a href="/examples/stackedpercentline-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><rect x="76.7"y="34.8"width="14.9"height="32.7"/><rect x="49.7"y="59.1"width="14.9"height="18.2"/><rect x="23.2"y="31.3"width="14.9"height="37.3"/></g><g class="cxbb"><rect x="22.4"y="68.6"width="14.9"height="17.4"/><rect x="49.7"y="76.7"width="14.9"height="9.3"/><rect x="76.7"y="67.5"width="14.9"height="18.5"/></g><g class="cxb"><rect x="22.4"y="2"width="15.6"height="84"/><rect x="49.4"y="2"width="15.6"height="84"/><rect x="76.4"y="2"width="15.6"height="84"/><line x1="50"y1="59.1"x2="64.9"y2="59.1"/><line x1="50"y1="76.7"x2="64.9"y2="76.7"/><line x1="76.7"y1="34.8"x2="91.6"y2="34.8"/><line x1="76.7"y1="67.5"x2="91.6"y2="67.5"/><line x1="22.4"y1="31.3"x2="37.9"y2="31.3"/><line x1="22.4"y1="68.6"x2="37.9"y2="68.6"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/><polyline points="23.1 15.6 57.7 51.1 89.9 15.6"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">StackedPercentLine</div></a>
+                <a href="/examples/streamgraph-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><path class="cxc"d="M 80.7,41.34 c -6.66-5.76 -9.04-10.68 -12.36-10.68 s -6.34,15 -14,15 -9-24.42 -14.68-24.42 -3,15 -8.66,15 -6.66-7.2 -12.5-7.2 S 10.34,50,1,50 c 10.34,1,12.66,21.04,18.5,21.04 S 25.34,64,31,64 s 3,15,8.66,15,7-24.42,14.68-24.42,10.66,15,14,15 S 74,64.58,80.7,58.8,99,50,99,50,87.76,47.02,80.7,41.34Z"/><path class="cxa"d="M 80.7,34.88 c -6.66-10 -9.04-18.54 -12.36-18.54 s -6.34,26 -14,26 S 45.34,1,39.66,1 s -3,26 -8.66,26 S 24.34,13.5,18.5,13.5,10.34,50,1,50 c 10.34,1,12.66,36.5,18.5,36.5 S 25.34,74,31,74,34,99,39.63,99 s 7-42.34,14.68-42.34,10.66,26,14,26,5.7-8.54,12.36-18.54 S 99,50,99,50,87.36,44.88,80.7,34.88 Z"/><path class="cxbb"d="M80.7,44.76 c-6.66-3.46-9.04-6.42-12.36-6.42 s-6.34,9-14,9-9-14.64-14.68-14.64-3,9-8.66,9-6.66-4.36-12.5-4.36 S10.34,50,1,50 c10.34,1,12.66,12.62,18.5,12.62 s6.84-4.32,12.5-4.32,3,9,8.66,9,7-14.64,14.68-14.64,10.66,9,14,9,5.7-2.96,12.36-6.42 S99,50,99,50,87.36,48.24,80.7,44.76Z"/></svg></div><div style="position:relative;left:35px;top:-30px;">Streamgraph</div></a>
+                <a href="/examples/sunburst-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><circle cx="50.1"cy="50.1"r="35.7"/><path d="M 27.5 50.1 L 2.4 50.1 C 2.4 23.8 23.8 2.4 50.1 2.4 L 50.1 41.1"/><path d="M 72.7 50.1 L 97.7 50.1 C 97.7 76.4 76.4 97.7 50.1 97.7 L 50.1 72.7"/><circle cx="50.1"cy="50.1"r="22.6"/><circle cx="50.1"cy="50.1"r="9"/></g><g class="cxac"><path d="M 50.1 14.3 L 50.1 2.4 C 23.8 2.4 2.4 23.8 2.4 50.1 L 14.3 50.1 C 14.3 30.3 30.3 14.3 50.1 14.3 Z"/><path d="M 50.1 85.8 L 50.1 97.7 C 76.4 97.7 97.7 76.4 97.7 50.1 L 85.8 50.1 C 85.8 69.8 69.8 85.8 50.1 85.8 Z"/></g><g class="cxb"><line x1="43.2"y1="55.9"x2="22.7"y2="73.1"/><line x1="27.4"y1="21.5"x2="36.7"y2="30.9"/><line x1="68.2"y1="63.4"x2="89.1"y2="77.2"/><line x1="68.2"y1="80.8"x2="74.1"y2="91.2"/><line x1="7.5"y1="28.7"x2="29.9"y2="39.7"/><line x1="29.9"y1="8.8"x2="34.2"y2="17.9"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Sunburst</div></a>
+                <a href="/examples/tcga-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><ellipse cx="50"cy="50"rx="26.6"ry="47.8"/><path d="M 87.9 20.9 C 79.2 25.3 65.4 28.2 50 28.2 C 34.5 28.2 20.8 25.3 12 20.9"/><path d="M 87.9 79 C 79.2 74.6 65.4 71.7 50 71.7 C 34.5 71.7 20.8 74.6 12 79"/><line x1="97.8"y1="50"x2="2.1"y2="50"/><line x1="50"y1="2.1"x2="50"y2="97.8"/></g><g class="cxb"><circle cx="50"cy="50"r="47.8"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">TCGA</div></a>
+                <a href="/examples/tagcloud-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxa"><line x1="10.7"y1="2.1"x2="66.7"y2="2.1"/><line x1="10.7"y1="6.2"x2="66.7"y2="6.2"/><line x1="65"y1="17.9"x2="89"y2="17.9"/><line x1="40.5"y1="27.3"x2="77"y2="27.3"/><line y1="65.4"x2="54.5"y2="65.4"x1="4"/><line x1="45.7"y1="89"x2="79.8"y2="89"/><line x1="63.5"y1="97.9"x2="92.1"y2="97.9"/><line x1="25.5"y1="27.3"x2="19.2"y2="27.3"/><line x1="54.9"y1="38.9"x2="63.5"y2="38.9"/><line x1="58"y1="77.4"x2="66.7"y2="77.4"/><line x1="34.4"y1="51.1"x2="68.9"y2="51.1"/><line x1="34.4"y1="53.2"x2="68.9"y2="53.2"/></g><g class="cxb"><line y1="17.9"x2="52.2"y2="17.9"x1="4"/><line x1="68.9"y1="41.9"x2="93"y2="41.9"/><line x1="9.8"y1="38.9"x2="46.3"y2="38.9"/><line x1="9.8"y1="41.9"x2="46.3"y2="41.9"/><line x1="72"y1="80.4"x2="96"y2="80.4"/><line x1="13"y1="77.4"x2="49.5"y2="77.4"/><line x1="13"y1="80.4"x2="49.5"y2="80.4"/><line x1="86.3"y1="30.6"x2="93"y2="30.6"/><line x1="76.4"y1="5.2"x2="83"y2="5.2"/><line x1="13.5"y1="53.9"x2="22.5"y2="53.9"/><line x1="83.3"y1="56.2"x2="92.4"y2="56.2"/><line x1="61.9"y1="65.4"x2="79.8"y2="65.4"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">TagCloud</div></a>
+                <a href="/examples/tree-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><path d="M 40.5 25.6 L 35.6 25.6 C 31.2 25.5 27.1 27.8 24.8 31.6 L 12.4 51.4 L 23.2 68.5 C 25.5 72.2 29.5 74.4 33.8 74.4 L 40.5 74.4"/><path d="M 50.3 25.6 L 57.7 25.6 C 59.5 25.6 61.2 24.6 62.3 23.1 L 62.3 23.1 C 66.1 17.4 72.5 14 79.4 13.9 L 88.2 13.9"/><path d="M 50.3 25.6 L 57.7 25.6 C 59.5 25.6 61.2 26.5 62.3 28 L 62.3 28 C 66.1 33.7 72.5 37.1 79.4 37.2 L 88.2 37.2"/><path d="M 50.3 74.5 L 57.7 74.5 C 59.5 74.5 61.2 73.5 62.3 72 L 62.3 72 C 66.1 66.3 72.5 62.9 79.4 62.9 L 88.2 62.9"/><path d="M 50.3 74.5 L 57.7 74.5 C 59.5 74.5 61.2 75.4 62.3 76.9 L 62.3 76.9 C 66.1 82.6 72.5 86 79.4 86.1 L 88.2 86.1"/></g><g class="cxa"><circle cx="6.8"cy="51.4"r="4.9"/><circle cx="45.4"cy="25.6"r="4.9"/><circle cx="45.4"cy="74.5"r="4.9"/><circle cx="93.2"cy="13.9"r="4.9"/><circle cx="93.2"cy="37.3"r="4.9"/><circle cx="93.2"cy="62.7"r="4.9"/><circle cx="93.2"cy="86.2"r="4.9"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Tree</div></a>
+                <a href="/examples/treemap-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxbb"><rect x="48"y="83.3"width="33.1"height="14.4"/><rect x="59.5"y="23"width="38.1"height="38.9"/><rect x="25.4"y="35.9"width="22.6"height="45.5"/><rect x="2.3"y="2.2"width="45.7"height="45.7"/></g><g class="cxcc"><rect x="80.4"y="72.6"width="16.6"height="25.1"/><rect x="25.1"y="79"width="22.9"height="18.6"/><rect x="48"y="61.9"width="31.8"height="21.3"/><rect x="48"y="2.2"width="49.1"height="20.8"/></g><g class="cxa"><rect x="2.3"y="2.2"width="95.5"height="95.5"/><rect x="2.3"y="2.2"width="45.7"height="45.7"/><line x1="97"y1="23"x2="48"y2="23"/><line x1="48"y1="47.9"x2="48"y2="97.6"/><rect x="2.3"y="47.9"width="22.9"height="49.7"/><line x1="25.1"y1="79"x2="48"y2="79"/><rect x="48"y="61.9"width="31.8"height="21.3"/><rect x="79.8"y="61.9"width="17.9"height="35.7"/><line x1="79.8"y1="72.6"x2="97.6"y2="72.6"/><line x1="59.5"y1="23"x2="59.5"y2="61.9"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Treemap</div></a>
+                <a href="/examples/upset-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><circle cx="35"cy="50"r="4"/><circle cx="50"cy="50"r="4"/><circle cx="65"cy="50"r="4"/><circle cx="80"cy="50"r="4"/><circle cx="96"cy="50"r="4"/><circle cx="35"cy="65"r="4"/><circle cx="50"cy="65"r="4"/><circle cx="65"cy="65"r="4"/><circle cx="80"cy="65"r="4"/><circle cx="96"cy="65"r="4"/><circle cx="35"cy="80"r="4"/><circle cx="50"cy="80"r="4"/><circle cx="65"cy="80"r="4"/><circle cx="80"cy="80"r="4"/><circle cx="96"cy="80"r="4"/><circle cx="35"cy="96"r="4"/><circle cx="50"cy="96"r="4"/><circle cx="65"cy="96"r="4"/><circle cx="80"cy="96"r="4"/><circle cx="96"cy="96"r="4"/></g><g class="cxaa"><circle cx="35"cy="80"r="4"/><circle cx="35"cy="96"r="4"/><circle cx="50"cy="50"r="4"/><circle cx="50"cy="65"r="4"/><circle cx="50"cy="80"r="4"/><circle cx="65"cy="96"r="4"/><circle cx="80"cy="65"r="4"/><circle cx="80"cy="80"r="4"/><circle cx="96"cy="50"r="4"/><circle cx="96"cy="65"r="4"/></g><g class="cxa"><line x1="35"y1="80"x2="35"y2="96"/><line x1="50"y1="50"x2="50"y2="80"/><line x1="80"y1="65"x2="80"y2="80"/><line x1="96"y1="50"x2="96"y2="65"/></g><g class="cxa"><rect x="32"y="2"width="5"height="38"/><rect x="47"y="10"width="5"height="30"/><rect x="62"y="18"width="5"height="22"/><rect x="77"y="24"width="5"height="16"/><rect x="93"y="32"width="5"height="8"/><rect x="20"y="47"width="4"height="5"/><rect x="14"y="62"width="10"height="5"/><rect x="8"y="77"width="16"height="5"/><rect x="2"y="93"width="22"height="5"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">UpSet</div></a>
+                <a href="/examples/venn-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxbb"><path d="M 39.4 64.1 C 28.2 59.7 20.9 48.9 20.8 36.9 C 20.8 36.6 20.8 36.2 20.8 35.9 C -0.1 44 -4.4 71.7 13.1 85.8 C 23.9 94.5 39.3 94.4 49.9 85.6 C 43.5 80.2 39.7 72.4 39.4 64.1 Z"/><path d="M 50 7.8 C 27.6 7.9 13.7 32.3 25 51.6 C 28.3 57.2 33.4 61.6 39.4 64 C 39.4 63.7 39.4 63.3 39.4 63 C 39.4 54.3 43.3 46 50.1 40.5 C 56.8 46 60.7 54.3 60.7 63 C 60.7 63.3 60.7 63.7 60.7 64 C 81.6 55.7 85.6 28 68 14 C 62.9 10 56.6 7.8 50.1 7.8 Z"/></g><g class="cxcc"><path d="M 50 66.1 C 46.4 66.1 42.8 65.4 39.4 64.1 C 39.7 72.4 43.6 80.3 50 85.6 C 56.5 80.3 60.3 72.4 60.6 64.1 C 57.2 65.4 53.6 66.1 50 66.1 Z"/><path d="M 79.1 35.9 C 75.7 34.6 72.2 33.9 68.5 33.9 C 61.8 33.9 55.2 36.2 50 40.5 C 56.7 46.1 60.6 54.3 60.6 63.1 C 60.6 63.4 60.6 63.7 60.6 64.1 C 71.8 59.7 79.2 48.9 79.2 36.9 C 79.2 36.6 79.1 36.2 79.1 35.9 Z"/><path d="M 20.9 35.9 C 24.3 34.6 27.9 33.9 31.5 33.9 C 38.2 33.9 44.8 36.2 50 40.5 C 43.3 46.1 39.4 54.3 39.4 63.1 C 39.4 63.4 39.4 63.7 39.4 64.1 C 28.2 59.7 20.8 48.9 20.8 36.9 C 20.8 36.6 20.9 36.2 20.9 35.9 Z"/></g><g class="cxa"><circle cx="50"cy="36.9"r="29.2"/><circle cx="68.5"cy="63.1"r="29.2"/><circle cx="31.5"cy="63.1"r="29.2"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Venn</div></a>
+                <a href="/examples/violin-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxcc"><path d="M 73.1 51.6 C 67.5 46.1 54.8 40.4 61.2 34.5 C 68.7 27.4 59.6 21 54.4 14.7 C 51.8 11.4 50.3 7.5 50 3.4 C 50 2 50 2 50 3.4 L 50 3.4 C 49.8 7.5 48.2 11.4 45.6 14.7 C 40.5 21 31.3 27.4 38.9 34.5 C 45.1 40.4 32.5 46.1 26.9 51.6 C 22.5 55.9 24.2 60.7 30.7 61.7 C 56.4 65.6 32.4 67.9 32.5 74.5 C 32.7 80.6 40.2 76.2 42.7 84.5 C 43.4 87.1 44.8 89.5 46.9 91.4 C 48.6 92.8 49.8 95 50 97.3 C 50 97.3 50 97.8 50 97.6 C 50 97.5 50 97.3 50 97.3 C 50.3 95 51.3 92.8 53.2 91.4 C 55.2 89.5 56.7 87.1 57.4 84.5 C 59.9 76.2 67.3 80.6 67.5 74.5 C 67.7 67.9 43.7 65.5 69.3 61.7 C 75.9 60.7 77.5 55.9 73.1 51.6 Z"/></g><g class="cxa"><path d="M 73.1 51.6 C 67.5 46.1 54.8 40.4 61.2 34.5 C 68.7 27.4 59.6 21 54.4 14.7 C 51.8 11.4 50.3 7.5 50 3.4 C 50 2 50 2 50 3.4 L 50 3.4 C 49.8 7.5 48.2 11.4 45.6 14.7 C 40.5 21 31.3 27.4 38.9 34.5 C 45.1 40.4 32.5 46.1 26.9 51.6 C 22.5 55.9 24.2 60.7 30.7 61.7 C 56.4 65.6 32.4 67.9 32.5 74.5 C 32.7 80.6 40.2 76.2 42.7 84.5 C 43.4 87.1 44.8 89.5 46.9 91.4 C 48.6 92.8 49.8 95 50 97.3 C 50 97.3 50 97.8 50 97.6 C 50 97.5 50 97.3 50 97.3 C 50.3 95 51.3 92.8 53.2 91.4 C 55.2 89.5 56.7 87.1 57.4 84.5 C 59.9 76.2 67.3 80.6 67.5 74.5 C 67.7 67.9 43.7 65.5 69.3 61.7 C 75.9 60.7 77.5 55.9 73.1 51.6 Z"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Violin</div></a>
+                <a href="/examples/waterfall-1.html" style="height:32px;" class="d-block text-dark"><div style="width:30px;height:30px;"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:30px;height:30px;"><g class="cxb"><rect x="44.7"y="22.6"width="12.7"height="19.6"/><rect x="19.4"y="5.9"width="12.7"height="36.4"/><rect x="32.1"y="13.3"width="12.7"height="28.9"/><rect x="57.4"y="42.2"width="12.7"height="19.6"/><rect x="82.8"y="42.2"width="12.7"height="36.4"/><rect x="70.1"y="42.2"width="12.7"height="28.9"/></g><g class="cxa"><line x1="11.9"x2="11.9"y2="100"y1="0"/><line x1="100"y1="86"y2="86"x2="0"/><line y1="62.6"x2="11.9"y2="62.6"x1="0"/><line y1="39.1"x2="11.9"y2="39.1"x1="0"/><line y1="15.6"x2="11.9"y2="15.6"x1="0"/></g></svg></div><div style="position:relative;left:35px;top:-30px;">Waterfall</div></a>
+              </div>
+            </div>
+
+            <!-- Center Pane -->
+            <main id="centerPanel" class="col-xl-8 col-lg-10" style="z-index:1;">
+              <div>
+                <h1 class="font-xl"><a href="/assets/examples/boxplot-1.html">Box Plot: Data Distribution Visualization</a></h1>
+                <p>
+                  Boxplot graphs, also known as box and whisker plots, offer a compelling way to visually display the distribution and summary statistics of a dataset.  They present key descriptive statistics such as median, quartiles, and potential outliers, making them ideal for comparing data across different groups or identifying unusual data points. Understanding boxplot graphs is essential for data analysis. These graphs quickly reveal central tendency, spread, and skewness, providing valuable insights for decision-making.  Their effectiveness in visualizing data makes them a staple in various fields, from finance and healthcare to engineering and social sciences.
+                </p>
+                <br>
+                <div class="row">
+                  <div class="col-lg-12 d-none d-lg-block cx-example-tools">
+                    <div class="row mb-3 pt-3" style="justify-content: center;clear: both;">
+                      <div style="border-radius: 20px;background-color: #ebf3cf;width: fit-content;padding: 10px;">
+                        <a href="#" role="button" id="cXPrint" cXcode="print" cXid="boxplot1" class="btn-code p-2" alt="Print" title="Print"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><g class="cxa"><path d="M60,7 L70,17 L90,17 Q 98,17 98,26 L98,74 Q 98,84 90,84 L10,84 Q 2,84 2,74 L2,24 Q 2,17 10,17 L30,17 L40,7 Z"/></g><g class="cxb"><circle cx="50"cy="50"r="15"/><circle cx="50"cy="50"r="25"/><line x1="10"y1="8"x2="25"y2="8"/><line x1="10"y1="27"x2="25"y2="27"/></g></svg></a>
+                        <a href="#" role="button" id="cXChat" cXcode="chat" cXid="boxplot1" class="btn-code p-2" alt="Chat" title="Chat"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><g class="cxa"><circle cx="28.333"cy="50.732"r="5.563"/><circle cx="50"cy="50.732"r="5.563"/><circle cx="71.667"cy="50.732"r="5.563"/></g><g class="cxb"><path d="M 3 88.353 L 9.847 67.814 C -2.392 49.714 2.336 26.357 20.906 13.18 C 39.475 0.009 66.144 1.088 83.286 15.709 C 100.428 30.333 102.746 53.974 88.706 71.01 C 74.665 88.048 48.601 93.208 27.752 83.086 L 3 88.353"/></g></svg></a>
+                        <a href="#" role="button" id="cXData" cXcode="data" cXid="boxplot1" class="btn-code p-2" alt="Show Data in table" title="Show data in table"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><g class="cxa"><rect x="2"y="2"width="96"height="96"/><rect x="12"y="12"width="3"height="3"/><rect x="24"y="12"width="3"height="3"/><rect x="36"y="12"width="3"height="3"/></g><g class="cxb"><line x1="2"y1="26"x2="98"y2="26"/><line x1="2"y1="50"x2="98"y2="50"/><line x1="2"y1="74"x2="98"y2="74"/><line x1="34"y1="26"x2="34"y2="98"/><line x1="66"y1="26"x2="66"y2="98"/></g></svg></a>
+                        <a href="#" role="button" id="cXExplore" cXcode="explore" cXid="boxplot1" class="btn-code p-2" alt="Explore Data" title="Explore Data"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><g class="cxb"><polyline points="2,2 98,2 98,10 60,50 40,50 2,10 2,2"/></g><g class="cxa"><polyline points="60,50 60,98 40,83 40,50 60,50"/></g></svg></a>
+                        <a href="#" role="button" id="cXCustomize" cXcode="customize" cXid="boxplot1" class="btn-code p-2" alt="Customize Graph" title="Customize Graph"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><g class="cxa"><path d="M 65.2 51.9 C 82.4 58.5 100.3 43.9 97.4 25.7 C 97.1 23.8 96.5 21.8 95.8 20 L 83.3 32.5 L 73.5 29.8 L 70.8 19.9 L 83.2 7.5 C 66.2 0.3 47.8 14.1 50 32.4 C 50.3 35.1 51.1 37.7 52.3 40.1"/><polyline points="35 57.1 10.1 82 22.6 94.5 41.3 75.7"/></g><g class="cxb"><rect x="62.8"y="52"width="17.8"height="39.3"transform="matrix(0.707107,-0.707107,0.707107,0.707107,-30.578448,74.020113)"/><line x1="43.9"y1="73.2"x2="70"y2="47.1"/><polygon points="28.5 15.7 12.1 5.5 2.3 15.3 12.5 31.7 19.4 30.6 53.1 64.2 61 56.3 27.4 22.6 28.5 15.7"/></g></svg></a>
+                        <a href="#" role="button" id="cXMaximize" cXcode="maximize" cXid="boxplot1" class="btn-code p-2" alt="Maximize / Minimize" title="Maximize / Minimize"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><path class="cxtxb"d="M2,22 L2,2 L22,2 M28,45 L45,45 L48,28 M2,2 L45,45"/><path class="cxtxb"d="M25,55 L45,55 L45,75 M2,78 L2,98 L22,98 M2,98 L45,55"/><path class="cxtxb"d="M78,98 L98,98 L98,78 M55,75 L55,55 L75,55 M98,98 L55,55"/><path class="cxtxb"d="M55,25 L55,45 L75,45 M78,2 L98,2 L98,22 M98,2 L55,45"/></svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-1 d-none d-lg-block cx-example-tools" style="align-content:center;">
+                    <div class="row mb-3 pt-3" style="justify-content: center;clear: both;">
+                      <div style="border-radius: 20px;background-color: #ffe2e2;width: fit-content;padding: 5px; display:flex; flex-direction:column; align-items:center;">
+                        <a href="#" role="button" id="cXJScode" cXcode="js" cXid="boxplot1" class="btn-code p-2" alt="Show code" title="Show code"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><g class="cxa"><polyline points="29.9 77.9 2.1 50 29.9 22.1"/><polyline points="70 77.9 97.9 50 70 22.1"/></g><g class="cxb"><line x1="60.2"y1="12.5"x2="39.6"y2="87.5"/></g></svg></a>
+                        <a href="#" role="button" id="cXJSFiddle" cXcode="fiddle" cXid="boxplot1" class="btn-code p-2" alt="Edit in jsfiddle" title="Edit in jsfiddle"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><path class="cxa"d="M 86.2 45.6 C 86.2 45.5 86.2 45.3 86.2 45.2 C 86.2 24.9 64.2 12.1 46.6 22.3 C 43 24.4 39.9 27.3 37.6 30.9 C 27.5 28.5 17.4 34.9 15.2 45.1 C 1.6 49.3 -2.3 66.7 8.2 76.4 C 11.6 79.6 16.1 81.3 20.8 81.3 L 79.3 81.3 C 93.5 81.3 102.4 65.8 95.3 53.5 C 93.2 49.9 90 47.2 86.2 45.6 Z"/><g class="cxb"><path d="M 47.6 61.4 C 45 64 41.5 66.7 38.6 66.7 C 30.7 67.1 25.4 58.9 29 51.9 C 30.8 48.3 34.6 46.2 38.6 46.4 C 44.2 46.4 51.9 56.6 51.9 56.6"/><path d="M 51.9 56.6 C 51.9 56.6 59.7 66.7 65.3 66.7 C 73.2 66.3 77.6 57.6 73.4 51 C 71.6 48.3 68.6 46.5 65.3 46.4 C 63.2 46.6 61.2 47.5 59.6 49 C 58.4 49.9 57.2 50.9 56.2 51.9"/></g></svg></a>
+                        <a href="#" role="button" id="cXCodePen" cXcode="codepen" cXid="boxplot1" class="btn-code p-2" alt="Edit in CodePen" title="Edit in CodePen"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><g class="cxb"><polyline points="96.1 26 80.6 50 96.1 73.8"/><line x1="50"y1="2"x2="50"y2="35.8"/><line x1="80.6"y1="50"x2="64.2"y2="50"/><polyline points="3.9 26 19.4 50 3.9 73.8"/><line x1="19.4"y1="50"x2="35.9"y2="50"/><line x1="50"y1="98"x2="50"y2="64.1"/></g><g class="cxa"><polygon points="96.1 73.8 96.1 26 50 2 3.9 26 3.9 73.8 50 98 96.1 73.8"/><rect x="35.9"y="35.8"width="28.3"height="28.3"/></g></svg></a>
+                        <a href="#" role="button" id="cXRcode" cXcode="r" cXid="boxplot1" class="btn-code p-2" alt="Show R code" title="Show R code"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><g class="cxb"><path d="M 40.1 72.2 C 19.2 69.5 3.5 58.7 3.5 45.5 C 3.5 30.5 24.3 18.3 50.1 18.3 C 75.7 18.3 96.5 30.5 96.5 45.5 C 96.5 53.4 90.9 60.4 81.9 65.4"/><path d="M 68.7 70.6 C 64.8 71.6 60.7 72.3 56.7 72.6"/><path d="M 40.1 63.1 C 29.5 59.9 22.4 54 22.4 47.2 C 22.4 37.2 37.8 29.1 56.8 29.1 C 62.7 29.1 68.6 29.9 74.2 31.6 C 77.3 32.7 80.2 34 83 35.5"/></g><path class="cxa"d="M 80.2 62.8 C 91 60.6 95.6 47.6 88.3 39.2 C 85.6 36.1 81.5 34.3 77.4 34.3 L 40.1 34.3 L 40.1 81.7 L 56.7 81.7 L 56.7 63.1 L 63.8 63.1 L 75.9 81.7 L 92.5 81.7 Z M 70.4 54.3 L 55.9 54.3 L 55.9 43.2 L 70.4 43.2 C 74.6 42.8 77.7 47.2 75.9 51.1 C 74.9 53.2 72.8 54.5 70.4 54.3 Z"/></svg></a>
+                        <a href="#" role="button" id="cXPythoncode" cXcode="python" cXid="boxplot1" class="btn-code p-2" alt="Show Python code" title="Show Python code"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><g class="cxb"><path d="M 72.7 72.2 L 72.7 86.2 C 72.7 92.8 67.4 98 60.8 98 L 35.9 98 C 29.5 98 24.2 92.8 24.2 86.2 L 24.2 61.4 C 24.2 55 29.5 49.8 35.9 49.8 L 64 49.8 C 70.5 49.8 75.8 44.5 75.8 38 L 75.8 23.8 L 80.4 23.8 C 90.1 23.9 98 31.7 98.1 41.4 L 98.1 54.3 C 98.1 64.1 90.1 72.1 80.2 72 Z"/><line x1="72.8"y1="72.3"x2="50.2"y2="72.3"/></g><circle class="cxbb"cx="60"cy="85.8"r="4.3"/><g class="cxa"><path d="M 27.4 27.7 L 27.4 13.7 C 27.4 7.2 32.8 1.9 39.1 1.9 L 64.1 1.9 C 70.6 1.9 76 7.2 76 13.7 L 76 38.3 C 76 44.8 70.6 50.1 64.1 50.1 L 35.7 50.1 C 29.5 50.1 24.3 55.2 24.3 61.4 L 24.3 76.2 L 19.6 76.2 C 9.9 76.2 1.9 68.3 1.8 58.5 L 1.8 45.5 C 1.8 35.6 9.9 27.7 19.6 27.7 Z"/><line x1="27.4"y1="27.7"x2="50"y2="27.7"/></g><circle class="cxaa"cx="39.9"cy="14.3"r="4.3"/></svg></a>
+                        <a href="#" role="button" id="cXJupytercode" cXcode="jupyter" cXid="boxplot1" class="btn-code p-2" alt="Show Jupyter code" title="Show Jupyter code"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><g class="cxa"><path d="M50.3,22.2c16.2,0,30.3,5.7,37.7,14.3C80.5,15.7,57.5,5,36.7,12.5c-11.2,4-20,12.9-24.1,24.1C20,28,34.2,22.2,50.3,22.2z"/><path d="M50.3,78.8c-16.2,0-30.3-5.7-37.7-14.3c7.5,20.8,30.5,31.6,51.3,24.1c11.2-4,20-12.9,24.1-24.1C80.6,73,66.5,78.8,50.3,78.8z"/></g><g class="cxb"><circle cx="77.4"cy="6.4"r="5"/><circle cx="19.4"cy="93.4"r="5"/><circle cx="14.6"cy="13.2"r="3.5"/><path d="M0,62.9c1.1,0,2.1-0.4,2.9-1.1c0.7-0.9,1-2.1,1-5.7V43.4h2.9v13.7C7,59.3,6.4,61.5,5,63.3C3.7,64.4,2,65,0.3,65L0,62.9z"/><path d="M24.7,54.4c0,1.6,0,2.9,0,4.1h-2.3v-2.5l0,0c-1,1.8-2.9,2.9-5,2.9c-2.4,0-5.2-1.3-5.2-6.6v-8.9h2.9v8.4c0,2.9,0.9,4.8,3.3,4.8c1.6,0,3-1,3.6-2.5c0.2-0.4,0.3-0.9,0.3-1.4v-9.3h2.9L24.7,54.4z"/><path d="M30.3,48.4c0-1.9,0-3.5,0-4.9h2.5L33,46l0,0c1.1-1.9,3.2-3,5.4-2.9c3.6,0,6.4,3.1,6.4,7.7c0,5.4-3.3,8.1-6.8,8.1c-1.9,0.1-3.6-0.8-4.7-2.4l0,0v8.2h-2.8V48.4z M33,52.4c0,0.4,0,0.8,0.1,1.1c0.5,1.9,2.1,3.2,4,3.2c2.9,0,4.6-2.4,4.6-5.7c0-3-1.6-5.7-4.5-5.7c-2,0-3.7,1.4-4.1,3.4C33.1,49,33,49.4,33,49.8L33,52.4z"/><path d="M49.8,43.4l3.3,8.9c0.3,1,0.7,2.2,0.9,3.1l0,0c0.3-0.9,0.6-2.1,0.9-3.1l3-8.8h2.9l-4.1,10.8c-0.9,3.5-2.7,6.7-5.2,9.4c-0.9,0.9-2.1,1.5-3.4,1.8l-0.7-2.3c0.9-0.3,1.7-0.7,2.4-1.3c1-0.8,1.8-1.9,2.3-3.1c0.1-0.2,0.2-0.4,0.2-0.7c0-0.2-0.1-0.5-0.2-0.7l-5.6-13.9L49.8,43.4z"/><path d="M68.4,39.1v4.3h3.9v2.1h-3.9v8.1c0,1.9,0.5,2.9,2,2.9c0.5,0,1.1-0.1,1.6-0.2v2.1c-0.8,0.3-1.6,0.4-2.4,0.4c-1.1,0-2.1-0.4-2.9-1.2c-0.7-1.1-1.1-2.5-0.9-3.9v-8.2h-2.3v-2.1h2.3v-3.6L68.4,39.1z"/><path d="M77.6,51.5c-0.2,2.7,1.7,5,4.4,5.2c0.3,0,0.5,0,0.8,0c1.4,0,2.8-0.2,4.2-0.8l0.5,2c-1.6,0.7-3.3,1-5,0.9c-3.8,0.3-7.2-2.7-7.4-6.5c0-0.4,0-0.7,0-1.1c-0.4-4,2.6-7.6,6.6-8c0.2,0,0.3,0,0.5,0c3.5,0.1,6.3,3,6.2,6.6c0,0.2,0,0.4,0,0.5c0,0.4,0,0.9,0,1.3L77.6,51.5z M85.6,49.5c0.3-2.1-1.2-4.1-3.3-4.4c-0.2,0-0.3,0-0.5,0c-2.3,0.2-4.2,2.1-4.2,4.4H85.6z"/><path d="M92.6,48.2c0-1.8,0-3.3,0-4.7H95v2.9h0.1c0.6-1.8,2.2-3,4.1-3.1c0.3,0,0.5,0,0.8,0v2.6c-0.3,0-0.6,0-0.9,0c-1.9,0.1-3.5,1.6-3.7,3.5c0,0.4,0,0.8,0,1.3v8h-2.7L92.6,48.2z"/></g></svg></a>
+                        <a href="#" role="button" id="cXEnglishcode" cXcode="english" cXid="boxplot1" class="btn-code p-2" alt="Show English code" title="Show English code"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 100 100"style="width:24px;height:24px;"><path class="cxb2"d="M 98.093 53.768 C 98.093 50.375 95.457 47.565 92.069 47.349 C 88.683 47.134 85.709 49.587 85.281 52.955 C 84.853 56.322 87.111 59.443 90.444 60.085 L 90.444 67.126 C 89.568 66.764 88.643 66.538 87.7 66.453 L 87.7 66.449 C 87.7 62.558 84.477 59.302 80.584 59.302 L 70.645 59.302 L 70.645 55.594 C 70.651 55.229 70.584 54.867 70.448 54.53 C 70.312 54.19 70.111 53.883 69.854 53.625 C 69.597 53.367 69.288 53.165 68.95 53.027 C 68.612 52.891 68.25 52.824 67.887 52.832 L 59.666 52.832 L 59.666 49.052 C 59.666 48.403 59.138 47.878 58.488 47.878 C 57.842 47.878 57.314 48.403 57.314 49.052 L 57.314 52.832 L 49.047 52.832 C 47.481 52.832 46.138 54.028 46.138 55.594 L 46.138 59.302 L 36.347 59.302 C 32.457 59.302 29.28 62.558 29.28 66.449 L 29.28 89.687 C 29.289 93.583 32.449 96.739 36.347 96.744 L 80.584 96.744 C 84.477 96.744 87.7 93.578 87.7 89.687 L 87.7 89.686 C 93.642 89.064 98.147 84.042 98.124 78.068 C 98.124 74.003 96.128 70.416 92.795 68.327 L 92.795 60.085 C 95.879 59.573 98.126 56.892 98.093 53.768 Z M 48.491 55.594 C 48.491 55.326 48.778 55.185 49.047 55.185 L 67.887 55.185 C 67.941 55.178 67.999 55.183 68.05 55.2 C 68.103 55.218 68.151 55.248 68.191 55.286 C 68.269 55.369 68.307 55.481 68.292 55.594 L 68.292 59.302 L 48.491 59.302 L 48.491 55.594 Z M 85.346 89.687 C 85.318 92.293 83.194 94.394 80.584 94.392 L 36.347 94.392 C 33.748 94.387 31.641 92.286 31.633 89.687 L 31.633 66.449 C 31.633 63.855 33.754 61.653 36.347 61.653 L 80.584 61.653 C 83.178 61.653 85.346 63.855 85.346 66.449 L 85.346 89.687 Z M 95.846 78.068 C 95.846 82.81 92.209 86.737 87.7 87.316 L 87.7 68.819 C 92.209 69.398 95.846 73.324 95.846 78.068 Z M 87.643 53.768 C 87.643 51.518 89.465 49.694 91.717 49.694 C 93.966 49.694 95.79 51.518 95.79 53.768 C 95.79 56.019 93.966 57.842 91.717 57.842 C 89.466 57.84 87.644 56.015 87.643 53.768 Z"></path><path class="cxb2"d="M 43.974 71.846 L 42.814 71.846 C 40.635 71.876 38.887 73.648 38.887 75.825 L 38.887 79.176 C 38.887 79.827 39.419 80.276 40.068 80.276 L 46.717 80.276 C 47.367 80.276 47.903 79.827 47.903 79.176 L 47.903 75.825 C 47.902 73.648 46.15 71.876 43.974 71.846 Z M 45.551 77.924 L 41.238 77.924 L 41.238 75.825 C 41.238 75.403 41.402 74.996 41.697 74.693 C 41.991 74.388 42.391 74.212 42.814 74.199 L 43.974 74.199 C 44.396 74.212 44.798 74.388 45.094 74.693 C 45.386 74.996 45.551 75.401 45.551 75.825 L 45.551 77.924 Z M 74.119 71.846 L 72.959 71.846 C 70.798 71.846 69.076 73.663 69.076 75.825 L 69.076 79.176 C 69.073 79.325 69.103 79.473 69.158 79.608 C 69.215 79.746 69.299 79.87 69.406 79.974 C 69.515 80.078 69.641 80.156 69.779 80.209 C 69.917 80.262 70.065 80.282 70.213 80.276 L 76.865 80.276 C 77.516 80.276 78.093 79.825 78.093 79.176 L 78.093 75.823 C 78.07 73.64 76.306 71.871 74.119 71.846 Z M 75.74 77.924 L 71.428 77.924 L 71.428 75.825 C 71.428 74.96 72.095 74.199 72.959 74.199 L 74.119 74.199 C 74.547 74.21 74.953 74.385 75.255 74.687 C 75.557 74.99 75.731 75.398 75.74 75.825 L 75.74 77.924 Z M 65.116 83.218 L 51.817 83.218 C 51.167 83.218 50.649 83.835 50.649 84.484 L 50.649 85.645 C 50.651 86.515 50.824 87.377 51.16 88.18 C 51.497 88.983 51.986 89.71 52.606 90.324 C 53.224 90.937 53.959 91.421 54.766 91.749 C 55.571 92.076 56.434 92.241 57.306 92.236 L 59.627 92.236 C 63.302 92.236 66.33 89.321 66.33 85.645 L 66.33 84.484 C 66.325 84.158 66.196 83.848 65.971 83.613 C 65.747 83.376 65.441 83.236 65.116 83.218 Z M 59.627 89.882 L 57.306 89.882 C 54.933 89.882 53.001 88.119 52.993 85.57 L 63.939 85.57 C 63.932 88.119 62.001 89.882 59.627 89.882 Z"></path><path class="cxa2"d="M 71.23 40.244 L 71.23 10.506 C 71.23 6.821 68.167 3.821 64.48 3.821 L 8.642 3.821 C 7.769 3.823 6.902 3.999 6.097 4.335 C 5.292 4.674 4.559 5.169 3.945 5.79 C 3.332 6.41 2.845 7.147 2.516 7.956 C 2.191 8.768 2.022 9.632 2.031 10.506 L 2.031 40.244 C 2.016 42.011 2.703 43.712 3.944 44.97 C 5.186 46.227 6.874 46.94 8.642 46.95 L 10.883 46.95 C 11.051 46.942 11.216 46.996 11.348 47.096 C 11.482 47.196 11.575 47.342 11.613 47.505 C 12.852 54.516 17.448 56.626 18.436 57.006 C 18.611 57.099 18.806 57.148 19.005 57.146 C 19.064 57.146 19.121 57.14 19.178 57.132 C 19.426 57.092 19.661 56.979 19.843 56.804 C 20.028 56.629 20.155 56.403 20.208 56.154 C 20.33 55.616 20.408 55.069 20.44 54.517 C 20.796 50.684 21.551 46.95 26.399 46.95 L 64.48 46.95 C 68.187 46.941 71.198 43.953 71.23 40.244 Z M 18.108 54.19 C 16.754 53.284 14.662 51.259 13.931 47.101 C 13.798 46.391 13.42 45.753 12.864 45.294 C 12.306 44.836 11.605 44.589 10.883 44.597 L 8.642 44.597 C 8.076 44.593 7.516 44.477 6.995 44.256 C 6.474 44.034 6 43.712 5.607 43.306 C 5.209 42.901 4.899 42.424 4.689 41.899 C 4.48 41.373 4.376 40.81 4.384 40.244 L 4.384 10.506 C 4.376 9.942 4.48 9.381 4.69 8.856 C 4.9 8.332 5.213 7.854 5.609 7.451 C 6.005 7.048 6.478 6.73 6.999 6.511 C 7.518 6.289 8.076 6.176 8.642 6.173 L 64.48 6.173 C 66.87 6.173 68.879 8.118 68.879 10.506 L 68.879 40.244 C 68.849 42.653 66.89 44.59 64.48 44.597 L 26.399 44.597 C 19.096 44.597 18.385 51.226 18.108 54.19 Z"></path><path class="cxa2"d="M 63.102 28.327 L 48.985 28.327 C 48.335 28.327 47.811 28.854 47.811 29.504 C 47.811 30.152 48.335 30.677 48.985 30.677 L 63.102 30.677 C 63.753 30.677 64.281 30.152 64.281 29.504 C 64.281 28.854 63.753 28.327 63.102 28.327 Z M 20.067 28.327 C 19.76 28.333 19.465 28.46 19.249 28.678 C 19.035 28.898 18.911 29.195 18.911 29.504 C 18.911 29.81 19.035 30.109 19.249 30.327 C 19.465 30.547 19.76 30.675 20.067 30.677 L 42.317 30.677 C 42.967 30.677 43.494 30.152 43.494 29.504 C 43.494 28.854 42.967 28.327 42.317 28.327 L 20.067 28.327 Z M 10.018 30.677 L 14.875 30.677 C 15.524 30.677 16.051 30.152 16.051 29.504 C 16.051 28.854 15.524 28.327 14.875 28.327 L 10.018 28.327 C 9.711 28.333 9.417 28.46 9.201 28.678 C 8.985 28.898 8.864 29.195 8.864 29.504 C 8.864 29.81 8.985 30.109 9.201 30.327 C 9.417 30.547 9.711 30.675 10.018 30.677 Z M 63.102 21.464 L 59.418 21.464 C 59.109 21.472 58.817 21.597 58.6 21.818 C 58.385 22.036 58.262 22.332 58.262 22.642 C 58.262 22.951 58.385 23.247 58.6 23.466 C 58.817 23.685 59.109 23.812 59.418 23.817 L 63.102 23.817 C 63.753 23.817 64.281 23.291 64.281 22.642 C 64.281 21.993 63.753 21.464 63.102 21.464 Z M 54.255 23.817 C 54.905 23.817 55.432 23.291 55.432 22.642 C 55.432 21.993 54.905 21.464 54.255 21.464 L 48.085 21.464 C 47.777 21.472 47.482 21.597 47.267 21.818 C 47.049 22.036 46.93 22.332 46.93 22.642 C 46.93 22.951 47.049 23.247 47.267 23.466 C 47.482 23.685 47.777 23.812 48.085 23.817 L 54.255 23.817 Z M 10.018 23.817 L 42.882 23.817 C 43.532 23.817 44.057 23.291 44.057 22.642 C 44.057 21.993 43.532 21.464 42.882 21.464 L 10.018 21.464 C 9.711 21.472 9.417 21.597 9.201 21.818 C 8.985 22.036 8.864 22.332 8.864 22.642 C 8.864 22.951 8.985 23.247 9.201 23.466 C 9.417 23.685 9.711 23.812 10.018 23.817 Z M 63.102 13.231 L 60.123 13.231 C 59.815 13.238 59.521 13.363 59.307 13.583 C 59.089 13.802 58.969 14.1 58.969 14.408 C 58.969 14.716 59.089 15.012 59.307 15.231 C 59.521 15.452 59.815 15.577 60.123 15.583 L 63.102 15.583 C 63.753 15.583 64.281 15.057 64.281 14.408 C 64.281 13.757 63.753 13.231 63.102 13.231 Z M 42.129 15.583 L 54.89 15.583 C 55.541 15.583 56.068 15.057 56.068 14.408 C 56.068 13.757 55.541 13.231 54.89 13.231 L 42.129 13.231 C 41.479 13.231 40.951 13.757 40.951 14.408 C 40.951 15.057 41.479 15.583 42.129 15.583 Z M 10.018 15.583 L 36.922 15.583 C 37.573 15.583 38.099 15.057 38.099 14.408 C 38.099 13.757 37.573 13.231 36.922 13.231 L 10.018 13.231 C 9.711 13.238 9.417 13.363 9.201 13.583 C 8.985 13.802 8.864 14.1 8.864 14.408 C 8.864 14.716 8.985 15.012 9.201 15.231 C 9.417 15.452 9.711 15.577 10.018 15.583 Z M 49.34 35.189 L 48.767 35.189 C 48.46 35.194 48.166 35.321 47.952 35.54 C 47.735 35.759 47.613 36.055 47.613 36.363 C 47.613 36.671 47.735 36.967 47.952 37.186 C 48.166 37.409 48.46 37.533 48.767 37.54 L 49.34 37.54 C 49.988 37.54 50.515 37.014 50.515 36.363 C 50.515 35.715 49.988 35.189 49.34 35.189 Z M 43.991 35.189 L 33.792 35.189 C 33.483 35.194 33.19 35.321 32.973 35.54 C 32.759 35.759 32.636 36.055 32.636 36.363 C 32.636 36.671 32.759 36.967 32.973 37.186 C 33.19 37.409 33.483 37.533 33.792 37.54 L 43.991 37.54 C 44.642 37.54 45.169 37.014 45.169 36.363 C 45.169 35.715 44.642 35.189 43.991 35.189 Z M 27.287 35.189 L 10.018 35.189 C 9.711 35.194 9.417 35.321 9.201 35.54 C 8.985 35.759 8.864 36.055 8.864 36.363 C 8.864 36.671 8.985 36.967 9.201 37.186 C 9.417 37.409 9.711 37.533 10.018 37.54 L 27.287 37.54 C 27.933 37.54 28.461 37.014 28.461 36.363 C 28.461 35.715 27.933 35.189 27.287 35.189 Z"></path></svg></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-10 col-md-12" style="margin:auto; display:flex; justify-content:center;">
+                    <div class="card p-2 m-1 shadow-sm">
+                      <div class="canvasXpressContainerSite" style="position:relative; z-index:0;">
+                        <canvas id="boxplot1" width="600" height="600" data-aspectRatio="1:1" data-responsive="true"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-1 d-none d-lg-block cx-example-tools" style="align-content:center;">
+                    <div class="row mb-3 pt-3" style="justify-content: center;clear: both;">
+                      <div style="border-radius: 20px;background-color: #d9f8ff;width: fit-content;padding: 10px; display:flex; flex-direction:column; align-items:center;">
+                        <a href="#" class="btn-font" role="button" style="font-size: x-large;font-family: American Typewriter;" alt="American Typewriter" title="American Typewriter" cXfont="American Typewriter">Aa</a>
+                        <a href="#" class="btn-font" role="button" style="font-size: x-large;font-family: Andale Mono;" alt="Andale Mono" title="Andale Mono" cXfont="Andale Mono">Aa</a>
+                        <a href="#" class="btn-font" role="button" style="font-size: x-large;font-family: Arial;" alt="Arial" title="Arial" cXfont="Arial">Aa</a>
+                        <a href="#" class="btn-font" role="button" style="font-size: x-large;font-family: Bradley Hand;" alt="Bradley Hand" title="Bradley Hand" cXfont="Bradley Hand">Aa</a>
+                        <a href="#" class="btn-font" role="button" style="font-size: x-large;font-family: Comic Sans MS;" alt="Comic Sans MS" title="Comic Sans MS" cXfont="Comic Sans MS">Aa</a>
+                        <a href="#" class="btn-font" role="button" style="font-size: x-large;font-family: Courier;" alt="Courier" title="Courier" cXfont="Courier">Aa</a>
+                        <a href="#" class="btn-font" role="button" style="font-size: x-large;font-family: Monaco;" alt="Monaco" title="Monaco" cXfont="Monaco">Aa</a>
+                        <a href="#" class="btn-font" role="button" style="font-size: x-large;font-family: Optima;" alt="Optima" title="Optima" cXfont="Optima">Aa</a>
+                        <a href="#" class="btn-font" role="button" style="font-size: x-large;font-family: Times New Roman;" alt="Times New Roman" title="Times New Roman" cXfont="Times New Roman">Aa</a>
+                        <a href="#" class="btn-font" role="button" style="font-size: x-large;font-family: Trebuchet MS;" alt="Trebuchet MS" title="Trebuchet MS" cXfont="Trebuchet MS">Aa</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 d-none d-lg-block cx-example-tools">
+                    <div class="row mb-3 pt-3" style="justify-content: center;clear: both;">
+                      <div style="border-radius: 20px;background-color: #fff0d4;width: fit-content;padding: 10px">
+                        <a href="#" class="btn-theme" role="button" cXtheme="economist"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAbUlEQVR42u3RMRGAMAAEwUQoNQIYnFDFABoo0AYyrtkz8DO/c7/ub4St5y3nx3ls6f4EACA9AAAAAGUAAAAAEAYAAAAAYQAAAAAQBgAAAABhAAAAABAGAAAAAGEAAAAAEAYAAAAAYQAAAAAQ9gNQGr7h9FhAMQAAAABJRU5ErkJggg==" width=96 height=32 loading="eager" class="canvasXpressContainerSite" title="Economist" alt="Economist"></a>
+                        <a href="#" class="btn-theme" role="button" cXtheme="ggplot"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAbUlEQVR42u3RMRGAMAAEwaRDGEYQQIvFFLhABR3IuGbPwM/8zvc6vxG27Xc5P45npfsTAID0AAAAAJQBAAAAQBgAAAAAhAEAAABAGAAAAACEAQAAAEAYAAAAAIQBAAAAQBgAAAAAhAEAAABA2A+3JL+Bl853vwAAAABJRU5ErkJggg==" width=96 height=32 loading="eager" class="canvasXpressContainerSite" title="GGPlot" alt="GGPlot"></a>
+                        <a href="#" class="btn-theme" role="button" cXtheme="excel"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAbUlEQVR42u3RQREAMAgEMfAvmsrYR4OBHS57czfl3ab5nfb9BQCgHQAAAABlHwCAdgAAAACUfQAA2gEAAABQ9gEAaAcAAABA2QcAoB0AAAAAZR8AgHYAAAAAlH0AANoBAAAAUPYBAGgHAPA3wAOShZ/B12ELWgAAAABJRU5ErkJggg==" width=96 height=32 loading="eager" class="canvasXpressContainerSite" title="Excel" alt="Excel"></a>
+                        <a href="#" class="btn-theme" role="button" cXtheme="paulTol"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAaklEQVR42u3RQQFAUBQAwfe7qSCLLETQRRYRiLGX2QJ7mLUd9zdh5/6U+3mvdD8LQLoHAAAAgDIAAAAACAMAAACAMAAAAAAIAwAAAIAwAAAAAAgDAAAAgDAAAAAACAMAAACAMAAAAAAI+wFIX7UhZf75uQAAAABJRU5ErkJggg==" width=96 height=32 loading="eager" class="canvasXpressContainerSite" title="Paul Tol" alt="Paul Tol"></a>
+                        <a href="#" class="btn-theme" role="button" cXtheme="blackAndWhite"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAdUlEQVR42u3RAQ3AMAAEwYSB8ZubMdgMUhXFRsosgXv93Hvv5wpba5Xz15wz3b//AGOMZPycAwAAgPQBAAAAKAMAAACAMAAAAAAIAwAAAIAwAAAAAAgDAAAAgDAAAAAACAMAAACAMAAAAAAIA/AGgPKArwP8AOcZYFB05gDBAAAAAElFTkSuQmCC" width=96 height=32 loading="eager" class="canvasXpressContainerSite" title="Black And White" alt="Black And White"></a>
+                        <a href="#" class="btn-theme" role="button" cXtheme="solarized"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAbElEQVR42u3RMRGAQBAEwXsJuEAEBhFETIIYXICMSXoMbNX2us75Jmx7n3J+7v1I9xcAAOkBAAAAKAMAAACAMAAAAAAIAwAAAIAwAAAAAAgDAAAAgDAAAAAACAMAAACAMAAAAAAIAwAAAICwH9Hio8GW6aOjAAAAAElFTkSuQmCC" width=96 height=32 loading="eager" class="canvasXpressContainerSite" title="Solarized" alt="Solarized"></a>
+                        <a href="#" class="btn-theme" role="button" cXtheme="stata"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAbUlEQVR42u3RMRGAMAAEwcQGauiQQ4fDdGihogcZ1+wZ+JnfuR3nN8Ku5y7nx9rfdH8CAJAeAAAAgDIAAAAACAMAAACAMAAAAAAIAwAAAIAwAAAAAAgDAAAAgDAAAAAACAMAAACAMAAAAAAI+wHwvb8hSXEw3AAAAABJRU5ErkJggg==" width=96 height=32 loading="eager" class="canvasXpressContainerSite" title="Stata" alt="Stata"></a>
+                        <a href="#" class="btn-theme" role="button" cXtheme="tableau"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAbElEQVR42u3RQQ2AMAAEwfaHCggCMFQjGEMQTkDGfmYNXHIzj/v5Rti7rXJ+XOee7k8AANIDAAAAUAYAAAAAYQAAAAAQBgAAAABhAAAAABAGAAAAAGEAAAAAEAYAAAAAYQAAAAAQBgAAAABhP3jDfwEMpmxoAAAAAElFTkSuQmCC" width=96 height=32 loading="eager" class="canvasXpressContainerSite" title="Tableau" alt="Tableau"></a>
+                        <a href="#" class="btn-theme" role="button" cXtheme="wallStreetJournal"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAbElEQVR42u3RMRGAMAAEwUQODR0FOIonrFAjC2Rcs2fgZ37nu2/fCLuOVc6P57zT/QkAQHoAAAAAygAAAAAgDAAAAADCAAAAACAMAAAAAMIAAAAAIAwAAAAAwgAAAAAgDAAAAADCAAAAACDsBwgykQEYiRDlAAAAAElFTkSuQmCC" width=96 height=32 loading="eager" class="canvasXpressContainerSite" title="Wall Street" alt="Wall Street"></a>
+                        <a href="#" class="btn-theme" role="button" cXtheme="cx"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAbUlEQVR42u3RMQ2AQAAEwX8ZJNS0qEDCS0MWNXJAxjazBi65me+2fyPsuK9yfpzPSvcnAADpAQAAACgDAAAAgDAAAAAACAMAAACAMAAAAAAIAwAAAIAwAAAAAAgDAAAAgDAAAAAACAMAAACAsB9Hgouhz5WKGQAAAABJRU5ErkJggg==" width=96 height=32 loading="eager" class="canvasXpressContainerSite" title="CanvasXpress" alt="CanvasXpress"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <ul class="nav nav-pills mb-3" id="graphCode" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a style="border-radius:10px;" class="nav-link active mr-2" id="jsonData-tab-alt" data-bs-toggle="tab" href="#jsonDataAlt" role="tab" aria-controls="jsonDataAlt" aria-selected="true">HTML / JS / Data Frame</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a style="border-radius:10px;" class="nav-link mr-2" id="jsonData-tab" data-bs-toggle="tab" href="#jsonData" role="tab" aria-controls="jsonData" aria-selected="false">HTML / JS / Object</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a style="border-radius:10px;" class="nav-link mr-2" id="rCode-tab" data-bs-toggle="tab" href="#rCode" role="tab" aria-controls="rCode" aria-selected="false">R Code</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="graphCodeContent">
+                    <div class="tab-pane fade show active" id="jsonDataAlt" role="tabpanel" aria-labelledby="jsonData-tab-alt">
+                      <pre class="prettyprint lang-js p-3 border-0" style="max-height:2000px; margin:25px; border-radius:20px;">&lt;html&gt;
+
+  &lt;head&gt;
+    &lt;!-- Include the CanvasXpress library in your HTML file --&gt;
+    &lt;link rel="stylesheet" href="https://www.canvasxpress.org/dist/canvasXpress.css" type="text/css"/&gt;
+    &lt;script src="https://www.canvasxpress.org/dist/canvasXpress.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;!-- Create a canvas element for the chart with the desired dimensions --&gt;
+    &lt;div&gt;
+      &lt;canvas id="canvasId" width="600" height="600"&gt;&lt;/canvas&gt;
+    &lt;/div&gt;
+
+
+    &lt;!-- Create a script to initialize the chart --&gt;
+    &lt;script&gt;
+
+      // Use a data frame (2D-array) for the graph
+      var data = [
+        [ "Id", "len", "order", "dose", "supp"],
+        [ "Var1", 4.2, 1, "0.5", "VC"],
+        [ "Var2", 11.5, 2, "0.5", "VC"],
+        [ "Var3", 7.3, 3, "0.5", "VC"],
+        [ "Var4", 5.8, 4, "0.5", "VC"],
+        [ "Var5", 6.4, 5, "0.5", "VC"],
+        [ "Var6", 10, 6, "0.5", "VC"],
+        [ "Var7", 11.2, 7, "0.5", "VC"],
+        [ "Var8", 11.2, 8, "0.5", "VC"],
+        [ "Var9", 5.2, 9, "0.5", "VC"],
+        [ "Var10", 7, 10, "0.5", "VC"],
+        [ "Var11", 16.5, 1, "1", "VC"],
+        [ "Var12", 16.5, 2, "1", "VC"],
+        [ "Var13", 15.2, 3, "1", "VC"],
+        [ "Var14", 17.3, 4, "1", "VC"],
+        [ "Var15", 22.5, 5, "1", "VC"],
+        [ "Var16", 17.3, 6, "1", "VC"],
+        [ "Var17", 13.6, 7, "1", "VC"],
+        [ "Var18", 14.5, 8, "1", "VC"],
+        [ "Var19", 18.8, 9, "1", "VC"],
+        [ "Var20", 15.5, 10, "1", "VC"],
+        [ "Var21", 23.6, 1, "2", "VC"],
+        [ "Var22", 18.5, 2, "2", "VC"],
+        [ "Var23", 33.9, 3, "2", "VC"],
+        [ "Var24", 25.5, 4, "2", "VC"],
+        [ "Var25", 26.4, 5, "2", "VC"],
+        [ "Var26", 32.5, 6, "2", "VC"],
+        [ "Var27", 26.7, 7, "2", "VC"],
+        [ "Var28", 21.5, 8, "2", "VC"],
+        // ... (data truncated after 29 records for clarity)
+      ]
+
+      // Create the configuration for the graph
+      var config = {
+        "axisAlgorithm": "rPretty",
+        "axisTitleFontStyle": "bold",
+        "graphOrientation": "vertical",
+        "graphType": "Boxplot",
+        "groupingFactors": ["dose"],
+        "showLegend": false,
+        "smpTextRotate": 90,
+        "smpTitle": "dose",
+        "smpTitleFontStyle": "bold",
+        "title": "The Effect of Vitamin C on Tooth Growth in Guinea Pigs",
+        "xAxis": ["len"],
+        "xAxis2Show": false,
+        "xAxisTitle": "len"
+      }
+
+      // Event used to create graph (optional)
+      var events = false
+
+      // Call the CanvasXpress function to create the graph
+      var cX = new CanvasXpress("canvasId", data, config, events);
+
+    &lt;/script&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;</pre>
+                    </div>
+                    <div class="tab-pane fade" id="jsonData" role="tabpanel" aria-labelledby="jsonData-tab">
+                      <pre class="prettyprint lang-js p-3 border-0" style="max-height:2000px; margin:25px; border-radius:20px;">&lt;html&gt;
+
+  &lt;head&gt;
+    &lt;!-- Include the CanvasXpress library in your HTML file --&gt;
+    &lt;link rel="stylesheet" href="https://www.canvasxpress.org/dist/canvasXpress.css" type="text/css"/&gt;
+    &lt;script src="https://www.canvasxpress.org/dist/canvasXpress.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;!-- Create a canvas element for the chart with the desired dimensions --&gt;
+    &lt;div&gt;
+      &lt;canvas id="canvasId" width="600" height="600"&gt;&lt;/canvas&gt;
+    &lt;/div&gt;
+
+
+    &lt;!-- Create a script to initialize the chart --&gt;
+    &lt;script&gt;
+
+      // Create the data for the graph
+      var data = {
+         "x" : {
+            "dose" : ["0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","1","1","1","1","1","1","1","1","1","1","2","2","2","2","2","2","2","2","2","2","0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","1","1","1","1","1","1","1","1","1","1","2","2","2","2","2","2","2","2","2","2"],
+            "order" : [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10],
+            "supp" : ["VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ"]
+         },
+         "y" : {
+            "data" : [
+              [4.2,11.5,7.3,5.8,6.4,10,11.2,11.2,5.2,7,16.5,16.5,15.2,17.3,22.5,17.3,13.6,14.5,18.8,15.5,23.6,18.5,33.9,25.5,26.4,32.5,26.7,21.5,23.3,29.5,15.2,21.5,17.6,9.7,14.5,10,8.2,9.4,16.5,9.7,19.7,23.3,23.6,26.4,20,25.2,25.8,21.2,14.5,27.3,25.5,26.4,22.4,24.5,24.8,30.9,26.4,27.3,29.4,23]
+            ],
+            "smps" : ["Var1","Var2","Var3","Var4","Var5","Var6","Var7","Var8","Var9","Var10","Var11","Var12","Var13","Var14","Var15","Var16","Var17","Var18","Var19","Var20","Var21","Var22","Var23","Var24","Var25","Var26","Var27","Var28","Var29","Var30","Var31","Var32","Var33","Var34","Var35","Var36","Var37","Var38","Var39","Var40","Var41","Var42","Var43","Var44","Var45","Var46","Var47","Var48","Var49","Var50","Var51","Var52","Var53","Var54","Var55","Var56","Var57","Var58","Var59","Var60"],
+            "vars" : ["len"]
+         }
+      }
+
+      // Create the configuration for the graph
+      var config = {
+        "axisAlgorithm": "rPretty",
+        "axisTitleFontStyle": "bold",
+        "graphOrientation": "vertical",
+        "graphType": "Boxplot",
+        "groupingFactors": ["dose"],
+        "showLegend": false,
+        "smpTextRotate": 90,
+        "smpTitle": "dose",
+        "smpTitleFontStyle": "bold",
+        "title": "The Effect of Vitamin C on Tooth Growth in Guinea Pigs",
+        "xAxis": ["len"],
+        "xAxis2Show": false,
+        "xAxisTitle": "len"
+      }
+
+      // Event used to create graph (optional)
+      var events = false
+
+            // Call the CanvasXpress function to create the graph
+      var cX = new CanvasXpress("canvasId", data, config, events);
+
+    &lt;/script&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;</pre>
+                    </div>
+                    <div class="tab-pane" id="rCode" role="tabpanel" aria-labelledby="rCode-tab">
+                      <pre class="prettyprint lang-r p-3 border-0" style="max-height:2000px; margin:25px; border-radius:20px;">
+library(canvasXpress)
+y=read.table("https://www.canvasxpress.org/data/r/cX-toothgrowth-dat.txt", header=TRUE, sep="\t", quote="", row.names=1, fill=TRUE, check.names=FALSE, stringsAsFactors=FALSE)
+x=read.table("https://www.canvasxpress.org/data/r/cX-toothgrowth-smp.txt", header=TRUE, sep="\t", quote="", row.names=1, fill=TRUE, check.names=FALSE, stringsAsFactors=FALSE)
+canvasXpress(
+data=y,
+smpAnnot=x,
+axisAlgorithm="rPretty",
+axisTitleFontStyle="bold",
+graphOrientation="vertical",
+graphType="Boxplot",
+groupingFactors=list("dose"),
+showLegend=FALSE,
+smpTextRotate=90,
+smpTitle="dose",
+smpTitleFontStyle="bold",
+title="The Effect of Vitamin C on Tooth Growth in Guinea Pigs",
+xAxis=list("len"),
+xAxis2Show=FALSE,
+xAxisTitle="len"
+)</pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+
+            <!-- Right Bar -->
+            <div id="rightPanel" class="col-xl-2 col-lg-2 sidebar" style="z-index:0;">
+              <div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-1.html" cXHTML="boxplot-1" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-1.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Box Plot: Data Distribution Visualization" alt="Box Plot: Data Distribution Visualization"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-2.html" cXHTML="boxplot-2" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-2.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Enhanced Single Data Boxplot" alt="Enhanced Single Data Boxplot"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-3.html" cXHTML="boxplot-3" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-3.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Notched Box Plot vs Simple Whiskers" alt="Notched Box Plot vs Simple Whiskers"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-4.html" cXHTML="boxplot-4" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-4.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Notched Box Plots: Outliers & Color" alt="Notched Box Plots: Outliers & Color"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-5.html" cXHTML="boxplot-5" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-5.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Data Visualization with Notched Box Plot" alt="Data Visualization with Notched Box Plot"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-6.html" cXHTML="boxplot-6" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-6.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Custom Median Notched Box Plot" alt="Custom Median Notched Box Plot"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-7.html" cXHTML="boxplot-7" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-7.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Data Distribution: Notched Boxplot Analysis" alt="Data Distribution: Notched Boxplot Analysis"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-8.html" cXHTML="boxplot-8" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-8.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Box Plot with Jitter Dots: Data Distribution" alt="Box Plot with Jitter Dots: Data Distribution"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-9.html" cXHTML="boxplot-9" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-9.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Bin Dot Boxplot: Trends, Spread, Outliers" alt="Bin Dot Boxplot: Trends, Spread, Outliers"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-10.html" cXHTML="boxplot-10" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-10.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Advanced Box Plot with Annotated Samples" alt="Advanced Box Plot with Annotated Samples"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-11.html" cXHTML="boxplot-11" class="d-block"><img width=132 height=133 loading="eager" src="/assets/images/Ex-boxplot-11.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Color-Coded Box Plot for Data Analysis" alt="Color-Coded Box Plot for Data Analysis"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-12.html" cXHTML="boxplot-12" class="d-block"><img width=132 height=133 loading="lazy" src="/assets/images/Ex-boxplot-12.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Colorful Boxplot Visualization for Data Comparison" alt="Colorful Boxplot Visualization for Data Comparison"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-13.html" cXHTML="boxplot-13" class="d-block"><img width=132 height=133 loading="lazy" src="/assets/images/Ex-boxplot-13.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Colorful Dose Category Boxplot" alt="Colorful Dose Category Boxplot"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-14.html" cXHTML="boxplot-14" class="d-block"><img width=132 height=133 loading="lazy" src="/assets/images/Ex-boxplot-14.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Master Boxplot for Quick Data Insights" alt="Master Boxplot for Quick Data Insights"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-15.html" cXHTML="boxplot-15" class="d-block"><img width=132 height=133 loading="lazy" src="/assets/images/Ex-boxplot-15.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Multi-group Boxplot Analysis by Category" alt="Multi-group Boxplot Analysis by Category"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-16.html" cXHTML="boxplot-16" class="d-block"><img width=132 height=133 loading="lazy" src="/assets/images/Ex-boxplot-16.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Grouped Boxplot for Comparison" alt="Grouped Boxplot for Comparison"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-17.html" cXHTML="boxplot-17" class="d-block"><img width=132 height=133 loading="lazy" src="/assets/images/Ex-boxplot-17.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Connected Boxplot for Group Comparison" alt="Connected Boxplot for Group Comparison"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-18.html" cXHTML="boxplot-18" class="d-block"><img width=132 height=133 loading="lazy" src="/assets/images/Ex-boxplot-18.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Box Plot with Dots: Data Distribution Display" alt="Box Plot with Dots: Data Distribution Display"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-19.html" cXHTML="boxplot-19" class="d-block"><img width=132 height=133 loading="lazy" src="/assets/images/Ex-boxplot-19.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="TCGA Boxplot Analysis: Multiple Series Comparison" alt="TCGA Boxplot Analysis: Multiple Series Comparison"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-20.html" cXHTML="boxplot-20" class="d-block"><img width=132 height=133 loading="lazy" src="/assets/images/Ex-boxplot-20.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Box Plots for Data Distribution Analysis" alt="Box Plots for Data Distribution Analysis"></a>
+                </div>
+                <div class="mb-2">
+                  <a href="/examples/boxplot-21.html" cXHTML="boxplot-21" class="d-block"><img width=132 height=133 loading="lazy" src="/assets/images/Ex-boxplot-21.webp" style="width:132px !important;" class="canvasXpressContainerSite scaleSite d-flex justify-content-center" title="Comparing Data Distributions with Box Plots" alt="Comparing Data Distributions with Box Plots"></a>
+                </div>
+                <div class="mb-2 d-flex justify-content-center">
+                  <a href="/examples/boxplot.html" class="d-block">Show All</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer -->
+      <div class="py-1 mt-lg-1 body-footer">
+        <div class="container px-4 px-lg-3" py-lg-1 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 text-center mx-auto mb-5">
+              <section class="pt-0 pb-0">
+                <div class="row d-flex">
+                  <div class="col-md-6 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2">
+                      <a href="/">
+                        <img src="/assets/images/CanvasXpress-Logo-Horizontal-White.svg" width="282" height="35" title="CanvasXpress Logo" alt="CanvasXpress Logo" loading="lazy"/>
+                      </a>
+                    </div>
+                    <p class="text-footer">CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface. Full and effortless audit trail of data, configuration and all user interactions in every visualization.</p>
+                    <p class="rights text-footer">©2025 All Rights Reserved. CanvasXpress®</p>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Documentation</div>
+                    <a href="/examples.html" class="fade-page link-footer">Examples</a>
+                    <a href="/documentation.html" class="fade-page link-footer">Docs</a>
+                    <a href="/parameters.html" class="fade-page link-footer">Api</a>
+                    <a href="/updates.html" class="fade-page link-footer">Updates</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Company</div>
+                    <a href="/contact.html" class="fade-page link-footer">Contact</a>
+                    <a href="/licenseCommercial.html" class="fade-page link-footer">License</a>
+                    <a href="/apps/dashboard.html" class="fade-page link-footer">Admin</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Information</div>
+                    <a href="/terms.html" class="fade-page link-footer">Terms of Use</a>
+                    <a href="/privacy.html" class="fade-page link-footer">Privacy policy</a>
+                    <a href="/references.html" class="fade-page link-footer">References</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</a>
+
+    <!-- CanvasXpress -->
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+    <script>
+      var cXboxplot1 = new CanvasXpress("boxplot1",
+        {
+           "x" : {
+              "dose" : ["0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","1","1","1","1","1","1","1","1","1","1","2","2","2","2","2","2","2","2","2","2","0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","0.5","1","1","1","1","1","1","1","1","1","1","2","2","2","2","2","2","2","2","2","2"],
+              "order" : [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10],
+              "supp" : ["VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","VC","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ","OJ"]
+           },
+           "y" : {
+              "data" : [
+                [4.2,11.5,7.3,5.8,6.4,10,11.2,11.2,5.2,7,16.5,16.5,15.2,17.3,22.5,17.3,13.6,14.5,18.8,15.5,23.6,18.5,33.9,25.5,26.4,32.5,26.7,21.5,23.3,29.5,15.2,21.5,17.6,9.7,14.5,10,8.2,9.4,16.5,9.7,19.7,23.3,23.6,26.4,20,25.2,25.8,21.2,14.5,27.3,25.5,26.4,22.4,24.5,24.8,30.9,26.4,27.3,29.4,23]
+              ],
+              "smps" : ["Var1","Var2","Var3","Var4","Var5","Var6","Var7","Var8","Var9","Var10","Var11","Var12","Var13","Var14","Var15","Var16","Var17","Var18","Var19","Var20","Var21","Var22","Var23","Var24","Var25","Var26","Var27","Var28","Var29","Var30","Var31","Var32","Var33","Var34","Var35","Var36","Var37","Var38","Var39","Var40","Var41","Var42","Var43","Var44","Var45","Var46","Var47","Var48","Var49","Var50","Var51","Var52","Var53","Var54","Var55","Var56","Var57","Var58","Var59","Var60"],
+              "vars" : ["len"]
+           }
+        },
+        {
+          "axisAlgorithm": "rPretty",
+          "axisTitleFontStyle": "bold",
+          "graphOrientation": "vertical",
+          "graphType": "Boxplot",
+          "groupingFactors": ["dose"],
+          "showLegend": false,
+          "smpTextRotate": 90,
+          "smpTitle": "dose",
+          "smpTitleFontStyle": "bold",
+          "title": "The Effect of Vitamin C on Tooth Growth in Guinea Pigs",
+          "xAxis": ["len"],
+          "xAxis2Show": false,
+          "xAxisTitle": "len"
+        }
+      );
+    </script>
+    <!-- Site JavaScript -->
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script>
+      setTimeout(function() {
+        var elementToObserve = document.getElementsByClassName("gsc-expansionArea")[0];
+        var observer = new MutationObserver(function(mutations) {
+          var val = document.getElementById("gs_tti50").firstChild.value;
+          mutations.forEach(function(mutation) {
+
+          });
+        });
+        if (elementToObserve) { observer.observe(elementToObserve, { attributes: true, childList: true, characterData: true }); }
+      }, 500);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+  </body>
+
+</html>

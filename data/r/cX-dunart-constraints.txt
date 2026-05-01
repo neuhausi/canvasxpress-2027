@@ -1,0 +1,7 @@
+axis	offsets	type
+y	[{"nodeId": "Id1", "offset": 0}, {"nodeId": "Id2", "offset": 0}, {"nodeId": "Id14", "offset": 0}]	alignment
+x	[{"nodeId": "Id1", "offset": 0}, {"nodeId": "Id3", "offset": 0}, {"nodeId": "Id4", "offset": 0}, {"nodeId": "Id5", "offset": 0}, {"nodeId": "Id6", "offset": 0}, {"nodeId": "Id7", "offset": 0}]	alignment
+y	[{"nodeId": "Id7", "offset": 0}, {"nodeId": "Id8", "offset": 0}, {"nodeId": "Id9", "offset": 0}]	alignment
+x	[{"nodeId": "Id9", "offset": 0}, {"nodeId": "Id13", "offset": 0}, {"nodeId": "Id14", "offset": 0}, {"nodeId": "Id23", "offset": 0}, {"nodeId": "Id24", "offset": 0}, {"nodeId": "Id25", "offset": 0}]	alignment
+x	[{"nodeId": "Id21", "offset": 0}, {"nodeId": "Id22", "offset": 0}]	alignment
+x	[{"nodeId": "Id35", "offset": 0}, {"nodeId": "Id36", "offset": 0}, {"nodeId": "Id43", "offset": 0}, {"nodeId": "Id44", "offset": 0}]	alignment

@@ -1,0 +1,1624 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showAnimation</title>
+    <meta name="description" content="CanvasXpress API - Animations and Visualization Transitions - showAnimation">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="showAnimation">
+    <meta property="og:description" content="CanvasXpress API - Animations and Visualization Transitions - showAnimation">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org/assets/api/showAnimation.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="showAnimation">
+    <meta name="twitter:description" content="CanvasXpress API - Animations and Visualization Transitions - showAnimation">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org/assets/api/showAnimation.html">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+
+    <style>
+      div.content { margin: auto; max-width: 1000px; }
+      div.container { margin: auto; }
+      div.plot { align-items: center; justify-content: center; }
+    </style>
+</head>
+
+  <body style="height: 100vh;">
+
+    <div class="content" style="margin:auto;display:flex !important;justify-content:center;align-items:center;height:100%">
+
+      <div style="max-width:1000px;display:flex;flex-flow:wrap;">
+        <div class="card p-2 m-1 shadow-sm">
+          <div><h4 class="fw-semibold text-dark mb-2">showAnimation : true</h4></div>
+          <div class="canvasXpressContainerSite">
+            <canvas id="animations_and_visualization_transitions_showAnimation_0" width="425" height="425" aspectRatio="1:1" responsive="true">
+            </canvas>
+          </div>
+        </div>
+      <script>
+        new CanvasXpress("animations_and_visualization_transitions_showAnimation_0",
+          {
+            "edges": [
+              {
+                "id1": "n2",
+                "id2": "n1",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n3",
+                "id2": "n1",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n3",
+                "id2": "n2",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n4",
+                "id2": "n1",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n4",
+                "id2": "n2",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n4",
+                "id2": "n3",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n5",
+                "id2": "n1",
+                "type": "1-A",
+                "tck": 10
+              },
+              {
+                "id1": "n6",
+                "id2": "n1",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n7",
+                "id2": "n1",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n7",
+                "id2": "n5",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n7",
+                "id2": "n6",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n8",
+                "id2": "n1",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n8",
+                "id2": "n2",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n8",
+                "id2": "n3",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n8",
+                "id2": "n4",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n9",
+                "id2": "n1",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n9",
+                "id2": "n3",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n10",
+                "id2": "n3",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n11",
+                "id2": "n1",
+                "type": "1-A",
+                "tck": 10
+              },
+              {
+                "id1": "n11",
+                "id2": "n5",
+                "type": "1-A",
+                "tck": 10
+              },
+              {
+                "id1": "n11",
+                "id2": "n6",
+                "type": "1-A",
+                "tck": 10
+              },
+              {
+                "id1": "n12",
+                "id2": "n1",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n13",
+                "id2": "n1",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n13",
+                "id2": "n4",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n14",
+                "id2": "n1",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n14",
+                "id2": "n2",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n14",
+                "id2": "n3",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n14",
+                "id2": "n4",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n17",
+                "id2": "n6",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n17",
+                "id2": "n7",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n18",
+                "id2": "n1",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n18",
+                "id2": "n2",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n20",
+                "id2": "n1",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n20",
+                "id2": "n2",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n22",
+                "id2": "n1",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n22",
+                "id2": "n2",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n26",
+                "id2": "n24",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n26",
+                "id2": "n25",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n28",
+                "id2": "n3",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n28",
+                "id2": "n24",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n28",
+                "id2": "n25",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n29",
+                "id2": "n3",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n30",
+                "id2": "n24",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n30",
+                "id2": "n27",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n31",
+                "id2": "n2",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n31",
+                "id2": "n9",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n32",
+                "id2": "n1",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n32",
+                "id2": "n25",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n32",
+                "id2": "n26",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n32",
+                "id2": "n29",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n33",
+                "id2": "n3",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n9",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n15",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n16",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n19",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n21",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n23",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n24",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n30",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n31",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n32",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n9",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n10",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n14",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n15",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n16",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n19",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n20",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n21",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n23",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n24",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n27",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n28",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n29",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n30",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n31",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n32",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n33",
+                "type": "1-F",
+                "tck": 60
+              }
+            ],
+            "nodes": [
+              {
+                "color": "#0ab0db",
+                "id": "n1",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n2",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n3",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n4",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n5",
+                "class": "A",
+                "num": 1
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n6",
+                "class": "B",
+                "num": 2
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n7",
+                "class": "B",
+                "num": 2
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n8",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n9",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n10",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n11",
+                "class": "A",
+                "num": 1
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n12",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n13",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n14",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n15",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n16",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n17",
+                "class": "B",
+                "num": 2
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n18",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n19",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n20",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n21",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n22",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n23",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n24",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n25",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n26",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n27",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n28",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n29",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n30",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n31",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n32",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n33",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n34",
+                "class": "F",
+                "num": 6
+              }
+            ]
+          },  
+          {
+            "graphType": "Network",
+            "networkLayoutType": "forceDirected",
+            "showAnimation": true
+          },  
+          {
+            "click": function(o, e, t) {
+              t.showTooltipDiv(e, '<pre>' + t.prettyJSON(t.meta.config.user) + '</pre>', false, {zIndex: 1});
+            }
+          }
+        );
+
+      </script>
+
+        <div class="card p-2 m-1 shadow-sm">
+          <div><h4 class="fw-semibold text-dark mb-2">showAnimation : false</h4></div>
+          <div class="canvasXpressContainerSite">
+            <canvas id="animations_and_visualization_transitions_showAnimation_1" width="425" height="425" aspectRatio="1:1" responsive="true">
+            </canvas>
+          </div>
+        </div>
+      <script>
+        new CanvasXpress("animations_and_visualization_transitions_showAnimation_1",
+          {
+            "edges": [
+              {
+                "id1": "n2",
+                "id2": "n1",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n3",
+                "id2": "n1",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n3",
+                "id2": "n2",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n4",
+                "id2": "n1",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n4",
+                "id2": "n2",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n4",
+                "id2": "n3",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n5",
+                "id2": "n1",
+                "type": "1-A",
+                "tck": 10
+              },
+              {
+                "id1": "n6",
+                "id2": "n1",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n7",
+                "id2": "n1",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n7",
+                "id2": "n5",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n7",
+                "id2": "n6",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n8",
+                "id2": "n1",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n8",
+                "id2": "n2",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n8",
+                "id2": "n3",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n8",
+                "id2": "n4",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n9",
+                "id2": "n1",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n9",
+                "id2": "n3",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n10",
+                "id2": "n3",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n11",
+                "id2": "n1",
+                "type": "1-A",
+                "tck": 10
+              },
+              {
+                "id1": "n11",
+                "id2": "n5",
+                "type": "1-A",
+                "tck": 10
+              },
+              {
+                "id1": "n11",
+                "id2": "n6",
+                "type": "1-A",
+                "tck": 10
+              },
+              {
+                "id1": "n12",
+                "id2": "n1",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n13",
+                "id2": "n1",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n13",
+                "id2": "n4",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n14",
+                "id2": "n1",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n14",
+                "id2": "n2",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n14",
+                "id2": "n3",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n14",
+                "id2": "n4",
+                "type": "1-C",
+                "tck": 30
+              },
+              {
+                "id1": "n17",
+                "id2": "n6",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n17",
+                "id2": "n7",
+                "type": "1-B",
+                "tck": 20
+              },
+              {
+                "id1": "n18",
+                "id2": "n1",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n18",
+                "id2": "n2",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n20",
+                "id2": "n1",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n20",
+                "id2": "n2",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n22",
+                "id2": "n1",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n22",
+                "id2": "n2",
+                "type": "1-D",
+                "tck": 40
+              },
+              {
+                "id1": "n26",
+                "id2": "n24",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n26",
+                "id2": "n25",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n28",
+                "id2": "n3",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n28",
+                "id2": "n24",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n28",
+                "id2": "n25",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n29",
+                "id2": "n3",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n30",
+                "id2": "n24",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n30",
+                "id2": "n27",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n31",
+                "id2": "n2",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n31",
+                "id2": "n9",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n32",
+                "id2": "n1",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n32",
+                "id2": "n25",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n32",
+                "id2": "n26",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n32",
+                "id2": "n29",
+                "type": "1-E",
+                "tck": 50
+              },
+              {
+                "id1": "n33",
+                "id2": "n3",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n9",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n15",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n16",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n19",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n21",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n23",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n24",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n30",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n31",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n33",
+                "id2": "n32",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n9",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n10",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n14",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n15",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n16",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n19",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n20",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n21",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n23",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n24",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n27",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n28",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n29",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n30",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n31",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n32",
+                "type": "1-F",
+                "tck": 60
+              },
+              {
+                "id1": "n34",
+                "id2": "n33",
+                "type": "1-F",
+                "tck": 60
+              }
+            ],
+            "nodes": [
+              {
+                "color": "#0ab0db",
+                "id": "n1",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n2",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n3",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n4",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n5",
+                "class": "A",
+                "num": 1
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n6",
+                "class": "B",
+                "num": 2
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n7",
+                "class": "B",
+                "num": 2
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n8",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n9",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n10",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n11",
+                "class": "A",
+                "num": 1
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n12",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n13",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n14",
+                "class": "C",
+                "num": 3
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n15",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n16",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n17",
+                "class": "B",
+                "num": 2
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n18",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n19",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n20",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n21",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n22",
+                "class": "D",
+                "num": 4
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n23",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n24",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n25",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n26",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n27",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n28",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n29",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n30",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n31",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n32",
+                "class": "E",
+                "num": 5
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n33",
+                "class": "F",
+                "num": 6
+              },
+              {
+                "color": "#0ab0db",
+                "id": "n34",
+                "class": "F",
+                "num": 6
+              }
+            ]
+          },  
+          {
+            "graphType": "Network",
+            "networkLayoutType": "forceDirected",
+            "showAnimation": false
+          },  
+          {
+            "click": function(o, e, t) {
+              t.showTooltipDiv(e, '<pre>' + t.prettyJSON(t.meta.config.user) + '</pre>', false, {zIndex: 1});
+            }
+          }
+        );
+
+      </script>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

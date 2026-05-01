@@ -1,0 +1,122 @@
+---
+title: "Bar Graphs"
+author: "Isaac Neuhaus"
+date: "06/04/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+# Load data and Libraries
+### https://r4ds.had.co.nz/data-visualisation.html
+```{r setup}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("devtools" %in% installed.packages())) {
+    install.packages('devtools')
+}
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library('canvasXpress')
+```
+
+
+## geom_bar is designed to make it easy to create bar charts that show counts (or sums of weights)
+```{r}
+g <- ggplot(mpg, aes(class)) + geom_bar()
+g
+canvasXpress(g)
+```
+
+## Total engine displacement of each class
+```{r}
+g <- ggplot(mpg, aes(class)) + geom_bar(aes(weight = displ))
+g
+canvasXpress(g)
+```
+
+## Map class to y instead to flip the orientation
+```{r}
+g <- ggplot(mpg) + geom_bar(aes(y = class))
+g
+canvasXpress(g)
+```
+
+## Bar charts are automatically stacked when multiple bars are placed at the same location. The order of the fill is designed to match the legend
+```{r}
+g <- ggplot(mpg, aes(class)) + geom_bar(aes(fill = drv))
+g
+canvasXpress(g)
+```
+
+## If you need to flip the order (because you've flipped the orientation) call position_stack() explicitly
+```{r}
+g <- ggplot(mpg, aes(y = class)) + geom_bar(aes(fill = drv), position = position_stack(reverse = TRUE)) + theme(legend.position = "top")
+g
+canvasXpress(g)
+```
+
+## Statistical transformations
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 100), ]
+g = ggplot(data = sample_data) + geom_bar(mapping = aes(x = cut))
+g
+canvasXpress(g)
+```
+
+## Position adjustments - No Position
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 100), ]
+g = ggplot(data = sample_data) + geom_bar(mapping = aes(x = cut, fill = cut))
+g
+canvasXpress(g)
+```
+
+## Position adjustments - No Position 2
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 100), ]
+g = ggplot(data = sample_data) + geom_bar(mapping = aes(x = cut, fill = clarity))
+g
+canvasXpress(g)
+```
+
+## Position adjustments - Fill
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 100), ]
+g = ggplot(data = sample_data) + geom_bar(mapping = aes(x = cut, fill = clarity), position = "fill")
+g
+canvasXpress(g)
+```
+
+## Position adjustments - Dodge
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 100), ]
+g = ggplot(data = sample_data) + geom_bar(mapping = aes(x = cut, fill = clarity), position = "dodge")
+g
+canvasXpress(g)
+```
+
+## Special Fill
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 5), ]
+g = ggplot(data = sample_data, aes(x = 1, y = price, fill = cut)) + geom_bar(position="fill", stat="identity")
+g
+canvasXpress(g)
+```
+
+## Special Fill 2
+```{r}
+sample_data <- diamonds[sample(nrow(diamonds), 50), ]
+g = ggplot(data = sample_data, aes(x = 1, y = price, fill = cut)) + geom_bar(position="fill", stat="identity")
+g
+canvasXpress(g)
+```

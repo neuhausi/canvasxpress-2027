@@ -1,0 +1,9 @@
+	Drug Sensitivity	IC50
+S1	Sensitive	0.08
+S2	Sensitive	0.07
+S3	Sensitive	0.06
+S4	Sensitive	0.05
+S5	Sensitive	0.04
+S6	Resistant	0.03
+S7	Resistant	0.02
+S8	Resistant	0.01

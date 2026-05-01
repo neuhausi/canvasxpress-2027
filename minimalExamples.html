@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress</title>
+    <meta name="description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress">
+    <meta property="og:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org/docs/minimalExamples.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress">
+    <meta name="twitter:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org/docs/minimalExamples.html">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+</head>
+
+<body style="overflow:auto !important;">
+
+  <h1 style="font-size: 1.5rem;">CanvasXpress: Minimal Examples</h1>
+
+  <p>These examples demonstrate the minimal parameters needed to create stunning CanvasXpress visualizations. Explore the website for more in-depth and advanced examples.</p>
+
+  <h2 style="font-size: 1.25rem;">Categorical & Proportions</h2>
+  <div class="content" style="display:flex; flex-wrap:wrap; gap:20px; margin-bottom: 40px;">
+    <div class="plot"><span class="plot-label">Bar</span><canvas id="Bar" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">BarLine</span><canvas id="BarLine" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Stacked</span><canvas id="Stacked" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">StackedLine</span><canvas id="StackedLine" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">StackedPercent</span><canvas id="StackedPercent" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">StackedPercentLine</span><canvas id="StackedPercentLine" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Pie</span><canvas id="Pie" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Donut</span><canvas id="Donut" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Waterfall</span><canvas id="Waterfall" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Pareto</span><canvas id="Pareto" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Tornado</span><canvas id="Tornado" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Bullet</span><canvas id="Bullet" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+  </div>
+
+  <h2 style="font-size: 1.25rem;">Distributions & Statistics</h2>
+  <div class="content" style="display:flex; flex-wrap:wrap; gap:20px; margin-bottom: 40px;">
+    <div class="plot"><span class="plot-label">Boxplot</span><canvas id="Boxplot" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Violin</span><canvas id="Violin" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Histogram</span><canvas id="Histogram" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Density</span><canvas id="Density" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Distribution</span><canvas id="Distribution" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Ridgeline</span><canvas id="Ridgeline" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Bin</span><canvas id="Bin" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Binplot</span><canvas id="Binplot" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">QQ</span><canvas id="QQ" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Quantile</span><canvas id="Quantile" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">CDF</span><canvas id="CDF" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+  </div>
+
+  <h2 style="font-size: 1.25rem;">Scatter, Points & Relationships</h2>
+  <div class="content" style="display:flex; flex-wrap:wrap; gap:20px; margin-bottom: 40px;">
+    <div class="plot"><span class="plot-label">Scatter2D</span><canvas id="Scatter2D" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Scatter3D</span><canvas id="Scatter3D" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">ScatterBubble2D</span><canvas id="ScatterBubble2D" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Bubble</span><canvas id="Bubble" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">SPLOM</span><canvas id="SPLOM" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Dotplot</span><canvas id="Dotplot" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">DotLine</span><canvas id="DotLine" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Dumbbell</span><canvas id="Dumbbell" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Cleveland</span><canvas id="Cleveland" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Lollipop</span><canvas id="Lollipop" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Hex</span><canvas id="Hex" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Hexplot</span><canvas id="Hexplot" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+  </div>
+
+  <h2 style="font-size: 1.25rem;">Trends Output & Time</h2>
+  <div class="content" style="display:flex; flex-wrap:wrap; gap:20px; margin-bottom: 40px;">
+    <div class="plot"><span class="plot-label">Line</span><canvas id="Line" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Area</span><canvas id="Area" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">AreaS</span><canvas id="AreaS" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">AreaP</span><canvas id="AreaP" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">AreaLine</span><canvas id="AreaLine" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Streamgraph</span><canvas id="Streamgraph" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">TimeSeries</span><canvas id="TimeSeries" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Ribbon</span><canvas id="Ribbon" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Spaghetti</span><canvas id="Spaghetti" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">KaplanMeier</span><canvas id="KaplanMeier" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Bump</span><canvas id="Bump" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+  </div>
+
+  <h2 style="font-size: 1.25rem;">Hierarchical & Network</h2>
+  <div class="content" style="display:flex; flex-wrap:wrap; gap:20px; margin-bottom: 40px;">
+    <div class="plot"><span class="plot-label">Tree</span><canvas id="Tree" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">TreeBracket</span><canvas id="TreeBracket" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Treemap</span><canvas id="Treemap" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Sunburst</span><canvas id="Sunburst" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Network</span><canvas id="Network" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Chord</span><canvas id="Chord" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Alluvial</span><canvas id="Alluvial" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Sankey</span><canvas id="Sankey" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+  </div>
+
+  <h2 style="font-size: 1.25rem;">Circular Layouts</h2>
+  <div class="content" style="display:flex; flex-wrap:wrap; gap:20px; margin-bottom: 40px;">
+    <div class="plot"><span class="plot-label">Circular</span><canvas id="Circular" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Circular2D</span><canvas id="Circular2D" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">CircularConn</span><canvas id="CircularConn" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Radar</span><canvas id="Radar" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+  </div>
+
+  <h2 style="font-size: 1.25rem;">Maps & Specialized Elements</h2>
+  <div class="content" style="display:flex; flex-wrap:wrap; gap:20px; margin-bottom: 40px;">
+    <div class="plot"><span class="plot-label">Map</span><canvas id="Map" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Heatmap</span><canvas id="Heatmap" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Contour</span><canvas id="Contour" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Correlation</span><canvas id="Correlation" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">ParallelCoordinates</span><canvas id="ParallelCoordinates" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Gantt</span><canvas id="Gantt" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Meter</span><canvas id="Meter" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">TagCloud</span><canvas id="TagCloud" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">WordCloud</span><canvas id="WordCloud" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Venn</span><canvas id="Venn" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+    <div class="plot"><span class="plot-label">Volcano</span><canvas id="Volcano" width="450" height="450" data-aspectRatio="1:1" data-responsive="true"></canvas></div>
+  </div>
+
+  <script>
+    window.onload = function () {
+
+      var data = ;
+
+      var chord = ;
+
+      var venn = ;
+
+      var network = ;
+
+
+      
+
+    }
+  </script>
+
+</body>
+</html>

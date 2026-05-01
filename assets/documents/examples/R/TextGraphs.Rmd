@@ -1,0 +1,102 @@
+---
+title: "Text Graphs"
+author: "Isaac Neuhaus"
+date: "06/04/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+# Load data and Libraries
+### https://r4ds.had.co.nz/data-visualisation.html
+```{r setup}
+if (!("ggplot2" %in% installed.packages())) {
+    install.packages('ggplot2')
+}
+library('ggplot2')
+if (!("devtools" %in% installed.packages())) {
+    install.packages('devtools')
+}
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library('canvasXpress')
+```
+
+
+## Subset 10 rows
+```{r}
+set.seed(1234)
+ss <- sample(1:32, 10)
+df <- as.data.frame(mtcars[ss, ])
+```
+
+## Simple scatter plot
+```{r}
+g <- ggplot(df, aes(wt, mpg, label = rownames(df))) + geom_text()
+g
+canvasXpress(g)
+```
+
+## Change the size of the texts
+```{r}
+g <- ggplot(df, aes(wt, mpg, label = rownames(df))) + geom_text(size=6)
+g
+canvasXpress(g)
+```
+
+## Change vertical and horizontal adjustement
+```{r}
+g <- ggplot(df, aes(wt, mpg, label = rownames(df))) + geom_point() + geom_text(hjust=0, vjust=0)
+g
+canvasXpress(g)
+```
+
+## Change fontface. Allowed values : 1(normal), 2(bold), 3(italic), 4(bold.italic)
+```{r}
+g <- ggplot(df, aes(wt, mpg, label = rownames(df))) + geom_point() + geom_text(aes(fontface=2))
+g
+canvasXpress(g)
+```
+
+## geom_label()
+```{r}
+g <- ggplot(df, aes(wt, mpg, label = rownames(df))) + geom_point() + geom_label()
+g
+canvasXpress(g)
+```
+
+## geom_label()
+```{r}
+g <- ggplot(df, aes(wt, mpg, label = rownames(df))) + geom_point() + geom_label(aes(fill = factor(cyl)), colour = "white", fontface = "bold")
+g
+canvasXpress(g)
+```
+
+
+## Color by groups
+```{r}
+g <- ggplot(mtcars, aes(x=wt, y=mpg, label=rownames(mtcars))) + geom_point() + geom_text(aes(color=factor(cyl)))
+g
+canvasXpress(g)
+```
+
+## Set the size of the text using a continuous variable
+```{r}
+g <- ggplot(mtcars, aes(x=wt, y=mpg, label=rownames(mtcars))) + geom_point() + geom_text(aes(size=gear))
+g
+canvasXpress(g)
+```
+
+## Angle
+```{r}
+g <- ggplot(mtcars, aes(wt, mpg, label = rownames(mtcars))) + geom_point() + geom_text(angle = 45)
+g
+canvasXpress(g)
+```

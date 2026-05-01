@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","copyright":"CanvasXpress (https://canvasxpress.org)","license":"Data sourced from Natural Earth (https://naturalearthdata.com) and geoBoundaries (https://geoboundaries.org) under open licenses.","features":[
+    {"type":"Feature","id":"Cayenne","alias":["GF.CY","Cayenne"],"properties":{"Name":"Cayenne"},"geometry":{"type":"Polygon","coordinates":[[[-53.33477402,2.2844131],[-52.67211914,2.37535501],[-51.79236221,4.59875011],[-53.46440506,5.56152821],[-53.0563736,3.1875],[-53.33477402,2.2844131]]]}},
+    {"type":"Feature","id":"Saint-Laurent-du-Maroni","alias":["GF.SL","Saint-Laurent-du-Maroni"],"properties":{"Name":"Saint-Laurent-du-Maroni"},"geometry":{"type":"Polygon","coordinates":[[[-53.33477402,2.2844131],[-53.0563736,3.1875],[-53.46440506,5.56152821],[-54.47424698,4.90362978],[-54.02613068,3.63401508],[-54.43113708,2.34560108],[-53.33477402,2.2844131]]]}}
+]}

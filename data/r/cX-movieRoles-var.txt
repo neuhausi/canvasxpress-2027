@@ -1,0 +1,5 @@
+	Gender	InOut
+Females-in	Female	In
+Females-out	Female	Out
+Males-in	Male	In
+Males-out	Male	Out

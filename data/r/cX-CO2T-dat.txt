@@ -1,0 +1,199 @@
+	CO2
+Afghanistan	10.452666
+Albania	5.402999
+Algeria	164.309295
+Andorra	0.46421
+Angola	37.678605
+Anguilla	0.147145
+Antigua & Barbuda	0.505574
+Argentina	185.029897
+Armenia	6.296603
+Aruba	0.943234
+Australia	415.953947
+Austria	66.719678
+Azerbaijan	37.488394
+Bahamas	2.03001
+Bahrain	31.594487
+Bangladesh	85.718805
+Barbados	1.207134
+Belarus	61.871676
+Belgium	100.207836
+Belize	0.612205
+Benin	7.759753
+Bermuda	0.648945
+Bhutan	1.662172
+Bolivia	22.345503
+Bosnia and Herzegovina	22.086102
+Botswana	6.815418
+Brazil	466.649304
+British Virgin Islands	0.173555
+Brunei Darussalam	9.560399
+Bulgaria	43.551599
+Burkina Faso	4.140342
+Burundi	0.568028
+Cambodia	15.479031
+Cameroon	7.566796
+Canada	586.504635
+Cape Verde	0.609509
+Central African Republic	0.300478
+Chad	1.008035
+Chile	85.829114
+China	9956.568523
+Colombia	92.228209
+Comoros	0.245927
+Congo	3.518309
+Cook Islands	0.072706
+Costa Rica	8.249118
+Croatia	17.718646
+Cuba	26.084446
+Cyprus	7.332762
+Czechia	104.411211
+Democratic Republic of the Congo	2.231343
+Denmark	34.65143
+Djibouti	0.389975
+Dominican Republic	25.305221
+Ecuador	41.817989
+Egypt	251.460913
+El Salvador	6.018265
+Equatorial Guinea	5.90578
+Eritrea	0.708769
+Estonia	17.710953
+Ethiopia	16.184949
+Fiji	2.123769
+Finland	45.849349
+France	331.725446
+French Polynesia	0.780633
+Gabon	4.803117
+Gambia	0.56324
+Georgia	9.862173
+Germany	755.362342
+Ghana	14.479998
+Greece	71.797869
+Greenland	0.511728
+Grenada	0.278597
+Guatemala	19.411335
+Guinea	3.032114
+Guinea-Bissau	0.308612
+Guyana	2.342628
+Haiti	3.366964
+Honduras	10.470701
+Hong Kong	42.505723
+Hungary	49.628491
+Iceland	3.674529
+India	2591.323739
+Indonesia	576.58439
+Iran	755.402186
+Iraq	211.270294
+Ireland	38.803394
+Israel	62.212641
+Italy	348.085029
+Jamaica	8.009662
+Japan	1135.688
+Jordan	24.923803
+Kazakhstan	319.647412
+Kenya	17.136703
+Kiribati	0.068879
+Kuwait	104.217567
+Kyrgyzstan	10.16888
+Lao People's Democratic Republic	32.26245
+Latvia	7.859287
+Lebanon	27.565431
+Lesotho	2.425558
+Liberia	1.27446
+Libya	45.205986
+Liechtenstein	0.14375
+Lithuania	13.669492
+Luxembourg	9.56852
+Macao	2.216456
+Madagascar	4.187806
+Malawi	1.470252
+Malaysia	249.144498
+Maldives	1.565092
+Mali	3.273276
+Malta	1.531581
+Marshall Islands	0.153065
+Mauritania	3.934804
+Mauritius	4.901611
+Mexico	451.080829
+Moldova	5.877784
+Mongolia	64.508256
+Montenegro	2.123147
+Morocco	65.367444
+Mozambique	8.383478
+Myanmar	26.095603
+Namibia	4.154302
+Nauru	0.049746
+Nepal	13.410432
+Netherlands	160.170147
+New Caledonia	8.20904
+New Zealand	35.080341
+Nicaragua	5.377193
+Niger	2.093847
+Nigeria	136.078346
+Niue	0.007653
+Democratic People's Republic of Korea	38.162935
+The former Yugoslav Republic of Macedonia	6.980909
+Norway	43.817657
+Oman	71.029916
+Pakistan	247.425382
+Panama	12.096333
+Papua New Guinea	6.786146
+Paraguay	8.103032
+Peru	54.210259
+Philippines	138.924391
+Poland	337.705742
+Portugal	51.482481
+Qatar	109.24468
+Romania	76.951219
+Russia	1691.360426
+Rwanda	1.080098
+Saint Helena	0.011319
+Saint Kitts and Nevis	0.249014
+Saint Lucia	0.362202
+Saint Pierre and Miquelon	0.079232
+Saint Vincent and the Grenadines	0.264106
+Samoa	0.267864
+Sao Tome and Principe	0.126126
+Saudi Arabia	576.757836
+Serbia	46.0531
+Seychelles	0.60536
+Sierra Leone	0.987559
+Singapore	38.28806
+Slovakia	36.087837
+Slovenia	14.487844
+Solomon Islands	0.298477
+Somalia	0.658329
+Republic of Korea	634.934068
+South Sudan	1.539884
+Spain	269.654254
+Sri Lanka	22.973233
+Sudan	22.372399
+Suriname	2.551817
+Sweden	41.766183
+Switzerland	36.895485
+Syria	25.877689
+Taiwan	273.104667
+Tajikistan	7.473265
+Tanzania	11.501889
+Thailand	292.452995
+Timor-Leste	0.520422
+Togo	3.167303
+Tonga	0.164545
+Trinidad and Tobago	37.865571
+Tunisia	30.357093
+Turkey	419.194747
+Turkmenistan	78.034724
+Tuvalu	0.01148
+Uganda	5.384767
+Ukraine	231.694165
+United Arab Emirates	188.541366
+United Kingdom	380.138559
+United States	5424.881502
+Uruguay	6.251839
+Uzbekistan	113.93837
+Vanuatu	0.145412
+Venezuela	129.596274
+Vietnam	211.774129
+Yemen	9.945288
+Zambia	6.930094
+Zimbabwe	11.340575

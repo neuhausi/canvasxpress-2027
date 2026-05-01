@@ -1,0 +1,6 @@
+	Level1	Level2
+A	NA	NA
+B	L1	NA
+C	L1	L2
+D	L1	L2
+E	NA	NA

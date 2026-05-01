@@ -1,0 +1,10 @@
+	V1	V2	V3
+S1			Amplification
+S2		Amplification	
+S3			
+S4			
+S5		Amplification	Amplification
+S6			
+S7			
+S8			Deletion
+S9	Deletion	Amplification	

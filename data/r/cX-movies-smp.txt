@@ -1,0 +1,10 @@
+	Color
+Birth	A
+Puberty	A
+Death	A
+Family	B
+Friendship	B
+Love	B
+Work	C
+Passion	C
+Environment	C

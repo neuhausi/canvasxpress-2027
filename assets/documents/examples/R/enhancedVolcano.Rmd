@@ -1,0 +1,136 @@
+---
+title: "Enhanced Volcano"
+author: "Isaac Neuhaus"
+date: "06/04/2024"
+output:
+  html_document:
+    toc: yes
+    theme: cerulean
+    smart: no
+    self_contained: yes
+---
+
+# 1. Introduction
+
+Volcano plots represent a useful way to visualise the results of differential expression analyses. Here, we present a highly-configurable function that produces publication-ready volcano plots. EnhancedVolcano (Blighe, Rana, and Lewis 2018) will attempt to fit as many labels in the plot window as possible, thus avoiding ‘clogging’ up the plot with labels that could not otherwise have been read. Other functionality allows the user to identify up to 5 different types of attributes in the same plot space via colour, shape, size, encircling, and shade parameter configurations.
+
+# 2. Installation
+## 2.1 Download the package from Bioconductor
+
+```{r}
+if (!requireNamespace('BiocManager', quietly = TRUE))
+  install.packages('BiocManager')
+
+BiocManager::install('EnhancedVolcano')
+```
+
+## 2.2 Load the package into R session
+Note: to install development version:
+
+```{r}
+if (!("EnhancedVolcano" %in% installed.packages())) {
+    devtools::install_github('kevinblighe/EnhancedVolcano')
+}
+library(EnhancedVolcano)
+if (!("canvasXpress" %in% installed.packages())) {
+    devtools::install_github('neuhausi/canvasXpress')
+}
+#devtools::install_local("~/git/canvas/R/canvasXpress.tar.gz", build_manual = TRUE, upgrade = "always")
+library(canvasXpress)
+```
+
+
+# 3. Quick start
+
+For this example, we will follow the tutorial (from Section 3.1) of RNA-seq workflow: gene-level exploratory analysis and differential expression. Specifically, we will load the ‘airway’ data, where different airway smooth muscle cells were treated with dexamethasone.
+
+```{r}
+library(airway)
+library(magrittr)
+
+data('airway')
+airway$dex %<>% relevel('untrt')
+```
+
+Annotate the Ensembl gene IDs to gene symbols:
+
+```{r}
+ens <- rownames(airway)
+
+library(org.Hs.eg.db)
+symbols <- mapIds(org.Hs.eg.db, keys = ens, column = c('SYMBOL'), keytype = 'ENSEMBL')
+symbols <- symbols[!is.na(symbols)]
+symbols <- symbols[match(rownames(airway), names(symbols))]
+rownames(airway) <- symbols
+keep <- !is.na(rownames(airway))
+airway <- airway[keep,]
+```
+
+Conduct differential expression using DESeq2 in order to create 2 sets of results:
+
+```{r}
+library('DESeq2')
+
+dds <- DESeqDataSet(airway, design = ~ cell + dex)
+dds <- DESeq(dds, betaPrior=FALSE)
+res <- results(dds, contrast = c('dex','trt','untrt'))
+res <- lfcShrink(dds, contrast = c('dex','trt','untrt'), res=res, type = 'normal')
+```
+
+## 3.1 Plot the most basic volcano plot
+
+For the most basic volcano plot, only a single data-frame, data-matrix, or tibble of test results is required, containing point labels, log2FC, and adjusted or unadjusted P values. The default cut-off for log2FC is >|2|; the default cut-off for P value is 10e-6.
+
+```{r}
+v <- EnhancedVolcano(res,
+  lab = rownames(res),
+  x = 'log2FoldChange',
+  y = 'pvalue')
+v
+canvasXpress(v, width = 700, height = 500)
+```
+
+# 4. Advanced features
+
+Virtually all aspects of an EnhancedVolcano plot can be configured for the purposes of accommodating all types of statistical distributions and labelling preferences. By default, EnhancedVolcano will only attempt to label genes that pass the thresholds that you set for statistical significance, i.e., ‘pCutoff’ and ‘FCcutoff’. In addition, it will only label as many of these that can reasonably fit in the plot space. The user can optionally supply a vector of labels (as ‘selectLab’) that s/he wishes to label in the plot.
+
+## 4.1 Modify cut-offs for log2FC and P value; specify title; adjust point and label size
+
+The default P value cut-off of 10e-6 may be too relaxed for most studies, which may therefore necessitate increasing this threshold by a few orders of magnitude. Equally, the log2FC cut-offs may be too stringent, given that moderated ‘shrunk’ estimates of log2FC differences in differential expression analysis can now be calculated.
+
+In this example, we also modify the point and label size, which can help to improve clarity where many variables went into the differential expression analysis.
+
+```{r}
+v <- EnhancedVolcano(res,
+  lab = rownames(res),
+  x = 'log2FoldChange',
+  y = 'pvalue',
+  title = 'N061011 versus N61311',
+  pCutoff = 10e-32,
+  FCcutoff = 0.5,
+  pointSize = 3.0,
+  labSize = 6.0)
+v
+canvasXpress(v, width = 700, height = 500)
+```
+
+## 4.2 Adjust colour and alpha for point shading
+
+The default colour scheme may not be to everyone’s taste. Here we make it such that only the variables passing both the log2FC and P value thresholds are coloured red, with everything else black. We also adjust the value for ‘alpha’, which controls the transparency of the plotted points: 1 = 100% opaque; 0 = 100% transparent.
+
+```{r}
+v <- EnhancedVolcano(res,
+  lab = rownames(res),
+  x = 'log2FoldChange',
+  y = 'pvalue',
+  title = 'N061011 versus N61311',
+  pCutoff = 10e-16,
+  FCcutoff = 1.5,
+  pointSize = 3.0,
+  labSize = 6.0,
+  col=c('black', 'black', 'black', 'red3'),
+  colAlpha = 1)
+v
+canvasXpress(v, width = 700, height = 500)
+```
+

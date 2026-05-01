@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasXpress</title>
+    <meta name="description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="author" content="CanvasXpress Team">
+    <meta name="theme-color" content="#fceecf" />
+    
+    <meta property="og:title" content="CanvasXpress">
+    <meta property="og:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta property="og:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    <meta property="og:url" content="https://www.canvasxpress.org">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CanvasXpress">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CanvasXpress">
+    <meta name="twitter:description" content="JavaScript Library for Scientific Data Visualization">
+    <meta name="twitter:image" content="https://www.canvasxpress.org/assets/images/hexagon.png">
+    
+    <link rel="canonical" href="https://www.canvasxpress.org">
+
+    <link rel="stylesheet" href="/dist/build.css">
+    <link rel="icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-canvasxpress.png" />
+
+    <link rel="stylesheet" href="/build/css/canvasXpress.css" type="text/css"/>
+    <script type="text/javascript" src="/build/js/canvasXpress.init.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.process.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.start.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataset.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetRange.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetReshape.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetTransform.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGrouping.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetSummarize.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetGenome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datasetNetwork.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.aesthetics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scale.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geometry.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.statistics.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.facets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.coordinates.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.theme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.render.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.UI.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dom.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.svg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.interface.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.save.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.config.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.date.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.text.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.time.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.color.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesLines.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.attributesShapes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.algorithm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.primitives.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsGeneral.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsConfig.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsApi.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utilsDimension.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.utils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomArea.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomBoxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCDF.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomChord.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomContour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomCorrelation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomFish.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomGantt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHeatmap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomDensity.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomHistogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomKaplanMeier.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLine.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomLoess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomManhattan.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomMeter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPoint.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomPolygon.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQQ.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomQuantile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomRegression.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomSankey.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStacked.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomStream.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTagCloud.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTree.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomTreemap.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.geomViolin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.legend.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.marker.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.filter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cluster.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sort.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.numeric.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.jLouvain.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cola.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.crypt.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.math.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.sankeyUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circlePackUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.treeUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.networkUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fft.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.contour.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.density.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.hist.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.loess.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.quantreg.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.lapack.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.layout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.viewport.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menu.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuEvents.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.menuMenus.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.links.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltip.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.tooltipDiv.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.toolbar.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dispatcher.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.llm.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.code.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.bin.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWidgets.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerFile.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerData.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerOptions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerPlot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerAxes.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerLegends.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerMeta.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDecorations.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerWrangling.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTools.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerTheme.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerDOE.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.customizerSearch.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datafilter.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.datatable.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.resizer.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.workflow.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.drag.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.key.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.select.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dendrogram.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.canvas.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cleanup.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.events.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.animation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.data.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.dataUtils.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.overlays.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.fx.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.remote.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.graph.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.axis.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.cxplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.pie.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.venn.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.correlation.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter2dChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.scatter3d.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplot.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotChecks.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDatapoints.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotLayout.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotWireframe.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotParams.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotDimensions.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.onedplotUtilities.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.network.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.genome.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.circular.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.map.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.orthographic.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.images.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.icons.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.doc.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.react.js"></script>
+    <script type="text/javascript" src="/build/js/canvasXpress.IO.js"></script>
+
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdWYcYqAAAAAPqJzSUJ4T0r_YKPGhfotxPl0-_A"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Homepage",
+          "item": "https://www.canvasxpress.org/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Software Design"
+        }
+      ]
+    }
+    </script>
+</head>
+
+  <body>
+
+    <!-- Main Wrapper -->
+    <div id="canvasxpress">
+
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light py-lg-2 border-bottom" style="top:0;padding:0;">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="/index.html">
+            <div class="mb-0">
+              <img src="/assets/images/logo-dark.svg" alt="CanvasXpress Logo" style="height: 25px; max-width: unset;" title="CanvasXpress Logo" width="282" height="35" loading="eager">
+            </div>
+          </a>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:0;outline:none;right:18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </a>
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0" style="margin-left: 0px;">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a href="/examples.html" class="nav-link">Examples</a></li>
+              <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
+              <li class="nav-item"><a href="/interfaces.html" class="nav-link">Interfaces</a></li>
+              <li class="nav-item"><a href="/updates.html" class="nav-link">Updates</a></li>
+              <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item mb-2" style="margin:8px 0 0 10px;"><a title="Search CanvasXpress" href="#search" data-bs-toggle="modal" data-bs-target="#search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Aside -->
+      <div id="aside">
+        <aside class="col-md-3 col-lg-2 bg-white p-3 position-fixed d-hg-block shadow-lg sidebar rounded-aside" role="navigation"
+          aria-label="Main Navigation" style="top: 400px; right: 10px;">
+          <div class="text-center mb-2">
+            <a href="./index.html" aria-label="CanvasXpress Home">
+              <img src="https://canvasxpress.org/assets/images/logo-dark.svg" alt="CanvasXpress Logo"
+                title="CanvasXpress Logo" class="img-fluid" width="150" height="50" style="max-height: 50px;"
+                loading="eager">
+            </a>
+          </div>
+          <div class="table-of-contents rounded-aside mb-2">
+            <h3 class="font-xl font-bold text-primary">Table of Contents</h3>
+            <nav>
+              <ul class="nav flex-column space-y-2">
+                <li class="nav-item"><a class="nav-aside nav-link active-nav" href="#introduction">Introduction</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#responsive">Responsive Design</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#view">View Syntax</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#scalability">Scalability</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#audit">Full Audit</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#atomic">Atomic Image</a></li>
+                <li class="nav-item"><a class="nav-aside nav-link inactive-nav" href="#faq">Frequently Asked Questions</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+      </div>
+
+
+      <!-- Modals -->
+      <div id="modals">
+
+        <!-- Search -->
+        <div id="search" class="modal fade" tabindex="-1"  aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false" role="dialog">
+          <div class="modal-dialog animated" role="document">
+            <div class="modal-content modal-cnt">
+              <button type="button" class="modal-btn bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-hdr">
+                <div id="searchModalLabel" class="font-xl bg-transparent">Search CanvasXpress</div>
+              </div>
+              <div class="modal-body">
+                <style type="text/css">
+                  .reset-box-sizing,.reset-box-sizing *,.reset-box-sizing *:before,.reset-box-sizing *:after,.gsc-inline-block{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-search-button{box-sizing:content-box;line-height:normal;}.gsc-results-wrapper-overlay{width:100% !important;position:static !important;padding:0 !important;overflow:visible !important;box-shadow:none !important;}.gsc-modal-background-image-visible{display:none !important;}.gsc-results-close-btn-visible{display:none;}
+                  .gsc-search-button-v2 {background-color: #ffd587; border: none; border-radius: 5px;}.gsc-search-button-v2:focus, .gsc-search-button-v2:hover {background-color: #ffd587; outline: none;}.gsc-search-button-v2 svg {fill: #000;}td.gsib_a, td.gsib_b {border: none; border-radius: 5px; padding: 0 5px 0;}td.gsc-input, td.gsc-search-button, td.gsc-clear-button {border: none; padding: 0;}.gsst_a .gscb_a {color: #000;}.gsst_a .gscb_a:hover {color: #000;}.gsc-control-cse {max-height: 850px; overflow-y: auto; border:none; background-color: transparent;}.gsc-results-wrapper-overlay {background-color:transparent;}.gsc-webResult.gsc-result{border:none;}.gsc-above-wrapper-area {border:none; padding: 5px 0 5px 0;}
+                </style>
+                <script async src="https://cse.google.com/cse.js?cx=017553474198412024421:c_qxiweliao"></script>
+                <div class="gcse-search"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Design -->
+
+      <header class="pt-1 overflow-hidden">
+        <div class="container px-4 px-lg-3 mt-5 position-relative">
+            <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-10 text-center mx-auto">
+              <!-- Title and Subtitle -->
+              <h1 class="main-hero text-primary">CanvasXpress Software Design</h1>
+              <p class="lead submain-hero">Visualizations optimized to enhance the user experience and facilitate data exploration.</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="introduction" class="container">
+        <div class="row">
+          <div class="mx-auto">
+            <h2 class="font-xxl text-primary mb-3">CanvasXpress's Design Philosophy</h2>
+            <p class="lead text-secondary lh-base">
+              CanvasXpress is meticulously engineered to provide a superior user experience for data visualization and exploration. Our design philosophy centers on several key principles that ensure our platform is not only powerful but also intuitive, scalable, and transparent. This page outlines the core tenets of our software design, from its responsive and interactive interface to its robust backend capabilities. Explore how CanvasXpress's thoughtful design empowers users to uncover insights from their data with confidence and ease.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="responsive" class="container">
+        <h2 class="font-xxl text-primary mb-3">Web Responsive Design</h2>
+        <p class="lead text-secondary lh-base">
+          With CanvasXpress, you can create designs that are size adjustable and can be maximized to fill up your entire screen for better visualization. Now you can work smarter and easily spot trends in designs. Take, for example, these three graphs; all you need to do is hover your mouse on the graph, then click the maximize icon <img src="/assets/images/maximizeMinimize.png" style="height: 18px;width: 18px;margin-bottom: 8px;" width=24 height=24 loading="eager" alt="CanvasXpress Minimize-Maximize Icon" title="CanvasXpress Minimize-Maximize Icon"/> to zoom in and out. Press it again to reset back.
+        </p>
+        <div class="row">
+          <div class="col-md-2 d-flex justify-content-center">
+            <div class="card p-2 m-1 shadow-sm" style="height:fit-content;">
+              <div class="canvasXpressContainerSite">
+                <canvas id='canvasId1' width='440' height='440' data-responsive='true' data-aspectRatio='1:1'></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card p-2 m-1 shadow-sm" style="height:fit-content;">
+              <div class="canvasXpressContainerSite">
+                <canvas id='canvasId2' width='440' height='440' data-responsive='true' data-aspectRatio='1:1'></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="card p-2 m-1 shadow-sm" style="height:fit-content;">
+              <div class="canvasXpressContainerSite">
+                <canvas id='canvasId3' width='440' height='440' data-responsive='true' data-aspectRatio='1:1'></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          new CanvasXpress({
+            "renderTo": "canvasId1",
+            "data": {
+              "y": {
+                "vars": ["V1"],
+                "smps": ["S1","S2","S3"],
+                "data": [
+                  [33,44,55]
+                ]
+              }
+            },
+            "config": {
+              "graphOrientation": "vertical",
+              "graphType": "Bar",
+              "showLegend": false,
+              "smpLabelRotate": 90,
+              "smpTitle": "Samples",
+              "theme": "CanvasXpress",
+              "xAxisTitle": "Value",
+            }
+          });
+          new CanvasXpress({
+            "renderTo": "canvasId2",
+            "data": {
+              "y": {
+                "vars": ["V1"],
+                "smps": ["S1","S2","S3"],
+                "data": [
+                  [33,44,55]
+                ]
+              }
+            },
+            "config": {
+              "graphOrientation": "vertical",
+              "graphType": "Bar",
+              "showLegend": false,
+              "smpLabelRotate": 90,
+              "smpTitle": "Samples",
+              "theme": "CanvasXpress",
+              "xAxisTitle": "Value",
+            }
+          });
+          new CanvasXpress({
+            "renderTo": "canvasId3",
+            "data": {
+              "y": {
+                "vars": ["V1"],
+                "smps": ["S1","S2","S3"],
+                "data": [
+                  [33,44,55]
+                ]
+              }
+            },
+            "config": {
+              "graphOrientation": "vertical",
+              "graphType": "Bar",
+              "showLegend": false,
+              "smpLabelRotate": 90,
+              "smpTitle": "Samples",
+              "theme": "CanvasXpress",
+              "xAxisTitle": "Value",
+            }
+          });
+        </script>
+      </section>
+
+      <section id="view" class="container">
+        <h2 class="font-xxl text-primary mb-3">View</h2>
+        <p class="lead text-secondary lh-base">
+          CanvasXpress provides out of the box advanced analytics features to get you up and running in no time. Get access to easy-to-use tools that let you see and understand your data. With our data filters and data tables, you can convert graphs into a data exploration framework without compromising the flow of analysis.
+        </p>
+        <p class="lead text-secondary lh-base">
+          To use these tools, as seen in the example below, just hover your mouse over the graph and select the funnel-like icon <img src="/assets/images/funnel.png" style="height: 18px;width: 18px;margin-bottom: 8px;" width=24 height=24 loading="eager" alt="CanvasXpress Filter Icon" title="CanvasXpress Filter Icon"/> to toggle the widgets.
+        </p>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="card p-4 m-1 shadow-sm">
+              <div class="canvasXpressContainerSite">
+                <canvas id='canvasId4' width='613' height='613' data-responsive='true' data-aspectRatio='1:1'></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          var cX = new CanvasXpress("canvasId4", {
+            "y": {
+              "vars": ["Jax","Finley","Eloise","Elena","Ember","Owen","Ezra","Knox","Mateo","Charlie","Rosalie","Marcus"],
+              "smps": ["Weight","Height"],
+              "data": [
+                [76.3,167.6],
+                [58.6,163.8],
+                [59.5,160],
+                [60.3,164.5],
+                [53.9,162.6],
+                [78.8,176],
+                [74.9,172.1],
+                [62.3,170.2],
+                [89.6,178],
+                [59.8,167],
+                [47.3,152.4],
+                [102.5,177.8]
+              ]
+            },
+            "z": {
+              "Chest": [104.3,85.4,86.7,86.8,72.6,100,100,101.2,108.8,85.9,78,116.7],
+              "Waist": [94.3,68.3,74.7,69.8,58,92,79.7,71.8,89.5,69.1,60.4,113.2],
+              "Hip": [100.4,94,100,93.7,90.2,98,98.4,87.6,106,94.1,87,107.9],
+              "Age": [35,31,42,23,37,22,25,30,24,20,25,28],
+              "Gender": ["Male","Female","Female","Female","Female","Male","Male","Male","Male","Female","Female","Male"],
+              "Exercise": ["Moderate","Intense","Moderate","Intense","Low","Intense","Moderate","Moderate","Moderate","Low","Intense","Intense"],
+              "Hair": ["Blond","Black","Black","Blond","Brown","Brown","Red","Blond","Blond","Brown","Brown","Red"]
+            }
+          }, {
+            "graphType": "Scatter2D",
+            "theme": "CanvasXpress",
+            "view": "table"
+          });
+        </script>
+      </section>
+
+      <section id="scalability" class="container">
+        <h2 class="font-xxl text-primary mb-3">Scalability</h2>
+        <p class="lead text-secondary lh-base">
+          With CanvasXpress as a repository for your data, you can efficiently manage visual analysis, solve business problems, and gain insights for business growth. In contrast to other JavaScript libraries based on SVG, CanvasXpress is built on the <b><i>&lt;canvas&gt;</i></b> element fitted with innovative features that’ll take your analysis to the next level.
+        </p>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="card p-4 m-1 shadow-sm">
+              <div class="row d-flex justify-content-center mb-2">
+                <img src="/assets/images/canvas-svg.png" width=auto height=400 loading="lazy" alt="Comparison of Canvas vs SVG for data visualization" title="Comparison of Canvas vs SVG for data visualization"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="lead text-secondary lh-base">Here is an example of a heatmap that harbors more than a million data points.</p>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="d-flex justify-content-center align-items-center rounded-sm p-1 mb-3 bg-secondary text-white">
+              Huge Heatmap > 1 Million data points
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="card p-4 m-1 shadow-sm">
+              <div class="canvasXpressContainerSite">
+                <canvas id='canvasHuge' width='613' height='613' data-responsive='true' data-aspectRatio='1:1'></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+
+
+
+        </script>
+      </section>
+
+      <section id="audit" class="container">
+        <h2 class="font-xxl text-primary mb-3">Full Audit</h2>
+        <p class="lead text-secondary lh-base">
+          Effective data visualization is key to business decision making and growth. With the CanvasXpress analytics solution, users can explore datasets without losing the original visualization due to changes in configurations. No other platform in the market has the capabilities to track and store users' progress throughout the data exploration process to provide a full audit at any point in the timeline.
+        </p>
+        <p class="lead text-secondary lh-base">
+          This unique feature of the CanvasXpress application is a convenient tool for education and reproducible research.
+        </p>
+        <p class="lead text-secondary lh-base">
+          The example below shows a heat map that was completely reconfigured by the user during data exploration. To return this data to its original visualization, simply hover your mouse over the heatmap and click the time-reversed icon <img src="/assets/images/history.png" width=24 height=24 loading="lazy" style="height: 18px;width: 18px;margin-bottom: 8px;" alt="CanvasXpress Reproduce Icon" title="CanvasXpress Reproduce Icon"/>.
+        </p>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="card p-4 m-1 shadow-sm">
+              <div class="canvasXpressContainerSite">
+                <canvas id='canvasId5' width='613' height='613' data-responsive='true' data-aspectRatio='1:1'></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          new CanvasXpress({
+            "renderTo": "canvasId5",
+            "data": {
+              "z": {
+                "Type": ["Pro","Tyr","Pho","Kin","Oth","Pro","Tyr","Pho","Kin","Oth","Pro","Tyr","Pho","Kin","Oth","Pro","Tyr","Pho","Kin","Oth","Pro","Tyr","Pho","Kin","Oth","Pro","Tyr","Pho","Kin","Oth","Pro","Tyr","Pho","Kin","Oth","Pro","Tyr","Pho","Kin","Oth"],
+                "Sens": [1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4]
+              },
+              "x": {
+                "Treatment": ["Control","Control","Control","Control","Control","TreatmentA","TreatmentB","TreatmentA","TreatmentB","TreatmentA","TreatmentB","TreatmentA","TreatmentB","TreatmentA","TreatmentB","TreatmentA","TreatmentB","TreatmentA","TreatmentB","TreatmentA","TreatmentB","TreatmentA","TreatmentB","TreatmentA","TreatmentB"],
+                "Site": ["Site1","Site1","Site1","Site1","Site1","Site2","Site2","Site2","Site2","Site2","Site2","Site2","Site2","Site2","Site2","Site3","Site3","Site3","Site3","Site3","Site3","Site3","Site3","Site3","Site3"],
+                "Dose-Type": ["","","","","","Dose1","Dose1","Dose2","Dose2","Dose3","Dose3","Dose4","Dose4","Dose5","Dose5","Dose1","Dose1","Dose2","Dose2","Dose3","Dose3","Dose4","Dose4","Dose5","Dose5"],
+                "Dose": [0,0,0,0,0,5,5,10,10,15,15,20,20,25,25,5,5,10,10,15,15,20,20,25,25]
+              },
+              "y": {
+                "smps": ["Sample1","Sample2","Sample3","Sample4","Sample5","Sample6","Sample7","Sample8","Sample9","Sample10","Sample11","Sample12","Sample13","Sample14","Sample15","Sample16","Sample17","Sample18","Sample19","Sample20","Sample21","Sample22","Sample23","Sample24","Sample25"],
+                "vars": ["Probe1","Probe2","Probe3","Probe4","Probe5","Probe6","Probe7","Probe8","Probe9","Probe10","Probe11","Probe12","Probe13","Probe14","Probe15","Probe16","Probe17","Probe18","Probe19","Probe20","Probe21","Probe22","Probe23","Probe24","Probe25","Probe26","Probe27","Probe28","Probe29","Probe30","Probe31","Probe32","Probe33","Probe34","Probe35","Probe36","Probe37","Probe38","Probe39","Probe40"],
+                "data": [
+                  [0.784,1.036,-0.641,1.606,2.208,3.879,0.333,2.265,-1.55,1.678,-0.639,-0.533,-0.078,0.433,0.391,1.013,0.928,0.812,0.072,3.564,0.47,1.836,0.351,3.139,-2.207],
+                  [0.222,0.716,0.993,-0.913,0.996,1.235,1.396,1.817,0.162,1.137,-0.126,1.56,1.003,1.86,0.43,0.696,0.777,1.6,0.175,2.423,0.044,3.881,-0.757,1.486,0.01],
+                  [0.486,2.15,-0.069,-0.468,0.402,0.725,-1.697,0.653,0.101,2.852,-0.27,0.414,-0.789,1.877,1.555,2.511,0.07,0.244,-0.41,2.345,2.401,-0.033,0.951,2.053,0.725],
+                  [-1.857,0.698,0.528,1.024,-0.035,2.181,-0.015,3.68,-1.13,-0.842,-1.759,1.784,-0.673,0.147,0.765,1.585,0.33,1.481,-0.362,1.456,-0.719,0.961,1.296,2.375,0.208],
+                  [-1.19,1.564,-2.407,0.642,-0.51,4.116,-0.379,0.786,1.508,3.119,1.011,1.54,1.184,1.821,-0.217,2.752,0.083,1.663,0.568,2.48,-1.207,1.222,0.296,1.055,1.078],
+                  [0.256,1.214,1.919,0.577,1.07,1.53,1.537,3.063,0.481,2.332,-1.466,0.167,0.428,1.401,-1.716,3.524,-0.822,1.073,-1.825,3.923,-0.542,2.637,-1.296,0.759,0.836],
+                  [-0.443,0.286,0.379,1.076,0.478,3.443,-0.287,1.206,-1.275,2.275,1.101,2.821,-0.638,0.922,-0.205,2.318,0.494,1.648,-0.585,1.963,-0.636,1.229,0.998,1.523,-1.01],
+                  [1.023,-0.417,0.865,1.645,0.324,1.94,0.122,-0.171,0.352,1.42,-0.436,3.076,0.434,0.986,-1.912,3.899,-0.212,0.716,0.782,0.534,1.939,1.374,-0.083,2.318,0.982],
+                  [-2.33,0.575,-0.543,-0.38,-2.153,1.717,-1.219,0.725,0.273,1.908,0.488,1.426,0.108,2.586,0.653,0.317,0.112,3.138,0.212,1.393,-0.506,1.87,0.332,1.893,1.017],
+                  [0.841,0.146,0.716,-0.233,-0.206,0.237,-0.307,2.499,-1.619,1.957,-0.12,3.058,0.511,3.598,0.286,0.922,0.164,0.782,-3.468,0.262,0.812,0.798,1.209,2.964,-1.47],
+                  [-0.099,1.666,-1.635,1.475,-0.186,0.781,-1.919,1.472,-0.109,1.588,-0.379,0.862,-1.455,2.386,2.783,0.98,-0.136,1.042,0.532,1.778,0.463,0.647,0.92,2.427,-0.07],
+                  [0.663,-1.411,-0.69,-0.216,-0.735,1.878,-0.073,1.568,-1.254,3.792,-0.345,3.384,0.206,1.572,0.134,2.035,-0.26,2.42,0.437,2.164,-0.063,5.027,-0.166,3.878,-1.313],
+                  [-0.647,-1.152,3.437,-0.3,0.358,1.766,0.067,0.149,-1.005,1.191,-1.299,1.326,-2.378,1.8,-0.858,2.019,-1.357,2.278,-0.711,2.196,-0.243,3.326,-0.215,2.25,-0.504],
+                  [-0.264,-1.328,1.228,1.247,0.692,1.763,-0.978,2.781,-0.058,2.223,0.796,2.414,-1.834,3.203,0.459,2.914,0.375,3.309,0.946,0.943,-1.365,2.452,0.474,0.503,0.025],
+                  [0.253,-0.529,-0.429,-1.111,0.398,2.332,-1.334,2.202,-0.585,1.885,0.398,1.788,0.972,2.025,-0.835,0.622,0.001,0.837,-0.776,2.257,0.682,1.304,2.407,4.038,0.518],
+                  [-0.876,-1.41,0.538,-1.04,-0.717,-0.889,3.129,1.202,3.398,0.398,3.857,1.372,4.813,-1.311,4.029,-0.432,3.01,0.756,4.688,0.294,4.61,0.859,4.498,1.794,3.319],
+                  [-0.363,0.042,-0.253,-0.076,-1.27,-0.904,2.931,-0.119,2.669,-0.165,6.023,-0.65,2.031,1.424,2.844,-1.019,4.062,-0.025,2.637,-0.317,4.228,-0.142,3.013,0.611,3.74],
+                  [-1.674,-0.318,-0.726,-1.271,1.753,-1.678,3.341,-1.772,3.814,-1.391,2.622,0.677,3.307,-0.92,3.545,0.305,2.808,0.836,4.532,-0.378,4.87,-0.044,4.061,1.684,5.486],
+                  [-0.288,0.165,-0.468,1.219,-3.353,-0.578,3.414,-0.674,4.755,0.033,4.025,0.44,4.186,1.136,2.505,0.436,3.293,-0.868,4.746,-0.545,3.666,-0.295,3.206,-0.966,4.678],
+                  [-0.558,-0.855,-1.114,-0.623,0.368,-0.182,4.37,0.563,3.75,0.189,2.717,-1.708,5.274,0.741,2.537,-1.583,2.832,-1.515,3.829,0.358,5.306,0.388,3.284,0.661,3.804],
+                  [1.693,-1.53,0.057,-0.217,0.511,0.309,3.998,0.925,1.045,0.379,2.024,0.331,3.612,0.151,5.808,-1.429,3.402,-0.297,4.692,-0.439,4.521,-0.816,4.693,0.323,2.869],
+                  [-0.234,1.999,-1.603,-0.292,-0.91,-0.766,6.167,1.242,4.219,-1.291,6.974,-0.443,4.039,0.72,3.808,1.465,2.86,2.736,4.675,-0.554,3.091,0.057,4.311,-0.005,2.605],
+                  [0.529,-1.721,2.207,-0.873,-1.364,1.139,3.146,1.277,3.963,-0.234,4.581,-1.266,3.743,-0.84,3.682,-0.566,4.249,0.599,4.202,0.125,4.136,-0.67,3.433,-0.954,3.97],
+                  [-0.529,0.375,0.204,-0.529,1.001,0.244,3.922,-0.904,3.479,-0.926,4.171,-0.047,2.158,0.467,2.277,0.429,3.903,-1.013,3.182,0.73,3.318,-1.663,4.222,0.264,3.538],
+                  [2.302,-0.218,-1.184,-0.644,0.118,-1.35,4.497,1.262,5.131,-1.095,4.354,-1.364,4.376,-0.936,3.278,0.753,4.903,-2.193,3.336,0.722,3.92,-1.341,4.762,1.756,4.032],
+                  [0.957,1.309,-1.317,1.254,-0.397,0.004,3.34,1.233,4.681,-0.875,2.497,0.207,1.703,-0.614,3.171,-0.034,2.59,0.968,3.576,0.946,3.85,1.128,4.015,0.633,3.148],
+                  [-0.789,-1.139,0.066,0.418,0.366,-0.932,3.982,0.151,4.018,0.74,5.374,0.067,6.07,1.178,6.316,1.948,3.389,0.383,5.084,-0.251,3.874,-0.715,3.101,-0.172,4.867],
+                  [-0.26,-0.005,-0.12,-0.422,0.629,1.242,3.954,-0.027,4.352,-0.074,4.369,0.196,4.847,-0.763,3.042,-1.643,3.952,-1.358,4.105,-0.257,4.168,0.047,1.782,-0.585,5.465],
+                  [1.882,0.869,-1.305,1.095,1.002,-0.897,3.248,1.113,5.83,0.298,4.811,-0.128,3.263,0.186,4.244,1.314,2.832,0.222,3.899,-1.279,4.133,-1.523,4.49,0.966,4.658],
+                  [-1.052,0.429,0.646,0.642,1.037,-1.046,1.724,-0.698,5.316,-0.403,2.821,-0.108,5.52,-0.352,3.298,-0.716,2.672,1.499,3.919,0.202,3.409,0.841,5.47,1.225,1.988],
+                  [-1.862,-0.589,0.205,1.281,-1.256,0.924,4.189,-1.219,3.137,0.142,5.869,0.529,2.138,-0.034,3.921,-1.097,5.402,1.468,5.034,0.088,3.055,1.587,3.374,0.377,2.939],
+                  [-0.315,-0.369,0.634,0.495,-1.059,-0.481,1.329,1.105,5.3,0.135,6.515,0.001,4.161,1.686,4.747,-0.911,3.24,-1.461,4.64,0.698,5.006,-1.072,4.608,-0.317,5.208],
+                  [0.558,0.793,-1.713,0.055,2.242,0.588,3.785,2.949,2.175,2.055,3.328,0.236,3.549,-0.009,1.477,0.538,3.116,-0.621,5.203,0.736,3.606,-0.313,4.402,-1.039,3.894],
+                  [-1.332,-1.134,0.153,0.66,1.764,-0.588,3.417,-0.547,3.849,-1.521,3.332,0.88,5.449,0.179,4.596,0.626,4.006,0.33,2.969,-0.42,2.606,-0.485,4.581,-0.199,5.008],
+                  [0.29,0.228,0.117,-0.587,-2.116,0.188,4.009,0.551,3.127,0.682,3.858,-1.053,4.388,-1.46,1.468,0.434,4.221,0.782,2.992,0.056,5.223,-0.747,6.549,-0.959,3.714],
+                  [-0.015,-1.665,1.007,0.278,-0.091,1.919,3.861,-0.318,3.026,-1.642,5.379,2.097,4.396,0.802,3.66,0.544,2.156,0.87,4.044,0.3,4.422,-0.788,4.677,-0.215,4.643],
+                  [-0.984,0.915,0.944,-1.975,-1.717,0.16,4.748,1.521,4.091,-0.386,3.802,-1.134,5.701,-0.402,5.682,-0.987,4.281,0.844,3.427,1.368,3.358,-1.748,3.792,2.125,5.137],
+                  [-0.399,-0.613,2.211,0.238,2.799,0.687,5.522,0.534,5.233,-0.395,4.387,-1.733,4.494,-1.26,4.693,1.679,4.477,0.399,2.508,1.683,3.185,0.865,4.958,0.602,4.371],
+                  [1.205,-0.562,1.134,0.202,0.209,0.692,2.419,0.397,2.429,0.911,6.341,0.713,4.548,-0.688,3.947,0.439,4.69,-0.324,3.07,0.265,3.757,-1.535,5.434,-0.017,4.125],
+                  [-0.298,0.118,1.653,1.519,-0.821,-0.85,4.602,1.073,5.087,0.155,6.987,-0.716,2.912,0.581,2.112,-0.426,3.523,0.188,4.548,0.155,4.256,0.775,2.607,-0.697,5.338]
+                ]
+              }
+            },
+            "config": {
+              "colorSpectrum": ["blue","white","red"],
+              "graphType": "Heatmap",
+              "title": "Simple Heatmap"
+            },
+            "afterRender": [
+              [
+                "setDimensions",
+                [613,613,true]
+              ],
+              [
+                "clusterVariables",
+                [true],
+                {},
+                1605144461884
+              ],
+              [
+                "clusterSamples",
+                [true],
+                {},
+                1605144469772
+              ],
+              [
+                "modifySampleOverlays",
+                ["Site"],
+                {},
+                1605144495326
+              ],
+              [
+                "modifySampleOverlays",
+                ["Treatment"],
+                {},
+                1605144511930
+              ],
+              [
+                "modifySampleOverlays",
+                ["Dose"],
+                {},
+                1605144514224
+              ],
+              [
+                "handleDragEventOneDimension",
+                [
+                  {
+                    "srcElement": "canvasId5-cX-Drag",
+                    "target": "canvasId5-cX-Drag",
+                    "ac": {
+                      "x": 589.5,
+                      "y": 599.109375
+                    },
+                    "altKey": false,
+                    "bubbles": true,
+                    "button": 0,
+                    "buttons": 0,
+                    "cancelBubble": true,
+                    "cancelable": true,
+                    "clientX": 996,
+                    "clientY": 1130,
+                    "ctrlKey": false,
+                    "defaultPrevented": false,
+                    "detail": 1,
+                    "eventPhase": 3,
+                    "isTrusted": true,
+                    "layerX": 0,
+                    "layerY": 594,
+                    "metaKey": false,
+                    "movementX": 0,
+                    "movementY": 0,
+                    "offsetX": 0,
+                    "offsetY": 594,
+                    "pageX": 996,
+                    "pageY": 4334,
+                    "returnValue": true,
+                    "screenX": 4004,
+                    "screenY": 1264,
+                    "shiftKey": false,
+                    "timeStamp": 98375.99999998929,
+                    "type": "mouseup",
+                    "which": 1,
+                    "x": 996,
+                    "y": 1130,
+                    "xMouseDown": 145.5,
+                    "yMouseDown": 578.109375
+                  },
+                  0,
+                  589.5,
+                  5,
+                  592.5,
+                  610
+                ],
+                {
+                  "moveDendrogram": false,
+                  "moveVarOverlay": false,
+                  "varOverlayInfo": {},
+                  "moveVar": false,
+                  "varInfo": [174.92394531250002,185.08394531250002,195.24394531250002,205.4039453125,215.5639453125,225.72394531250004,235.88394531250003,246.04394531250003,256.2039453125,266.3639453125,276.52394531249996,286.6839453125,296.8439453125,307.0039453125,317.1639453125,327.32394531250003,337.4839453125,347.64394531249997,357.8039453125,367.9639453125,378.1239453125,388.2839453125,398.44394531250003,408.6039453125,418.76394531249997,428.9239453125,439.0839453125,449.2439453125,459.4039453125,469.5639453125,479.7239453125,489.8839453125,500.0439453125,510.2039453125,520.3639453125,530.5239453125001,540.6839453125,550.8439453125001,561.0039453125,571.1639453125],
+                  "moveSmpOverlay": "SmpOverlay-1",
+                  "smpOverlayInfo": {
+                    "Site": 133.14394531250002,
+                    "Treatment": 146.3439453125,
+                    "Dose": 159.5439453125
+                  },
+                  "moveSmp": false,
+                  "smpInfo": [127.84,144.72,161.6,178.48,195.35999999999999,212.23999999999998,229.11999999999998,245.99999999999997,262.88,279.76,296.64,313.52,330.4,347.28,364.15999999999997,381.03999999999996,397.91999999999996,414.79999999999995,431.67999999999995,448.55999999999995,465.43999999999994,482.31999999999994,499.19999999999993,516.0799999999999,532.9599999999999]
+                },
+                1605144541822
+              ],
+              [
+                "handleDragEventOneDimension",
+                [
+                  {
+                    "srcElement": "canvasId5-cX-Drag",
+                    "target": "canvasId5-cX-Drag",
+                    "ac": {
+                      "x": 595.5,
+                      "y": 580.109375
+                    },
+                    "altKey": false,
+                    "bubbles": true,
+                    "button": 0,
+                    "buttons": 0,
+                    "cancelBubble": true,
+                    "cancelable": true,
+                    "clientX": 1002,
+                    "clientY": 1111,
+                    "ctrlKey": false,
+                    "defaultPrevented": false,
+                    "detail": 1,
+                    "eventPhase": 3,
+                    "isTrusted": true,
+                    "layerX": 0,
+                    "layerY": 575,
+                    "metaKey": false,
+                    "movementX": 0,
+                    "movementY": 0,
+                    "offsetX": 1,
+                    "offsetY": 575,
+                    "pageX": 1002,
+                    "pageY": 4315,
+                    "returnValue": true,
+                    "screenX": 4010,
+                    "screenY": 1245,
+                    "shiftKey": false,
+                    "timeStamp": 119210.43499995722,
+                    "type": "mouseup",
+                    "which": 1,
+                    "x": 1002,
+                    "y": 1111,
+                    "xMouseDown": 146.5,
+                    "yMouseDown": 560.109375
+                  },
+                  0,
+                  595.5,
+                  5,
+                  598.5,
+                  610
+                ],
+                {
+                  "moveDendrogram": false,
+                  "moveVarOverlay": false,
+                  "varOverlayInfo": {},
+                  "moveVar": false,
+                  "varInfo": [161.7389453125,171.9289453125,182.1189453125,192.3089453125,202.49894531249998,212.68894531249998,222.8789453125,233.0689453125,243.2589453125,253.4489453125,263.6389453125,273.8289453125,284.0189453125,294.2089453125,304.3989453125,314.5889453125,324.7789453125,334.9689453125,345.1589453125,355.3489453125,365.5389453125,375.7289453125,385.9189453125,396.1089453125,406.2989453125,416.48894531250005,426.6789453125,436.86894531250005,447.0589453125,457.24894531250004,467.4389453125,477.62894531250004,487.8189453125,498.00894531250003,508.1989453125,518.3889453125,528.5789453125,538.7689453125,548.9589453125,559.1489453125],
+                  "moveSmpOverlay": "SmpOverlay-1",
+                  "smpOverlayInfo": {
+                    "Site": 133.1439453125,
+                    "Dose": 146.34394531249998,
+                    "Treatment": 578.4000000000001
+                  },
+                  "moveSmp": false,
+                  "smpInfo": [127.84,144.72,161.6,178.48,195.35999999999999,212.23999999999998,229.11999999999998,245.99999999999997,262.88,279.76,296.64,313.52,330.4,347.28,364.15999999999997,381.03999999999996,397.91999999999996,414.79999999999995,431.67999999999995,448.55999999999995,465.43999999999994,482.31999999999994,499.19999999999993,516.0799999999999,532.9599999999999]
+                },
+                1605144562654
+              ],
+              [
+                "modifyOverlaysProperties",
+                [
+                  ["40","smpOverlayProperties","Dose","thickness"]
+                ],
+                {},
+                1605144604524
+              ],
+              [
+                "modifyOverlaysProperties",
+                ["Dotplot","smpOverlayProperties","Dose","type"],
+                {},
+                1605144630848
+              ],
+              [
+                "modifyColorProperties",
+                ["Greens","Treatment","x"],
+                {},
+                1605144659467
+              ],
+              [
+                "modifyVariableOverlays",
+                ["Sens"],
+                {},
+                1605144690819
+              ],
+              [
+                "modifyVariableOverlays",
+                ["Type"],
+                {},
+                1605144692404
+              ],
+              [
+                "handleDragEventOneDimension",
+                [
+                  {
+                    "srcElement": "canvasId5-cX-Drag",
+                    "target": "canvasId5-cX-Drag",
+                    "ac": {
+                      "x": 511.5,
+                      "y": 106.109375
+                    },
+                    "altKey": false,
+                    "bubbles": true,
+                    "button": 0,
+                    "buttons": 0,
+                    "cancelBubble": true,
+                    "cancelable": true,
+                    "clientX": 918,
+                    "clientY": 637,
+                    "ctrlKey": false,
+                    "defaultPrevented": false,
+                    "detail": 1,
+                    "eventPhase": 3,
+                    "isTrusted": true,
+                    "layerX": 506,
+                    "layerY": 0,
+                    "metaKey": false,
+                    "movementX": 0,
+                    "movementY": 0,
+                    "offsetX": 507,
+                    "offsetY": 1,
+                    "pageX": 918,
+                    "pageY": 3841,
+                    "returnValue": true,
+                    "screenX": 3926,
+                    "screenY": 771,
+                    "shiftKey": false,
+                    "timeStamp": 275481.07999999775,
+                    "type": "mouseup",
+                    "which": 1,
+                    "x": 918,
+                    "y": 637,
+                    "xMouseDown": 500.5,
+                    "yMouseDown": 538.109375
+                  },
+                  0,
+                  5,
+                  106.109,
+                  610,
+                  109.109
+                ],
+                {
+                  "moveDendrogram": false,
+                  "moveVarOverlay": "VarOverlay-1",
+                  "varOverlayInfo": {
+                    "Sens": 525.38857421875,
+                    "Type": 538.5885742187501
+                  },
+                  "moveVar": false,
+                  "varInfo": [147.7039453125,156.2239453125,164.7439453125,173.2639453125,181.7839453125,190.3039453125,198.8239453125,207.3439453125,215.8639453125,224.38394531249997,232.90394531249999,241.4239453125,249.94394531249998,258.4639453125,266.9839453125,275.5039453125,284.0239453125,292.5439453125,301.0639453125,309.58394531249996,318.10394531249995,326.6239453125,335.1439453125,343.6639453125,352.1839453125,360.70394531249997,369.22394531249995,377.7439453125,386.2639453125,394.7839453125,403.3039453125,411.8239453125,420.34394531249995,428.86394531249994,437.38394531250003,445.9039453125,454.4239453125,462.9439453125,471.46394531249996,479.98394531249994],
+                  "moveSmpOverlay": false,
+                  "smpOverlayInfo": {
+                    "Site": 133.1439453125,
+                    "Treatment": 498.40000000000003,
+                    "Dose": 525
+                  },
+                  "moveSmp": false,
+                  "smpInfo": [127.235,142.905,158.575,174.24499999999998,189.91499999999996,205.58499999999995,221.25499999999994,236.92499999999993,252.5949999999999,268.26499999999993,283.93499999999995,299.60499999999996,315.275,330.945,346.615,362.285,377.95500000000004,393.62500000000006,409.2950000000001,424.9650000000001,440.6350000000001,456.3050000000001,471.97500000000014,487.64500000000015,503.31500000000017]
+                },
+                1605144718923
+              ],
+              [
+                "modifyOverlaysProperties",
+                [
+                  ["30","varOverlayProperties","Type","thickness"]
+                ],
+                {},
+                1605144755537
+              ],
+              [
+                "modifyOverlaysProperties",
+                [
+                  ["30","varOverlayProperties","Sens","thickness"]
+                ],
+                {},
+                1605144790557
+              ],
+              [
+                "modifyOverlaysProperties",
+                ["Bar","varOverlayProperties","Sens","type"],
+                {},
+                1605144819153
+              ],
+              [
+                "modifyColorProperties",
+                ["Greens","Type","z"],
+                {},
+                1605144851934
+              ],
+              [
+                "toggleAttribute",
+                ["heatmapIndicatorHistogram"],
+                {},
+                1605144907473
+              ],
+              [
+                "changeAttribute",
+                ["heatmapIndicatorPosition","topLeft"],
+                {},
+                1605144925147
+              ],
+              [
+                "updateTextColorAttribute",
+                [
+                  ["heatmapIndicatorHeight"],
+                  "45"
+                ],
+                {},
+                1605144963140
+              ],
+              [
+                "updateTextColorAttribute",
+                [
+                  ["title"],
+                  "Complex Heatmap"
+                ],
+                {},
+                1605144992343
+              ]
+            ]
+          });
+        </script>
+      </section>
+
+      <section id="atomic" class="container">
+        <h2 class="font-xxl text-primary mb-3">Atomic Image</h2>
+        <p class="lead text-secondary lh-base">
+          CanvasXpress is a limitless visual analytics platform, and yet another groundbreaking feature is its ability to store data and all end-user custom modifications as metadata inside the image, awesome right?
+        </p>
+        <p class="lead text-secondary lh-base">
+          You can easily bring back the entire data stored on an image file by dragging and dropping the file on the CanvasXpress visualization interface. This distinctive feature cannot be found in any other application in the market today.
+        </p>
+        <div class="row mb-2">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-2 d-flex justify-content-center align-items-center mb-2">
+            <img class="img-responsive" src="/assets/images/cX-facet.png" width=200 height=200 loading="lazy" alt="CanvasXpress Facet visualization" title="CanvasXpress Facet visualization"/>
+          </div>
+          <div class="col-md-2 d-flex justify-content-center align-items-center mb-2">
+            <img class="img-responsive" src="/assets/images/cX-heatmap.png" width=200 height=200 loading="lazy" alt="CanvasXpress Heatmap visualization" title="CanvasXpress Heatmap visualization"/>
+          </div>
+          <div class="col-md-2 d-flex justify-content-center align-items-center mb-2">
+            <img class="img-responsive" src="/assets/images/cX-ridgeline.png" width=200 height=200 loading="lazy" alt="CanvasXpress Ridgeline visualization" title="CanvasXpress Ridgeline visualization"/>
+          </div>
+          <div class="col-md-2 d-flex justify-content-center align-items-center mb-2">
+            <img class="img-responsive" src="/assets/images/cX-scatter2d.png" width=200 height=200 loading="lazy" alt="CanvasXpress Scatter2D visualization" title="CanvasXpress Scatter2D visualization"/>
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="card p-4 m-1 shadow-sm">
+              <div class="canvasXpressContainerSite">
+                <canvas id='canvasId6' width='613' height='613' data-responsive='true' data-aspectRatio='1:1'></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          new CanvasXpress('canvasId6', {
+            "y": {
+              "vars": ["A","B","C","D"],
+              "smps": ["A","B","C","D"],
+              "data": [
+                [11975,5871,8916,2868],
+                [1951,10048,2060,6171],
+                [8010,16145,8090,8045],
+                [1013,990,940,6907]
+              ]
+            }
+          }, {
+            "arcSegmentsRadius": [1,1,1,1],
+            "axisTickFontSize": 13,
+            "axisTitleFontSize": 13,
+            "circularRotate": 180,
+            "circularType": "chord",
+            "codeType": "pretty",
+            "decorationFontSize": 13,
+            "graphType": "Circular",
+            "legendFontSize": 9,
+            "loessDegree": 1,
+            "overlayFontSize": 10,
+            "panningX": -17.400000000000002,
+            "panningY": 4.4,
+            "rAxisMinorValues": [-30000,-25000,-20000,-15000,-10000,-5000,0,5000,10000,15000,20000,25000,30000,35000,40000,45000,50000,55000,60000,65000,70000,75000,80000,85000,90000,95000,100000,105000,110000,115000,120000,125000,130000,135000,140000,145000,150000,155000,160000,165000,170000],
+            "rAxisTickFormat": ["\%sK"," / 1000"],
+            "rAxisValues": ["0","25K","50K","75K","100K","125K","150K"],
+            "ringGraphWeight": [1],
+            "ringsOrder": ["percent","scale","dendrogram","ideogram","overlays","labels","anchors","data"],
+            "showContourLevel": true,
+            "showScatterPlotMatrixLabels": true,
+            "sizeByContinuous": true,
+            "smpLabelFontSize": 16,
+            "smpTitleFontSize": 16,
+            "subtitleFontSize": 29,
+            "theme": "CanvasXpress",
+            "title": "Rotated Chord Graph",
+            "titleFontSize": 31,
+            "transitionStep": 50,
+            "varLabelFontSize": 10,
+            "varTitleFontSize": 10,
+            "xAxis": ["A","B","C","D"],
+            "xAxisTitle": ""
+          });
+        </script>
+      </section>
+
+      <!-- Section: Frequently Asked Questions -->
+      <section id="faq" class="container">
+        <h2 class="font-xxl text-primary mb-3">Frequently Asked Questions</h2>
+        <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+          <h3 class="faq-question h5" itemprop="name">What is responsive design in CanvasXpress?</h3>
+          <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+            <p itemprop="text" class="text-secondary">Responsive design in CanvasXpress allows visualizations to automatically adjust their size to fit different screen dimensions, including a maximize feature for full-screen viewing, enhancing user experience and trend spotting.</p>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+          <h3 class="faq-question h5" itemprop="name">How does CanvasXpress facilitate data exploration?</h3>
+          <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+            <p itemprop="text" class="text-secondary">CanvasXpress provides out-of-the-box advanced analytics features like easy-to-use data filters and data tables, which enable users to see, understand, and explore their data interactively without compromising analysis flow.</p>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+          <h3 class="faq-question h5" itemprop="name">Why is CanvasXpress more scalable than SVG-based libraries?</h3>
+          <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+            <p itemprop="text" class="text-secondary">CanvasXpress is built on the HTML5 &lt;canvas&gt; element, which is better suited for handling large datasets (e.g., over a million data points) compared to SVG-based libraries, allowing for efficient visual analysis and business insights.</p>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+          <h3 class="faq-question h5" itemprop="name">What is the 'Full Audit' feature and its benefits?</h3>
+          <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+            <p itemprop="text" class="text-secondary">The 'Full Audit' feature in CanvasXpress tracks and stores all user progress and configurations during data exploration. This unique capability ensures reproducibility of research and provides a complete audit trail at any point in the timeline, preventing loss of original visualization due to changes.</p>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemtype="https://schema.org/Question">
+          <h3 class="faq-question h5" itemprop="name">How does the 'Atomic Image' feature work?</h3>
+          <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+            <p itemprop="text" class="text-secondary">The 'Atomic Image' feature allows CanvasXpress to store all data and end-user custom modifications as metadata directly inside the image file. Users can easily restore the entire data and visualization state by simply dragging and dropping the image file onto the CanvasXpress interface.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div class="py-1 mt-lg-1 body-footer">
+        <div class="container px-4 px-lg-3" py-lg-1 position-relative">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 text-center mx-auto mb-5">
+              <section class="pt-0 pb-0">
+                <div class="row d-flex">
+                  <div class="col-md-6 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2">
+                      <a href="/">
+                        <img src="/assets/images/CanvasXpress-Logo-Horizontal-White.svg" width="282" height="35" title="CanvasXpress Logo" alt="CanvasXpress Logo" loading="lazy"/>
+                      </a>
+                    </div>
+                    <p class="text-footer">CanvasXpress a stand-alone JavaScript Library for Data Analytics. Built for the purpose of reproducible research with a sophisticated and unobtrusive user interface. Full and effortless audit trail of data, configuration and all user interactions in every visualization.</p>
+                    <p class="rights text-footer">©2025 All Rights Reserved. CanvasXpress®</p>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Documentation</div>
+                    <a href="/examples.html" class="fade-page link-footer">Examples</a>
+                    <a href="/documentation.html" class="fade-page link-footer">Docs</a>
+                    <a href="/parameters.html" class="fade-page link-footer">Api</a>
+                    <a href="/updates.html" class="fade-page link-footer">Updates</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Company</div>
+                    <a href="/contact.html" class="fade-page link-footer">Contact</a>
+                    <a href="/licenseCommercial.html" class="fade-page link-footer">License</a>
+                    <a href="/apps/dashboard.html" class="fade-page link-footer">Admin</a>
+                  </div>
+                  <div class="col-md-2 mb-4 mt-4 cnt-footer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-2 font-l title-footer">Information</div>
+                    <a href="/terms.html" class="fade-page link-footer">Terms of Use</a>
+                    <a href="/privacy.html" class="fade-page link-footer">Privacy policy</a>
+                    <a href="/references.html" class="fade-page link-footer">References</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">&#8679;</a>
+
+    <!-- Site JavaScript -->
+    <script src="/dist/build.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script>
+      setTimeout(function() {
+        var elementToObserve = document.getElementsByClassName("gsc-expansionArea")[0];
+        var observer = new MutationObserver(function(mutations) {
+          var val = document.getElementById("gs_tti50").firstChild.value;
+          mutations.forEach(function(mutation) {
+
+          });
+        });
+        if (elementToObserve) { observer.observe(elementToObserve, { attributes: true, childList: true, characterData: true }); }
+      }, 500);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121889306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121889306-1');
+    </script>
+  </body>
+
+</html>

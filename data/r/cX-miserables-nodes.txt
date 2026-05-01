@@ -1,0 +1,78 @@
+group	id	name
+G01	Id0	Myriel
+G01	Id1	Napoleon
+G01	Id2	Mlle. Baptistine
+G01	Id3	Mme. Magloire
+G01	Id4	Countess de Lo
+G01	Id5	Geborand
+G01	Id6	Champtercier
+G01	Id7	Cravatte
+G01	Id8	Count
+G01	Id9	Old Man
+G02	Id10	Labarre
+G02	Id11	Valjean
+G03	Id12	Marguerite
+G02	Id13	Mme. de R
+G02	Id14	Isabeau
+G02	Id15	Gervais
+G03	Id16	Tholomyes
+G03	Id17	Listolier
+G03	Id18	Fameuil
+G03	Id19	Blacheville
+G03	Id20	Favourite
+G03	Id21	Dahlia
+G03	Id22	Zephine
+G03	Id23	Fantine
+G04	Id24	Mme. Thenardier
+G04	Id25	Thenardier
+G05	Id26	Cosette
+G04	Id27	Javert
+G00	Id28	Fauchelevent
+G02	Id29	Bamatabois
+G03	Id30	Perpetue
+G02	Id31	Simplice
+G02	Id32	Scaufflaire
+G02	Id33	Woman 1
+G02	Id34	Judge
+G02	Id35	Champmathieu
+G02	Id36	Brevet
+G02	Id37	Chenildieu
+G02	Id38	Cochepaille
+G04	Id39	Pontmercy
+G06	Id40	Boulatruelle
+G04	Id41	Eponine
+G04	Id42	Anzelma
+G05	Id43	Woman 2
+G00	Id44	Mother Innocent
+G00	Id45	Gribier
+G07	Id46	Jondrette
+G07	Id47	Mme. Burgon
+G08	Id48	Gavroche
+G05	Id49	Gillenormand
+G05	Id50	Magnon
+G05	Id51	Mlle. Gillenormand
+G05	Id52	Mme. Pontmercy
+G05	Id53	Mlle. Vaubois
+G05	Id54	Lt. Gillenormand
+G08	Id55	Marius
+G05	Id56	Baroness T
+G08	Id57	Mabeuf
+G08	Id58	Enjolras
+G08	Id59	Combeferre
+G08	Id60	Prouvaire
+G08	Id61	Feuilly
+G08	Id62	Courfeyrac
+G08	Id63	Bahorel
+G08	Id64	Bossuet
+G08	Id65	Joly
+G08	Id66	Grantaire
+G09	Id67	Mother Plutarch
+G04	Id68	Gueulemer
+G04	Id69	Babet
+G04	Id70	Claquesous
+G04	Id71	Montparnasse
+G05	Id72	Toussaint
+G10	Id73	Child 1
+G10	Id74	Child 2
+G04	Id75	Brujon
+G08	Id76	Mme. Hucheloup
