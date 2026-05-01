@@ -133,6 +133,10 @@
             <p>
               1. Added canvasXpress.stateHub.js — Phase 1 EGoG State Hub (CXStateHub): centralized, immutable state container with getState(), setState(), subscribe(), and reset().<br>
               2. Added canvasXpress.actionLog.js — Phase 2 EGoG Action Log (CXActionLog): event-sourced history loop with dispatch(), getHistory(), undo(), redo(), canUndo(), canRedo(), and clear().<br>
+              3. Added canvasXpress.pipeline.js — Phase 3 EGoG Transformation Pipeline (CXPipeline): orchestrates nine named stages (Pivot → Filter → Group → Transform → Impute → Cluster → Sort → Emit) in fixed order, delegating math to existing CX mixin methods and returning renderable data per facet partition.<br>
+              4. Added canvasXpress.stat.js — Phase 3a EGoG Stat Transform (CXStat): dispatches per-graphType stat computation (identity, proportion, boxplot, bin, kde, ydensity, cor, contour) and caches the result on cx._statResult; geomPie.js, geomCorrelation.js, and geomContour.js updated to consume the pre-computed result when available.<br>
+              5. Added canvasXpress.scales.js — Phase 3b EGoG Scales (CXScales): computes per-facet position scales (x/y/z toPixel) by delegating to the existing axis module, plus aesthetic scales (color/shape/size toValue); result cached on cx._scales.<br>
+              6. Added canvasXpress.plotStore.js — Phase 3c EGoG Plot Store (CXPlotStore): computes screen position and resolved visual properties (px, py, depth, color, shape, size, label) for every visible data element once per render cycle using the CXScales functions; result cached on cx._plotStore with O(1) lookup via getByVarSmp(); point-type geoms (Scatter2D, Dot, Bubble, Manhattan, QQ, Scatter3D, XYZ) covered; aggregate geoms migrated in a follow-on pass.<br>
             </p>
           </div>
           <div id="Version62.1" class="container">
